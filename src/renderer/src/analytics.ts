@@ -731,7 +731,8 @@ const UPDATE_PHASES = new Set([
 ]);
 
 function shouldEnableDesktopAnalytics(appInfo: AppInfo, productionBuild: boolean): boolean {
-  return appInfo.analyticsCaptureUrl !== undefined || (productionBuild && appInfo.variant === "production");
+  // Spinbot: no product analytics to OpenBot's servers.
+  return appInfo.analyticsCaptureUrl !== undefined && productionBuild !== undefined;
 }
 
 function sanitizeDesktopAnalyticsEvent(

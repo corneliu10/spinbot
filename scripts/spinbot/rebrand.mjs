@@ -78,6 +78,22 @@ const EDITS = [
       "  // Spinbot: the operating system hands this app spinbot: links; the parsers read the openbot: form.\n" +
       '  if (/^spinbot:/iu.test(value)) value = `openbot:${value.slice("spinbot:".length)}`;\n  try {',
   ],
+  // No product analytics or error reports to OpenBot's servers (analytics.openbot.run). Crash dumps already stay local.
+  [
+    "src/main/application-services.ts",
+    'const analyticsEnabled = (app.isPackaged && appVariant === "production") || analyticsCaptureUrl !== null;',
+    "// Spinbot: no product analytics or error reports to OpenBot's servers.\n  const analyticsEnabled = analyticsCaptureUrl !== null;",
+  ],
+  [
+    "src/renderer/src/analytics.ts",
+    '  return appInfo.analyticsCaptureUrl !== undefined || (productionBuild && appInfo.variant === "production");',
+    "  // Spinbot: no product analytics to OpenBot's servers.\n  return appInfo.analyticsCaptureUrl !== undefined && productionBuild !== undefined;",
+  ],
+  [
+    "src/renderer/src/error-reports.ts",
+    '  if (capture === undefined && (!import.meta.env.PROD || info.variant !== "production")) return;',
+    "  // Spinbot: no error reports to OpenBot's servers.\n  if (capture === undefined) return;",
+  ],
   // Updates come from OpenBot's releases. They would replace Spinbot with OpenBot, so they are off.
   [
     "src/main/application-services.ts",
