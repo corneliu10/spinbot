@@ -308,7 +308,7 @@ export const messages = defineMessages("settings", {
   "settings.tab.billing.title": "Billing",
   "settings.tab.billing.description": "License, server plans, payment method and invoices.",
   "settings.tab.hostedServers.title": "Hosted servers",
-  "settings.tab.hostedServers.description": "Create Spinbot servers that run when this computer is off.",
+  "settings.tab.hostedServers.description": "Create OpenBot servers that run when this computer is off.",
   "settings.sections.label": "Settings sections",
   "settings.panel.resize": "Resize right panel",
   // A failed read or save of the app preferences on the General, Notifications, Dynamic Island and Updates tabs.
@@ -323,28 +323,28 @@ export const messages = defineMessages("settings", {
   "settings.disconnect.pending": "Disconnecting…",
   // The Mobile Connect tab.
   "settings.mobileConnect.phones.title": "Your phones",
-  "settings.mobileConnect.phones.description": "Phones that use Spinbot with this account.",
+  "settings.mobileConnect.phones.description": "Phones that use OpenBot with this account.",
   "settings.mobileConnect.phones.add": "Add phone",
   "settings.mobileConnect.phones.empty.title": "No phones yet",
   "settings.mobileConnect.phones.empty.description": "Chat with your agents and follow their work from your phone.",
   // {time} is "Just now", "5m ago", "2h ago" or a date.
   "settings.mobileConnect.devices.lastActive": "Last active: {time}",
   "settings.mobileConnect.add.title": "Add a phone",
-  "settings.mobileConnect.add.question": "Is Spinbot installed on the phone?",
+  "settings.mobileConnect.add.question": "Is OpenBot installed on the phone?",
   "settings.mobileConnect.add.signIn.title": "Yes, sign in",
   "settings.mobileConnect.add.signIn.hint": "Show a one-time code",
   "settings.mobileConnect.add.install.title": "No, get the app",
   "settings.mobileConnect.add.install.hint": "iPhone or Android",
   "settings.mobileConnect.add.install.heading": "Get the app",
-  "settings.mobileConnect.add.install.note": "Point the phone camera at the code, install Spinbot, then continue.",
+  "settings.mobileConnect.add.install.note": "Point the phone camera at the code, install OpenBot, then continue.",
   "settings.mobileConnect.add.continue": "Continue to sign in",
   // The tags under the QR codes. Each tag says what its code does.
   "settings.mobileConnect.qr.appStore": "Opens the App Store",
   "settings.mobileConnect.qr.playStore": "Opens Google Play",
-  "settings.mobileConnect.qr.signIn": "Scan in the Spinbot app",
+  "settings.mobileConnect.qr.signIn": "Scan in the OpenBot app",
   "settings.mobileConnect.qr.permanent": "Permanent code",
   "settings.mobileConnect.qr.connected": "{name} connected",
-  "settings.mobileConnect.step.open": "Open Spinbot on your phone.",
+  "settings.mobileConnect.step.open": "Open OpenBot on your phone.",
   "settings.mobileConnect.step.scan": "Tap Scan QR code.",
   "settings.mobileConnect.step.point": "Point the camera at this screen.",
   "settings.mobileConnect.code.expired": "Code expired",
@@ -393,16 +393,16 @@ export const messages = defineMessages("settings", {
   "settings.mobileConnect.route.title": "How devices connect",
   "settings.mobileConnect.route.description":
     "For phones, other computers and team members that connect to this computer.",
-  // {route} is "Through Spinbot" or "Private network".
+  // {route} is "Through OpenBot" or "Private network".
   "settings.mobileConnect.route.chipLabel": "How devices connect: {route}",
-  "settings.mobileConnect.route.openbot.title": "Through Spinbot",
+  "settings.mobileConnect.route.openbot.title": "Through OpenBot",
   "settings.mobileConnect.route.openbot.badge": "Recommended",
   "settings.mobileConnect.route.openbot.description":
     "Works on any network. Chats and files are encrypted between your devices.",
   "settings.mobileConnect.route.private.title": "Private network",
   "settings.mobileConnect.route.private.tailscale": "Tailscale found",
   "settings.mobileConnect.route.private.description":
-    "Tailscale or this Wi-Fi. Devices still sign in with Spinbot. Chats and files never go through Spinbot servers, and devices connect only on that network.",
+    "Tailscale or this Wi-Fi. Devices still sign in with OpenBot. Chats and files never go through OpenBot servers, and devices connect only on that network.",
   "settings.mobileConnect.route.error.load": "Could not load how devices connect.",
   "settings.mobileConnect.route.error.save": "Could not change how devices connect.",
   "settings.mobileConnect.disconnectInfo.description":

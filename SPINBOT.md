@@ -28,6 +28,23 @@ Kept on purpose: internal identifiers (`@openbot/*`, `OPENBOT_*`), the Team API 
 paths that database migrations match. OpenBot's hosted services (openbot.run sign-in, the marketplace, the mobile app,
 the Slack and Discord apps) still belong to OpenBot; links they send open `openbot://`, which an installed OpenBot handles.
 
+## What Spinbot contacts (measured 2026-11-12, first 25 s after start, not signed in)
+
+Through a host-logging proxy; nothing bypassed it.
+
+| Host | Who | Why |
+|---|---|---|
+| api.openbot.run | Spinbot | `GET /health/live`, a reachability check. No account or usage data. |
+| analytics.openbot.run | — | Off in Spinbot (product analytics and error reports, desktop and interface). |
+| github.com/nightly-labs/openbot releases | — | Off in Spinbot (update and server release checks). |
+| api.github.com, github.com, raw.githubusercontent.com, registry.npmjs.org, x.ai, static.devin.ai, downloads.cursor.com, api.meta.ai, lookaside.facebook.com | Spinbot | Release and version checks of the AI coding tools it can install |
+| chatgpt.com, api.anthropic.com | Codex and Claude programs | The AI providers you connected |
+| http-intake.logs.us5.datadoghq.com | Anthropic's `claude` program | Claude Code's own telemetry, not Spinbot's |
+
+Only with your approval: the feedback tool sends bug reports to OpenBot's public GitHub issues through api.openbot.run.
+Signing in to an openbot.run account, hosted servers, the marketplace and the phone app use OpenBot's services.
+Messages about billing, licenses, hosted servers and the phone app say "OpenBot", because those are OpenBot's.
+
 ## Update from upstream
 
 ```bash

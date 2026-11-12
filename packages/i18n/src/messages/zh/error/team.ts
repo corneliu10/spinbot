@@ -137,7 +137,7 @@ export const messages = {
   "error.team.machineResourcesUnsupported": "当前连接不支持机器使用情况。",
   "error.team.machineAlertMemberInvalid": "只有该服务器的所有者或管理员可以接收机器警报。",
   "error.team.hostedSitesUnsupported": "当前连接不支持站点。",
-  "error.team.hostedSitesUnregistered": "该服务器未在 Spinbot 注册，因此没有站点。",
+  "error.team.hostedSitesUnregistered": "该服务器未在 OpenBot 注册，因此没有站点。",
   "error.team.hostedSiteNotFound": "未找到该站点。",
   "error.team.markUnreadUnsupported": "当前客户端不支持把对话标为未读。",
   "error.team.inviteServiceUnavailable": "邀请服务不可用。",

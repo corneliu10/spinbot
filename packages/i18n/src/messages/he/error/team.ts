@@ -139,7 +139,7 @@ export const messages = {
   "error.team.machineResourcesUnsupported": "מעקב אחר שימוש במחשב אינו נתמך בחיבור הזה.",
   "error.team.machineAlertMemberInvalid": "רק בעלים או מנהל של השרת הזה יכולים לקבל התראות מחשב.",
   "error.team.hostedSitesUnsupported": "אתרים אינם נתמכים בחיבור הזה.",
-  "error.team.hostedSitesUnregistered": "השרת הזה אינו רשום ב-Spinbot, ולכן אין לו אתרים.",
+  "error.team.hostedSitesUnregistered": "השרת הזה אינו רשום ב-OpenBot, ולכן אין לו אתרים.",
   "error.team.hostedSiteNotFound": "האתר לא נמצא.",
   "error.team.markUnreadUnsupported": "הלקוח הזה אינו תומך בסימון שיחות כלא נקראו.",
   "error.team.inviteServiceUnavailable": "שירות ההזמנות אינו זמין.",

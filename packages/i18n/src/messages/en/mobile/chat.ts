@@ -3,7 +3,7 @@ import { defineMessages } from "../../../message";
 export const messages = defineMessages("mobile.chat", {
   "mobile.chat.dictation.microphoneOffTitle": "Microphone access is off",
   "mobile.chat.dictation.microphoneOffMessage":
-    "To dictate a message, allow Spinbot to use the microphone and speech recognition in Settings.",
+    "To dictate a message, allow OpenBot to use the microphone and speech recognition in Settings.",
   "mobile.chat.dictation.stopped": "Dictation stopped",
   "mobile.chat.dictation.tryAgain": "Try again.",
   "mobile.chat.dictation.unavailable": "Dictation is not available",
@@ -116,7 +116,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.attachment.unavailable": "The attachment is unavailable. Try again.",
   "mobile.chat.attachment.openFailed": "Could not open attachment",
   "mobile.chat.attachment.photosNeedUpdate": "Saving photos needs the latest version of the app.",
-  "mobile.chat.attachment.photosPermission": "Allow Spinbot to add photos in Settings to save this image.",
+  "mobile.chat.attachment.photosPermission": "Allow OpenBot to add photos in Settings to save this image.",
   "mobile.chat.attachment.imageUnavailable": "The image is unavailable. Try again.",
   "mobile.chat.attachment.saveImageFailed": "Could not save image",
   "mobile.chat.attachment.preview": "Preview {name}",
@@ -141,9 +141,9 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.attachment.unsupported":
     "{name}: choose images, MP3 audio, MOV or MP4 video, ZIP archives, PDF, Office documents, EML, text, Markdown, data, or source files.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: the host computer does not accept {type} files. Update Spinbot there to attach them.",
+    "{name}: the host computer does not accept {type} files. Update OpenBot there to attach them.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: the host computer does not accept these files. Update Spinbot there to attach them.",
+    "{name}: the host computer does not accept these files. Update OpenBot there to attach them.",
   "mobile.chat.attachment.nameTooLong": "Choose a file with a shorter name.",
   "mobile.chat.attachment.damaged": "The attachment is damaged. Select it again.",
   "mobile.chat.attachment.tooLarge": "{name} is larger than 10 MB.",
@@ -192,11 +192,11 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.liveVoice.voiceServerFailed":
     "Your voice server could not read the reply. Check it in Settings > Voice.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "This server does not support GPT live voice. Update Spinbot on the computer that runs it.",
+    "This server does not support GPT live voice. Update OpenBot on the computer that runs it.",
   "mobile.chat.liveVoice.gptFailed": "GPT live voice could not start. Unmute to try again.",
   "mobile.chat.liveVoice.gptEnded": "GPT live voice stopped. Unmute to start it again.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Allow Spinbot to use the microphone in Settings. Then unmute to try again.",
+    "Allow OpenBot to use the microphone in Settings. Then unmute to try again.",
   "mobile.chat.composer.addAttachment": "Add attachment",
   "mobile.chat.composer.ask": "Ask {name}",
   "mobile.chat.composer.stopFailed": "Could not stop the agent. It may have finished already.",
@@ -269,7 +269,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.imageGallery.saveAll": "Save all",
   "mobile.chat.imageGallery.saved": "Saved to Photos",
   "mobile.chat.imageGallery.shareAll": "Share all",
-  "mobile.chat.imageGallery.photosPermission": "Allow Spinbot to add photos in Settings to save these images.",
+  "mobile.chat.imageGallery.photosPermission": "Allow OpenBot to add photos in Settings to save these images.",
   "mobile.chat.imageGallery.saveFailed": "Could not save images",
   "mobile.chat.imageGallery.shareFailed": "Could not share images",
   "mobile.chat.imageGallery.shareNeedsUpdate": "Sharing many images needs the latest version of the app.",
@@ -277,7 +277,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.video.retry": "Retry video",
   "mobile.chat.video.share": "Share {name}",
   "mobile.chat.video.save": "Save {name} to Photos",
-  "mobile.chat.video.photosPermission": "Allow Spinbot to add photos in Settings to save this video.",
+  "mobile.chat.video.photosPermission": "Allow OpenBot to add photos in Settings to save this video.",
   "mobile.chat.video.saveFailed": "Could not save video",
   "mobile.chat.audio.play": "Play {name}",
   "mobile.chat.audio.pause": "Pause {name}",
@@ -291,7 +291,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.browserSecret.authenticatorCode": "Authenticator code",
   "mobile.chat.browserSecret.oneTimeCode": "One-time code",
   "mobile.chat.browserSecret.takeoverTitle": "Browser takeover",
-  "mobile.chat.browserSecret.takeoverBody": "Complete this step in the browser on the computer running Spinbot.",
+  "mobile.chat.browserSecret.takeoverBody": "Complete this step in the browser on the computer running OpenBot.",
   "mobile.chat.browserSecret.takeoverReload": "Then reload the page before choosing I’m done.",
   "mobile.chat.browserSecret.takeoverFailed": "The request could not be completed.",
   "mobile.chat.browserSecret.done": "I'm done",
@@ -363,7 +363,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.approval.effect.permissions":
     "Allow gives {name} these permissions on {server}. Deny keeps the current permissions.",
   "mobile.chat.approval.partial":
-    "This request is too long to show on the phone. To allow it, open Spinbot on {server}. You can deny it here.",
+    "This request is too long to show on the phone. To allow it, open OpenBot on {server}. You can deny it here.",
   "mobile.chat.approval.allow": "Allow",
   "mobile.chat.approval.deny": "Deny",
   "mobile.chat.approval.reconnect": "Connect to {server} to answer this request.",
@@ -442,7 +442,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.queue.steerNeedsTurn": "Steer needs a running turn.",
   "mobile.chat.queue.stillHoldingTitle": "Still holding the message",
   "mobile.chat.queue.stillHoldingMessage":
-    "Spinbot could not release this message, so the agent keeps waiting for it. Try again after the phone reconnects.",
+    "OpenBot could not release this message, so the agent keeps waiting for it. Try again after the phone reconnects.",
   "mobile.chat.queue.keepEditing": "Keep editing",
   "mobile.chat.queue.leaveAnyway": "Leave anyway",
   "mobile.chat.queue.discardTitle": "Discard changes?",
@@ -450,7 +450,7 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.queue.discard": "Discard",
   "mobile.chat.queue.alreadyReceived": "The agent already received this message, so it cannot be changed.",
   "mobile.chat.queue.holding": "Holding the message for you…",
-  "mobile.chat.queue.holdFailed": "Spinbot could not hold this message for editing.",
+  "mobile.chat.queue.holdFailed": "OpenBot could not hold this message for editing.",
   "mobile.chat.queue.messageLabel": "Message",
   "mobile.chat.queue.messagePlaceholder": "Message text",
   "mobile.chat.queue.save": "Save queued message",
@@ -480,13 +480,13 @@ export const messages = defineMessages("mobile.chat", {
   "mobile.chat.threads.renameSave": "Save",
   "mobile.chat.threads.name": "Thread name",
   "mobile.chat.threads.renameUnavailable":
-    "You cannot rename this thread now. Connect to the server, or update Spinbot on the host.",
+    "You cannot rename this thread now. Connect to the server, or update OpenBot on the host.",
   "mobile.chat.threads.delete.action": "Delete",
   "mobile.chat.threads.delete.title": "Delete this thread?",
   "mobile.chat.threads.delete.body":
-    "Spinbot deletes the thread, its messages and its files for good. The main chat does not change.",
-  "mobile.chat.threads.filesUnsupported": "This host cannot take files in a thread. Update Spinbot on the host.",
-  "mobile.chat.threads.unsupported": "This host cannot rename or delete threads. Update Spinbot on the host.",
+    "OpenBot deletes the thread, its messages and its files for good. The main chat does not change.",
+  "mobile.chat.threads.filesUnsupported": "This host cannot take files in a thread. Update OpenBot on the host.",
+  "mobile.chat.threads.unsupported": "This host cannot rename or delete threads. Update OpenBot on the host.",
   "mobile.chat.threads.error.rename": "Could not rename the thread.",
   "mobile.chat.threads.error.delete": "Could not delete the thread.",
   "mobile.chat.channelWork.working": "Working in {channel}",

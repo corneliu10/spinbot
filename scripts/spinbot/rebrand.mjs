@@ -94,6 +94,13 @@ const EDITS = [
     '  if (capture === undefined && (!import.meta.env.PROD || info.variant !== "production")) return;',
     "  // Spinbot: no error reports to OpenBot's servers.\n  if (capture === undefined) return;",
   ],
+  // The release check of servers asks OpenBot's GitHub releases for the newest version. Off, as updates.
+  [
+    "src/main/host-release-service.ts",
+    "    this.#target =\n      options.packaged && isValidSemver",
+    "    // Spinbot: no release checks against OpenBot's GitHub releases unless SPINBOT_RELEASE_CHECKS=1.\n" +
+      '    this.#target =\n      process.env.SPINBOT_RELEASE_CHECKS === "1" && options.packaged && isValidSemver',
+  ],
   // Updates come from OpenBot's releases. They would replace Spinbot with OpenBot, so they are off.
   [
     "src/main/application-services.ts",
@@ -156,6 +163,30 @@ const TEXT_GLOBS = [
 ];
 // Also Polish case endings (OpenBota, OpenBotem, OpenBotowi, …): the stem changes, the ending stays.
 const WORD = /(?:\b|(?<=\\[nt]))OpenBot(?=(?:a|owi|em|ie|u|ów)?\b)/gu;
+// Messages about things that stay OpenBot's keep the name: what you buy from Synthetify (billing, licenses,
+// hosted servers), its website and web app, and its phone app (the App Store app is OpenBot).
+const KEEP_KEYS =
+  /^(billing\.|sitePage\.|server\.hosted\.|mobile\.|settings\.mobileConnect\.|settings\.tab\.hostedServers\.|webClient\.|error\.team\.hostedSite)/u;
+const KEY = /^\s*"([^"]+)":/u;
+
+/** Replaces the word in a message file, except in the messages that KEEP_KEYS names. */
+function rebrandMessages(src) {
+  let key = "";
+  let n = 0;
+  const out = src
+    .split("\n")
+    .map((line) => {
+      const m = KEY.exec(line);
+      if (m) key = m[1];
+      if (KEEP_KEYS.test(key)) return line;
+      return line.replace(WORD, () => {
+        n += 1;
+        return "Spinbot";
+      });
+    })
+    .join("\n");
+  return { out, n };
+}
 
 function walk(dir) {
   const out = [];
@@ -188,9 +219,11 @@ for (const { dir, test } of TEXT_GLOBS) {
     const rel = relative(ROOT, abs);
     if (NEVER.has(rel) || !test(relative(join(ROOT, dir), abs))) continue;
     const src = read(rel);
-    const n = (src.match(WORD) ?? []).length;
+    const { out, n } = rel.startsWith("packages/i18n/")
+      ? rebrandMessages(src)
+      : { out: src.replace(WORD, "Spinbot"), n: (src.match(WORD) ?? []).length };
     if (!n) continue;
-    pending.set(rel, src.replace(WORD, "Spinbot"));
+    pending.set(rel, out);
     changed += n;
     if (check) console.log(`${rel}: ${n} words`);
   }

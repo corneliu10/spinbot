@@ -66,8 +66,11 @@ export class HostReleaseService {
 
   constructor(options: HostReleaseOptions) {
     this.#options = options;
+    // Spinbot: no release checks against OpenBot's GitHub releases unless SPINBOT_RELEASE_CHECKS=1.
     this.#target =
-      options.packaged && isValidSemver(options.currentVersion) ? releaseTarget(options.platform, options.arch) : null;
+      process.env.SPINBOT_RELEASE_CHECKS === "1" && options.packaged && isValidSemver(options.currentVersion)
+        ? releaseTarget(options.platform, options.arch)
+        : null;
   }
 
   snapshot(): HostReleaseStatus {

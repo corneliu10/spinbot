@@ -9,10 +9,10 @@ export const messages = {
   "mobile.server.drawer.leaveFailed": "No se pudo salir de {name}",
   "mobile.server.drawer.removeFailed": "No se pudo eliminar {name}",
   "mobile.server.drawer.deleteFailed": "No se pudo eliminar {name}",
-  "mobile.server.drawer.actionFailed": "Spinbot no pudo completar esta acción. Inténtalo de nuevo.",
+  "mobile.server.drawer.actionFailed": "OpenBot no pudo completar esta acción. Inténtalo de nuevo.",
   "mobile.server.drawer.moveUp": "Subir",
   "mobile.server.drawer.moveDown": "Bajar",
-  "mobile.server.drawer.orderHint": "Spinbot se abre en el primer servidor. El orden se guarda en este dispositivo.",
+  "mobile.server.drawer.orderHint": "OpenBot se abre en el primer servidor. El orden se guarda en este dispositivo.",
   "mobile.server.drawer.title": "Servidores",
   "mobile.server.drawer.serverSettings": "Ajustes del servidor",
   "mobile.server.drawer.serverListHint": "Muestra u oculta los servidores",
@@ -33,8 +33,8 @@ export const messages = {
   "mobile.server.drawer.close": "Cerrar el panel de servidores",
   "mobile.server.invite.noExpiry": "{role} · Sin caducidad",
   "mobile.server.invite.expires": "{role} · Caduca el {date}",
-  "mobile.server.invite.loadFailed": "Spinbot no pudo cargar esta invitación.",
-  "mobile.server.invite.joinFailed": "Spinbot no pudo unirse a este servidor.",
+  "mobile.server.invite.loadFailed": "OpenBot no pudo cargar esta invitación.",
+  "mobile.server.invite.joinFailed": "OpenBot no pudo unirse a este servidor.",
   "mobile.server.invite.checking": "Comprobando la invitación…",
   "mobile.server.invite.unavailable": "Invitación no disponible",
   "mobile.server.invite.verifying": "Verificando la identidad del servidor.",
@@ -77,7 +77,7 @@ export const messages = {
   "mobile.server.local.optionHint": "En el ordenador que ejecuta {name}, con sus propios agentes, chats y archivos.",
   "mobile.server.local.title": "Nuevo servidor",
   "mobile.server.local.description":
-    "El servidor se ejecuta en el ordenador que ejecuta {name}, con sus propios agentes, chats y archivos. Está disponible mientras Spinbot se ejecuta en ese ordenador.",
+    "El servidor se ejecuta en el ordenador que ejecuta {name}, con sus propios agentes, chats y archivos. Está disponible mientras OpenBot se ejecuta en ese ordenador.",
   "mobile.server.local.nameLabel": "Nombre del servidor",
   "mobile.server.local.nameTooShort": "Usa al menos {limit} caracteres.",
   "mobile.server.local.create": "Crear",
@@ -89,22 +89,22 @@ export const messages = {
   "mobile.server.local.createdOn": "{name} se ejecuta en el mismo ordenador que {computer}.",
   "mobile.server.local.waiting": "Esperando a que {name} esté en línea…",
   "mobile.server.local.notPublished":
-    "{name} se ejecuta, pero este teléfono aún no puede abrirlo. Comprueba que Spinbot en el ordenador que ejecuta {computer} tiene la sesión iniciada y está en línea.",
+    "{name} se ejecuta, pero este teléfono aún no puede abrirlo. Comprueba que OpenBot en el ordenador que ejecuta {computer} tiene la sesión iniciada y está en línea.",
   "mobile.server.local.open": "Abrir servidor",
   "mobile.server.local.ownerOnly": "Solo el propietario puede crear un servidor en este ordenador.",
-  "mobile.server.local.unsupported": "Actualiza Spinbot en este ordenador para crear un servidor aquí.",
+  "mobile.server.local.unsupported": "Actualiza OpenBot en este ordenador para crear un servidor aquí.",
   "mobile.server.local.deleteOffline":
-    "Solo el ordenador de este servidor puede eliminarlo. Abre Spinbot en ese ordenador e inténtalo de nuevo.",
+    "Solo el ordenador de este servidor puede eliminarlo. Abre OpenBot en ese ordenador e inténtalo de nuevo.",
   "mobile.server.hosted.intro.title": "Tus agentes, siempre activos",
   "mobile.server.hosted.intro.description":
-    "Un servidor en la nube ejecuta tus agentes y rutinas cuando tu equipo está apagado. Spinbot lo configura y lo mantiene en marcha.",
+    "Un servidor en la nube ejecuta tus agentes y rutinas cuando tu equipo está apagado. OpenBot lo configura y lo mantiene en marcha.",
   "mobile.server.hosted.planFacts": "{members} · {storage} · {sites} · {speed}",
   "mobile.server.hosted.computer.title": "En tu equipo",
   "mobile.server.hosted.computer.add": "Añadir un servidor en la nube",
   "mobile.server.hosted.computer.addHint":
-    "En Spinbot, abre Ajustes → Servidores alojados y selecciona Añadir servidor.",
+    "En OpenBot, abre Ajustes → Servidores alojados y selecciona Añadir servidor.",
   "mobile.server.hosted.computer.change": "Cambiar de plan",
-  "mobile.server.hosted.computer.changeHint": "En Spinbot, abre Ajustes → Facturación.",
+  "mobile.server.hosted.computer.changeHint": "En OpenBot, abre Ajustes → Facturación.",
   "mobile.server.hosted.yourServers": "Tus servidores",
   "mobile.server.hosted.plans": "Planes",
   "mobile.server.hosted.currentPlan": "Tu plan",
@@ -121,7 +121,7 @@ export const messages = {
   "mobile.server.hosted.paymentTitle": "Esperando el pago",
   "mobile.server.hosted.paymentDescription": "La configuración empieza cuando se confirma el pago.",
   "mobile.server.hosted.progressTitle": "Configurando {name}",
-  "mobile.server.hosted.progressDescription": "Spinbot prepara una máquina privada para ti.",
+  "mobile.server.hosted.progressDescription": "OpenBot prepara una máquina privada para ti.",
   "mobile.server.hosted.closeHint":
     "Puedes cerrar este panel. La configuración continúa y el servidor aparecerá en tu lista cuando esté listo.",
   "mobile.server.hosted.readyTitle": "{name} está listo",
@@ -130,21 +130,21 @@ export const messages = {
   "mobile.server.hosted.open": "Abrir servidor",
   "mobile.server.hosted.failedTitle": "El servidor no pudo iniciarse",
   "mobile.server.hosted.failedDescription":
-    "Inténtalo de nuevo. Si vuelve a fallar, elimina el servidor en Ajustes en Spinbot en tu equipo.",
+    "Inténtalo de nuevo. Si vuelve a fallar, elimina el servidor en Ajustes en OpenBot en tu equipo.",
   "mobile.server.hosted.retrying": "Iniciando…",
   "mobile.server.hosted.expiredTitle": "La página de pago ha caducado",
   "mobile.server.hosted.expiredDescription": "El servidor no se pagó, así que se eliminó.",
   "mobile.server.hosted.step.payment": "Confirmar el pago",
   "mobile.server.hosted.step.create": "Crear la máquina",
-  "mobile.server.hosted.step.start": "Iniciar Spinbot",
+  "mobile.server.hosted.step.start": "Iniciar OpenBot",
   "mobile.server.hosted.step.connect": "Conectar con tu cuenta",
   "mobile.server.hosted.detail.payment": "Esperando a Stripe",
   "mobile.server.hosted.detail.reserve": "Reservando una máquina privada",
-  "mobile.server.hosted.detail.copy": "Copiando Spinbot a la máquina",
+  "mobile.server.hosted.detail.copy": "Copiando OpenBot a la máquina",
   "mobile.server.hosted.detail.key": "Añadiendo una clave de inicio de sesión de un solo uso",
   "mobile.server.hosted.detail.boot": "Encendiendo la máquina",
-  "mobile.server.hosted.detail.app": "Iniciando Spinbot",
-  "mobile.server.hosted.detail.wait": "Esperando la respuesta de Spinbot",
+  "mobile.server.hosted.detail.app": "Iniciando OpenBot",
+  "mobile.server.hosted.detail.wait": "Esperando la respuesta de OpenBot",
   "mobile.server.hosted.detail.signIn": "Iniciando sesión con tu identidad",
   "mobile.server.hosted.detail.publish": "Añadiendo el servidor a tu cuenta",
   "mobile.server.hosted.detail.check": "Comprobando la conexión",
@@ -152,7 +152,7 @@ export const messages = {
   "mobile.server.hosted.stepActive": "en curso",
   "mobile.server.hosted.stepPending": "sin iniciar",
   "mobile.server.hosted.stepFailed": "fallido",
-  "mobile.server.scan.notInvitation": "Este código QR no es una invitación de Spinbot.",
+  "mobile.server.scan.notInvitation": "Este código QR no es una invitación de OpenBot.",
   "mobile.server.scan.title": "Escanear invitación",
   "mobile.server.role.owner": "propietario",
   "mobile.server.role.admin": "administrador",
@@ -192,7 +192,7 @@ export const messages = {
   "mobile.server.routines.status.paused": "En pausa",
   "mobile.server.routines.status.failed": "Fallida",
   "mobile.server.routines.status.completed": "Completada",
-  "mobile.server.threads.unsupported": "Este host no admite hilos. Actualiza Spinbot en el host.",
+  "mobile.server.threads.unsupported": "Este host no admite hilos. Actualiza OpenBot en el host.",
   "mobile.server.threads.ask": "¿Qué quieres que se haga?",
   "mobile.server.threads.chooseAgent": "Iniciar el hilo con",
   "mobile.server.threads.agentLabel": "Iniciar el hilo con {name}",
@@ -267,7 +267,7 @@ export const messages = {
   "mobile.server.settings.remove": "Eliminar servidor",
   "mobile.server.settings.deleteTitle": "¿Eliminar {name}?",
   "mobile.server.settings.deleteBody":
-    "Spinbot detiene el servidor en su ordenador y mueve sus agentes, chats y archivos a la papelera de ese ordenador. El servidor sale de la lista de servidores en todos tus dispositivos.",
+    "OpenBot detiene el servidor en su ordenador y mueve sus agentes, chats y archivos a la papelera de ese ordenador. El servidor sale de la lista de servidores en todos tus dispositivos.",
   "mobile.server.settings.delete": "Eliminar servidor",
   "mobile.server.settings.name": "Nombre del servidor",
   "mobile.server.settings.nameLength": "Usa entre {min} y {max} caracteres.",
@@ -281,7 +281,7 @@ export const messages = {
   "mobile.server.settings.identityNotAllowed":
     "Solo un propietario o un administrador puede cambiar el nombre y el logotipo del servidor.",
   "mobile.server.settings.identityUnsupported":
-    "Actualiza Spinbot en este servidor para cambiar aquí su nombre y logotipo.",
+    "Actualiza OpenBot en este servidor para cambiar aquí su nombre y logotipo.",
   "mobile.server.settings.identityOffline": "Conéctate a este servidor para cambiar su nombre y logotipo.",
   "mobile.server.route.cropLogo": "Recortar logotipo",
   "mobile.server.members.remove": "Eliminar miembro",
@@ -336,7 +336,7 @@ export const messages = {
   "mobile.server.storage.category.caches": "Archivos del servidor en caché",
   "mobile.server.storage.category.runtimes": "Entornos de ejecución de proveedores",
   "mobile.server.storage.category.logs": "Registros",
-  "mobile.server.storage.total": "Spinbot en {name}",
+  "mobile.server.storage.total": "OpenBot en {name}",
   "mobile.server.storage.used": "Usado",
   "mobile.server.storage.byType": "Almacenamiento por tipo",
   "mobile.server.storage.free": "{size} libres en este disco",
@@ -358,10 +358,10 @@ export const messages = {
   "mobile.server.storage.clearTitle.caches": "¿Borrar los archivos del servidor en caché?",
   "mobile.server.storage.clearTitle.logs": "¿Borrar los registros?",
   "mobile.server.storage.clearBody.caches":
-    "Copias de archivos del servidor. Spinbot los descarga de nuevo cuando los abres.",
+    "Copias de archivos del servidor. OpenBot los descarga de nuevo cuando los abres.",
   "mobile.server.storage.clearBody.logs": "Registros de diagnóstico. Los nuevos registros se inician de inmediato.",
   "mobile.server.storage.clearFailed": "No se pudieron borrar los datos",
-  "mobile.server.storage.clearFailedBody": "Spinbot no pudo borrar estos datos en el servidor.",
+  "mobile.server.storage.clearFailedBody": "OpenBot no pudo borrar estos datos en el servidor.",
   "mobile.server.storage.noFiles": "No hay archivos almacenados en este servidor.",
   "mobile.server.library.type.all": "Todos",
   "mobile.server.library.type.images": "Imágenes",
@@ -423,7 +423,7 @@ export const messages = {
   "mobile.server.settings.timezoneSaveFailed": "No se pudo guardar la zona horaria. Inténtalo de nuevo.",
   "mobile.server.settings.timezoneUnavailable":
     "Conéctate a este servidor como propietario o administrador para cambiar su zona horaria.",
-  "mobile.server.settings.timezoneUnsupported": "Actualiza Spinbot en este servidor para cambiar aquí su zona horaria.",
+  "mobile.server.settings.timezoneUnsupported": "Actualiza OpenBot en este servidor para cambiar aquí su zona horaria.",
   "mobile.server.settings.keySection": "Clave del servidor",
   "mobile.server.settings.keyChanged": "Último cambio",
   "mobile.server.settings.keyChange": "Cambiar clave",
@@ -441,21 +441,21 @@ export const messages = {
     "El servidor usa la clave nueva. Esta app pasa a ella cuando se vuelva a cargar la lista de servidores.",
   "mobile.server.settings.keyChangeFailed": "No se pudo cambiar la clave del servidor. Inténtalo de nuevo.",
   "mobile.server.settings.keyOwnerOnly": "Solo el propietario puede cambiar la clave del servidor.",
-  "mobile.server.settings.keyUnsupported": "Actualiza Spinbot en este servidor para cambiar su clave aquí.",
+  "mobile.server.settings.keyUnsupported": "Actualiza OpenBot en este servidor para cambiar su clave aquí.",
   "mobile.server.settings.memoryLimit": "Recuerdos por agente",
   "mobile.server.settings.memoryLimitDescription": "Cuántos recuerdos puede guardar cada agente en este servidor.",
   "mobile.server.settings.memoryLimitLoadFailed": "No se pudo cargar el límite de recuerdos de este servidor.",
   "mobile.server.settings.memoryLimitSaveFailed": "No se pudo guardar el límite de recuerdos. Inténtalo de nuevo.",
   "mobile.server.settings.memoryLimitUnsupported":
-    "Actualiza Spinbot en este servidor para cambiar aquí su límite de recuerdos.",
+    "Actualiza OpenBot en este servidor para cambiar aquí su límite de recuerdos.",
   "mobile.server.route.browserProfiles": "Perfiles del navegador",
   "mobile.server.browserProfiles.unavailable":
     "Solo el propietario o un administrador de un servidor en línea puede gestionar sus perfiles del navegador.",
   "mobile.server.browserProfiles.unsupported":
-    "Actualiza Spinbot en este servidor para gestionar sus perfiles del navegador aquí.",
+    "Actualiza OpenBot en este servidor para gestionar sus perfiles del navegador aquí.",
   "mobile.server.browserProfiles.loading": "Cargando perfiles del navegador…",
-  "mobile.server.browserProfiles.loadFailed": "Spinbot no pudo cargar los perfiles del navegador.",
-  "mobile.server.browserProfiles.saveFailed": "Spinbot no pudo cambiar el perfil del navegador.",
+  "mobile.server.browserProfiles.loadFailed": "OpenBot no pudo cargar los perfiles del navegador.",
+  "mobile.server.browserProfiles.saveFailed": "OpenBot no pudo cambiar el perfil del navegador.",
   "mobile.server.browserProfiles.description":
     "Cada perfil guarda sus propios inicios de sesión, cookies y datos de sitios en el ordenador que ejecuta el servidor. Los agentes que usan un mismo perfil comparten sus inicios de sesión.",
   "mobile.server.browserProfiles.shared": "Compartido",
@@ -488,13 +488,13 @@ export const messages = {
   "mobile.server.browserProfiles.deleteBody":
     "Esto elimina los inicios de sesión, las cookies y los datos de sitios del perfil. Sus pestañas abiertas se cerrarán.",
   "mobile.server.browserProfiles.deleteAgents": "Estos agentes pasan al perfil compartido: {agents}.",
-  "mobile.server.browserProxies.unsupported": "Actualiza Spinbot en este servidor para gestionar sus proxies aquí.",
+  "mobile.server.browserProxies.unsupported": "Actualiza OpenBot en este servidor para gestionar sus proxies aquí.",
   "mobile.server.browserProxies.loading": "Cargando proxies…",
-  "mobile.server.browserProxies.loadFailed": "Spinbot no pudo cargar los proxies.",
-  "mobile.server.browserProxies.saveFailed": "Spinbot no pudo cambiar el proxy.",
+  "mobile.server.browserProxies.loadFailed": "OpenBot no pudo cargar los proxies.",
+  "mobile.server.browserProxies.saveFailed": "OpenBot no pudo cambiar el proxy.",
   "mobile.server.browserProxies.title": "Proxies",
   "mobile.server.browserProxies.sectionHint":
-    "Un perfil con proxy abre sus páginas a través de ese proxy. Un miembro comparte un ordenador desde la app de escritorio de Spinbot.",
+    "Un perfil con proxy abre sus páginas a través de ese proxy. Un miembro comparte un ordenador desde la app de escritorio de OpenBot.",
   "mobile.server.browserProxies.limit": "Un servidor puede tener como máximo {limit} proxies.",
   "mobile.server.browserProxies.add": "Añadir proxy",
   "mobile.server.browserProxies.new": "Nuevo proxy",
@@ -522,7 +522,7 @@ export const messages = {
   "mobile.server.browserProxies.addressInvalid":
     "Esto no es una dirección de proxy. Usa socks5://host:1080, http://user:password@host:3128 o host:port:user:password.",
   "mobile.server.browserProxies.computerHint":
-    "Las páginas de los perfiles que usan este ordenador salen por su conexión a internet mientras su miembro lo comparte desde la app de escritorio de Spinbot. El ordenador solo abre direcciones públicas de internet.",
+    "Las páginas de los perfiles que usan este ordenador salen por su conexión a internet mientras su miembro lo comparte desde la app de escritorio de OpenBot. El ordenador solo abre direcciones públicas de internet.",
   "mobile.server.browserProxies.profilesTitle": "Perfiles",
   "mobile.server.browserProxies.delete": "Eliminar proxy",
   "mobile.server.browserProxies.deleteHint": "Eliminar pasa los perfiles de este proxy a «Automático».",
@@ -539,11 +539,11 @@ export const messages = {
   "mobile.server.browserProxies.change": "Cambiar proxy",
   "mobile.server.browserProxies.choiceHint":
     "«Automático» usa los ajustes de proxy del equipo que ejecuta el servidor. Un cambio cierra las pestañas abiertas del perfil.",
-  "mobile.server.browserProxies.shareHint": "Para usar tu ordenador, compártelo en la app de escritorio de Spinbot.",
+  "mobile.server.browserProxies.shareHint": "Para usar tu ordenador, compártelo en la app de escritorio de OpenBot.",
   "mobile.server.route.connectors": "Conectores",
   "mobile.server.connectors.unavailable":
     "Conéctate a este servidor como propietario o administrador para gestionar sus conectores.",
-  "mobile.server.connectors.unsupported": "Actualiza Spinbot en este servidor para gestionar sus conectores aquí.",
+  "mobile.server.connectors.unsupported": "Actualiza OpenBot en este servidor para gestionar sus conectores aquí.",
   "mobile.server.connectors.loading": "Cargando conectores…",
   "mobile.server.connectors.localOnly": "Solo en la app de escritorio",
   "mobile.server.connectors.statusConnected": "Conectado",
@@ -567,7 +567,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.description":
     "Rellena los inicios de sesión del navegador en {host} desde Bitwarden o Vaultwarden.",
   "mobile.server.connectors.bitwarden.howItWorks":
-    "{host} inicia sesión con su propia CLI de Bitwarden. En tu caja fuerte, crea una carpeta llamada Shared with Spinbot y pon en ella solo los inicios de sesión que los agentes pueden usar. En la caja fuerte web, abre Configuración › Seguridad › Claves y muestra tu clave de API.",
+    "{host} inicia sesión con su propia CLI de Bitwarden. En tu caja fuerte, crea una carpeta llamada Shared with OpenBot y pon en ella solo los inicios de sesión que los agentes pueden usar. En la caja fuerte web, abre Configuración › Seguridad › Claves y muestra tu clave de API.",
   "mobile.server.connectors.bitwarden.serverUrl": "Dirección del servidor",
   "mobile.server.connectors.bitwarden.serverUrlHint":
     "Bitwarden, o la dirección de tu servidor Vaultwarden. {host} debe llegar a ella por HTTPS.",
@@ -581,7 +581,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.connectingBody":
     "{host} está iniciando sesión en Bitwarden. El primer inicio de sesión puede tardar unos minutos.",
   "mobile.server.connectors.bitwarden.folderTitle": "Carpeta compartida",
-  "mobile.server.connectors.bitwarden.folderName": "Shared with Spinbot",
+  "mobile.server.connectors.bitwarden.folderName": "Shared with OpenBot",
   "mobile.server.connectors.bitwarden.folderKind": "Carpeta en Bitwarden",
   "mobile.server.connectors.bitwarden.folderFooter":
     "Mueve un inicio de sesión a esta carpeta en Bitwarden para que los agentes puedan usarlo. Retíralo para impedir su uso.",
@@ -592,7 +592,7 @@ export const messages = {
   "mobile.server.connectors.github.title": "GitHub",
   "mobile.server.connectors.github.description":
     "Todos los agentes de {host} pueden usar tus repositorios, incidencias y solicitudes de incorporación de GitHub, además de gh y git.",
-  "mobile.server.connectors.github.unavailable": "Spinbot en este servidor no puede conectar GitHub.",
+  "mobile.server.connectors.github.unavailable": "OpenBot en este servidor no puede conectar GitHub.",
   "mobile.server.connectors.github.connect": "Conectar GitHub",
   "mobile.server.connectors.github.codeTitle": "Escribe este código en GitHub",
   "mobile.server.connectors.github.codeFooter":
@@ -602,12 +602,12 @@ export const messages = {
   "mobile.server.connectors.github.connectedAs": "Conectado como @{login}",
   "mobile.server.connectors.github.chooseRepositories": "Elegir repositorios",
   "mobile.server.connectors.github.repositoriesFooter":
-    "Los agentes solo pueden usar los repositorios donde está instalada la aplicación de GitHub de Spinbot.",
+    "Los agentes solo pueden usar los repositorios donde está instalada la aplicación de GitHub de OpenBot.",
   "mobile.server.connectors.github.repositoriesTitle": "Repositorios",
   "mobile.server.connectors.github.repositoriesLoading": "Leyendo los repositorios de GitHub",
-  "mobile.server.connectors.github.repositoriesFailed": "Spinbot no pudo leer los repositorios de GitHub.",
+  "mobile.server.connectors.github.repositoriesFailed": "OpenBot no pudo leer los repositorios de GitHub.",
   "mobile.server.connectors.github.noRepositories":
-    "La aplicación de GitHub de Spinbot aún no está instalada en ningún repositorio.",
+    "La aplicación de GitHub de OpenBot aún no está instalada en ningún repositorio.",
   "mobile.server.connectors.github.moreRepositories": {
     one: "Y {count} repositorio más",
     other: "Y {count} repositorios más",
@@ -621,12 +621,12 @@ export const messages = {
   "mobile.server.connectors.github.disconnect": "Desconectar GitHub",
   "mobile.server.connectors.github.disconnectTitle": "¿Desconectar GitHub?",
   "mobile.server.connectors.github.disconnectBody":
-    "Esto quita el inicio de sesión de @{login} de {host}, y todos los agentes pierden las herramientas de GitHub, gh y git. Después se abre GitHub, donde puedes revocar el acceso de Spinbot.",
+    "Esto quita el inicio de sesión de @{login} de {host}, y todos los agentes pierden las herramientas de GitHub, gh y git. Después se abre GitHub, donde puedes revocar el acceso de OpenBot.",
   "mobile.server.connectors.onePassword.title": "1Password",
   "mobile.server.connectors.onePassword.description":
-    "Comparte con Spinbot en {host} una bóveda exclusiva de 1Password mediante una cuenta de servicio, para que los agentes de {host} puedan iniciar sesión en sitios desde su navegador.",
+    "Comparte con OpenBot en {host} una bóveda exclusiva de 1Password mediante una cuenta de servicio, para que los agentes de {host} puedan iniciar sesión en sitios desde su navegador.",
   "mobile.server.connectors.onePassword.howItWorks":
-    "En 1Password.com, crea una cuenta de servicio que solo pueda leer la bóveda que compartes con Spinbot y pega aquí su token. {host} comprueba el token y lo guarda; este teléfono no. Los agentes nunca ven una contraseña.",
+    "En 1Password.com, crea una cuenta de servicio que solo pueda leer la bóveda que compartes con OpenBot y pega aquí su token. {host} comprueba el token y lo guarda; este teléfono no. Los agentes nunca ven una contraseña.",
   "mobile.server.connectors.onePassword.token": "Token de cuenta de servicio",
   "mobile.server.connectors.onePassword.tokenPlaceholder": "ops_…",
   "mobile.server.connectors.onePassword.connect": "Conectar 1Password",
@@ -646,9 +646,9 @@ export const messages = {
     "{host} olvida el token. La bóveda y la cuenta de servicio permanecen en 1Password; elimínalas allí si ya no las necesitas.",
   "mobile.server.connectors.protonPass.title": "Proton Pass",
   "mobile.server.connectors.protonPass.description":
-    "Comparte una bóveda de Proton Pass con Spinbot en {host} para que los agentes de {host} puedan iniciar sesión en sitios desde su navegador.",
+    "Comparte una bóveda de Proton Pass con OpenBot en {host} para que los agentes de {host} puedan iniciar sesión en sitios desde su navegador.",
   "mobile.server.connectors.protonPass.keyHelp":
-    "En Proton Pass, crea una clave de acceso que solo pueda leer la bóveda que compartes con Spinbot y pégala aquí. {host} guarda la clave; este teléfono no.",
+    "En Proton Pass, crea una clave de acceso que solo pueda leer la bóveda que compartes con OpenBot y pégala aquí. {host} guarda la clave; este teléfono no.",
   "mobile.server.connectors.protonPass.keyPlaceholder": "pst_…",
   "mobile.server.connectors.passwordManager.unavailable": "{name} no está disponible en este servidor.",
   "mobile.server.connectors.passwordManager.howItWorks":
@@ -693,14 +693,14 @@ export const messages = {
     "{host} elimina su clave de acceso. La bóveda y sus inicios de sesión permanecen en tu cuenta de {name}.",
   "mobile.server.connectors.slack.title": "Slack",
   "mobile.server.connectors.slack.description":
-    "Las personas mencionan a @Spinbot en Slack o le envían un mensaje directo. El Orquestador de Slack consulta al agente adecuado y responde.",
+    "Las personas mencionan a @OpenBot en Slack o le envían un mensaje directo. El Orquestador de Slack consulta al agente adecuado y responde.",
   "mobile.server.connectors.slack.attention": {
     one: "{count} espacio de trabajo requiere atención",
     other: "{count} espacios de trabajo requieren atención",
   },
   "mobile.server.connectors.slack.connect": "Conectar Slack",
   "mobile.server.connectors.slack.connectFooter":
-    "Slack se abre en un navegador. Selecciona el espacio de trabajo en la esquina superior derecha y después Permitir. Spinbot instala una aplicación llamada Spinbot, que se une a todos los canales públicos.",
+    "Slack se abre en un navegador. Selecciona el espacio de trabajo en la esquina superior derecha y después Permitir. OpenBot instala una aplicación llamada OpenBot, que se une a todos los canales públicos.",
   "mobile.server.connectors.slack.add": "Añadir espacio de trabajo",
   "mobile.server.connectors.slack.limit": {
     one: "Puedes conectar como máximo {count} espacio de trabajo.",
@@ -708,44 +708,44 @@ export const messages = {
   },
   "mobile.server.connectors.slack.workspaceTitle": "Espacio de trabajo",
   "mobile.server.connectors.slack.workspaceDescription":
-    "Las personas mencionan a @Spinbot o le envían un mensaje directo.",
+    "Las personas mencionan a @OpenBot o le envían un mensaje directo.",
   "mobile.server.connectors.slack.missingScopes":
-    "Spinbot no tiene estos permisos en Slack: {scopes}. Desconecta el espacio de trabajo y vuelve a conectarlo.",
-  "mobile.server.connectors.slack.retryAt": "Slack pidió a Spinbot que esperara. Lo intentará de nuevo a las {time}.",
+    "OpenBot no tiene estos permisos en Slack: {scopes}. Desconecta el espacio de trabajo y vuelve a conectarlo.",
+  "mobile.server.connectors.slack.retryAt": "Slack pidió a OpenBot que esperara. Lo intentará de nuevo a las {time}.",
   "mobile.server.connectors.slack.helpInvalidToken":
-    "Slack ya no acepta Spinbot en este espacio de trabajo. Puede que se haya desinstalado. Conecta el espacio de trabajo de nuevo.",
+    "Slack ya no acepta OpenBot en este espacio de trabajo. Puede que se haya desinstalado. Conecta el espacio de trabajo de nuevo.",
   "mobile.server.connectors.slack.helpSecretStorage":
-    "Spinbot no puede leer los tokens guardados en {host}. Desconecta el espacio de trabajo y vuelve a conectarlo.",
+    "OpenBot no puede leer los tokens guardados en {host}. Desconecta el espacio de trabajo y vuelve a conectarlo.",
   "mobile.server.connectors.slack.helpRelay":
-    "Spinbot en {host} no puede recibir eventos de Slack. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén Spinbot abierto.",
+    "OpenBot en {host} no puede recibir eventos de Slack. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén OpenBot abierto.",
   "mobile.server.connectors.slack.orchestratorTitle": "Orquestador de Slack",
   "mobile.server.connectors.slack.orchestratorDescription":
     "Este agente recibe todas las solicitudes de Slack. Responde por sí mismo a las breves, asigna el resto del trabajo al agente adecuado y publica la respuesta en el hilo.",
   "mobile.server.connectors.slack.orchestratorNone": "Añade el Orquestador de Slack o Slack no recibirá respuesta.",
   "mobile.server.connectors.slack.addAgent": "Añadir Orquestador de Slack",
   "mobile.server.connectors.slack.note":
-    "Spinbot se une automáticamente a todos los canales públicos y a los nuevos. Para un canal privado, invítalo: /invite @Spinbot.",
+    "OpenBot se une automáticamente a todos los canales públicos y a los nuevos. Para un canal privado, invítalo: /invite @OpenBot.",
   "mobile.server.connectors.slack.disconnectTitle": "¿Desconectar {workspace}?",
   "mobile.server.connectors.slack.disconnectBody":
-    "Spinbot deja de responder en {workspace} y elimina su token de Slack de {host}.",
+    "OpenBot deja de responder en {workspace} y elimina su token de Slack de {host}.",
   "mobile.server.connectors.slack.disconnectKept":
-    "Las conversaciones y el Orquestador de Slack permanecen en Spinbot.",
+    "Las conversaciones y el Orquestador de Slack permanecen en OpenBot.",
   "mobile.server.connectors.slack.disconnectDeleted":
-    "El Orquestador de Slack y sus conversaciones se eliminan de Spinbot.",
+    "El Orquestador de Slack y sus conversaciones se eliminan de OpenBot.",
   "mobile.server.connectors.slack.agentPromptTitle": "¿Añadir el Orquestador de Slack?",
   "mobile.server.connectors.slack.agentPromptBody":
-    "Este nuevo agente responde a todo lo que las personas envían a @Spinbot en {workspace}.",
+    "Este nuevo agente responde a todo lo que las personas envían a @OpenBot en {workspace}.",
   "mobile.server.connectors.slack.installFailed": "Slack no terminó la instalación. Inténtalo de nuevo.",
   "mobile.server.connectors.discord.title": "Discord",
   "mobile.server.connectors.discord.description":
-    "Las personas mencionan a @Spinbot en un canal de un servidor de Discord. El Orquestador de Discord consulta al agente adecuado y responde.",
+    "Las personas mencionan a @OpenBot en un canal de un servidor de Discord. El Orquestador de Discord consulta al agente adecuado y responde.",
   "mobile.server.connectors.discord.attention": {
     one: "{count} servidor de Discord requiere atención",
     other: "{count} servidores de Discord requieren atención",
   },
   "mobile.server.connectors.discord.connect": "Conectar Discord",
   "mobile.server.connectors.discord.connectFooter":
-    "Discord se abre en un navegador. Selecciona el servidor de Discord y después Autorizar. Spinbot añade un bot llamado Spinbot.",
+    "Discord se abre en un navegador. Selecciona el servidor de Discord y después Autorizar. OpenBot añade un bot llamado OpenBot.",
   "mobile.server.connectors.discord.add": "Añadir servidor de Discord",
   "mobile.server.connectors.discord.limit": {
     one: "Puedes conectar como máximo {count} servidor de Discord.",
@@ -753,38 +753,38 @@ export const messages = {
   },
   "mobile.server.connectors.discord.workspaceTitle": "Servidor de Discord",
   "mobile.server.connectors.discord.workspaceDescription":
-    "Menciona a @Spinbot en un canal. Responde a Spinbot para continuar.",
+    "Menciona a @OpenBot en un canal. Responde a OpenBot para continuar.",
   "mobile.server.connectors.discord.missingScopes":
-    "Spinbot no tiene estos permisos en Discord: {scopes}. Desconecta el servidor de Discord y vuelve a conectarlo.",
+    "OpenBot no tiene estos permisos en Discord: {scopes}. Desconecta el servidor de Discord y vuelve a conectarlo.",
   "mobile.server.connectors.discord.retryAt":
-    "Discord pidió a Spinbot que esperara. Lo intentará de nuevo a las {time}.",
+    "Discord pidió a OpenBot que esperara. Lo intentará de nuevo a las {time}.",
   "mobile.server.connectors.discord.helpInvalidToken":
-    "Discord ya no acepta Spinbot en este servidor de Discord. Puede que se haya eliminado. Conecta el servidor de Discord de nuevo.",
+    "Discord ya no acepta OpenBot en este servidor de Discord. Puede que se haya eliminado. Conecta el servidor de Discord de nuevo.",
   "mobile.server.connectors.discord.helpSecretStorage":
-    "Spinbot no puede leer los tokens guardados en {host}. Desconecta el servidor de Discord y vuelve a conectarlo.",
+    "OpenBot no puede leer los tokens guardados en {host}. Desconecta el servidor de Discord y vuelve a conectarlo.",
   "mobile.server.connectors.discord.helpRelay":
-    "Spinbot en {host} no puede recibir eventos de Discord. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén Spinbot abierto.",
+    "OpenBot en {host} no puede recibir eventos de Discord. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén OpenBot abierto.",
   "mobile.server.connectors.discord.orchestratorTitle": "Orquestador de Discord",
   "mobile.server.connectors.discord.orchestratorDescription":
     "Este agente recibe todas las solicitudes de Discord. Responde por sí mismo a las breves, asigna el resto del trabajo al agente adecuado y responde en el canal.",
   "mobile.server.connectors.discord.orchestratorNone":
     "Añade el Orquestador de Discord o Discord no recibirá respuesta.",
   "mobile.server.connectors.discord.addAgent": "Añadir Orquestador de Discord",
-  "mobile.server.connectors.discord.note": "Spinbot ve los canales que su rol puede ver.",
+  "mobile.server.connectors.discord.note": "OpenBot ve los canales que su rol puede ver.",
   "mobile.server.connectors.discord.disconnectTitle": "¿Desconectar {workspace}?",
   "mobile.server.connectors.discord.disconnectBody":
-    "Spinbot deja de responder en {workspace} y elimina la conexión de Discord de {host}.",
+    "OpenBot deja de responder en {workspace} y elimina la conexión de Discord de {host}.",
   "mobile.server.connectors.discord.disconnectKept":
-    "Las conversaciones y el Orquestador de Discord permanecen en Spinbot.",
+    "Las conversaciones y el Orquestador de Discord permanecen en OpenBot.",
   "mobile.server.connectors.discord.disconnectDeleted":
-    "El Orquestador de Discord y sus conversaciones se eliminan de Spinbot.",
+    "El Orquestador de Discord y sus conversaciones se eliminan de OpenBot.",
   "mobile.server.connectors.discord.agentPromptTitle": "¿Añadir el Orquestador de Discord?",
   "mobile.server.connectors.discord.agentPromptBody":
-    "Este nuevo agente responde a todo lo que las personas envían a @Spinbot en {workspace}.",
+    "Este nuevo agente responde a todo lo que las personas envían a @OpenBot en {workspace}.",
   "mobile.server.connectors.discord.installFailed": "Discord no terminó la autorización. Inténtalo de nuevo.",
   "mobile.server.connectors.telegram.title": "Telegram",
   "mobile.server.connectors.telegram.description":
-    "Añade el bot de Spinbot a un grupo de Telegram o abre un chat directo con él. El Orquestador de Telegram consulta al agente adecuado y responde.",
+    "Añade el bot de OpenBot a un grupo de Telegram o abre un chat directo con él. El Orquestador de Telegram consulta al agente adecuado y responde.",
   "mobile.server.connectors.telegram.attention": {
     one: "{count} chat requiere atención",
     other: "{count} chats requieren atención",
@@ -794,13 +794,13 @@ export const messages = {
   "mobile.server.connectors.telegram.groupDescription": "Las personas mencionan al bot o responden a sus mensajes.",
   "mobile.server.connectors.telegram.directDescription": "Cada mensaje de este chat va al Orquestador de Telegram.",
   "mobile.server.connectors.telegram.helpRemoved":
-    "El bot de Spinbot ya no está en este chat. Desconecta el chat y vuelve a añadir el bot.",
+    "El bot de OpenBot ya no está en este chat. Desconecta el chat y vuelve a añadir el bot.",
   "mobile.server.connectors.telegram.helpRelay":
-    "Spinbot en {host} no puede recibir mensajes de Telegram. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén Spinbot abierto.",
+    "OpenBot en {host} no puede recibir mensajes de Telegram. En {host}, inicia sesión, ponle un nombre al servidor en Ajustes del servidor y mantén OpenBot abierto.",
   "mobile.server.connectors.telegram.helpError":
-    "Spinbot no puede acceder a este chat. Vuelve a conectar o desconecta el chat.",
+    "OpenBot no puede acceder a este chat. Vuelve a conectar o desconecta el chat.",
   "mobile.server.connectors.telegram.retryAt":
-    "Telegram pidió a Spinbot que esperara. Lo intentará de nuevo a las {time}.",
+    "Telegram pidió a OpenBot que esperara. Lo intentará de nuevo a las {time}.",
   "mobile.server.connectors.telegram.linkTitle": "Vincular un chat",
   "mobile.server.connectors.telegram.linkAnother": "Vincular otro chat",
   "mobile.server.connectors.telegram.linkFooter":
@@ -813,17 +813,17 @@ export const messages = {
   "mobile.server.connectors.telegram.openDirectChat": "Abrir un chat directo",
   "mobile.server.connectors.telegram.orchestratorTitle": "Orquestador de Telegram",
   "mobile.server.connectors.telegram.orchestratorDescription":
-    "Este agente recibe los mensajes para Spinbot de todos tus chats de Telegram. Responde él mismo a los cortos, asigna el resto del trabajo al agente adecuado y publica la respuesta en el chat.",
+    "Este agente recibe los mensajes para OpenBot de todos tus chats de Telegram. Responde él mismo a los cortos, asigna el resto del trabajo al agente adecuado y publica la respuesta en el chat.",
   "mobile.server.connectors.telegram.orchestratorNone":
     "Añade el Orquestador de Telegram o Telegram no recibirá respuesta.",
   "mobile.server.connectors.telegram.addAgent": "Añadir Orquestador de Telegram",
   "mobile.server.connectors.telegram.disconnectTitle": "¿Desconectar {chat}?",
   "mobile.server.connectors.telegram.disconnectBody":
-    "El bot de Spinbot sale de {chat} y Spinbot deja de responder allí.",
+    "El bot de OpenBot sale de {chat} y OpenBot deja de responder allí.",
   "mobile.server.connectors.telegram.disconnectKept":
-    "Las conversaciones y el Orquestador de Telegram permanecen en Spinbot.",
+    "Las conversaciones y el Orquestador de Telegram permanecen en OpenBot.",
   "mobile.server.connectors.telegram.disconnectDeleted":
-    "Es el último chat, así que el Orquestador de Telegram y sus conversaciones se eliminan de Spinbot.",
+    "Es el último chat, así que el Orquestador de Telegram y sus conversaciones se eliminan de OpenBot.",
   "mobile.server.connectors.whatsapp.title": "WhatsApp",
   "mobile.server.connectors.whatsapp.description":
     "Vincula un número de WhatsApp a este servidor. El Orquestador de WhatsApp consulta al agente adecuado y responde.",
@@ -834,22 +834,22 @@ export const messages = {
   "mobile.server.connectors.whatsapp.numbersTitle": "Números",
   "mobile.server.connectors.whatsapp.linkNumber": "Vincular un número",
   "mobile.server.connectors.whatsapp.ownNumberNote":
-    "Tu chat «Envíate un mensaje» y las personas que permitas pueden contactar con Spinbot.",
+    "Tu chat «Envíate un mensaje» y las personas que permitas pueden contactar con OpenBot.",
   "mobile.server.connectors.whatsapp.dedicatedNote":
-    "Las personas que permitas pueden contactar con Spinbot. Las demás reciben un código para dártelo.",
+    "Las personas que permitas pueden contactar con OpenBot. Las demás reciben un código para dártelo.",
   "mobile.server.connectors.whatsapp.helpLoggedOut":
     "WhatsApp quitó este servidor de los dispositivos vinculados. Vuelve a vincular el número.",
   "mobile.server.connectors.whatsapp.helpError":
-    "Spinbot no puede acceder a WhatsApp en este número. Vuelve a conectar o desconecta el número.",
+    "OpenBot no puede acceder a WhatsApp en este número. Vuelve a conectar o desconecta el número.",
   "mobile.server.connectors.whatsapp.retryAt":
-    "WhatsApp pidió a Spinbot que esperara. Lo intentará de nuevo a las {time}.",
+    "WhatsApp pidió a OpenBot que esperara. Lo intentará de nuevo a las {time}.",
   "mobile.server.connectors.whatsapp.linkAgain": "Volver a vincular",
   "mobile.server.connectors.whatsapp.ownNumber": "Número personal",
   "mobile.server.connectors.whatsapp.ownNumberDescription":
-    "Solo pueden escribir tu chat «Envíate un mensaje» y las personas que permitas. Desactívalo para un número solo para Spinbot.",
+    "Solo pueden escribir tu chat «Envíate un mensaje» y las personas que permitas. Desactívalo para un número solo para OpenBot.",
   "mobile.server.connectors.whatsapp.orchestratorTitle": "Orquestador de WhatsApp",
   "mobile.server.connectors.whatsapp.orchestratorDescription":
-    "Este agente recibe los mensajes para Spinbot de todos tus números vinculados. Responde él mismo a los cortos, asigna el resto del trabajo al agente adecuado y responde en WhatsApp.",
+    "Este agente recibe los mensajes para OpenBot de todos tus números vinculados. Responde él mismo a los cortos, asigna el resto del trabajo al agente adecuado y responde en WhatsApp.",
   "mobile.server.connectors.whatsapp.orchestratorNone":
     "Añade el Orquestador de WhatsApp o WhatsApp no recibirá respuesta.",
   "mobile.server.connectors.whatsapp.addAgent": "Añadir el Orquestador de WhatsApp",
@@ -859,12 +859,12 @@ export const messages = {
   "mobile.server.connectors.whatsapp.linkDescription":
     "Selecciona el número y luego vincula este servidor desde WhatsApp en tu teléfono.",
   "mobile.server.connectors.whatsapp.codeOnly":
-    "En un teléfono, vincula con un código de vinculación. Para escanear un código QR, usa Spinbot en un ordenador.",
+    "En un teléfono, vincula con un código de vinculación. Para escanear un código QR, usa OpenBot en un ordenador.",
   "mobile.server.connectors.whatsapp.kindLabel": "Número",
   "mobile.server.connectors.whatsapp.kindPersonal": "Mi número personal",
   "mobile.server.connectors.whatsapp.kindPersonalDescription":
-    "Spinbot solo responde a tu chat «Envíate un mensaje» y a las personas que permitas.",
-  "mobile.server.connectors.whatsapp.kindDedicated": "Un número solo para Spinbot",
+    "OpenBot solo responde a tu chat «Envíate un mensaje» y a las personas que permitas.",
+  "mobile.server.connectors.whatsapp.kindDedicated": "Un número solo para OpenBot",
   "mobile.server.connectors.whatsapp.kindDedicatedDescription":
     "Las personas desconocidas reciben un código para dártelo. Tú las apruebas aquí.",
   "mobile.server.connectors.whatsapp.phoneLabel": "Número de teléfono",
@@ -886,20 +886,20 @@ export const messages = {
   "mobile.server.connectors.whatsapp.failedBusy":
     "Hay otra vinculación en curso. Espera a que termine y vuelve a intentarlo.",
   "mobile.server.connectors.whatsapp.failedUnavailable":
-    "Spinbot no puede acceder a WhatsApp. Comprueba la conexión a internet.",
+    "OpenBot no puede acceder a WhatsApp. Comprueba la conexión a internet.",
   "mobile.server.connectors.whatsapp.tryAgain": "Reintentar",
   "mobile.server.connectors.whatsapp.agentStepDescription":
-    "Este nuevo agente responde a los mensajes para Spinbot en {number} y en cada número que vincules más adelante.",
-  "mobile.server.connectors.whatsapp.doneTitle": "Spinbot está vinculado a {number}",
+    "Este nuevo agente responde a los mensajes para OpenBot en {number} y en cada número que vincules más adelante.",
+  "mobile.server.connectors.whatsapp.doneTitle": "OpenBot está vinculado a {number}",
   "mobile.server.connectors.whatsapp.done": "Listo",
   "mobile.server.connectors.whatsapp.disconnectTitle": "¿Desconectar {number}?",
   "mobile.server.connectors.whatsapp.disconnectBody":
-    "Spinbot cierra la sesión de WhatsApp en {number}. Si Spinbot estaba apagado, quita también el dispositivo en WhatsApp > Dispositivos vinculados.",
+    "OpenBot cierra la sesión de WhatsApp en {number}. Si OpenBot estaba apagado, quita también el dispositivo en WhatsApp > Dispositivos vinculados.",
   "mobile.server.connectors.whatsapp.disconnectEffect": "Nadie podrá contactar con tus agentes a través de {number}.",
   "mobile.server.connectors.whatsapp.removeEffectKept":
-    "Las conversaciones y el Orquestador de WhatsApp permanecen en Spinbot.",
+    "Las conversaciones y el Orquestador de WhatsApp permanecen en OpenBot.",
   "mobile.server.connectors.whatsapp.removeEffectDeleted":
-    "Es el último número, así que el Orquestador de WhatsApp y sus conversaciones se eliminan de Spinbot.",
+    "Es el último número, así que el Orquestador de WhatsApp y sus conversaciones se eliminan de OpenBot.",
   "mobile.server.connectors.whatsapp.keep": "Mantener vinculado",
   "mobile.server.connectors.whatsapp.sendersTitle": "Quién puede escribir a {number}",
   "mobile.server.connectors.whatsapp.sendersDescription":
@@ -922,7 +922,7 @@ export const messages = {
     "Las personas de este grupo pueden asignar trabajo a tus agentes.",
   "mobile.server.connectors.whatsapp.groupSearch": "Buscar grupos",
   "mobile.server.connectors.whatsapp.groupsLoading": "Leyendo los grupos…",
-  "mobile.server.connectors.whatsapp.groupsLoadFailed": "Spinbot no pudo leer los grupos",
+  "mobile.server.connectors.whatsapp.groupsLoadFailed": "OpenBot no pudo leer los grupos",
   "mobile.server.connectors.whatsapp.groupsEmpty": "Este número no está en ningún grupo.",
   "mobile.server.connectors.whatsapp.groupsNoMatch": "Ningún grupo tiene este nombre.",
   "mobile.server.connectors.whatsapp.groupAdded": "Añadido",
@@ -946,10 +946,10 @@ export const messages = {
   "mobile.server.providers.runtimesFailed": "No se pudieron cargar las descargas de este servidor.",
   "mobile.server.providers.unavailable":
     "Conéctate a este servidor como propietario o administrador para gestionar sus proveedores.",
-  "mobile.server.providers.unsupported": "Actualiza Spinbot en este servidor para gestionar aquí sus proveedores.",
+  "mobile.server.providers.unsupported": "Actualiza OpenBot en este servidor para gestionar aquí sus proveedores.",
   "mobile.server.providers.signInUnsupported":
     "Este servidor no puede iniciar sesión en este proveedor desde el teléfono.",
-  "mobile.server.providers.actionFailed": "Spinbot no pudo completar esta acción. Inténtalo de nuevo.",
+  "mobile.server.providers.actionFailed": "OpenBot no pudo completar esta acción. Inténtalo de nuevo.",
   "mobile.server.providers.openFailed": "No se pudo abrir la página de inicio de sesión.",
   "mobile.server.providers.copyFailed": "No se pudo copiar el código.",
   "mobile.server.providers.statusLabel": "Estado",
@@ -958,10 +958,10 @@ export const messages = {
   "mobile.server.providers.connect": "Conectar",
   "mobile.server.providers.reconnect": "Reconectar",
   "mobile.server.providers.connectHint":
-    "El servidor inicia el inicio de sesión. Luego Spinbot muestra los pasos y tú los completas en este teléfono.",
+    "El servidor inicia el inicio de sesión. Luego OpenBot muestra los pasos y tú los completas en este teléfono.",
   "mobile.server.providers.relayHint":
-    "Spinbot abre la página de inicio de sesión del proveedor en este teléfono. Si tienes que copiar algo de vuelta, Spinbot muestra antes los pasos.",
-  "mobile.server.providers.connectOnComputer": "Conecta este proveedor en Spinbot en un ordenador.",
+    "OpenBot abre la página de inicio de sesión del proveedor en este teléfono. Si tienes que copiar algo de vuelta, OpenBot muestra antes los pasos.",
+  "mobile.server.providers.connectOnComputer": "Conecta este proveedor en OpenBot en un ordenador.",
   "mobile.server.providers.signInTo": "Iniciar sesión en {name}",
   "mobile.server.providers.starting": "Iniciando sesión en el servidor…",
   "mobile.server.providers.openPage": "Abrir página de acceso",
@@ -972,15 +972,15 @@ export const messages = {
     "En ChatGPT en un ordenador, abre la configuración de seguridad y activa el inicio de sesión con código de dispositivo para Codex. En una cuenta de trabajo, lo activa el administrador del espacio de trabajo.",
   "mobile.server.providers.codeStepCopy": "Copia el código.",
   "mobile.server.providers.codeStepEnter": "Abre la página de inicio de sesión e introduce el código.",
-  "mobile.server.providers.codeStepReturn": "Vuelve a Spinbot. El inicio de sesión termina solo.",
+  "mobile.server.providers.codeStepReturn": "Vuelve a OpenBot. El inicio de sesión termina solo.",
   "mobile.server.providers.pasteStepSignIn": "Abre la página de inicio de sesión e inicia sesión.",
   "mobile.server.providers.pasteStepCopy": "Copia el código que muestra la página.",
-  "mobile.server.providers.pasteStepReturn": "Vuelve a Spinbot y pega el código abajo.",
+  "mobile.server.providers.pasteStepReturn": "Vuelve a OpenBot y pega el código abajo.",
   "mobile.server.providers.relayStepSignIn": "Abre la página de inicio de sesión e inicia sesión.",
   "mobile.server.providers.relayStepBlank": "La última página no carga. Es lo correcto.",
   "mobile.server.providers.relayStepCopy": "Toca la barra de direcciones y copia la dirección completa.",
-  "mobile.server.providers.relayStepReturn": "Vuelve a Spinbot y pega la dirección abajo.",
-  "mobile.server.providers.linkHint": "Inicia sesión en la página. Spinbot continúa solo.",
+  "mobile.server.providers.relayStepReturn": "Vuelve a OpenBot y pega la dirección abajo.",
+  "mobile.server.providers.linkHint": "Inicia sesión en la página. OpenBot continúa solo.",
   "mobile.server.providers.relayWaiting": "Esperando la página de acceso del servidor…",
   "mobile.server.providers.code": "Código de la página",
   "mobile.server.providers.codePlaceholder": "Pega el código aquí",
@@ -1063,7 +1063,7 @@ export const messages = {
   "mobile.server.providers.disconnect": "Desconectar",
   "mobile.server.providers.disconnectTitle": "¿Desconectar {name}?",
   "mobile.server.providers.disconnectBody":
-    "Spinbot cierra la sesión de {provider} en el servidor. Sus agentes esperan hasta que vuelvas a conectar {provider}.",
+    "OpenBot cierra la sesión de {provider} en el servidor. Sus agentes esperan hasta que vuelvas a conectar {provider}.",
   "mobile.server.providers.resetUsage": "Restablecer uso",
   "mobile.server.providers.resettingUsage": "Restableciendo…",
   "mobile.server.providers.resetUsageTitle": "¿Restablecer el uso de {name}?",
@@ -1081,7 +1081,7 @@ export const messages = {
   "mobile.server.providers.sectionRuntime": "Entorno de ejecución",
   "mobile.server.providers.updateTo": "Actualizar a {version}",
   "mobile.server.providers.versionInstalledByUser": "{version} · instalada por ti",
-  "mobile.server.providers.versionDownloaded": "{version} · descargada por Spinbot",
+  "mobile.server.providers.versionDownloaded": "{version} · descargada por OpenBot",
   "mobile.server.providers.keyFree": "Gratis",
   "mobile.server.providers.keyOptional": "Opcional. Una clave añade modelos de pago.",
   "mobile.server.providers.geminiKeyInUse":
@@ -1100,7 +1100,7 @@ export const messages = {
   "mobile.server.providers.connectFirst": "Primero conecta {name}.",
   "mobile.server.settings.mcp": "Servidores MCP",
   "mobile.server.settings.mcpCount": { one: "{count} servidor", other: "{count} servidores" },
-  "mobile.server.mcp.unsupported": "Actualiza Spinbot en este servidor para gestionar sus servidores MCP aquí.",
+  "mobile.server.mcp.unsupported": "Actualiza OpenBot en este servidor para gestionar sus servidores MCP aquí.",
   "mobile.server.mcp.unavailable":
     "Conéctate a este servidor como propietario o administrador para gestionar sus servidores MCP.",
   "mobile.server.mcp.description":
@@ -1119,7 +1119,7 @@ export const messages = {
   "mobile.server.mcp.addConfirm": "Añadir",
   "mobile.server.mcp.name": "Nombre",
   "mobile.server.mcp.namePlaceholder": "Nombre del servidor MCP",
-  "mobile.server.mcp.nameReserved": "Spinbot ya usa el nombre {name}.",
+  "mobile.server.mcp.nameReserved": "OpenBot ya usa el nombre {name}.",
   "mobile.server.mcp.transport": "Transporte",
   "mobile.server.mcp.stdio": "Comando (STDIO)",
   "mobile.server.mcp.http": "URL (HTTP)",
@@ -1130,12 +1130,12 @@ export const messages = {
   "mobile.server.mcp.command": "Comando",
   "mobile.server.mcp.commandHint": "Solo el programa. Pon cada palabra que sigue en Argumentos.",
   "mobile.server.mcp.arguments": "Argumentos",
-  "mobile.server.mcp.argumentsHint": "Spinbot da cada argumento al programa como una palabra.",
+  "mobile.server.mcp.argumentsHint": "OpenBot da cada argumento al programa como una palabra.",
   "mobile.server.mcp.addArgument": "Añadir argumento",
   "mobile.server.mcp.argument": "Argumento {position}",
   "mobile.server.mcp.removeArgument": "Quitar argumento {position}",
   "mobile.server.mcp.environment": "Variables de entorno",
-  "mobile.server.mcp.environmentHint": "Spinbot da estas variables al servidor MCP cuando se inicia.",
+  "mobile.server.mcp.environmentHint": "OpenBot da estas variables al servidor MCP cuando se inicia.",
   "mobile.server.mcp.addVariable": "Añadir variable",
   "mobile.server.mcp.variableKey": "Nombre de la variable {position}",
   "mobile.server.mcp.variableValue": "Valor de la variable {position}",
@@ -1151,7 +1151,7 @@ export const messages = {
   "mobile.server.mcp.url": "URL del servidor",
   "mobile.server.mcp.urlInvalid": "Escribe una dirección http o https.",
   "mobile.server.mcp.headers": "Encabezados",
-  "mobile.server.mcp.headersHint": "Spinbot envía estos encabezados con cada solicitud.",
+  "mobile.server.mcp.headersHint": "OpenBot envía estos encabezados con cada solicitud.",
   "mobile.server.mcp.addHeader": "Añadir encabezado",
   "mobile.server.mcp.headerName": "Nombre del encabezado {position}",
   "mobile.server.mcp.headerValue": "Valor del encabezado {position}",
@@ -1168,7 +1168,7 @@ export const messages = {
   "mobile.server.mcp.testFailed": "El servidor MCP no respondió.",
   "mobile.server.mcp.connected": { one: "Conectado · {count} herramienta", other: "Conectado · {count} herramientas" },
   "mobile.server.mcp.signInOnComputer":
-    "Este servidor MCP pide iniciar sesión. Inicia sesión desde Spinbot en un ordenador y vuelve a probar.",
+    "Este servidor MCP pide iniciar sesión. Inicia sesión desde OpenBot en un ordenador y vuelve a probar.",
   "mobile.server.mcp.signedInDescription": "{server} tiene una sesión iniciada en este servidor MCP.",
   "mobile.server.mcp.signOut": "Cerrar sesión",
   "mobile.server.mcp.saveFailed": "No se pudo guardar el cambio. Inténtalo de nuevo.",
@@ -1206,8 +1206,8 @@ export const messages = {
   "mobile.server.settings.updates": "Actualizaciones",
   "mobile.server.settings.updateAvailable": "Actualización disponible",
   "mobile.server.route.updates": "Actualizaciones",
-  "mobile.server.update.hostTitle": "Spinbot en {name}",
-  "mobile.server.update.version": "Spinbot {version}",
+  "mobile.server.update.hostTitle": "OpenBot en {name}",
+  "mobile.server.update.version": "OpenBot {version}",
   "mobile.server.update.status.idle": "Busca actualizaciones para encontrar la versión más reciente.",
   "mobile.server.update.status.checking": "Buscando actualizaciones…",
   "mobile.server.update.status.available": "{version} está disponible.",
@@ -1215,28 +1215,28 @@ export const messages = {
   "mobile.server.update.status.downloadingUnknown": "Descargando {version}…",
   "mobile.server.update.status.ready": "{version} se ha descargado.",
   "mobile.server.update.status.installing": "{name} se está reiniciando para instalar la actualización.",
-  "mobile.server.update.status.upToDate": "Spinbot está actualizado en {name}.",
+  "mobile.server.update.status.upToDate": "OpenBot está actualizado en {name}.",
   "mobile.server.update.status.checkFailed": "{name} no pudo buscar actualizaciones. Inténtalo de nuevo.",
   "mobile.server.update.status.downloadFailed": "{name} no pudo descargar la actualización. Inténtalo de nuevo.",
   "mobile.server.update.status.installFailed":
-    "{name} no pudo instalar la actualización. Asegúrate de que ningún otro usuario de ese equipo esté ejecutando Spinbot y vuelve a intentarlo.",
+    "{name} no pudo instalar la actualización. Asegúrate de que ningún otro usuario de ese equipo esté ejecutando OpenBot y vuelve a intentarlo.",
   "mobile.server.update.releaseCheckFailed":
     "{name} no pudo leer la fuente de versiones. Comprueba la conexión de red del host y vuelve a intentarlo.",
   "mobile.server.update.releaseUnavailable":
     "Esta versión no puede buscar nuevas versiones. Pide al administrador del host que busque una versión compatible.",
   "mobile.server.update.externalTitle": "El host controla la instalación",
   "mobile.server.update.path.hostManager":
-    "Spinbot Host Manager instala las actualizaciones cuando todos los usuarios están inactivos. Si una actualización no comienza, pide al administrador del host que compruebe el estado de Host Manager.",
+    "OpenBot Host Manager instala las actualizaciones cuando todos los usuarios están inactivos. Si una actualización no comienza, pide al administrador del host que compruebe el estado de Host Manager.",
   "mobile.server.update.path.hosted":
     "El servicio alojado descarga actualizaciones en segundo plano. Una actualización descargada se inicia cuando el servidor vuelve a iniciarse. Espera a que termine el trabajo activo antes de detener y reanudar el servidor. Si continúa con una versión antigua, contacta con el administrador del host.",
   "mobile.server.update.path.system":
-    "En el host, ejecuta sudo openbot update para instalar la versión más reciente. Este comando detiene Spinbot. Espera primero a que termine el trabajo activo. Las descargas automáticas se instalan en el siguiente arranque.",
+    "En el host, ejecuta sudo openbot update para instalar la versión más reciente. Este comando detiene OpenBot. Espera primero a que termine el trabajo activo. Las descargas automáticas se instalan en el siguiente arranque.",
   "mobile.server.update.path.container":
-    "En el host de Docker, descarga la nueva imagen de Spinbot y vuelve a crear el contenedor con los mismos volúmenes de datos. Espera primero a que termine el trabajo activo. Conserva los volúmenes existentes para preservar tus datos.",
+    "En el host de Docker, descarga la nueva imagen de OpenBot y vuelve a crear el contenedor con los mismos volúmenes de datos. Espera primero a que termine el trabajo activo. Conserva los volúmenes existentes para preservar tus datos.",
   "mobile.server.update.path.manual":
-    "Esta instalación no puede reemplazarse a sí misma. Pide al administrador del host que instale la versión compatible de github.com/nightly-labs/openbot/releases. Conserva los datos existentes de Spinbot.",
+    "Esta instalación no puede reemplazarse a sí misma. Pide al administrador del host que instale la versión compatible de github.com/nightly-labs/openbot/releases. Conserva los datos existentes de OpenBot.",
   "mobile.server.update.path.unavailable":
-    "Esta es una versión de desarrollo. Usa una versión instalada de Spinbot para buscar actualizaciones.",
+    "Esta es una versión de desarrollo. Usa una versión instalada de OpenBot para buscar actualizaciones.",
   "mobile.server.update.check": "Buscar actualizaciones",
   "mobile.server.update.start": "Actualizar sin actividad",
   "mobile.server.update.restartNow": "Reiniciar ahora",
@@ -1246,27 +1246,27 @@ export const messages = {
   "mobile.server.update.requestedBy": "{member} solicitó esta actualización.",
   "mobile.server.update.automatic": "{name} instala las actualizaciones automáticamente.",
   "mobile.server.update.autoDownloadTitle": "Descargar actualizaciones automáticamente",
-  "mobile.server.update.autoDownloadDescription": "{name} descarga cada nueva versión de Spinbot cuando se publica.",
+  "mobile.server.update.autoDownloadDescription": "{name} descarga cada nueva versión de OpenBot cuando se publica.",
   "mobile.server.update.autoInstallTitle": "Instalar actualizaciones automáticamente",
   "mobile.server.update.autoInstallDescription":
     "{name} se reinicia con una actualización descargada cuando sus agentes están inactivos. Los miembros se desconectan brevemente y vuelven a conectarse automáticamente.",
   "mobile.server.update.waitingFor": "Esperando {reasons}.",
   "mobile.server.update.disabledTitle": "Las actualizaciones remotas están desactivadas",
   "mobile.server.update.disabledDescription":
-    "El usuario de {name} desactivó las actualizaciones de los miembros del servidor. Pídele que actualice Spinbot o que active el ajuste.",
+    "El usuario de {name} desactivó las actualizaciones de los miembros del servidor. Pídele que actualice OpenBot o que active el ajuste.",
   "mobile.server.update.managedTitle": "Un Host Manager controla las actualizaciones",
   "mobile.server.update.managedDescription":
-    "Spinbot Host Manager actualiza {name}. Contacta con el administrador del host.",
+    "OpenBot Host Manager actualiza {name}. Contacta con el administrador del host.",
   "mobile.server.update.unsupportedTitle": "{name} no puede actualizarse por sí mismo",
   "mobile.server.update.unsupportedDescription":
-    "Esta versión de Spinbot no tiene actualizador. Instala una nueva versión en {name}.",
+    "Esta versión de OpenBot no tiene actualizador. Instala una nueva versión en {name}.",
   "mobile.server.update.restarting": "Reiniciando…",
   "mobile.server.update.loadFailed": "No se cargó el estado de actualización de {name}.",
-  "mobile.server.update.dialog.offerTitle": "Actualizar {name} a Spinbot {version}",
+  "mobile.server.update.dialog.offerTitle": "Actualizar {name} a OpenBot {version}",
   "mobile.server.update.dialog.offerDescription":
-    "{name} usa Spinbot {current}. Primero descarga la actualización y luego se reinicia.",
+    "{name} usa OpenBot {current}. Primero descarga la actualización y luego se reinicia.",
   "mobile.server.update.dialog.offerReadyDescription":
-    "{name} usa Spinbot {current}. La actualización está descargada. {name} se reinicia para instalarla.",
+    "{name} usa OpenBot {current}. La actualización está descargada. {name} se reinicia para instalarla.",
   "mobile.server.update.dialog.waitIdleDescription":
     "El reinicio espera a que terminen los turnos de agente y las ejecuciones de rutinas.",
   "mobile.server.update.dialog.updateNow": "Actualizar ahora",
@@ -1282,10 +1282,10 @@ export const messages = {
   "mobile.server.update.reason.fileTransfer": "una transferencia de archivos",
   "mobile.server.update.reason.browserControl": "control del navegador por un agente",
   "mobile.server.update.reason.updateOperation": "otro paso de actualización",
-  "mobile.server.update.reason.initialization": "el inicio de Spinbot",
+  "mobile.server.update.reason.initialization": "el inicio de OpenBot",
   "mobile.server.update.reason.other": "otro trabajo",
   "mobile.server.update.actionFailed": "La acción del servidor falló.",
-  "mobile.server.update.unavailable": "Conéctate a este servidor para ver sus actualizaciones de Spinbot.",
+  "mobile.server.update.unavailable": "Conéctate a este servidor para ver sus actualizaciones de OpenBot.",
   "mobile.server.update.loading": "Cargando actualizaciones…",
   "mobile.server.route.sites": "Sitios",
   "mobile.server.settings.sites": "Sitios",
@@ -1307,13 +1307,13 @@ export const messages = {
   "mobile.server.sites.deleteDescription": "Esta dirección devolverá 410 Gone inmediatamente.",
   "mobile.server.sites.deleteFailed": "No se pudo eliminar el sitio.",
   "mobile.server.sites.openFailed": "No se pudo abrir el sitio.",
-  "mobile.server.sites.unsupported": "Actualiza Spinbot en este servidor para ver sus sitios aquí.",
+  "mobile.server.sites.unsupported": "Actualiza OpenBot en este servidor para ver sus sitios aquí.",
   "mobile.server.sites.offline": "Conéctate a este servidor para ver sus sitios.",
   "mobile.server.route.roles": "Permisos",
   "mobile.server.route.role": "Rol",
   "mobile.server.roles.description":
     "Elige los agentes que pueden usar los miembros. Los propietarios y administradores pueden usar todos los agentes.",
-  "mobile.server.roles.unsupported": "Actualiza Spinbot en este servidor para gestionar roles.",
+  "mobile.server.roles.unsupported": "Actualiza OpenBot en este servidor para gestionar roles.",
   "mobile.server.roles.unavailable":
     "Solo un propietario o administrador de un servidor en línea puede gestionar roles.",
   "mobile.server.roles.loading": "Cargando roles…",
@@ -1350,7 +1350,7 @@ export const messages = {
   "mobile.server.route.audit": "Registro de auditoría",
   "mobile.server.audit.description":
     "Cambios en los miembros, los roles y el acceso a agentes de este servidor, los más recientes primero. El host guarda los 500 cambios más recientes.",
-  "mobile.server.audit.unsupported": "Actualiza Spinbot en este servidor para ver su registro de auditoría.",
+  "mobile.server.audit.unsupported": "Actualiza OpenBot en este servidor para ver su registro de auditoría.",
   "mobile.server.audit.unavailable":
     "Solo un propietario o administrador de un servidor en línea puede ver el registro de auditoría.",
   "mobile.server.audit.loading": "Cargando cambios…",
@@ -1379,7 +1379,7 @@ export const messages = {
   // Server settings › Import agents: Grok Bot and Hermes exports (`agent-import-v1`).
   "mobile.server.settings.importAgents": "Importar agentes",
   "mobile.server.route.import": "Importar agentes",
-  "mobile.server.import.unsupported": "Actualiza Spinbot en este servidor para importar agentes aquí.",
+  "mobile.server.import.unsupported": "Actualiza OpenBot en este servidor para importar agentes aquí.",
   "mobile.server.import.unavailable": "Conéctate a este servidor para importar agentes.",
   "mobile.server.import.count.agent": { one: "{count} agente", other: "{count} agentes" },
   "mobile.server.import.count.channel": { one: "{count} canal", other: "{count} canales" },
@@ -1388,10 +1388,10 @@ export const messages = {
   "mobile.server.import.count.memory": { one: "{count} recuerdo", other: "{count} recuerdos" },
   "mobile.server.import.count.file": { one: "{count} archivo", other: "{count} archivos" },
   "mobile.server.import.sourceTitle": "¿Dónde están tus agentes ahora?",
-  "mobile.server.import.sourceLede": "Spinbot los copia a este servidor. Verás cada elemento antes de que cambie nada.",
+  "mobile.server.import.sourceLede": "OpenBot los copia a este servidor. Verás cada elemento antes de que cambie nada.",
   "mobile.server.import.hermesNote": "Exporta un archivo .zip desde Hermes.",
   "mobile.server.import.grokNote": "En la nube. Un agente de exportación allí crea un archivo .zip.",
-  "mobile.server.import.transfer": "Otro servidor de Spinbot",
+  "mobile.server.import.transfer": "Otro servidor de OpenBot",
   "mobile.server.import.transferNote": "Usa Transferir para trasladar agentes y ajustes juntos.",
   "mobile.server.import.grokLede":
     "Un agente de exportación en Grok Bot reúne nombres, instrucciones, avatares, habilidades, rutinas, recuerdos y los archivos que incluyas en un solo archivo .zip.",
@@ -1454,7 +1454,7 @@ export const messages = {
   "mobile.server.route.transfer": "Transferir",
   "mobile.server.route.transferExport": "Exportar",
   "mobile.server.route.transferImport": "Importar",
-  "mobile.server.transfer.unsupported": "Actualiza Spinbot en este servidor para transferirlo aquí.",
+  "mobile.server.transfer.unsupported": "Actualiza OpenBot en este servidor para transferirlo aquí.",
   "mobile.server.transfer.unavailable": "Conéctate a este servidor como propietario o administrador para transferirlo.",
   "mobile.server.transfer.title": "Trasladar este servidor a otro equipo",
   "mobile.server.transfer.lede": "Sus agentes, sus habilidades, rutinas, recuerdos y archivos van en un solo archivo.",
@@ -1497,8 +1497,8 @@ export const messages = {
   "mobile.server.transfer.reading": "Leyendo el archivo…",
   "mobile.server.transfer.sending": "Enviando el archivo… {percent} %",
   "mobile.server.transfer.openFailed": "No se pudo abrir el archivo.",
-  "mobile.server.transfer.source": "Spinbot {version} · exportado el {date}",
-  "mobile.server.transfer.sourceNoDate": "Spinbot {version}",
+  "mobile.server.transfer.source": "OpenBot {version} · exportado el {date}",
+  "mobile.server.transfer.sourceNoDate": "OpenBot {version}",
   "mobile.server.transfer.importWarnings": "Antes de empezar la importación",
   "mobile.server.transfer.importAgents": "Agentes del archivo",
   "mobile.server.transfer.nameExists": "Nombre ya en uso",
