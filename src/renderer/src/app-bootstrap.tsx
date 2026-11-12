@@ -1,4 +1,5 @@
 import type { MarketplaceListingLink } from "@openbot/contracts/marketplace-links";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { createEffect, flush, onSettled } from "solid-js";
 import { appPort } from "./app-port";
 import { useAuth } from "./features/account/account-context";
@@ -36,6 +37,7 @@ export function AppBootstrap() {
 
   onSettled(() => {
     const receiveInvite = (inviteUrl: string) => {
+      if (!SPINBOT_ONLINE_SERVICES) return;
       flush(() => {
         setPendingInviteUrl(inviteUrl);
         if (setupState()?.completed === true && centralAuth().status === "signed_in") setJoinServerOpen(true);
@@ -55,6 +57,7 @@ export function AppBootstrap() {
     });
     // A Marketplace link opens the agent or skill page. Only Add on that page adds it.
     const receiveMarketplaceListing = (link: MarketplaceListingLink) => {
+      if (!SPINBOT_ONLINE_SERVICES) return;
       flush(() => {
         setPendingMarketplaceListing(link);
         setSkillsMarketplaceOpen(true);
@@ -64,6 +67,7 @@ export function AppBootstrap() {
       receiveMarketplaceListing(link);
     });
     const receiveAgentTemplate = (id: string) => {
+      if (!SPINBOT_ONLINE_SERVICES) return;
       flush(() => setPendingAgentTemplateId(id));
     };
     const unsubscribeAgentTemplate = appPort().agentTemplates.onOpenLink((id) => {

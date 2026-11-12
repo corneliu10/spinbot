@@ -138,7 +138,7 @@ export function channelDraftChange(
   if (tool === "channel_add_member") {
     if (member) throw new Error(`${name} is already a member of this channel.`);
     if (!agents.some((agent) => agent.id === agentId))
-      throw new Error("No agent has that id. Get the id from openbot.list_agents.");
+      throw new Error("No agent has that id. Get the id from spinbot.list_agents.");
     if (agentAccessRank(access.level(agentId)) < agentAccessRank("chat"))
       throw new Error(`The person who asked cannot chat with ${name}, so it stays out.`);
     if (access.hidden(agentId)) throw new Error(`${name} is hidden. Ask a person to show it again first.`);

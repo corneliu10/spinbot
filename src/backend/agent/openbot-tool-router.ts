@@ -556,7 +556,7 @@ export class OpenBotToolRouter {
         case "item/tool/call": {
           if (!isDynamicToolCall(request.params)) throw new Error("Invalid dynamic tool request.");
           let params = request.params;
-          if (params.namespace === "openbot") {
+          if (params.namespace === "spinbot") {
             const deferredMcp = this.#deferredMcpNote(client, params.threadId);
             const invalid = deferredMcp
               ? `${sourceText("error.agent.toolRequestInvalid")} ${deferredMcp}`
@@ -592,7 +592,7 @@ export class OpenBotToolRouter {
               params = resolved;
             }
           }
-          if (params.namespace === "openbot" && (params.tool === "history_search" || params.tool === "history_read")) {
+          if (params.namespace === "spinbot" && (params.tool === "history_search" || params.tool === "history_read")) {
             const scope = this.#conversation.historyScope(params.threadId, client);
             if (!scope || this.#channels.store.channelForThread(scope.threadId)) {
               client.respond(request.id, openBotToolFailure(sourceText("error.agent.historyUnavailable")));
@@ -778,7 +778,7 @@ export class OpenBotToolRouter {
             }
             return;
           }
-          if (toolRequest.params.namespace === "openbot") {
+          if (toolRequest.params.namespace === "spinbot") {
             if (toolRequest.params.tool === "ask_user") {
               this.#attention.surfaceDynamicPrompt(client, toolRequest);
               return;
@@ -1605,7 +1605,7 @@ export class OpenBotToolRouter {
         contentItems: [
           {
             type: "inputText",
-            text: "This chat has no active channel assignment. Channel tools work only inside a channel task. To give work to a channel from this chat, use openbot.list_channels and openbot.send_to_channel. Use openbot.send_message for direct teammate work.",
+            text: "This chat has no active channel assignment. Channel tools work only inside a channel task. To give work to a channel from this chat, use spinbot.list_channels and spinbot.send_to_channel. Use spinbot.send_message for direct teammate work.",
           },
         ],
       };
@@ -1958,7 +1958,7 @@ export class OpenBotToolRouter {
         return openBotToolResult({
           status: "connected",
           app: args.app,
-          next: "GitHub is already connected for every agent of this server. Do not ask the user to connect it again. Use the GitHub MCP tools; when they are not in your tool list, search your tools for github, or use gh and git, which this connection signs in. When none of them works, tell the user in one sentence and call openbot.send_feedback.",
+          next: "GitHub is already connected for every agent of this server. Do not ask the user to connect it again. Use the GitHub MCP tools; when they are not in your tool list, search your tools for github, or use gh and git, which this connection signs in. When none of them works, tell the user in one sentence and call spinbot.send_feedback.",
         });
       const installed = this.#marketplaceAppServer(args.app);
       if (installed && this.#mcpServers)
@@ -2126,7 +2126,7 @@ export class OpenBotToolRouter {
     const parsed = readVideoToolSchema.safeParse(params.arguments, { reportInput: true });
     if (!parsed.success) return openBotToolFailure(profileToolErrorMessage(parsed.error));
     const reader = this.#videoReader;
-    if (!reader) return openBotToolFailure("This Spinbot cannot read videos. Use openbot_browser to read the page.");
+    if (!reader) return openBotToolFailure("This Spinbot cannot read videos. Use spinbot_browser to read the page.");
     return yield* reader.read({ url: parsed.data.url, frames: parsed.data.frames ?? READ_VIDEO_DEFAULT_FRAMES }).pipe(
       Effect.map(({ frames, transcriptNote, framesNote, ...details }): DynamicToolResult => {
         // The notes can hold the text of a voice provider error.

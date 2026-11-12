@@ -42,6 +42,7 @@ const BROWSER_PANEL_MAX = 1600;
 const CONVERSATION_PANEL_MIN = 96;
 const loadAgentSettingsPanel = () => import("./AgentSettingsPanel");
 
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { type HostFolderPick, HostFolderPicker } from "@openbot/ui/features/conversation/HostFolderPicker";
 import { Portal } from "@solidjs/web";
 import { createEffect, createMemo, createSignal, Loading, lazy, onSettled, Show, untrack } from "solid-js";
@@ -338,10 +339,11 @@ export function ConversationPanels(panelProps: { onOpenUsage?: ((trigger: HTMLBu
     return remote && remote.serverId === memoryLimitServerId() ? remote.limit : undefined;
   };
   const canPublish = () =>
-    props.runtime
+    SPINBOT_ONLINE_SERVICES &&
+    (props.runtime
       ? props.runtime.admin !== undefined && serverCanAdminister(props.server, "agent-publish-v1")
       : props.server?.kind === "local" ||
-        (props.server?.kind === "remote" && serverCanAdminister(props.server, "agent-publish-v1"));
+        (props.server?.kind === "remote" && serverCanAdminister(props.server, "agent-publish-v1")));
   // The web client asks the host directly; desktop goes through main for this computer and for a joined server.
   // The calls follow the server id, so a new summary of the same server keeps the loaded profiles.
   const browserProfileServerId = createMemo(() =>

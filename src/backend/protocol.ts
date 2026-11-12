@@ -556,7 +556,7 @@ export function getRecord(record: unknown, key: string): DynamicRecord | null {
 /** The qualified name that a `tool_call` bridge item asks for. The model writes it, so check it before use. */
 export function bridgedToolName(item: ThreadItem): string | null {
   const tool = getString(item, "tool") ?? getString(item, "name");
-  if (tool !== "tool_call" && tool !== "mcp__openbot__tool_call") return null;
+  if (tool !== "tool_call" && tool !== "mcp__spinbot__tool_call") return null;
   const args = getRecord(item, "arguments");
   return getString(args, "name") ?? getString(args, "tool");
 }

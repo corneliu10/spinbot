@@ -141,7 +141,7 @@ export const messages = {
   "error.team.machineResourcesUnsupported": "استخدام الجهاز غير مدعوم في هذا الاتصال.",
   "error.team.machineAlertMemberInvalid": "يمكن فقط لمالك هذا الخادم أو مسؤوله تلقي تنبيهات الجهاز.",
   "error.team.hostedSitesUnsupported": "المواقع غير مدعومة في هذا الاتصال.",
-  "error.team.hostedSitesUnregistered": "هذا الخادم غير مسجّل في OpenBot، لذا لا مواقع له.",
+  "error.team.hostedSitesUnregistered": "هذا الخادم غير مسجّل في Spinbot، لذا لا مواقع له.",
   "error.team.hostedSiteNotFound": "لم يُعثر على الموقع.",
   "error.team.markUnreadUnsupported": "لا يدعم هذا العميل تعليم المحادثات كغير مقروءة.",
   "error.team.inviteServiceUnavailable": "خدمة الدعوات غير متاحة.",

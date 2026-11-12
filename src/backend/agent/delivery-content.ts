@@ -140,7 +140,7 @@ function tagUrl(url: string): string {
 
 /**
  * The provider text of a tab or a thread tag: its id under the name of the tool parameter that takes
- * it (`tabId` of openbot_browser, `taskId` of history_read), and its current state in one line. The
+ * it (`tabId` of spinbot_browser, `taskId` of history_read), and its current state in one line. The
  * names say how to use the id, so the instructions need no rule for tags. A tag that repeats in the message gives the title only. Without a source
  * (a provider handoff of an older message) the id alone follows the title.
  */
@@ -286,8 +286,8 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
   // Only `start_task` sends an agent's message to itself: it is the brief of a task.
   if (delivery.sender.kind === "agent" && delivery.sender.agentId === delivery.recipientAgentId) {
     text = [
-      "You started this task with openbot.start_task from your own chat. It is a separate conversation beside that chat, with this brief as its first message.",
-      "Do the work in the brief here, and end with the result for the user: the user reads it in this task. Do not send it with openbot.send_message.",
+      "You started this task with spinbot.start_task from your own chat. It is a separate conversation beside that chat, with this brief as its first message.",
+      "Do the work in the brief here, and end with the result for the user: the user reads it in this task. Do not send it with spinbot.send_message.",
       COLLABORATOR_SEPARATOR,
       displayText,
     ].join("\n");
@@ -300,7 +300,7 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
           routine
             ? `This replies to a message you sent in a run of your routine "${routine.routineName}". That run has ended, so its task is below. Continue that task from this result now: do its next steps, such as a request to the next teammate, before you end this turn. Then give the result to the user naturally, starting with the teammate's name.`
             : "This replies to a message you sent. Give the result to the user naturally, starting with the teammate's name.",
-          "For partial or blocked work, you still own the request: finish the rest yourself, with a follow-up, or with a better teammate; do not repeat a failed call unchanged. Give the user the blocker and its Unblock action only when the user must act. When Spinbot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app and end your answer with the next field of its result.",
+          "For partial or blocked work, you still own the request: finish the rest yourself, with a follow-up, or with a better teammate; do not repeat a failed call unchanged. Give the user the blocker and its Unblock action only when the user must act. When Spinbot has a plugin for the service and it is not in your tools, call spinbot.suggest_marketplace_app and end your answer with the next field of its result.",
           "Reply to the teammate only for another requested action or new information that unblocks its work, never with the same request or an acknowledgement.",
         ]
       : delivery.expectsReply === false
@@ -310,9 +310,9 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
             `When nothing in it is for the user, call the ${ROUTINE_NO_UPDATE_TOOL} tool instead of a written answer.`,
           ]
         : [
-            `Finish the whole request, then send a concise result to ${senderName} with openbot.send_message: recipientAgentIds ["${senderAgentId}"], replyToMessageId "${delivery.messageId}", expectsReply false.`,
+            `Finish the whole request, then send a concise result to ${senderName} with spinbot.send_message: recipientAgentIds ["${senderAgentId}"], replyToMessageId "${delivery.messageId}", expectsReply false.`,
             "When something fails, find the cause and try other ways first. Status: blocked only when the sender or the user must act.",
-            "Reply in three lines: Status: done | partial | blocked, Result: <concrete outcome>, Evidence: <file, test, command, or none>. When blocked, add Unblock: <the one action that unblocks the task>; when Spinbot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app, and that action is the next field of its result.",
+            "Reply in three lines: Status: done | partial | blocked, Result: <concrete outcome>, Evidence: <file, test, command, or none>. When blocked, add Unblock: <the one action that unblocks the task>; when Spinbot has a plugin for the service and it is not in your tools, call spinbot.suggest_marketplace_app, and that action is the next field of its result.",
             "Never acknowledge without a Status line.",
           ];
     text = [
@@ -344,7 +344,7 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
       "Do not create, update, delete, or test routines during this run.",
       "Perform the task below now. Do not answer only that the routine or monitoring is active.",
       "Nobody answers you during this run. Do all of the task in this turn: do not stop after a step to report progress or to ask whether to continue.",
-      "A task can tell you to remind the user or to send the user a message. When it names no other place, write that message as your final answer. Spinbot shows your final answer to the user in this chat. openbot.send_message sends to other agents, not to the user.",
+      "A task can tell you to remind the user or to send the user a message. When it names no other place, write that message as your final answer. Spinbot shows your final answer to the user in this chat. spinbot.send_message sends to other agents, not to the user.",
       testRun
         ? "This is a manual Test run. Report the action and result even when a normal scheduled run would suppress a notification because there is no change."
         : `This is a ${runKind}. Follow the notification conditions in the routine task. When they give nothing to report, call the ${ROUTINE_NO_UPDATE_TOOL} tool instead of a written answer. A requested reminder or message is a report, also when there is no new information. Do not call ${ROUTINE_NO_UPDATE_TOOL} for it unless the notification conditions of the task say to send nothing.`,

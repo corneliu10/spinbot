@@ -21,7 +21,7 @@ import { AgentSettingsRefused } from "../src/backend/agent/agent-settings-refuse
 import { AutomationServer, type UpdatedAgent } from "../src/main/automation-server";
 
 const OUT = resolve(import.meta.dirname, "../.openbot-build/automation-cli-e2e");
-const CLI = resolve(import.meta.dirname, "../resources/cli/openbot-cli.mjs");
+const CLI = resolve(import.meta.dirname, "../resources/cli/spinbot-cli.mjs");
 
 interface Check {
   name: string;

@@ -52,7 +52,7 @@ export const messages = {
   "import.guide.commandNote":
     "在 Hermes 对话中输入它。在终端中，用同样的名称运行 hermes skills install。Hermes 会在安装前扫描该技能。",
   "import.guide.hermesSkillNote":
-    "把它保存为 ~/.hermes/skills/openbot-export/SKILL.md。Hermes 会在下一次对话中找到它。导出内容不包含它本身。",
+    "把它保存为 ~/.hermes/skills/spinbot-export/SKILL.md。Hermes 会在下一次对话中找到它。导出内容不包含它本身。",
   "import.guide.hermesMessageNote":
     "它会询问要导出哪些配置文件，然后把 .zip 文件保存到“下载”。密钥和 MCP 服务器会留在 Hermes 中。",
   "import.review.title": "{source} 导出",

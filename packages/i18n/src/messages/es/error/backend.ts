@@ -159,7 +159,7 @@ export const messages = {
     "El destinatario se está eliminando. Inténtalo de nuevo cuando termine la eliminación.",
   "error.backend.recipientHidden": "Este agente está oculto. Restáuralo para enviarle mensajes.",
   "error.backend.agentIdUnknown":
-    "Ningún agente tiene el ID {id}. Obtén los ID con openbot.list_agents y vuelve a intentarlo.",
+    "Ningún agente tiene el ID {id}. Obtén los ID con spinbot.list_agents y vuelve a intentarlo.",
   "error.backend.agentIdNear":
     "Ningún agente tiene el ID {id}. El agente {name} tiene el ID {nearId}, casi igual. Si te refieres a ese agente, vuelve a intentarlo con su ID.",
   "error.backend.attachBetween": "Adjunta entre 1 y {limit} archivos.",
@@ -210,7 +210,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Esta conexión crearía un bucle.",
   "error.backend.routineFlowLinkLimit": "Una rutina puede tener un máximo de {limit} conexiones.",
   "error.backend.agentWaitLimit":
-    "Este agente ya tiene {count} esperas abiertas. Cierra una espera con openbot.close_wait antes de abrir otra.",
+    "Este agente ya tiene {count} esperas abiertas. Cierra una espera con spinbot.close_wait antes de abrir otra.",
   "error.backend.agentWaitGone": "Esta espera no está abierta. El agente la cerró o alguien la canceló.",
   "error.backend.agentWaitNoRequest":
     "Una espera necesita un mensaje para continuar. Este turno no tiene ningún mensaje.",
@@ -219,7 +219,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Escribe una nota breve que diga para qué es la espera.",
   "error.backend.agentWaitRoutineGone": "Este agente no tiene ninguna rutina con este id.",
   "error.backend.agentWaitNoRoutine":
-    "Solo una ejecución de una de tus rutinas despierta una espera, y no tienes ninguna rutina. Crea una con openbot.create_routine y luego abre la espera.",
+    "Solo una ejecución de una de tus rutinas despierta una espera, y no tienes ninguna rutina. Crea una con spinbot.create_routine y luego abre la espera.",
   "error.backend.markUnreadRemoteUnsupported":
     "Marcar un mensaje como no leído solo está disponible para agentes en este equipo.",
   "error.backend.messageDeleteUnsupported": "Este servidor no permite eliminar mensajes.",

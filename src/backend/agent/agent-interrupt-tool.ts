@@ -40,7 +40,7 @@ export interface AgentInterruptToolOptions {
 }
 
 /**
- * `openbot.interrupt_agent`: one agent stops work that it delegated to another agent.
+ * `spinbot.interrupt_agent`: one agent stops work that it delegated to another agent.
  *
  * Agents have no ownership of each other, so the only proof that the caller may stop a turn is that
  * every delivery the turn runs came from the caller. A turn that the user, a routine, a channel or

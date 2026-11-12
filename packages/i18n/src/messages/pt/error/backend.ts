@@ -162,7 +162,7 @@ export const messages = {
   "error.backend.recipientDeleting": "O destinatário está sendo excluído. Tente novamente quando a exclusão terminar.",
   "error.backend.recipientHidden": "Este agente está oculto. Restaure-o para enviar mensagens.",
   "error.backend.agentIdUnknown":
-    "Nenhum agente tem o ID {id}. Obtenha os IDs com openbot.list_agents e tente novamente.",
+    "Nenhum agente tem o ID {id}. Obtenha os IDs com spinbot.list_agents e tente novamente.",
   "error.backend.agentIdNear":
     "Nenhum agente tem o ID {id}. O agente {name} tem o ID {nearId}, quase igual. Se você quer esse agente, tente novamente com o ID dele.",
   "error.backend.attachBetween": "Anexe de 1 a {limit} arquivos.",
@@ -213,7 +213,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Esta conexão criaria um loop.",
   "error.backend.routineFlowLinkLimit": "Uma rotina pode ter no máximo {limit} conexões.",
   "error.backend.agentWaitLimit":
-    "Este agente já tem {count} esperas abertas. Feche uma espera com openbot.close_wait antes de abrir outra.",
+    "Este agente já tem {count} esperas abertas. Feche uma espera com spinbot.close_wait antes de abrir outra.",
   "error.backend.agentWaitGone": "Esta espera não está aberta. O agente a fechou ou alguém a cancelou.",
   "error.backend.agentWaitNoRequest": "Uma espera precisa de uma mensagem para continuar. Este turno não tem mensagem.",
   "error.backend.agentWaitOwnChatOnly":
@@ -221,7 +221,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Escreva uma nota curta que diga para que serve a espera.",
   "error.backend.agentWaitRoutineGone": "Este agente não tem nenhuma rotina com este id.",
   "error.backend.agentWaitNoRoutine":
-    "Somente uma execução de uma das suas rotinas desperta uma espera, e você não tem nenhuma rotina. Crie uma com openbot.create_routine e depois abra a espera.",
+    "Somente uma execução de uma das suas rotinas desperta uma espera, e você não tem nenhuma rotina. Crie uma com spinbot.create_routine e depois abra a espera.",
   "error.backend.markUnreadRemoteUnsupported":
     "Marcar uma mensagem como não lida só está disponível para agentes neste computador.",
   "error.backend.messageDeleteUnsupported": "Este servidor não permite excluir mensagens.",

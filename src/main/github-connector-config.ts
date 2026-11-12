@@ -4,8 +4,9 @@
 // public: device flow and refresh need nothing else, and the client secret never ships.
 
 /** The GitHub App "OpenBotGit" of `nightly-labs`. With no Client ID, the connection is not offered. */
-const GITHUB_APP_CLIENT_ID = "Iv23lik5pzHz70cb0RUL";
-const GITHUB_APP_SLUG = "openbotgit";
+// Spinbot: OpenBot's GitHub App is not used, so the built-in GitHub connection is not offered.
+const GITHUB_APP_CLIENT_ID = "";
+const GITHUB_APP_SLUG = "";
 
 export interface GitHubAppConfig {
   clientId: string;

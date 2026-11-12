@@ -52,13 +52,13 @@ export const DIRECT_BROWSER_TOOL_DEFINITIONS = BROWSER_TOOL_DEFINITIONS.filter((
 
 const DIRECT_BROWSER_DYNAMIC_TOOLS = BROWSER_DYNAMIC_TOOLS.map((namespace) => ({
   ...namespace,
-  description: "Spinbot's private, persistent browser. Run the other openbot_browser tools with openbot.tool_call.",
+  description: "Spinbot's private, persistent browser. Run the other spinbot_browser tools with spinbot.tool_call.",
   tools: namespace.tools.filter((tool) => DIRECT_BROWSER_NAMES.has(tool.name)),
 }));
 
 /**
  * Providers whose CLI gives the model a web search tool of its own. Their agents keep it, and do not
- * get `openbot.web_search`: on Codex the side search costs about the same tokens and takes twice as
+ * get `spinbot.web_search`: on Codex the side search costs about the same tokens and takes twice as
  * long as the inline search (`bun run bench:codex-web-search`). The Pi-based providers have no web search,
  * and a custom ACP agent can have none, so they get the tool. Some CLIs need a condition that the OpenBot
  * sign-in meets: an Anthropic or Grok account, `kimi login`, a Mistral key, the Cline account. OpenCode
@@ -168,7 +168,7 @@ function dynamicTools(definitions: ReturnType<typeof toolDefinitions>) {
   return [
     {
       type: "namespace" as const,
-      name: "openbot",
+      name: "spinbot",
       description: "Spinbot tools. Search, then call other built-in and browser tools.",
       tools: definitions.map((definition) => ({
         type: "function" as const,
@@ -203,11 +203,11 @@ export function visibleDynamicTools(provider: AgentProviderId) {
 }
 
 /**
- * Claude names a bridge call `mcp__openbot__tool_call`. Readers of its items get the name of the tool it
+ * Claude names a bridge call `mcp__spinbot__tool_call`. Readers of its items get the name of the tool it
  * calls, in the form Claude gives a direct tool. A name outside the catalog is model text and stays out.
  */
 export function claudeBridgedToolName(name: string, input: unknown): string {
-  if (name !== "mcp__openbot__tool_call") return name;
+  if (name !== "mcp__spinbot__tool_call") return name;
   const called = bridgedName(input);
   const entry = called ? BUILTIN_TOOL_CATALOG.find((tool) => tool.name === called) : undefined;
   return entry ? `mcp__${entry.namespace}__${entry.tool}` : name;
@@ -222,17 +222,17 @@ function bridgedName(input: unknown): string | null {
 
 /**
  * Claude loads its own deferred tools with a search and then calls them directly. After a search here,
- * it called openbot.list_workflows as mcp__openbot__list_workflows, and each refused name cost a model step.
+ * it called spinbot.list_workflows as mcp__spinbot__list_workflows, and each refused name cost a model step.
  */
 const CALL_NOTE =
-  "Run each with openbot.tool_call {name, arguments}, or directly when you also have it as a direct tool.";
+  "Run each with spinbot.tool_call {name, arguments}, or directly when you also have it as a direct tool.";
 
 /**
  * Search matches whole words, so a query that names a web service, such as "gmail" or "read mail",
  * finds no browser tool. Without this note the agent reports that it has no tool for that service.
  */
 const BROWSER_SEARCH_NOTE =
-  "No browser tool is in these results. A website or web app with no dedicated tool, such as mail or a calendar, is reached through openbot_browser. Call openbot_browser.list_tabs first: your signed-in tabs stay open across sessions.";
+  "No browser tool is in these results. A website or web app with no dedicated tool, such as mail or a calendar, is reached through spinbot_browser. Call spinbot_browser.list_tabs first: your signed-in tabs stay open across sessions.";
 
 /**
  * Pi declares the tools of the user's MCP servers only after its own `tool_search` loads them. A model
@@ -391,12 +391,12 @@ function parseCall(params: DynamicToolCallParams) {
 }
 
 /**
- * True when a `tool_call` names OpenBot's discovery tool, such as `openbot.tool_describe`. Only a qualified
+ * True when a `tool_call` names OpenBot's discovery tool, such as `spinbot.tool_describe`. Only a qualified
  * name counts: a bare `tool_search` can mean the provider's own search for MCP tools.
  */
 function callsDiscoveryTool(envelope: unknown): boolean {
   const named = bridgedName(envelope)?.trim();
-  return named !== undefined && /^(?:openbot\.|openbot__|mcp__openbot__)tool_(?:search|describe)$/.test(named);
+  return named !== undefined && /^(?:spinbot\.|spinbot__|mcp__spinbot__)tool_(?:search|describe)$/.test(named);
 }
 
 /**

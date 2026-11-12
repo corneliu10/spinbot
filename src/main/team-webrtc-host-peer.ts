@@ -752,9 +752,9 @@ export class TeamWebRtcHostPeer {
           headers: {
             Authorization: `Bearer ${this.#localSessionToken}`,
             "Content-Type": uploaded?.mimeType ?? input.contentType ?? "application/json",
-            "OpenBot-Protocol-Version": String(protocol),
-            "OpenBot-App-Version": this.#appVersion,
-            "OpenBot-Capabilities": [...this.#peerCapabilities].join(","),
+            "Spinbot-Protocol-Version": String(protocol),
+            "Spinbot-App-Version": this.#appVersion,
+            "Spinbot-Capabilities": [...this.#peerCapabilities].join(","),
             ...(this.#localSessionId ? { "X-Spinbot-WebRTC-Session": this.#localSessionId } : {}),
           },
           ...(requestBody === undefined ? {} : { body: requestBody }),

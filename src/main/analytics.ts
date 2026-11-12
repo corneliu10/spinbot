@@ -150,7 +150,7 @@ const TOOL_KINDS = [
 // plugins keep their tool names.
 const BUILTIN_TOOL_SERVERS = new Map<string, (typeof TOOL_KINDS)[number]>([
   ["openbot", "openbot"],
-  ["openbot_browser", "browser"],
+  ["spinbot_browser", "browser"],
   [COMPUTER_USE_MCP_SERVER_NAME, "computer_use"],
 ]);
 const ROUTINE_TERMINAL_STATUSES = ["succeeded", "failed", "interrupted", "cancelled"] as const;
@@ -986,7 +986,7 @@ export class HostAnalytics {
     const server = usage.server;
     if (usage.kind !== "mcp" || !server) return { kind: usage.kind, calls: 0, failed: 0 };
     // A user's server can report under a built-in name, such as `openbot browser` shown as
-    // `openbot_browser`. It then stays custom, and a resolver that fails also gives custom.
+    // `spinbot_browser`. It then stays custom, and a resolver that fails also gives custom.
     let configured: { slug: string | null } | null;
     try {
       configured = this.#resolveMcpServer(server);

@@ -54,7 +54,7 @@ export const messages = {
   "import.guide.commandNote":
     "Typ deze in een Hermes-chat. Voer in een terminal hermes skills install uit met dezelfde naam. Hermes scant de vaardigheid voordat hij die installeert.",
   "import.guide.hermesSkillNote":
-    "Sla het op als ~/.hermes/skills/openbot-export/SKILL.md. Hermes vindt het in de volgende chat. De export laat het weg.",
+    "Sla het op als ~/.hermes/skills/spinbot-export/SKILL.md. Hermes vindt het in de volgende chat. De export laat het weg.",
   "import.guide.hermesMessageNote":
     "Hij vraagt welke profielen hij moet exporteren en slaat het .zip-bestand daarna op in Downloads. Sleutels en MCP-servers blijven in Hermes.",
   "import.review.title": "Export van {source}",

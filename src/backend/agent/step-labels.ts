@@ -49,9 +49,9 @@ export function stepLabel(item: ThreadItem): string | null {
   return command ? commandLabel(command) : null;
 }
 
-/** The query of an `openbot.web_search` call. Agents find the tool in the catalog and run it with `tool_call`. */
+/** The query of an `spinbot.web_search` call. Agents find the tool in the catalog and run it with `tool_call`. */
 function webSearchQuery(item: ThreadItem): string | null {
-  if (bridgedToolName(item) !== "openbot.web_search") return null;
+  if (bridgedToolName(item) !== "spinbot.web_search") return null;
   return getString(getRecord(getRecord(item, "arguments"), "arguments"), "query");
 }
 

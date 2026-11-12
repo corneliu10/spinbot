@@ -1,4 +1,5 @@
 import type { ServerSummary } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { BITWARDEN_CONNECTOR_CAPABILITY } from "@openbot/contracts/team-protocol/bitwarden-connector-v1";
 import { ONEPASSWORD_CONNECTOR_CAPABILITY } from "@openbot/contracts/team-protocol/onepassword-connector-v1";
 import { PASSWORD_MANAGERS_CAPABILITY } from "@openbot/contracts/team-protocol/password-managers-v1";
@@ -81,7 +82,12 @@ const context = createSimpleContext({
     };
     const computer = createConnectorSet(
       // WhatsApp does not go through Signal, so it does not publish the server first.
-      { github: githubConnectorPort, ...LOCAL_CONNECTOR_TRANSPORTS, messaging, whatsapp: whatsappPort },
+      {
+        github: githubConnectorPort,
+        ...LOCAL_CONNECTOR_TRANSPORTS,
+        ...(SPINBOT_ONLINE_SERVICES ? { messaging } : {}),
+        whatsapp: whatsappPort,
+      },
       {
         agents: agentList,
         models,

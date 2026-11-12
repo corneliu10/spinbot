@@ -27,7 +27,7 @@ import type {
 } from "./agent-database-protocol";
 
 /** Mirrors `AGENT_DATABASE_METADATA_TABLE`; inlined because the protocol module must stay type-only here. */
-const METADATA_TABLE = "openbot_metadata";
+const METADATA_TABLE = "spinbot_metadata";
 
 const MAX_OPEN_DATABASES = 8;
 

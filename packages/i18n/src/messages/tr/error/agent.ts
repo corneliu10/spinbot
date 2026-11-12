@@ -5,15 +5,15 @@ export const messages = {
   "error.agent.historyUnavailable":
     "Bu istek için geçmiş kullanılamıyor. Son geçmişi tekrar okuyun veya kanal çalışması için channel_history kullanın.",
   "error.agent.historyArgumentsInvalid":
-    "Geçmiş bağımsız değişkenleri yanlış: {detail} Bağımsız değişkenleri düzeltip yeniden dene. openbot.tool_describe şemayı verir.",
+    "Geçmiş bağımsız değişkenleri yanlış: {detail} Bağımsız değişkenleri düzeltip yeniden dene. spinbot.tool_describe şemayı verir.",
   "error.agent.toolRequestInvalid":
     "Geçersiz araç keşfi bağımsız değişkenleri. Bildirilen şemayı ve özgün nitelikli araç adını kullanın.",
   "error.agent.toolCallArgumentsNotObject":
     "Araç çalışmadı. tool_call içinde arguments metin değil, bir JSON nesnesi olmalı. Çağrıyı arguments bir nesne olacak şekilde yeniden gönderin.",
   "error.agent.toolCallDiscoveryTool":
-    "Araç çalışmadı. tool_call, openbot.tool_search veya openbot.tool_describe çalıştıramaz. Bunları aynı bağımsız değişkenlerle doğrudan çağırın.",
+    "Araç çalışmadı. tool_call, spinbot.tool_search veya spinbot.tool_describe çalıştıramaz. Bunları aynı bağımsız değişkenlerle doğrudan çağırın.",
   "error.agent.routineScheduleArgumentsInvalid":
-    "Rutin zamanlaması geçersiz: {detail} Zamanlamayı düzeltip yeniden deneyin. openbot.tool_describe şemayı verir.",
+    "Rutin zamanlaması geçersiz: {detail} Zamanlamayı düzeltip yeniden deneyin. spinbot.tool_describe şemayı verir.",
   // Agent errors that the main process and the backend send.
   "error.agent.approvalWhileDeleting": "Ajan silinirken onay verilemez.",
   "error.agent.accessLocalOnly": "Ajan erişimi yalnızca ajanı çalıştıran bilgisayarda değiştirilebilir.",

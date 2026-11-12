@@ -5,15 +5,15 @@ export const messages = {
   "error.agent.historyUnavailable":
     "L’historique n’est pas disponible pour cette demande. Relisez l’historique récent, ou utilisez channel_history pour le travail dans un canal.",
   "error.agent.historyArgumentsInvalid":
-    "Arguments d’historique incorrects : {detail} Corrige les arguments et réessaie. openbot.tool_describe donne le schéma.",
+    "Arguments d’historique incorrects : {detail} Corrige les arguments et réessaie. spinbot.tool_describe donne le schéma.",
   "error.agent.toolRequestInvalid":
     "Arguments de découverte d’outils non valides. Utilisez le schéma déclaré et un nom d’outil qualifié d’origine.",
   "error.agent.toolCallArgumentsNotObject":
     "L’outil ne s’est pas exécuté. Dans tool_call, arguments doit être un objet JSON, pas du texte. Renvoyez l’appel avec arguments sous forme d’objet.",
   "error.agent.toolCallDiscoveryTool":
-    "L’outil ne s’est pas exécuté. tool_call ne peut pas exécuter openbot.tool_search ni openbot.tool_describe. Appelez-les directement avec les mêmes arguments.",
+    "L’outil ne s’est pas exécuté. tool_call ne peut pas exécuter spinbot.tool_search ni spinbot.tool_describe. Appelez-les directement avec les mêmes arguments.",
   "error.agent.routineScheduleArgumentsInvalid":
-    "La planification de la routine n’est pas valide : {detail} Corrigez la planification et réessayez. openbot.tool_describe donne le schéma.",
+    "La planification de la routine n’est pas valide : {detail} Corrigez la planification et réessayez. spinbot.tool_describe donne le schéma.",
   "error.agent.approvalWhileDeleting": "Impossible d’accorder l’approbation pendant la suppression de l’agent.",
   "error.agent.accessLocalOnly": "L’accès à l’agent ne peut être modifié que sur l’ordinateur qui exécute l’agent.",
   "error.agent.duplicateCleanupFailed":

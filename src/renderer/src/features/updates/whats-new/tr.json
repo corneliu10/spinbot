@@ -44,7 +44,7 @@
         "items": [
           "Gemini, Windows'ta yeniden kurulur ve güncellenir. 0.67.0'da bir bağlantı veya özel dosyayla ilgili bir hatayla duruyordu.",
           "Meşgul bir takım arkadaşına mesaj gönderen bir ajan, mesajın arkadaşının devam eden görevine girip girmediğini artık bilir. Mesaj beklediğinde ajan nedenini size söyleyebilir.",
-          "Bilgisayar Kullanımı sırasında ajanlar artık imlecin kullanılamadığını söylemez. OpenBot, imleci ajanın tıkladığı, kaydırdığı veya hareket ettirdiği yere çizer."
+          "Bilgisayar Kullanımı sırasında ajanlar artık imlecin kullanılamadığını söylemez. Spinbot, imleci ajanın tıkladığı, kaydırdığı veya hareket ettirdiği yere çizer."
         ]
       }
     ]
@@ -72,7 +72,7 @@
         "items": [
           "Okunmamış yanıtları olan sohbetler önce, Okunmamış grubunda gösterilir. Sırayı değiştirmek için sohbet listesinin menüsünde Sohbetleri sırala'yı seçin.",
           "VPS gibi katılınan bir sunucuda masaüstü uygulaması ve tarayıcı uygulaması artık bu bilgisayarın özelliklerinin çoğuna sahip.",
-          "Ajanlar git commit'lerine OpenBot'u ortak yazar olarak ekler. Yazar siz kalırsınız. Bunu Ayarlarınız → Ajanlar bölümünde kapatın.",
+          "Ajanlar git commit'lerine Spinbot'u ortak yazar olarak ekler. Yazar siz kalırsınız. Bunu Ayarlarınız → Ajanlar bölümünde kapatın.",
           "Ajanlar tarayıcı görevlerini daha az adımda ve yaklaşık %18 daha az token ile bitirir.",
           "Gemini artık Antigravity CLI üzerinde çalışır. Google oturumunuz korunur."
         ]
@@ -81,8 +81,8 @@
         "type": "fixed",
         "items": [
           "Durdurduğunuz bir Claude ajanı artık yaklaşık 10 saniyede durur ve kuyruktaki mesajları başlar.",
-          "Windows'ta ajanlar, OpenBot penceresi simge durumundayken veya tepsideyken tarayıcıyı kullanabilir.",
-          "macOS'ta Yeniden başlat ve güncelle, OpenBot disk görüntüsünden çalışırken artık OpenBot'u kapatmaz. OpenBot'u Uygulamalar'a taşımanızı söyler.",
+          "Windows'ta ajanlar, Spinbot penceresi simge durumundayken veya tepsideyken tarayıcıyı kullanabilir.",
+          "macOS'ta Yeniden başlat ve güncelle, Spinbot disk görüntüsünden çalışırken artık Spinbot'u kapatmaz. Spinbot'u Uygulamalar'a taşımanızı söyler.",
           "Sesli bir konuşmada öksürük veya bir tuşa basma artık ajanın yanıtını durdurmaz."
         ]
       }
@@ -101,7 +101,7 @@
           "Windows'ta Dynamic Island ve ajan yuvası, Mac'te olduğu gibi ajanlarınızı gösterir. Ajan yuvası kanalları da tutabilir.",
           "Ajanlar YouTube veya TikTok bağlantıları gibi herkese açık çevrimiçi videoları izleyebilir.",
           "Kitaplık'ta birden çok dosya seçin ve hepsini bir kerede indirin veya silin.",
-          "Ajanlar sizin için OpenBot ekibine bir hata raporu veya özellik fikri gönderebilir."
+          "Ajanlar sizin için Spinbot ekibine bir hata raporu veya özellik fikri gönderebilir."
         ]
       },
       {
@@ -119,7 +119,7 @@
         "items": [
           "Bir ajanın kuyruğu, ajan kendi sorusunun yanıtını beklerken aynı mesajı artık tekrar tekrar başlatmaz.",
           "Bir ChatGPT ajanı artık tekrar tekrar sıkıştırma yapmaz veya \"Bağlam sıkıştırılıyor\" durumunda sonsuza kadar kalmaz.",
-          "Cursor ve bazı diğer sağlayıcılardaki ajanlar, OpenBot yeniden başladıktan sonra OpenBot araçlarını korur.",
+          "Cursor ve bazı diğer sağlayıcılardaki ajanlar, Spinbot yeniden başladıktan sonra Spinbot araçlarını korur.",
           "Ajanlar, n8n gibi oturum açtığınız uzak bir MCP sunucusunu en yeni MCP sürümüyle kullanabilir."
         ]
       }
@@ -145,7 +145,7 @@
         "type": "changed",
         "items": [
           "Ajanlar Claude, Codex, Pi, OpenCode, Grok ve Hermes'te her istekte daha az token kullanır.",
-          "OpenBot tarayıcı sekmeleri, boştaki ajanlar ve uygulama pencereleri için daha az bellek kullanır.",
+          "Spinbot tarayıcı sekmeleri, boştaki ajanlar ve uygulama pencereleri için daha az bellek kullanır.",
           "Ajan tarayıcı sekmeleri kendiliğinden geçen bot kontrollerini bekler ve kısa görevleri daha az adımda bitirir.",
           "Bildirimlerin görünümü yenilendi."
         ]
@@ -176,7 +176,7 @@
           "Bir kanalın ayarlarından yeni bir konuşma başlatın veya kanalın bağlamını sıkıştırın.",
           "Katılınan bir sunucunun üyeleri kendi MCP sunucularını ekleyebilir ve Trello gibi uygulamaları bağlayabilir.",
           "Bu bilgisayarı uzak masaüstüyle kimlerin kontrol edebileceğini Sunucu ayarları → Uzak masaüstü bölümünde seçin.",
-          "OpenBot'u İbranice kullanın ve Pazaryeri'nde GitLab, Omnisend ve ElevenLabs'i bağlayın."
+          "Spinbot'u İbranice kullanın ve Pazaryeri'nde GitLab, Omnisend ve ElevenLabs'i bağlayın."
         ]
       },
       {
@@ -194,8 +194,8 @@
           "Slack, Discord, Telegram ve WhatsApp gönderilerindeki bahsetmeler artık ilgili kişiye bildirim gönderir.",
           "Bir sağlayıcının kotası dolduğunda ajan işe ilk hazır yedek modeliyle devam eder.",
           "Her turdan sonra yeniden sıkıştırılan bir sohbet artık art arda 2 sıkıştırmadan sonra otomatik sıkıştırmayı durdurur.",
-          "Bir ajanın tarayıcı işlemi başka bir adrese geçen bir sayfayı beklediğinde OpenBot artık kapanmaz.",
-          "Proton Pass girişleri OpenBot yeniden başladıktan sonra da çalışır."
+          "Bir ajanın tarayıcı işlemi başka bir adrese geçen bir sayfayı beklediğinde Spinbot artık kapanmaz.",
+          "Proton Pass girişleri Spinbot yeniden başladıktan sonra da çalışır."
         ]
       }
     ]
@@ -226,7 +226,7 @@
       {
         "type": "fixed",
         "items": [
-          "Claude, OpenBot yeniden başladıktan veya güncellendikten sonra oturumu açık tutar ve Claude ajanları 5 saatlik kullanım penceresinin daha azını kullanır.",
+          "Claude, Spinbot yeniden başladıktan veya güncellendikten sonra oturumu açık tutar ve Claude ajanları 5 saatlik kullanım penceresinin daha azını kullanır.",
           "Uzun bir sohbette yüklediğiniz eski mesajlar yüklü kalır. Sohbet artık en son mesajlara geri atlamaz.",
           "ChatGPT (Codex), Muse, Pi veya Antigravity sohbetindeki otomatik sıkıştırmalar art arda 2 başarısızlıktan sonra durur, böylece sohbet artık plan limitini tüketmez.",
           "GPT sesi, ajan bir Codex modeli kullandığında da her ajanla çalışır.",
@@ -244,7 +244,7 @@
         "type": "added",
         "items": [
           "Sunucu ayarları → Tarayıcı profilleri bölümünde bir tarayıcı profiline kendi proxy'sini verin veya katılınan bir sunucuda kendi bilgisayarınızı proxy olarak kullanın.",
-          "Pazaryeri'nde Proton Pass'i bağlayın. Tarayıcı, OpenBot ile paylaştığınız kasadaki girişleri doldurur.",
+          "Pazaryeri'nde Proton Pass'i bağlayın. Tarayıcı, Spinbot ile paylaştığınız kasadaki girişleri doldurur.",
           "Bir ajanın sohbetinde @ yazarak ajanın tarayıcı sekmelerinden veya yan konularından birini etiketleyin.",
           "Ayarlar → Ses bölümünde iki yeni yerel dikte modeli var: Parakeet Unified EN ve Cohere Transcribe.",
           "Ajanın yazdığı ve sizin okumadığınız bir mesaj dizisinde mavi bir nokta görünür.",
@@ -264,9 +264,9 @@
       {
         "type": "fixed",
         "items": [
-          "OpenBot açıkken ve görev yokken daha az enerji kullanır.",
+          "Spinbot açıkken ve görev yokken daha az enerji kullanır.",
           "Uzun sohbetler takılmadan kayar ve daha hızlı açılır.",
-          "OpenBot açılışta artık \"OpenBot'a bağlanılıyor\" ekranında veya sunucu yükleme ekranında kalmaz.",
+          "Spinbot açılışta artık \"Spinbot'a bağlanılıyor\" ekranında veya sunucu yükleme ekranında kalmaz.",
           "Ajan için Bilgisayar Kullanımı açıksa rutin çalıştırmaları onu yeniden kullanabilir."
         ]
       }
@@ -302,9 +302,9 @@
         "type": "fixed",
         "items": [
           "Uzun geçmişi olan bir kanal yeniden hızlı açılır.",
-          "Linux'ta anahtarlık anahtarını tutmadığında OpenBot artık her yeniden başlatmadan sonra yeniden oturum açmanızı istemez.",
+          "Linux'ta anahtarlık anahtarını tutmadığında Spinbot artık her yeniden başlatmadan sonra yeniden oturum açmanızı istemez.",
           "Windows'ta kanal liderleri mesajları yeniden yönlendirir ve bu bilgisayarda sunucu oluşturabilirsiniz.",
-          "Eski bir OpenBot, daha yeni bir sürümün kaydettiği verileri açtığında en son sürümü yükler."
+          "Eski bir Spinbot, daha yeni bir sürümün kaydettiği verileri açtığında en son sürümü yükler."
         ]
       }
     ]
@@ -318,8 +318,8 @@
         "type": "added",
         "items": [
           "Ajanlarınızla WhatsApp'tan konuşun. Pazaryeri → Uygulamalar → WhatsApp altında bir numara bağlayın. Ayrı bir numara daha güvenlidir, çünkü WhatsApp otomatik gördüğü numaraları engelleyebilir.",
-          "Biri Slack'te veya bir Telegram grubunda OpenBot'tan bahsettiğinde bir iş akışı başlatın ve sonucunu oraya geri gönderin.",
-          "OpenBot'u Arapça kullanın. Düzen sağdan sola doğru yansır.",
+          "Biri Slack'te veya bir Telegram grubunda Spinbot'tan bahsettiğinde bir iş akışı başlatın ve sonucunu oraya geri gönderin.",
+          "Spinbot'u Arapça kullanın. Düzen sağdan sola doğru yansır.",
           "Sunucu ayarları → Sağlayıcılar bölümünde modelleri kapatın. Model seçici önce en yeni modelleri gösterir, eski modeller ise katlanmış bir bölümdedir.",
           "Sunucu ayarlarında üye, rol ve ajan erişimi değişikliklerini gösteren bir Denetim günlüğü var.",
           "Şirket girişi: sunucu sahibi Üyeler → Şirket girişi bölümünde Microsoft Entra ID, Okta, Google Workspace veya başka bir OpenID Connect sağlayıcısını bağlayabilir. Şirket e-postası olan kişiler daha sonra davet olmadan katılır.",
@@ -335,7 +335,7 @@
           "Sohbet mesajları geniş bir pencerede daha fazla alan kullanır.",
           "Sohbetten açtığınız her dosya yan panelde kendi sekmesini alır.",
           "4.000 karakterden uzun bir metin yapıştırması pasted-text.txt eki olur, böylece mesaj metnin tamamını tutar.",
-          "OpenBot kişisel kullanım için ücretsizdir ve ilk açılış bunu belirtir."
+          "Spinbot kişisel kullanım için ücretsizdir ve ilk açılış bunu belirtir."
         ]
       },
       {
@@ -357,10 +357,10 @@
       {
         "type": "added",
         "items": [
-          "Kimi yeni bir sağlayıcı. OpenBot, Kimi Code CLI'ı indirir ve Kimi Code hesabınızla oturum açarsınız.",
+          "Kimi yeni bir sağlayıcı. Spinbot, Kimi Code CLI'ı indirir ve Kimi Code hesabınızla oturum açarsınız.",
           "Nous Research'ün Hermes Agent'ını kendi belleklerinizle, becerilerinizle ve oturum açma bilgilerinizle sağlayıcı olarak kullanın.",
-          "Mac'te OpenBot'un menü çubuğunda bir simgesi var. Pencereyi kapattıktan sonra Dock simgesi gizlenir ve görevler çalışmaya devam eder.",
-          "Biri Discord'da OpenBot'tan bahsettiğinde bir iş akışı başlatın ve sonucunu yanıt, gönderi veya tepki olarak geri gönderin.",
+          "Mac'te Spinbot'un menü çubuğunda bir simgesi var. Pencereyi kapattıktan sonra Dock simgesi gizlenir ve görevler çalışmaya devam eder.",
+          "Biri Discord'da Spinbot'tan bahsettiğinde bir iş akışı başlatın ve sonucunu yanıt, gönderi veya tepki olarak geri gönderin.",
           "Kenar çubuğu klasörleri üç düzeye kadar klasör içerebilir. Bir sohbeti veya klasörü bir klasöre sürükleyin.",
           "Bir model sunduğunda Yok, Minimum ve Ultra akıl yürütme düzeylerini seçin.",
           "Sabitlenmiş ajanlar ve kanallar bir sunucuya bağlanan her cihazda aynı kalır.",
@@ -381,10 +381,10 @@
       {
         "type": "fixed",
         "items": [
-          "Slack çalışma alanının bulunduğu bilgisayar kapalıyken de Slack bahsetmeleri ve doğrudan mesajlar yeniden OpenBot'a ulaşır.",
+          "Slack çalışma alanının bulunduğu bilgisayar kapalıyken de Slack bahsetmeleri ve doğrudan mesajlar yeniden Spinbot'a ulaşır.",
           "Bilgisayar uykudan uyandıktan sonra telefonlar ve diğer cihazlar sunucularınıza hemen bağlanabilir.",
           "Bir sohbetteki yükleme artık diğer sohbetlerde Gönder'i engellemez.",
-          "OpenBot'tan kopyaladığınız metin diğer uygulamalara uygulamanın renkleri olmadan yapıştırılır."
+          "Spinbot'tan kopyaladığınız metin diğer uygulamalara uygulamanın renkleri olmadan yapıştırılır."
         ]
       }
     ]
@@ -398,8 +398,8 @@
         "type": "added",
         "items": [
           "GitHub'dan bir iş akışı başlatın: GitHub tetikleyicisi yeni sorunlarda, yorumlarda, çekme isteklerinde, incelemelerde, başarısız kontrollerde veya @openbotgit bahsetmesinde çalışır.",
-          "Bir iş akışından GitHub'ı değiştirin: OpenBot GitHub App olarak yorum yapın, etiket ekleyin, atayın, inceleyin, bir sorunu kapatın veya oluşturun.",
-          "Pazaryeri'nde QA Tester, PR Shepherd ve Chief of Staff gibi 17 yeni OpenBot ajanı ve bunlar için 15 yeni beceri var.",
+          "Bir iş akışından GitHub'ı değiştirin: Spinbot GitHub App olarak yorum yapın, etiket ekleyin, atayın, inceleyin, bir sorunu kapatın veya oluşturun.",
+          "Pazaryeri'nde QA Tester, PR Shepherd ve Chief of Staff gibi 17 yeni Spinbot ajanı ve bunlar için 15 yeni beceri var.",
           "Kullanım, OpenCode Go aylık limitini üçüncü bir çubuk olarak gösterir."
         ]
       },
@@ -432,7 +432,6 @@
         "items": [
           "Bir konuşmayı dallandırın: bir turun son ajan mesajına sağ tıklayıp Buradan dallandır'ı seçin. O mesaja kadarki konuşmayı içeren yeni bir mesaj dizisi açılır.",
           "Ajan ayarlarında ajanın AGENTS.md dosyasını gösteren bir Talimatlar sayfası var. Ajan talimatlarını değiştirdiğinde sohbet bu değişikliği Geri al düğmesiyle gösterir.",
-          "Pazaryeri artık openbot.run'da. Her ajanın ve becerinin kendi sayfası var ve Bağlantıyı kopyala ile paylaşabilirsiniz.",
           "Bir ajan, kendi tarayıcı işleminin açtığı bir web sitesi uyarısını veya onay penceresini yanıtlayabilir.",
           "Durdurulmuş veya başarısız bir kanal görevinde Görevi iptal et düğmesi var."
         ]
@@ -474,7 +473,7 @@
       {
         "type": "changed",
         "items": [
-          "Yüklediğiniz CLI, OpenBot'un kopyasıyla aynı sürümde veya daha yeniyse sağlayıcı onu kullanır.",
+          "Yüklediğiniz CLI, Spinbot'un kopyasıyla aynı sürümde veya daha yeniyse sağlayıcı onu kullanır.",
           "Analiz tercihiniz hesabınızla birlikte diğer cihazlarınıza taşınır. Analizi bu sürümden önce kapattıysanız, burada değiştirene kadar bu bilgisayarda kapalı kalır.",
           "Talimatlar alanını uzatmak için tutamacını sürükleyin."
         ]
@@ -483,7 +482,7 @@
         "type": "fixed",
         "items": [
           "Cloudflare kontrolleri yerleşik tarayıcıda geçer.",
-          "Her sağlayıcı CLI'ı yaklaşık yarı yarıya daha az disk alanı kullanır: OpenBot tek bir sürüm tutar.",
+          "Her sağlayıcı CLI'ı yaklaşık yarı yarıya daha az disk alanı kullanır: Spinbot tek bir sürüm tutar.",
           "Kullanım limitindeki bir ajana gönderdiğiniz mesaj sağlayıcıyı hemen yeniden dener.",
           "Kenar çubuğunda sürüklediğiniz sohbet, işaretçinin altındaki bölüme düşer."
         ]

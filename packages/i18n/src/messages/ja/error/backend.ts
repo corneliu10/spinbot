@@ -161,7 +161,7 @@ export const messages = {
   "error.backend.recipientDeleting": "受信者を削除中です。削除が終わってから再試行してください。",
   "error.backend.recipientHidden": "このエージェントは非表示です。メッセージを送るには元に戻してください。",
   "error.backend.agentIdUnknown":
-    "ID {id} のエージェントはありません。openbot.list_agents で ID を取得してから、もう一度お試しください。",
+    "ID {id} のエージェントはありません。spinbot.list_agents で ID を取得してから、もう一度お試しください。",
   "error.backend.agentIdNear":
     "ID {id} のエージェントはありません。エージェント {name} の ID {nearId} がほぼ同じです。このエージェントのことなら、その ID でもう一度お試しください。",
   "error.backend.attachBetween": "1 〜 {limit} 個のファイルを添付してください。",
@@ -213,7 +213,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "この接続はループになります。",
   "error.backend.routineFlowLinkLimit": "1 つのルーティンの接続は最大 {limit} 個です。",
   "error.backend.agentWaitLimit":
-    "このエージェントにはすでに開いている待機が {count} 件あります。別の待機を開く前に、openbot.close_wait で待機を閉じてください。",
+    "このエージェントにはすでに開いている待機が {count} 件あります。別の待機を開く前に、spinbot.close_wait で待機を閉じてください。",
   "error.backend.agentWaitGone": "この待機は開いていません。エージェントが閉じたか、誰かがキャンセルしました。",
   "error.backend.agentWaitNoRequest": "待機を続行するにはメッセージが必要です。このターンにはメッセージがありません。",
   "error.backend.agentWaitOwnChatOnly":
@@ -221,7 +221,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "待機の目的を示す短いメモを入力してください。",
   "error.backend.agentWaitRoutineGone": "このエージェントにはこの ID のルーティンがありません。",
   "error.backend.agentWaitNoRoutine":
-    "待機を再開できるのは自分のルーティンの実行だけですが、ルーティンがありません。openbot.create_routine でルーティンを作成してから、待機を開いてください。",
+    "待機を再開できるのは自分のルーティンの実行だけですが、ルーティンがありません。spinbot.create_routine でルーティンを作成してから、待機を開いてください。",
   "error.backend.markUnreadRemoteUnsupported":
     "メッセージを未読にする操作は、このコンピューター上のエージェントでのみ使用できます。",
   "error.backend.messageDeleteUnsupported": "このサーバーはメッセージの削除に対応していません。",

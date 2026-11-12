@@ -44,7 +44,7 @@
         "items": [
           "Gemini installeert en werkt weer bij op Windows. In 0.67.0 stopte het met een fout over een link of een speciaal bestand.",
           "Een agent die een bericht stuurt naar een bezige teamgenoot, weet nu of het bericht in de lopende taak van die teamgenoot is terechtgekomen. Wacht het bericht, dan kan de agent je vertellen waarom.",
-          "Tijdens Computerbesturing zeggen agents niet meer dat hun cursor niet beschikbaar is. OpenBot tekent de cursor waar de agent klikt, scrolt of beweegt."
+          "Tijdens Computerbesturing zeggen agents niet meer dat hun cursor niet beschikbaar is. Spinbot tekent de cursor waar de agent klikt, scrolt of beweegt."
         ]
       }
     ]
@@ -72,7 +72,7 @@
         "items": [
           "Chats met ongelezen antwoorden staan bovenaan, in een groep Ongelezen. Kies Chats sorteren in het menu van de chatlijst om de volgorde te wijzigen.",
           "Op een server waarvan je lid bent, zoals een VPS, hebben de desktop-app en de browser-app nu de meeste functies van deze computer.",
-          "Agents voegen OpenBot toe als co-auteur van hun git-commits. Jij blijft de auteur. Zet het uit in Jouw instellingen → Agents.",
+          "Agents voegen Spinbot toe als co-auteur van hun git-commits. Jij blijft de auteur. Zet het uit in Jouw instellingen → Agents.",
           "Agents voeren browsertaken uit in minder stappen en met ongeveer 18% minder tokens.",
           "Gemini draait nu op de Antigravity CLI. Je Google-login blijft."
         ]
@@ -81,8 +81,8 @@
         "type": "fixed",
         "items": [
           "Een Claude-agent die je stopt, stopt nu binnen ongeveer 10 seconden, en de berichten in zijn wachtrij starten.",
-          "Op Windows kunnen agents de browser gebruiken terwijl het OpenBot-venster geminimaliseerd is of in het systeemvak staat.",
-          "Op macOS sluit “Herstarten om bij te werken” OpenBot niet meer af wanneer het vanaf de schijfkopie draait. Het vraagt je om OpenBot naar de map Apps te verplaatsen.",
+          "Op Windows kunnen agents de browser gebruiken terwijl het Spinbot-venster geminimaliseerd is of in het systeemvak staat.",
+          "Op macOS sluit “Herstarten om bij te werken” Spinbot niet meer af wanneer het vanaf de schijfkopie draait. Het vraagt je om Spinbot naar de map Apps te verplaatsen.",
           "In een spraakgesprek stopt een kuch of een toetsaanslag het antwoord van de agent niet meer."
         ]
       }
@@ -101,7 +101,7 @@
           "Op Windows tonen het Dynamic Island en het agentdock je agents, net als op een Mac. Het agentdock kan ook kanalen bevatten.",
           "Agents kunnen openbare online video's bekijken, zoals YouTube- of TikTok-links.",
           "Selecteer meerdere bestanden in de Bibliotheek om ze in één keer te downloaden of te verwijderen.",
-          "Agents kunnen voor je een bugmelding of een idee voor een functie naar het OpenBot-team sturen."
+          "Agents kunnen voor je een bugmelding of een idee voor een functie naar het Spinbot-team sturen."
         ]
       },
       {
@@ -119,7 +119,7 @@
         "items": [
           "De wachtrij van een agent start niet meer steeds opnieuw hetzelfde bericht terwijl de agent op een antwoord op zijn eigen vraag wacht.",
           "Een ChatGPT-agent comprimeert niet meer steeds opnieuw en blijft niet meer eindeloos op “Context comprimeren” staan.",
-          "Agents op Cursor en enkele andere aanbieders houden hun OpenBot-tools nadat OpenBot opnieuw is gestart.",
+          "Agents op Cursor en enkele andere aanbieders houden hun Spinbot-tools nadat Spinbot opnieuw is gestart.",
           "Agents kunnen een externe MCP-server gebruiken waarop je bent ingelogd, zoals n8n, met de nieuwste MCP-versie."
         ]
       }
@@ -145,7 +145,7 @@
         "type": "changed",
         "items": [
           "Agents gebruiken minder tokens per verzoek bij Claude, Codex, Pi, OpenCode, Grok en Hermes.",
-          "OpenBot gebruikt minder geheugen voor browsertabbladen, inactieve agents en app-vensters.",
+          "Spinbot gebruikt minder geheugen voor browsertabbladen, inactieve agents en app-vensters.",
           "Browsertabbladen van agents wachten op botcontroles die vanzelf slagen, en voeren korte taken in minder stappen uit.",
           "Meldingen hebben een nieuw uiterlijk."
         ]
@@ -176,7 +176,7 @@
           "Start een nieuw gesprek of comprimeer de context van een kanaal vanuit de instellingen ervan.",
           "Leden van een server waaraan ze deelnemen, kunnen hun eigen MCP-servers toevoegen en apps zoals Trello koppelen.",
           "Kies in Serverinstellingen → Extern bureaublad wie deze computer met extern bureaublad mag bedienen.",
-          "Gebruik OpenBot in het Hebreeuws, en koppel GitLab, Omnisend en ElevenLabs in de Marktplaats."
+          "Gebruik Spinbot in het Hebreeuws, en koppel GitLab, Omnisend en ElevenLabs in de Marktplaats."
         ]
       },
       {
@@ -194,8 +194,8 @@
           "Vermeldingen in berichten op Slack, Discord, Telegram en WhatsApp sturen nu een melding naar de persoon.",
           "Als het quotum van een aanbieder op is, zet de agent het werk voort op het eerste reservemodel dat klaarstaat.",
           "Een chat die na elke beurt opnieuw comprimeerde, stopt automatisch comprimeren nu na 2 keer achter elkaar.",
-          "OpenBot sluit niet meer als een browseractie van een agent wacht op een pagina die navigeert.",
-          "Logins uit Proton Pass werken na een herstart van OpenBot."
+          "Spinbot sluit niet meer als een browseractie van een agent wacht op een pagina die navigeert.",
+          "Logins uit Proton Pass werken na een herstart van Spinbot."
         ]
       }
     ]
@@ -226,7 +226,7 @@
       {
         "type": "fixed",
         "items": [
-          "Claude blijft ingelogd na een herstart of update van OpenBot, en Claude-agents gebruiken minder van het gebruiksvenster van 5 uur.",
+          "Claude blijft ingelogd na een herstart of update van Spinbot, en Claude-agents gebruiken minder van het gebruiksvenster van 5 uur.",
           "Oudere berichten die je in een lange chat laadt, blijven geladen. De chat springt niet meer terug naar de nieuwste berichten.",
           "Automatisch comprimeren van een chat met ChatGPT (Codex), Muse, Pi of Antigravity stopt na 2 mislukte pogingen achter elkaar, zodat de chat de limiet van je abonnement niet meer opmaakt.",
           "GPT-spraak werkt met elke agent, ook als de agent een Codex-model gebruikt.",
@@ -244,7 +244,7 @@
         "type": "added",
         "items": [
           "Geef een browserprofiel een eigen proxy in Serverinstellingen → Browserprofielen, of gebruik op een server waaraan je deelneemt je eigen computer als proxy.",
-          "Koppel Proton Pass in de Marktplaats. De browser vult de logins in uit de kluis die je met OpenBot deelt.",
+          "Koppel Proton Pass in de Marktplaats. De browser vult de logins in uit de kluis die je met Spinbot deelt.",
           "Typ @ in de chat van een agent om een van zijn browsertabbladen of zijthreads te taggen.",
           "Instellingen → Spraak heeft twee extra lokale dicteermodellen: Parakeet Unified EN en Cohere Transcribe.",
           "Een thread toont een blauwe stip als de agent erin heeft geschreven en je het nog niet hebt gelezen.",
@@ -264,9 +264,9 @@
       {
         "type": "fixed",
         "items": [
-          "OpenBot gebruikt minder energie als het open is zonder taak.",
+          "Spinbot gebruikt minder energie als het open is zonder taak.",
           "Lange chats scrollen zonder haperen en openen sneller.",
-          "OpenBot blijft bij het starten niet meer hangen op “Verbinden met OpenBot” of op het laadscherm van de server.",
+          "Spinbot blijft bij het starten niet meer hangen op “Verbinden met Spinbot” of op het laadscherm van de server.",
           "Routines hebben weer Computerbesturing als die voor de agent aan staat."
         ]
       }
@@ -302,9 +302,9 @@
         "type": "fixed",
         "items": [
           "Een kanaal met een lange geschiedenis opent weer snel.",
-          "Op Linux vraagt OpenBot je niet meer na elke herstart opnieuw in te loggen als de sleutelbos de sleutel niet bewaart.",
+          "Op Linux vraagt Spinbot je niet meer na elke herstart opnieuw in te loggen als de sleutelbos de sleutel niet bewaart.",
           "Op Windows sturen kanaalleiders berichten weer door, en kun je een server op deze computer maken.",
-          "Als een oudere versie van OpenBot gegevens opent die een nieuwere versie heeft opgeslagen, installeert die de nieuwste versie."
+          "Als een oudere versie van Spinbot gegevens opent die een nieuwere versie heeft opgeslagen, installeert die de nieuwste versie."
         ]
       }
     ]
@@ -318,8 +318,8 @@
         "type": "added",
         "items": [
           "Praat met je agents via WhatsApp. Koppel een nummer onder Marktplaats → Apps → WhatsApp. Een apart nummer is veiliger, want WhatsApp kan nummers blokkeren die het als geautomatiseerd ziet.",
-          "Start een workflow als iemand OpenBot noemt in Slack of in een Telegram-groep, en stuur het resultaat daar terug.",
-          "Gebruik OpenBot in het Arabisch. De indeling wordt gespiegeld van rechts naar links.",
+          "Start een workflow als iemand Spinbot noemt in Slack of in een Telegram-groep, en stuur het resultaat daar terug.",
+          "Gebruik Spinbot in het Arabisch. De indeling wordt gespiegeld van rechts naar links.",
           "Zet modellen uit in Serverinstellingen → Aanbieders. De modelkiezer toont de nieuwste modellen eerst, en oudere modellen zijn ingeklapt.",
           "Serverinstellingen heeft een Auditlog met wijzigingen in leden, rollen en toegang van agents.",
           "Bedrijfsaanmelding: een servereigenaar kan Microsoft Entra ID, Okta, Google Workspace of een andere OpenID Connect-aanbieder koppelen in Leden → Bedrijfsaanmelding. Mensen met een e-mailadres van het bedrijf doen dan mee zonder uitnodiging.",
@@ -335,7 +335,7 @@
           "Chatberichten gebruiken meer ruimte in een breed venster.",
           "Elk bestand dat je vanuit een chat opent, krijgt een eigen tabblad in het zijpaneel.",
           "Geplakte tekst van meer dan 4.000 tekens wordt een bijlage pasted-text.txt, zodat het bericht alle tekst behoudt.",
-          "OpenBot is gratis voor persoonlijk gebruik, en de eerste start zegt dat ook."
+          "Spinbot is gratis voor persoonlijk gebruik, en de eerste start zegt dat ook."
         ]
       },
       {
@@ -357,10 +357,10 @@
       {
         "type": "added",
         "items": [
-          "Kimi is een nieuwe aanbieder. OpenBot downloadt de Kimi Code CLI, en je logt in met je Kimi Code-account.",
+          "Kimi is een nieuwe aanbieder. Spinbot downloadt de Kimi Code CLI, en je logt in met je Kimi Code-account.",
           "Gebruik Hermes Agent van Nous Research als aanbieder, met je eigen herinneringen, vaardigheden en logins.",
-          "Op een Mac heeft OpenBot een pictogram in de menubalk. Als je het venster sluit, verdwijnt het Dock-pictogram en blijven taken draaien.",
-          "Start een workflow als iemand OpenBot noemt in Discord, en stuur het resultaat terug als antwoord, bericht of reactie.",
+          "Op een Mac heeft Spinbot een pictogram in de menubalk. Als je het venster sluit, verdwijnt het Dock-pictogram en blijven taken draaien.",
+          "Start een workflow als iemand Spinbot noemt in Discord, en stuur het resultaat terug als antwoord, bericht of reactie.",
           "Mappen in de zijbalk kunnen mappen bevatten, tot drie niveaus diep. Sleep een chat of map naar een map.",
           "Kies de redeneerniveaus Geen, Minimaal en Ultra als een model ze aanbiedt.",
           "Vastgezette agents en kanalen blijven hetzelfde op elk apparaat dat verbinding maakt met een server.",
@@ -381,10 +381,10 @@
       {
         "type": "fixed",
         "items": [
-          "Slack-vermeldingen en directe berichten bereiken OpenBot weer als een computer met de Slack-workspace uit staat.",
+          "Slack-vermeldingen en directe berichten bereiken Spinbot weer als een computer met de Slack-workspace uit staat.",
           "Telefoons en andere apparaten kunnen direct verbinding maken met je servers nadat de computer uit de slaapstand komt.",
           "Een upload in de ene chat blokkeert het versturen in andere chats niet meer.",
-          "Tekst die je uit OpenBot kopieert, wordt in andere apps geplakt zonder de kleuren van de app."
+          "Tekst die je uit Spinbot kopieert, wordt in andere apps geplakt zonder de kleuren van de app."
         ]
       }
     ]
@@ -398,8 +398,8 @@
         "type": "added",
         "items": [
           "Start een workflow vanuit GitHub: een GitHub-trigger draait bij nieuwe issues, reacties, pull requests, reviews, mislukte checks of een vermelding van @openbotgit.",
-          "Wijzig GitHub vanuit een workflow: reageer, label, wijs toe, review, sluit of maak een issue als de OpenBot GitHub App.",
-          "De Marktplaats heeft 17 nieuwe OpenBot-agents, zoals QA Tester, PR Shepherd en Chief of Staff, en 15 nieuwe vaardigheden voor ze.",
+          "Wijzig GitHub vanuit een workflow: reageer, label, wijs toe, review, sluit of maak een issue als de Spinbot GitHub App.",
+          "De Marktplaats heeft 17 nieuwe Spinbot-agents, zoals QA Tester, PR Shepherd en Chief of Staff, en 15 nieuwe vaardigheden voor ze.",
           "Gebruik toont de maandlimiet van OpenCode Go als derde balk."
         ]
       },
@@ -432,7 +432,6 @@
         "items": [
           "Vertak een gesprek: klik met de rechtermuisknop op het laatste agentbericht van een beurt en kies Hier aftakken. Er opent een nieuwe thread met het gesprek tot dat bericht.",
           "De agentinstellingen hebben een pagina Instructies die het AGENTS.md-bestand van de agent toont. Als de agent zijn instructies wijzigt, toont de chat de wijziging met Ongedaan maken.",
-          "De Marktplaats staat op openbot.run. Elke agent en vaardigheid heeft een eigen pagina, en met Link kopiëren deel je die.",
           "Een agent kan antwoorden op een melding of bevestiging van een website die zijn eigen browseractie heeft geopend.",
           "Een gestopte of mislukte kanaaltaak heeft de knop Taak annuleren."
         ]
@@ -474,7 +473,7 @@
       {
         "type": "changed",
         "items": [
-          "Een aanbieder gebruikt de CLI die je zelf hebt geïnstalleerd als die dezelfde versie heeft als de kopie van OpenBot, of nieuwer is.",
+          "Een aanbieder gebruikt de CLI die je zelf hebt geïnstalleerd als die dezelfde versie heeft als de kopie van Spinbot, of nieuwer is.",
           "Je keuze voor analyse volgt je account naar je andere apparaten. Als je analyse vóór deze versie had uitgezet, blijft die op deze computer uit tot je het hier wijzigt.",
           "Sleep aan de greep van het veld Instructies om het hoger te maken."
         ]
@@ -483,7 +482,7 @@
         "type": "fixed",
         "items": [
           "Cloudflare-controles slagen in de ingebouwde browser.",
-          "Elke CLI van een aanbieder gebruikt ongeveer de helft van de schijfruimte: OpenBot bewaart één versie.",
+          "Elke CLI van een aanbieder gebruikt ongeveer de helft van de schijfruimte: Spinbot bewaart één versie.",
           "Een bericht dat je naar een agent stuurt die op een gebruikslimiet zit, probeert de aanbieder direct opnieuw.",
           "In de zijbalk komt een chat die je sleept terecht in de sectie onder de aanwijzer."
         ]

@@ -1,6 +1,7 @@
 import { INPUT_LIMITS } from "@openbot/contracts/input-limits";
 import { mcpFlowFields } from "@openbot/contracts/mcp-connect-flows";
 import { pluginLinkText } from "@openbot/contracts/plugin-links";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import type { AppTextKey } from "@openbot/i18n";
 import {
   Alert,
@@ -104,10 +105,12 @@ function PluginAppPage(props: { scope: MarketplaceScope; app: PluginApp }) {
       subtitle={props.app.tagline}
       actions={
         <>
-          <Button type="button" variant="outline" size="sm" onClick={() => model().copyLink(plugin().slug)}>
-            <Link2 aria-hidden="true" />
-            {t("plugin.copyLink")}
-          </Button>
+          <Show when={SPINBOT_ONLINE_SERVICES}>
+            <Button type="button" variant="outline" size="sm" onClick={() => model().copyLink(plugin().slug)}>
+              <Link2 aria-hidden="true" />
+              {t("plugin.copyLink")}
+            </Button>
+          </Show>
           {/* With more than one app, each app's row signs in again: the header cannot say which. */}
           <Show when={!refused() || plugin().apps.length === 1}>
             <AppAction scope={props.scope} app={props.app} size="sm" variant="default" />

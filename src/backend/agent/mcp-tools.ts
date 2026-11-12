@@ -185,7 +185,7 @@ const runMarketplaceAppStatus = Effect.fn("McpServerTools.marketplaceAppStatus")
     return openBotToolResult({
       status: "disabled",
       server,
-      next: "The app is installed and turned off. Tell the user to turn it on in Server settings, MCP, or call openbot.set_mcp_server_enabled when the user asks.",
+      next: "The app is installed and turned off. Tell the user to turn it on in Server settings, MCP, or call spinbot.set_mcp_server_enabled when the user asks.",
     });
   const outcome = yield* servers.inspect(config);
   if (outcome.error === null)
@@ -202,7 +202,7 @@ const runMarketplaceAppStatus = Effect.fn("McpServerTools.marketplaceAppStatus")
       server,
       error: servers.redact(outcome.error),
       setupSteps,
-      next: "Give the user these steps, end your turn, and call openbot.test_mcp_server when the user says it is done.",
+      next: "Give the user these steps, end your turn, and call spinbot.test_mcp_server when the user says it is done.",
     });
   return yield* report(servers, { requestSignIn }, config, outcome, false);
 });

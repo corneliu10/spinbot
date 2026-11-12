@@ -17,7 +17,7 @@ import {
 } from "./browser-fill-fields";
 import { repairBrowserStep, repairBrowserToolInput } from "./browser-tool-input";
 
-export const OPENBOT_BROWSER_NAMESPACE = "openbot_browser";
+export const OPENBOT_BROWSER_NAMESPACE = "spinbot_browser";
 
 const identifier = z.string().min(1).max(INPUT_LIMITS.identifier);
 const requiredString = (max: number) =>

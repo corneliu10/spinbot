@@ -3004,7 +3004,7 @@ export class ProviderRuntime implements ProviderPort {
       .request(
         "initialize",
         {
-          clientInfo: { name: "openbot", title: "Spinbot", version: "0.1.0" },
+          clientInfo: { name: "spinbot", title: "Spinbot", version: "0.1.0" },
           capabilities: { experimentalApi: true, mcpServerOpenaiFormElicitation: true },
         },
         decodeRecordResponse,

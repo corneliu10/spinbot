@@ -483,7 +483,7 @@ export class MessagingThreads {
       });
     const record = enabled.find((candidate) => candidate.connectionId === call.connection);
     if (!record)
-      return openBotToolFailure("No enabled connection has that id. Call openbot.messaging_list_places for the ids.");
+      return openBotToolFailure("No enabled connection has that id. Call spinbot.messaging_list_places for the ids.");
     const outbound = this.#outbound;
     if (!outbound) return openBotToolFailure(MESSAGING_NOT_RUNNING);
     // No deadline on a post: one that ended late could be sent again by the agent.

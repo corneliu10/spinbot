@@ -260,7 +260,7 @@ export const startAcpAuthentication = Effect.fnUntraced(function* (options: {
         params: {
           protocolVersion: 1,
           clientCapabilities: { fs: { readTextFile: false, writeTextFile: false }, terminal: false },
-          clientInfo: { name: "openbot", title: "Spinbot", version: "0.1.0" },
+          clientInfo: { name: "spinbot", title: "Spinbot", version: "0.1.0" },
         },
       });
       return Effect.sync(() => {

@@ -122,7 +122,7 @@ const syncTarget = Effect.fn("ManagedSkill.syncTarget")(function* (
   content: string,
   slug: string,
 ): Effect.fn.Return<"synced" | "collision", ManagedSkillFailure> {
-  const ownershipContent = `${JSON.stringify({ managedBy: "openbot", slug, version: 1 })}\n`;
+  const ownershipContent = `${JSON.stringify({ managedBy: "spinbot", slug, version: 1 })}\n`;
   const parent = dirname(target);
   yield* ensureSafeDirectory(workspaceRoot, parent);
   const marker = join(parent, OWNERSHIP_MARKER);
@@ -257,7 +257,7 @@ export const listManagedSkillsForChat = Effect.fn("ManagedSkill.listForChat")(fu
         yield* rejectSymlink(file);
         if (
           (yield* optionalText(marker)) !==
-          `${JSON.stringify({ managedBy: "openbot", slug: entry.name, version: 1 })}\n`
+          `${JSON.stringify({ managedBy: "spinbot", slug: entry.name, version: 1 })}\n`
         )
           return;
         const content = yield* managedIO(() => readFile(file, "utf8"));

@@ -376,7 +376,7 @@ function initializeLoginClient(client: AgentClient): Effect.Effect<void, CodexLo
       .request(
         "initialize",
         {
-          clientInfo: { name: "openbot", title: "Spinbot", version: "0.1.0" },
+          clientInfo: { name: "spinbot", title: "Spinbot", version: "0.1.0" },
           capabilities: { experimentalApi: true, mcpServerOpenaiFormElicitation: true },
         },
         decodeRecordResponse,

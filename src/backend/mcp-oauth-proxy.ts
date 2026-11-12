@@ -351,7 +351,7 @@ function clientInfo(client: McpOAuthProxyClient, agentKey: string | null): Clien
         .trim()
     : null;
   return {
-    name: "openbot",
+    name: "spinbot",
     title: name ? `${name} (Spinbot)` : "Spinbot",
     version: client.version,
     websiteUrl: "https://openbot.run",

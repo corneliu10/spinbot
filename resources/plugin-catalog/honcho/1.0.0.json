@@ -2,7 +2,7 @@
   "slug": "honcho",
   "name": "Honcho",
   "tagline": "Your memory across AI tools",
-  "description": "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. OpenBot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
+  "description": "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. Spinbot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
   "category": "productivity",
   "creatorName": "Plastic Labs",
   "iconUrl": "https://honcho.dev/favicon.ico",

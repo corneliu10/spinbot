@@ -14,6 +14,7 @@ import {
 } from "@openbot/contracts/feedback";
 import { INPUT_LIMITS } from "@openbot/contracts/input-limits";
 import { API_KEY_NAME_PATTERN, CONNECTOR_IDS, VAULT_API_KEY_LIMIT, VAULT_NOTES_LIMIT } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { isUiBlockId, UI_BLOCK_LIMITS } from "@openbot/contracts/ui-blocks";
 import { z } from "zod";
 import pluginCatalog from "../../resources/plugin-catalog/catalog.json";
@@ -232,12 +233,12 @@ export const saveApiKeyToolSchema = z.strictObject({
     .describe("What the key is for. Never a secret. Omit it to keep the saved notes."),
 });
 
-/** `openbot.web_search`: one search turn on a ChatGPT account (`AgentService.searchWeb`). */
+/** `spinbot.web_search`: one search turn on a ChatGPT account (`AgentService.searchWeb`). */
 export const webSearchToolSchema = z.strictObject({
   query: z.string().trim().min(1).max(1_000).describe("The whole question, with its context."),
 });
 
-/** `openbot.create_server_install_command`: a one-time command for a new server of this account. */
+/** `spinbot.create_server_install_command`: a one-time command for a new server of this account. */
 export const serverInstallCommandToolSchema = z.strictObject({
   name: z
     .string()
@@ -261,7 +262,7 @@ export const MARKETPLACE_APP_IDS: readonly string[] = [
 ];
 
 /** Shared declarations for Codex, Grok, and Claude. Service handlers enforce execution rules. */
-export const OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = [
+const ALL_OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = [
   ...CHANNEL_TOOL_DEFINITIONS,
   ...MESSAGING_TOOL_DEFINITIONS,
   ...HISTORY_TOOL_DEFINITIONS,
@@ -335,7 +336,7 @@ export const OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = [
   {
     name: "web_search",
     description:
-      "Search the web for current facts. Returns a short answer with source URLs. One question per call. To read or use a page, use openbot_browser.",
+      "Search the web for current facts. Returns a short answer with source URLs. One question per call. To read or use a page, use spinbot_browser.",
     shape: webSearchToolSchema.shape,
   },
   {
@@ -398,7 +399,7 @@ export const OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = [
   {
     name: "update_channel",
     description:
-      "Change or archive a channel from openbot.list_channels, including its picture. Pass only the values to change. Returns the channel.",
+      "Change or archive a channel from spinbot.list_channels, including its picture. Pass only the values to change. Returns the channel.",
     shape: updateChannelToolSchema.shape,
   },
   {
@@ -771,9 +772,24 @@ export const OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = [
   },
 ];
 
+/** Spinbot: tools that need OpenBot's online services: sites, server installs, webhooks, feedback. */
+const SPINBOT_SERVICE_TOOLS = new Set([
+  "list_sites",
+  "publish_site",
+  "replace_site",
+  "delete_site",
+  "create_server_install_command",
+  "create_webhook_routine",
+  "update_webhook_routine",
+  "send_feedback",
+]);
+export const OPENBOT_TOOL_DEFINITIONS: readonly OpenBotToolDefinition[] = SPINBOT_ONLINE_SERVICES
+  ? ALL_OPENBOT_TOOL_DEFINITIONS
+  : ALL_OPENBOT_TOOL_DEFINITIONS.filter((tool) => !SPINBOT_SERVICE_TOOLS.has(tool.name));
+
 export const OPENBOT_DYNAMIC_TOOLS = {
   type: "namespace",
-  name: "openbot",
+  name: "spinbot",
   description:
     "Attach files to the current response, keep structured data in the shared SQLite database, and work with persistent Spinbot teammates.",
   tools: OPENBOT_TOOL_DEFINITIONS.map((definition) => ({

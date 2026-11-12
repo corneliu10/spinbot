@@ -6,6 +6,7 @@ import {
   type RoutineFields,
   type ServerSummary,
 } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { BROWSER_PROFILES_CAPABILITY } from "@openbot/contracts/team-protocol/browser-profiles-v1";
 import { PROVIDER_DETECTION_CAPABILITY } from "@openbot/contracts/team-protocol/provider-detection-v1";
 import { VAULT_IMPORT_CAPABILITY } from "@openbot/contracts/team-protocol/vault-import-v1";
@@ -968,7 +969,7 @@ function ServerSettings() {
           // This computer, or a remote host with `hosted-sites-v1`. Every member lists; the host deletes
           // only for an owner or admin.
           hostedSites={
-            serverSupportsCapability(server(), "hosted-sites-v1")
+            SPINBOT_ONLINE_SERVICES && serverSupportsCapability(server(), "hosted-sites-v1")
               ? {
                   api: appPort().hostedSites,
                   onOpenSite: (url) => void appPort().openUrl(url),

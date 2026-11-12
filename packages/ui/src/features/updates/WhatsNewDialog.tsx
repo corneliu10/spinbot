@@ -1,4 +1,5 @@
 import { AppLogo } from "@openbot/brand";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import type { AppTextKey } from "@openbot/i18n";
 import { Button, ChevronDown, Dialog, ExternalLink, Heading, IconButton, Text, TriangleAlert, X } from "@openbot/ui";
 import { createEffect, createMemo, createSignal, createUniqueId, For, Match, onSettled, Show, Switch } from "solid-js";
@@ -94,10 +95,12 @@ export function WhatsNewDialog(props: WhatsNewDialogProps) {
             <WhatsNewBody notes={props.notes} releases={releases()} onRetry={retry} />
 
             <footer class="whats-new-actions">
-              <Button type="button" variant="ghost" onClick={() => props.onOpenChangelog()}>
-                {t("update.whatsNew.changelog")}
-                <ExternalLink aria-hidden="true" />
-              </Button>
+              <Show when={SPINBOT_ONLINE_SERVICES}>
+                <Button type="button" variant="ghost" onClick={() => props.onOpenChangelog()}>
+                  {t("update.whatsNew.changelog")}
+                  <ExternalLink aria-hidden="true" />
+                </Button>
+              </Show>
               <Button
                 ref={(element: HTMLButtonElement) => {
                   doneButton = element;

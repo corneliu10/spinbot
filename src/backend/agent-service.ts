@@ -5040,7 +5040,7 @@ export class AgentService extends EventEmitter<AgentServiceEvents> {
   }).bind(this);
 
   /**
-   * Answers `openbot.web_search` with one turn on a new Codex thread whose only tool is live web
+   * Answers `spinbot.web_search` with one turn on a new Codex thread whose only tool is live web
    * search, on the Codex sign-in of this computer. Only agents on a provider with no web search of
    * its own get the tool (`tool-catalog.ts`). The search model only reads the results, so it is the
    * small default model, with low effort. The usage counts for the agent. Like other background

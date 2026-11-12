@@ -1,4 +1,5 @@
 import type { ChatWindowTarget } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { CONVERSATION_UNREAD_FROM_CAPABILITY } from "@openbot/contracts/team-protocol/conversation-unread-from-v1";
 import { AGENT_HIDDEN_CAPABILITY } from "@openbot/contracts/team-protocol/current";
 import { Sidebar } from "@openbot/ui/features/sidebar/Sidebar";
@@ -314,7 +315,9 @@ export function WorkspaceSidebar(props: { peopleEnabled: boolean }) {
               members={teamPresence().members}
               onOpenStorage={(serverId) => openServerSettings(serverId, null, "storage")}
             />
-            <Show when={!platform.landingPreview && !alertCards.shown() && !mobileAppDismissed()}>
+            <Show
+              when={SPINBOT_ONLINE_SERVICES && !platform.landingPreview && !alertCards.shown() && !mobileAppDismissed()}
+            >
               <SidebarMobileAppCard
                 onOpenInstall={() => openAppSettings(null, "mobile-connect")}
                 onDismiss={() => {
@@ -325,7 +328,11 @@ export function WorkspaceSidebar(props: { peopleEnabled: boolean }) {
             </Show>
             <Show
               when={
-                !platform.landingPreview && !alertCards.shown() && mobileAppDismissed() && !communityCard.dismissed()
+                SPINBOT_ONLINE_SERVICES &&
+                !platform.landingPreview &&
+                !alertCards.shown() &&
+                mobileAppDismissed() &&
+                !communityCard.dismissed()
               }
             >
               <SidebarCommunityCard

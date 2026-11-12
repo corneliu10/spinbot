@@ -28,7 +28,7 @@ export interface AttachmentGatewayHooks {
  * The default is the attachment policy: the file must resolve inside this agent's own workspace or the
  * OpenBot shared directory, and a symlink anywhere on the way is refused outright.
  *
- * `allowAnyReadablePath` is the browser-upload policy. `openbot_browser.upload_files` hands a local
+ * `allowAnyReadablePath` is the browser-upload policy. `spinbot_browser.upload_files` hands a local
  * file to a page, and the file the user names is almost never one the agent already copied into its
  * workspace, so containment would make the tool unusable. It grants no capability an agent does not
  * already have -- every agent can read any file its user can, and Workspace only limits writes, not

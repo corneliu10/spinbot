@@ -1,7 +1,7 @@
 import type { AgentApproval } from "@openbot/contracts/ipc";
 import { sourceText as englishSourceText } from "@openbot/i18n/source";
 
-/** A bug report or an idea from `openbot.send_feedback`. */
+/** A bug report or an idea from `spinbot.send_feedback`. */
 export interface FeedbackApproval {
   kind: "bug" | "idea";
   title: string;

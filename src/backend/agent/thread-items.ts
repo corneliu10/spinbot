@@ -346,7 +346,7 @@ export function toolUsage(item: ThreadItem): ToolUsage | null {
   if (claudeKind) return { kind: claudeKind, failed };
   const mcp = /^mcp__(.+?)__(.+)$/u.exec(name);
   if (!mcp?.[1] || !mcp[2]) return { kind: "other", failed };
-  // A server name can contain `__`, so `mcp__openbot__acme__list` does not show where the server
+  // A server name can contain `__`, so `mcp__spinbot__acme__list` does not show where the server
   // name stops. Such a step keeps no names: a user's server must never pass as a built-in one.
   if (mcp[2].includes("__")) return { kind: "mcp", failed };
   return { kind: "mcp", server: mcp[1], tool: mcp[2], failed };
@@ -362,27 +362,27 @@ const TOOL_RESULT_PROGRESS = sourceText("status.agent.toolResultReviewing");
 
 /**
  * The OpenBot tool that an item calls, or null for any other tool: a Codex, Pi or Muse item names
- * it, a Claude item names it `mcp__openbot__<tool>`, and a `tool_call` bridge item names it in its
+ * it, a Claude item names it `mcp__spinbot__<tool>`, and a `tool_call` bridge item names it in its
  * arguments. A tool of another MCP server with the same name is not OpenBot's.
  */
 function openBotTool(item: ThreadItem): string | null {
   const bridged = bridgedToolName(item);
   if (bridged) return bridged.startsWith("openbot.") ? bridged.slice("openbot.".length) : null;
-  if (item.type === "toolCall") return /^mcp__openbot__(.+)$/u.exec(getString(item, "name") ?? "")?.[1] ?? null;
-  if (item.type === "mcpToolCall" && getString(item, "server") !== "openbot") return null;
+  if (item.type === "toolCall") return /^mcp__spinbot__(.+)$/u.exec(getString(item, "name") ?? "")?.[1] ?? null;
+  if (item.type === "mcpToolCall" && getString(item, "server") !== "spinbot") return null;
   return item.type === "dynamicToolCall" || item.type === "mcpToolCall" ? getString(item, "tool") : null;
 }
 
 /**
  * The OpenBot browser tool that an item calls, or null for any other tool: a `tool_call` bridge item
  * names it in its arguments, a Codex item names its namespace, and a Claude item names it
- * `mcp__openbot_browser__<tool>` (`claudeBridgedToolName`).
+ * `mcp__spinbot_browser__<tool>` (`claudeBridgedToolName`).
  */
 function browserTool(item: ThreadItem): string | null {
   const bridged = bridgedTool(item);
   if (bridged) return bridged.namespace === OPENBOT_BROWSER_NAMESPACE ? bridged.tool : null;
   if (item.type === "toolCall") {
-    return /^mcp__openbot_browser__(.+)$/u.exec(getString(item, "name") ?? "")?.[1] ?? null;
+    return /^mcp__spinbot_browser__(.+)$/u.exec(getString(item, "name") ?? "")?.[1] ?? null;
   }
   if (item.type !== "dynamicToolCall" || getString(item, "namespace") !== OPENBOT_BROWSER_NAMESPACE) return null;
   return getString(item, "tool");

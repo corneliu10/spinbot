@@ -40,7 +40,7 @@ export const CHANNEL_TOOL_DEFINITIONS: readonly { name: string; description: str
   {
     name: "channel_assign",
     description:
-      "Give a subtask to another member only when the person asks for that member or for help, or a part needs their role. You stay the owner: integrate the result and report. End your turn to wait for needed results. In a channel task only; else use openbot.send_message.",
+      "Give a subtask to another member only when the person asks for that member or for help, or a part needs their role. You stay the owner: integrate the result and report. End your turn to wait for needed results. In a channel task only; else use spinbot.send_message.",
     shape: handoff,
   },
   {
@@ -82,7 +82,7 @@ export const CHANNEL_TOOL_DEFINITIONS: readonly { name: string; description: str
   },
   {
     name: "channel_add_member",
-    description: `Add an agent to this channel when a person asks for it. Get its id from openbot.list_agents. ${PERSON_ONLY}`,
+    description: `Add an agent to this channel when a person asks for it. Get its id from spinbot.list_agents. ${PERSON_ONLY}`,
     shape: { agentId: z.string().min(1).max(INPUT_LIMITS.identifier) },
   },
   {

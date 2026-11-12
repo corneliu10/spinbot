@@ -40,7 +40,8 @@ export type SkillSource = "verified" | "public";
 export type MarketplaceTab = "apps" | "agents" | "skills";
 
 /** The kinds, in the order of the side panel. */
-export const MARKETPLACE_TABS: readonly MarketplaceTab[] = ["apps", "agents", "skills"];
+// Spinbot: no Agents tab; its catalog is on OpenBot's servers.
+export const MARKETPLACE_TABS: readonly MarketplaceTab[] = ["apps", "skills"];
 
 /** The name of each tab. The header names the browse view after its tab. */
 export const MARKETPLACE_TAB_LABEL = {

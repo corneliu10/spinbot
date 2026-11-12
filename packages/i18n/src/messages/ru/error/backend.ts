@@ -153,7 +153,7 @@ export const messages = {
     "Состояние почтового ящика повреждено или создано более новой версией Spinbot; перезапись отклонена.",
   "error.backend.recipientDeleting": "Получатель удаляется. Повторите попытку, когда удаление завершится.",
   "error.backend.recipientHidden": "Этот агент скрыт. Восстановите его, чтобы отправлять сообщения.",
-  "error.backend.agentIdUnknown": "Нет агента с ID {id}. Получите ID через openbot.list_agents и повторите попытку.",
+  "error.backend.agentIdUnknown": "Нет агента с ID {id}. Получите ID через spinbot.list_agents и повторите попытку.",
   "error.backend.agentIdNear":
     "Нет агента с ID {id}. У агента {name} почти такой же ID: {nearId}. Если вы имели в виду этого агента, повторите попытку с его ID.",
   "error.backend.attachBetween": "Прикрепите от 1 до {limit} файлов.",
@@ -204,7 +204,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Эта связь создаст цикл.",
   "error.backend.routineFlowLinkLimit": "У регулярной задачи может быть не больше {limit} связей.",
   "error.backend.agentWaitLimit":
-    "У этого агента уже открыто максимальное число ожиданий: {count}. Закройте ожидание с помощью openbot.close_wait, прежде чем открывать новое.",
+    "У этого агента уже открыто максимальное число ожиданий: {count}. Закройте ожидание с помощью spinbot.close_wait, прежде чем открывать новое.",
   "error.backend.agentWaitGone": "Это ожидание не открыто. Агент закрыл его, или кто-то его отменил.",
   "error.backend.agentWaitNoRequest": "Для продолжения ожиданию нужно сообщение. В этом ходе нет сообщения.",
   "error.backend.agentWaitOwnChatOnly":
@@ -212,7 +212,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Кратко укажите, для чего это ожидание.",
   "error.backend.agentWaitRoutineGone": "У этого агента нет регулярной задачи с таким id.",
   "error.backend.agentWaitNoRoutine":
-    "Ожидание пробуждает только запуск одной из ваших регулярных задач, а у вас их нет. Создайте регулярную задачу с помощью openbot.create_routine, затем откройте ожидание.",
+    "Ожидание пробуждает только запуск одной из ваших регулярных задач, а у вас их нет. Создайте регулярную задачу с помощью spinbot.create_routine, затем откройте ожидание.",
   "error.backend.markUnreadRemoteUnsupported":
     "Отметить сообщение непрочитанным можно только для агентов на этом компьютере.",
   "error.backend.messageDeleteUnsupported": "Этот сервер не поддерживает удаление сообщений.",

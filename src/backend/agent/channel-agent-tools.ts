@@ -61,7 +61,7 @@ export const createChannelToolSchema = z
     name: channelFields.name,
     title: channelFields.title.optional(),
     instructions: channelFields.instructions.optional(),
-    memberAgentIds: agentIds.min(1).describe("Ids from openbot.list_agents of the agents in the channel."),
+    memberAgentIds: agentIds.min(1).describe("Ids from spinbot.list_agents of the agents in the channel."),
     leadAgentId: agentId
       .describe("The member that routes requests that name no member. Omit it for the first member.")
       .optional(),
@@ -73,11 +73,11 @@ export const createChannelToolSchema = z
 
 export const updateChannelToolSchema = z
   .strictObject({
-    channelId: z.string().trim().min(1).max(INPUT_LIMITS.identifier).describe("Id from openbot.list_channels."),
+    channelId: z.string().trim().min(1).max(INPUT_LIMITS.identifier).describe("Id from spinbot.list_channels."),
     name: channelFields.name.optional(),
     title: channelFields.title.optional(),
     instructions: channelFields.instructions.optional(),
-    addMemberAgentIds: agentIds.describe("Ids from openbot.list_agents of the agents to add.").optional(),
+    addMemberAgentIds: agentIds.describe("Ids from spinbot.list_agents of the agents to add.").optional(),
     removeMemberAgentIds: agentIds
       .describe("Ids of the members to remove. Their open tasks in the channel stop.")
       .optional(),
@@ -102,14 +102,14 @@ export const updateChannelToolSchema = z
 type CreateChannelArgs = z.infer<typeof createChannelToolSchema>;
 type UpdateChannelArgs = z.infer<typeof updateChannelToolSchema>;
 
-const UNKNOWN_CHANNEL = "No channel has that channelId. Call openbot.list_channels.";
+const UNKNOWN_CHANNEL = "No channel has that channelId. Call spinbot.list_channels.";
 const OWN_CHANNEL_IN_TASK =
   "update_channel does not change the channel of your current task. For this channel, use channel_add_member, channel_remove_member and channel_set_instructions.";
 
 /** An agent that a channel can take: one that exists and that the user has not hidden. */
 function requireAvailable(agents: readonly AgentSummary[], id: string): AgentSummary {
   const agent = agents.find((candidate) => candidate.id === id);
-  if (!agent) throw new Error(`No agent has the id ${id}. Get the ids from openbot.list_agents.`);
+  if (!agent) throw new Error(`No agent has the id ${id}. Get the ids from spinbot.list_agents.`);
   if (agent.hiddenAt !== undefined) throw new Error(`${agent.name} is hidden. Ask the user to show it again first.`);
   return agent;
 }
@@ -252,7 +252,7 @@ export const handleChannelAgentTool = Effect.fn("ChannelAgentTool.handle")(funct
           () =>
             new ToolOperationFailed({
               cause: new Error(
-                `Channel ${channelId} was created, but its picture was not saved. To try again, call openbot.update_channel with that channelId and imagePath.`,
+                `Channel ${channelId} was created, but its picture was not saved. To try again, call spinbot.update_channel with that channelId and imagePath.`,
               ),
             }),
         ),

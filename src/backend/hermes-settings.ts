@@ -22,7 +22,7 @@ export interface HermesAgentSettings {
  *   reply). The agent can still load each of them. Hermes uses focus only in a code workspace, and
  *   collapses the toolset in focus only in its own terminal, not in ACP.
  * - `disabled_toolsets: [browser]` removes the 6 Hermes browser tools (−1,748 per reply). OpenBot gives
- *   each agent its own browser (`openbot_browser`), which shows the user the pages that the agent opens.
+ *   each agent its own browser (`spinbot_browser`), which shows the user the pages that the agent opens.
  */
 export const HERMES_AGENT_SETTINGS = {
   coding_context: "focus",

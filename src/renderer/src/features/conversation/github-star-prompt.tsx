@@ -1,3 +1,4 @@
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { toast } from "@openbot/ui";
 import { GitHubStarToast } from "@openbot/ui/features/github-star/GitHubStarToast";
 import { createSignal } from "solid-js";
@@ -21,6 +22,7 @@ export function githubStarPromptShownThisSession(): boolean {
  * Blocked storage counts nothing, so a user never gets the question on each start.
  */
 export function noteAgentMessageSent(): void {
+  if (!SPINBOT_ONLINE_SERVICES) return;
   let sent: number;
   try {
     const saved = window.localStorage.getItem(STORAGE_KEY);

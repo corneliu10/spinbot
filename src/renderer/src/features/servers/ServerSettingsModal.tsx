@@ -8,6 +8,7 @@ import type {
   TeamPresenceMember,
   UpdateTeamMemberInput,
 } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import type { AppTextKey } from "@openbot/i18n";
 import { classifyFailure } from "@openbot/telemetry";
 import {
@@ -497,8 +498,9 @@ export function ServerSettingsModal(props: ServerSettingsModalProps) {
   const sectionSupported = (value: Section): boolean => {
     switch (value) {
       case "general":
-      case "members":
         return true;
+      case "members":
+        return SPINBOT_ONLINE_SERVICES;
       case "personality":
         return Boolean(personalityOptions());
       case "vault":
@@ -508,7 +510,7 @@ export function ServerSettingsModal(props: ServerSettingsModalProps) {
       case "audit":
         return audit.available();
       case "desktop":
-        return remoteDesktopSection();
+        return SPINBOT_ONLINE_SERVICES && remoteDesktopSection();
       case "mcp":
         return Boolean(props.mcpServers);
       case "storage":

@@ -41,7 +41,7 @@ export const exportOpenBotData = Effect.fn("Archive.exportOpenBotData")(function
 
   const archiveCandidate = `${destination}.${randomUUID()}.tmp.zip`;
   return yield* Effect.acquireUseRelease(
-    archiveCall(() => mkdtemp(join(tmpdir(), "openbot-export-"))),
+    archiveCall(() => mkdtemp(join(tmpdir(), "spinbot-export-"))),
     (temporaryRoot) =>
       Effect.gen(function* () {
         const exportRoot = join(temporaryRoot, "Spinbot Backup");

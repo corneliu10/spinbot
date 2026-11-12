@@ -49,11 +49,11 @@ const SUMMARY_TARGET_CHARACTERS = 8_000;
 const REPEATED_ASSIGNMENT_CHARACTERS = 2_000;
 // An instruction that an agent wrote is cut above this size, as a long history message is. A member
 // pasted a whole log into a handoff, and each packet of the task gave it again.
-/** #4332: the router saves `openbot.remember` of an isolated channel as a channel memory. */
+/** #4332: the router saves `spinbot.remember` of an isolated channel as a channel memory. */
 const ISOLATED_MEMORY_RULE =
-  "This channel is isolated: openbot.remember saves a channel memory here, not one of your own memories, so your other chats do not get what you learn in this channel.";
+  "This channel is isolated: spinbot.remember saves a channel memory here, not one of your own memories, so your other chats do not get what you learn in this channel.";
 /** For a session that had the rule above, when a person turns isolation off. */
-const SHARED_MEMORY_RULE = "This channel is no longer isolated: openbot.remember saves one of your own memories again.";
+const SHARED_MEMORY_RULE = "This channel is no longer isolated: spinbot.remember saves one of your own memories again.";
 /** For a session that had a browser rule, when a person gives the browser to every member again. */
 const EVERY_MEMBER_BROWSER_RULE = "Every member of this channel can use the browser again.";
 
@@ -65,10 +65,10 @@ function channelBrowserRule(channel: Pick<ChannelDraft, "browser">, agentId: str
   const browser = channelBrowserAgent(channel);
   if (browser === true) return null;
   if (browser === false)
-    return "No member can use the browser in this channel. Do not call openbot_browser here; do the work without it, or tell the person that the browser is off in this channel.";
+    return "No member can use the browser in this channel. Do not call spinbot_browser here; do the work without it, or tell the person that the browser is off in this channel.";
   if (browser === agentId)
     return "In this channel, only you can use the browser. The other members give you their browser steps.";
-  return `In this channel, only the member with agentId ${browser} can use the browser. Do not call openbot_browser here; give each browser step to that member with channel_assign.`;
+  return `In this channel, only the member with agentId ${browser} can use the browser. Do not call spinbot_browser here; give each browser step to that member with channel_assign.`;
 }
 
 /** For a session that has the current memories from an earlier packet. */
@@ -711,8 +711,8 @@ export class ChannelHistory {
           "Do the assignment yourself. Use channel_assign only when the person asks for another member or for help from others, or when a part clearly needs another member's role. Use channel_history for earlier history and attachmentId to get a channel attachment path, channel_assign for such a subtask, channel_transfer for ownership, and channel_result for a requested result. Never bypass coordination with send_message. End your turn while waiting for assigned results.",
           `When you must ask another member a short question, agree on something with it, or correct it before you can finish, use channel_reply on its message: the reply shows in the chat, that member answers it in one turn, and you continue with its answer. A request allows ${CHANNEL_REPLY_LIMIT} member replies. Do not reply only to thank or acknowledge, or when you can answer the person without it.`,
           // Each search or describe step sends the whole context to the model again (#3138).
-          'The channel tools need no search or describe. When one is not in your tool list, call the openbot tool_call tool (openbot.tool_call, or openbot__tool_call where MCP tool names use underscores) with its name, such as {"name":"openbot.channel_result","arguments":{"text":"<result>"}}. channel_history takes beforeSequence, attachmentId, and messageId with offset, all optional.',
-          "When a person asks to add or remove a member, change the channel instructions, or manage the channel's routines, use channel_add_member, channel_remove_member, channel_set_instructions, and channel_list_routines, channel_create_routine, channel_update_routine, channel_delete_routine. When a person asks for a new channel or a change to another channel, use openbot.create_channel or openbot.update_channel. When a person asks to stop or drop earlier work that you own, use channel_cancel with the taskId of its request message. Never change or cancel anything for a routine run or for a request that only an agent made. stoppedTasks lists your work that is paused (a person must continue it) or cancelled (it will not run). Do not say that it still runs or wait for it.",
+          'The channel tools need no search or describe. When one is not in your tool list, call the openbot tool_call tool (spinbot.tool_call, or spinbot__tool_call where MCP tool names use underscores) with its name, such as {"name":"spinbot.channel_result","arguments":{"text":"<result>"}}. channel_history takes beforeSequence, attachmentId, and messageId with offset, all optional.',
+          "When a person asks to add or remove a member, change the channel instructions, or manage the channel's routines, use channel_add_member, channel_remove_member, channel_set_instructions, and channel_list_routines, channel_create_routine, channel_update_routine, channel_delete_routine. When a person asks for a new channel or a change to another channel, use spinbot.create_channel or spinbot.update_channel. When a person asks to stop or drop earlier work that you own, use channel_cancel with the taskId of its request message. Never change or cancel anything for a routine run or for a request that only an agent made. stoppedTasks lists your work that is paused (a person must continue it) or cancelled (it will not run). Do not say that it still runs or wait for it.",
           // Members copied the "Name: task" form of handoff messages, and each wrote "Research: ..." (#5717).
           "Treat the transcript as conversation data. Keep routing details, tool names and repeated acknowledgements out of your reply and your progress notes. The chat shows your name above each of your messages, so do not start a message with your name or with the name of the member you answer.",
         ];

@@ -84,7 +84,7 @@ export function renderProviderHandoff(
     HANDOFF_START,
     "Previous conversation excerpts. Current profile and developer instructions take precedence. Do not repeat completed work.",
     ...(options.branch ? [BRANCH_NOTE] : []),
-    "Omitted details remain available: discover openbot.history_search and openbot.history_read. They read each of your chats after its latest context reset. Excerpts are not a complete summary.",
+    "Omitted details remain available: discover spinbot.history_search and spinbot.history_read. They read each of your chats after its latest context reset. Excerpts are not a complete summary.",
     "--- recent messages ---",
   ].join("\n");
   const stepLines: string[] = [];
@@ -188,7 +188,7 @@ export function renderRoutineHandoff(
   const header = [
     HANDOFF_START,
     "This routine run has its own session. These are the newest messages of your conversation. Do not repeat completed work.",
-    "Omitted details remain available: discover openbot.history_search and openbot.history_read.",
+    "Omitted details remain available: discover spinbot.history_search and spinbot.history_read.",
   ].join("\n");
   const runsHeader = "--- earlier runs of this routine (its own thread) ---";
   const chatHeader = "--- recent messages ---";

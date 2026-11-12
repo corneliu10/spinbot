@@ -159,7 +159,7 @@ export const messages = {
   "error.backend.recipientDeleting": "De ontvanger wordt verwijderd. Probeer het opnieuw als dit klaar is.",
   "error.backend.recipientHidden": "Deze agent is verborgen. Herstel de agent om berichten te sturen.",
   "error.backend.agentIdUnknown":
-    "Geen agent heeft de id {id}. Haal de id's op met openbot.list_agents en probeer het opnieuw.",
+    "Geen agent heeft de id {id}. Haal de id's op met spinbot.list_agents en probeer het opnieuw.",
   "error.backend.agentIdNear":
     "Geen agent heeft de id {id}. Agent {name} heeft de id {nearId}, die bijna gelijk is. Bedoel je die agent, probeer het dan opnieuw met die id.",
   "error.backend.attachBetween": "Voeg tussen 1 en {limit} bestanden toe.",
@@ -209,7 +209,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Deze verbinding zou een lus maken.",
   "error.backend.routineFlowLinkLimit": "Een routine kan maximaal {limit} verbindingen hebben.",
   "error.backend.agentWaitLimit":
-    "Deze agent heeft al {count} open wachtpunten. Sluit een wachtpunt met openbot.close_wait voordat je een nieuw opent.",
+    "Deze agent heeft al {count} open wachtpunten. Sluit een wachtpunt met spinbot.close_wait voordat je een nieuw opent.",
   "error.backend.agentWaitGone":
     "Dit wachtpunt is niet open. De agent heeft het gesloten, of iemand heeft het geannuleerd.",
   "error.backend.agentWaitNoRequest":
@@ -219,7 +219,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Geef een korte notitie die zegt waarvoor het wachtpunt is.",
   "error.backend.agentWaitRoutineGone": "Deze agent heeft geen routine met deze id.",
   "error.backend.agentWaitNoRoutine":
-    "Alleen een run van een van je routines wekt een wachtpunt, en je hebt geen routine. Maak er een met openbot.create_routine en open dan het wachtpunt.",
+    "Alleen een run van een van je routines wekt een wachtpunt, en je hebt geen routine. Maak er een met spinbot.create_routine en open dan het wachtpunt.",
   "error.backend.markUnreadRemoteUnsupported":
     "Een bericht als ongelezen markeren is alleen beschikbaar voor agents op deze computer.",
   "error.backend.messageDeleteUnsupported": "Deze server ondersteunt het verwijderen van berichten niet.",

@@ -1,6 +1,7 @@
 import { createHash, randomBytes, randomUUID } from "node:crypto";
 import { EventEmitter } from "node:events";
 import { chmod, mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import { userInfo } from "node:os";
 import { dirname } from "node:path";
 import { companySignInErrorKey } from "@openbot/contracts/company-sign-in";
 import type { HostKeyHandover } from "@openbot/contracts/host-key-handover";
@@ -1513,6 +1514,21 @@ export class CentralAuthManager extends EventEmitter<CentralAuthEvents> {
     this: CentralAuthManager,
   ): Effect.fn.Return<CentralAuthState, CentralAuthOperationError, CentralAuthTransport> {
     this.#setState({ status: "loading" });
+    // Spinbot: no account service. The person at this computer is the local user: no sign-in, no network
+    // request. SPINBOT_ACCOUNT_SERVICE=1 turns the account service back on (for a self-hosted one).
+    if (process.env.SPINBOT_ACCOUNT_SERVICE !== "1") {
+      const name = userInfo().username || null;
+      // `.invalid` is a reserved domain: the address can never reach anyone. Local data needs a valid form.
+      const user = {
+        id: "local",
+        email: "you@spinbot.invalid",
+        name,
+        avatarUrl: null,
+        analyticsEnabled: false,
+        chatColor: null,
+      };
+      return this.#setState({ status: "signed_in", user });
+    }
     let keyringChanged = false;
     // A session that cannot be read now stays on disk: a Keychain that is locked or asks for
     // permission at startup can open it at the next start, and the next sign-in replaces it.

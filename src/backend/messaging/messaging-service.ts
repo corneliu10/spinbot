@@ -2416,7 +2416,7 @@ function refusal(failure: MessagingAdapterError): string {
     cause instanceof SlackApiError || cause instanceof DiscordApiError || cause instanceof TelegramCallError
       ? cause.code
       : "no_answer";
-  return `The platform refused the call: ${code}. Check the connection and place ids with openbot.messaging_list_places.`;
+  return `The platform refused the call: ${code}. Check the connection and place ids with spinbot.messaging_list_places.`;
 }
 
 /**

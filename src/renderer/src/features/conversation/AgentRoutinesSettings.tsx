@@ -18,6 +18,7 @@ import {
   type RoutineSchedule,
 } from "@openbot/contracts/ipc";
 import type { RoutineWebhookTriggerInput, WebhookTestResult } from "@openbot/contracts/ipc-events";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import type { AppTextKey } from "@openbot/i18n";
 import {
   Button,
@@ -1007,7 +1008,7 @@ export function AgentRoutinesSettings(props: AgentRoutinesSettingsProps) {
               <section class="agent-routine-when" aria-labelledby="agent-routine-when-heading">
                 <h3 id="agent-routine-when-heading">{t("routine.settings.whenToRun")}</h3>
                 {/* A host with events offers both triggers, so the choice is always in view. */}
-                <Show when={props.port.events}>
+                <Show when={SPINBOT_ONLINE_SERVICES && props.port.events}>
                   <fieldset class="agent-routine-trigger-kind">
                     <legend class="sr-only">{t("routine.trigger.kind")}</legend>
                     <Button

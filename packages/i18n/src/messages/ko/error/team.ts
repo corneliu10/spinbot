@@ -141,7 +141,7 @@ export const messages = {
   "error.team.machineResourcesUnsupported": "이 연결에서는 머신 사용량을 지원하지 않아요.",
   "error.team.machineAlertMemberInvalid": "이 서버의 소유자나 관리자만 머신 알림을 받을 수 있어요.",
   "error.team.hostedSitesUnsupported": "이 연결에서는 사이트를 지원하지 않아요.",
-  "error.team.hostedSitesUnregistered": "이 서버는 OpenBot에 등록되어 있지 않아서 사이트가 없어요.",
+  "error.team.hostedSitesUnregistered": "이 서버는 Spinbot에 등록되어 있지 않아서 사이트가 없어요.",
   "error.team.hostedSiteNotFound": "사이트를 찾을 수 없어요.",
   "error.team.markUnreadUnsupported": "이 클라이언트는 대화를 읽지 않음으로 표시하는 기능을 지원하지 않아요.",
   "error.team.inviteServiceUnavailable": "초대 서비스를 사용할 수 없어요.",

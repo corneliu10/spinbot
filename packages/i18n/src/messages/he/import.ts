@@ -50,7 +50,7 @@ export const messages = {
   "import.guide.commandNote":
     "יש להקליד אותה בצ'אט של Hermes. בטרמינל, יש להריץ hermes skills install עם אותו שם. Hermes סורק את המיומנות לפני שהוא מתקין אותה.",
   "import.guide.hermesSkillNote":
-    "יש לשמור אותה בתור ~/.hermes/skills/openbot-export/SKILL.md. Hermes ימצא אותה בצ'אט הבא. הייצוא משמיט אותה.",
+    "יש לשמור אותה בתור ~/.hermes/skills/spinbot-export/SKILL.md. Hermes ימצא אותה בצ'אט הבא. הייצוא משמיט אותה.",
   "import.guide.hermesMessageNote":
     "הוא שואל אילו פרופילים לייצא, ואז שומר את קובץ ה-.zip בהורדות. מפתחות ושרתי MCP נשארים ב-Hermes.",
   "import.review.title": "ייצוא מ-{source}",

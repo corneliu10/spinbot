@@ -26,7 +26,7 @@ export const MCP_SERVERS_CAPABILITY = "mcp-servers-v1";
  * configuration may not take either one: on Claude the record key would collide, and on the other
  * providers the agent would be offered two servers with one name.
  */
-export const RESERVED_MCP_SERVER_NAMES = ["openbot", "openbot_browser"] as const;
+export const RESERVED_MCP_SERVER_NAMES = ["spinbot", "spinbot_browser"] as const;
 
 /**
  * The name and id OpenBot gives the Computer Use driver when it hands it to a provider.

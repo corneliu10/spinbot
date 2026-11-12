@@ -138,7 +138,7 @@ function uploadKey(
 }
 
 /**
- * Staging for `openbot_browser.upload_files`.
+ * Staging for `spinbot_browser.upload_files`.
  *
  * A tab keeps a file input's selection until the page navigates, and a page can keep the `File` objects
  * it took from an earlier selection for just as long, so the files behind both have to outlive the tool

@@ -1,4 +1,5 @@
 import type { ServerSummary } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { classifyFailure } from "@openbot/telemetry";
 import type { ServerActionCallbacks } from "@openbot/ui/features/servers/ServerActionItems";
 import type { HiddenLocalServer } from "@openbot/ui/features/servers/ServerRail";
@@ -80,7 +81,8 @@ export function useServerActions() {
   }
 
   /** Opens the dialog that names a new server on this computer. The landing preview has no main process. */
-  const createLocal = platform.landingPreview ? undefined : () => setCreateLocalServerOpen(true);
+  const createLocal =
+    platform.landingPreview || !SPINBOT_ONLINE_SERVICES ? undefined : () => setCreateLocalServerOpen(true);
 
   /**
    * The item for a server on this computer in the add menus of the rail and the server menu. The hosted
@@ -92,7 +94,8 @@ export function useServerActions() {
   }
 
   /** Opens the dialog with the command that installs a server on another computer and adds it to this account. */
-  const installServer = platform.landingPreview ? undefined : () => setInstallServerOpen(true);
+  const installServer =
+    platform.landingPreview || !SPINBOT_ONLINE_SERVICES ? undefined : () => setInstallServerOpen(true);
 
   /** As `addMenuCreateLocal`: the hosted server plans show the item in their "Other options" menu. */
   function addMenuInstallServer(): (() => void) | undefined {
@@ -150,7 +153,7 @@ export function useServerActions() {
   return {
     orderedServers,
     select,
-    add,
+    add: SPINBOT_ONLINE_SERVICES ? add : undefined,
     createLocal,
     addMenuCreateLocal,
     installServer,

@@ -1,3 +1,4 @@
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { BookOpen, Bug, CircleQuestionMark, DropdownMenu, Gift, Megaphone, MotionTooltip } from "@openbot/ui";
 import { createSignal, For, Show } from "solid-js";
 import { useText } from "../../text";
@@ -68,27 +69,29 @@ export function HelpMenu(props: HelpMenuProps) {
               )}
             </For>
           </Show>
-          <DropdownMenu.Item onSelect={() => props.onOpenChangelog()}>
-            <Gift class="agent-context-icon size-4" aria-hidden="true" />
-            <span>{t("app.help.changelog")}</span>
-          </DropdownMenu.Item>
-          <DropdownMenu.Separator />
-          <DropdownMenu.Item onSelect={() => props.onOpenGuides()}>
-            <BookOpen class="agent-context-icon size-4" aria-hidden="true" />
-            <span>{t("app.help.guides")}</span>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item onSelect={() => props.onOpenDiscord()}>
-            <DiscordMark class="agent-context-icon size-4" />
-            <span>{t("app.help.discord")}</span>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item onSelect={() => props.onReportProblem()}>
-            <Bug class="agent-context-icon size-4" aria-hidden="true" />
-            <span>{t("app.help.reportProblem")}</span>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item onSelect={() => props.onSendFeedback()}>
-            <Megaphone class="agent-context-icon size-4" aria-hidden="true" />
-            <span>{t("account.menu.sendFeedback")}</span>
-          </DropdownMenu.Item>
+          <Show when={SPINBOT_ONLINE_SERVICES}>
+            <DropdownMenu.Item onSelect={() => props.onOpenChangelog()}>
+              <Gift class="agent-context-icon size-4" aria-hidden="true" />
+              <span>{t("app.help.changelog")}</span>
+            </DropdownMenu.Item>
+            <DropdownMenu.Separator />
+            <DropdownMenu.Item onSelect={() => props.onOpenGuides()}>
+              <BookOpen class="agent-context-icon size-4" aria-hidden="true" />
+              <span>{t("app.help.guides")}</span>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item onSelect={() => props.onOpenDiscord()}>
+              <DiscordMark class="agent-context-icon size-4" />
+              <span>{t("app.help.discord")}</span>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item onSelect={() => props.onReportProblem()}>
+              <Bug class="agent-context-icon size-4" aria-hidden="true" />
+              <span>{t("app.help.reportProblem")}</span>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item onSelect={() => props.onSendFeedback()}>
+              <Megaphone class="agent-context-icon size-4" aria-hidden="true" />
+              <span>{t("account.menu.sendFeedback")}</span>
+            </DropdownMenu.Item>
+          </Show>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>

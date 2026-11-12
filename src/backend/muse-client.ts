@@ -398,7 +398,7 @@ export class MuseAgentClient extends EventEmitter<ClientEvents> implements Agent
   ): Effect.fn.Return<SpawnedMspConnection, ProviderClientOperationError> {
     const host = yield* providerCall(() =>
       handshake.initialize({
-        clientInfo: { name: "openbot", version: "1" },
+        clientInfo: { name: "spinbot", version: "1" },
         capabilities: { requestedCapabilities: ["sessionMcp"] },
       }),
     ).pipe(

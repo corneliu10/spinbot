@@ -52,7 +52,7 @@ export const messages = defineMessages("import", {
   "import.guide.commandNote":
     "Type it in a Hermes chat. In a terminal, run hermes skills install with the same name. Hermes scans the skill before it installs it.",
   "import.guide.hermesSkillNote":
-    "Save it as ~/.hermes/skills/openbot-export/SKILL.md. Hermes finds it in the next chat. The export leaves it out.",
+    "Save it as ~/.hermes/skills/spinbot-export/SKILL.md. Hermes finds it in the next chat. The export leaves it out.",
   "import.guide.hermesMessageNote":
     "It asks which profiles to export, then saves the .zip file to Downloads. Keys and MCP servers stay in Hermes.",
   "import.review.title": "{source} export",

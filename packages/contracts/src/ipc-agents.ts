@@ -70,7 +70,7 @@ export type AgentDefaults = Record<AgentDefaultKey, boolean> & {
  * The trailer that names OpenBot as a co-author of a commit. The address is the GitHub noreply address
  * of the `openbotgit[bot]` account (user id 335604065), so GitHub links the co-author to the OpenBot app.
  */
-export const OPENBOT_COMMIT_TRAILER = "Co-authored-by: OpenBot <335604065+openbotgit[bot]@users.noreply.github.com>";
+export const OPENBOT_COMMIT_TRAILER = "Co-authored-by: Spinbot <335604065+openbotgit[bot]@users.noreply.github.com>";
 
 /** The plan card start time that every agent had before the setting existed. */
 export const DEFAULT_PLAN_START_AFTER_MS = 10_000;

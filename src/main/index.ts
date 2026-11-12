@@ -1,3 +1,5 @@
+// Spinbot: first, so that nothing reaches OpenBot's online services.
+import "./spinbot-network-guard";
 import { uptime } from "node:os";
 import { join, resolve } from "node:path";
 import { parseInviteUrl, selfHostedApiOrigin } from "@openbot/contracts/invite-links";

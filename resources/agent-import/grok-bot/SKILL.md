@@ -1,13 +1,13 @@
 ---
-name: openbot-export
-description: Export the user's Grok Bot agents into one .zip file that OpenBot imports, with instructions, avatars, skills, routines, memories, group chats, and optional workspace files. Use when the user asks to export, move, or migrate their agents to OpenBot.
-example-prompt: Export my agents for OpenBot
+name: spinbot-export
+description: Export the user's Grok Bot agents into one .zip file that Spinbot imports, with instructions, avatars, skills, routines, memories, group chats, and optional workspace files. Use when the user asks to export, move, or migrate their agents to Spinbot.
+example-prompt: Export my agents for Spinbot
 ---
 
-# Export agents for OpenBot
+# Export agents for Spinbot
 
-Make one `.zip` file that the user opens in OpenBot at **Server settings → Import**. OpenBot reads
-it on the user's computer. Nothing is uploaded. The format is strict: OpenBot rejects the whole
+Make one `.zip` file that the user opens in Spinbot at **Server settings → Import**. Spinbot reads
+it on the user's computer. Nothing is uploaded. The format is strict: Spinbot rejects the whole
 file when the manifest is invalid, so follow the format below exactly.
 
 ## Workflow
@@ -24,9 +24,9 @@ file when the manifest is invalid, so follow the format below exactly.
 
    Do not export the agent that runs this skill. It exists only to make the export, so leave it out
    of the agent list and out of `openbot-import.json`, even when the user asks for all agents. Also
-   leave this skill (`openbot-export`) out of every agent's skills.
+   leave this skill (`spinbot-export`) out of every agent's skills.
 
-   Also list every group chat, where several agents talk together. OpenBot imports a group chat as a
+   Also list every group chat, where several agents talk together. Spinbot imports a group chat as a
    channel. For each group chat, collect:
    - name, one-line topic (title), and its shared instructions;
    - the agents in it, and the lead agent if it has one;
@@ -53,25 +53,25 @@ file when the manifest is invalid, so follow the format below exactly.
 
 4. **Remove secrets.** Do not export `.env` files, private keys, API keys, tokens, passwords, or
    cookies, in files or in instructions. Replace a secret in instructions with
-   `<ask the user for …>`. OpenBot rejects the archive if it contains a file named `.env*` or
+   `<ask the user for …>`. Spinbot rejects the archive if it contains a file named `.env*` or
    `*private*key*`, or a nested archive (`.zip`, `.tar`, `.gz`, `.7z`, `.rar`), so leave those out.
 
 5. **Build the folder** (see Format) and write `openbot-import.json` last.
 
-   OpenBot puts the files of `agents/<key>/files/` in `imported/` in the agent's workspace. In
+   Spinbot puts the files of `agents/<key>/files/` in `imported/` in the agent's workspace. In
    instructions and routine instructions, change each absolute path to a file that you export to
    its new place: `/workspace/notes/plan.md` becomes `imported/notes/plan.md` when the file is at
    `agents/<key>/files/notes/plan.md`. Keep a path to a file that you do not export, and tell the
    user about it in step 7.
 
 6. **Check it** with the checklist below. Then zip the folder contents into
-   `~/Downloads/.openbot-export-<YYYY-MM-DD>.zip.part`. When the zip is complete, rename it to
-   `~/Downloads/openbot-export-<YYYY-MM-DD>.zip`. The rename replaces an older export with the
-   same name in one step, so OpenBot never reads a half-written file.
+   `~/Downloads/.spinbot-export-<YYYY-MM-DD>.zip.part`. When the zip is complete, rename it to
+   `~/Downloads/spinbot-export-<YYYY-MM-DD>.zip`. The rename replaces an older export with the
+   same name in one step, so Spinbot never reads a half-written file.
 
 7. **Tell the user**, only after the rename, the path, the number of agents and group chats, and
    anything you left out or changed: each task that starts on an event, with what starts it, and
-   each path that you kept. Tell them to open OpenBot, go to **Server settings → Import**, and choose
+   each path that you kept. Tell them to open Spinbot, go to **Server settings → Import**, and choose
    the file.
 
 ## Format
@@ -152,7 +152,7 @@ Field rules:
 | `skills` | Up to 32 folder paths. Each folder has `SKILL.md` at its root, which starts with YAML frontmatter that has `name` (80 characters or fewer) and `description`. Each skill folder is 10 MB and 200 files or fewer. |
 | `routines` | Up to 64. `name` is 80 characters or fewer. `instruction` is the prompt that runs. `timezone` is an IANA name, such as `America/New_York`. |
 | `memories` | Up to 64 strings, 500 characters or fewer each. |
-| `files` | Folder path or `null`. OpenBot copies it to `imported/` in the agent's workspace. |
+| `files` | Folder path or `null`. Spinbot copies it to `imported/` in the agent's workspace. |
 
 Channel field rules:
 
@@ -187,7 +187,7 @@ Use one of these shapes. Times are 24-hour `HH:MM` in the routine's time zone. D
 | Every N minutes, hours, or days | `{ "kind": "interval", "amount": 30, "unit": "minutes" }` |
 | Cron expression | `{ "kind": "custom", "expression": "0 9 * * 1-5" }` |
 
-When a schedule does not fit a shape, use `custom` with a cron expression. OpenBot skips a routine
+When a schedule does not fit a shape, use `custom` with a cron expression. Spinbot skips a routine
 with an invalid schedule and tells the user; the rest of the agent still imports.
 
 A routine has one schedule. When a task has more than one schedule, make one routine for each
@@ -208,7 +208,7 @@ about each such task in step 7.
 - [ ] Each `key` is unique and 64 characters or fewer, and each path starts with `agents/<key>/`.
 - [ ] Each skill folder has `SKILL.md` with frontmatter.
 - [ ] The agent that runs this skill is not in `openbot-import.json`.
-- [ ] No agent has an `openbot-export` skill folder.
+- [ ] No agent has an `spinbot-export` skill folder.
 - [ ] Every group chat is in `channels`, unless none of its agents are exported.
 - [ ] Each channel has at least one `members` entry, each member is an agent `key` in this export, and
       `lead` is one of the members or `null`.

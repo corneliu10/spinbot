@@ -5,15 +5,15 @@ export const messages = {
   "error.agent.historyUnavailable":
     "Der Verlauf ist für diese Anfrage nicht verfügbar. Lies den aktuellen Verlauf erneut oder verwende channel_history für Arbeit in Kanälen.",
   "error.agent.historyArgumentsInvalid":
-    "Ungültige Verlaufsargumente: {detail} Korrigiere die Argumente und versuche es erneut. openbot.tool_describe liefert das Schema.",
+    "Ungültige Verlaufsargumente: {detail} Korrigiere die Argumente und versuche es erneut. spinbot.tool_describe liefert das Schema.",
   "error.agent.toolRequestInvalid":
     "Ungültige Argumente für die Werkzeugsuche. Verwende das deklarierte Schema und einen originalen qualifizierten Werkzeugnamen.",
   "error.agent.toolCallArgumentsNotObject":
     "Das Werkzeug wurde nicht ausgeführt. In tool_call muss arguments ein JSON-Objekt sein, kein Text. Sende den Aufruf erneut mit arguments als Objekt.",
   "error.agent.toolCallDiscoveryTool":
-    "Das Werkzeug wurde nicht ausgeführt. tool_call kann openbot.tool_search und openbot.tool_describe nicht ausführen. Rufe sie direkt mit denselben Argumenten auf.",
+    "Das Werkzeug wurde nicht ausgeführt. tool_call kann spinbot.tool_search und spinbot.tool_describe nicht ausführen. Rufe sie direkt mit denselben Argumenten auf.",
   "error.agent.routineScheduleArgumentsInvalid":
-    "Der Zeitplan der Routine ist ungültig: {detail} Korrigiere den Zeitplan und versuche es erneut. openbot.tool_describe liefert das Schema.",
+    "Der Zeitplan der Routine ist ungültig: {detail} Korrigiere den Zeitplan und versuche es erneut. spinbot.tool_describe liefert das Schema.",
   "error.agent.approvalWhileDeleting": "Während der Agent gelöscht wird, kann keine Genehmigung erteilt werden.",
   "error.agent.accessLocalOnly":
     "Der Agentenzugriff kann nur auf dem Computer geändert werden, auf dem der Agent läuft.",

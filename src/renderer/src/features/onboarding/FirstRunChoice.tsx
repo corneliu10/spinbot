@@ -1,4 +1,5 @@
 import { ProviderLogo, type ProviderLogoVariant } from "@openbot/brand";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { Button, ChevronRight, Spinner } from "@openbot/ui";
 import { AgentAvatar } from "@openbot/ui/features/agents/AgentAvatar";
 import { useText } from "@openbot/ui/text";
@@ -102,14 +103,18 @@ export function FirstRunChoice(props: FirstRunChoiceProps) {
           </span>
           <ChevronRight class="first-run-choice-row-chevron" aria-hidden="true" />
         </Button>
-        <AnalyticsConsentRow
-          checked={props.analytics}
-          disabled={props.disabled}
-          agents={props.team.slice(2, 5)}
-          onChange={(enabled) => props.onAnalyticsChange(enabled)}
-        />
+        <Show when={SPINBOT_ONLINE_SERVICES}>
+          <AnalyticsConsentRow
+            checked={props.analytics}
+            disabled={props.disabled}
+            agents={props.team.slice(2, 5)}
+            onChange={(enabled) => props.onAnalyticsChange(enabled)}
+          />
+        </Show>
       </div>
-      <ConsentNotice onOpenTerms={() => props.onOpenTerms()} onOpenPrivacy={() => props.onOpenPrivacy()} />
+      <Show when={SPINBOT_ONLINE_SERVICES}>
+        <ConsentNotice onOpenTerms={() => props.onOpenTerms()} onOpenPrivacy={() => props.onOpenPrivacy()} />
+      </Show>
       <Show when={props.reason}>
         {(reason) => (
           <p class="onboarding-next-reason first-run-choice-reason" id={reasonId}>

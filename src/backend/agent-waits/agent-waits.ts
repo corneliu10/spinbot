@@ -185,7 +185,7 @@ export class AgentWaits {
         ? `The next run of routine ${wait.routineId} wakes this wait, or a script event that names it.`
         : "The next run of any of your routines wakes this wait, or a script event that names it.",
       scriptEvent: `A local script names the wait with "waitId": "${wait.id}" next to "payload" in the body of its routine run request.`,
-      next: "End your turn now. The run that wakes the wait repeats the request and your note. Close the wait with openbot.close_wait when the request is done.",
+      next: "End your turn now. The run that wakes the wait repeats the request and your note. Close the wait with spinbot.close_wait when the request is done.",
     });
   }
 

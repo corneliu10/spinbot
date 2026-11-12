@@ -148,7 +148,7 @@ export const messages = {
   "error.backend.recipientDeleting": "받는 사람을 삭제하는 중이에요. 삭제가 끝난 후 다시 시도해 주세요.",
   "error.backend.recipientHidden": "이 에이전트는 숨겨져 있어요. 메시지를 보내려면 복원하세요.",
   "error.backend.agentIdUnknown":
-    "ID가 {id}인 에이전트가 없어요. openbot.list_agents에서 ID를 가져온 후 다시 시도해 주세요.",
+    "ID가 {id}인 에이전트가 없어요. spinbot.list_agents에서 ID를 가져온 후 다시 시도해 주세요.",
   "error.backend.agentIdNear":
     "ID가 {id}인 에이전트가 없어요. 에이전트 {name}의 ID {nearId}가 거의 같아요. 이 에이전트를 말한 거라면 해당 ID로 다시 시도해 주세요.",
   "error.backend.attachBetween": "파일을 1개에서 {limit}개 사이로 첨부하세요.",
@@ -195,7 +195,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "이 연결은 순환을 만들어요.",
   "error.backend.routineFlowLinkLimit": "루틴 하나에는 연결을 최대 {limit}개까지 둘 수 있어요.",
   "error.backend.agentWaitLimit":
-    "이 에이전트에는 이미 대기가 {count}개 열려 있어요. 다른 대기를 열기 전에 openbot.close_wait로 대기 하나를 닫으세요.",
+    "이 에이전트에는 이미 대기가 {count}개 열려 있어요. 다른 대기를 열기 전에 spinbot.close_wait로 대기 하나를 닫으세요.",
   "error.backend.agentWaitGone": "이 대기는 열려 있지 않아요. 에이전트가 닫았거나 누군가 취소했어요.",
   "error.backend.agentWaitNoRequest": "대기를 이어가려면 메시지가 필요한데, 이 턴에는 메시지가 없어요.",
   "error.backend.agentWaitOwnChatOnly":
@@ -203,7 +203,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "대기 목적을 알려 주는 짧은 메모를 입력하세요.",
   "error.backend.agentWaitRoutineGone": "이 에이전트에는 이 ID의 루틴이 없어요.",
   "error.backend.agentWaitNoRoutine":
-    "대기를 깨우는 것은 내 루틴의 실행뿐인데, 루틴이 없어요. openbot.create_routine으로 루틴을 만든 후 대기를 여세요.",
+    "대기를 깨우는 것은 내 루틴의 실행뿐인데, 루틴이 없어요. spinbot.create_routine으로 루틴을 만든 후 대기를 여세요.",
   "error.backend.markUnreadRemoteUnsupported":
     "메시지를 읽지 않음으로 표시하는 기능은 이 컴퓨터의 에이전트에서만 사용할 수 있어요.",
   "error.backend.messageDeleteUnsupported": "이 서버는 메시지 삭제를 지원하지 않아요.",

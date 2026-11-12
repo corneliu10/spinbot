@@ -26,6 +26,7 @@ import {
   SKILL_DESCRIPTION_MAX_LENGTH,
 } from "@openbot/contracts/ipc";
 import { isBoolean, isDynamicRecord, isNumber, isOneOf, isString } from "@openbot/contracts/runtime-values";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { sourceText } from "@openbot/i18n/source";
 import { Cache, Effect, Exit, Result, Schema, Semaphore } from "effect";
 import { parse as parseYaml } from "yaml";
@@ -94,6 +95,7 @@ export class SkillMarketplaceService {
 
   list(query: MarketplaceSkillQuery = {}): Effect.Effect<MarketplaceSkillPage, SkillMarketplaceFailure> {
     return Effect.gen({ self: this }, function* (): Effect.fn.Return<MarketplaceSkillPage, SkillMarketplaceFailure> {
+      if (!SPINBOT_ONLINE_SERVICES) return { skills: [], nextCursor: null };
       const params = marketplaceQueryParams(query);
       const page = yield* this.auth
         .requestAuthorized(`/v1/skills/?${params}`, { method: "GET" }, decodeMarketplaceSkillPage)

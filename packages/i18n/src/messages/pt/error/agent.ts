@@ -5,15 +5,15 @@ export const messages = {
   "error.agent.historyUnavailable":
     "O histórico está indisponível para esta solicitação. Leia o histórico recente novamente ou use channel_history para trabalho em canais.",
   "error.agent.historyArgumentsInvalid":
-    "Argumentos de histórico incorretos: {detail} Corrija os argumentos e tente novamente. openbot.tool_describe fornece o esquema.",
+    "Argumentos de histórico incorretos: {detail} Corrija os argumentos e tente novamente. spinbot.tool_describe fornece o esquema.",
   "error.agent.toolRequestInvalid":
     "Argumentos de descoberta de ferramentas inválidos. Use o esquema declarado e um nome de ferramenta qualificado original.",
   "error.agent.toolCallArgumentsNotObject":
     "A ferramenta não foi executada. Em tool_call, arguments deve ser um objeto JSON, não texto. Envie a chamada de novo com arguments como objeto.",
   "error.agent.toolCallDiscoveryTool":
-    "A ferramenta não foi executada. tool_call não pode executar openbot.tool_search nem openbot.tool_describe. Chame-as diretamente com os mesmos argumentos.",
+    "A ferramenta não foi executada. tool_call não pode executar spinbot.tool_search nem spinbot.tool_describe. Chame-as diretamente com os mesmos argumentos.",
   "error.agent.routineScheduleArgumentsInvalid":
-    "O agendamento da rotina é inválido: {detail} Corrija o agendamento e tente novamente. openbot.tool_describe fornece o esquema.",
+    "O agendamento da rotina é inválido: {detail} Corrija o agendamento e tente novamente. spinbot.tool_describe fornece o esquema.",
   "error.agent.approvalWhileDeleting": "Não é possível conceder aprovação enquanto o agente está sendo excluído.",
   "error.agent.accessLocalOnly": "O acesso do agente só pode ser alterado no computador que executa o agente.",
   "error.agent.duplicateCleanupFailed": "A duplicação do agente falhou e não foi possível remover a cópia incompleta.",

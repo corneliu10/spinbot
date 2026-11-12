@@ -53,7 +53,7 @@ export const messages = {
   "import.guide.commandNote":
     "Hermes 채팅에 입력하세요. 터미널에서는 같은 이름으로 hermes skills install을 실행하세요. Hermes는 스킬을 설치하기 전에 검사해요.",
   "import.guide.hermesSkillNote":
-    "~/.hermes/skills/openbot-export/SKILL.md로 저장하세요. Hermes가 다음 채팅에서 찾아요. 내보내기에는 포함되지 않아요.",
+    "~/.hermes/skills/spinbot-export/SKILL.md로 저장하세요. Hermes가 다음 채팅에서 찾아요. 내보내기에는 포함되지 않아요.",
   "import.guide.hermesMessageNote":
     "내보낼 프로필을 물어본 후 .zip 파일을 다운로드 폴더에 저장해요. 키와 MCP 서버는 Hermes에 남아요.",
   "import.review.title": "{source} 내보내기",

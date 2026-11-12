@@ -165,7 +165,7 @@ export const messages = {
     "Le destinataire est en cours de suppression. Réessayez une fois la suppression terminée.",
   "error.backend.recipientHidden": "Cet agent est masqué. Restaurez-le pour envoyer des messages.",
   "error.backend.agentIdUnknown":
-    "Aucun agent n’a l’identifiant {id}. Obtenez les identifiants avec openbot.list_agents, puis réessayez.",
+    "Aucun agent n’a l’identifiant {id}. Obtenez les identifiants avec spinbot.list_agents, puis réessayez.",
   "error.backend.agentIdNear":
     "Aucun agent n’a l’identifiant {id}. L’agent {name} a l’identifiant {nearId}, presque identique. S’il s’agit de cet agent, réessayez avec son identifiant.",
   "error.backend.attachBetween": "Joignez entre 1 et {limit} fichiers.",
@@ -217,7 +217,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Cette liaison créerait une boucle.",
   "error.backend.routineFlowLinkLimit": "Une routine peut avoir au plus {limit} liaisons.",
   "error.backend.agentWaitLimit":
-    "Cet agent a déjà {count} attentes ouvertes. Fermez une attente avec openbot.close_wait avant d’en ouvrir une autre.",
+    "Cet agent a déjà {count} attentes ouvertes. Fermez une attente avec spinbot.close_wait avant d’en ouvrir une autre.",
   "error.backend.agentWaitGone": "Cette attente n’est pas ouverte. L’agent l’a fermée, ou quelqu’un l’a annulée.",
   "error.backend.agentWaitNoRequest": "Une attente a besoin d’un message pour continuer. Ce tour n’a pas de message.",
   "error.backend.agentWaitOwnChatOnly":
@@ -225,7 +225,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Indiquez une courte note qui précise l’objet de l’attente.",
   "error.backend.agentWaitRoutineGone": "Cet agent n’a pas de routine avec cet identifiant.",
   "error.backend.agentWaitNoRoutine":
-    "Seule une exécution de l’une de vos routines réveille une attente, et vous n’avez aucune routine. Créez-en une avec openbot.create_routine, puis ouvrez l’attente.",
+    "Seule une exécution de l’une de vos routines réveille une attente, et vous n’avez aucune routine. Créez-en une avec spinbot.create_routine, puis ouvrez l’attente.",
   "error.backend.markUnreadRemoteUnsupported":
     "Marquer un message comme non lu n’est disponible que pour les agents de cet ordinateur.",
   "error.backend.messageDeleteUnsupported": "Ce serveur ne permet pas de supprimer des messages.",

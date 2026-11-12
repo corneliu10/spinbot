@@ -168,7 +168,7 @@ function repairFields(tool: string, fields: DynamicRecord): DynamicRecord {
 export function repairBrowserToolInput(tool: string, value: unknown): { value: unknown } {
   if (!isDynamicRecord(value) || SECRET_TOOLS.has(tool)) return { value };
   let args = value;
-  // { name: "openbot_browser.click", arguments: { ... } }: the call written inside the arguments.
+  // { name: "spinbot_browser.click", arguments: { ... } }: the call written inside the arguments.
   const wrapped = args.arguments;
   if (
     isDynamicRecord(wrapped) &&

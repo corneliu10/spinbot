@@ -152,7 +152,7 @@ export const messages = {
   "error.backend.recipientDeleting": "Alıcı siliniyor. Silme işlemi tamamlandıktan sonra tekrar deneyin.",
   "error.backend.recipientHidden": "Bu ajan gizli. Mesaj göndermek için onu geri yükleyin.",
   "error.backend.agentIdUnknown":
-    "{id} kimliğine sahip bir ajan yok. Kimlikleri openbot.list_agents ile alın ve tekrar deneyin.",
+    "{id} kimliğine sahip bir ajan yok. Kimlikleri spinbot.list_agents ile alın ve tekrar deneyin.",
   "error.backend.agentIdNear":
     "{id} kimliğine sahip bir ajan yok. {name} ajanının kimliği {nearId} ve neredeyse aynı. Bu ajanı kastediyorsanız onun kimliğiyle tekrar deneyin.",
   "error.backend.attachBetween": "1 ila {limit} dosya ekleyin.",
@@ -198,7 +198,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Bu bağlantı bir döngü oluşturur.",
   "error.backend.routineFlowLinkLimit": "Bir rutinde en fazla {limit} bağlantı olabilir.",
   "error.backend.agentWaitLimit":
-    "Bu ajanın zaten {count} açık beklemesi var. Başka bir bekleme açmadan önce openbot.close_wait ile bir beklemeyi kapatın.",
+    "Bu ajanın zaten {count} açık beklemesi var. Başka bir bekleme açmadan önce spinbot.close_wait ile bir beklemeyi kapatın.",
   "error.backend.agentWaitGone": "Bu bekleme açık değil. Ajan onu kapattı veya biri iptal etti.",
   "error.backend.agentWaitNoRequest": "Beklemenin devam etmesi için bir mesaj gerekir. Bu turda mesaj yok.",
   "error.backend.agentWaitOwnChatOnly":
@@ -206,7 +206,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Beklemenin ne için olduğunu belirten kısa bir not yazın.",
   "error.backend.agentWaitRoutineGone": "Bu ajanın bu kimliğe sahip bir rutini yok.",
   "error.backend.agentWaitNoRoutine":
-    "Bir beklemeyi yalnızca rutinlerinizden birinin çalıştırılması uyandırır ve hiç rutininiz yok. openbot.create_routine ile bir rutin oluşturun, ardından beklemeyi açın.",
+    "Bir beklemeyi yalnızca rutinlerinizden birinin çalıştırılması uyandırır ve hiç rutininiz yok. spinbot.create_routine ile bir rutin oluşturun, ardından beklemeyi açın.",
   "error.backend.markUnreadRemoteUnsupported":
     "Bir mesajı okunmadı olarak işaretleme yalnızca bu bilgisayardaki ajanlar için kullanılabilir.",
   "error.backend.messageDeleteUnsupported": "Bu sunucu mesaj silmeyi desteklemiyor.",

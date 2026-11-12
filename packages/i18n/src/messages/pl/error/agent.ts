@@ -5,15 +5,15 @@ export const messages = {
   "error.agent.historyUnavailable":
     "Historia jest niedostępna dla tego żądania. Odczytaj ponownie najnowszą historię lub użyj channel_history do pracy z kanałem.",
   "error.agent.historyArgumentsInvalid":
-    "Nieprawidłowe argumenty historii: {detail} Popraw argumenty i spróbuj ponownie. openbot.tool_describe podaje schemat.",
+    "Nieprawidłowe argumenty historii: {detail} Popraw argumenty i spróbuj ponownie. spinbot.tool_describe podaje schemat.",
   "error.agent.toolRequestInvalid":
     "Nieprawidłowe argumenty wyszukiwania narzędzi. Użyj zadeklarowanego schematu i oryginalnej kwalifikowanej nazwy narzędzia.",
   "error.agent.toolCallArgumentsNotObject":
     "Narzędzie nie zostało uruchomione. W tool_call pole arguments musi być obiektem JSON, a nie tekstem. Wyślij wywołanie ponownie z arguments jako obiektem.",
   "error.agent.toolCallDiscoveryTool":
-    "Narzędzie nie zostało uruchomione. tool_call nie może uruchomić openbot.tool_search ani openbot.tool_describe. Wywołaj je bezpośrednio z tymi samymi argumentami.",
+    "Narzędzie nie zostało uruchomione. tool_call nie może uruchomić spinbot.tool_search ani spinbot.tool_describe. Wywołaj je bezpośrednio z tymi samymi argumentami.",
   "error.agent.routineScheduleArgumentsInvalid":
-    "Harmonogram rutyny jest nieprawidłowy: {detail} Popraw harmonogram i spróbuj ponownie. openbot.tool_describe podaje schemat.",
+    "Harmonogram rutyny jest nieprawidłowy: {detail} Popraw harmonogram i spróbuj ponownie. spinbot.tool_describe podaje schemat.",
   "error.agent.approvalWhileDeleting": "Nie można udzielić zatwierdzenia podczas usuwania agenta.",
   "error.agent.accessLocalOnly": "Dostęp agenta można zmienić tylko na komputerze, na którym działa agent.",
   "error.agent.duplicateCleanupFailed": "Duplikowanie agenta nie powiodło się i nie udało się usunąć niepełnej kopii.",

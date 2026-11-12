@@ -249,7 +249,15 @@ export function settingsTabShown(
   tab: SettingsTab,
   window: { platform: AppInfo["platform"] | undefined; chatWindow: boolean },
 ): boolean {
-  if (tab === "hosted-servers") return false;
+  // Spinbot: no account, billing, phone, updates or hosted servers: they need OpenBot's online services.
+  if (
+    tab === "hosted-servers" ||
+    tab === "profile" ||
+    tab === "billing" ||
+    tab === "mobile-connect" ||
+    tab === "updates"
+  )
+    return false;
   if (tab === "dynamic-island") return dynamicIslandSettingsShown(window.platform, window.chatWindow);
   if (tab === "agent-dock") return window.platform !== undefined && !window.chatWindow;
   return true;

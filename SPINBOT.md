@@ -1,64 +1,60 @@
-# Spinbot
+# How Spinbot is made (maintainer notes)
 
-Spinbot is a **noncommercial** rebrand of [OpenBot](https://github.com/nightly-labs/openbot) by Synthetify Labs
-sp. z o.o. It uses the Spinrun name and S-cube mark. It is not affiliated with or endorsed by Synthetify Labs.
+Spinbot is built from the upstream project in the `upstream` git remote, under the PolyForm Noncommercial
+License 1.0.0. [LICENSE](LICENSE) and [NOTICE](NOTICE) name the original licensor; they stay unchanged and
+ship with every build. Use Spinbot for noncommercial purposes only.
 
-## License
+Every change is made by two scripts, so they can be applied again after each upstream merge:
 
-OpenBot is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE), and so is this fork. The license
-and the Required Notices in [LICENSE](LICENSE) and [NOTICE](NOTICE) are kept unchanged, and every build ships them.
+- `scripts/spinbot/rebrand.mjs`: names, labels, identity, data folders, hidden features, local mode.
+- `scripts/spinbot/make-icons.sh`: all icons from the Spinrun S-cube mark.
 
-- Use Spinbot only for noncommercial purposes, as the license defines them.
-- Commercial use (selling it, hosting it for others, using it for paid or business work) needs a commercial license
-  from Synthetify Labs: licenses@openbot.run.
-- Third-party components keep their own licenses (see NOTICE and the `licenses/` folder of a build).
+## What Spinbot changes
 
-## What the rebrand changes
+- **Name and labels:** "Spinbot" in the app, windows, notifications, all 15 languages, What's new notes,
+  agent instructions, tool names (`spinbot.*`, `spinbot_browser.*`), the names sent to AI providers and MCP
+  servers, the command line tool (`spinbot-cli.mjs`), and skill and import texts.
+- **Identity:** bundle id `app.spinbot.desktop`, link scheme `spinbot://`, its own keychain entry.
+- **Data:** `~/Spinbot` and `~/Library/Application Support/Spinbot`, apart from an installed copy of the upstream app.
+- **No account:** the person at the computer is a local user (`you@spinbot.invalid`, a reserved address that
+  reaches nobody). `SPINBOT_ACCOUNT_SERVICE=1` turns an account service back on, for a self-hosted one.
+- **No online services of the upstream project.** `src/main/spinbot-network-guard.ts` refuses every connection to
+  them (fetch, host name lookups, Chromium requests, links opened in the browser);
+  `src/main/spinbot-blocklist.ts` lists the hosts. The features that need those services are hidden
+  (`SPINBOT_ONLINE_SERVICES` in `packages/contracts/src/spinbot.ts`): account and billing settings, phone app,
+  hosted servers, adding or joining servers, server members and remote desktop, published sites, the agents
+  catalog and agent publishing, the skills catalog, Slack, Discord and Telegram (they go through the upstream relay),
+  the built-in GitHub app connection, webhook routines, feedback reports, community links, and their agent tools.
+- **Off:** automatic updates and release checks, product analytics and error reports.
+- **Logo and icons:** the Spinrun S-cube, in every logo color, and in dev and preview builds.
 
-`scripts/spinbot/rebrand.mjs` makes every change; run it again after each upstream merge.
+Kept on purpose: internal identifiers (`@openbot/*` packages, `OPENBOT_*` variables, file names such as
+`openbot.db`, protocol constants) that nobody sees, and the legacy folder paths that data migrations read.
 
-- Name: Spinbot in the app, windows, menus, notifications, all 15 languages, and agent instructions.
-- Identity: bundle id `app.spinbot.desktop`, link scheme `spinbot://`, macOS permission texts.
-- Data, kept apart from an installed OpenBot: `~/Spinbot` (agents, shared files, servers),
-  `~/Library/Application Support/Spinbot`, `~/Library/Application Support/Spinbot/provider-runtimes`.
-- Updates are off: OpenBot's releases would replace Spinbot. Merge upstream to update.
-- Logo and icons: the Spinrun S-cube (`scripts/spinbot/make-icons.sh` remakes the icon files).
+## What Spinbot contacts
 
-Kept on purpose: internal identifiers (`@openbot/*`, `OPENBOT_*`), the Team API headers (`OpenBot-*`), and legacy
-paths that database migrations match. OpenBot's hosted services (openbot.run sign-in, the marketplace, the mobile app,
-the Slack and Discord apps) still belong to OpenBot; links they send open `openbot://`, which an installed OpenBot handles.
-
-## What Spinbot contacts (measured 2026-11-12, first 25 s after start, not signed in)
-
-Through a host-logging proxy; nothing bypassed it.
-
-| Host | Who | Why |
-|---|---|---|
-| api.openbot.run | Spinbot | `GET /health/live`, a reachability check. No account or usage data. |
-| analytics.openbot.run | — | Off in Spinbot (product analytics and error reports, desktop and interface). |
-| github.com/nightly-labs/openbot releases | — | Off in Spinbot (update and server release checks). |
-| api.github.com, github.com, raw.githubusercontent.com, registry.npmjs.org, x.ai, static.devin.ai, downloads.cursor.com, api.meta.ai, lookaside.facebook.com | Spinbot | Release and version checks of the AI coding tools it can install |
-| chatgpt.com, api.anthropic.com | Codex and Claude programs | The AI providers you connected |
-| http-intake.logs.us5.datadoghq.com | Anthropic's `claude` program | Claude Code's own telemetry, not Spinbot's |
-
-Only with your approval: the feedback tool sends bug reports to OpenBot's public GitHub issues through api.openbot.run.
-Signing in to an openbot.run account, hosted servers, the marketplace and the phone app use OpenBot's services.
-Messages about billing, licenses, hosted servers and the phone app say "OpenBot", because those are OpenBot's.
+Measured 2026-11-12 through a host-logging proxy during setup, settings and marketplace use: no host of the
+upstream project. The rest: the AI providers you connect, version checks of the AI coding tools Spinbot can
+install (GitHub, npm and the tools' own sites), app logos in the marketplace (loaded from each vendor's site),
+and Claude Code's own telemetry (Anthropic's program, not Spinbot's).
 
 ## Update from upstream
 
 ```bash
 git fetch upstream --tags
-git merge v0.X.Y            # an OpenBot release tag
-node scripts/spinbot/rebrand.mjs --check   # lists what an upstream change brought back
+git merge v0.X.Y                             # an upstream release tag
+node scripts/spinbot/rebrand.mjs --check     # what the upstream change brought back
 node scripts/spinbot/rebrand.mjs
-bun install && bun run typecheck:node && bun run typecheck:renderer
+bash scripts/spinbot/make-icons.sh           # only if icons changed upstream
+bun install && bun run typecheck:node && bun run typecheck:renderer && bunx vitest run
 ```
+
+`--check` prints `NOT FOUND` when upstream changed a line that the script edits: adjust that edit by hand.
 
 ## Build (unsigned, this Mac)
 
 ```bash
 bun install
-bun run build
-bunx electron-builder --mac --arm64 --dir -c.mac.notarize=false   # CSC_IDENTITY_AUTO_DISCOVERY=false
+CSC_IDENTITY_AUTO_DISCOVERY=false bun run package
+open dist/mac-arm64/Spinbot.app
 ```

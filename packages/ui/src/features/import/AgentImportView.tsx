@@ -51,7 +51,7 @@ export type AgentImportSetup = "agent" | "skill" | "folder" | "command";
 const SETUPS: readonly AgentImportSetup[] = ["agent", "skill", "folder", "command"];
 
 const EXPORT_SKILL_FILE = "SKILL.md";
-const EXPORT_SKILL_ID = "openbot-export";
+const EXPORT_SKILL_ID = "spinbot-export";
 
 type CountKind = "agent" | "channel" | "skill" | "routine" | "memory" | "file";
 
@@ -219,7 +219,7 @@ function ImportGuide(props: {
                   fallback={
                     <SlidingTabs.Content value="agent" class="agent-import-setup-panel">
                       <div class="agent-import-card">
-                        <AgentAvatar seed="openbot-export" class="storage-row-avatar" />
+                        <AgentAvatar seed="spinbot-export" class="storage-row-avatar" />
                         <span class="agent-import-card-copy">
                           <span class="agent-import-card-name">{AGENT_IMPORT_EXPORT_AGENT_NAME}</span>
                           <span class="agent-import-card-meta">{t("import.guide.agentMeta")}</span>

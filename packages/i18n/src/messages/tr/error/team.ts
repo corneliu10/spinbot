@@ -138,7 +138,7 @@ export const messages = {
   "error.team.machineResourcesUnsupported": "Makine kullanımı bu bağlantı tarafından desteklenmiyor.",
   "error.team.machineAlertMemberInvalid": "Makine uyarılarını yalnızca bu sunucunun sahibi veya yöneticisi alabilir.",
   "error.team.hostedSitesUnsupported": "Siteler bu bağlantı tarafından desteklenmiyor.",
-  "error.team.hostedSitesUnregistered": "Bu sunucu OpenBot'a kayıtlı değil, bu nedenle sitesi yok.",
+  "error.team.hostedSitesUnregistered": "Bu sunucu Spinbot'a kayıtlı değil, bu nedenle sitesi yok.",
   "error.team.hostedSiteNotFound": "Site bulunamadı.",
   "error.team.markUnreadUnsupported": "Bu istemci konuşmaları okunmadı olarak işaretlemeyi desteklemiyor.",
   "error.team.inviteServiceUnavailable": "Davet hizmeti kullanılamıyor.",

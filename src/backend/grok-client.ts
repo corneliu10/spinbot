@@ -50,7 +50,7 @@ export class GrokAgentClient extends AcpAgentClient {
         "agent",
         "stdio",
       ],
-      env: { GROK_OAUTH2_REFERRER: "openbot" },
+      env: {},
       // Read at each spawn, so a change to the user's `config.toml` applies to the next process.
       extraEnv: () => {
         const environment = { ...agentEnvironment?.() };

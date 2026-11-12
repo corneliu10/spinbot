@@ -801,7 +801,7 @@ export class ThreadLifecycle {
         instructionsFile,
         yield* this.#workspaceSkills(agent, client),
       ),
-      serviceName: "openbot",
+      serviceName: "spinbot",
       dynamicTools: visibleDynamicTools(client.provider),
     };
     return { agent, mcpServers, toolRuntimes, own, environment, proxy, instructionsFile, params };

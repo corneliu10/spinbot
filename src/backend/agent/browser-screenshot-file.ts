@@ -9,7 +9,7 @@ import type { DynamicToolResult } from "../protocol";
 const logger = createOpenBotLogger("browser-screenshot-file");
 
 /**
- * `openbot_browser.screenshot` with `save: true` also writes the image as a PNG file in the agent's
+ * `spinbot_browser.screenshot` with `save: true` also writes the image as a PNG file in the agent's
  * workspace. The inline image reaches only the model, so an agent could not attach it to its response
  * or put it in a report (#7328, #7405). The workspace is a folder that `attach_files_to_response` reads.
  */
@@ -32,7 +32,7 @@ export const saveBrowserScreenshot = Effect.fn("saveBrowserScreenshot")(function
     await writeFile(path, Buffer.from(png, "base64"), { flag: "wx", mode: 0o600 });
     return withNote(
       result,
-      `Saved as ${path}. To show it to the user, pass this path to openbot.attach_files_to_response.`,
+      `Saved as ${path}. To show it to the user, pass this path to spinbot.attach_files_to_response.`,
     );
   }).pipe(
     Effect.catch((failure) =>

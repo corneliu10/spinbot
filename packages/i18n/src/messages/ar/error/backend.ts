@@ -144,7 +144,7 @@ export const messages = {
   "error.backend.recipientDeleting": "يتم حذف المستلم. أعد المحاولة بعد انتهاء الحذف.",
   "error.backend.recipientHidden": "هذا الوكيل مخفي. استعده لإرسال الرسائل.",
   "error.backend.agentIdUnknown":
-    "لا يوجد وكيل بالمعرّف {id}. احصل على المعرّفات من openbot.list_agents، ثم حاول مرة أخرى.",
+    "لا يوجد وكيل بالمعرّف {id}. احصل على المعرّفات من spinbot.list_agents، ثم حاول مرة أخرى.",
   "error.backend.agentIdNear":
     "لا يوجد وكيل بالمعرّف {id}. للوكيل {name} المعرّف {nearId}، وهو مشابه جدًا. إذا كنت تقصد هذا الوكيل، فحاول مرة أخرى بمعرّفه.",
   "error.backend.attachBetween": "أرفق من 1 إلى {limit} ملفات.",
@@ -190,14 +190,14 @@ export const messages = {
   "error.backend.routineFlowCycle": "سيؤدي هذا الاتصال إلى حلقة.",
   "error.backend.routineFlowLinkLimit": "يمكن أن تحتوي المهمة الدورية على {limit} اتصالات كحد أقصى.",
   "error.backend.agentWaitLimit":
-    "لدى هذا الوكيل بالفعل {count} انتظارات مفتوحة. أغلق انتظارًا باستخدام openbot.close_wait قبل فتح انتظار آخر.",
+    "لدى هذا الوكيل بالفعل {count} انتظارات مفتوحة. أغلق انتظارًا باستخدام spinbot.close_wait قبل فتح انتظار آخر.",
   "error.backend.agentWaitGone": "هذا الانتظار غير مفتوح. أغلقه الوكيل، أو ألغاه شخص ما.",
   "error.backend.agentWaitNoRequest": "يحتاج الانتظار إلى رسالة للمتابعة. لا توجد رسالة في هذا الدور.",
   "error.backend.agentWaitOwnChatOnly": "افتح انتظارًا في دردشتك فقط. لا يمكن لمهمة قناة أو مراسلة أن تنتظر.",
   "error.backend.agentWaitNoteRequired": "اكتب ملاحظة قصيرة توضح سبب الانتظار.",
   "error.backend.agentWaitRoutineGone": "ليس لدى هذا الوكيل مهمة دورية بهذا المعرّف.",
   "error.backend.agentWaitNoRoutine":
-    "لا يوقظ الانتظار إلا تشغيل إحدى مهامك الدورية، وليس لديك أي مهمة دورية. أنشئ واحدة باستخدام openbot.create_routine، ثم افتح الانتظار.",
+    "لا يوقظ الانتظار إلا تشغيل إحدى مهامك الدورية، وليس لديك أي مهمة دورية. أنشئ واحدة باستخدام spinbot.create_routine، ثم افتح الانتظار.",
   "error.backend.markUnreadRemoteUnsupported": "تمييز رسالة كغير مقروءة متاح فقط للوكلاء على هذا الحاسوب.",
   "error.backend.messageDeleteUnsupported": "لا يدعم هذا الخادم حذف الرسائل.",
   "error.backend.messageDeleteNotFound": "هذه الرسالة ليست في المحادثة.",

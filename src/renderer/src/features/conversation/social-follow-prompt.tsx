@@ -1,4 +1,5 @@
 import type { SentMessageStats } from "@openbot/contracts/ipc";
+import { SPINBOT_ONLINE_SERVICES } from "@openbot/contracts/spinbot";
 import { dialogOpen, toast } from "@openbot/ui";
 import { type SocialFollowStep, SocialFollowToast } from "@openbot/ui/features/social-follow/SocialFollowToast";
 import type { SocialNetwork, SocialNetworkId } from "@openbot/ui/features/social-follow/social-networks";
@@ -112,7 +113,7 @@ window.addEventListener("storage", (event) => {
 
 /** The toast must not cover a dialog, or follow the GitHub star toast in the same session. */
 function blocked(): boolean {
-  return githubStarPromptShownThisSession() || dialogOpen();
+  return !SPINBOT_ONLINE_SERVICES || githubStarPromptShownThisSession() || dialogOpen();
 }
 
 /** Count one message that the user sent to an agent from this device. Blocked storage counts nothing. */

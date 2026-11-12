@@ -166,7 +166,7 @@ export const messages = {
     "Der Empfänger wird gelöscht. Versuche es nach Abschluss des Löschvorgangs erneut.",
   "error.backend.recipientHidden": "Dieser Agent ist ausgeblendet. Stelle ihn wieder her, um Nachrichten zu senden.",
   "error.backend.agentIdUnknown":
-    "Kein Agent hat die ID {id}. Hole die IDs mit openbot.list_agents und versuche es erneut.",
+    "Kein Agent hat die ID {id}. Hole die IDs mit spinbot.list_agents und versuche es erneut.",
   "error.backend.agentIdNear":
     "Kein Agent hat die ID {id}. Der Agent {name} hat die fast gleiche ID {nearId}. Wenn du diesen Agenten meinst, versuche es mit seiner ID erneut.",
   "error.backend.attachBetween": "Hänge zwischen 1 und {limit} Dateien an.",
@@ -220,7 +220,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "Diese Verbindung würde eine Schleife erzeugen.",
   "error.backend.routineFlowLinkLimit": "Eine Routine kann höchstens {limit} Verbindungen haben.",
   "error.backend.agentWaitLimit":
-    "Dieser Agent hat bereits {count} offene Wartevorgänge. Schließe einen Wartevorgang mit openbot.close_wait, bevor du einen neuen öffnest.",
+    "Dieser Agent hat bereits {count} offene Wartevorgänge. Schließe einen Wartevorgang mit spinbot.close_wait, bevor du einen neuen öffnest.",
   "error.backend.agentWaitGone":
     "Dieser Wartevorgang ist nicht offen. Der Agent hat ihn geschlossen, oder jemand hat ihn abgebrochen.",
   "error.backend.agentWaitNoRequest":
@@ -230,7 +230,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Gib eine kurze Notiz an, wofür der Wartevorgang ist.",
   "error.backend.agentWaitRoutineGone": "Dieser Agent hat keine Routine mit dieser ID.",
   "error.backend.agentWaitNoRoutine":
-    "Nur eine Ausführung einer deiner Routinen weckt einen Wartevorgang, und du hast keine Routine. Erstelle eine mit openbot.create_routine und öffne dann den Wartevorgang.",
+    "Nur eine Ausführung einer deiner Routinen weckt einen Wartevorgang, und du hast keine Routine. Erstelle eine mit spinbot.create_routine und öffne dann den Wartevorgang.",
   "error.backend.markUnreadRemoteUnsupported":
     "Eine Nachricht als ungelesen markieren ist nur für Agenten auf diesem Computer verfügbar.",
   "error.backend.messageDeleteUnsupported": "Dieser Server unterstützt das Löschen von Nachrichten nicht.",

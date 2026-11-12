@@ -945,7 +945,7 @@ export const BUILT_IN_PROVIDER_DRIVERS: readonly BuiltInProviderDriver[] = [
       kind: "cli-command",
       command: {
         argv: ["--no-auto-update", "login"],
-        env: () => ({ GROK_OAUTH2_REFERRER: "openbot" }),
+        env: () => ({}),
         timeoutMs: CLI_LOGIN_TIMEOUT_MS,
       },
     },
@@ -954,7 +954,7 @@ export const BUILT_IN_PROVIDER_DRIVERS: readonly BuiltInProviderDriver[] = [
       flow: "device",
       command: {
         argv: ["--no-auto-update", "login", "--device-auth"],
-        env: () => ({ GROK_OAUTH2_REFERRER: "openbot" }),
+        env: () => ({}),
         timeoutMs: CLI_LOGIN_TIMEOUT_MS,
       },
     },
@@ -962,7 +962,7 @@ export const BUILT_IN_PROVIDER_DRIVERS: readonly BuiltInProviderDriver[] = [
       homeVariable: "GROK_HOME",
       signIn: {
         argv: ["--no-auto-update", "login"],
-        env: () => ({ GROK_OAUTH2_REFERRER: "openbot" }),
+        env: () => ({}),
         timeoutMs: CLI_LOGIN_TIMEOUT_MS,
       },
     },

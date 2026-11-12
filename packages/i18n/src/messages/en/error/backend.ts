@@ -150,7 +150,7 @@ export const messages = defineMessages("error.backend", {
     "Mailbox state is corrupt or from a newer Spinbot version; refusing to overwrite it.",
   "error.backend.recipientDeleting": "The recipient is being deleted. Retry after deletion finishes.",
   "error.backend.recipientHidden": "This agent is hidden. Restore it to send messages.",
-  "error.backend.agentIdUnknown": "No agent has the id {id}. Get the ids from openbot.list_agents, then try again.",
+  "error.backend.agentIdUnknown": "No agent has the id {id}. Get the ids from spinbot.list_agents, then try again.",
   "error.backend.agentIdNear":
     "No agent has the id {id}. Agent {name} has the id {nearId}, which is almost the same. If you mean that agent, try again with its id.",
   "error.backend.replyReferenceUnknown":
@@ -201,14 +201,14 @@ export const messages = defineMessages("error.backend", {
   "error.backend.routineFlowCycle": "This connection would make a loop.",
   "error.backend.routineFlowLinkLimit": "A routine can have at most {limit} connections.",
   "error.backend.agentWaitLimit":
-    "This agent already has {count} open waits. Close a wait with openbot.close_wait before you open another one.",
+    "This agent already has {count} open waits. Close a wait with spinbot.close_wait before you open another one.",
   "error.backend.agentWaitGone": "This wait is not open. The agent closed it, or someone cancelled it.",
   "error.backend.agentWaitNoRequest": "A wait needs a message to continue. This turn has no message.",
   "error.backend.agentWaitOwnChatOnly": "Open a wait only in your own chat. A channel or messaging task cannot wait.",
   "error.backend.agentWaitNoteRequired": "Give a short note that says what the wait is for.",
   "error.backend.agentWaitRoutineGone": "This agent has no routine with this id.",
   "error.backend.agentWaitNoRoutine":
-    "Only a run of one of your routines wakes a wait, and you have no routine. Create one with openbot.create_routine, then open the wait.",
+    "Only a run of one of your routines wakes a wait, and you have no routine. Create one with spinbot.create_routine, then open the wait.",
   "error.backend.markUnreadRemoteUnsupported":
     "Marking a message unread is only available for agents on this computer.",
   "error.backend.messageDeleteUnsupported": "Deleting messages is not supported by this server.",

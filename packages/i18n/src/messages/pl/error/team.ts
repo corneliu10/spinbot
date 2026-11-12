@@ -139,7 +139,7 @@ export const messages = {
   "error.team.machineAlertMemberInvalid":
     "Alerty maszyny może otrzymywać tylko właściciel lub administrator tego serwera.",
   "error.team.hostedSitesUnsupported": "To połączenie nie obsługuje witryn.",
-  "error.team.hostedSitesUnregistered": "Ten serwer nie jest zarejestrowany w OpenBot, więc nie ma witryn.",
+  "error.team.hostedSitesUnregistered": "Ten serwer nie jest zarejestrowany w Spinbot, więc nie ma witryn.",
   "error.team.hostedSiteNotFound": "Nie znaleziono witryny.",
   "error.team.markUnreadUnsupported": "Ten klient nie obsługuje oznaczania rozmów jako nieprzeczytane.",
   "error.team.inviteServiceUnavailable": "Usługa zaproszeń jest niedostępna.",

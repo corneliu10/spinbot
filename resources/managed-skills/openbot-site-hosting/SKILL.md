@@ -1,9 +1,9 @@
 ---
 name: openbot-site-hosting
-description: Build, publish, replace, list, and delete small static websites hosted by OpenBot. Use when the user asks to host or manage a site on openbot.site.
+description: Build, publish, replace, list, and delete small static websites hosted by Spinbot. Use when the user asks to host or manage a site on openbot.site.
 ---
 
-# OpenBot site hosting
+# Spinbot site hosting
 
 Use vanilla HTML, CSS, and JavaScript by default. Prefer semantic HTML, CSS variables, native Web APIs, and Web Components. Do not add React, Vue, Svelte, jQuery, or another runtime framework. Do not add a library for one simple component. Do not use CDN scripts unless the user has a clear need.
 
@@ -15,9 +15,9 @@ Every site must contain `index.html`. Allowed files are HTML, CSS, JavaScript, J
 
 Use these tools:
 
-- `openbot.list_sites` lists the user's sites. Use it before a retry.
-- `openbot.publish_site` publishes a new site from this agent's workspace or OpenBot Shared.
-- `openbot.replace_site` replaces one owned site and keeps its URL.
-- `openbot.delete_site` deletes one owned site and makes its URL return `410 Gone`.
+- `spinbot.list_sites` lists the user's sites. Use it before a retry.
+- `spinbot.publish_site` publishes a new site from this agent's workspace or Spinbot Shared.
+- `spinbot.replace_site` replaces one owned site and keeps its URL.
+- `spinbot.delete_site` deletes one owned site and makes its URL return `410 Gone`.
 
 Call a hosting mutation tool only after the user gives an explicit publish, replace, or delete instruction. A request to build, preview, discuss, or review a site is not permission to publish it. Never ask for or use R2 credentials, R2 tokens, presigned URLs, or direct Cloudflare API access.

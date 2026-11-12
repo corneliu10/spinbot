@@ -157,7 +157,7 @@ export const messages = {
   "error.backend.recipientDeleting": "Odbiorca jest usuwany. Spróbuj ponownie po zakończeniu usuwania.",
   "error.backend.recipientHidden": "Ten agent jest ukryty. Przywróć go, aby wysyłać wiadomości.",
   "error.backend.agentIdUnknown":
-    "Żaden agent nie ma identyfikatora {id}. Pobierz identyfikatory z openbot.list_agents i spróbuj ponownie.",
+    "Żaden agent nie ma identyfikatora {id}. Pobierz identyfikatory z spinbot.list_agents i spróbuj ponownie.",
   "error.backend.agentIdNear":
     "Żaden agent nie ma identyfikatora {id}. Agent {name} ma prawie taki sam identyfikator {nearId}. Jeśli chodzi o tego agenta, spróbuj ponownie z jego identyfikatorem.",
   "error.backend.attachBetween": "Załącz od 1 do {limit} plików.",
@@ -206,7 +206,7 @@ export const messages = {
   "error.backend.routineFlowCycle": "To połączenie utworzyłoby pętlę.",
   "error.backend.routineFlowLinkLimit": "Rutyna może mieć maksymalnie {limit} połączeń.",
   "error.backend.agentWaitLimit":
-    "Ten agent ma już maksymalną liczbę otwartych oczekiwań: {count}. Zamknij oczekiwanie za pomocą openbot.close_wait, zanim otworzysz kolejne.",
+    "Ten agent ma już maksymalną liczbę otwartych oczekiwań: {count}. Zamknij oczekiwanie za pomocą spinbot.close_wait, zanim otworzysz kolejne.",
   "error.backend.agentWaitGone": "To oczekiwanie nie jest otwarte. Agent je zamknął albo ktoś je anulował.",
   "error.backend.agentWaitNoRequest": "Oczekiwanie potrzebuje wiadomości, aby kontynuować. Ta tura nie ma wiadomości.",
   "error.backend.agentWaitOwnChatOnly":
@@ -214,7 +214,7 @@ export const messages = {
   "error.backend.agentWaitNoteRequired": "Podaj krótką notatkę, na co jest to oczekiwanie.",
   "error.backend.agentWaitRoutineGone": "Ten agent nie ma rutyny o tym identyfikatorze.",
   "error.backend.agentWaitNoRoutine":
-    "Oczekiwanie budzi tylko uruchomienie jednej z twoich rutyn, a nie masz żadnej rutyny. Utwórz ją za pomocą openbot.create_routine, a potem otwórz oczekiwanie.",
+    "Oczekiwanie budzi tylko uruchomienie jednej z twoich rutyn, a nie masz żadnej rutyny. Utwórz ją za pomocą spinbot.create_routine, a potem otwórz oczekiwanie.",
   "error.backend.markUnreadRemoteUnsupported":
     "Oznaczanie wiadomości jako nieprzeczytanej jest dostępne tylko dla agentów na tym komputerze.",
   "error.backend.messageDeleteUnsupported": "Ten serwer nie obsługuje usuwania wiadomości.",

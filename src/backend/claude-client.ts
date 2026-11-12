@@ -272,9 +272,9 @@ const LABELLED_TOOLS: ReadonlySet<string> = new Set(["Bash", "Task", "Agent"]);
  * schemas cost about 13k tokens in each request. `CLAUDE_CODE_ARTIFACT=0` keeps them off.
  */
 const OPENBOT_CLAUDE_CLIENT = {
-  CLAUDE_AGENT_SDK_CLIENT_APP: "openbot/0.1.0",
+  CLAUDE_AGENT_SDK_CLIENT_APP: "spinbot/0.1.0",
   CLAUDE_CODE_ARTIFACT: "0",
-  CLAUDE_CODE_ENTRYPOINT: "openbot",
+  CLAUDE_CODE_ENTRYPOINT: "spinbot",
 };
 /**
  * The channel tools whose accepted call ends the turn: the tool result tells the agent to end it with no
@@ -285,8 +285,8 @@ const OPENBOT_CLAUDE_CLIENT = {
  * name of a tool, not a call through `tool_call`, so a channel thread gets these tools directly.
  */
 const CLAUDE_TERMINAL_CHANNEL_TOOLS: readonly string[] = [
-  "mcp__openbot__channel_result",
-  "mcp__openbot__channel_reply",
+  "mcp__spinbot__channel_result",
+  "mcp__spinbot__channel_reply",
 ];
 
 /**
@@ -295,7 +295,7 @@ const CLAUDE_TERMINAL_CHANNEL_TOOLS: readonly string[] = [
  * turn then ends empty, as before #6923. The other providers keep the refusal as a result.
  */
 function terminalChannelRefusal(namespace: string, name: string, content: CallToolResult["content"]): boolean {
-  if (namespace !== "openbot" || !CLAUDE_TERMINAL_CHANNEL_TOOLS.includes(`mcp__openbot__${name}`)) return false;
+  if (namespace !== "spinbot" || !CLAUDE_TERMINAL_CHANNEL_TOOLS.includes(`mcp__spinbot__${name}`)) return false;
   const [first] = content;
   if (first?.type !== "text") return false;
   try {
@@ -2115,8 +2115,8 @@ export class ClaudeAgentClient extends EventEmitter<ClientEvents> {
     const turn = runtime.activeTurn;
     if (!turn) return;
     // A bridged call names the OpenBot tool and holds its own arguments in `arguments`.
-    const bridged = name === "mcp__openbot__tool_call" && isRecord(input) && input.name === "openbot.send_message";
-    const message = name === "mcp__openbot__send_message" ? input : bridged ? input.arguments : undefined;
+    const bridged = name === "mcp__spinbot__tool_call" && isRecord(input) && input.name === "spinbot.send_message";
+    const message = name === "mcp__spinbot__send_message" ? input : bridged ? input.arguments : undefined;
     const recipients =
       isRecord(message) && Array.isArray(message.recipientAgentIds)
         ? { recipientAgentIds: message.recipientAgentIds }
@@ -2156,7 +2156,7 @@ export class ClaudeAgentClient extends EventEmitter<ClientEvents> {
             : {}),
           ...(recipients === null
             ? {}
-            : { arguments: bridged ? { name: "openbot.send_message", arguments: recipients } : recipients }),
+            : { arguments: bridged ? { name: "spinbot.send_message", arguments: recipients } : recipients }),
         },
       },
     });
@@ -2527,9 +2527,9 @@ export class ClaudeAgentClient extends EventEmitter<ClientEvents> {
       runCauseEffect(this.#callDynamicTool(threadId, namespace, name, args));
     return {
       openbot: createSdkMcpServer({
-        name: "openbot",
+        name: "spinbot",
         version: "0.1.0",
-        tools: claudeOpenBotTools((name, args) => call("openbot", name, args), channelTools),
+        tools: claudeOpenBotTools((name, args) => call("spinbot", name, args), channelTools),
       }),
       // Without alwaysLoad, the CLI puts these tools behind its ToolSearch, and Haiku loaded them with
       // a search before 23 of 30 browser tasks (`bun run bench:browser-tools`, 2026-11-10).
@@ -2736,7 +2736,7 @@ export function claudeOpenBotTools(
 ) {
   const channel = channelTools
     ? CHANNEL_TOOL_DEFINITIONS.filter((definition) =>
-        CLAUDE_TERMINAL_CHANNEL_TOOLS.includes(`mcp__openbot__${definition.name}`),
+        CLAUDE_TERMINAL_CHANNEL_TOOLS.includes(`mcp__spinbot__${definition.name}`),
       )
     : [];
   // The channel tools are always loaded: behind the CLI's tool search, the model did not see them, and
@@ -2758,7 +2758,7 @@ export function claudeOpenBotTools(
   ];
 }
 
-/** The direct browser tools, as `mcp__openbot_browser__<tool>`: the form of a bridged browser call. */
+/** The direct browser tools, as `mcp__spinbot_browser__<tool>`: the form of a bridged browser call. */
 export function claudeBrowserTools(call: (name: string, args: unknown) => Promise<CallToolResult>) {
   return DIRECT_BROWSER_TOOL_DEFINITIONS.map((definition) =>
     tool(definition.name, definition.description, advertisedZodShape(definition.schema), (args) =>

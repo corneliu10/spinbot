@@ -65,7 +65,7 @@ export const claudeWorkspaceSkillPlugin = Effect.fn("ClaudeWorkspace.skillPlugin
   const directory = join(stateDirectory, "claude-skill-plugins", createHash("sha256").update(cwd).digest("hex"));
   yield* providerCall(() => mkdir(join(directory, ".claude-plugin"), { recursive: true, mode: 0o700 }));
   yield* providerCall(() =>
-    writeFile(join(directory, ".claude-plugin", "plugin.json"), `${JSON.stringify({ name: "openbot" })}\n`),
+    writeFile(join(directory, ".claude-plugin", "plugin.json"), `${JSON.stringify({ name: "spinbot" })}\n`),
   );
   const link = join(directory, "skills");
   const target = join(cwd, ".claude", "skills");

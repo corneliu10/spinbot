@@ -44,7 +44,7 @@
         "items": [
           "Gemini installiert und aktualisiert sich unter Windows wieder. In 0.67.0 brach es mit einem Fehler über einen Link oder eine Spezialdatei ab.",
           "Ein Agent, der eine Nachricht an ein beschäftigtes Teammitglied sendet, erkennt jetzt, ob die Nachricht in die laufende Aufgabe des Teammitglieds gelangt ist. Wartet die Nachricht, kann der Agent dir sagen, warum.",
-          "Bei der Computersteuerung sagen Agenten nicht mehr, dass ihr Cursor nicht verfügbar ist. OpenBot zeichnet den Cursor dorthin, wo der Agent klickt, scrollt oder sich bewegt."
+          "Bei der Computersteuerung sagen Agenten nicht mehr, dass ihr Cursor nicht verfügbar ist. Spinbot zeichnet den Cursor dorthin, wo der Agent klickt, scrollt oder sich bewegt."
         ]
       }
     ]
@@ -72,7 +72,7 @@
         "items": [
           "Chats mit ungelesenen Antworten stehen oben, in der Gruppe Ungelesen. Um die Reihenfolge zu ändern, wähle Chats sortieren im Menü der Chatliste.",
           "Auf einem beigetretenen Server, zum Beispiel einem VPS, haben die Desktop-App und die Browser-App jetzt die meisten Funktionen dieses Computers.",
-          "Agenten tragen OpenBot als Co-Autor in ihre Git-Commits ein. Du bleibst der Autor. Schalte es unter Deine Einstellungen → Agenten aus.",
+          "Agenten tragen Spinbot als Co-Autor in ihre Git-Commits ein. Du bleibst der Autor. Schalte es unter Deine Einstellungen → Agenten aus.",
           "Agenten erledigen Browser-Aufgaben in weniger Schritten und mit etwa 18 % weniger Tokens.",
           "Gemini läuft jetzt mit der Antigravity CLI. Deine Google-Anmeldung bleibt erhalten."
         ]
@@ -81,8 +81,8 @@
         "type": "fixed",
         "items": [
           "Ein Claude-Agent, den du stoppst, hält jetzt in etwa 10 Sekunden an, und seine Nachrichten in der Warteschlange starten.",
-          "Unter Windows können Agenten den Browser nutzen, während das OpenBot-Fenster minimiert oder im Infobereich ist.",
-          "Unter macOS schließt „Neustart für Update“ OpenBot nicht mehr, wenn OpenBot von seinem Disk-Image läuft. Du wirst aufgefordert, OpenBot in den Ordner Programme zu verschieben.",
+          "Unter Windows können Agenten den Browser nutzen, während das Spinbot-Fenster minimiert oder im Infobereich ist.",
+          "Unter macOS schließt „Neustart für Update“ Spinbot nicht mehr, wenn Spinbot von seinem Disk-Image läuft. Du wirst aufgefordert, Spinbot in den Ordner Programme zu verschieben.",
           "In einer Sprachunterhaltung stoppt ein Husten oder ein Tastendruck die Antwort des Agenten nicht mehr."
         ]
       }
@@ -101,7 +101,7 @@
           "Unter Windows zeigen Dynamic Island und das Agenten-Dock deine Agenten wie auf dem Mac. Das Agenten-Dock kann auch Kanäle enthalten.",
           "Agenten können sich öffentliche Onlinevideos ansehen, zum Beispiel YouTube- oder TikTok-Links.",
           "Wähle in der Bibliothek mehrere Dateien aus, um sie auf einmal herunterzuladen oder zu löschen.",
-          "Agenten können für dich einen Fehlerbericht oder eine Idee für eine Funktion an das OpenBot-Team senden."
+          "Agenten können für dich einen Fehlerbericht oder eine Idee für eine Funktion an das Spinbot-Team senden."
         ]
       },
       {
@@ -119,7 +119,7 @@
         "items": [
           "Die Warteschlange eines Agenten startet dieselbe Nachricht nicht mehr immer wieder, während der Agent auf die Antwort auf seine eigene Frage wartet.",
           "Ein ChatGPT-Agent komprimiert nicht mehr immer wieder und bleibt nicht mehr endlos bei „Kontext wird komprimiert“ stehen.",
-          "Agenten mit Cursor und einigen anderen Anbietern behalten ihre OpenBot-Werkzeuge nach einem Neustart von OpenBot.",
+          "Agenten mit Cursor und einigen anderen Anbietern behalten ihre Spinbot-Werkzeuge nach einem Neustart von Spinbot.",
           "Agenten können einen Remote-MCP-Server, bei dem du dich angemeldet hast, etwa n8n, auch mit der neuesten MCP-Version nutzen."
         ]
       }
@@ -145,7 +145,7 @@
         "type": "changed",
         "items": [
           "Agenten verbrauchen bei Claude, Codex, Pi, OpenCode, Grok und Hermes weniger Tokens pro Anfrage.",
-          "OpenBot braucht weniger Arbeitsspeicher für Browser-Tabs, inaktive Agenten und App-Fenster.",
+          "Spinbot braucht weniger Arbeitsspeicher für Browser-Tabs, inaktive Agenten und App-Fenster.",
           "Browser-Tabs von Agenten warten auf Bot-Prüfungen, die sich von selbst erledigen, und schaffen kurze Aufgaben in weniger Schritten.",
           "Mitteilungen sehen jetzt neu aus."
         ]
@@ -176,7 +176,7 @@
           "Starte eine neue Unterhaltung oder komprimiere den Kontext eines Kanals in seinen Einstellungen.",
           "Mitglieder eines Servers, dem sie beigetreten sind, können eigene MCP-Server hinzufügen und Apps wie Trello verbinden.",
           "Lege unter Servereinstellungen → Remotedesktop fest, wer diesen Computer per Remotedesktop steuern darf.",
-          "Nutze OpenBot auf Hebräisch und verbinde GitLab, Omnisend und ElevenLabs im Marketplace."
+          "Nutze Spinbot auf Hebräisch und verbinde GitLab, Omnisend und ElevenLabs im Marketplace."
         ]
       },
       {
@@ -194,8 +194,8 @@
           "Erwähnungen in Beiträgen auf Slack, Discord, Telegram und WhatsApp benachrichtigen jetzt die erwähnte Person.",
           "Wenn ein Anbieterkontingent aufgebraucht ist, setzt der Agent die Arbeit mit seinem ersten bereiten Ersatzmodell fort.",
           "Ein Chat, der nach jedem Durchlauf erneut komprimiert hat, stoppt automatische Komprimierungen jetzt nach 2 in Folge.",
-          "OpenBot schließt sich nicht mehr, wenn eine Browseraktion eines Agenten auf eine Seite wartet, die weiternavigiert.",
-          "Anmeldungen aus Proton Pass funktionieren nach einem Neustart von OpenBot."
+          "Spinbot schließt sich nicht mehr, wenn eine Browseraktion eines Agenten auf eine Seite wartet, die weiternavigiert.",
+          "Anmeldungen aus Proton Pass funktionieren nach einem Neustart von Spinbot."
         ]
       }
     ]
@@ -226,7 +226,7 @@
       {
         "type": "fixed",
         "items": [
-          "Claude bleibt angemeldet, wenn OpenBot neu startet oder aktualisiert wird, und Claude-Agenten verbrauchen weniger vom 5-Stunden-Nutzungsfenster.",
+          "Claude bleibt angemeldet, wenn Spinbot neu startet oder aktualisiert wird, und Claude-Agenten verbrauchen weniger vom 5-Stunden-Nutzungsfenster.",
           "Ältere Nachrichten, die du in einem langen Chat lädst, bleiben geladen. Der Chat springt nicht mehr zu den neuesten Nachrichten zurück.",
           "Automatische Komprimierungen eines Chats mit ChatGPT (Codex), Muse, Pi oder Antigravity stoppen nach 2 Fehlschlägen in Folge, damit der Chat nicht mehr das Tariflimit aufbraucht.",
           "GPT-Sprache funktioniert mit jedem Agenten, auch wenn der Agent ein Codex-Modell nutzt.",
@@ -244,7 +244,7 @@
         "type": "added",
         "items": [
           "Gib einem Browser-Profil unter Servereinstellungen → Browser-Profile einen eigenen Proxy, oder nutze auf einem beigetretenen Server deinen eigenen Computer als Proxy.",
-          "Verbinde Proton Pass im Marketplace. Der Browser füllt die Anmeldungen aus dem Tresor aus, den du mit OpenBot teilst.",
+          "Verbinde Proton Pass im Marketplace. Der Browser füllt die Anmeldungen aus dem Tresor aus, den du mit Spinbot teilst.",
           "Tippe @ im Chat eines Agenten, um einen seiner Browser-Tabs oder Nebenthreads zu markieren.",
           "Einstellungen → Diktat hat zwei weitere lokale Diktiermodelle: Parakeet Unified EN und Cohere Transcribe.",
           "Ein Thread zeigt einen blauen Punkt, wenn der Agent darin geschrieben hat und du es noch nicht gelesen hast.",
@@ -264,9 +264,9 @@
       {
         "type": "fixed",
         "items": [
-          "OpenBot verbraucht weniger Energie, wenn es ohne Aufgabe geöffnet ist.",
+          "Spinbot verbraucht weniger Energie, wenn es ohne Aufgabe geöffnet ist.",
           "Lange Chats scrollen ohne Stocken und öffnen sich schneller.",
-          "OpenBot bleibt beim Start nicht mehr bei „Verbindung zu OpenBot wird hergestellt“ oder beim Ladebildschirm des Servers hängen.",
+          "Spinbot bleibt beim Start nicht mehr bei „Verbindung zu Spinbot wird hergestellt“ oder beim Ladebildschirm des Servers hängen.",
           "Routinen haben wieder Computersteuerung, wenn sie für den Agenten eingeschaltet ist."
         ]
       }
@@ -304,7 +304,7 @@
           "Ein Kanal mit langem Verlauf öffnet sich wieder schnell.",
           "Unter Linux musst du dich nicht mehr nach jedem Neustart erneut anmelden, wenn der Schlüsselbund seinen Schlüssel nicht behält.",
           "Unter Windows leitet die Kanalleitung Nachrichten wieder weiter, und du kannst einen Server auf diesem Computer erstellen.",
-          "Wenn eine ältere OpenBot-Version Daten öffnet, die eine neuere Version gespeichert hat, installiert sie die neueste Version."
+          "Wenn eine ältere Spinbot-Version Daten öffnet, die eine neuere Version gespeichert hat, installiert sie die neueste Version."
         ]
       }
     ]
@@ -318,8 +318,8 @@
         "type": "added",
         "items": [
           "Schreibe deinen Agenten über WhatsApp. Verknüpfe eine Nummer unter Marketplace → Apps → WhatsApp. Eine eigene Nummer ist sicherer, weil WhatsApp Nummern sperren kann, die es für automatisiert hält.",
-          "Starte einen Workflow, wenn jemand OpenBot in Slack oder in einer Telegram-Gruppe erwähnt, und sende das Ergebnis dorthin zurück.",
-          "Nutze OpenBot auf Arabisch. Das Layout wird von rechts nach links gespiegelt.",
+          "Starte einen Workflow, wenn jemand Spinbot in Slack oder in einer Telegram-Gruppe erwähnt, und sende das Ergebnis dorthin zurück.",
+          "Nutze Spinbot auf Arabisch. Das Layout wird von rechts nach links gespiegelt.",
           "Schalte Modelle unter Servereinstellungen → Anbieter aus. Die Modellauswahl zeigt die neuesten Modelle zuerst, und ältere Modelle sind eingeklappt.",
           "Die Servereinstellungen haben ein Audit-Log mit Änderungen an Mitgliedern, Rollen und Agentenzugriffen.",
           "Firmenanmeldung: Ein Serverbesitzer kann unter Mitglieder → Firmenanmeldung Microsoft Entra ID, Okta, Google Workspace oder einen anderen OpenID-Connect-Anbieter verbinden. Personen mit einer Firmen-E-Mail-Adresse treten dann ohne Einladung bei.",
@@ -335,7 +335,7 @@
           "Chatnachrichten nutzen mehr Platz in einem breiten Fenster.",
           "Jede Datei, die du aus einem Chat öffnest, bekommt einen eigenen Tab in der Seitenleiste.",
           "Eingefügter Text mit mehr als 4.000 Zeichen wird zum Anhang pasted-text.txt, damit die Nachricht den ganzen Text behält.",
-          "OpenBot ist für die private Nutzung kostenlos, und der erste Start sagt das auch."
+          "Spinbot ist für die private Nutzung kostenlos, und der erste Start sagt das auch."
         ]
       },
       {
@@ -357,10 +357,10 @@
       {
         "type": "added",
         "items": [
-          "Kimi ist ein neuer Anbieter. OpenBot lädt die Kimi Code CLI herunter, und du meldest dich mit deinem Kimi-Code-Konto an.",
+          "Kimi ist ein neuer Anbieter. Spinbot lädt die Kimi Code CLI herunter, und du meldest dich mit deinem Kimi-Code-Konto an.",
           "Nutze Hermes Agent von Nous Research als Anbieter, mit deinen eigenen Erinnerungen, Fähigkeiten und Anmeldungen.",
-          "Auf dem Mac hat OpenBot ein Symbol in der Menüleiste. Wenn du das Fenster schließt, verschwindet das Dock-Symbol, und Aufgaben laufen weiter.",
-          "Starte einen Workflow, wenn jemand OpenBot in Discord erwähnt, und sende das Ergebnis als Antwort, Beitrag oder Reaktion zurück.",
+          "Auf dem Mac hat Spinbot ein Symbol in der Menüleiste. Wenn du das Fenster schließt, verschwindet das Dock-Symbol, und Aufgaben laufen weiter.",
+          "Starte einen Workflow, wenn jemand Spinbot in Discord erwähnt, und sende das Ergebnis als Antwort, Beitrag oder Reaktion zurück.",
           "Ordner in der Seitenleiste können Ordner enthalten, bis zu drei Ebenen tief. Ziehe einen Chat oder Ordner in einen Ordner.",
           "Wähle die Denkstufen Keine, Minimal und Ultra, wenn ein Modell sie anbietet.",
           "Angeheftete Agenten und Kanäle sind auf jedem Gerät gleich, das sich mit einem Server verbindet.",
@@ -372,7 +372,7 @@
       {
         "type": "changed",
         "items": [
-          "Auf dem Mac hältst du ⌘Q gedrückt oder drückst es zweimal, um OpenBot zu beenden. Ein versehentlicher Druck stoppt deine Agenten nicht mehr.",
+          "Auf dem Mac hältst du ⌘Q gedrückt oder drückst es zweimal, um Spinbot zu beenden. Ein versehentlicher Druck stoppt deine Agenten nicht mehr.",
           "Ein Agent macht öfter von selbst weiter, wenn sein Plan noch offene Schritte hat.",
           "Eingefügte Bilder erscheinen als Vorschaubilder über dem Nachrichtenfeld, und gesendete Bilder erscheinen in voller Größe.",
           "Agenten ohne Foto zeigen jetzt einen weichen Plüsch-Bot, der zeigt, was der Agent tut."
@@ -381,10 +381,10 @@
       {
         "type": "fixed",
         "items": [
-          "Slack-Erwähnungen und Direktnachrichten erreichen OpenBot wieder, wenn ein Computer mit dem Slack-Workspace ausgeschaltet ist.",
+          "Slack-Erwähnungen und Direktnachrichten erreichen Spinbot wieder, wenn ein Computer mit dem Slack-Workspace ausgeschaltet ist.",
           "Telefone und andere Geräte können sich sofort mit deinen Servern verbinden, nachdem der Computer aus dem Ruhezustand aufwacht.",
           "Ein Upload in einem Chat blockiert nicht mehr das Senden in anderen Chats.",
-          "Text, den du aus OpenBot kopierst, wird in anderen Apps ohne die Farben der App eingefügt."
+          "Text, den du aus Spinbot kopierst, wird in anderen Apps ohne die Farben der App eingefügt."
         ]
       }
     ]
@@ -398,8 +398,8 @@
         "type": "added",
         "items": [
           "Starte einen Workflow von GitHub aus: Ein GitHub-Auslöser läuft bei neuen Issues, Kommentaren, Pull Requests, Reviews, fehlgeschlagenen Checks oder einer Erwähnung von @openbotgit.",
-          "Ändere GitHub aus einem Workflow: Kommentiere, setze Labels, weise zu, prüfe, schließe oder erstelle ein Issue als OpenBot GitHub App.",
-          "Der Marketplace hat 17 neue OpenBot-Agenten, etwa QA Tester, PR Shepherd und Chief of Staff, und 15 neue Fähigkeiten für sie.",
+          "Ändere GitHub aus einem Workflow: Kommentiere, setze Labels, weise zu, prüfe, schließe oder erstelle ein Issue als Spinbot GitHub App.",
+          "Der Marketplace hat 17 neue Spinbot-Agenten, etwa QA Tester, PR Shepherd und Chief of Staff, und 15 neue Fähigkeiten für sie.",
           "Nutzung zeigt das monatliche Limit von OpenCode Go als dritten Balken."
         ]
       },
@@ -432,7 +432,6 @@
         "items": [
           "Verzweige eine Unterhaltung: Klicke mit der rechten Maustaste auf die letzte Agentennachricht eines Durchlaufs und wähle Hier abzweigen. Ein neuer Thread öffnet sich mit der Unterhaltung bis zu dieser Nachricht.",
           "Die Agenteneinstellungen haben eine Seite Anweisungen, die die AGENTS.md-Datei des Agenten zeigt. Wenn der Agent seine Anweisungen ändert, zeigt der Chat die Änderung mit Rückgängig.",
-          "Der Marketplace ist auf openbot.run. Jeder Agent und jede Fähigkeit hat eine eigene Seite, und Link kopieren teilt sie.",
           "Ein Agent kann auf eine Warnung oder Bestätigung einer Website antworten, die seine eigene Browseraktion geöffnet hat.",
           "Eine gestoppte oder fehlgeschlagene Kanalaufgabe hat eine Schaltfläche Aufgabe abbrechen."
         ]
@@ -474,7 +473,7 @@
       {
         "type": "changed",
         "items": [
-          "Ein Anbieter nutzt die CLI, die du installiert hast, wenn sie dieselbe Version wie die Kopie von OpenBot hat oder neuer ist.",
+          "Ein Anbieter nutzt die CLI, die du installiert hast, wenn sie dieselbe Version wie die Kopie von Spinbot hat oder neuer ist.",
           "Deine Antwort zu Analysedaten folgt deinem Konto auf deine anderen Geräte. Wenn du Analysedaten vor dieser Version ausgeschaltet hast, bleiben sie auf diesem Computer aus, bis du das hier änderst.",
           "Ziehe am Griff des Felds Anweisungen, um es höher zu machen."
         ]
@@ -483,7 +482,7 @@
         "type": "fixed",
         "items": [
           "Cloudflare-Prüfungen gelingen im eingebauten Browser.",
-          "Jede Anbieter-CLI braucht etwa halb so viel Speicherplatz: OpenBot behält nur eine Version.",
+          "Jede Anbieter-CLI braucht etwa halb so viel Speicherplatz: Spinbot behält nur eine Version.",
           "Eine Nachricht, die du an einen Agenten am Nutzungslimit sendest, versucht es sofort erneut beim Anbieter.",
           "In der Seitenleiste landet ein gezogener Chat in dem Abschnitt unter dem Zeiger."
         ]

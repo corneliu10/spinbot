@@ -26,7 +26,7 @@ export function agentWelcomeMessage(input: AgentWelcomeInput): string {
   }
   return [
     ...intro,
-    "1. Ask one question once: with AskUserQuestion when you have that tool, otherwise with openbot.ask_user. Write no text before the call: the question is your welcome.",
+    "1. Ask one question once: with AskUserQuestion when you have that tool, otherwise with spinbot.ask_user. Write no text before the call: the question is your welcome.",
     "   - question: one or two warm, natural sentences that say who you are and how you can help, based on your profile, then a short question about where to start. Do not list features or ask setup questions.",
     "   - header: one or two words, such as the first step.",
     "   - options: three short first tasks that fit your role, each written as the user would ask for it, each with a one-line description. Single choice. The user can also write their own answer.",
