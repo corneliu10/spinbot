@@ -43,7 +43,7 @@ export const messages = {
   "agentSettings.folders.inShared": "{folder} klasörü paylaşılan klasörde olduğu için {agent} onu zaten değiştirebilir",
   "agentSettings.folders.inFolder": "{folder} klasörü, zaten eklenmiş olan {parent} klasörünün içinde",
   "agentSettings.folders.protected":
-    "{folder} klasörü eklenemez: OpenBot verilerini veya diğer ajanların dosyalarını içeriyor",
+    "{folder} klasörü eklenemez: Spinbot verilerini veya diğer ajanların dosyalarını içeriyor",
   "agentSettings.folders.missing": "{folder} bu bilgisayarda bir klasör değil",
   "agentSettings.folders.limit": {
     one: "En fazla {count} klasör ekleyebilirsiniz",
@@ -156,7 +156,7 @@ export const messages = {
   "agentSettings.runtime.fullAccessNote":
     "Ajan, çalışma alanından ve paylaşılan klasörden tam bilgisayar erişimiyle çalışır.",
   "agentSettings.runtime.askNote":
-    "Bir OpenBot aracı kullanmadan veya bir site yayımlamadan önce ve sağlayıcısı onay istediğinde size sorar.",
+    "Bir Spinbot aracı kullanmadan veya bir site yayımlamadan önce ve sağlayıcısı onay istediğinde size sorar.",
   "agentSettings.runtime.fullNote": "Size sorduğu sorular hariç, sormadan hareket eder.",
   "agentSettings.access.workspace": "Yalnızca çalışma alanı",
   "agentSettings.access.ask": "Önce sor",
@@ -189,7 +189,7 @@ export const messages = {
   "agentSettings.deleteHistory.button": "Sil",
   "agentSettings.deleteHistory.confirmTitle": "{name} ile sohbet geçmişi silinsin mi?",
   "agentSettings.deleteHistory.confirmDescription":
-    "Bu sohbetin tüm mesajları ve dosyaları OpenBot'tan silinir ve ajan onları unutur. Bu işlem geri alınamaz. Yan konular, talimatlar, model, araçlar, anılar, çalışma alanı ve tarayıcı değişmez.",
+    "Bu sohbetin tüm mesajları ve dosyaları Spinbot'tan silinir ve ajan onları unutur. Bu işlem geri alınamaz. Yan konular, talimatlar, model, araçlar, anılar, çalışma alanı ve tarayıcı değişmez.",
   "agentSettings.deleteHistory.confirm": "Geçmişi sil",
   "agentSettings.deleteHistory.failed": "Geçmiş silinemedi.",
   "agentSettings.fullAccess.title": "Bu ajana tam erişim verilsin mi?",
@@ -216,7 +216,7 @@ export const messages = {
   "agentSettings.runtime.workspaceEnforcedClaude":
     "Dışarıdaki bir dosya düzenlemesi önce size sorar. Bir komut dışarıya yazamaz.",
   "agentSettings.runtime.workspaceUnlimited":
-    "Bilgisayar Kullanımı ve OpenBot tarayıcısı sınırlandırılmamıştır; Bilgisayar Kullanımını aşağıdan kapatabilirsiniz.",
+    "Bilgisayar Kullanımı ve Spinbot tarayıcısı sınırlandırılmamıştır; Bilgisayar Kullanımını aşağıdan kapatabilirsiniz.",
   "agentSettings.computerUse.title": "Bilgisayar Kullanımı",
   "agentSettings.computerUse.description": "Bu ajanın bu bilgisayardaki uygulamaları kontrol etmesine izin verin",
   "agentSettings.automation.title": "Yerel betikler",

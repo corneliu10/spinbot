@@ -82,7 +82,7 @@ export const routineLimitPolicyZodSchema = z
   );
 
 const ROUTINE_MISSED_POLICY_MEANING =
-  "What the routine does with occurrences that came due while OpenBot or its server was off: skip records and drops them, run-once runs the newest one when OpenBot starts and records the others.";
+  "What the routine does with occurrences that came due while Spinbot or its server was off: skip records and drops them, run-once runs the newest one when Spinbot starts and records the others.";
 
 export const routineMissedPolicyZodSchema = z
   .enum(ROUTINE_MISSED_POLICIES)

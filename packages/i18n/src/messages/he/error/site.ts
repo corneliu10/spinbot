@@ -5,7 +5,7 @@ export const messages = {
   "error.site.absolutePath": "יש לבחור נתיב מוחלט לתיקיית האתר.",
   "error.site.rootSymlink": "קישורים סימבוליים אינם מותרים באתרים מתארחים.",
   "error.site.notDirectory": "מקור האתר חייב להיות תיקייה.",
-  "error.site.outsideWorkspace": "האתר חייב להיות בתוך סביבת העבודה של הסוכן או ב-OpenBot Shared.",
+  "error.site.outsideWorkspace": "האתר חייב להיות בתוך סביבת העבודה של הסוכן או ב-Spinbot Shared.",
   "error.site.packageJsonInvalid": "הקובץ package.json של האתר אינו תקין.",
   "error.site.astroServerOutput": "Astro חייב להשתמש בפלט סטטי.",
   "error.site.astroAdapter": "מתאמי שרת של Astro ושילוב React אינם מותרים.",

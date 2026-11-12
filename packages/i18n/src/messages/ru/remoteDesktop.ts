@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Удалённое управление",
   "remoteDesktop.displayLabel": "Удалённый экран",
   "remoteDesktop.selectDisplay": "Выбрать экран",
-  "remoteDesktop.backToOpenBot": "Вернуться в OpenBot",
+  "remoteDesktop.backToOpenBot": "Вернуться в Spinbot",
   "remoteDesktop.disconnect": "Отключить",
   "remoteDesktop.viewerTitle": "Удалённый рабочий стол Sunshine",
   "remoteDesktop.viewerLoadFailed": "Не удалось загрузить просмотр Moonlight.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "Не удалось открыть рабочий стол",
   "remoteDesktop.notSharingTitle": "{name} не показывает свой экран",
   "remoteDesktop.notSharingDescription":
-    "Сервер не разрешает OpenBot записывать экран. На этом сервере откройте «Системные настройки» → «Конфиденциальность и безопасность» → «Запись экрана», включите OpenBot и повторите попытку здесь.",
+    "Сервер не разрешает Spinbot записывать экран. На этом сервере откройте «Системные настройки» → «Конфиденциальность и безопасность» → «Запись экрана», включите Spinbot и повторите попытку здесь.",
   "remoteDesktop.setup.check.screenRecording": "Запись экрана",
   "remoteDesktop.setup.check.accessibility": "Универсальный доступ",
   "remoteDesktop.setup.check.service": "Служба Sunshine",
@@ -41,7 +41,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "Не удалось запустить проверку удалённого рабочего стола.",
   "remoteDesktop.setup.connectionLost": "Тестовое подключение потеряно.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Обновите OpenBot на сервере, чтобы проверить разрешения и удалённый рабочий стол.",
+    "Обновите Spinbot на сервере, чтобы проверить разрешения и удалённый рабочий стол.",
   "remoteDesktop.setup.permissions": "Разрешения",
   "remoteDesktop.setup.checked": "Проверено",
   "remoteDesktop.setup.checkAgain": "Проверить снова",
@@ -76,12 +76,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Завершить проверку",
   "remoteDesktop.host.questionTitle": "{name} хочет управлять этим компьютером",
   "remoteDesktop.host.questionDetail":
-    "{name} увидит ваш экран и сможет пользоваться мышью и клавиатурой. Если вы не ответите в течение 30 секунд, OpenBot отклонит запрос.",
+    "{name} увидит ваш экран и сможет пользоваться мышью и клавиатурой. Если вы не ответите в течение 30 секунд, Spinbot отклонит запрос.",
   "remoteDesktop.host.allow": "Разрешить",
   "remoteDesktop.host.deny": "Отклонить",
   "remoteDesktop.host.startedTitle": "Удалённое управление началось",
   "remoteDesktop.host.startedBody": "{name} сейчас управляет этим компьютером.",
-  "remoteDesktop.host.trayTooltip": "OpenBot: удалённое управление включено",
+  "remoteDesktop.host.trayTooltip": "Spinbot: удалённое управление включено",
   "remoteDesktop.host.trayControlledBy": "{name} управляет этим компьютером",
   "remoteDesktop.host.stopAll": "Остановить всё удалённое управление",
 } as const satisfies PartialTranslation<typeof source>;

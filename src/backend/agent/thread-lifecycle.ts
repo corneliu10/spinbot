@@ -121,7 +121,7 @@ const RUNTIME_RELOADED_ON_RESUME: ReadonlySet<AgentProvider> = new Set(["claude"
 /** Per server key, the `tools` table Codex saved for it: each tool's approval. */
 type CodexToolApprovals = Array<[string, DynamicRecord]>;
 /** The start of the title that `#nameSession` gives a session in the provider's own thread list. */
-const SESSION_NAME_PREFIX = "OpenBot · ";
+const SESSION_NAME_PREFIX = "Spinbot · ";
 
 /** The instruction file that the developer instructions name, and its text when they carry it. */
 interface InstructionsFileInPrompt {

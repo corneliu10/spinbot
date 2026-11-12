@@ -17,7 +17,7 @@ export const messages = {
   "status.remote.stageCompatibility": "בודק תאימות של המחשב: {reason}",
   "status.remote.stageAgents": "טוען סוכנים: {reason}",
   "status.remote.stageReads": "טוען מצב קריאה: {reason}",
-  "status.remote.suspendedDetail": "יש לעדכן את OpenBot Mobile או את אפליקציית המחשב לפני ההתחברות.\n{detail}",
+  "status.remote.suspendedDetail": "יש לעדכן את Spinbot Mobile או את אפליקציית המחשב לפני ההתחברות.\n{detail}",
   "status.remote.cooldownDetail":
     "ההתחברות נכשלה אחרי {limit} ניסיונות. ניסיון נוסף בעוד {minutes}:{seconds}.\n{detail}",
   "status.remote.cooldown": "ההתחברות נכשלה אחרי {limit} ניסיונות. ניסיון נוסף בעוד {minutes}:{seconds}.",

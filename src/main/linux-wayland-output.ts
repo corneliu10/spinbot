@@ -264,7 +264,7 @@ export const setAboveAppsXWayland = Effect.fn("setAboveAppsXWayland")(function* 
     try: () => writeFile(file, ""),
     catch: (cause) => new AboveAppsXWaylandFailure({ cause }),
   });
-  logger.info(`The ${feature} shows above other apps, so OpenBot starts again on XWayland.`);
+  logger.info(`The ${feature} shows above other apps, so Spinbot starts again on XWayland.`);
   // An AppImage mounts itself for each start, and the mount of this process goes away with it.
   const execPath = process.env.APPIMAGE;
   app.relaunch(execPath ? { execPath, args: process.argv.slice(1) } : { args: process.argv.slice(1) });
@@ -286,7 +286,7 @@ export const restartOnXWaylandForAboveApps = Effect.fn("restartOnXWaylandForAbov
     Effect.as(true),
     Effect.catch((error) =>
       Effect.sync(() => {
-        logger.warn("Could not start OpenBot on XWayland for the windows above other apps:", toLogValue(error.cause));
+        logger.warn("Could not start Spinbot on XWayland for the windows above other apps:", toLogValue(error.cause));
         return false;
       }),
     ),
@@ -315,14 +315,14 @@ export const restartOnXWaylandWithoutMonitor = Effect.fn("restartOnXWaylandWitho
   );
   if (Option.isNone(globals) || globals.value.has("wl_output")) return false;
   if (!environment.DISPLAY) {
-    logger.warn("The Wayland session has no monitor and no XWayland. OpenBot starts when a monitor is on.");
+    logger.warn("The Wayland session has no monitor and no XWayland. Spinbot starts when a monitor is on.");
     return false;
   }
   return yield* startOnX11(environment, "monitor").pipe(
     Effect.as(true),
     Effect.catch((error) =>
       Effect.sync(() => {
-        logger.warn("Could not start OpenBot on XWayland:", toLogValue(error.cause));
+        logger.warn("Could not start Spinbot on XWayland:", toLogValue(error.cause));
         return false;
       }),
     ),

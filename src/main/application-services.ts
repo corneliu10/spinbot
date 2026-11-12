@@ -850,7 +850,7 @@ async function createMessagingServices({
   const messagingCredentialLoadError = await Effect.runPromise(messagingCredentials.load());
   if (messagingCredentialLoadError)
     logger.warn(
-      `OpenBot could not read the messaging token file (${messagingCredentialLoadError.name}). It was left unchanged.`,
+      `Spinbot could not read the messaging token file (${messagingCredentialLoadError.name}). It was left unchanged.`,
     );
   // The Signal socket that brings the events of the Slack workspaces, Discord guilds and Telegram chats
   // linked to this host, and makes its Discord and Telegram calls.
@@ -1703,7 +1703,7 @@ export async function createApplicationServices({
   performance.mark("openbot:services.provider-detection");
   const credentialLoadError = await Effect.runPromise(providerCredentials.load());
   if (credentialLoadError) {
-    logger.warn(`OpenBot could not read the provider key file (${credentialLoadError.name}). It was left unchanged.`);
+    logger.warn(`Spinbot could not read the provider key file (${credentialLoadError.name}). It was left unchanged.`);
   }
   /*
    * The MCP sign-ins, in their own file with the same cipher. `mcp-remote` used to keep these where
@@ -1715,7 +1715,7 @@ export async function createApplicationServices({
   const mcpOAuthStore = new McpOAuthStore(join(app.getPath("userData"), MCP_OAUTH_FILE), secretCipher);
   const mcpOAuthLoadError = await Effect.runPromise(mcpOAuthStore.load());
   if (mcpOAuthLoadError) {
-    logger.warn(`OpenBot could not read the MCP sign-in file (${mcpOAuthLoadError.name}). It was left unchanged.`);
+    logger.warn(`Spinbot could not read the MCP sign-in file (${mcpOAuthLoadError.name}). It was left unchanged.`);
   }
   // The OAuth proxy port, so a Codex session resumed after a restart reaches the same address.
   const mcpOAuthProxySettings = new McpOAuthProxySettingsFile(
@@ -1725,7 +1725,7 @@ export async function createApplicationServices({
   const mcpOAuthProxyLoadError = await Effect.runPromise(mcpOAuthProxySettings.load());
   if (mcpOAuthProxyLoadError) {
     logger.warn(
-      `OpenBot could not read the MCP sign-in proxy file (${mcpOAuthProxyLoadError.name}). A new port is used.`,
+      `Spinbot could not read the MCP sign-in proxy file (${mcpOAuthProxyLoadError.name}). A new port is used.`,
     );
   }
   /*
@@ -1770,7 +1770,7 @@ export async function createApplicationServices({
     },
   }).catch((error: unknown) => {
     logger.warn(
-      "OpenBot could not listen for MCP sign-ins on this machine, so the openbot:// link is used instead. Servers that refuse it cannot be signed in to:",
+      "Spinbot could not listen for MCP sign-ins on this machine, so the openbot:// link is used instead. Servers that refuse it cannot be signed in to:",
       toLogValue(error),
     );
     return null;
@@ -3648,7 +3648,7 @@ export async function createApplicationServices({
       : new LocalServers({
           registryPath: join(app.getPath("userData"), LOCAL_SERVERS_FILE),
           userDataRoot: join(app.getPath("userData"), "local-servers"),
-          agentRoot: join(homedir(), "OpenBot", "Servers"),
+          agentRoot: join(homedir(), "Spinbot", "Servers"),
           runtimeRoot: providerRuntimesRoot,
           cipher: safeStorageCipher("error.app.macSecureStorageUnavailable"),
           remoteServers,
@@ -3890,14 +3890,16 @@ export async function createApplicationServices({
       (process.env.OPENBOT_HOSTED_SERVER === "1" || (serverModeEnvironment !== null && installationMode === "self")) &&
       existsSync(HOSTED_UPDATE_TRIGGER));
   // A local server is the same application as its parent, which installs the update for both.
+  // Spinbot: no automatic updates; OpenBot's releases would replace this build. Merge upstream instead.
   const updatesEnabled =
+    false &&
     !localServerChild &&
     app.isPackaged &&
     !isNixStoreInstall() &&
     (hostedInstaller || (supportsInstalledUpdates(process.platform) && updateMetadataAvailable)) &&
     isValidSemver(currentVersion);
   if (app.isPackaged && updateMetadataAvailable && !isValidSemver(currentVersion)) {
-    logger.warn(`OpenBot updates are disabled because the application version is not valid SemVer: ${currentVersion}`);
+    logger.warn(`Spinbot updates are disabled because the application version is not valid SemVer: ${currentVersion}`);
   }
   let updateAdapter: UpdateAdapter = createDisabledUpdateAdapter();
   let updaterEnabled = updatesEnabled;
@@ -3940,7 +3942,7 @@ export async function createApplicationServices({
                   if (siblings.length === 0) return;
                   const list = siblings.map(({ pid, uid }) => `pid ${pid} (uid ${uid})`).join(", ");
                   logger.warn(
-                    `OpenBot update install refused: other OpenBot processes run from this application: ${list}`,
+                    `Spinbot update install refused: other Spinbot processes run from this application: ${list}`,
                   );
                 }),
               ),
@@ -3953,7 +3955,7 @@ export async function createApplicationServices({
     // Squirrel.Mac only. The path is meaningless under a Linux or Windows home directory.
     ...(process.platform === "darwin"
       ? {
-          shipItDirectory: join(homedir(), "Library", "Caches", "app.openbot.desktop.ShipIt"),
+          shipItDirectory: join(homedir(), "Library", "Caches", "app.spinbot.desktop.ShipIt"),
           appBundlePath: join(app.getPath("exe"), "..", "..", ".."),
         }
       : {}),

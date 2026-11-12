@@ -1127,7 +1127,7 @@ export class MessagingService {
       yield* live.adapter
         .post(
           { platformChannelId: chatId, replyThreadId: null },
-          { text: sourceText("status.messaging.telegramLinked", { bot: botUsername ? `@${botUsername}` : "OpenBot" }) },
+          { text: sourceText("status.messaging.telegramLinked", { bot: botUsername ? `@${botUsername}` : "Spinbot" }) },
         )
         .pipe(Effect.catch((failure) => Effect.sync(() => this.#warn(failure.cause))));
   }, Effect.uninterruptible);
@@ -1612,9 +1612,9 @@ export class MessagingService {
 
   /** Who the orchestrator reads as the author of a post that pinged a person: the agent that posted it. */
   #pingAuthor(record: MessagingConnectionRecord, agentId: string): string {
-    if (agentId === this.#orchestrator(record)) return "OpenBot, a post of yours";
+    if (agentId === this.#orchestrator(record)) return "Spinbot, a post of yours";
     const name = this.#agents.listAgents().find((agent) => agent.id === agentId)?.name;
-    return name ? `OpenBot, a post by your teammate ${name}` : "OpenBot";
+    return name ? `Spinbot, a post by your teammate ${name}` : "Spinbot";
   }
 
   #orchestrator(record: MessagingConnectionRecord): string | null {
@@ -2388,7 +2388,7 @@ function redactEmbed(embed: DiscordEmbed): DiscordEmbed {
 
 /** Why a WhatsApp number has no places: it lists only the chats that the user allowed, not all its chats. */
 const WHATSAPP_NO_PLACES =
-  "OpenBot posts only to WhatsApp chats that the user allowed, and this number allows none. Tell the user to open Marketplace, then Apps, then WhatsApp, and to use Add contact or Add group for this number.";
+  "Spinbot posts only to WhatsApp chats that the user allowed, and this number allows none. Tell the user to open Marketplace, then Apps, then WhatsApp, and to use Add contact or Add group for this number.";
 
 /** A WhatsApp number that is not linked, or whose connection is down now: for a post and for its places. */
 const WHATSAPP_NOT_CONNECTED =
@@ -2398,7 +2398,7 @@ const WHATSAPP_NOT_CONNECTED =
 const WHATSAPP_LOCAL_REFUSALS = new Map([
   [
     "place_not_allowed",
-    "OpenBot sent nothing: the user did not allow this WhatsApp chat. Tell the user to open Marketplace, then Apps, then WhatsApp, and to use Add contact or Add group for this chat. Then the post can go to it.",
+    "Spinbot sent nothing: the user did not allow this WhatsApp chat. Tell the user to open Marketplace, then Apps, then WhatsApp, and to use Add contact or Add group for this chat. Then the post can go to it.",
   ],
   ["not_connected", WHATSAPP_NOT_CONNECTED],
   ["not_linked", WHATSAPP_NOT_CONNECTED],

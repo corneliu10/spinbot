@@ -417,7 +417,7 @@ class WhatsAppAdapter implements MessagingAdapter {
       id: postId,
       chatJid: target.platformChannelId,
       threadKey: this.#threadKey(target, postId),
-      authorName: "OpenBot",
+      authorName: "Spinbot",
       text,
       sentAt: new Date().toISOString(),
     });

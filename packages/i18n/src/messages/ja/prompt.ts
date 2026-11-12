@@ -28,7 +28,7 @@ export const messages = {
   "prompt.approval.report.bugHeadline": "バグを見つけましたか？直しましょう。",
   "prompt.approval.report.ideaHeadline": "アイデアがありますか？形にしましょう。",
   "prompt.approval.report.dontSend": "今はしない",
-  "prompt.approval.report.send": "OpenBot チームに送信",
+  "prompt.approval.report.send": "Spinbot チームに送信",
   "prompt.approval.title.command": "コマンドを実行",
   "prompt.approval.title.fileChange": "ファイルを変更",
   "prompt.approval.title.permissions": "権限を付与",
@@ -53,7 +53,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} が {server} からのサインインをブロックしました",
   "prompt.browser.signInBlocked.cancelledTitle": "{host} へのサインインはキャンセルされました",
   "prompt.browser.signInBlocked.body":
-    "このコンピュータでサインインしてください。OpenBot は {host} のサインインだけを {server} に送信し、{name} が続行します。",
+    "このコンピュータでサインインしてください。Spinbot は {host} のサインインだけを {server} に送信し、{name} が続行します。",
   "prompt.browser.signInBlocked.cancelledBody": "サインインはキャンセルされました。",
   "prompt.browser.signInBlocked.waiting": "サインインを待っています",
   "prompt.browser.signInBlocked.waitingButton": "サインインを待っています…",

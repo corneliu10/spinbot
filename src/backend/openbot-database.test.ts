@@ -2308,8 +2308,8 @@ describe("OpenBotDatabase", () => {
 
     const legacyId = "bot-2f1c9a44-1d2e-4a7b-9c30-5e6f7a8b9c0d";
     const agentId = "agent-2f1c9a44-1d2e-4a7b-9c30-5e6f7a8b9c0d";
-    const legacyWorkspace = `/Users/dev/OpenBot/Agents/${legacyId}`;
-    const workspace = `/Users/dev/OpenBot/Agents/${agentId}`;
+    const legacyWorkspace = `/Users/dev/Spinbot/Agents/${legacyId}`;
+    const workspace = `/Users/dev/Spinbot/Agents/${agentId}`;
     const legacy = new DatabaseSync(database.path);
     removeSchemaAfterVersion14(legacy);
     downgradeToV11(legacy);
@@ -2563,17 +2563,17 @@ describe("OpenBotDatabase", () => {
     const legacy = new DatabaseSync(database.path);
     removeSchemaAfterVersion14(legacy);
     downgradeToV11(legacy);
-    seedLegacyAgent(legacy, "bot-research", "/Users/dev/OpenBot/Agents/bot-research");
-    seedLegacyAgent(legacy, "agent-research", "/Users/dev/OpenBot/Agents/agent-research");
-    seedLegacyAgent(legacy, "bot-8c41d0f2-6b5a-4e93-8d17-2a0b3c4d5e6f", "/Users/dev/OpenBot/Agents/pair-legacy");
-    seedLegacyAgent(legacy, "agent-8c41d0f2-6b5a-4e93-8d17-2a0b3c4d5e6f", "/Users/dev/OpenBot/Agents/pair");
+    seedLegacyAgent(legacy, "bot-research", "/Users/dev/Spinbot/Agents/bot-research");
+    seedLegacyAgent(legacy, "agent-research", "/Users/dev/Spinbot/Agents/agent-research");
+    seedLegacyAgent(legacy, "bot-8c41d0f2-6b5a-4e93-8d17-2a0b3c4d5e6f", "/Users/dev/Spinbot/Agents/pair-legacy");
+    seedLegacyAgent(legacy, "agent-8c41d0f2-6b5a-4e93-8d17-2a0b3c4d5e6f", "/Users/dev/Spinbot/Agents/pair");
     // And the rename travels as a text substitution, so an id that *contains* a generated one is caught by
     // it: rewriting `bot-<uuid>` inside `bot-<uuid>-copy` renames a second agent nobody asked about, onto
     // an id its neighbour already holds -- which the row-level conflict resolution settles by deleting one
     // of them. Three agents in, three agents out.
-    seedLegacyAgent(legacy, "bot-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607", "/Users/dev/OpenBot/Agents/prefix");
-    seedLegacyAgent(legacy, "bot-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607-copy", "/Users/dev/OpenBot/Agents/copy");
-    seedLegacyAgent(legacy, "agent-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607-copy", "/Users/dev/OpenBot/Agents/twin");
+    seedLegacyAgent(legacy, "bot-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607", "/Users/dev/Spinbot/Agents/prefix");
+    seedLegacyAgent(legacy, "bot-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607-copy", "/Users/dev/Spinbot/Agents/copy");
+    seedLegacyAgent(legacy, "agent-1f0a2b3c-4d5e-4f60-8a91-b2c3d4e5f607-copy", "/Users/dev/Spinbot/Agents/twin");
     legacy.close();
 
     const migrated = new OpenBotDatabase(root);

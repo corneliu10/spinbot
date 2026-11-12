@@ -28,7 +28,7 @@ export const messages = {
   "prompt.approval.report.bugHeadline": "发现了问题？我们来修复它。",
   "prompt.approval.report.ideaHeadline": "有想法？我们来实现它。",
   "prompt.approval.report.dontSend": "暂不",
-  "prompt.approval.report.send": "发送给 OpenBot 团队",
+  "prompt.approval.report.send": "发送给 Spinbot 团队",
   "prompt.approval.title.command": "运行命令",
   "prompt.approval.title.fileChange": "修改文件",
   "prompt.approval.title.permissions": "授予权限",
@@ -52,7 +52,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} 拦截了来自 {server} 的登录",
   "prompt.browser.signInBlocked.cancelledTitle": "已取消登录 {host}",
   "prompt.browser.signInBlocked.body":
-    "请在这台电脑上登录。OpenBot 只会把 {host} 的登录状态发送给 {server}，{name} 随后继续工作。",
+    "请在这台电脑上登录。Spinbot 只会把 {host} 的登录状态发送给 {server}，{name} 随后继续工作。",
   "prompt.browser.signInBlocked.cancelledBody": "登录已取消。",
   "prompt.browser.signInBlocked.waiting": "正在等待登录",
   "prompt.browser.signInBlocked.waitingButton": "正在等待登录…",

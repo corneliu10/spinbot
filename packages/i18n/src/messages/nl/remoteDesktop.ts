@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Bediening op afstand",
   "remoteDesktop.displayLabel": "Extern scherm",
   "remoteDesktop.selectDisplay": "Scherm kiezen",
-  "remoteDesktop.backToOpenBot": "Terug naar OpenBot",
+  "remoteDesktop.backToOpenBot": "Terug naar Spinbot",
   "remoteDesktop.disconnect": "Verbreken",
   "remoteDesktop.viewerTitle": "Extern Sunshine-bureaublad",
   "remoteDesktop.viewerLoadFailed": "Kan de Moonlight-viewer niet laden.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "Kan het bureaublad niet openen",
   "remoteDesktop.notSharingTitle": "{name} deelt zijn scherm niet",
   "remoteDesktop.notSharingDescription":
-    "De server staat niet toe dat OpenBot het scherm opneemt. Open op die server Systeeminstellingen → Privacy en beveiliging → Schermopname, zet OpenBot aan en probeer het hier opnieuw.",
+    "De server staat niet toe dat Spinbot het scherm opneemt. Open op die server Systeeminstellingen → Privacy en beveiliging → Schermopname, zet Spinbot aan en probeer het hier opnieuw.",
   "remoteDesktop.setup.check.screenRecording": "Schermopname",
   "remoteDesktop.setup.check.accessibility": "Toegankelijkheid",
   "remoteDesktop.setup.check.service": "Sunshine-dienst",
@@ -41,7 +41,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "Kan de test voor extern bureaublad niet starten.",
   "remoteDesktop.setup.connectionLost": "De testverbinding is verbroken.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Werk OpenBot op de server bij om machtigingen te controleren en extern bureaublad te testen.",
+    "Werk Spinbot op de server bij om machtigingen te controleren en extern bureaublad te testen.",
   "remoteDesktop.setup.permissions": "Machtigingen",
   "remoteDesktop.setup.checked": "Gecontroleerd",
   "remoteDesktop.setup.checkAgain": "Opnieuw controleren",
@@ -76,12 +76,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Test afronden",
   "remoteDesktop.host.questionTitle": "{name} wil deze computer bedienen",
   "remoteDesktop.host.questionDetail":
-    "{name} ziet je scherm en kan je muis en toetsenbord gebruiken. Als je niet binnen 30 seconden antwoordt, weigert OpenBot het verzoek.",
+    "{name} ziet je scherm en kan je muis en toetsenbord gebruiken. Als je niet binnen 30 seconden antwoordt, weigert Spinbot het verzoek.",
   "remoteDesktop.host.allow": "Toestaan",
   "remoteDesktop.host.deny": "Weigeren",
   "remoteDesktop.host.startedTitle": "Bediening op afstand gestart",
   "remoteDesktop.host.startedBody": "{name} bedient deze computer nu.",
-  "remoteDesktop.host.trayTooltip": "OpenBot: bediening op afstand is aan",
+  "remoteDesktop.host.trayTooltip": "Spinbot: bediening op afstand is aan",
   "remoteDesktop.host.trayControlledBy": "{name} bedient deze computer",
   "remoteDesktop.host.stopAll": "Alle bediening op afstand stoppen",
 } as const satisfies PartialTranslation<typeof source>;

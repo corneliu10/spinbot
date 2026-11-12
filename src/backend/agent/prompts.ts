@@ -504,7 +504,7 @@ export function vaultRequestFormSpec(args: VaultRequestArguments): UiBlockSpec |
   });
   return (
     normalizeUiBlockSpec({ type: "form", title: args.title, fields, submit: sourceText("status.agent.vaultSave") }) ??
-    "OpenBot could not show this form. Use a shorter title or shorter values and retry."
+    "Spinbot could not show this form. Use a shorter title or shorter values and retry."
   );
 }
 
@@ -559,7 +559,7 @@ export function browserUserControlResult(): DynamicToolResult {
 }
 
 export function browserTakeoverError(
-  message = "OpenBot could not create a browser takeover request.",
+  message = "Spinbot could not create a browser takeover request.",
 ): DynamicToolResult {
   return {
     success: false,

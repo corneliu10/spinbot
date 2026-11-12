@@ -1265,7 +1265,7 @@ export class RoutineScheduler implements RoutineDueSource {
     if (!webhooks) throw new RoutineInputError("This server cannot create webhook routines.");
     if (!requestedByPerson()) {
       throw new RoutineInputError(
-        "Only a person's message, in your OpenBot chat or a thread they opened, can create, change or delete a webhook routine. Ask the user to request it there.",
+        "Only a person's message, in your Spinbot chat or a thread they opened, can create, change or delete a webhook routine. Ask the user to request it there.",
       );
     }
     return webhooks;

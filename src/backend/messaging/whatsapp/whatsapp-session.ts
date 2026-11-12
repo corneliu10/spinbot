@@ -183,7 +183,7 @@ export class WhatsAppSession {
   #state: WhatsAppSessionState = "stopped";
   #started = false;
   /** The browser name that this device shows as. A link by pairing code needs a known browser. */
-  #browserName = "OpenBot";
+  #browserName = "Spinbot";
   #attempt = 0;
   #restartedOnce = false;
   /** A QR code was shown in this session, so a 408 means that the codes ran out. */
@@ -253,7 +253,7 @@ export class WhatsAppSession {
   start(options: { codeLink?: boolean } = {}): void {
     if (this.#started) return;
     this.#started = true;
-    this.#browserName = options.codeLink ? "Chrome" : "OpenBot";
+    this.#browserName = options.codeLink ? "Chrome" : "Spinbot";
     this.#attempt = 0;
     this.#setState("connecting");
     void this.#connect();

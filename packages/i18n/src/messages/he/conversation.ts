@@ -2,7 +2,7 @@ import type { PartialTranslation } from "../../message";
 import type { messages as source } from "../en/conversation";
 
 export const messages = {
-  "conversation.globalSearch.title": "חיפוש ב-OpenBot",
+  "conversation.globalSearch.title": "חיפוש ב-Spinbot",
   "conversation.globalSearch.filter": "סינון תוצאות",
   "conversation.globalSearch.tab.all": "הכול",
   "conversation.globalSearch.tab.messages": "הודעות",
@@ -95,7 +95,7 @@ export const messages = {
   "conversation.threads.error.start": "לא ניתן להתחיל את השרשור.",
   "conversation.threads.error.branch": "לא ניתן ליצור הסתעפות מהצ'אט.",
   "conversation.threads.error.send": "לא ניתן לשלוח את ההודעה לשרשור.",
-  "conversation.threads.error.files": "השרשור בשרת הזה לא מקבל קבצים. יש לעדכן את OpenBot בשרת.",
+  "conversation.threads.error.files": "השרשור בשרת הזה לא מקבל קבצים. יש לעדכן את Spinbot בשרת.",
   "conversation.threads.error.stop": "לא ניתן לעצור את השרשור.",
   "conversation.threads.error.archive": "לא ניתן להעביר את השרשור לארכיון.",
   "conversation.threads.error.restore": "לא ניתן לשחזר את השרשור.",

@@ -20,7 +20,7 @@ export const messages = {
   "dialog.saveExportSkill": "שמירת מיומנות הייצוא",
   "dialog.saveTransfer": "שמירת קובץ ההעברה",
   "dialog.chooseTransfer": "בחירת קובץ העברה",
-  "dialog.filter.transfer": "קובצי העברה של OpenBot",
+  "dialog.filter.transfer": "קובצי העברה של Spinbot",
   "dialog.chooseExternalLinkApp": "בחירת דפדפן",
   "dialog.filter.applications": "אפליקציות",
 } as const satisfies PartialTranslation<typeof source>;

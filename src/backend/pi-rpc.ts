@@ -94,7 +94,7 @@ export class PiRpc extends EventEmitter<{ record: [DynamicRecord]; diagnostic: [
             // A user's Pi extension or package can print to stdout (#6815). Pi's own RPC client skips
             // such a line too. The log has only its length: the text can hold a secret.
             skippedLine = true;
-            logger.warn("Pi wrote a stdout line that is not an RPC record. OpenBot skips such lines.", {
+            logger.warn("Pi wrote a stdout line that is not an RPC record. Spinbot skips such lines.", {
               provider: this.provider,
               length: line.length,
             });

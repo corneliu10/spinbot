@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "リモート操作",
   "remoteDesktop.displayLabel": "リモートディスプレイ",
   "remoteDesktop.selectDisplay": "ディスプレイを選択",
-  "remoteDesktop.backToOpenBot": "OpenBot に戻る",
+  "remoteDesktop.backToOpenBot": "Spinbot に戻る",
   "remoteDesktop.disconnect": "切断",
   "remoteDesktop.viewerTitle": "Sunshine リモートデスクトップ",
   "remoteDesktop.viewerLoadFailed": "Moonlight ビューアーを読み込めませんでした。",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "デスクトップを開けませんでした",
   "remoteDesktop.notSharingTitle": "{name} は画面を共有していません",
   "remoteDesktop.notSharingDescription":
-    "サーバーが OpenBot による画面収録をブロックしています。そのサーバーで「システム設定」→「プライバシーとセキュリティ」→「画面収録」を開き、OpenBot をオンにしてから、ここでもう一度お試しください。",
+    "サーバーが Spinbot による画面収録をブロックしています。そのサーバーで「システム設定」→「プライバシーとセキュリティ」→「画面収録」を開き、Spinbot をオンにしてから、ここでもう一度お試しください。",
   "remoteDesktop.setup.check.screenRecording": "画面収録",
   "remoteDesktop.setup.check.accessibility": "アクセシビリティ",
   "remoteDesktop.setup.check.service": "Sunshine サービス",
@@ -41,7 +41,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "リモートデスクトップのテストを開始できませんでした。",
   "remoteDesktop.setup.connectionLost": "テスト接続が切れました。",
   "remoteDesktop.setup.hostUpdateRequired":
-    "権限を確認してリモートデスクトップをテストするには、サーバーの OpenBot をアップデートしてください。",
+    "権限を確認してリモートデスクトップをテストするには、サーバーの Spinbot をアップデートしてください。",
   "remoteDesktop.setup.permissions": "権限",
   "remoteDesktop.setup.checked": "確認日時",
   "remoteDesktop.setup.checkAgain": "もう一度確認",
@@ -76,12 +76,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "テストを終了",
   "remoteDesktop.host.questionTitle": "{name} がこのコンピューターを操作しようとしています",
   "remoteDesktop.host.questionDetail":
-    "{name} はあなたの画面を見て、マウスとキーボードを使えるようになります。30 秒以内に応答しないと、OpenBot はリクエストを拒否します。",
+    "{name} はあなたの画面を見て、マウスとキーボードを使えるようになります。30 秒以内に応答しないと、Spinbot はリクエストを拒否します。",
   "remoteDesktop.host.allow": "許可",
   "remoteDesktop.host.deny": "拒否",
   "remoteDesktop.host.startedTitle": "リモート操作が開始されました",
   "remoteDesktop.host.startedBody": "{name} がこのコンピューターを操作しています。",
-  "remoteDesktop.host.trayTooltip": "OpenBot: リモート操作中",
+  "remoteDesktop.host.trayTooltip": "Spinbot: リモート操作中",
   "remoteDesktop.host.trayControlledBy": "{name} がこのコンピューターを操作中",
   "remoteDesktop.host.stopAll": "すべてのリモート操作を停止",
 } as const satisfies PartialTranslation<typeof source>;

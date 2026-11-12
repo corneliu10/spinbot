@@ -330,7 +330,7 @@ const CLAUDE_MCP_USER_AGENT = "claude-code-mcp-client";
  * prompt to make a title (about 1.2k input tokens) that OpenBot never shows. Only a new session gets
  * it: the CLI does not name a resumed session, and a title on resume would rename an older session.
  */
-const CLAUDE_SESSION_TITLE = "OpenBot";
+const CLAUDE_SESSION_TITLE = "Spinbot";
 
 interface ClientEvents {
   notification: [notification: AppServerNotification];
@@ -577,7 +577,7 @@ const readClaudeSettingsFile = Effect.fn("readClaudeSettingsFile")(function* (pa
   try {
     parsed = JSON.parse(text.value);
   } catch {
-    queryLogger.warn("OpenBot reads no values from a Claude settings file: the file is not valid JSON.", { path });
+    queryLogger.warn("Spinbot reads no values from a Claude settings file: the file is not valid JSON.", { path });
     return {};
   }
   const record: DynamicRecord = isDynamicRecord(parsed) ? parsed : {};

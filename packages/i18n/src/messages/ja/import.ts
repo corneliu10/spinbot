@@ -72,11 +72,11 @@ export const messages = {
   "import.result.notImportedTitle": "インポートされなかった項目",
   "import.result.warnings": "移行されなかった項目があります",
   "import.source.ledeServer":
-    "OpenBot はこれらをサーバーにコピーします。何かが変わる前に、すべての項目を確認できます。",
+    "Spinbot はこれらをサーバーにコピーします。何かが変わる前に、すべての項目を確認できます。",
   "import.source.hermesNoteServer":
     "サーバー上の Hermes フォルダーを読み込むか、Hermes から .zip ファイルをエクスポートします。",
   "import.source.hermesNoteExport": "Hermes から .zip ファイルをエクスポートします。",
   "import.hermes.notFoundServer": "このサーバーに Hermes のプロファイルがありません",
   "import.hermes.notFoundServerNote":
-    "OpenBot はサーバーの Hermes フォルダーを読み込みます。このコンピューターの Hermes を取り込むには、Hermes から .zip ファイルを書き出してください。",
+    "Spinbot はサーバーの Hermes フォルダーを読み込みます。このコンピューターの Hermes を取り込むには、Hermes から .zip ファイルを書き出してください。",
 } as const satisfies PartialTranslation<typeof source>;

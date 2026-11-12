@@ -10,8 +10,8 @@ export const messages = defineMessages("error.voice", {
   "error.voice.modelUnavailable": "The voice model is unavailable.",
   "error.voice.transcriptionTimedOut": "Voice transcription timed out.",
   "error.voice.prepareRequired":
-    "Local voice transcription is unavailable. Run `bun run voice:prepare` and restart OpenBot.",
-  "error.voice.transcriptionFailed": "OpenBot could not transcribe this recording.",
+    "Local voice transcription is unavailable. Run `bun run voice:prepare` and restart Spinbot.",
+  "error.voice.transcriptionFailed": "Spinbot could not transcribe this recording.",
   // A provider that takes dictation or reads replies aloud with the user's own key. {provider} is ElevenLabs or xAI.
   "error.voice.cloud.keyRequired": "Add your {provider} API key in Settings → Voice.",
   "error.voice.cloud.keyRejected": "{provider} did not accept the API key. Check the key in Settings → Voice.",
@@ -24,11 +24,11 @@ export const messages = defineMessages("error.voice", {
   "error.voice.speech.runtimeUnavailable": "Local speech is not available on this platform.",
   "error.voice.speech.modelRequired": "Download the speech model in Settings → Voice.",
   "error.voice.speech.timedOut": "Reading the reply aloud timed out.",
-  "error.voice.speech.failed": "OpenBot could not read the reply aloud.",
+  "error.voice.speech.failed": "Spinbot could not read the reply aloud.",
   // A cloud model for spoken replies. {provider} is ElevenLabs or xAI.
   "error.voice.speech.providerFailed": "{provider} did not send the audio. Try again.",
   "error.voice.speech.providerUnreachable": "Could not connect to {provider}. Check the connection.",
-  "error.voice.recordingNotKept": "OpenBot could not keep the voice recording.",
+  "error.voice.recordingNotKept": "Spinbot could not keep the voice recording.",
   "error.voice.live.timedOut": "Codex live voice did not start in time. Try again.",
   "error.voice.live.failed": "Live voice stopped: {reason}",
   "error.voice.live.disconnected": "Live voice disconnected.",
@@ -44,6 +44,6 @@ export const messages = defineMessages("error.voice", {
   "error.voice.server.routeOff": "The voice server is not set up for this. Check Settings → Voice.",
   "error.voice.server.keyRefused": "{host} refused the API key.",
   "error.voice.server.invalidAnswer": "{host} did not send an OpenAI-compatible answer.",
-  "error.voice.server.invalidAudio": "{host} sent audio that OpenBot cannot play. Use a server that sends WAV.",
+  "error.voice.server.invalidAudio": "{host} sent audio that Spinbot cannot play. Use a server that sends WAV.",
   "error.voice.server.tooLarge": "The answer from {host} is too large.",
 });

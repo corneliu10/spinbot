@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "Доступ к микрофону выключен",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Чтобы диктовать сообщения, разрешите OpenBot использовать микрофон и распознавание речи в настройках.",
+    "Чтобы диктовать сообщения, разрешите Spinbot использовать микрофон и распознавание речи в настройках.",
   "mobile.chat.dictation.stopped": "Диктовка остановлена",
   "mobile.chat.dictation.tryAgain": "Повторите попытку.",
   "mobile.chat.dictation.unavailable": "Диктовка недоступна",
@@ -132,7 +132,7 @@ export const messages = {
   "mobile.chat.attachment.openFailed": "Не удалось открыть вложение",
   "mobile.chat.attachment.photosNeedUpdate": "Для сохранения фото нужна последняя версия приложения.",
   "mobile.chat.attachment.photosPermission":
-    "Чтобы сохранить изображение, разрешите OpenBot добавлять фото в настройках.",
+    "Чтобы сохранить изображение, разрешите Spinbot добавлять фото в настройках.",
   "mobile.chat.attachment.imageUnavailable": "Изображение недоступно. Повторите попытку.",
   "mobile.chat.attachment.saveImageFailed": "Не удалось сохранить изображение",
   "mobile.chat.attachment.preview": "Просмотр: {name}",
@@ -157,9 +157,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: выберите изображения, аудио MP3, видео MOV или MP4, архивы ZIP, PDF, документы Office, EML, текстовые файлы, Markdown, данные или исходный код.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: компьютер-хост не принимает файлы {type}. Обновите там OpenBot, чтобы прикреплять их.",
+    "{name}: компьютер-хост не принимает файлы {type}. Обновите там Spinbot, чтобы прикреплять их.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: компьютер-хост не принимает такие файлы. Обновите там OpenBot, чтобы прикреплять их.",
+    "{name}: компьютер-хост не принимает такие файлы. Обновите там Spinbot, чтобы прикреплять их.",
   "mobile.chat.attachment.nameTooLong": "Выберите файл с более коротким именем.",
   "mobile.chat.attachment.damaged": "Вложение повреждено. Выберите его заново.",
   "mobile.chat.attachment.tooLarge": "{name} больше 10 МБ.",
@@ -208,11 +208,11 @@ export const messages = {
   "mobile.chat.liveVoice.voiceServerFailed":
     "Голосовой сервер не смог прочитать ответ. Проверьте его в разделе «Настройки > Голос».",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Этот сервер не поддерживает GPT Live Voice. Обновите OpenBot на компьютере, где он работает.",
+    "Этот сервер не поддерживает GPT Live Voice. Обновите Spinbot на компьютере, где он работает.",
   "mobile.chat.liveVoice.gptFailed": "Не удалось запустить GPT Live Voice. Включите микрофон, чтобы повторить.",
   "mobile.chat.liveVoice.gptEnded": "GPT Live Voice остановлен. Включите микрофон, чтобы запустить его снова.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Разрешите OpenBot использовать микрофон в Настройках. Затем включите микрофон, чтобы повторить.",
+    "Разрешите Spinbot использовать микрофон в Настройках. Затем включите микрофон, чтобы повторить.",
   "mobile.chat.composer.addAttachment": "Добавить вложение",
   "mobile.chat.composer.ask": "Спросить: {name}",
   "mobile.chat.composer.stopFailed": "Не удалось остановить агента. Возможно, он уже закончил.",
@@ -291,7 +291,7 @@ export const messages = {
   "mobile.chat.imageGallery.saved": "Сохранено в «Фото»",
   "mobile.chat.imageGallery.shareAll": "Поделиться всеми",
   "mobile.chat.imageGallery.photosPermission":
-    "Разрешите OpenBot добавлять фото в Настройках, чтобы сохранить эти изображения.",
+    "Разрешите Spinbot добавлять фото в Настройках, чтобы сохранить эти изображения.",
   "mobile.chat.imageGallery.saveFailed": "Не удалось сохранить изображения",
   "mobile.chat.imageGallery.shareFailed": "Не удалось поделиться изображениями",
   "mobile.chat.imageGallery.shareNeedsUpdate":
@@ -300,7 +300,7 @@ export const messages = {
   "mobile.chat.video.retry": "Повторить загрузку видео",
   "mobile.chat.video.share": "Поделиться: {name}",
   "mobile.chat.video.save": "Сохранить {name} в «Фото»",
-  "mobile.chat.video.photosPermission": "Разрешите OpenBot добавлять фото в Настройках, чтобы сохранить это видео.",
+  "mobile.chat.video.photosPermission": "Разрешите Spinbot добавлять фото в Настройках, чтобы сохранить это видео.",
   "mobile.chat.video.saveFailed": "Не удалось сохранить видео",
   "mobile.chat.audio.play": "Воспроизвести: {name}",
   "mobile.chat.audio.pause": "Пауза: {name}",
@@ -314,7 +314,7 @@ export const messages = {
   "mobile.chat.browserSecret.authenticatorCode": "Код из приложения-аутентификатора",
   "mobile.chat.browserSecret.oneTimeCode": "Одноразовый код",
   "mobile.chat.browserSecret.takeoverTitle": "Управление браузером",
-  "mobile.chat.browserSecret.takeoverBody": "Выполните этот шаг в браузере на компьютере, где работает OpenBot.",
+  "mobile.chat.browserSecret.takeoverBody": "Выполните этот шаг в браузере на компьютере, где работает Spinbot.",
   "mobile.chat.browserSecret.takeoverReload": "Затем обновите страницу и только потом нажмите «Готово».",
   "mobile.chat.browserSecret.takeoverFailed": "Не удалось выполнить запрос.",
   "mobile.chat.browserSecret.done": "Готово",
@@ -402,7 +402,7 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "«Разрешить» даст {name} эти разрешения на {server}. «Отклонить» сохранит текущие разрешения.",
   "mobile.chat.approval.partial":
-    "Этот запрос слишком длинный для телефона. Чтобы разрешить его, откройте OpenBot на {server}. Отклонить его можно здесь.",
+    "Этот запрос слишком длинный для телефона. Чтобы разрешить его, откройте Spinbot на {server}. Отклонить его можно здесь.",
   "mobile.chat.approval.allow": "Разрешить",
   "mobile.chat.approval.deny": "Отклонить",
   "mobile.chat.approval.reconnect": "Подключитесь к {server}, чтобы ответить на этот запрос.",
@@ -488,7 +488,7 @@ export const messages = {
   "mobile.chat.queue.steerNeedsTurn": "Направить можно только во время выполнения хода.",
   "mobile.chat.queue.stillHoldingTitle": "Сообщение всё ещё удерживается",
   "mobile.chat.queue.stillHoldingMessage":
-    "OpenBot не удалось освободить это сообщение, поэтому агент продолжает его ждать. Повторите попытку после переподключения телефона.",
+    "Spinbot не удалось освободить это сообщение, поэтому агент продолжает его ждать. Повторите попытку после переподключения телефона.",
   "mobile.chat.queue.keepEditing": "Продолжить",
   "mobile.chat.queue.leaveAnyway": "Всё равно выйти",
   "mobile.chat.queue.discardTitle": "Отменить изменения?",
@@ -496,7 +496,7 @@ export const messages = {
   "mobile.chat.queue.discard": "Отменить",
   "mobile.chat.queue.alreadyReceived": "Агент уже получил это сообщение, поэтому изменить его нельзя.",
   "mobile.chat.queue.holding": "Удерживаем сообщение для вас…",
-  "mobile.chat.queue.holdFailed": "OpenBot не удалось удержать это сообщение для редактирования.",
+  "mobile.chat.queue.holdFailed": "Spinbot не удалось удержать это сообщение для редактирования.",
   "mobile.chat.queue.messageLabel": "Сообщение",
   "mobile.chat.queue.messagePlaceholder": "Текст сообщения",
   "mobile.chat.queue.save": "Сохранить сообщение из очереди",
@@ -529,12 +529,12 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Сохранить",
   "mobile.chat.threads.name": "Название ветки",
   "mobile.chat.threads.renameUnavailable":
-    "Сейчас нельзя переименовать эту ветку. Подключитесь к серверу или обновите OpenBot на хосте.",
+    "Сейчас нельзя переименовать эту ветку. Подключитесь к серверу или обновите Spinbot на хосте.",
   "mobile.chat.threads.delete.action": "Удалить",
   "mobile.chat.threads.delete.title": "Удалить эту ветку?",
-  "mobile.chat.threads.delete.body": "OpenBot навсегда удалит ветку, её сообщения и файлы. Основной чат не изменится.",
-  "mobile.chat.threads.filesUnsupported": "Этот хост не принимает файлы в ветке. Обновите OpenBot на хосте.",
-  "mobile.chat.threads.unsupported": "Этот хост не может переименовывать или удалять ветки. Обновите OpenBot на хосте.",
+  "mobile.chat.threads.delete.body": "Spinbot навсегда удалит ветку, её сообщения и файлы. Основной чат не изменится.",
+  "mobile.chat.threads.filesUnsupported": "Этот хост не принимает файлы в ветке. Обновите Spinbot на хосте.",
+  "mobile.chat.threads.unsupported": "Этот хост не может переименовывать или удалять ветки. Обновите Spinbot на хосте.",
   "mobile.chat.threads.error.rename": "Не удалось переименовать ветку.",
   "mobile.chat.threads.error.delete": "Не удалось удалить ветку.",
   "mobile.chat.channelWork.working": "Работает в канале {channel}",

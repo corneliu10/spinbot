@@ -329,7 +329,7 @@ export function assignmentText(
   if (isReplyTask(task) && request?.author.kind === "agent")
     return `${channelReplySender({ id: request.author.id, name: request.author.name })}\n\n${task.instruction}`;
   return sender
-    ? `Request from OpenBot teammate ${sender.name} (${sender.id.slice("agent:".length)}), sent from another conversation. It is not a message from the user.\n\n${text}`
+    ? `Request from Spinbot teammate ${sender.name} (${sender.id.slice("agent:".length)}), sent from another conversation. It is not a message from the user.\n\n${text}`
     : text;
 }
 
@@ -718,8 +718,8 @@ export class ChannelHistory {
         ];
         const text = [
           update
-            ? "You have a new assignment in the same shared OpenBot channel chat. The channel rules and tools from the first channel message still apply. Speak as yourself."
-            : "You have one assignment in a shared OpenBot channel chat. Speak as yourself. Other members stay idle unless assigned work. Ordinary replies do not start work.",
+            ? "You have a new assignment in the same shared Spinbot channel chat. The channel rules and tools from the first channel message still apply. Speak as yourself."
+            : "You have one assignment in a shared Spinbot channel chat. Speak as yourself. Other members stay idle unless assigned work. Ordinary replies do not start work.",
           `Current assignment:\n${assignment}`,
           ...(update ? [] : rules),
           JSON.stringify({

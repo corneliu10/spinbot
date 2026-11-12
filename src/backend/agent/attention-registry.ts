@@ -178,7 +178,7 @@ const MESSAGING_QUESTION_REFUSED =
   "This conversation is in an external chat, where nobody can answer a question card. Ask the question in your answer: the person replies in the conversation.";
 /** The agent reads this, not the user: it says what to do in a turn that answers another agent's request from an external chat. */
 const MESSAGING_REQUEST_CARD_REFUSED =
-  "This request came from an external chat (Slack, Discord, Telegram or WhatsApp) through another agent, and nobody can answer a card here. Decide on your own and continue. When only the OpenBot user can unblock you, such as a sign-in, a key or a password, stop and say in your answer exactly what the OpenBot user must do in OpenBot.";
+  "This request came from an external chat (Slack, Discord, Telegram or WhatsApp) through another agent, and nobody can answer a card here. Decide on your own and continue. When only the Spinbot user can unblock you, such as a sign-in, a key or a password, stop and say in your answer exactly what the Spinbot user must do in Spinbot.";
 
 /** The agent reads these, not the user. */
 const VAULT_UNAVAILABLE = "No Vault is available on this computer. Ask the user.";
@@ -187,7 +187,7 @@ const VAULT_LOGIN_ADD_FIELDS =
 const VAULT_PASSWORD_EXTERNAL_REFUSED =
   "You cannot save a password in an external chat. Ask the user to add it in Server settings > Vault.";
 const VAULT_PASSWORD_PERSON_ONLY =
-  "Only a person's message, in your OpenBot chat or a thread they opened, can save a password or a two-step key. Ask the user to add it in Server settings > Vault.";
+  "Only a person's message, in your Spinbot chat or a thread they opened, can save a password or a two-step key. Ask the user to add it in Server settings > Vault.";
 /** The password of a `save_vault_item` call whose other arguments can be wrong. */
 const decodePasswordArgument = Schema.decodeUnknownOption(Schema.Struct({ password: Schema.String }));
 const VAULT_TWO_STEP_KEY_INVALID =
@@ -904,7 +904,7 @@ export class AttentionRegistry {
       if (this.#takeovers.get(input.requestId) !== pending) return;
       if (outcome === "submitted") {
         const vault = pending.vaultLoginId
-          ? `OpenBot filled saved login ${pending.vaultLoginId}; the user did not type it.`
+          ? `Spinbot filled saved login ${pending.vaultLoginId}; the user did not type it.`
           : input.saveToVault && secret.request.method === "password"
             ? yield* this.#saveTypedPassword(pending, secret.request.origin, input.secret)
             : undefined;
@@ -1602,8 +1602,8 @@ export class AttentionRegistry {
           {
             type: "inputText",
             text: problem
-              ? `OpenBot could not create a user question: ${problem} Correct the arguments and retry.`
-              : "OpenBot could not create a user question.",
+              ? `Spinbot could not create a user question: ${problem} Correct the arguments and retry.`
+              : "Spinbot could not create a user question.",
           },
         ],
       });
@@ -1681,7 +1681,7 @@ export class AttentionRegistry {
     if (!threadId || !turnId || !agentId || !publicThreadId || !uiBlock || !validPromptQuestions(questions)) {
       client.respond(request.id, {
         success: false,
-        contentItems: [{ type: "inputText", text: "OpenBot could not show this block." }],
+        contentItems: [{ type: "inputText", text: "Spinbot could not show this block." }],
       });
       return;
     }
@@ -1813,7 +1813,7 @@ export class AttentionRegistry {
       client.respond(request.id, { action: "decline", content: null, _meta: null });
       this.#emitError(
         "mcp_safety_handoff",
-        "A local plugin requested an unsupported security hand-off, so OpenBot declined it.",
+        "A local plugin requested an unsupported security hand-off, so Spinbot declined it.",
         agentId,
       );
       return;
@@ -2057,7 +2057,7 @@ export class AttentionRegistry {
   #respondToMalformedApproval(client: AgentClient, request: AppServerRequest): void {
     client.respond(
       request.id,
-      approvalReply(request.method, request.params, "decline", "OpenBot could not identify this approval."),
+      approvalReply(request.method, request.params, "decline", "Spinbot could not identify this approval."),
     );
   }
 
@@ -2077,7 +2077,7 @@ export class AttentionRegistry {
     const kind = request.method === "password" ? "password" : "totp";
     const skip = (reason: string, note: string, loginId?: string) => {
       logger.info("Shared vault fill skipped", { origin: request.origin, method: request.method, loginId, reason });
-      pending.vaultSkipped = `OpenBot did not fill a saved login: ${note}`;
+      pending.vaultSkipped = `Spinbot did not fill a saved login: ${note}`;
       return false;
     };
     // A script the agent ran that still runs in the page can read what is filled, and a field built
@@ -2109,7 +2109,7 @@ export class AttentionRegistry {
     );
     if (Result.isFailure(found)) {
       logger.warn("Unable to fill from the shared vault", { error: toLogValue(found.failure.cause) });
-      pending.vaultSkipped = "OpenBot did not fill a saved login: the password manager could not be read.";
+      pending.vaultSkipped = "Spinbot did not fill a saved login: the password manager could not be read.";
       return false;
     }
     const login = found.success;

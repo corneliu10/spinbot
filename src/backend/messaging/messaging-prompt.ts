@@ -64,13 +64,13 @@ export function messagingPromptText(input: MessagingPromptInput): string {
   const platform = words.name;
   const lines = input.fromOwner
     ? [
-        `Message from the OpenBot user, in the "Message yourself" chat of their own ${words.workspace}.`,
+        `Message from the Spinbot user, in the "Message yourself" chat of their own ${words.workspace}.`,
         input.workspaceName ? `${words.workspace}: ${input.workspaceName}` : null,
-        `Place: the OpenBot user's own "Message yourself" chat. Only the OpenBot user writes and reads it, so you can answer with their own data, as in the app.`,
+        `Place: the Spinbot user's own "Message yourself" chat. Only the Spinbot user writes and reads it, so you can answer with their own data, as in the app.`,
         "Your final answer is posted to this chat.",
       ]
     : [
-        `Message from a ${platform} user. This person is not the OpenBot user.`,
+        `Message from a ${platform} user. This person is not the Spinbot user.`,
         input.workspaceName ? `${words.workspace}: ${input.workspaceName}` : null,
         input.isDirect ? "Place: a direct message to you." : `Place: ${input.place}, ${words.conversation}.`,
         `Author: ${input.authorName} (${platform} user ${input.authorId})`,
@@ -102,9 +102,9 @@ export function messagingPromptText(input: MessagingPromptInput): string {
 /** How to answer, the messaging tools, and the saved facts: the same for each turn of one session. */
 function guidanceLines(input: MessagingPromptInput, words: (typeof PLATFORM_WORDS)[MessagingPlatform]): string[] {
   const lines = [
-    "Answer yourself when you can answer correctly in this turn from your knowledge, this conversation, the saved facts, or your tools: a greeting, a simple question, a fact, a short explanation, or the status of work you know. Ask an OpenBot teammate only when the request needs its tools, accounts, files, or memory, or long work such as code changes or research.",
-    "To send files, call openbot.attach_files_to_response. When you ask an OpenBot teammate, ask one teammate and end this turn: its reply comes back to this conversation, and your answer to it is posted here.",
-    `Through openbot.tool_call: openbot.messaging_history reads more of this place; openbot.messaging_remember saves a fact that every conversation of this ${words.workspace} sees; openbot.messaging_forget_memory deletes one by its id; openbot.messaging_post posts to another place. Keep facts about this ${words.workspace} there, not in openbot.remember: your own memories are private to the OpenBot user.`,
+    "Answer yourself when you can answer correctly in this turn from your knowledge, this conversation, the saved facts, or your tools: a greeting, a simple question, a fact, a short explanation, or the status of work you know. Ask an Spinbot teammate only when the request needs its tools, accounts, files, or memory, or long work such as code changes or research.",
+    "To send files, call openbot.attach_files_to_response. When you ask an Spinbot teammate, ask one teammate and end this turn: its reply comes back to this conversation, and your answer to it is posted here.",
+    `Through openbot.tool_call: openbot.messaging_history reads more of this place; openbot.messaging_remember saves a fact that every conversation of this ${words.workspace} sees; openbot.messaging_forget_memory deletes one by its id; openbot.messaging_post posts to another place. Keep facts about this ${words.workspace} there, not in openbot.remember: your own memories are private to the Spinbot user.`,
   ];
   const mention = MENTION_GUIDANCE[input.platform];
   if (mention) lines.push(mention);

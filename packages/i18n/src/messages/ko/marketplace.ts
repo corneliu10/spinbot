@@ -24,7 +24,7 @@ export const messages = {
   "marketplace.description.apps": "에이전트가 사용하는 도구와 서비스를 연결하세요.",
   "marketplace.description.agents": "자체 지침과 스킬을 갖춘 바로 사용할 수 있는 에이전트입니다.",
   "marketplace.description.skills": "에이전트에게 작업이나 도구 사용법을 알려 주는 지침입니다.",
-  "marketplace.plugins.missing": "이 플러그인은 OpenBot 카탈로그에 없어요.",
+  "marketplace.plugins.missing": "이 플러그인은 Spinbot 카탈로그에 없어요.",
   "marketplace.agents.loadingDetail": "에이전트 상세 정보 불러오는 중…",
   "marketplace.agents.skills": "스킬",
   "marketplace.agents.routines": "루틴",
@@ -34,15 +34,15 @@ export const messages = {
   "marketplace.agents.yours": "내 에이전트",
   "marketplace.agents.all": "모든 에이전트",
   "marketplace.agents.missing": "이 에이전트는 마켓플레이스에 없어요.",
-  "marketplace.agents.trust.reviewed": "다른 OpenBot 사용자가 만들었어요. 공개 전에 OpenBot이 검토했어요.",
+  "marketplace.agents.trust.reviewed": "다른 Spinbot 사용자가 만들었어요. 공개 전에 Spinbot이 검토했어요.",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "다른 OpenBot 사용자가 만들었어요. 공개 전에 OpenBot이 검토했어요.추가하면 나를 대신해 작업할 수 있어요.",
-  "marketplace.agents.trust.pending": "OpenBot이 검토하기 전에 제작자가 공유했어요.",
+    "다른 Spinbot 사용자가 만들었어요. 공개 전에 Spinbot이 검토했어요.추가하면 나를 대신해 작업할 수 있어요.",
+  "marketplace.agents.trust.pending": "Spinbot이 검토하기 전에 제작자가 공유했어요.",
   "marketplace.agents.trust.pendingBeforeAdd":
-    "OpenBot이 검토하기 전에 제작자가 공유했어요.추가하면 나를 대신해 작업할 수 있어요.",
+    "Spinbot이 검토하기 전에 제작자가 공유했어요.추가하면 나를 대신해 작업할 수 있어요.",
   "marketplace.agents.source.pending": "아직 검토 안 됨",
   "marketplace.skill.loading": "스킬 불러오는 중",
-  "marketplace.try.readFailed": "OpenBot이 이 에이전트의 스킬을 읽지 못했어요. 다시 시도해 주세요.",
+  "marketplace.try.readFailed": "Spinbot이 이 에이전트의 스킬을 읽지 못했어요. 다시 시도해 주세요.",
   "marketplace.try.enable": "체험하려면 에이전트 설정에서 이 스킬을 켜 주세요.",
   "marketplace.try.repair": "체험하려면 에이전트 설정에서 이 스킬을 복구해 주세요.",
   "marketplace.try.update": "이 버전을 체험하려면 스킬을 업데이트해 주세요.",
@@ -111,24 +111,24 @@ export const messages = {
   "marketplace.app.setup.account": "브라우저에서 {name} 계정으로 로그인해요.",
   "marketplace.app.setup.key": "{name} 계정의 API 키가 필요해요.",
   "marketplace.app.setup.keySaved": "{field}: {host}에 저장돼 있어요.",
-  "marketplace.app.account.removeDescription": "OpenBot이 {host}에 있는 이 계정의 로그인 정보를 삭제해요.",
+  "marketplace.app.account.removeDescription": "Spinbot이 {host}에 있는 이 계정의 로그인 정보를 삭제해요.",
   "marketplace.app.setup.desktop": "{name} 데스크톱 앱의 {address}에서 실행돼요.",
   "marketplace.app.setup.desktopConnected": "{address}에 연결됐어요.",
   "marketplace.app.setup.open": "로그인이나 키가 필요 없어요.",
   "marketplace.app.blocked.update":
-    "{host}의 OpenBot 버전이 오래되어 앱을 연결할 수 없습니다. {host}의 OpenBot을 업데이트하거나 소유자에게 업데이트를 요청하세요.",
+    "{host}의 Spinbot 버전이 오래되어 앱을 연결할 수 없습니다. {host}의 Spinbot을 업데이트하거나 소유자에게 업데이트를 요청하세요.",
   "marketplace.app.blocked.member":
-    "{host}에서는 소유자나 관리자만 앱을 연결할 수 있습니다. 이들에게 {name} 연결을 요청하거나, 멤버도 앱을 연결할 수 있도록 {host}의 OpenBot 업데이트를 요청하세요.",
+    "{host}에서는 소유자나 관리자만 앱을 연결할 수 있습니다. 이들에게 {name} 연결을 요청하거나, 멤버도 앱을 연결할 수 있도록 {host}의 Spinbot 업데이트를 요청하세요.",
   "marketplace.app.connectAgain": "다시 연결",
   "marketplace.app.automation.askOnInstall": "설치할 때 macOS에 접근 요청",
   "marketplace.app.automation.title": "Apple 앱 접근",
   "marketplace.app.automation.description":
     "macOS가 앱마다 확인 창을 하나씩 보여 줘요. 닫혀 있는 앱은 잠깐 열렸다가 종료돼요.",
   "marketplace.app.automation.request": "접근 요청",
-  "marketplace.app.automation.allowed": "이제 OpenBot이 모든 Apple 앱을 제어할 수 있어요.",
+  "marketplace.app.automation.allowed": "이제 Spinbot이 모든 Apple 앱을 제어할 수 있어요.",
   "marketplace.app.automation.refused":
-    "macOS가 {apps}에 대한 접근을 허용하지 않았어요. 시스템 설정 › 개인정보 보호 및 보안 › 자동화에서 OpenBot을 허용하세요.",
-  "marketplace.app.automation.failed": "OpenBot이 {apps}에 대해 macOS에 요청하지 못했어요. 다시 시도하세요.",
+    "macOS가 {apps}에 대한 접근을 허용하지 않았어요. 시스템 설정 › 개인정보 보호 및 보안 › 자동화에서 Spinbot을 허용하세요.",
+  "marketplace.app.automation.failed": "Spinbot이 {apps}에 대해 macOS에 요청하지 못했어요. 다시 시도하세요.",
   "marketplace.app.automation.app.calendar": "캘린더",
   "marketplace.app.automation.app.contacts": "연락처",
   "marketplace.app.automation.app.mail": "Mail",
@@ -183,7 +183,7 @@ export const messages = {
   "marketplace.plugin.cobrain.prompt.saveNote": "오늘 한 일과 남은 일을 Cobrain에 노트로 저장해 줘.",
   "marketplace.plugin.honcho.tagline": "모든 AI 도구에 걸친 나의 기억",
   "marketplace.plugin.honcho.description":
-    "Plastic Labs의 Honcho는 연결한 다른 AI 도구와 공유할 수 있는, 나에 대한 장기 기억을 에이전트에게 제공합니다. 에이전트는 배운 내용을 저장하고, Honcho는 이를 바탕으로 추론하여 나의 선호, 목표, 일하는 방식에 대한 모델을 만듭니다. 에이전트는 시작하기 전에 Honcho에게 질문합니다. OpenBot 에이전트에도 자체 기억이 있습니다. Honcho는 다른 도구에서도 나를 따라오는 기억입니다. 에이전트가 저장한 메시지는 내 Honcho 계정으로 전송됩니다.",
+    "Plastic Labs의 Honcho는 연결한 다른 AI 도구와 공유할 수 있는, 나에 대한 장기 기억을 에이전트에게 제공합니다. 에이전트는 배운 내용을 저장하고, Honcho는 이를 바탕으로 추론하여 나의 선호, 목표, 일하는 방식에 대한 모델을 만듭니다. 에이전트는 시작하기 전에 Honcho에게 질문합니다. Spinbot 에이전트에도 자체 기억이 있습니다. Honcho는 다른 도구에서도 나를 따라오는 기억입니다. 에이전트가 저장한 메시지는 내 Honcho 계정으로 전송됩니다.",
   "marketplace.plugin.honcho.app": "하나의 MCP 서버로 Honcho 워크스페이스에 장기 기억을 저장하고 조회합니다.",
   "marketplace.plugin.honcho.prompt.recall":
     "시작하기 전에 내가 어떻게 일하는 것을 좋아하는지 Honcho가 무엇을 알고 있는지 물어봐 주세요.",
@@ -193,7 +193,7 @@ export const messages = {
   "marketplace.plugin.honcho.hint.apiKey": "app.honcho.dev에서 키를 만드세요.",
   "marketplace.plugin.hindsight.tagline": "시간이 지나며 배우는 기억",
   "marketplace.plugin.hindsight.description":
-    "Vectorize의 Hindsight는 Hindsight Cloud에 있는 장기 기억을 에이전트에게 제공합니다. 에이전트는 사실과 사건을 보존하고, 의미, 시간, 엔터티로 불러오며, 이를 되돌아보며 멘털 모델을 만듭니다. 기억은 뱅크에 보관되며, 에이전트는 프로젝트나 사람마다 뱅크를 만들 수 있습니다. OpenBot 에이전트에도 자체 기억이 있습니다. Hindsight는 연결한 다른 AI 도구와 공유할 수 있는 기억입니다. 에이전트가 보존한 내용은 내 Hindsight Cloud 계정으로 전송됩니다.",
+    "Vectorize의 Hindsight는 Hindsight Cloud에 있는 장기 기억을 에이전트에게 제공합니다. 에이전트는 사실과 사건을 보존하고, 의미, 시간, 엔터티로 불러오며, 이를 되돌아보며 멘털 모델을 만듭니다. 기억은 뱅크에 보관되며, 에이전트는 프로젝트나 사람마다 뱅크를 만들 수 있습니다. Spinbot 에이전트에도 자체 기억이 있습니다. Hindsight는 연결한 다른 AI 도구와 공유할 수 있는 기억입니다. 에이전트가 보존한 내용은 내 Hindsight Cloud 계정으로 전송됩니다.",
   "marketplace.plugin.hindsight.app":
     "하나의 MCP 서버로 Hindsight Cloud 뱅크의 기억을 보존하고, 불러오고, 되돌아봅니다.",
   "marketplace.plugin.hindsight.prompt.recall":
@@ -212,7 +212,7 @@ export const messages = {
   "marketplace.plugin.figma.prompt.assets": "앱 번들에 넣을 마케팅 아이콘을 2x로 추출해 줘.",
   "marketplace.plugin.paper.tagline": "HTML과 CSS 기반 디자인 캔버스",
   "marketplace.plugin.paper.description":
-    "Paper를 사용하면 에이전트가 Paper Desktop에서 열려 있는 디자인 파일을 읽고 쓸 수 있어요. 아트보드, 선택 영역, 계산된 스타일, JSX, 토큰을 살펴보고 프레임, 텍스트, 스타일을 만들거나 바꿀 수 있어요. 시작하기 전에 Paper Desktop을 설치하고, 한 번 실행한 다음 파일을 열어 주세요. OpenBot은 Paper Desktop이 설치하는 Paper CLI를 실행해요. Paper는 키가 필요 없어요. 쓰기 도구는 열려 있는 파일을 변경하므로, 승인하기 전에 각 쓰기 작업을 검토해 주세요.",
+    "Paper를 사용하면 에이전트가 Paper Desktop에서 열려 있는 디자인 파일을 읽고 쓸 수 있어요. 아트보드, 선택 영역, 계산된 스타일, JSX, 토큰을 살펴보고 프레임, 텍스트, 스타일을 만들거나 바꿀 수 있어요. 시작하기 전에 Paper Desktop을 설치하고, 한 번 실행한 다음 파일을 열어 주세요. Spinbot은 Paper Desktop이 설치하는 Paper CLI를 실행해요. Paper는 키가 필요 없어요. 쓰기 도구는 열려 있는 파일을 변경하므로, 승인하기 전에 각 쓰기 작업을 검토해 주세요.",
   "marketplace.plugin.paper.app":
     "Paper CLI가 중계하는 로컬 MCP 서버로 열려 있는 Paper Desktop 파일을 읽고 써요. 파일이 열린 Paper Desktop이 필요해요.",
   "marketplace.plugin.paper.prompt.implement":
@@ -238,7 +238,7 @@ export const messages = {
   "marketplace.plugin.elevenlabs.prompt.conversations": "지원용 음성 에이전트의 최근 대화 10개를 요약해 줘.",
   "marketplace.plugin.appleApps.tagline": "Mac의 Mail, 캘린더 등",
   "marketplace.plugin.appleApps.description":
-    "Apple apps를 사용하면 에이전트가 이 Mac의 Mail, 캘린더, 연락처, 미리 알림, 메모, 메시지, Safari를 사용할 수 있어요. macOS에서만 작동해요. OpenBot은 mcp-icloud를 시작해요. Apple이나 OpenBot이 만들지 않은 커뮤니티 서버예요. 서버는 이 컴퓨터에서 AppleScript로 앱을 제어하며, 계정이나 키가 필요 없어요. 설치할 때 OpenBot이 이 모든 앱에 대한 접근을 macOS에 한 번에 요청할 수 있어요. 앱마다 확인 창이 하나씩 떠요. 요청하지 않으면 에이전트가 앱을 처음 사용할 때 macOS가 물어요. 나중에 바꾸려면 시스템 설정 › 개인정보 보호 및 보안 › 자동화를 여세요. 에이전트는 이메일과 iMessage를 보내고 이벤트, 연락처, 미리 알림을 변경하거나 삭제할 수 있으니, 승인하기 전에 각 쓰기를 확인하세요. 이메일 본문처럼 도구가 읽은 내용은 에이전트의 모델 제공자에게 전송돼요.",
+    "Apple apps를 사용하면 에이전트가 이 Mac의 Mail, 캘린더, 연락처, 미리 알림, 메모, 메시지, Safari를 사용할 수 있어요. macOS에서만 작동해요. Spinbot은 mcp-icloud를 시작해요. Apple이나 Spinbot이 만들지 않은 커뮤니티 서버예요. 서버는 이 컴퓨터에서 AppleScript로 앱을 제어하며, 계정이나 키가 필요 없어요. 설치할 때 Spinbot이 이 모든 앱에 대한 접근을 macOS에 한 번에 요청할 수 있어요. 앱마다 확인 창이 하나씩 떠요. 요청하지 않으면 에이전트가 앱을 처음 사용할 때 macOS가 물어요. 나중에 바꾸려면 시스템 설정 › 개인정보 보호 및 보안 › 자동화를 여세요. 에이전트는 이메일과 iMessage를 보내고 이벤트, 연락처, 미리 알림을 변경하거나 삭제할 수 있으니, 승인하기 전에 각 쓰기를 확인하세요. 이메일 본문처럼 도구가 읽은 내용은 에이전트의 모델 제공자에게 전송돼요.",
   "marketplace.plugin.appleApps.app":
     "Mail, 캘린더, 연락처, 미리 알림, 메모, 메시지, Safari를 로컬 mcp-icloud 서버로 사용해요. macOS와 자동화 권한이 필요해요.",
   "marketplace.plugin.appleApps.prompt.unread": "Apple Mail에서 오늘 읽지 않은 이메일을 요약해 줘.",
@@ -497,8 +497,8 @@ export const messages = {
   "marketplace.skills.source.all": "전체",
   "marketplace.skills.source.verified": "검증됨",
   "marketplace.skills.source.public": "공개",
-  "marketplace.skills.source.verifiedLong": "OpenBot이 검증함",
-  "marketplace.skills.source.publicLong": "OpenBot이 검토함",
+  "marketplace.skills.source.verifiedLong": "Spinbot이 검증함",
+  "marketplace.skills.source.publicLong": "Spinbot이 검토함",
   "marketplace.skills.sortLabel": "정렬",
   "marketplace.skills.sortName": "정렬: {name}",
   "marketplace.skills.sort.installs": "많이 사용됨",

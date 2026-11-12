@@ -3,18 +3,18 @@ import { defineMessages } from "../../../message";
 export const messages = defineMessages("error.provider", {
   // Provider, provider runtime and custom endpoint errors.
   "error.provider.mcpConfig":
-    "OpenBot could not register MCP servers in the Codex configuration. Check that your Codex config.toml is valid and writable, then restart OpenBot.",
+    "Spinbot could not register MCP servers in the Codex configuration. Check that your Codex config.toml is valid and writable, then restart Spinbot.",
   "error.provider.computerUseConfig":
-    "OpenBot could not register Computer Use in the Codex configuration. Check that your Codex config.toml is valid and writable, then restart OpenBot. You can turn off Computer Use in the teammate settings to continue without it.",
-  "error.provider.codexUnresponsive": "Codex stopped answering, so OpenBot ended its process.",
-  "error.provider.acpUnresponsive": "{provider} did not answer in time, so OpenBot ended its process.",
-  "error.provider.acpSignInLost": "{provider} lost its sign-in, so OpenBot ended its process. Send your message again.",
+    "Spinbot could not register Computer Use in the Codex configuration. Check that your Codex config.toml is valid and writable, then restart Spinbot. You can turn off Computer Use in the teammate settings to continue without it.",
+  "error.provider.codexUnresponsive": "Codex stopped answering, so Spinbot ended its process.",
+  "error.provider.acpUnresponsive": "{provider} did not answer in time, so Spinbot ended its process.",
+  "error.provider.acpSignInLost": "{provider} lost its sign-in, so Spinbot ended its process. Send your message again.",
   "error.provider.acpPlanUsedUp":
     "{provider} says that your plan is used up. Choose another model, or upgrade your {provider} plan.",
   "error.provider.acpMcpNotLoaded":
-    "{provider} did not load OpenBot's tools, so this agent cannot use them or reach its teammates. A {provider} team policy can block local MCP servers. Ask your team admin to allow them, then try again.",
+    "{provider} did not load Spinbot's tools, so this agent cannot use them or reach its teammates. A {provider} team policy can block local MCP servers. Ask your team admin to allow them, then try again.",
   "error.provider.endpointsReadOnly":
-    "The saved endpoints were written by a newer version of OpenBot, or the file cannot be read. Update OpenBot to change them.",
+    "The saved endpoints were written by a newer version of Spinbot, or the file cannot be read. Update Spinbot to change them.",
   "error.provider.endpointNoSecureStorage":
     "This computer has no secure storage, so an API key or a header cannot be saved. Remove them, or use an endpoint that needs no credentials.",
   "error.provider.endpointDuplicate":
@@ -25,14 +25,14 @@ export const messages = defineMessages("error.provider", {
   "error.provider.endpointSecretUnreadable":
     "This computer cannot read the saved API key and headers. Enter the API key and the headers again, so that none of them is lost.",
   "error.provider.discoveryTimeout": "{host} did not answer in time.",
-  "error.provider.discoveryUnreachable": "OpenBot could not connect to {host}.",
+  "error.provider.discoveryUnreachable": "Spinbot could not connect to {host}.",
   "error.provider.discoveryRedirect": "{host} sent a redirect. Enter the final address of the server.",
   "error.provider.discoveryRefused": "{host} refused the request. Check the API key and the headers.",
   "error.provider.discoveryHttp": "{host} answered with HTTP {status}.",
   "error.provider.discoveryTooLarge": "The model list from {host} is too large.",
   "error.provider.discoveryInvalid": "{host} did not send an OpenAI-compatible model list.",
   "error.provider.detectionSettingsReadOnly":
-    "The detection settings were written by a newer version of OpenBot, or the file cannot be read. Update OpenBot to change them.",
+    "The detection settings were written by a newer version of Spinbot, or the file cannot be read. Update Spinbot to change them.",
   "error.provider.detectionEntryInvalid":
     "An address must be an http:// or https:// URL with no password, and a folder must be an absolute path.",
   "error.provider.detectionEntriesTooMany": "There are too many addresses or folders.",
@@ -60,14 +60,14 @@ export const messages = defineMessages("error.provider", {
   "error.provider.bunLicenseChecksum": "Bun license checksum mismatch.",
   "error.provider.bunxDamaged": "The Bun package manager runner is missing or damaged.",
   "error.provider.releaseSourcesUnreachable":
-    "OpenBot could not reach the provider release sources. Check the connection and try again.",
+    "Spinbot could not reach the provider release sources. Check the connection and try again.",
   "error.provider.runtimesUnsupported": "Provider runtimes are not available on this platform.",
-  "error.provider.closing": "OpenBot is closing.",
+  "error.provider.closing": "Spinbot is closing.",
   "error.provider.removeWhileOn": "Turn the provider off before you remove its download.",
   "error.provider.removeWhileDownloading": "Wait for the download to end, then remove it.",
   "error.provider.removeIncomplete": "A program uses some files of this CLI. Close it, then try again.",
   "error.provider.removeDownloadsFailed": "Could not remove the CLI downloads of {providers}.",
-  "error.provider.cliOverride": "Remove the explicit CLI path override before updating in OpenBot.",
+  "error.provider.cliOverride": "Remove the explicit CLI path override before updating in Spinbot.",
   "error.provider.runtimeUpdateIncomplete": "The runtime update did not complete.",
   "error.provider.downloadHttp": "Runtime download failed with HTTP {status}.",
   "error.provider.downloadNoData": "Runtime download returned no data.",
@@ -82,7 +82,7 @@ export const messages = defineMessages("error.provider", {
   "error.provider.unexpectedVersion": "Provider runtime returned an unexpected version.",
   "error.provider.metadataNoData": "Runtime metadata download returned no data.",
   "error.provider.metadataTooLarge": "Runtime metadata is too large.",
-  "error.provider.requestFailed": "OpenBot could not download {url}. {reason}",
+  "error.provider.requestFailed": "Spinbot could not download {url}. {reason}",
   "error.provider.installRecordMismatch": "The runtime install record does not match.",
   "error.provider.runtimeChecksum": "Provider runtime checksum mismatch.",
   "error.provider.codexReleaseShape": "The Codex release has an unexpected shape.",
@@ -122,29 +122,29 @@ export const messages = defineMessages("error.provider", {
   "error.provider.keyInvalidCharacters": "The provider key contains a space or a character that a key cannot contain.",
   "error.provider.noModel": "The selected provider has no available model.",
   "error.provider.noModelNamed": "{provider} has no model available.",
-  "error.provider.acpNoModels": "ACP CLI did not advertise any ACP models. OpenBot will not guess a fallback model.",
+  "error.provider.acpNoModels": "ACP CLI did not advertise any ACP models. Spinbot will not guess a fallback model.",
   "error.provider.endpointRemoveBusy": "Wait for the active turn and queue to finish before you remove this endpoint.",
-  "error.provider.codexOutdated": "Codex CLI {version} is too old. OpenBot requires 0.156.0 or newer.",
+  "error.provider.codexOutdated": "Codex CLI {version} is too old. Spinbot requires 0.156.0 or newer.",
   "error.provider.codexNotStarted": "Codex CLI was found but could not be started.",
   "error.provider.codexNotStartedHint":
     "Codex CLI was found but could not be started. Run `codex --version` in a new terminal.",
   "error.provider.codexManagedNotStarted":
-    "ChatGPT was downloaded but could not be started. Download it again in OpenBot.",
-  "error.provider.codexMissing": "ChatGPT is not downloaded. Download it in OpenBot to continue.",
-  "error.provider.claudeOutdated": "Claude Code {version} is too old. OpenBot requires 2.1.232 or newer.",
+    "ChatGPT was downloaded but could not be started. Download it again in Spinbot.",
+  "error.provider.codexMissing": "ChatGPT is not downloaded. Download it in Spinbot to continue.",
+  "error.provider.claudeOutdated": "Claude Code {version} is too old. Spinbot requires 2.1.232 or newer.",
   "error.provider.claudeNotStarted": "Claude CLI was found but could not be started.",
   "error.provider.claudeNotStartedHint":
     "Claude CLI was found but could not be started. Run `claude --version` in a new terminal.",
   "error.provider.claudeManagedNotStarted":
-    "Claude was downloaded but could not be started. Download it again in OpenBot.",
-  "error.provider.claudeMissing": "Claude is not downloaded. Download it in OpenBot to continue.",
-  "error.provider.grokOutdated": "Grok CLI {version} is too old. OpenBot requires 1.0.5 or newer.",
+    "Claude was downloaded but could not be started. Download it again in Spinbot.",
+  "error.provider.claudeMissing": "Claude is not downloaded. Download it in Spinbot to continue.",
+  "error.provider.grokOutdated": "Grok CLI {version} is too old. Spinbot requires 1.0.5 or newer.",
   "error.provider.grokNotStarted": "Grok CLI was found but could not be started.",
   "error.provider.grokNotStartedHint":
     "Grok CLI was found but could not be started. Run `grok --version` in a new terminal.",
-  "error.provider.grokMissing": "Grok is not downloaded. Download it in OpenBot to continue.",
+  "error.provider.grokMissing": "Grok is not downloaded. Download it in Spinbot to continue.",
   "error.provider.opencodeNotStarted": "OpenCode could not start. Run `opencode --version` in a terminal.",
-  "error.provider.opencodeMissing": "OpenCode is not downloaded. Download it in OpenBot to continue.",
+  "error.provider.opencodeMissing": "OpenCode is not downloaded. Download it in Spinbot to continue.",
   "error.provider.codexVersionUnreadable": "Unable to read the Codex CLI version.",
   "error.provider.claudeVersionUnreadable": "Unable to read the Claude CLI version.",
   "error.provider.grokVersionUnreadable": "Unable to read the Grok CLI version.",
@@ -152,14 +152,14 @@ export const messages = defineMessages("error.provider", {
   "error.provider.bunVersionUnreadable": "Unable to read the Bun runtime version.",
   "error.provider.connectBeforeProfile": "Connect the selected provider before generating a profile.",
   "error.provider.cliNotReady": "{provider} CLI is not ready or signed in.",
-  "error.provider.cliTimedOut": "{provider} did not answer in time. The computer may be busy. OpenBot will try again.",
+  "error.provider.cliTimedOut": "{provider} did not answer in time. The computer may be busy. Spinbot will try again.",
   "error.provider.cliTimedOutRefresh":
     "{provider} did not answer in time. The computer may be busy. Refresh the providers to try again.",
   "error.provider.acpStartTimedOut": "{provider} did not finish starting within {seconds} s. The computer may be busy.",
   "error.provider.acpModelsTimedOut":
     "{provider} did not list its models within {seconds} s. The computer may be busy.",
   "error.provider.startStopped":
-    "{provider} did not start several times in a row, so OpenBot stopped trying. Refresh the providers to try again.",
+    "{provider} did not start several times in a row, so Spinbot stopped trying. Refresh the providers to try again.",
   "error.provider.tempDiskSpace":
     "{provider} needs at least 1 GB of free disk space to start. Free up space, then refresh the providers.",
   "error.provider.noCodeSignIn": "{provider} cannot be signed in with a code.",
@@ -173,10 +173,10 @@ export const messages = defineMessages("error.provider", {
   "error.provider.cliBusyRetry": "The {provider} CLI is working on a turn. Wait for it to finish, then try again.",
   "error.provider.cliSigningIn": "The {provider} CLI is signing in. Finish or cancel sign-in, then update.",
   "error.provider.cliBusyUpdate": "The {provider} CLI is working on a turn. Wait for it to finish, then update.",
-  "error.provider.cliSelectFailed": "OpenBot could not select the installed managed CLI.",
+  "error.provider.cliSelectFailed": "Spinbot could not select the installed managed CLI.",
   "error.provider.noAuthenticatedAccount": "{provider} did not return an authenticated account.",
   "error.provider.signInExpired": "Your {provider} sign-in expired. Sign in again to continue.",
-  "error.provider.cliActivateFailed": "OpenBot could not activate the managed CLI.",
+  "error.provider.cliActivateFailed": "Spinbot could not activate the managed CLI.",
   "error.provider.noMainlandChinaSignIn": "{provider} has no sign-in for mainland China.",
   "error.provider.cliNewVersionNotStarted": "The new version did not start.",
   "error.provider.cliBusyReconnect": "The {provider} CLI is working on a turn. Wait for it to finish, then reconnect.",
@@ -210,13 +210,13 @@ export const messages = defineMessages("error.provider", {
   "error.provider.opencodeIncompleteReply":
     "The model's reply was cut off or was not valid. Send your message again, or choose another model.\n{detail}",
   "error.provider.opencodeNetwork":
-    "OpenCode could not connect to the model provider. Check the network connection of the computer that runs OpenBot, then try again.\n{detail}",
+    "OpenCode could not connect to the model provider. Check the network connection of the computer that runs Spinbot, then try again.\n{detail}",
   "error.provider.codexStateBusy":
     "ChatGPT is still preparing its local history after an earlier start. Wait a few minutes, then try again.",
   "error.provider.codexThreadInUse":
     "Another Codex app has this chat open, such as the Codex desktop app, the Codex CLI or an IDE extension. Only one app at a time can write to a Codex chat. Close the chat in that app, then send your message again.",
   "error.provider.realtimeLimitZero":
-    "Linux stopped the provider because OpenBot has a real-time CPU limit of 0. The limit comes from your system. Install and start rtkit (`rtkit-daemon`), run `systemctl --user restart xdg-desktop-portal`, then restart OpenBot. Restarting xdg-desktop-portal alone does not help while rtkit is missing.",
+    "Linux stopped the provider because Spinbot has a real-time CPU limit of 0. The limit comes from your system. Install and start rtkit (`rtkit-daemon`), run `systemctl --user restart xdg-desktop-portal`, then restart Spinbot. Restarting xdg-desktop-portal alone does not help while rtkit is missing.",
   "error.provider.opencodeDatabaseNewer":
     "OpenCode could not open its database because a newer OpenCode version changed it. Update OpenCode to version 2 or later, then try again.",
   "error.provider.opencodeNoAnswer":
@@ -225,19 +225,19 @@ export const messages = defineMessages("error.provider", {
     "The OpenCode model ended the turn after its reasoning, with no answer. Try again, or choose another model.",
   "error.provider.acpNoAnswer":
     "{provider} ended the turn with no answer. Send the message again, or start a new chat.",
-  "error.provider.chatgptPageFailed": "OpenBot could not open the ChatGPT connection page.",
+  "error.provider.chatgptPageFailed": "Spinbot could not open the ChatGPT connection page.",
   "error.provider.noneReady": "No agent provider is ready.",
   "error.provider.claudeTurnActive": "Wait for the active Claude turn before refreshing its context.",
   "error.provider.codexLoginRequired": "Codex requires a ChatGPT subscription login. Run `codex login`.",
-  "error.provider.cliUpdateFailed": "OpenBot could not update the {provider} CLI. {reason}",
+  "error.provider.cliUpdateFailed": "Spinbot could not update the {provider} CLI. {reason}",
   "error.provider.tryAgain": "Try again.",
   "error.provider.noAgentProcess": "{provider} has no process running for this agent.",
   "error.provider.stoppedBeforeAgentProcess": "{provider} stopped before the agent's process started.",
   "error.provider.archiveUnreadable": "The runtime archive cannot be read or uses an unsupported format.",
-  "error.provider.antigravityMissing": "Gemini is not downloaded. Download it in OpenBot to continue.",
+  "error.provider.antigravityMissing": "Gemini is not downloaded. Download it in Spinbot to continue.",
   "error.provider.antigravityNotStarted": "The Gemini server was found, but its version cannot be read.",
   "error.provider.antigravityOverrideInvalid":
-    "The Gemini server in OPENBOT_ANTIGRAVITY_PATH is missing or is not executable. Correct the path or remove the variable, then restart OpenBot.",
+    "The Gemini server in OPENBOT_ANTIGRAVITY_PATH is missing or is not executable. Correct the path or remove the variable, then restart Spinbot.",
   "error.provider.antigravityVersionUnreadable": "Unable to read the Gemini server version.",
   "error.provider.antigravitySignIn": "Sign in with Google to use Gemini.",
   "error.provider.antigravityRateLimited":
@@ -255,7 +255,7 @@ export const messages = defineMessages("error.provider", {
   "error.provider.cursorArchivePath": "The Cursor archive has an unexpected file.",
   "error.provider.cursorChecksum": "Cursor runtime checksum mismatch.",
   "error.provider.cursorReleaseShape": "The Cursor release has an unexpected shape.",
-  "error.provider.cursorMissing": "Cursor is not downloaded. Download it in OpenBot to continue.",
+  "error.provider.cursorMissing": "Cursor is not downloaded. Download it in Spinbot to continue.",
   "error.provider.cursorNotStarted": "The Cursor agent was found, but its version cannot be read.",
   "error.provider.cursorVersionUnreadable": "Unable to read the Cursor agent version.",
   "error.provider.cursorSignIn": "Sign in with Cursor or set CURSOR_API_KEY to use Cursor.",
@@ -263,16 +263,16 @@ export const messages = defineMessages("error.provider", {
   "error.provider.clinePackageMismatch": "The Cline package does not match the runtime catalog.",
   "error.provider.clineChecksum": "Cline runtime checksum mismatch.",
   "error.provider.clineLicenseChecksum": "Cline license checksum mismatch.",
-  "error.provider.clineMissing": "Cline is not downloaded. Download it in OpenBot to continue.",
-  "error.provider.clineOutdated": "Cline CLI {version} is too old. OpenBot requires 3.0.68 or newer.",
+  "error.provider.clineMissing": "Cline is not downloaded. Download it in Spinbot to continue.",
+  "error.provider.clineOutdated": "Cline CLI {version} is too old. Spinbot requires 3.0.68 or newer.",
   "error.provider.clineNotStarted": "Cline could not start. Run `cline --version` in a terminal.",
   "error.provider.clineVersionUnreadable": "Unable to read the Cline CLI version.",
   "error.provider.clineSignIn": "Sign in with Cline or set CLINE_API_KEY to use Cline.",
   "error.provider.kimiArchivePath": "The Kimi archive has an unexpected path.",
   "error.provider.kimiChecksum": "Kimi runtime checksum mismatch.",
   "error.provider.kimiLicenseChecksum": "Kimi license checksum mismatch.",
-  "error.provider.kimiMissing": "Kimi is not downloaded. Download it in OpenBot to continue.",
-  "error.provider.kimiOutdated": "Kimi CLI {version} is too old. OpenBot requires 1.52.0 or newer.",
+  "error.provider.kimiMissing": "Kimi is not downloaded. Download it in Spinbot to continue.",
+  "error.provider.kimiOutdated": "Kimi CLI {version} is too old. Spinbot requires 1.52.0 or newer.",
   "error.provider.kimiNotStarted": "Kimi could not start. Run `kimi --version` in a terminal.",
   "error.provider.kimiVersionUnreadable": "Unable to read the Kimi CLI version.",
   "error.provider.kimiSignIn": "Sign in with Kimi Code to use Kimi.",
@@ -285,23 +285,23 @@ export const messages = defineMessages("error.provider", {
   "error.provider.hermesSignIn": "Sign in with Nous Portal, or run `hermes setup` in a terminal, to use Hermes.",
   "error.provider.usageLimitReached": "The account reached its usage limit.",
   "error.provider.claudeContextFull":
-    "This chat became too long for Claude. OpenBot started a new Claude Code session with the chat history. Try again.",
+    "This chat became too long for Claude. Spinbot started a new Claude Code session with the chat history. Try again.",
   "error.provider.claudeApiKeyNoCredit":
     "The credit balance of the Anthropic API key is too low. A Claude plan does not pay for requests with an API key. Add credit in the Anthropic Console, or sign in to Claude in Settings and select the Claude account in the agent's model menu.",
   "error.provider.foreignReasoning":
-    "{provider} did not accept the earlier reasoning in this chat, because a different account or API key received it. OpenBot started a new {provider} session with the chat history. Try again.",
+    "{provider} did not accept the earlier reasoning in this chat, because a different account or API key received it. Spinbot started a new {provider} session with the chat history. Try again.",
   "error.provider.imageTooSmall":
-    "The model did not accept an image in this chat because the image is too small. OpenBot started a new {provider} session with the chat history. Try again.",
+    "The model did not accept an image in this chat because the image is too small. Spinbot started a new {provider} session with the chat history. Try again.",
   "error.provider.imageTooLarge":
-    "The model did not accept an image in this chat because the image is too large. OpenBot started a new {provider} session with the chat history. Try again.",
+    "The model did not accept an image in this chat because the image is too large. Spinbot started a new {provider} session with the chat history. Try again.",
   "error.provider.imageCountLimit":
-    "The model did not accept this chat because the chat has too many images. OpenBot started a new {provider} session with the chat history. Try again.",
+    "The model did not accept this chat because the chat has too many images. Spinbot started a new {provider} session with the chat history. Try again.",
   "error.provider.opencodeSessionRejected":
-    "OpenCode refused the request and did not give the cause. This can occur in a long chat or after a model change. OpenBot started a new OpenCode session with the chat history. Try again. If the error continues, select a different model or a lower effort.",
+    "OpenCode refused the request and did not give the cause. This can occur in a long chat or after a model change. Spinbot started a new OpenCode session with the chat history. Try again. If the error continues, select a different model or a lower effort.",
   "error.provider.museMcpStartupFault":
-    "Muse could not start an MCP server and blocked MCP in this session. OpenBot started a new Muse session with the chat history. Try again. If the error continues, turn off Computer Use or the failed MCP server for this agent.",
+    "Muse could not start an MCP server and blocked MCP in this session. Spinbot started a new Muse session with the chat history. Try again. If the error continues, turn off Computer Use or the failed MCP server for this agent.",
   "error.provider.claudeSessionMissing":
-    "Claude Code could not find the saved session of this chat. OpenBot started a new Claude Code session with the chat history. Try again.",
+    "Claude Code could not find the saved session of this chat. Spinbot started a new Claude Code session with the chat history. Try again.",
   "error.provider.grokSignIn": "Run `grok login` or set XAI_API_KEY to use Grok.",
   "error.provider.acpSignInTimedOut": "The sign-in timed out.",
   "error.provider.acpSignInStopped": "The sign-in stopped before it was complete.",
@@ -328,7 +328,7 @@ export const messages = defineMessages("error.provider", {
     "The model service refused the request. Select a different model, or check your access to this model at the service.",
   "error.provider.modelServiceRefusedReason":
     "The model service refused the request: {reason}. Select a different model, or check your access to this model at the service.",
-  "error.provider.messageTooLarge": "OpenBot stopped {provider} because it sent a message larger than {limit} MB.",
+  "error.provider.messageTooLarge": "Spinbot stopped {provider} because it sent a message larger than {limit} MB.",
   "error.provider.customAgentIdInvalid":
     "An agent ID must be lowercase letters, digits or `-`, and cannot be the ID of a built-in provider.",
   "error.provider.customAgentEnvInvalid":
@@ -339,35 +339,35 @@ export const messages = defineMessages("error.provider", {
   "error.provider.customAgentArgsInvalid": "An argument cannot contain a line break. Use at most 32 arguments.",
   "error.provider.customAgentWindowsScript":
     "A .cmd or .bat command can take only letters, numbers and - _ . , : = @ + / \\ in its arguments.",
-  "error.provider.customAgentNotFound": "OpenBot cannot find {command}. Enter the full path of the command.",
+  "error.provider.customAgentNotFound": "Spinbot cannot find {command}. Enter the full path of the command.",
   "error.provider.customAgentCheckTimedOut": "The agent did not answer in 20 seconds.",
   "error.provider.customAgentCheckStopped": "The agent stopped before it answered.",
-  "error.provider.customAgentProtocolVersion": "The agent uses ACP version {version}. OpenBot uses version 1.",
+  "error.provider.customAgentProtocolVersion": "The agent uses ACP version {version}. Spinbot uses version 1.",
   "error.provider.customAgentCheckFailed": "The agent did not answer as an ACP agent.",
   "error.provider.customAgentRemoveBusy":
     "Wait for the active turn and queue to finish before you remove this custom agent.",
   "error.provider.customAgentNone": "No custom agent is saved.",
-  "error.provider.customAgentsUnavailable": "This server cannot change its custom agents. Update OpenBot on it.",
+  "error.provider.customAgentsUnavailable": "This server cannot change its custom agents. Update Spinbot on it.",
   "error.provider.customAgentMissing": "This custom agent is not saved now. Choose another model.",
   "error.provider.customAgentSignIn": "Sign in with the agent's own command, then try again.",
   "error.provider.customAgentsReadOnly":
-    "The saved custom agents were written by a newer version of OpenBot, or the file cannot be read. Update OpenBot to change them.",
+    "The saved custom agents were written by a newer version of Spinbot, or the file cannot be read. Update Spinbot to change them.",
   "error.provider.customAgentNoSecureStorage":
     "This computer has no secure storage, so environment values cannot be saved. Remove them and try again.",
   "error.provider.customAgentNotSaved": "This custom agent is not saved. Refresh the list and try again.",
   "error.provider.customAgentWorkspaceOnly": "{reason}. Workspace only blocks this. Try Full access.",
   "error.provider.customAgentTooMany": "You can save at most {count} custom agents.",
   "error.provider.customAgentEnvValueMissing": "Enter a value for {name}.",
-  "error.provider.off": "{provider} is off in OpenBot. Turn it on in provider settings first.",
+  "error.provider.off": "{provider} is off in Spinbot. Turn it on in provider settings first.",
   "error.provider.inUse": "An agent uses {provider}. Change its model before you turn this provider off.",
   "error.provider.useBusy": "Wait for the provider check or sign-in to finish, then try again.",
   "error.provider.useSettingsReadOnly":
-    "The saved provider settings cannot be read. Update OpenBot before you change them.",
-  "error.provider.useChangeFailed": "OpenBot could not change the provider setting.",
+    "The saved provider settings cannot be read. Update Spinbot before you change them.",
+  "error.provider.useChangeFailed": "Spinbot could not change the provider setting.",
   "error.provider.accountsUnsupported": "{provider} can hold one account only.",
   "error.provider.accountNeedsConnection": "Connect {provider} before you add another account.",
   "error.provider.usageResetUnsupported": "{provider} cannot reset usage limits.",
-  "error.provider.signOutUnsupported": "OpenBot cannot disconnect the {provider} sign-in.",
+  "error.provider.signOutUnsupported": "Spinbot cannot disconnect the {provider} sign-in.",
   "error.provider.usageResetNotConnected": "Sign in to this {provider} account again before you reset its usage.",
   "error.provider.accountLimit": "{provider} can hold at most {limit} accounts.",
   "error.provider.accountNotFound": "This {provider} account is not on this computer. Refresh and try again.",
@@ -377,7 +377,7 @@ export const messages = defineMessages("error.provider", {
     "This {provider} account uses the saved API key and has no sign-in. Change the key in Server settings → Providers.",
   "error.provider.accountInUse": "An agent on this account is working. Try again when the agent stops.",
   "error.provider.accountsReadOnly":
-    "The saved provider accounts cannot be read. Update OpenBot before you change them.",
+    "The saved provider accounts cannot be read. Update Spinbot before you change them.",
   "error.provider.accountSignedOut": "This {provider} account is signed out. Sign in again.",
   "error.provider.sessionSettingUnavailable": "This setting is not available in the current provider session.",
   "error.provider.sessionSettingInvalid": "This value is not available for the setting.",
@@ -409,7 +409,7 @@ export const messages = defineMessages("error.provider", {
   "error.provider.museConnectionFailed":
     "Muse connection failed. Resume the conversation to recover its saved history.",
   "error.provider.museUnknownSession": "Unknown Muse session.",
-  "error.provider.museInvalidToolResult": "Invalid OpenBot tool result.",
+  "error.provider.museInvalidToolResult": "Invalid Spinbot tool result.",
   "error.provider.museMcpRequired": "Muse must support session MCP servers.",
   "error.provider.museSessionMismatch": "Muse returned a different session.",
   "error.provider.museCompactRejected": "Muse did not accept compaction.",

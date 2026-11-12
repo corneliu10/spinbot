@@ -70,11 +70,11 @@ export const messages = {
   "import.result.notImportedTitle": "Non importés",
   "import.result.warnings": "Certains éléments n’ont pas été transférés",
   "import.source.ledeServer":
-    "OpenBot les copie sur le serveur. Vous voyez chaque élément avant que quoi que ce soit ne change.",
+    "Spinbot les copie sur le serveur. Vous voyez chaque élément avant que quoi que ce soit ne change.",
   "import.source.hermesNoteServer":
     "Lisez le dossier Hermes sur le serveur, ou exportez un fichier .zip depuis Hermes.",
   "import.source.hermesNoteExport": "Exportez un fichier .zip depuis Hermes.",
   "import.hermes.notFoundServer": "Aucun profil Hermes sur ce serveur",
   "import.hermes.notFoundServerNote":
-    "OpenBot lit le dossier Hermes du serveur. Pour importer Hermes depuis cet ordinateur, exportez un fichier .zip depuis Hermes.",
+    "Spinbot lit le dossier Hermes du serveur. Pour importer Hermes depuis cet ordinateur, exportez un fichier .zip depuis Hermes.",
 } as const satisfies PartialTranslation<typeof source>;

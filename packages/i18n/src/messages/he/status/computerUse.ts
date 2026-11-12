@@ -7,7 +7,7 @@ export const messages = {
   "status.computerUse.driverNoAnswer": "מנהל ההתקן של שליטה במחשב לא השיב. {reason}",
   "status.computerUse.driverStopped": "מנהל ההתקן של שליטה במחשב נעצר.",
   "status.computerUse.unsupported": "שליטה במחשב זמינה ב-macOS, ב-Windows וב-Linux.",
-  "status.computerUse.driverMissing": "גרסת OpenBot הזו אינה כוללת מנהל התקן של שליטה במחשב.",
+  "status.computerUse.driverMissing": "גרסת Spinbot הזו אינה כוללת מנהל התקן של שליטה במחשב.",
   "status.computerUse.progressActing": "משתמש באפליקציה במחשב הזה…",
   "status.computerUse.progressDeciding": "מחליט על הצעד הבא באפליקציה…",
 } as const satisfies PartialTranslation<typeof source>;

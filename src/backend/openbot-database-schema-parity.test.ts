@@ -28,7 +28,7 @@ afterEach(async () => {
   await Promise.all(roots.splice(0).map((root) => rm(root, { recursive: true, force: true })));
 });
 
-describe("OpenBot database build paths", () => {
+describe("Spinbot database build paths", () => {
   it("gives a new install the same tables, columns, indexes and foreign keys as an upgraded one", async () => {
     const fresh = await newInstallDatabase();
     const upgraded = await upgradedInstallDatabase();
@@ -56,7 +56,7 @@ describe("OpenBot database build paths", () => {
 // version added, changed or dropped, as normalized DDL, with `null` for a dropped declaration. The
 // entries only grow. A change to a recorded entry is allowed only for a version that has not shipped.
 // Data-only statements, such as an UPDATE, leave no trace in the schema, so review still covers them.
-describe("OpenBot database migration history", () => {
+describe("Spinbot database migration history", () => {
   it("keeps the schema change of every recorded migration", async () => {
     const actual = await schemaChangesByVersion();
 

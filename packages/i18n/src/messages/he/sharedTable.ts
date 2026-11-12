@@ -10,7 +10,7 @@ export const messages = {
     "אין טבלאות עדיין. סוכן יוצר טבלה בעצמו כשמשימה צריכה רשומות בין תורות, וכל סוכן יכול להשתמש בה.",
   "sharedTable.loadFailed": "לא ניתן לטעון את הטבלאות.",
   "sharedTable.deleteFailed": "לא ניתן למחוק את זה.",
-  "sharedTable.madeOutside": "נוצר מחוץ ל-OpenBot · כל סוכן יכול למחוק אותו",
+  "sharedTable.madeOutside": "נוצר מחוץ ל-Spinbot · כל סוכן יכול למחוק אותו",
   "sharedTable.keptBy": "נשמר על ידי {name}",
   "sharedTable.keptByDeleted": "נשמר על ידי סוכן שכבר לא קיים",
   "sharedTable.deleteName": "מחיקת {name}",

@@ -318,7 +318,7 @@ export class AttachmentGateway {
       ),
     );
     const normalized = value.replaceAll("\\", "/");
-    const sharedReference = ["~/OpenBot/Shared/", "OpenBot/Shared/", "Shared/"].some((prefix) =>
+    const sharedReference = ["~/Spinbot/Shared/", "Spinbot/Shared/", "Shared/"].some((prefix) =>
       normalized.startsWith(prefix),
     );
     // An absolute path may be one the provider's own transcript still names under this agent's pre-rename
@@ -385,8 +385,8 @@ export class AttachmentGateway {
       new Error(
         `${
           scope.allowAnyReadablePath
-            ? "Upload files must exist, be regular files, and be readable by OpenBot."
-            : "Attachment files must exist inside this agent's workspace or the OpenBot shared directory."
+            ? "Upload files must exist, be regular files, and be readable by Spinbot."
+            : "Attachment files must exist inside this agent's workspace or the Spinbot shared directory."
         } Reason: ${[...new Set(reasons)].join("; ")}.`,
       ),
     );

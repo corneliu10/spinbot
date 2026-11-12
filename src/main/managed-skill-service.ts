@@ -37,10 +37,10 @@ export class ManagedSkillService {
   constructor(
     private readonly sourcePath: string,
     private readonly reportCollision: (target: string) => void = (target) => {
-      logger.warn(`OpenBot preserved an unowned managed-skill collision at ${target}.`);
+      logger.warn(`Spinbot preserved an unowned managed-skill collision at ${target}.`);
     },
     private readonly reportFailure: (target: string, error: unknown) => void = (target, error) => {
-      logger.error(`OpenBot could not synchronize the managed skill at ${target}.`, toLogValue(error));
+      logger.error(`Spinbot could not synchronize the managed skill at ${target}.`, toLogValue(error));
     },
     private readonly slug = MANAGED_SKILL_SLUG,
   ) {}

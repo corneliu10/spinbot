@@ -78,9 +78,9 @@ describe("mcpSecretValues", () => {
       ...(process.platform === "win32" ? [] : [home]),
       "header-value",
     ]);
-    const text = `Wrote ${home}/OpenBot/Shared/demo/report.md with tok_9f8e7d6c5b4a`;
+    const text = `Wrote ${home}/Spinbot/Shared/demo/report.md with tok_9f8e7d6c5b4a`;
     expect(redactMcpRecord({ text }, mcpSecretValues([{ ...server, env: server.env.slice(0, 1) }]))).toEqual({
-      text: `Wrote ${home}/OpenBot/Shared/demo/report.md with •••`,
+      text: `Wrote ${home}/Spinbot/Shared/demo/report.md with •••`,
     });
   });
 

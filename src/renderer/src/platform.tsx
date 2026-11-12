@@ -49,7 +49,7 @@ const Platform = createSimpleContext({
           })
           .catch(() =>
             setAppInfo({
-              name: "OpenBot",
+              name: "Spinbot",
               version: "unavailable",
               platform: "darwin",
               variant: "production",

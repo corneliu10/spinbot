@@ -1,3 +1,5 @@
+> **Spinbot** is a noncommercial rebrand of OpenBot by Synthetify Labs, under the PolyForm Noncommercial License 1.0.0. It is not affiliated with or endorsed by Synthetify Labs. See [SPINBOT.md](SPINBOT.md). The text below is OpenBot's original README.
+
 # OpenBot
 
 [![CI](https://github.com/nightly-labs/openbot/actions/workflows/ci.yml/badge.svg)](https://github.com/nightly-labs/openbot/actions/workflows/ci.yml)

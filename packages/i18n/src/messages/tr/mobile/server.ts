@@ -9,10 +9,10 @@ export const messages = {
   "mobile.server.drawer.leaveFailed": "{name} sunucusundan ayrılınamadı",
   "mobile.server.drawer.removeFailed": "{name} kaldırılamadı",
   "mobile.server.drawer.deleteFailed": "{name} silinemedi",
-  "mobile.server.drawer.actionFailed": "OpenBot bu işlemi tamamlayamadı. Tekrar deneyin.",
+  "mobile.server.drawer.actionFailed": "Spinbot bu işlemi tamamlayamadı. Tekrar deneyin.",
   "mobile.server.drawer.moveUp": "Yukarı taşı",
   "mobile.server.drawer.moveDown": "Aşağı taşı",
-  "mobile.server.drawer.orderHint": "OpenBot ilk sunucuda açılır. Sıra bu cihazda kaydedilir.",
+  "mobile.server.drawer.orderHint": "Spinbot ilk sunucuda açılır. Sıra bu cihazda kaydedilir.",
   "mobile.server.drawer.title": "Sunucular",
   "mobile.server.drawer.serverSettings": "Sunucu ayarları",
   "mobile.server.drawer.serverListHint": "Sunucuları gösterir veya gizler",
@@ -33,8 +33,8 @@ export const messages = {
   "mobile.server.drawer.close": "Sunucu çekmecesini kapat",
   "mobile.server.invite.noExpiry": "{role} · Süre sınırı yok",
   "mobile.server.invite.expires": "{role} · Bitiş {date}",
-  "mobile.server.invite.loadFailed": "OpenBot bu daveti yükleyemedi.",
-  "mobile.server.invite.joinFailed": "OpenBot bu sunucuya katılamadı.",
+  "mobile.server.invite.loadFailed": "Spinbot bu daveti yükleyemedi.",
+  "mobile.server.invite.joinFailed": "Spinbot bu sunucuya katılamadı.",
   "mobile.server.invite.checking": "Davet kontrol ediliyor…",
   "mobile.server.invite.unavailable": "Davet kullanılamıyor",
   "mobile.server.invite.verifying": "Sunucu kimliği doğrulanıyor.",
@@ -81,7 +81,7 @@ export const messages = {
     "{name} sunucusunu çalıştıran bilgisayarda, kendi ajanları, sohbetleri ve dosyalarıyla.",
   "mobile.server.local.title": "Yeni sunucu",
   "mobile.server.local.description":
-    "Sunucu, {name} sunucusunu çalıştıran bilgisayarda kendi ajanları, sohbetleri ve dosyalarıyla çalışır. OpenBot o bilgisayarda çalıştığı sürece kullanılabilir.",
+    "Sunucu, {name} sunucusunu çalıştıran bilgisayarda kendi ajanları, sohbetleri ve dosyalarıyla çalışır. Spinbot o bilgisayarda çalıştığı sürece kullanılabilir.",
   "mobile.server.local.nameLabel": "Sunucu adı",
   "mobile.server.local.nameTooShort": "En az {limit} karakter kullanın.",
   "mobile.server.local.create": "Oluştur",
@@ -93,22 +93,22 @@ export const messages = {
   "mobile.server.local.createdOn": "{name}, {computer} ile aynı bilgisayarda çalışıyor.",
   "mobile.server.local.waiting": "{name} sunucusunun çevrimiçi olması bekleniyor…",
   "mobile.server.local.notPublished":
-    "{name} çalışıyor ancak bu telefon onu henüz açamıyor. {computer} sunucusunu çalıştıran bilgisayardaki OpenBot'ta oturum açık olduğundan ve çevrimiçi olduğundan emin olun.",
+    "{name} çalışıyor ancak bu telefon onu henüz açamıyor. {computer} sunucusunu çalıştıran bilgisayardaki Spinbot'ta oturum açık olduğundan ve çevrimiçi olduğundan emin olun.",
   "mobile.server.local.open": "Sunucuyu aç",
   "mobile.server.local.ownerOnly": "Bu bilgisayarda yalnızca sahip sunucu oluşturabilir.",
-  "mobile.server.local.unsupported": "Burada sunucu oluşturmak için bu bilgisayardaki OpenBot'u güncelleyin.",
+  "mobile.server.local.unsupported": "Burada sunucu oluşturmak için bu bilgisayardaki Spinbot'u güncelleyin.",
   "mobile.server.local.deleteOffline":
-    "Bu sunucuyu yalnızca kendi bilgisayarı silebilir. O bilgisayarda OpenBot'u açın ve tekrar deneyin.",
+    "Bu sunucuyu yalnızca kendi bilgisayarı silebilir. O bilgisayarda Spinbot'u açın ve tekrar deneyin.",
   "mobile.server.hosted.intro.title": "Ajanlarınız her zaman açık",
   "mobile.server.hosted.intro.description":
-    "Bulut sunucusu, bilgisayarınız kapalıyken ajanlarınızı ve rutinlerinizi çalıştırır. OpenBot onu kurar ve çalışır durumda tutar.",
+    "Bulut sunucusu, bilgisayarınız kapalıyken ajanlarınızı ve rutinlerinizi çalıştırır. Spinbot onu kurar ve çalışır durumda tutar.",
   "mobile.server.hosted.planFacts": "{members} · {storage} · {sites} · {speed}",
   "mobile.server.hosted.computer.title": "Bilgisayarınızda",
   "mobile.server.hosted.computer.add": "Bulut sunucusu ekleyin",
   "mobile.server.hosted.computer.addHint":
-    "OpenBot'ta Ayarlar → Barındırılan sunucular bölümünü açın ve “Sunucu ekle” seçeneğini seçin.",
+    "Spinbot'ta Ayarlar → Barındırılan sunucular bölümünü açın ve “Sunucu ekle” seçeneğini seçin.",
   "mobile.server.hosted.computer.change": "Planı değiştirin",
-  "mobile.server.hosted.computer.changeHint": "OpenBot'ta Ayarlar → Faturalandırma bölümünü açın.",
+  "mobile.server.hosted.computer.changeHint": "Spinbot'ta Ayarlar → Faturalandırma bölümünü açın.",
   "mobile.server.hosted.yourServers": "Sunucularınız",
   "mobile.server.hosted.plans": "Planlar",
   "mobile.server.hosted.currentPlan": "Planınız",
@@ -125,7 +125,7 @@ export const messages = {
   "mobile.server.hosted.paymentTitle": "Ödeme bekleniyor",
   "mobile.server.hosted.paymentDescription": "Kurulum, ödeme onaylandığında başlar.",
   "mobile.server.hosted.progressTitle": "{name} kuruluyor",
-  "mobile.server.hosted.progressDescription": "OpenBot sizin için özel bir makine hazırlıyor.",
+  "mobile.server.hosted.progressDescription": "Spinbot sizin için özel bir makine hazırlıyor.",
   "mobile.server.hosted.closeHint":
     "Bu sayfayı kapatabilirsiniz. Kurulum devam eder ve sunucu hazır olduğunda listenizde görünür.",
   "mobile.server.hosted.readyTitle": "{name} hazır",
@@ -133,21 +133,21 @@ export const messages = {
   "mobile.server.hosted.open": "Sunucuyu aç",
   "mobile.server.hosted.failedTitle": "Sunucu başlatılamadı",
   "mobile.server.hosted.failedDescription":
-    "Tekrar deneyin. Yeniden başarısız olursa sunucuyu bilgisayarınızdaki OpenBot'ta Ayarlar'dan silin.",
+    "Tekrar deneyin. Yeniden başarısız olursa sunucuyu bilgisayarınızdaki Spinbot'ta Ayarlar'dan silin.",
   "mobile.server.hosted.retrying": "Başlatılıyor…",
   "mobile.server.hosted.expiredTitle": "Ödeme sayfasının süresi doldu",
   "mobile.server.hosted.expiredDescription": "Sunucu için ödeme yapılmadığından sunucu kaldırıldı.",
   "mobile.server.hosted.step.payment": "Ödemeyi onayla",
   "mobile.server.hosted.step.create": "Makineyi oluştur",
-  "mobile.server.hosted.step.start": "OpenBot'u başlat",
+  "mobile.server.hosted.step.start": "Spinbot'u başlat",
   "mobile.server.hosted.step.connect": "Hesabınıza bağlan",
   "mobile.server.hosted.detail.payment": "Stripe bekleniyor",
   "mobile.server.hosted.detail.reserve": "Özel bir makine ayrılıyor",
-  "mobile.server.hosted.detail.copy": "OpenBot makineye kopyalanıyor",
+  "mobile.server.hosted.detail.copy": "Spinbot makineye kopyalanıyor",
   "mobile.server.hosted.detail.key": "Tek seferlik giriş anahtarı ekleniyor",
   "mobile.server.hosted.detail.boot": "Makine açılıyor",
-  "mobile.server.hosted.detail.app": "OpenBot başlatılıyor",
-  "mobile.server.hosted.detail.wait": "OpenBot'un yanıt vermesi bekleniyor",
+  "mobile.server.hosted.detail.app": "Spinbot başlatılıyor",
+  "mobile.server.hosted.detail.wait": "Spinbot'un yanıt vermesi bekleniyor",
   "mobile.server.hosted.detail.signIn": "Sizin adınıza oturum açılıyor",
   "mobile.server.hosted.detail.publish": "Sunucu hesabınıza ekleniyor",
   "mobile.server.hosted.detail.check": "Bağlantı kontrol ediliyor",
@@ -155,7 +155,7 @@ export const messages = {
   "mobile.server.hosted.stepActive": "devam ediyor",
   "mobile.server.hosted.stepPending": "başlamadı",
   "mobile.server.hosted.stepFailed": "başarısız",
-  "mobile.server.scan.notInvitation": "Bu QR kodu bir OpenBot daveti değil.",
+  "mobile.server.scan.notInvitation": "Bu QR kodu bir Spinbot daveti değil.",
   "mobile.server.scan.title": "Daveti tara",
   "mobile.server.role.owner": "sahip",
   "mobile.server.role.admin": "yönetici",
@@ -196,7 +196,7 @@ export const messages = {
   "mobile.server.routines.status.failed": "Başarısız",
   "mobile.server.routines.status.completed": "Tamamlandı",
   "mobile.server.threads.unsupported":
-    "Bu ana bilgisayar mesaj dizilerini desteklemiyor. Ana bilgisayardaki OpenBot'u güncelleyin.",
+    "Bu ana bilgisayar mesaj dizilerini desteklemiyor. Ana bilgisayardaki Spinbot'u güncelleyin.",
   "mobile.server.threads.ask": "Ne yapılsın?",
   "mobile.server.threads.chooseAgent": "Diziyi şununla başlat",
   "mobile.server.threads.agentLabel": "Diziyi {name} ile başlat",
@@ -271,7 +271,7 @@ export const messages = {
   "mobile.server.settings.remove": "Sunucuyu kaldır",
   "mobile.server.settings.deleteTitle": "{name} silinsin mi?",
   "mobile.server.settings.deleteBody":
-    "OpenBot sunucuyu bilgisayarında durdurur ve ajanlarını, sohbetlerini ve dosyalarını o bilgisayarın çöp kutusuna taşır. Sunucu tüm cihazlarınızdaki sunucu listesinden çıkar.",
+    "Spinbot sunucuyu bilgisayarında durdurur ve ajanlarını, sohbetlerini ve dosyalarını o bilgisayarın çöp kutusuna taşır. Sunucu tüm cihazlarınızdaki sunucu listesinden çıkar.",
   "mobile.server.settings.delete": "Sunucuyu sil",
   "mobile.server.settings.name": "Sunucu adı",
   "mobile.server.settings.nameLength": "{min} ile {max} karakter kullanın.",
@@ -284,7 +284,7 @@ export const messages = {
   "mobile.server.settings.identityNotAllowed":
     "Yalnızca bir sahip veya yönetici sunucu adını ve logosunu değiştirebilir.",
   "mobile.server.settings.identityUnsupported":
-    "Adını ve logosunu buradan değiştirmek için bu sunucudaki OpenBot'u güncelleyin.",
+    "Adını ve logosunu buradan değiştirmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.settings.identityOffline": "Adını ve logosunu değiştirmek için bu sunucuya bağlanın.",
   "mobile.server.route.cropLogo": "Logoyu kırp",
   "mobile.server.members.remove": "Üyeyi kaldır",
@@ -341,7 +341,7 @@ export const messages = {
   "mobile.server.storage.category.caches": "Önbelleğe alınan sunucu dosyaları",
   "mobile.server.storage.category.runtimes": "Sağlayıcı çalışma zamanları",
   "mobile.server.storage.category.logs": "Günlükler",
-  "mobile.server.storage.total": "{name} üzerinde OpenBot",
+  "mobile.server.storage.total": "{name} üzerinde Spinbot",
   "mobile.server.storage.used": "Kullanılan",
   "mobile.server.storage.byType": "Türe göre depolama",
   "mobile.server.storage.free": "Bu diskte {size} boş alan",
@@ -363,10 +363,10 @@ export const messages = {
   "mobile.server.storage.clearTitle.caches": "Önbelleğe alınan sunucu dosyaları temizlensin mi?",
   "mobile.server.storage.clearTitle.logs": "Günlükler temizlensin mi?",
   "mobile.server.storage.clearBody.caches":
-    "Sunucu dosyalarının kopyaları. OpenBot açtığınızda bunları tekrar indirir.",
+    "Sunucu dosyalarının kopyaları. Spinbot açtığınızda bunları tekrar indirir.",
   "mobile.server.storage.clearBody.logs": "Tanılama günlükleri. Yeni günlükler hemen başlar.",
   "mobile.server.storage.clearFailed": "Veriler temizlenemedi",
-  "mobile.server.storage.clearFailedBody": "OpenBot sunucudaki bu verileri temizleyemedi.",
+  "mobile.server.storage.clearFailedBody": "Spinbot sunucudaki bu verileri temizleyemedi.",
   "mobile.server.storage.noFiles": "Bu sunucuda depolanan dosya yok.",
   "mobile.server.library.type.all": "Tümü",
   "mobile.server.library.type.images": "Görseller",
@@ -427,7 +427,7 @@ export const messages = {
   "mobile.server.settings.timezoneUnavailable":
     "Saat dilimini değiştirmek için bu sunucuya sahip veya yönetici olarak bağlanın.",
   "mobile.server.settings.timezoneUnsupported":
-    "Saat dilimini burada değiştirmek için bu sunucudaki OpenBot'u güncelleyin.",
+    "Saat dilimini burada değiştirmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.settings.keySection": "Sunucu anahtarı",
   "mobile.server.settings.keyChanged": "Son değişiklik",
   "mobile.server.settings.keyChange": "Anahtarı değiştir",
@@ -445,21 +445,21 @@ export const messages = {
     "Sunucu yeni anahtarı kullanıyor. Sunucu listesi yeniden yüklendiğinde bu uygulama da ona geçer.",
   "mobile.server.settings.keyChangeFailed": "Sunucu anahtarı değiştirilemedi. Tekrar deneyin.",
   "mobile.server.settings.keyOwnerOnly": "Sunucu anahtarını yalnızca sahip değiştirebilir.",
-  "mobile.server.settings.keyUnsupported": "Anahtarını burada değiştirmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.settings.keyUnsupported": "Anahtarını burada değiştirmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.settings.memoryLimit": "Ajan başına bellek",
   "mobile.server.settings.memoryLimitDescription": "Bu sunucudaki her ajanın tutabileceği bellek sayısı.",
   "mobile.server.settings.memoryLimitLoadFailed": "Bu sunucunun bellek sınırı yüklenemedi.",
   "mobile.server.settings.memoryLimitSaveFailed": "Anı sınırı kaydedilemedi. Tekrar deneyin.",
   "mobile.server.settings.memoryLimitUnsupported":
-    "Anı sınırını burada değiştirmek için bu sunucudaki OpenBot'u güncelleyin.",
+    "Anı sınırını burada değiştirmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.route.browserProfiles": "Tarayıcı profilleri",
   "mobile.server.browserProfiles.unavailable":
     "Çevrimiçi bir sunucunun tarayıcı profillerini yalnızca sahibi veya bir yönetici yönetebilir.",
   "mobile.server.browserProfiles.unsupported":
-    "Tarayıcı profillerini burada yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+    "Tarayıcı profillerini burada yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.browserProfiles.loading": "Tarayıcı profilleri yükleniyor…",
-  "mobile.server.browserProfiles.loadFailed": "OpenBot tarayıcı profillerini yükleyemedi.",
-  "mobile.server.browserProfiles.saveFailed": "OpenBot tarayıcı profilini değiştiremedi.",
+  "mobile.server.browserProfiles.loadFailed": "Spinbot tarayıcı profillerini yükleyemedi.",
+  "mobile.server.browserProfiles.saveFailed": "Spinbot tarayıcı profilini değiştiremedi.",
   "mobile.server.browserProfiles.description":
     "Her profil kendi oturum açma bilgilerini, çerezlerini ve site verilerini sunucuyu çalıştıran bilgisayarda tutar. Aynı profili kullanan ajanlar oturumlarını paylaşır.",
   "mobile.server.browserProfiles.shared": "Ortak",
@@ -491,13 +491,13 @@ export const messages = {
   "mobile.server.browserProfiles.deleteBody":
     "Bu, profilin oturum açma bilgilerini, çerezlerini ve site verilerini siler. Açık sekmeleri kapanır.",
   "mobile.server.browserProfiles.deleteAgents": "Bu ajanlar ortak profile geçer: {agents}.",
-  "mobile.server.browserProxies.unsupported": "Proxy'lerini burada yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.browserProxies.unsupported": "Proxy'lerini burada yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.browserProxies.loading": "Proxy'ler yükleniyor…",
-  "mobile.server.browserProxies.loadFailed": "OpenBot proxy'leri yükleyemedi.",
-  "mobile.server.browserProxies.saveFailed": "OpenBot proxy'yi değiştiremedi.",
+  "mobile.server.browserProxies.loadFailed": "Spinbot proxy'leri yükleyemedi.",
+  "mobile.server.browserProxies.saveFailed": "Spinbot proxy'yi değiştiremedi.",
   "mobile.server.browserProxies.title": "Proxy'ler",
   "mobile.server.browserProxies.sectionHint":
-    "Proxy'si olan bir profil, sayfalarını o proxy üzerinden açar. Bir üye, bilgisayarını OpenBot masaüstü uygulamasından paylaşır.",
+    "Proxy'si olan bir profil, sayfalarını o proxy üzerinden açar. Bir üye, bilgisayarını Spinbot masaüstü uygulamasından paylaşır.",
   "mobile.server.browserProxies.limit": "Bir sunucuda en fazla {limit} proxy olabilir.",
   "mobile.server.browserProxies.add": "Proxy ekle",
   "mobile.server.browserProxies.new": "Yeni proxy",
@@ -524,7 +524,7 @@ export const messages = {
   "mobile.server.browserProxies.addressInvalid":
     "Bu bir proxy adresi değil. socks5://host:1080, http://user:password@host:3128 veya host:port:user:password kullanın.",
   "mobile.server.browserProxies.computerHint":
-    "Bu bilgisayarı kullanan profillerin sayfaları, üyesi bilgisayarı OpenBot masaüstü uygulamasından paylaştığı sürece bu bilgisayarın internet bağlantısı üzerinden çıkar. Bilgisayar yalnızca herkese açık internet adreslerini açar.",
+    "Bu bilgisayarı kullanan profillerin sayfaları, üyesi bilgisayarı Spinbot masaüstü uygulamasından paylaştığı sürece bu bilgisayarın internet bağlantısı üzerinden çıkar. Bilgisayar yalnızca herkese açık internet adreslerini açar.",
   "mobile.server.browserProxies.profilesTitle": "Profiller",
   "mobile.server.browserProxies.delete": "Proxy'yi sil",
   "mobile.server.browserProxies.deleteHint": "Silme, bu proxy'nin profillerini “Otomatik” ayarına geçirir.",
@@ -542,11 +542,11 @@ export const messages = {
   "mobile.server.browserProxies.choiceHint":
     "“Otomatik”, sunucuyu çalıştıran bilgisayarın proxy ayarlarını kullanır. Bir değişiklik profilin açık sekmelerini kapatır.",
   "mobile.server.browserProxies.shareHint":
-    "Bilgisayarınızı kullanmak için onu OpenBot masaüstü uygulamasında paylaşın.",
+    "Bilgisayarınızı kullanmak için onu Spinbot masaüstü uygulamasında paylaşın.",
   "mobile.server.route.connectors": "Bağlayıcılar",
   "mobile.server.connectors.unavailable":
     "Bağlayıcılarını yönetmek için bu sunucuya sahip veya yönetici olarak bağlanın.",
-  "mobile.server.connectors.unsupported": "Bağlayıcılarını burada yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.connectors.unsupported": "Bağlayıcılarını burada yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.connectors.loading": "Bağlayıcılar yükleniyor…",
   "mobile.server.connectors.localOnly": "Yalnızca masaüstü uygulaması",
   "mobile.server.connectors.statusConnected": "Bağlandı",
@@ -570,7 +570,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.description":
     "{host} üzerindeki tarayıcı girişlerini Bitwarden veya Vaultwarden'dan doldurun.",
   "mobile.server.connectors.bitwarden.howItWorks":
-    "{host} kendi Bitwarden CLI'si ile oturum açar. Kasanızda Shared with OpenBot adlı bir klasör oluşturun ve içine yalnızca ajanların kullanabileceği girişleri koyun. Web kasasında Ayarlar › Güvenlik › Anahtarlar'ı açın ve API anahtarınızı görüntüleyin.",
+    "{host} kendi Bitwarden CLI'si ile oturum açar. Kasanızda Shared with Spinbot adlı bir klasör oluşturun ve içine yalnızca ajanların kullanabileceği girişleri koyun. Web kasasında Ayarlar › Güvenlik › Anahtarlar'ı açın ve API anahtarınızı görüntüleyin.",
   "mobile.server.connectors.bitwarden.serverUrl": "Sunucu adresi",
   "mobile.server.connectors.bitwarden.serverUrlHint":
     "Bitwarden veya Vaultwarden sunucunuzun adresi. {host} bu adrese HTTPS ile ulaşabilmelidir.",
@@ -584,7 +584,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.connectingBody":
     "{host} Bitwarden'da oturum açıyor. İlk oturum açma birkaç dakika sürebilir.",
   "mobile.server.connectors.bitwarden.folderTitle": "Paylaşılan klasör",
-  "mobile.server.connectors.bitwarden.folderName": "Shared with OpenBot",
+  "mobile.server.connectors.bitwarden.folderName": "Shared with Spinbot",
   "mobile.server.connectors.bitwarden.folderKind": "Bitwarden'daki klasör",
   "mobile.server.connectors.bitwarden.folderFooter":
     "Ajanların bir girişle oturum açmasına izin vermek için girişi Bitwarden'da bu klasöre taşıyın. Durdurmak için kaldırın.",
@@ -595,7 +595,7 @@ export const messages = {
   "mobile.server.connectors.github.title": "GitHub",
   "mobile.server.connectors.github.description":
     "{host} sunucusundaki her ajan GitHub depolarınızı, sorunlarınızı (issues), çekme isteklerinizi (pull requests), gh ve git araçlarını kullanabilir.",
-  "mobile.server.connectors.github.unavailable": "Bu sunucudaki OpenBot GitHub'ı bağlayamıyor.",
+  "mobile.server.connectors.github.unavailable": "Bu sunucudaki Spinbot GitHub'ı bağlayamıyor.",
   "mobile.server.connectors.github.connect": "GitHub'a bağlan",
   "mobile.server.connectors.github.codeTitle": "Bu kodu GitHub'a yazın",
   "mobile.server.connectors.github.codeFooter":
@@ -605,11 +605,11 @@ export const messages = {
   "mobile.server.connectors.github.connectedAs": "@{login} olarak bağlandı",
   "mobile.server.connectors.github.chooseRepositories": "Depoları seç",
   "mobile.server.connectors.github.repositoriesFooter":
-    "Ajanlar yalnızca OpenBot GitHub Uygulamasının yüklü olduğu depoları kullanabilir.",
+    "Ajanlar yalnızca Spinbot GitHub Uygulamasının yüklü olduğu depoları kullanabilir.",
   "mobile.server.connectors.github.repositoriesTitle": "Depolar",
   "mobile.server.connectors.github.repositoriesLoading": "Depolar GitHub'dan okunuyor",
-  "mobile.server.connectors.github.repositoriesFailed": "OpenBot depoları GitHub'dan okuyamadı.",
-  "mobile.server.connectors.github.noRepositories": "OpenBot GitHub Uygulaması henüz bir depoya yüklenmedi.",
+  "mobile.server.connectors.github.repositoriesFailed": "Spinbot depoları GitHub'dan okuyamadı.",
+  "mobile.server.connectors.github.noRepositories": "Spinbot GitHub Uygulaması henüz bir depoya yüklenmedi.",
   "mobile.server.connectors.github.moreRepositories": {
     one: "Ve {count} depo daha",
     other: "Ve {count} depo daha",
@@ -623,12 +623,12 @@ export const messages = {
   "mobile.server.connectors.github.disconnect": "GitHub bağlantısını kes",
   "mobile.server.connectors.github.disconnectTitle": "GitHub bağlantısı kesilsin mi?",
   "mobile.server.connectors.github.disconnectBody":
-    "Bu işlem @{login} oturumunu {host} üzerinden kaldırır ve tüm ajanlar GitHub araçlarını, gh ve git erişimini kaybeder. Ardından OpenBot yetkisini kaldırabileceğiniz GitHub açılır.",
+    "Bu işlem @{login} oturumunu {host} üzerinden kaldırır ve tüm ajanlar GitHub araçlarını, gh ve git erişimini kaybeder. Ardından Spinbot yetkisini kaldırabileceğiniz GitHub açılır.",
   "mobile.server.connectors.onePassword.title": "1Password",
   "mobile.server.connectors.onePassword.description":
-    "Ayrı bir 1Password kasasını bir hizmet hesabıyla {host} üzerindeki OpenBot ile paylaşın; böylece {host} üzerindeki ajanlar onun tarayıcısında sitelere oturum açabilir.",
+    "Ayrı bir 1Password kasasını bir hizmet hesabıyla {host} üzerindeki Spinbot ile paylaşın; böylece {host} üzerindeki ajanlar onun tarayıcısında sitelere oturum açabilir.",
   "mobile.server.connectors.onePassword.howItWorks":
-    "1Password.com'da yalnızca OpenBot ile paylaştığınız kasayı okuyabilen bir hizmet hesabı oluşturun ve belirtecini buraya yapıştırın. {host} belirteci denetler ve saklar; bu telefon saklamaz. Ajanlar hiçbir zaman parola görmez.",
+    "1Password.com'da yalnızca Spinbot ile paylaştığınız kasayı okuyabilen bir hizmet hesabı oluşturun ve belirtecini buraya yapıştırın. {host} belirteci denetler ve saklar; bu telefon saklamaz. Ajanlar hiçbir zaman parola görmez.",
   "mobile.server.connectors.onePassword.token": "Hizmet hesabı belirteci",
   "mobile.server.connectors.onePassword.tokenPlaceholder": "ops_…",
   "mobile.server.connectors.onePassword.connect": "1Password'e bağlan",
@@ -645,9 +645,9 @@ export const messages = {
     "{host} belirteci unutur. Kasa ve hizmet hesabı 1Password'de kalır; artık gerekmiyorsa onları orada kaldırın.",
   "mobile.server.connectors.protonPass.title": "Proton Pass",
   "mobile.server.connectors.protonPass.description":
-    "{host} üzerindeki OpenBot ile bir Proton Pass kasası paylaşın; böylece {host} üzerindeki ajanlar onun tarayıcısında sitelere giriş yapabilir.",
+    "{host} üzerindeki Spinbot ile bir Proton Pass kasası paylaşın; böylece {host} üzerindeki ajanlar onun tarayıcısında sitelere giriş yapabilir.",
   "mobile.server.connectors.protonPass.keyHelp":
-    "Proton Pass'te yalnızca OpenBot ile paylaştığınız kasayı okuyabilen bir erişim anahtarı oluşturun ve buraya yapıştırın. Anahtarı {host} saklar; bu telefon saklamaz.",
+    "Proton Pass'te yalnızca Spinbot ile paylaştığınız kasayı okuyabilen bir erişim anahtarı oluşturun ve buraya yapıştırın. Anahtarı {host} saklar; bu telefon saklamaz.",
   "mobile.server.connectors.protonPass.keyPlaceholder": "pst_…",
   "mobile.server.connectors.passwordManager.unavailable": "{name} bu sunucuda kullanılamıyor.",
   "mobile.server.connectors.passwordManager.howItWorks":
@@ -688,14 +688,14 @@ export const messages = {
     "{host} kendi erişim anahtarını siler. Kasa ve içindeki girişler {name} hesabınızda kalır.",
   "mobile.server.connectors.slack.title": "Slack",
   "mobile.server.connectors.slack.description":
-    "Kullanıcılar Slack'te @OpenBot'tan bahseder veya doğrudan mesaj gönderir. Slack Düzenleyicisi doğru ajana sorar ve yanıtlar.",
+    "Kullanıcılar Slack'te @Spinbot'tan bahseder veya doğrudan mesaj gönderir. Slack Düzenleyicisi doğru ajana sorar ve yanıtlar.",
   "mobile.server.connectors.slack.attention": {
     one: "{count} çalışma alanı için işlem gerekiyor",
     other: "{count} çalışma alanı için işlem gerekiyor",
   },
   "mobile.server.connectors.slack.connect": "Slack'e bağlan",
   "mobile.server.connectors.slack.connectFooter":
-    "Slack bir tarayıcıda açılır. Sağ üst köşeden çalışma alanını seçin, ardından İzin Ver'e dokunun. OpenBot, OpenBot adında bir uygulama yükler ve bu uygulama her genel kanala katılır.",
+    "Slack bir tarayıcıda açılır. Sağ üst köşeden çalışma alanını seçin, ardından İzin Ver'e dokunun. Spinbot, Spinbot adında bir uygulama yükler ve bu uygulama her genel kanala katılır.",
   "mobile.server.connectors.slack.add": "Çalışma alanı ekle",
   "mobile.server.connectors.slack.limit": {
     one: "En fazla {count} çalışma alanı bağlayabilirsiniz.",
@@ -703,42 +703,42 @@ export const messages = {
   },
   "mobile.server.connectors.slack.workspaceTitle": "Çalışma alanı",
   "mobile.server.connectors.slack.workspaceDescription":
-    "Kullanıcılar @OpenBot'tan bahseder veya doğrudan mesaj gönderir.",
+    "Kullanıcılar @Spinbot'tan bahseder veya doğrudan mesaj gönderir.",
   "mobile.server.connectors.slack.missingScopes":
-    "OpenBot Slack'te şu izinlere sahip değil: {scopes}. Çalışma alanı bağlantısını kesin, ardından tekrar bağlayın.",
-  "mobile.server.connectors.slack.retryAt": "Slack OpenBot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
+    "Spinbot Slack'te şu izinlere sahip değil: {scopes}. Çalışma alanı bağlantısını kesin, ardından tekrar bağlayın.",
+  "mobile.server.connectors.slack.retryAt": "Slack Spinbot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
   "mobile.server.connectors.slack.helpInvalidToken":
-    "Slack artık bu çalışma alanında OpenBot'u kabul etmiyor. Kaldırılmış olabilir. Çalışma alanını tekrar bağlayın.",
+    "Slack artık bu çalışma alanında Spinbot'u kabul etmiyor. Kaldırılmış olabilir. Çalışma alanını tekrar bağlayın.",
   "mobile.server.connectors.slack.helpSecretStorage":
-    "OpenBot {host} üzerindeki kayıtlı belirteçleri okuyamıyor. Çalışma alanı bağlantısını kesin, ardından tekrar bağlayın.",
+    "Spinbot {host} üzerindeki kayıtlı belirteçleri okuyamıyor. Çalışma alanı bağlantısını kesin, ardından tekrar bağlayın.",
   "mobile.server.connectors.slack.helpRelay":
-    "{host} üzerindeki OpenBot Slack etkinliklerini alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve OpenBot'u açık tutun.",
+    "{host} üzerindeki Spinbot Slack etkinliklerini alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve Spinbot'u açık tutun.",
   "mobile.server.connectors.slack.orchestratorTitle": "Slack Düzenleyicisi",
   "mobile.server.connectors.slack.orchestratorDescription":
     "Bu ajan Slack'ten gelen her isteği alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve yanıtı ileti dizisinde paylaşır.",
   "mobile.server.connectors.slack.orchestratorNone": "Slack Düzenleyicisini ekleyin, aksi takdirde Slack yanıt alamaz.",
   "mobile.server.connectors.slack.addAgent": "Slack Düzenleyicisini ekle",
   "mobile.server.connectors.slack.note":
-    "OpenBot her genel kanala ve her yeni kanala kendiliğinden katılır. Özel bir kanal için onu davet edin: /invite @OpenBot.",
+    "Spinbot her genel kanala ve her yeni kanala kendiliğinden katılır. Özel bir kanal için onu davet edin: /invite @Spinbot.",
   "mobile.server.connectors.slack.disconnectTitle": "{workspace} bağlantısı kesilsin mi?",
   "mobile.server.connectors.slack.disconnectBody":
-    "OpenBot {workspace} içinde yanıt vermeyi durdurur ve Slack belirtecini {host} sunucusundan kaldırır.",
-  "mobile.server.connectors.slack.disconnectKept": "Konuşmalar ve Slack Düzenleyicisi OpenBot'ta kalır.",
-  "mobile.server.connectors.slack.disconnectDeleted": "Slack Düzenleyicisi ve konuşmaları OpenBot'tan silinir.",
+    "Spinbot {workspace} içinde yanıt vermeyi durdurur ve Slack belirtecini {host} sunucusundan kaldırır.",
+  "mobile.server.connectors.slack.disconnectKept": "Konuşmalar ve Slack Düzenleyicisi Spinbot'ta kalır.",
+  "mobile.server.connectors.slack.disconnectDeleted": "Slack Düzenleyicisi ve konuşmaları Spinbot'tan silinir.",
   "mobile.server.connectors.slack.agentPromptTitle": "Slack Düzenleyicisi eklensin mi?",
   "mobile.server.connectors.slack.agentPromptBody":
-    "Bu yeni ajan, {workspace} içinde @OpenBot'a gönderilen her şeyi yanıtlar.",
+    "Bu yeni ajan, {workspace} içinde @Spinbot'a gönderilen her şeyi yanıtlar.",
   "mobile.server.connectors.slack.installFailed": "Slack yüklemeyi tamamlamadı. Tekrar deneyin.",
   "mobile.server.connectors.discord.title": "Discord",
   "mobile.server.connectors.discord.description":
-    "Kullanıcılar bir Discord sunucusunun kanalında @OpenBot'tan bahseder. Discord Düzenleyicisi doğru ajana sorar ve yanıtlar.",
+    "Kullanıcılar bir Discord sunucusunun kanalında @Spinbot'tan bahseder. Discord Düzenleyicisi doğru ajana sorar ve yanıtlar.",
   "mobile.server.connectors.discord.attention": {
     one: "{count} Discord sunucusu için işlem gerekiyor",
     other: "{count} Discord sunucusu için işlem gerekiyor",
   },
   "mobile.server.connectors.discord.connect": "Discord'a bağlan",
   "mobile.server.connectors.discord.connectFooter":
-    "Discord bir tarayıcıda açılır. Discord sunucusunu seçin, ardından Yetkilendir'e dokunun. OpenBot, OpenBot adında bir bot ekler.",
+    "Discord bir tarayıcıda açılır. Discord sunucusunu seçin, ardından Yetkilendir'e dokunun. Spinbot, Spinbot adında bir bot ekler.",
   "mobile.server.connectors.discord.add": "Discord sunucusu ekle",
   "mobile.server.connectors.discord.limit": {
     one: "En fazla {count} Discord sunucusu bağlayabilirsiniz.",
@@ -746,36 +746,36 @@ export const messages = {
   },
   "mobile.server.connectors.discord.workspaceTitle": "Discord sunucusu",
   "mobile.server.connectors.discord.workspaceDescription":
-    "Bir kanalda @OpenBot'tan bahsedin. Devam etmek için OpenBot'a yanıt verin.",
+    "Bir kanalda @Spinbot'tan bahsedin. Devam etmek için Spinbot'a yanıt verin.",
   "mobile.server.connectors.discord.missingScopes":
-    "OpenBot Discord'da şu izinlere sahip değil: {scopes}. Discord sunucusu bağlantısını kesin, ardından tekrar bağlayın.",
+    "Spinbot Discord'da şu izinlere sahip değil: {scopes}. Discord sunucusu bağlantısını kesin, ardından tekrar bağlayın.",
   "mobile.server.connectors.discord.retryAt":
-    "Discord OpenBot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
+    "Discord Spinbot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
   "mobile.server.connectors.discord.helpInvalidToken":
-    "Discord artık bu Discord sunucusunda OpenBot'u kabul etmiyor. Kaldırılmış olabilir. Discord sunucusunu tekrar bağlayın.",
+    "Discord artık bu Discord sunucusunda Spinbot'u kabul etmiyor. Kaldırılmış olabilir. Discord sunucusunu tekrar bağlayın.",
   "mobile.server.connectors.discord.helpSecretStorage":
-    "OpenBot {host} üzerindeki kayıtlı belirteçleri okuyamıyor. Discord sunucusu bağlantısını kesin, ardından tekrar bağlayın.",
+    "Spinbot {host} üzerindeki kayıtlı belirteçleri okuyamıyor. Discord sunucusu bağlantısını kesin, ardından tekrar bağlayın.",
   "mobile.server.connectors.discord.helpRelay":
-    "{host} üzerindeki OpenBot Discord etkinliklerini alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve OpenBot'u açık tutun.",
+    "{host} üzerindeki Spinbot Discord etkinliklerini alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve Spinbot'u açık tutun.",
   "mobile.server.connectors.discord.orchestratorTitle": "Discord Düzenleyicisi",
   "mobile.server.connectors.discord.orchestratorDescription":
     "Bu ajan Discord'dan gelen her isteği alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve yanıtı kanalda verir.",
   "mobile.server.connectors.discord.orchestratorNone":
     "Discord Düzenleyicisini ekleyin, aksi takdirde Discord yanıt alamaz.",
   "mobile.server.connectors.discord.addAgent": "Discord Düzenleyicisini ekle",
-  "mobile.server.connectors.discord.note": "OpenBot, rolünün görebildiği kanalları görür.",
+  "mobile.server.connectors.discord.note": "Spinbot, rolünün görebildiği kanalları görür.",
   "mobile.server.connectors.discord.disconnectTitle": "{workspace} bağlantısı kesilsin mi?",
   "mobile.server.connectors.discord.disconnectBody":
-    "OpenBot {workspace} içinde yanıt vermeyi bırakır ve Discord bağlantısını {host} sunucusundan kaldırır.",
-  "mobile.server.connectors.discord.disconnectKept": "Konuşmalar ve Discord Düzenleyicisi OpenBot'ta kalır.",
-  "mobile.server.connectors.discord.disconnectDeleted": "Discord Düzenleyicisi ve konuşmaları OpenBot'tan silinir.",
+    "Spinbot {workspace} içinde yanıt vermeyi bırakır ve Discord bağlantısını {host} sunucusundan kaldırır.",
+  "mobile.server.connectors.discord.disconnectKept": "Konuşmalar ve Discord Düzenleyicisi Spinbot'ta kalır.",
+  "mobile.server.connectors.discord.disconnectDeleted": "Discord Düzenleyicisi ve konuşmaları Spinbot'tan silinir.",
   "mobile.server.connectors.discord.agentPromptTitle": "Discord Düzenleyicisi eklensin mi?",
   "mobile.server.connectors.discord.agentPromptBody":
-    "Bu yeni ajan, {workspace} içinde @OpenBot'a gönderilen her şeyi yanıtlar.",
+    "Bu yeni ajan, {workspace} içinde @Spinbot'a gönderilen her şeyi yanıtlar.",
   "mobile.server.connectors.discord.installFailed": "Discord yetkilendirmeyi tamamlamadı. Tekrar deneyin.",
   "mobile.server.connectors.telegram.title": "Telegram",
   "mobile.server.connectors.telegram.description":
-    "OpenBot botunu bir Telegram grubuna ekleyin veya botla doğrudan bir sohbet açın. Telegram Düzenleyicisi doğru ajana sorar ve yanıtlar.",
+    "Spinbot botunu bir Telegram grubuna ekleyin veya botla doğrudan bir sohbet açın. Telegram Düzenleyicisi doğru ajana sorar ve yanıtlar.",
   "mobile.server.connectors.telegram.attention": {
     one: "{count} sohbet için işlem gerekiyor",
     other: "{count} sohbet için işlem gerekiyor",
@@ -785,13 +785,13 @@ export const messages = {
   "mobile.server.connectors.telegram.groupDescription": "Kullanıcılar bottan bahseder veya mesajlarını yanıtlar.",
   "mobile.server.connectors.telegram.directDescription": "Bu sohbetteki her mesaj Telegram Düzenleyicisine gider.",
   "mobile.server.connectors.telegram.helpRemoved":
-    "OpenBot botu artık bu sohbette değil. Sohbetin bağlantısını kesin, sonra botu yeniden ekleyin.",
+    "Spinbot botu artık bu sohbette değil. Sohbetin bağlantısını kesin, sonra botu yeniden ekleyin.",
   "mobile.server.connectors.telegram.helpRelay":
-    "{host} üzerindeki OpenBot Telegram mesajlarını alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve OpenBot'u açık tutun.",
+    "{host} üzerindeki Spinbot Telegram mesajlarını alamıyor. {host} üzerinde oturum açın, Sunucu ayarlarında sunucuya bir ad verin ve Spinbot'u açık tutun.",
   "mobile.server.connectors.telegram.helpError":
-    "OpenBot bu sohbete ulaşamıyor. Yeniden bağlanın veya sohbetin bağlantısını kesin.",
+    "Spinbot bu sohbete ulaşamıyor. Yeniden bağlanın veya sohbetin bağlantısını kesin.",
   "mobile.server.connectors.telegram.retryAt":
-    "Telegram OpenBot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
+    "Telegram Spinbot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
   "mobile.server.connectors.telegram.linkTitle": "Bir sohbet bağla",
   "mobile.server.connectors.telegram.linkAnother": "Başka bir sohbet bağlayın",
   "mobile.server.connectors.telegram.linkFooter":
@@ -804,16 +804,16 @@ export const messages = {
   "mobile.server.connectors.telegram.openDirectChat": "Doğrudan sohbet aç",
   "mobile.server.connectors.telegram.orchestratorTitle": "Telegram Düzenleyicisi",
   "mobile.server.connectors.telegram.orchestratorDescription":
-    "Bu ajan tüm Telegram sohbetlerinizden OpenBot'a gelen mesajları alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve yanıtı sohbette paylaşır.",
+    "Bu ajan tüm Telegram sohbetlerinizden Spinbot'a gelen mesajları alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve yanıtı sohbette paylaşır.",
   "mobile.server.connectors.telegram.orchestratorNone":
     "Telegram Düzenleyicisini ekleyin, aksi takdirde Telegram yanıt alamaz.",
   "mobile.server.connectors.telegram.addAgent": "Telegram Düzenleyicisini ekle",
   "mobile.server.connectors.telegram.disconnectTitle": "{chat} bağlantısı kesilsin mi?",
   "mobile.server.connectors.telegram.disconnectBody":
-    "OpenBot botu {chat} sohbetinden ayrılır ve OpenBot orada yanıt vermeyi bırakır.",
-  "mobile.server.connectors.telegram.disconnectKept": "Konuşmalar ve Telegram Düzenleyicisi OpenBot'ta kalır.",
+    "Spinbot botu {chat} sohbetinden ayrılır ve Spinbot orada yanıt vermeyi bırakır.",
+  "mobile.server.connectors.telegram.disconnectKept": "Konuşmalar ve Telegram Düzenleyicisi Spinbot'ta kalır.",
   "mobile.server.connectors.telegram.disconnectDeleted":
-    "Bu son sohbet olduğundan Telegram Düzenleyicisi ve konuşmaları OpenBot'tan silinir.",
+    "Bu son sohbet olduğundan Telegram Düzenleyicisi ve konuşmaları Spinbot'tan silinir.",
   "mobile.server.connectors.whatsapp.title": "WhatsApp",
   "mobile.server.connectors.whatsapp.description":
     "Bir WhatsApp numarasını bu sunucuya bağlayın. WhatsApp Düzenleyicisi doğru ajana sorar ve yanıtlar.",
@@ -824,22 +824,22 @@ export const messages = {
   "mobile.server.connectors.whatsapp.numbersTitle": "Numaralar",
   "mobile.server.connectors.whatsapp.linkNumber": "Numara bağla",
   "mobile.server.connectors.whatsapp.ownNumberNote":
-    "“Kendine mesaj gönder” sohbetiniz ve izin verdiğiniz kişiler OpenBot'a ulaşır.",
+    "“Kendine mesaj gönder” sohbetiniz ve izin verdiğiniz kişiler Spinbot'a ulaşır.",
   "mobile.server.connectors.whatsapp.dedicatedNote":
-    "İzin verdiğiniz kişiler OpenBot'a ulaşır. Diğer kişiler size iletmeleri için bir kod alır.",
+    "İzin verdiğiniz kişiler Spinbot'a ulaşır. Diğer kişiler size iletmeleri için bir kod alır.",
   "mobile.server.connectors.whatsapp.helpLoggedOut":
     "WhatsApp bu sunucuyu bağlı cihazlardan kaldırdı. Numarayı yeniden bağlayın.",
   "mobile.server.connectors.whatsapp.helpError":
-    "OpenBot bu numarada WhatsApp'a ulaşamıyor. Yeniden bağlanın veya numaranın bağlantısını kesin.",
+    "Spinbot bu numarada WhatsApp'a ulaşamıyor. Yeniden bağlanın veya numaranın bağlantısını kesin.",
   "mobile.server.connectors.whatsapp.retryAt":
-    "WhatsApp OpenBot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
+    "WhatsApp Spinbot'tan beklemesini istedi. {time} saatinde tekrar deneyecek.",
   "mobile.server.connectors.whatsapp.linkAgain": "Yeniden bağla",
   "mobile.server.connectors.whatsapp.ownNumber": "Kişisel numara",
   "mobile.server.connectors.whatsapp.ownNumberDescription":
-    "Yalnızca “Kendine mesaj gönder” sohbetiniz ve izin verdiğiniz kişiler yazabilir. Yalnızca OpenBot için olan bir numarada kapatın.",
+    "Yalnızca “Kendine mesaj gönder” sohbetiniz ve izin verdiğiniz kişiler yazabilir. Yalnızca Spinbot için olan bir numarada kapatın.",
   "mobile.server.connectors.whatsapp.orchestratorTitle": "WhatsApp Düzenleyicisi",
   "mobile.server.connectors.whatsapp.orchestratorDescription":
-    "Bu ajan bağlı tüm numaralarınızdan OpenBot'a gelen mesajları alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve WhatsApp'ta yanıt verir.",
+    "Bu ajan bağlı tüm numaralarınızdan Spinbot'a gelen mesajları alır. Kısa olanları kendisi yanıtlar, diğer işleri doğru ajana iletir ve WhatsApp'ta yanıt verir.",
   "mobile.server.connectors.whatsapp.orchestratorNone":
     "WhatsApp Düzenleyicisini ekleyin, aksi takdirde WhatsApp yanıt alamaz.",
   "mobile.server.connectors.whatsapp.addAgent": "WhatsApp Düzenleyicisini ekleyin",
@@ -849,12 +849,12 @@ export const messages = {
   "mobile.server.connectors.whatsapp.linkDescription":
     "Numarayı seçin, ardından telefonunuzdaki WhatsApp'tan bu sunucuyu bağlayın.",
   "mobile.server.connectors.whatsapp.codeOnly":
-    "Telefonda eşleme koduyla bağlayın. Bunun yerine QR kodu taramak için bilgisayarda OpenBot'u kullanın.",
+    "Telefonda eşleme koduyla bağlayın. Bunun yerine QR kodu taramak için bilgisayarda Spinbot'u kullanın.",
   "mobile.server.connectors.whatsapp.kindLabel": "Numara",
   "mobile.server.connectors.whatsapp.kindPersonal": "Kişisel numaram",
   "mobile.server.connectors.whatsapp.kindPersonalDescription":
-    "OpenBot yalnızca “Kendine mesaj gönder” sohbetinizi ve izin verdiğiniz kişileri yanıtlar.",
-  "mobile.server.connectors.whatsapp.kindDedicated": "Yalnızca OpenBot için bir numara",
+    "Spinbot yalnızca “Kendine mesaj gönder” sohbetinizi ve izin verdiğiniz kişileri yanıtlar.",
+  "mobile.server.connectors.whatsapp.kindDedicated": "Yalnızca Spinbot için bir numara",
   "mobile.server.connectors.whatsapp.kindDedicatedDescription":
     "Tanımadığınız kişiler size iletmeleri için bir kod alır. Onları burada onaylarsınız.",
   "mobile.server.connectors.whatsapp.phoneLabel": "Telefon numarası",
@@ -875,19 +875,19 @@ export const messages = {
   "mobile.server.connectors.whatsapp.failedBusy":
     "Başka bir bağlama işlemi sürüyor. Bitmesini bekleyin, sonra tekrar deneyin.",
   "mobile.server.connectors.whatsapp.failedUnavailable":
-    "OpenBot WhatsApp'a ulaşamıyor. İnternet bağlantısını kontrol edin.",
+    "Spinbot WhatsApp'a ulaşamıyor. İnternet bağlantısını kontrol edin.",
   "mobile.server.connectors.whatsapp.tryAgain": "Tekrar dene",
   "mobile.server.connectors.whatsapp.agentStepDescription":
-    "Bu yeni ajan, {number} üzerinde ve daha sonra bağladığınız her numarada OpenBot'a gelen mesajları yanıtlar.",
-  "mobile.server.connectors.whatsapp.doneTitle": "OpenBot {number} ile bağlandı",
+    "Bu yeni ajan, {number} üzerinde ve daha sonra bağladığınız her numarada Spinbot'a gelen mesajları yanıtlar.",
+  "mobile.server.connectors.whatsapp.doneTitle": "Spinbot {number} ile bağlandı",
   "mobile.server.connectors.whatsapp.done": "Bitti",
   "mobile.server.connectors.whatsapp.disconnectTitle": "{number} bağlantısı kesilsin mi?",
   "mobile.server.connectors.whatsapp.disconnectBody":
-    "OpenBot {number} üzerinde WhatsApp oturumunu kapatır. OpenBot kapalıysa cihazı WhatsApp > Bağlı cihazlar bölümünden de kaldırın.",
+    "Spinbot {number} üzerinde WhatsApp oturumunu kapatır. Spinbot kapalıysa cihazı WhatsApp > Bağlı cihazlar bölümünden de kaldırın.",
   "mobile.server.connectors.whatsapp.disconnectEffect": "Kişiler artık {number} üzerinden ajanlarınıza ulaşamaz.",
-  "mobile.server.connectors.whatsapp.removeEffectKept": "Konuşmalar ve WhatsApp Düzenleyicisi OpenBot'ta kalır.",
+  "mobile.server.connectors.whatsapp.removeEffectKept": "Konuşmalar ve WhatsApp Düzenleyicisi Spinbot'ta kalır.",
   "mobile.server.connectors.whatsapp.removeEffectDeleted":
-    "Bu son numara olduğundan WhatsApp Düzenleyicisi ve konuşmaları OpenBot'tan silinir.",
+    "Bu son numara olduğundan WhatsApp Düzenleyicisi ve konuşmaları Spinbot'tan silinir.",
   "mobile.server.connectors.whatsapp.keep": "Bağlı tut",
   "mobile.server.connectors.whatsapp.sendersTitle": "{number} için kimler yazabilir",
   "mobile.server.connectors.whatsapp.sendersDescription": "Bu kişiler ve gruplar ajanlarınıza iş verebilir.",
@@ -907,7 +907,7 @@ export const messages = {
   "mobile.server.connectors.whatsapp.groupDescription": "Bu gruptaki kişiler ajanlarınıza iş verebilir.",
   "mobile.server.connectors.whatsapp.groupSearch": "Grup ara",
   "mobile.server.connectors.whatsapp.groupsLoading": "Gruplar okunuyor…",
-  "mobile.server.connectors.whatsapp.groupsLoadFailed": "OpenBot grupları okuyamadı",
+  "mobile.server.connectors.whatsapp.groupsLoadFailed": "Spinbot grupları okuyamadı",
   "mobile.server.connectors.whatsapp.groupsEmpty": "Bu numara hiçbir grupta değil.",
   "mobile.server.connectors.whatsapp.groupsNoMatch": "Bu adda bir grup yok.",
   "mobile.server.connectors.whatsapp.groupAdded": "Eklendi",
@@ -931,9 +931,9 @@ export const messages = {
   "mobile.server.providers.runtimesFailed": "Bu sunucunun indirmeleri yüklenemedi.",
   "mobile.server.providers.unavailable":
     "Sağlayıcılarını yönetmek için bu sunucuya sahip veya yönetici olarak bağlanın.",
-  "mobile.server.providers.unsupported": "Sağlayıcılarını burada yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.providers.unsupported": "Sağlayıcılarını burada yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.providers.signInUnsupported": "Bu sunucu, bu sağlayıcıda telefondan oturum açamaz.",
-  "mobile.server.providers.actionFailed": "OpenBot bu işlemi tamamlayamadı. Tekrar deneyin.",
+  "mobile.server.providers.actionFailed": "Spinbot bu işlemi tamamlayamadı. Tekrar deneyin.",
   "mobile.server.providers.openFailed": "Oturum açma sayfası açılamadı.",
   "mobile.server.providers.copyFailed": "Kod kopyalanamadı.",
   "mobile.server.providers.statusLabel": "Durum",
@@ -942,10 +942,10 @@ export const messages = {
   "mobile.server.providers.connect": "Bağlan",
   "mobile.server.providers.reconnect": "Yeniden bağlan",
   "mobile.server.providers.connectHint":
-    "Sunucu oturum açmayı başlatır. Ardından OpenBot adımları gösterir ve bunları bu telefonda tamamlarsınız.",
+    "Sunucu oturum açmayı başlatır. Ardından Spinbot adımları gösterir ve bunları bu telefonda tamamlarsınız.",
   "mobile.server.providers.relayHint":
-    "OpenBot, sağlayıcının oturum açma sayfasını bu telefonda açar. Bir şeyi geri kopyalamanız gerekirse OpenBot önce adımları gösterir.",
-  "mobile.server.providers.connectOnComputer": "Bu sağlayıcıyı bir bilgisayardaki OpenBot'ta bağlayın.",
+    "Spinbot, sağlayıcının oturum açma sayfasını bu telefonda açar. Bir şeyi geri kopyalamanız gerekirse Spinbot önce adımları gösterir.",
+  "mobile.server.providers.connectOnComputer": "Bu sağlayıcıyı bir bilgisayardaki Spinbot'ta bağlayın.",
   "mobile.server.providers.signInTo": "{name} oturumu aç",
   "mobile.server.providers.starting": "Sunucuda oturum açma başlatılıyor…",
   "mobile.server.providers.openPage": "Oturum açma sayfasını aç",
@@ -956,15 +956,15 @@ export const messages = {
     "Bir bilgisayarda ChatGPT'de güvenlik ayarlarını açın ve Codex için cihaz koduyla oturum açmayı açın. İş hesabında bunu çalışma alanı yöneticiniz açar.",
   "mobile.server.providers.codeStepCopy": "Kodu kopyalayın.",
   "mobile.server.providers.codeStepEnter": "Oturum açma sayfasını açın ve kodu girin.",
-  "mobile.server.providers.codeStepReturn": "OpenBot'a dönün. Oturum açma kendiliğinden tamamlanır.",
+  "mobile.server.providers.codeStepReturn": "Spinbot'a dönün. Oturum açma kendiliğinden tamamlanır.",
   "mobile.server.providers.pasteStepSignIn": "Oturum açma sayfasını açın ve oturum açın.",
   "mobile.server.providers.pasteStepCopy": "Sayfanın gösterdiği kodu kopyalayın.",
-  "mobile.server.providers.pasteStepReturn": "OpenBot'a dönün ve kodu aşağıya yapıştırın.",
+  "mobile.server.providers.pasteStepReturn": "Spinbot'a dönün ve kodu aşağıya yapıştırın.",
   "mobile.server.providers.relayStepSignIn": "Oturum açma sayfasını açın ve oturum açın.",
   "mobile.server.providers.relayStepBlank": "Son sayfa yüklenmez. Bu doğrudur.",
   "mobile.server.providers.relayStepCopy": "Adres çubuğuna dokunun ve adresin tamamını kopyalayın.",
-  "mobile.server.providers.relayStepReturn": "OpenBot'a dönün ve adresi aşağıya yapıştırın.",
-  "mobile.server.providers.linkHint": "Sayfada oturum açın. OpenBot kendiliğinden devam eder.",
+  "mobile.server.providers.relayStepReturn": "Spinbot'a dönün ve adresi aşağıya yapıştırın.",
+  "mobile.server.providers.linkHint": "Sayfada oturum açın. Spinbot kendiliğinden devam eder.",
   "mobile.server.providers.relayWaiting": "Sunucudan oturum açma sayfası bekleniyor…",
   "mobile.server.providers.code": "Sayfadaki kod",
   "mobile.server.providers.codePlaceholder": "Kodu buraya yapıştırın",
@@ -1047,7 +1047,7 @@ export const messages = {
   "mobile.server.providers.disconnect": "Bağlantıyı kes",
   "mobile.server.providers.disconnectTitle": "{name} bağlantısı kesilsin mi?",
   "mobile.server.providers.disconnectBody":
-    "OpenBot sunucuda {provider} oturumunu kapatır. Ajanlar {provider} yeniden bağlanana kadar bekler.",
+    "Spinbot sunucuda {provider} oturumunu kapatır. Ajanlar {provider} yeniden bağlanana kadar bekler.",
   "mobile.server.providers.resetUsage": "Kullanımı sıfırla",
   "mobile.server.providers.resettingUsage": "Sıfırlanıyor…",
   "mobile.server.providers.resetUsageTitle": "{name} kullanımı sıfırlansın mı?",
@@ -1065,7 +1065,7 @@ export const messages = {
   "mobile.server.providers.sectionRuntime": "Çalışma ortamı",
   "mobile.server.providers.updateTo": "{version} sürümüne güncelle",
   "mobile.server.providers.versionInstalledByUser": "{version} · senin yüklediğin",
-  "mobile.server.providers.versionDownloaded": "{version} · OpenBot tarafından indirildi",
+  "mobile.server.providers.versionDownloaded": "{version} · Spinbot tarafından indirildi",
   "mobile.server.providers.keyFree": "Ücretsiz",
   "mobile.server.providers.keyOptional": "İsteğe bağlı. Bir anahtar ücretli modeller ekler.",
   "mobile.server.providers.geminiKeyInUse":
@@ -1084,7 +1084,7 @@ export const messages = {
   "mobile.server.providers.connectFirst": "Önce {name} bağlantısını kurun.",
   "mobile.server.settings.mcp": "MCP sunucuları",
   "mobile.server.settings.mcpCount": { one: "{count} sunucu", other: "{count} sunucu" },
-  "mobile.server.mcp.unsupported": "MCP sunucularını burada yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.mcp.unsupported": "MCP sunucularını burada yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.mcp.unavailable": "MCP sunucularını yönetmek için bu sunucuya sahip veya yönetici olarak bağlanın.",
   "mobile.server.mcp.description":
     "MCP sunucuları bu sunucunun ajanlarına daha fazla araç verir. Claude ve Codex ajanları yalnızca bu listedeki sunucuları alır.",
@@ -1102,7 +1102,7 @@ export const messages = {
   "mobile.server.mcp.addConfirm": "Ekle",
   "mobile.server.mcp.name": "Ad",
   "mobile.server.mcp.namePlaceholder": "MCP sunucusu adı",
-  "mobile.server.mcp.nameReserved": "OpenBot {name} adını zaten kullanıyor.",
+  "mobile.server.mcp.nameReserved": "Spinbot {name} adını zaten kullanıyor.",
   "mobile.server.mcp.transport": "Aktarım",
   "mobile.server.mcp.stdio": "Komut (STDIO)",
   "mobile.server.mcp.http": "URL (HTTP)",
@@ -1113,12 +1113,12 @@ export const messages = {
   "mobile.server.mcp.command": "Komut",
   "mobile.server.mcp.commandHint": "Yalnızca program. Sonraki her kelimeyi Argümanlar alanına yazın.",
   "mobile.server.mcp.arguments": "Argümanlar",
-  "mobile.server.mcp.argumentsHint": "OpenBot her argümanı programa tek bir kelime olarak verir.",
+  "mobile.server.mcp.argumentsHint": "Spinbot her argümanı programa tek bir kelime olarak verir.",
   "mobile.server.mcp.addArgument": "Argüman ekle",
   "mobile.server.mcp.argument": "Argüman {position}",
   "mobile.server.mcp.removeArgument": "Argüman {position} kaldır",
   "mobile.server.mcp.environment": "Ortam değişkenleri",
-  "mobile.server.mcp.environmentHint": "OpenBot bu değişkenleri MCP sunucusu başladığında verir.",
+  "mobile.server.mcp.environmentHint": "Spinbot bu değişkenleri MCP sunucusu başladığında verir.",
   "mobile.server.mcp.addVariable": "Değişken ekle",
   "mobile.server.mcp.variableKey": "Değişken {position} adı",
   "mobile.server.mcp.variableValue": "Değişken {position} değeri",
@@ -1133,7 +1133,7 @@ export const messages = {
   "mobile.server.mcp.url": "Sunucu URL'si",
   "mobile.server.mcp.urlInvalid": "Bir http veya https adresi girin.",
   "mobile.server.mcp.headers": "Başlıklar",
-  "mobile.server.mcp.headersHint": "OpenBot bu başlıkları her istekle gönderir.",
+  "mobile.server.mcp.headersHint": "Spinbot bu başlıkları her istekle gönderir.",
   "mobile.server.mcp.addHeader": "Başlık ekle",
   "mobile.server.mcp.headerName": "Başlık {position} adı",
   "mobile.server.mcp.headerValue": "Başlık {position} değeri",
@@ -1149,7 +1149,7 @@ export const messages = {
   "mobile.server.mcp.testFailed": "MCP sunucusu yanıt vermedi.",
   "mobile.server.mcp.connected": { one: "Bağlandı · {count} araç", other: "Bağlandı · {count} araç" },
   "mobile.server.mcp.signInOnComputer":
-    "Bu MCP sunucusu oturum açmanızı istiyor. Bir bilgisayardaki OpenBot'tan oturum açın, sonra yeniden test edin.",
+    "Bu MCP sunucusu oturum açmanızı istiyor. Bir bilgisayardaki Spinbot'tan oturum açın, sonra yeniden test edin.",
   "mobile.server.mcp.signedInDescription": "{server} bu MCP sunucusunda oturum açtı.",
   "mobile.server.mcp.signOut": "Oturumu kapat",
   "mobile.server.mcp.saveFailed": "Değişiklik kaydedilemedi. Tekrar deneyin.",
@@ -1188,8 +1188,8 @@ export const messages = {
   "mobile.server.settings.updates": "Güncellemeler",
   "mobile.server.settings.updateAvailable": "Güncelleme var",
   "mobile.server.route.updates": "Güncellemeler",
-  "mobile.server.update.hostTitle": "{name} üzerinde OpenBot",
-  "mobile.server.update.version": "OpenBot {version}",
+  "mobile.server.update.hostTitle": "{name} üzerinde Spinbot",
+  "mobile.server.update.version": "Spinbot {version}",
   "mobile.server.update.status.idle": "En son sürümü bulmak için güncellemeleri denetleyin.",
   "mobile.server.update.status.checking": "Güncellemeler denetleniyor…",
   "mobile.server.update.status.available": "{version} sürümü mevcut.",
@@ -1197,28 +1197,28 @@ export const messages = {
   "mobile.server.update.status.downloadingUnknown": "{version} indiriliyor…",
   "mobile.server.update.status.ready": "{version} indirildi.",
   "mobile.server.update.status.installing": "{name}, güncellemeyi yüklemek için yeniden başlatılıyor.",
-  "mobile.server.update.status.upToDate": "{name} üzerinde OpenBot güncel.",
+  "mobile.server.update.status.upToDate": "{name} üzerinde Spinbot güncel.",
   "mobile.server.update.status.checkFailed": "{name} güncellemeleri denetleyemedi. Tekrar deneyin.",
   "mobile.server.update.status.downloadFailed": "{name} güncellemeyi indiremedi. Tekrar deneyin.",
   "mobile.server.update.status.installFailed":
-    "{name} güncellemeyi yükleyemedi. O bilgisayarın başka hiçbir kullanıcısının OpenBot çalıştırmadığından emin olun, ardından tekrar deneyin.",
+    "{name} güncellemeyi yükleyemedi. O bilgisayarın başka hiçbir kullanıcısının Spinbot çalıştırmadığından emin olun, ardından tekrar deneyin.",
   "mobile.server.update.releaseCheckFailed":
     "{name} sürüm akışını okuyamadı. Ana makinenin ağ bağlantısını kontrol edin, ardından tekrar deneyin.",
   "mobile.server.update.releaseUnavailable":
     "Bu derleme için sürüm denetimleri kullanılamıyor. Ana makine yöneticisinden uyumlu bir sürümü kontrol etmesini isteyin.",
   "mobile.server.update.externalTitle": "Kurulumu ana makine yönetir",
   "mobile.server.update.path.hostManager":
-    "OpenBot Host Manager, tüm kullanıcılar boştayken güncellemeleri yükler. Bir güncelleme başlamazsa ana makine yöneticisinden Host Manager durumunu kontrol etmesini isteyin.",
+    "Spinbot Host Manager, tüm kullanıcılar boştayken güncellemeleri yükler. Bir güncelleme başlamazsa ana makine yöneticisinden Host Manager durumunu kontrol etmesini isteyin.",
   "mobile.server.update.path.hosted":
     "Barındırılan hizmet güncellemeleri arka planda indirir. İndirilen bir güncelleme, sunucu bir sonraki başlatılışında başlar. Sunucuyu durdurup sürdürmeden önce etkin çalışmanın bitmesini bekleyin. Sunucu eski bir sürümde kalırsa ana makine yöneticisiyle iletişime geçin.",
   "mobile.server.update.path.system":
-    "En son sürümü yüklemek için ana makinede sudo openbot update komutunu çalıştırın. Bu komut OpenBot'u durdurur. Önce etkin çalışmanın bitmesini bekleyin. Otomatik indirmeler bir sonraki önyüklemede yüklenir.",
+    "En son sürümü yüklemek için ana makinede sudo openbot update komutunu çalıştırın. Bu komut Spinbot'u durdurur. Önce etkin çalışmanın bitmesini bekleyin. Otomatik indirmeler bir sonraki önyüklemede yüklenir.",
   "mobile.server.update.path.container":
-    "Docker ana makinesinde yeni OpenBot görüntüsünü çekin ve kapsayıcıyı aynı veri birimleriyle yeniden oluşturun. Önce etkin çalışmanın bitmesini bekleyin. Verilerinizi korumak için mevcut birimleri saklayın.",
+    "Docker ana makinesinde yeni Spinbot görüntüsünü çekin ve kapsayıcıyı aynı veri birimleriyle yeniden oluşturun. Önce etkin çalışmanın bitmesini bekleyin. Verilerinizi korumak için mevcut birimleri saklayın.",
   "mobile.server.update.path.manual":
-    "Bu kurulum kendini değiştiremez. Ana makine yöneticisinden uyumlu sürümü github.com/nightly-labs/openbot/releases adresinden yüklemesini isteyin. Mevcut OpenBot verilerini saklayın.",
+    "Bu kurulum kendini değiştiremez. Ana makine yöneticisinden uyumlu sürümü github.com/nightly-labs/openbot/releases adresinden yüklemesini isteyin. Mevcut Spinbot verilerini saklayın.",
   "mobile.server.update.path.unavailable":
-    "Bu bir geliştirme derlemesidir. Güncellemeleri denetlemek için yüklü bir OpenBot sürümü kullanın.",
+    "Bu bir geliştirme derlemesidir. Güncellemeleri denetlemek için yüklü bir Spinbot sürümü kullanın.",
   "mobile.server.update.check": "Güncellemeleri denetle",
   "mobile.server.update.start": "Boşta olduğunda güncelle",
   "mobile.server.update.restartNow": "Şimdi yeniden başlat",
@@ -1228,27 +1228,27 @@ export const messages = {
   "mobile.server.update.requestedBy": "{member} bu güncellemeyi istedi.",
   "mobile.server.update.automatic": "{name} güncellemeleri otomatik olarak yükler.",
   "mobile.server.update.autoDownloadTitle": "Güncellemeleri otomatik olarak indir",
-  "mobile.server.update.autoDownloadDescription": "{name}, OpenBot'un her yeni sürümü çıktığında indirir.",
+  "mobile.server.update.autoDownloadDescription": "{name}, Spinbot'un her yeni sürümü çıktığında indirir.",
   "mobile.server.update.autoInstallTitle": "Güncellemeleri otomatik olarak yükle",
   "mobile.server.update.autoInstallDescription":
     "{name}, ajanları boşta olduğunda indirilen güncellemeyle yeniden başlar. Üyelerin bağlantısı kısa bir süre için kesilir ve otomatik olarak tekrar bağlanır.",
   "mobile.server.update.waitingFor": "{reasons} bekleniyor.",
   "mobile.server.update.disabledTitle": "Uzaktan güncellemeler kapalı",
   "mobile.server.update.disabledDescription":
-    "{name} kullanıcısı sunucu üyelerinin güncelleme yapmasını kapattı. OpenBot uygulamasını güncellemesini veya ayarı açmasını isteyin.",
-  "mobile.server.update.managedTitle": "Güncellemeleri OpenBot Host Manager yönetiyor",
+    "{name} kullanıcısı sunucu üyelerinin güncelleme yapmasını kapattı. Spinbot uygulamasını güncellemesini veya ayarı açmasını isteyin.",
+  "mobile.server.update.managedTitle": "Güncellemeleri Spinbot Host Manager yönetiyor",
   "mobile.server.update.managedDescription":
-    "OpenBot Host Manager, {name} sunucusunu günceller. Ana makine yöneticisiyle iletişime geçin.",
+    "Spinbot Host Manager, {name} sunucusunu günceller. Ana makine yöneticisiyle iletişime geçin.",
   "mobile.server.update.unsupportedTitle": "{name} kendini güncelleyemiyor",
   "mobile.server.update.unsupportedDescription":
-    "Bu OpenBot derlemesinde güncelleyici yok. {name} üzerine yeni bir sürüm yükleyin.",
+    "Bu Spinbot derlemesinde güncelleyici yok. {name} üzerine yeni bir sürüm yükleyin.",
   "mobile.server.update.restarting": "Yeniden başlatılıyor…",
   "mobile.server.update.loadFailed": "{name} güncelleme durumu yüklenemedi.",
-  "mobile.server.update.dialog.offerTitle": "{name} sunucusunu OpenBot {version} sürümüne güncelle",
+  "mobile.server.update.dialog.offerTitle": "{name} sunucusunu Spinbot {version} sürümüne güncelle",
   "mobile.server.update.dialog.offerDescription":
-    "{name}, OpenBot {current} kullanıyor. Önce güncellemeyi indirir, ardından yeniden başlar.",
+    "{name}, Spinbot {current} kullanıyor. Önce güncellemeyi indirir, ardından yeniden başlar.",
   "mobile.server.update.dialog.offerReadyDescription":
-    "{name}, OpenBot {current} kullanıyor. Güncelleme indirildi. {name}, güncellemeyi yüklemek için yeniden başlar.",
+    "{name}, Spinbot {current} kullanıyor. Güncelleme indirildi. {name}, güncellemeyi yüklemek için yeniden başlar.",
   "mobile.server.update.dialog.waitIdleDescription":
     "Yeniden başlatma, ajan turlarının ve rutin çalıştırmalarının bitmesini bekler.",
   "mobile.server.update.dialog.updateNow": "Şimdi güncelle",
@@ -1264,10 +1264,10 @@ export const messages = {
   "mobile.server.update.reason.fileTransfer": "bir dosya aktarımı",
   "mobile.server.update.reason.browserControl": "bir ajan tarafından tarayıcı kontrolü",
   "mobile.server.update.reason.updateOperation": "başka bir güncelleme adımı",
-  "mobile.server.update.reason.initialization": "OpenBot'un başlatılması",
+  "mobile.server.update.reason.initialization": "Spinbot'un başlatılması",
   "mobile.server.update.reason.other": "diğer çalışmalar",
   "mobile.server.update.actionFailed": "Sunucu eylemi başarısız oldu.",
-  "mobile.server.update.unavailable": "OpenBot güncellemelerini görmek için bu sunucuya bağlanın.",
+  "mobile.server.update.unavailable": "Spinbot güncellemelerini görmek için bu sunucuya bağlanın.",
   "mobile.server.update.loading": "Güncellemeler yükleniyor…",
   "mobile.server.route.sites": "Siteler",
   "mobile.server.settings.sites": "Siteler",
@@ -1286,13 +1286,13 @@ export const messages = {
   "mobile.server.sites.deleteDescription": "Bu adres hemen 410 Gone döndürecektir.",
   "mobile.server.sites.deleteFailed": "Site silinemedi.",
   "mobile.server.sites.openFailed": "Site açılamadı.",
-  "mobile.server.sites.unsupported": "Sitelerini burada görmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.sites.unsupported": "Sitelerini burada görmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.sites.offline": "Sitelerini görmek için bu sunucuya bağlanın.",
   "mobile.server.route.roles": "İzinler",
   "mobile.server.route.role": "Rol",
   "mobile.server.roles.description":
     "Üyelerin kullanabileceği ajanları seçin. Sahipler ve yöneticiler tüm ajanları kullanabilir.",
-  "mobile.server.roles.unsupported": "Rolleri yönetmek için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.roles.unsupported": "Rolleri yönetmek için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.roles.unavailable": "Rolleri yalnızca çevrimiçi bir sunucunun sahibi veya yöneticisi yönetebilir.",
   "mobile.server.roles.loading": "Roller yükleniyor…",
   "mobile.server.roles.loadFailed": "Bu sunucunun rolleri yüklenemedi.",
@@ -1328,7 +1328,7 @@ export const messages = {
   "mobile.server.route.audit": "Denetim günlüğü",
   "mobile.server.audit.description":
     "Bu sunucunun üyelerinde, rollerinde ve ajan erişiminde yapılan değişiklikler, en yenisi önce. Sunucu en yeni 500 değişikliği tutar.",
-  "mobile.server.audit.unsupported": "Denetim günlüğünü görmek için bu sunucudaki OpenBot’u güncelleyin.",
+  "mobile.server.audit.unsupported": "Denetim günlüğünü görmek için bu sunucudaki Spinbot’u güncelleyin.",
   "mobile.server.audit.unavailable":
     "Denetim günlüğünü yalnızca çevrim içi bir sunucunun sahibi veya yöneticisi görebilir.",
   "mobile.server.audit.loading": "Değişiklikler yükleniyor…",
@@ -1357,7 +1357,7 @@ export const messages = {
   // Server settings › Import agents: Grok Bot and Hermes exports (`agent-import-v1`).
   "mobile.server.settings.importAgents": "Ajanları içe aktar",
   "mobile.server.route.import": "Ajanları içe aktar",
-  "mobile.server.import.unsupported": "Ajanları buradan içe aktarmak için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.import.unsupported": "Ajanları buradan içe aktarmak için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.import.unavailable": "Ajanları içe aktarmak için bu sunucuya bağlanın.",
   "mobile.server.import.count.agent": { one: "{count} ajan", other: "{count} ajan" },
   "mobile.server.import.count.channel": { one: "{count} kanal", other: "{count} kanal" },
@@ -1367,10 +1367,10 @@ export const messages = {
   "mobile.server.import.count.file": { one: "{count} dosya", other: "{count} dosya" },
   "mobile.server.import.sourceTitle": "Ajanlarınız şu anda nerede?",
   "mobile.server.import.sourceLede":
-    "OpenBot onları bu sunucuya kopyalar. Herhangi bir şey değişmeden önce her öğeyi görürsünüz.",
+    "Spinbot onları bu sunucuya kopyalar. Herhangi bir şey değişmeden önce her öğeyi görürsünüz.",
   "mobile.server.import.hermesNote": "Hermes'ten bir .zip dosyası dışa aktarın.",
   "mobile.server.import.grokNote": "Bulutta. Oradaki bir dışa aktarma ajanı bir .zip dosyası oluşturur.",
-  "mobile.server.import.transfer": "Başka bir OpenBot sunucusu",
+  "mobile.server.import.transfer": "Başka bir Spinbot sunucusu",
   "mobile.server.import.transferNote": "Ajanları ve ayarları birlikte taşımak için Aktarım'ı kullanın.",
   "mobile.server.import.grokLede":
     "Grok Bot'taki bir dışa aktarma ajanı; isimleri, talimatları, avatarları, becerileri, rutinleri, bellekleri ve dahil ettiğiniz dosyaları tek bir .zip dosyasına paketler.",
@@ -1432,7 +1432,7 @@ export const messages = {
   "mobile.server.route.transfer": "Aktarım",
   "mobile.server.route.transferExport": "Dışa aktar",
   "mobile.server.route.transferImport": "İçe aktar",
-  "mobile.server.transfer.unsupported": "Aktarımı buradan yapmak için bu sunucudaki OpenBot'u güncelleyin.",
+  "mobile.server.transfer.unsupported": "Aktarımı buradan yapmak için bu sunucudaki Spinbot'u güncelleyin.",
   "mobile.server.transfer.unavailable": "Aktarım yapmak için bu sunucuya sahip veya yönetici olarak bağlanın.",
   "mobile.server.transfer.title": "Bu sunucuyu başka bir bilgisayara taşıyın",
   "mobile.server.transfer.lede": "Ajanları, becerileri, rutinleri, bellekleri ve dosyaları tek bir dosyada toplanır.",
@@ -1475,8 +1475,8 @@ export const messages = {
   "mobile.server.transfer.reading": "Dosya okunuyor…",
   "mobile.server.transfer.sending": "Dosya gönderiliyor… %{percent}",
   "mobile.server.transfer.openFailed": "Dosya açılamadı.",
-  "mobile.server.transfer.source": "OpenBot {version} · {date} tarihinde dışa aktarıldı",
-  "mobile.server.transfer.sourceNoDate": "OpenBot {version}",
+  "mobile.server.transfer.source": "Spinbot {version} · {date} tarihinde dışa aktarıldı",
+  "mobile.server.transfer.sourceNoDate": "Spinbot {version}",
   "mobile.server.transfer.importWarnings": "İçe aktarma başlamadan önce",
   "mobile.server.transfer.importAgents": "Dosyadaki ajanlar",
   "mobile.server.transfer.nameExists": "Ad zaten kullanılıyor",

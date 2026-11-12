@@ -943,7 +943,7 @@ class McpOAuthClientProvider implements OAuthClientProvider {
     const scope = this.#record().app?.scope;
     const methods = this.#discoveryState?.authorizationServerMetadata?.token_endpoint_auth_methods_supported;
     return {
-      client_name: "OpenBot",
+      client_name: "Spinbot",
       client_uri: "https://openbot.run",
       logo_uri: "https://openbot.run/icon-512x512.png",
       redirect_uris: [this.#retryRedirectUrl ?? this.#options.redirectUrl],

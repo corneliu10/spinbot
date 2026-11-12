@@ -8,12 +8,12 @@ export const messages = {
   "mobile.settings.language.system": "Predefinita di sistema",
   "mobile.settings.language.footer":
     "«Predefinita di sistema» segue la prima lingua nelle impostazioni del telefono. Il testo non ancora tradotto resta in inglese.",
-  "mobile.settings.language.restartTitle": "Riavviare OpenBot?",
+  "mobile.settings.language.restartTitle": "Riavviare Spinbot?",
   "mobile.settings.language.restartBody":
-    "Questa lingua si legge nell’altra direzione. Le schermate cambiano direzione al prossimo avvio di OpenBot. Se dopo il riavvio le schermate non sono ancora corrette, chiudi OpenBot dal selettore delle app e aprilo di nuovo.",
+    "Questa lingua si legge nell’altra direzione. Le schermate cambiano direzione al prossimo avvio di Spinbot. Se dopo il riavvio le schermate non sono ancora corrette, chiudi Spinbot dal selettore delle app e aprilo di nuovo.",
   "mobile.settings.language.restartNow": "Riavvia ora",
   "mobile.settings.language.restartFailed":
-    "Impossibile riavviare OpenBot. Le schermate cambiano direzione la prossima volta che apri OpenBot.",
+    "Impossibile riavviare Spinbot. Le schermate cambiano direzione la prossima volta che apri Spinbot.",
   "mobile.settings.dictation.language": "Lingua di dettatura",
   "mobile.settings.about.development": "Sviluppo",
   "mobile.settings.about.openFailed": "Impossibile aprire il link. Riprova.",
@@ -22,7 +22,7 @@ export const messages = {
   "mobile.settings.about.privacy": "Informativa sulla privacy",
   "mobile.settings.home.profile": "Profilo",
   "mobile.settings.home.preferences": "Preferenze",
-  "mobile.settings.home.about": "Informazioni su OpenBot",
+  "mobile.settings.home.about": "Informazioni su Spinbot",
   "mobile.settings.home.support": "Assistenza",
   "mobile.settings.home.supportHint": "Ricevi aiuto e salva un log di assistenza",
   "mobile.settings.support.help": "Chiedi aiuto",
@@ -40,7 +40,7 @@ export const messages = {
   "mobile.settings.support.clearTitle": "Cancellare il log di assistenza?",
   "mobile.settings.support.clearBody": "Verranno rimossi tutti gli eventi del log su questo telefono.",
   "mobile.settings.support.logFooter":
-    "Il log resta su questo telefono e OpenBot non lo invia. Registra i passaggi di connessione, le richieste e gli errori. Non registra messaggi o file e nasconde password e token. Leggi il file prima di condividerlo.",
+    "Il log resta su questo telefono e Spinbot non lo invia. Registra i passaggi di connessione, le richieste e gli errori. Non registra messaggi o file e nasconde password e token. Leggi il file prima di condividerlo.",
   "mobile.settings.support.saveFailed": "Impossibile salvare il file del log. Riprova.",
   "mobile.settings.support.sharingUnavailable": "La condivisione non è disponibile su questo telefono.",
   "mobile.settings.support.newestFirst": "Prima i più recenti.",
@@ -108,31 +108,31 @@ export const messages = {
   "mobile.settings.feedback.retry": "Riprova a salvare l'impostazione del feedback aptico",
   "mobile.settings.liveActivities.title": "Live Activity",
   "mobile.settings.liveActivities.footer":
-    "Mostra il lavoro degli agenti, i messaggi, le domande e le approvazioni nella schermata di blocco e nella Dynamic Island mentre OpenBot è in esecuzione.",
+    "Mostra il lavoro degli agenti, i messaggi, le domande e le approvazioni nella schermata di blocco e nella Dynamic Island mentre Spinbot è in esecuzione.",
   "mobile.settings.liveActivities.toggle": "Mostra l'attività degli agenti",
   "mobile.settings.liveActivities.retry": "Riprova a salvare l'impostazione delle Live Activity",
   "mobile.settings.notifications.title": "Notifiche",
   "mobile.settings.notifications.toggle": "Consenti notifiche",
   "mobile.settings.notifications.footer":
-    "Gli agenti ti avvisano quando finiscono, si fermano per un errore o hanno bisogno di una tua risposta, di un'approvazione o di un passaggio nel browser. Non arriva nulla mentre usi OpenBot qui o nell'app desktop. Mentre la Live Activity è visibile, l'evento lo mostra lei.",
+    "Gli agenti ti avvisano quando finiscono, si fermano per un errore o hanno bisogno di una tua risposta, di un'approvazione o di un passaggio nel browser. Non arriva nulla mentre usi Spinbot qui o nell'app desktop. Mentre la Live Activity è visibile, l'evento lo mostra lei.",
   "mobile.settings.notifications.footerAndroid":
-    "Gli agenti ti avvisano quando finiscono, si fermano per un errore o hanno bisogno di una tua risposta, di un'approvazione o di un passaggio nel browser. Non arriva nulla mentre usi OpenBot qui o nell'app desktop.",
-  "mobile.settings.notifications.denied": "Le notifiche di OpenBot sono disattivate nelle Impostazioni di iOS.",
+    "Gli agenti ti avvisano quando finiscono, si fermano per un errore o hanno bisogno di una tua risposta, di un'approvazione o di un passaggio nel browser. Non arriva nulla mentre usi Spinbot qui o nell'app desktop.",
+  "mobile.settings.notifications.denied": "Le notifiche di Spinbot sono disattivate nelle Impostazioni di iOS.",
   "mobile.settings.notifications.deniedAndroid":
-    "Le notifiche di OpenBot sono disattivate nelle impostazioni di Android.",
+    "Le notifiche di Spinbot sono disattivate nelle impostazioni di Android.",
   "mobile.settings.notifications.openSettings": "Apri le Impostazioni di iOS",
   "mobile.settings.notifications.openSettingsAndroid": "Apri le impostazioni di Android",
   "mobile.settings.notifications.preview": "Mostra l'anteprima della risposta",
   "mobile.settings.notifications.previewFooter":
-    "Mostra l'inizio di una risposta, una domanda o l'azione da approvare. Apple e il servizio account di OpenBot non possono leggerla.",
+    "Mostra l'inizio di una risposta, una domanda o l'azione da approvare. Apple e il servizio account di Spinbot non possono leggerla.",
   "mobile.settings.notifications.previewFooterAndroid":
-    "Mostra l'inizio di una risposta, una domanda o l'azione da approvare. Google e il servizio account di OpenBot non possono leggerla.",
+    "Mostra l'inizio di una risposta, una domanda o l'azione da approvare. Google e il servizio account di Spinbot non possono leggerla.",
   "mobile.settings.notifications.threadReplies": "Risposte nei thread",
   "mobile.settings.notifications.threadRepliesFooter":
     "Le risposte nei thread ti avvisano quando un agente finisce o si ferma per un errore in un thread. Senza, un thread ti avvisa comunque quando ha bisogno di una tua risposta o di un'approvazione.",
   "mobile.settings.notifications.sound": "Suono",
   "mobile.settings.notifications.playSound": "Riproduci suono",
-  "mobile.settings.notifications.sound.openbot": "OpenBot",
+  "mobile.settings.notifications.sound.openbot": "Spinbot",
   "mobile.settings.notifications.sound.warm": "Caldo",
   "mobile.settings.notifications.sound.mech": "Meccanico",
   "mobile.settings.notifications.sound.bubble": "Frizzante",
@@ -140,9 +140,9 @@ export const messages = {
   "mobile.settings.notifications.sound.default": "Predefinito di iOS",
   "mobile.settings.notifications.sound.defaultAndroid": "Predefinito di Android",
   "mobile.settings.notifications.soundFooter":
-    "Le notifiche e la Live Activity riproducono questo suono. La Live Activity accende anche lo schermo. Il suono OpenBot è quello che l'app desktop riproduce quando un'attività finisce. I quattro suoni successivi sono quelli dei temi sonori dell'app desktop.",
+    "Le notifiche e la Live Activity riproducono questo suono. La Live Activity accende anche lo schermo. Il suono Spinbot è quello che l'app desktop riproduce quando un'attività finisce. I quattro suoni successivi sono quelli dei temi sonori dell'app desktop.",
   "mobile.settings.notifications.soundFooterAndroid":
-    "Le notifiche riproducono questo suono. Il suono OpenBot è quello che l'app desktop riproduce quando un'attività finisce. I quattro suoni successivi sono quelli dei temi sonori dell'app desktop.",
+    "Le notifiche riproducono questo suono. Il suono Spinbot è quello che l'app desktop riproduce quando un'attività finisce. I quattro suoni successivi sono quelli dei temi sonori dell'app desktop.",
   "mobile.settings.notifications.level.all": "Tutta l'attività",
   "mobile.settings.notifications.level.needsMe": "Solo quando ha bisogno di me",
   "mobile.settings.notifications.level.nothing": "Niente",
@@ -158,7 +158,7 @@ export const messages = {
   "mobile.settings.notifications.serverFooter":
     "Gli eventi di questo server che inviano notifiche a questo telefono. L'app desktop ha le sue impostazioni.",
   "mobile.settings.notifications.serverUnsupported":
-    "Questo server non può inviare notifiche. Aggiorna OpenBot sul computer che lo esegue.",
+    "Questo server non può inviare notifiche. Aggiorna Spinbot sul computer che lo esegue.",
   "mobile.settings.notifications.thisPhone": "Questo telefono",
   "mobile.settings.notifications.whatYouHear": "Cosa ti arriva",
   "mobile.settings.notifications.wholeServer": "Tutto il server",
@@ -172,7 +172,7 @@ export const messages = {
   "mobile.settings.notifications.chooseAgent": "Scegli per un agente",
   "mobile.settings.notifications.chooseAnotherAgent": "Scegli un altro agente",
   "mobile.settings.notifications.levelsFooter": "Tocca di nuovo il livello di un agente perché segua il server.",
-  "mobile.settings.notifications.agentsUnsupported": "Aggiorna OpenBot su questo server per scegliere gli agenti.",
+  "mobile.settings.notifications.agentsUnsupported": "Aggiorna Spinbot su questo server per scegliere gli agenti.",
   "mobile.settings.notifications.agentsOffline": "Gli agenti compaiono quando questo server è online.",
   "mobile.settings.notifications.scopeFooter":
     "Le tue scelte valgono su tutti i tuoi dispositivi. Il silenzio vale solo per questo telefono.",
@@ -180,7 +180,7 @@ export const messages = {
   "mobile.settings.notifications.channelSilent": "Notifiche degli agenti (senza suono)",
   "mobile.settings.privacy.title": "Privacy",
   "mobile.settings.privacy.footer":
-    "L'uso delle funzioni e i risultati delle connessioni di questo telefono vanno sempre alle analisi di OpenBot. Attivo: con l'ID del tuo account e l'email. Disattivo: solo con un ID di installazione casuale. Il contenuto dei messaggi e i file non vengono inviati.",
+    "L'uso delle funzioni e i risultati delle connessioni di questo telefono vanno sempre alle analisi di Spinbot. Attivo: con l'ID del tuo account e l'email. Disattivo: solo con un ID di installazione casuale. Il contenuto dei messaggi e i file non vengono inviati.",
   "mobile.settings.privacy.analytics": "Collega le analisi al mio account",
   "mobile.settings.privacy.retry": "Riprova a salvare l'impostazione della privacy",
   "mobile.settings.conversations.title": "Conversazioni",
@@ -200,7 +200,7 @@ export const messages = {
   "mobile.settings.profile.security": "Sicurezza",
   "mobile.settings.profile.accountSessions": "Sessioni dell'account",
   "mobile.settings.profile.signOutTitle": "Uscire?",
-  "mobile.settings.profile.signOutBody": "Per riconnetterti, scansiona un nuovo codice da OpenBot sul desktop.",
+  "mobile.settings.profile.signOutBody": "Per riconnetterti, scansiona un nuovo codice da Spinbot sul desktop.",
   "mobile.settings.profile.signOut": "Esci",
   "mobile.settings.profile.options": "Opzioni profilo",
   "mobile.settings.profile.activity.title": "Attività su {server}",
@@ -238,7 +238,7 @@ export const messages = {
   "mobile.settings.profile.models.title": "Utilizzo dei modelli",
   "mobile.settings.profile.share": "Condividi",
   "mobile.settings.profile.shareTitle": "Condividi la tua attività",
-  "mobile.settings.profile.share.caption": "I miei ultimi sei mesi con OpenBot",
+  "mobile.settings.profile.share.caption": "I miei ultimi sei mesi con Spinbot",
   "mobile.settings.profile.share.createFailed": "Impossibile creare l'immagine.",
   "mobile.settings.profile.share.fileName": "openbot-activity.png",
   "mobile.settings.voice.title": "Voce",
@@ -273,7 +273,7 @@ export const messages = {
   "mobile.settings.voice.supertonic.male": "Voce maschile {number}",
   "mobile.settings.voice.elevenLabs.title": "ElevenLabs",
   "mobile.settings.voice.elevenLabs.footer":
-    "OpenBot invia il testo di ogni risposta a ElevenLabs con la tua chiave, ed ElevenLabs addebita il tuo account. La chiave resta nel portachiavi di questo telefono.",
+    "Spinbot invia il testo di ogni risposta a ElevenLabs con la tua chiave, ed ElevenLabs addebita il tuo account. La chiave resta nel portachiavi di questo telefono.",
   "mobile.settings.voice.elevenLabs.key": "Chiave API",
   "mobile.settings.voice.elevenLabs.keySaved": "Salvata su questo telefono",
   "mobile.settings.voice.elevenLabs.chooseVoice": "Scegli una voce",
@@ -283,7 +283,7 @@ export const messages = {
   "mobile.settings.voice.elevenLabs.removeBody": "Supertonic 3 torna a leggere le risposte.",
   "mobile.settings.voice.elevenLabs.saveKey": "Salva chiave",
   "mobile.settings.voice.elevenLabs.testing": "Verifica della chiave",
-  "mobile.settings.voice.elevenLabs.keyHint": "OpenBot verifica i primi due permessi prima di salvare la chiave.",
+  "mobile.settings.voice.elevenLabs.keyHint": "Spinbot verifica i primi due permessi prima di salvare la chiave.",
   "mobile.settings.voice.elevenLabs.testFailed": "ElevenLabs non ha risposto. Riprova.",
   "mobile.settings.voice.elevenLabs.refused": "ElevenLabs ha rifiutato la richiesta: {reason}",
   "mobile.settings.voice.elevenLabs.getKey": "Ottieni una chiave API",
@@ -339,11 +339,11 @@ export const messages = {
   "mobile.settings.voice.pause.title": "Pausa prima dell’invio",
   "mobile.settings.voice.pause.label": "Attendi nuove parole",
   "mobile.settings.voice.pause.footer":
-    "In una conversazione vocale, OpenBot invia le tue parole quando non riconosce nuove parole per questo tempo. Il rumore senza parole non lo tiene in ascolto. Scegli una pausa più lunga se parli lentamente o ti fermi a pensare.",
+    "In una conversazione vocale, Spinbot invia le tue parole quando non riconosce nuove parole per questo tempo. Il rumore senza parole non lo tiene in ascolto. Scegli una pausa più lunga se parli lentamente o ti fermi a pensare.",
   "mobile.settings.voice.pause.seconds": "{seconds} s",
   "mobile.settings.voice.speed.title": "Velocità risposte",
   "mobile.settings.voice.speed.footer":
-    "La velocità delle risposte che OpenBot legge ad alta voce, anche in una conversazione vocale.",
+    "La velocità delle risposte che Spinbot legge ad alta voce, anche in una conversazione vocale.",
   "mobile.settings.voice.speed.value": "{speed}×",
   "mobile.settings.voice.gptLive.title": "GPT Live Voice",
   "mobile.settings.voice.gptLive.footer":
@@ -357,13 +357,13 @@ export const messages = {
   "mobile.settings.voice.gptLive.status.ready": "Pronto",
   "mobile.settings.voice.gptLive.status.supported": "Supportato",
   "mobile.settings.voice.gptLive.status.offline": "Offline",
-  "mobile.settings.voice.gptLive.status.update": "Serve una versione più recente di OpenBot sul suo computer",
+  "mobile.settings.voice.gptLive.status.update": "Serve una versione più recente di Spinbot sul suo computer",
   "mobile.settings.voice.gptLive.status.signIn": "Accedi a Codex con ChatGPT",
   "mobile.settings.voice.server.title": "Server vocale",
   "mobile.settings.voice.server.row": "Server compatibile con OpenAI",
   "mobile.settings.voice.server.notSetUp": "Non configurato",
   "mobile.settings.voice.server.footer":
-    "Il tuo server con le route /v1/audio di OpenAI, come Speaches o Kokoro-FastAPI, come sul desktop. OpenBot invia le tue registrazioni e il testo delle risposte solo al suo indirizzo, e il telefono deve poterlo raggiungere, per esempio sulla stessa rete.",
+    "Il tuo server con le route /v1/audio di OpenAI, come Speaches o Kokoro-FastAPI, come sul desktop. Spinbot invia le tue registrazioni e il testo delle risposte solo al suo indirizzo, e il telefono deve poterlo raggiungere, per esempio sulla stessa rete.",
   "mobile.settings.voice.server.choice": "Il tuo server vocale",
   "mobile.settings.voice.server.dictationReady": "Sul tuo server vocale · {model}",
   "mobile.settings.voice.server.dictationOff": "Configura la dettatura sul tuo server vocale",
@@ -388,7 +388,7 @@ export const messages = {
     "Il riconoscimento del telefono e Supertonic 3 subentrano dove il server ascoltava o parlava, e la sua chiave API viene eliminata da questo telefono.",
   "mobile.settings.voice.server.removeFailed": "Impossibile rimuovere il server vocale.",
   "mobile.settings.voice.elevenLabs.recognitionFooter":
-    "OpenBot invia la tua voce a ElevenLabs con un token monouso, ed ElevenLabs lo addebita sul tuo account. La chiave resta su questo telefono.",
+    "Spinbot invia la tua voce a ElevenLabs con un token monouso, ed ElevenLabs lo addebita sul tuo account. La chiave resta su questo telefono.",
   "mobile.settings.voice.elevenLabs.model.title": "Modello",
   "mobile.settings.voice.elevenLabs.model.footer":
     "Ogni modello ha un suo prezzo su ElevenLabs. La modifica vale dalla prossima risposta.",

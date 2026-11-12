@@ -58,7 +58,7 @@ import { messages as workflow } from "./workflow";
  *
  * Notes for a reviewer. Buttons and menu items use a verbal noun (שמירה, מחיקה). A sentence that
  * asks the user to act uses an impersonal form (יש לבחור, אפשר להזין), so the text does not choose
- * a grammatical gender for the reader. Product names stay in Latin script: OpenBot is the
+ * a grammatical gender for the reader. Product names stay in Latin script: Spinbot is the
  * application name, and ZIP and JSON are the file formats a picker shows.
  *
  * This is the desktop catalog: shared keys, source text, and every desktop area.

@@ -28,7 +28,7 @@ export const messages = defineMessages("marketplace", {
   "marketplace.description.skills": "Instructions that teach an agent a task or a tool.",
 
   // A plugin link.
-  "marketplace.plugins.missing": "This plugin is not in the OpenBot catalog.",
+  "marketplace.plugins.missing": "This plugin is not in the Spinbot catalog.",
 
   // The agent page.
   "marketplace.agents.loadingDetail": "Loading agent details…",
@@ -40,17 +40,17 @@ export const messages = defineMessages("marketplace", {
   "marketplace.agents.yours": "Your agents",
   "marketplace.agents.all": "All agents",
   "marketplace.agents.missing": "This agent is not in the Marketplace.",
-  "marketplace.agents.trust.reviewed": "Made by another OpenBot user. OpenBot reviewed it before it went live.",
+  "marketplace.agents.trust.reviewed": "Made by another Spinbot user. Spinbot reviewed it before it went live.",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "Made by another OpenBot user. OpenBot reviewed it before it went live. It can act on your behalf once added.",
-  "marketplace.agents.trust.pending": "Shared by its creator before OpenBot reviewed it.",
+    "Made by another Spinbot user. Spinbot reviewed it before it went live. It can act on your behalf once added.",
+  "marketplace.agents.trust.pending": "Shared by its creator before Spinbot reviewed it.",
   "marketplace.agents.trust.pendingBeforeAdd":
-    "Shared by its creator before OpenBot reviewed it. It can act on your behalf once added.",
+    "Shared by its creator before Spinbot reviewed it. It can act on your behalf once added.",
   "marketplace.agents.source.pending": "Not reviewed yet",
 
   // The skill page, and why Try is off.
   "marketplace.skill.loading": "Loading skill",
-  "marketplace.try.readFailed": "OpenBot could not read this agent's skills. Try again.",
+  "marketplace.try.readFailed": "Spinbot could not read this agent's skills. Try again.",
   "marketplace.try.enable": "Enable this skill in agent settings to try it.",
   "marketplace.try.repair": "Repair this skill in agent settings to try it.",
   "marketplace.try.update": "Update this skill to try this version.",
@@ -148,24 +148,24 @@ export const messages = defineMessages("marketplace", {
   "marketplace.app.setup.key": "Needs an API key from your {name} account.",
   "marketplace.app.setup.keySaved": "{field} saved on {host}.",
   // {host} is "this computer" or a server name.
-  "marketplace.app.account.removeDescription": "OpenBot deletes the sign-in of this account on {host}.",
+  "marketplace.app.account.removeDescription": "Spinbot deletes the sign-in of this account on {host}.",
   "marketplace.app.setup.desktop": "Runs in the {name} desktop app at {address}.",
   "marketplace.app.setup.desktopConnected": "Connected to {address}.",
   "marketplace.app.setup.open": "No sign-in or key needed.",
   "marketplace.app.blocked.update":
-    "{host} runs an older OpenBot version that cannot connect apps. Update OpenBot on {host}, or ask its owner to update it.",
+    "{host} runs an older Spinbot version that cannot connect apps. Update Spinbot on {host}, or ask its owner to update it.",
   "marketplace.app.blocked.member":
-    "Only an owner or admin of {host} can connect apps there. Ask one of them to connect {name}, or to update OpenBot on {host} so that members can connect apps.",
+    "Only an owner or admin of {host} can connect apps there. Ask one of them to connect {name}, or to update Spinbot on {host} so that members can connect apps.",
   "marketplace.app.connectAgain": "Connect again",
   "marketplace.app.automation.askOnInstall": "Ask macOS for access at install",
   "marketplace.app.automation.title": "Access to Apple apps",
   "marketplace.app.automation.description":
     "macOS shows one prompt for each app. A closed app opens for a moment, then quits.",
   "marketplace.app.automation.request": "Ask for access",
-  "marketplace.app.automation.allowed": "OpenBot can now control all of the Apple apps.",
+  "marketplace.app.automation.allowed": "Spinbot can now control all of the Apple apps.",
   "marketplace.app.automation.refused":
-    "macOS did not give access to {apps}. Allow OpenBot in System Settings › Privacy & Security › Automation.",
-  "marketplace.app.automation.failed": "OpenBot could not ask macOS about {apps}. Try again.",
+    "macOS did not give access to {apps}. Allow Spinbot in System Settings › Privacy & Security › Automation.",
+  "marketplace.app.automation.failed": "Spinbot could not ask macOS about {apps}. Try again.",
   "marketplace.app.automation.app.calendar": "Calendar",
   "marketplace.app.automation.app.contacts": "Contacts",
   "marketplace.app.automation.app.mail": "Mail",
@@ -224,7 +224,7 @@ export const messages = defineMessages("marketplace", {
   "marketplace.plugin.cobrain.prompt.saveNote": "Save a note in Cobrain with what we did today and what is left.",
   "marketplace.plugin.honcho.tagline": "Your memory across AI tools",
   "marketplace.plugin.honcho.description":
-    "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. OpenBot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
+    "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. Spinbot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
   "marketplace.plugin.honcho.app": "Save and query long-term memory in your Honcho workspaces over one MCP server.",
   "marketplace.plugin.honcho.prompt.recall": "Ask Honcho what it knows about how I like to work before we start.",
   "marketplace.plugin.honcho.prompt.save": "Save the decisions from this thread to Honcho.",
@@ -232,7 +232,7 @@ export const messages = defineMessages("marketplace", {
   "marketplace.plugin.honcho.hint.apiKey": "Create a key at app.honcho.dev.",
   "marketplace.plugin.hindsight.tagline": "Memory that learns over time",
   "marketplace.plugin.hindsight.description":
-    "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. OpenBot agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
+    "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. Spinbot agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
   "marketplace.plugin.hindsight.app":
     "Retain, recall and reflect on memories in your Hindsight Cloud banks over one MCP server.",
   "marketplace.plugin.hindsight.prompt.recall":
@@ -252,7 +252,7 @@ export const messages = defineMessages("marketplace", {
   "marketplace.plugin.figma.prompt.assets": "Extract the marketing icons at 2x for the app bundle.",
   "marketplace.plugin.paper.tagline": "Design canvas built on HTML and CSS",
   "marketplace.plugin.paper.description":
-    "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. OpenBot starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
+    "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. Spinbot starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
   "marketplace.plugin.paper.app":
     "Reads and writes the open Paper Desktop file, over the local MCP server that the Paper CLI relays. Needs Paper Desktop with a file open.",
   "marketplace.plugin.paper.prompt.implement":
@@ -282,7 +282,7 @@ export const messages = defineMessages("marketplace", {
     "Summarize the last ten conversations of my support voice agent.",
   "marketplace.plugin.appleApps.tagline": "Mail, Calendar and more on your Mac",
   "marketplace.plugin.appleApps.description":
-    "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. OpenBot starts mcp-icloud, a community server that is not made by Apple or OpenBot. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, OpenBot can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
+    "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. Spinbot starts mcp-icloud, a community server that is not made by Apple or Spinbot. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, Spinbot can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
   "marketplace.plugin.appleApps.app":
     "Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari, over the local mcp-icloud server. Needs macOS and Automation access.",
   "marketplace.plugin.appleApps.prompt.unread": "Summarize my unread email in Apple Mail from today.",
@@ -558,8 +558,8 @@ export const messages = defineMessages("marketplace", {
   "marketplace.skills.source.all": "All",
   "marketplace.skills.source.verified": "Verified",
   "marketplace.skills.source.public": "Public",
-  "marketplace.skills.source.verifiedLong": "Verified by OpenBot",
-  "marketplace.skills.source.publicLong": "Reviewed by OpenBot",
+  "marketplace.skills.source.verifiedLong": "Verified by Spinbot",
+  "marketplace.skills.source.publicLong": "Reviewed by Spinbot",
   "marketplace.skills.sortLabel": "Sort",
   "marketplace.skills.sortName": "Sort: {name}",
   "marketplace.skills.sort.installs": "Most used",

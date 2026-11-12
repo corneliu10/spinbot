@@ -13,7 +13,7 @@ export const messages = {
   "skill.loadingDetails": "טוען פרטים…",
   "skill.emptyEnabled": "אין לסוכן הזה מיומנויות פעילות.",
   "skill.emptyAssigned": "עדיין לא הוקצו מיומנויות לסוכן הזה.",
-  "skill.folderSkill": "OpenBot לא התקין את המיומנות הזאת. אפשר לערוך או להסיר אותה ב-{location}.",
+  "skill.folderSkill": "Spinbot לא התקין את המיומנות הזאת. אפשר לערוך או להסיר אותה ב-{location}.",
   "skill.moreFor": "עוד עבור {name}",
   "skill.update": "עדכון",
   "skill.updateName": "עדכון {name}",
@@ -34,7 +34,7 @@ export const messages = {
     "עדכון המיומנות מחליף את הקבצים המקומיים בחבילה העדכנית. העריכות שלך בתיקיית המיומנות יאבדו.",
   "skill.confirm.removeModifiedBody":
     "במיומנות הזאת יש שינויים מקומיים בסביבת העבודה של הסוכן. ההסרה מוחקת את הקבצים האלה. הודעות הצ'אט המקוריות נשארות.",
-  "skill.confirm.removeBody": "OpenBot יסיר את המיומנות הזאת מהסוכן. היסטוריית הצ'אט נשארת.",
+  "skill.confirm.removeBody": "Spinbot יסיר את המיומנות הזאת מהסוכן. היסטוריית הצ'אט נשארת.",
   "skill.confirm.replace": "החלפת המיומנות",
   "skill.confirm.remove": "הסרת המיומנות",
   "skill.unavailable.readOnly": "מיומנויות מרוחקות הן לקריאה בלבד.",
@@ -75,5 +75,5 @@ export const messages = {
   "skill.marketplace.undone": "השינוי ב-{name} בוטל.",
   "skill.marketplace.confirmAgents": "סוכנים: {agents}.",
   "skill.marketplace.limitReason": "לסוכן יכולות להיות עד {limit} מיומנויות.",
-  "skill.marketplace.cannotRemove": "OpenBot לא יכול להסיר מיומנות מובנית או מיומנות שהוא לא התקין.",
+  "skill.marketplace.cannotRemove": "Spinbot לא יכול להסיר מיומנות מובנית או מיומנות שהוא לא התקין.",
 } as const satisfies PartialTranslation<typeof source>;

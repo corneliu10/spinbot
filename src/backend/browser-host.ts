@@ -4489,7 +4489,7 @@ function boundedCaptureDataUrl(image: NativeImage): string {
   // A typed failure in `browserSync`, so the agent reads the reason, not a failed tool request (#5991).
   if (size.width <= 0 || size.height <= 0)
     throw new Error(
-      "Browser screenshot is empty: the page drew no image. This can happen while the OpenBot window is minimized or hidden. If it is, ask the person to open the OpenBot window, then try again.",
+      "Browser screenshot is empty: the page drew no image. This can happen while the Spinbot window is minimized or hidden. If it is, ask the person to open the Spinbot window, then try again.",
     );
   const area = size.width * size.height;
   const scale = Math.sqrt(MAX_ENCODED_CAPTURE_PIXELS / area);

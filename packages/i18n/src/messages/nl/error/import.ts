@@ -3,9 +3,9 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest} is geen geldige JSON.",
-  "error.import.notAgentExport": "{manifest} is geen agentexport van OpenBot.",
+  "error.import.notAgentExport": "{manifest} is geen agentexport van Spinbot.",
   "error.import.newerExportSkill":
-    "Deze export is gemaakt door een nieuwere exportvaardigheid. Werk OpenBot bij en probeer het opnieuw.",
+    "Deze export is gemaakt door een nieuwere exportvaardigheid. Werk Spinbot bij en probeer het opnieuw.",
   "error.import.noAgents": "De export bevat geen agents.",
   "error.import.tooManyAgents": "De export bevat meer dan {limit} agents.",
   "error.import.tooManyChannels": "De export bevat meer dan {limit} kanalen.",
@@ -50,7 +50,7 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "De export heeft {size} GB vrije schijfruimte op de server nodig, en er is {free} GB vrij. Maak ruimte vrij op de server en kies de export dan opnieuw.",
   "error.import.remoteZipTooLargeOldHost":
-    "Deze server accepteert een export tot 100 MB. Werk OpenBot op de server bij om een grotere export te importeren.",
+    "Deze server accepteert een export tot 100 MB. Werk Spinbot op de server bij om een grotere export te importeren.",
   "error.import.skillKept":
     "{name}: de server heeft de vaardigheid “{skill}” al, dus de agent gebruikt die vaardigheid. Vraag een beheerder om deze bij te werken.",
   "error.import.skillRenamed":
@@ -65,12 +65,12 @@ export const messages = {
   "error.import.hermesSkillCodeAdded":
     "Er staat code in die er niet was toen de profielen werden gelezen. Lees ze opnieuw om dit toe te staan.",
   "error.import.hermesLinkNotSaved":
-    "{name}: OpenBot kon niet opslaan welke agent uit dit profiel kwam, dus bij de volgende import wordt het een nieuwe agent.",
+    "{name}: Spinbot kon niet opslaan welke agent uit dit profiel kwam, dus bij de volgende import wordt het een nieuwe agent.",
   "error.import.transferRemoteTooLarge":
     "Een overdrachtsbestand voor een server waaraan je deelneemt, moet kleiner zijn dan 100 MB. Zet werkruimtebestanden uit, of exporteer minder agents.",
-  "error.import.transferNotFile": "Dit bestand is geen overdrachtsbestand van OpenBot.",
+  "error.import.transferNotFile": "Dit bestand is geen overdrachtsbestand van Spinbot.",
   "error.import.transferNewer":
-    "Een nieuwere versie van OpenBot heeft dit bestand gemaakt. Werk OpenBot bij en probeer het opnieuw.",
+    "Een nieuwere versie van Spinbot heeft dit bestand gemaakt. Werk Spinbot bij en probeer het opnieuw.",
   "error.import.transferEmpty": "Het bestand bevat geen agents en geen instellingen.",
   "error.import.transferTooLarge":
     "Een overdrachtsbestand moet kleiner zijn dan 2 GB en 50.000 bestanden. Zet werkruimtebestanden uit, of exporteer minder agents.",

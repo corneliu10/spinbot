@@ -26,7 +26,7 @@ export const messages = {
   "marketplace.description.agents": "סוכנים מוכנים עם הנחיות ומיומנויות משלהם.",
   "marketplace.description.skills": "הנחיות שמלמדות סוכן משימה או כלי.",
 
-  "marketplace.plugins.missing": "התוסף הזה אינו בקטלוג של OpenBot.",
+  "marketplace.plugins.missing": "התוסף הזה אינו בקטלוג של Spinbot.",
 
   "marketplace.agents.loadingDetail": "טוען פרטי סוכן…",
   "marketplace.agents.skills": "מיומנויות",
@@ -37,16 +37,16 @@ export const messages = {
   "marketplace.agents.yours": "הסוכנים שלך",
   "marketplace.agents.all": "כל הסוכנים",
   "marketplace.agents.missing": "הסוכן הזה אינו בחנות.",
-  "marketplace.agents.trust.reviewed": "נוצר על ידי משתמש OpenBot אחר. OpenBot בדק אותו לפני שפורסם.",
+  "marketplace.agents.trust.reviewed": "נוצר על ידי משתמש Spinbot אחר. Spinbot בדק אותו לפני שפורסם.",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "נוצר על ידי משתמש OpenBot אחר. OpenBot בדק אותו לפני שפורסם. אחרי ההוספה הוא יכול לפעול בשמך.",
-  "marketplace.agents.trust.pending": "שותף על ידי יוצרו לפני ש-OpenBot בדק אותו.",
+    "נוצר על ידי משתמש Spinbot אחר. Spinbot בדק אותו לפני שפורסם. אחרי ההוספה הוא יכול לפעול בשמך.",
+  "marketplace.agents.trust.pending": "שותף על ידי יוצרו לפני ש-Spinbot בדק אותו.",
   "marketplace.agents.trust.pendingBeforeAdd":
-    "שותף על ידי יוצרו לפני ש-OpenBot בדק אותו. אחרי ההוספה הוא יכול לפעול בשמך.",
+    "שותף על ידי יוצרו לפני ש-Spinbot בדק אותו. אחרי ההוספה הוא יכול לפעול בשמך.",
   "marketplace.agents.source.pending": "עדיין לא נבדק",
 
   "marketplace.skill.loading": "טוען מיומנות",
-  "marketplace.try.readFailed": "OpenBot לא הצליח לקרוא את המיומנויות של הסוכן הזה. יש לנסות שוב.",
+  "marketplace.try.readFailed": "Spinbot לא הצליח לקרוא את המיומנויות של הסוכן הזה. יש לנסות שוב.",
   "marketplace.try.enable": "יש להפעיל את המיומנות הזו בהגדרות הסוכן כדי לנסות אותה.",
   "marketplace.try.repair": "יש לתקן את המיומנות הזו בהגדרות הסוכן כדי לנסות אותה.",
   "marketplace.try.update": "יש לעדכן את המיומנות הזו כדי לנסות את הגרסה הזו.",
@@ -144,23 +144,23 @@ export const messages = {
   "marketplace.app.setup.account": "יש להתחבר לחשבון {name} שלך בדפדפן.",
   "marketplace.app.setup.key": "נדרש מפתח API מחשבון {name} שלך.",
   "marketplace.app.setup.keySaved": "{field} נשמר ב-{host}.",
-  "marketplace.app.account.removeDescription": "OpenBot מוחק את ההתחברות של החשבון הזה ב-{host}.",
+  "marketplace.app.account.removeDescription": "Spinbot מוחק את ההתחברות של החשבון הזה ב-{host}.",
   "marketplace.app.setup.desktop": "פועל באפליקציית שולחן העבודה של {name} בכתובת {address}.",
   "marketplace.app.setup.desktopConnected": "מחובר אל {address}.",
   "marketplace.app.setup.open": "אין צורך בהתחברות או במפתח.",
   "marketplace.app.blocked.update":
-    "ב-{host} פועלת גרסה ישנה של OpenBot שלא יכולה לחבר אפליקציות. עדכנו את OpenBot ב-{host}, או בקשו מהבעלים לעדכן אותה.",
+    "ב-{host} פועלת גרסה ישנה של Spinbot שלא יכולה לחבר אפליקציות. עדכנו את Spinbot ב-{host}, או בקשו מהבעלים לעדכן אותה.",
   "marketplace.app.blocked.member":
-    "רק בעלים או מנהל של {host} יכולים לחבר שם אפליקציות. בקשו מאחד מהם לחבר את {name}, או לעדכן את OpenBot ב-{host} כדי שחברים יוכלו לחבר אפליקציות.",
+    "רק בעלים או מנהל של {host} יכולים לחבר שם אפליקציות. בקשו מאחד מהם לחבר את {name}, או לעדכן את Spinbot ב-{host} כדי שחברים יוכלו לחבר אפליקציות.",
   "marketplace.app.connectAgain": "חיבור מחדש",
   "marketplace.app.automation.askOnInstall": "בקשת גישה מ-macOS בהתקנה",
   "marketplace.app.automation.title": "גישה לאפליקציות של Apple",
   "marketplace.app.automation.description": "macOS מציג בקשה אחת לכל אפליקציה. אפליקציה סגורה נפתחת לרגע ואז נסגרת.",
   "marketplace.app.automation.request": "בקשת גישה",
-  "marketplace.app.automation.allowed": "OpenBot יכול עכשיו לשלוט בכל האפליקציות של Apple.",
+  "marketplace.app.automation.allowed": "Spinbot יכול עכשיו לשלוט בכל האפליקציות של Apple.",
   "marketplace.app.automation.refused":
-    "macOS לא אישר גישה אל {apps}. יש לאפשר את OpenBot ב-System Settings › Privacy & Security › Automation.",
-  "marketplace.app.automation.failed": "OpenBot לא הצליח לשאול את macOS לגבי {apps}. יש לנסות שוב.",
+    "macOS לא אישר גישה אל {apps}. יש לאפשר את Spinbot ב-System Settings › Privacy & Security › Automation.",
+  "marketplace.app.automation.failed": "Spinbot לא הצליח לשאול את macOS לגבי {apps}. יש לנסות שוב.",
   "marketplace.app.automation.app.calendar": "יומן",
   "marketplace.app.automation.app.contacts": "אנשי קשר",
   "marketplace.app.automation.app.mail": "דואר",
@@ -213,7 +213,7 @@ export const messages = {
   "marketplace.plugin.cobrain.prompt.saveNote": "שמור ב-Cobrain הערה עם מה שעשינו היום ומה נשאר.",
   "marketplace.plugin.honcho.tagline": "הזיכרון שלך בכל כלי ה-AI",
   "marketplace.plugin.honcho.description":
-    "Honcho של Plastic Labs נותן לסוכנים זיכרון לטווח ארוך עליך, שכלי AI אחרים שחיברת יכולים לשתף. הסוכנים שומרים את מה שהם לומדים, ו-Honcho מסיק ממנו מודל של ההעדפות, המטרות ודרכי העבודה שלך. הסוכנים שואלים אותו שאלות לפני שהם מתחילים. לסוכני OpenBot יש גם זיכרון משלהם; Honcho הוא הזיכרון שעובר איתך לכלים אחרים. הודעות שהסוכנים שומרים נשלחות לחשבון Honcho שלך.",
+    "Honcho של Plastic Labs נותן לסוכנים זיכרון לטווח ארוך עליך, שכלי AI אחרים שחיברת יכולים לשתף. הסוכנים שומרים את מה שהם לומדים, ו-Honcho מסיק ממנו מודל של ההעדפות, המטרות ודרכי העבודה שלך. הסוכנים שואלים אותו שאלות לפני שהם מתחילים. לסוכני Spinbot יש גם זיכרון משלהם; Honcho הוא הזיכרון שעובר איתך לכלים אחרים. הודעות שהסוכנים שומרים נשלחות לחשבון Honcho שלך.",
   "marketplace.plugin.honcho.app": "שמירה ושאילתות של זיכרון לטווח ארוך בסביבות העבודה שלך ב-Honcho דרך שרת MCP אחד.",
   "marketplace.plugin.honcho.prompt.recall": "לפני שנתחיל, שאל את Honcho מה הוא יודע על הדרך שבה אני אוהב לעבוד.",
   "marketplace.plugin.honcho.prompt.save": "שמור ב-Honcho את ההחלטות מהשרשור הזה.",
@@ -221,7 +221,7 @@ export const messages = {
   "marketplace.plugin.honcho.hint.apiKey": "צור מפתח ב-app.honcho.dev.",
   "marketplace.plugin.hindsight.tagline": "זיכרון שלומד עם הזמן",
   "marketplace.plugin.hindsight.description":
-    "Hindsight של Vectorize נותן לסוכנים זיכרון לטווח ארוך ב-Hindsight Cloud. הסוכנים שומרים עובדות ואירועים, מאחזרים אותם לפי משמעות, זמן וישות, ומהרהרים בהם כדי ליצור מודלים מנטליים. הזיכרונות נשמרים בבנקים, והסוכנים יכולים ליצור בנק לכל פרויקט או אדם. לסוכני OpenBot יש גם זיכרון משלהם; Hindsight הוא הזיכרון שכלי AI אחרים שחיברת יכולים לשתף. מה שהסוכנים שומרים נשלח לחשבון Hindsight Cloud שלך.",
+    "Hindsight של Vectorize נותן לסוכנים זיכרון לטווח ארוך ב-Hindsight Cloud. הסוכנים שומרים עובדות ואירועים, מאחזרים אותם לפי משמעות, זמן וישות, ומהרהרים בהם כדי ליצור מודלים מנטליים. הזיכרונות נשמרים בבנקים, והסוכנים יכולים ליצור בנק לכל פרויקט או אדם. לסוכני Spinbot יש גם זיכרון משלהם; Hindsight הוא הזיכרון שכלי AI אחרים שחיברת יכולים לשתף. מה שהסוכנים שומרים נשלח לחשבון Hindsight Cloud שלך.",
   "marketplace.plugin.hindsight.app": "שמירה, אחזור והרהור בזיכרונות בבנקים שלך ב-Hindsight Cloud דרך שרת MCP אחד.",
   "marketplace.plugin.hindsight.prompt.recall": "לפני שנתחיל, אחזר מ-Hindsight מה אנחנו יודעים על הפרויקט הזה.",
   "marketplace.plugin.hindsight.prompt.retain": "שמור ב-Hindsight את ההחלטות והשאלות הפתוחות מהשרשור הזה.",
@@ -238,7 +238,7 @@ export const messages = {
   "marketplace.plugin.figma.prompt.assets": "חלץ את סמלי השיווק ברזולוציה 2x עבור חבילת האפליקציה.",
   "marketplace.plugin.paper.tagline": "קנבס עיצוב על בסיס HTML ו-CSS",
   "marketplace.plugin.paper.description":
-    "Paper מאפשר לסוכנים לקרוא ולכתוב את קובץ העיצוב הפתוח ב-Paper Desktop: לבדוק לוחות עבודה, בחירות, סגנונות מחושבים, JSX ואסימונים, וליצור או לשנות מסגרות, טקסט וסגנונות. יש להתקין את Paper Desktop, לפתוח אותו פעם אחת ולפתוח קובץ לפני ההתחלה. OpenBot מפעיל את ה-CLI של Paper ש-Paper Desktop מתקין. Paper לא צריך מפתח. כלי כתיבה משנים את הקובץ הפתוח, לכן יש לבדוק כל כתיבה לפני האישור.",
+    "Paper מאפשר לסוכנים לקרוא ולכתוב את קובץ העיצוב הפתוח ב-Paper Desktop: לבדוק לוחות עבודה, בחירות, סגנונות מחושבים, JSX ואסימונים, וליצור או לשנות מסגרות, טקסט וסגנונות. יש להתקין את Paper Desktop, לפתוח אותו פעם אחת ולפתוח קובץ לפני ההתחלה. Spinbot מפעיל את ה-CLI של Paper ש-Paper Desktop מתקין. Paper לא צריך מפתח. כלי כתיבה משנים את הקובץ הפתוח, לכן יש לבדוק כל כתיבה לפני האישור.",
   "marketplace.plugin.paper.app":
     "קורא וכותב את הקובץ הפתוח ב-Paper Desktop, דרך שרת ה-MCP המקומי ש-Paper CLI מעביר. דורש Paper Desktop עם קובץ פתוח.",
   "marketplace.plugin.paper.prompt.implement": "ממש את מסגרת Paper שנבחרה בבסיס הקוד הזה, לפי מוסכמות הקוד שלנו.",
@@ -262,7 +262,7 @@ export const messages = {
   "marketplace.plugin.elevenlabs.prompt.conversations": "סכם את עשר השיחות האחרונות של סוכן הקול של התמיכה שלי.",
   "marketplace.plugin.appleApps.tagline": "דואר, יומן ועוד ב-Mac שלך",
   "marketplace.plugin.appleApps.description":
-    "Apple apps מאפשר לסוכנים להשתמש ב-Mail, Calendar, Contacts, Reminders, Notes, Messages ו-Safari ב-Mac הזה. הוא עובד רק ב-macOS. OpenBot מפעיל את mcp-icloud, שרת קהילתי שלא נוצר על ידי Apple או OpenBot. השרת שולט באפליקציות דרך AppleScript, במחשב הזה, ולא צריך חשבון ולא מפתח. בהתקנה OpenBot יכול לבקש מ-macOS גישה לכל האפליקציות האלה בבת אחת, עם בקשה אחת לכל אפליקציה. אם לא, macOS שואל בפעם הראשונה שסוכן משתמש באפליקציה. כדי לשנות זאת מאוחר יותר, יש לפתוח System Settings › Privacy & Security › Automation. סוכנים יכולים לשלוח אימייל והודעות iMessage ולשנות או למחוק אירועים, אנשי קשר ותזכורות, לכן יש לבדוק כל כתיבה לפני האישור. מה שהכלים קוראים, כמו טקסט של אימייל, נשלח לספק המודל של הסוכן.",
+    "Apple apps מאפשר לסוכנים להשתמש ב-Mail, Calendar, Contacts, Reminders, Notes, Messages ו-Safari ב-Mac הזה. הוא עובד רק ב-macOS. Spinbot מפעיל את mcp-icloud, שרת קהילתי שלא נוצר על ידי Apple או Spinbot. השרת שולט באפליקציות דרך AppleScript, במחשב הזה, ולא צריך חשבון ולא מפתח. בהתקנה Spinbot יכול לבקש מ-macOS גישה לכל האפליקציות האלה בבת אחת, עם בקשה אחת לכל אפליקציה. אם לא, macOS שואל בפעם הראשונה שסוכן משתמש באפליקציה. כדי לשנות זאת מאוחר יותר, יש לפתוח System Settings › Privacy & Security › Automation. סוכנים יכולים לשלוח אימייל והודעות iMessage ולשנות או למחוק אירועים, אנשי קשר ותזכורות, לכן יש לבדוק כל כתיבה לפני האישור. מה שהכלים קוראים, כמו טקסט של אימייל, נשלח לספק המודל של הסוכן.",
   "marketplace.plugin.appleApps.app":
     "Mail, Calendar, Contacts, Reminders, Notes, Messages ו-Safari, דרך שרת mcp-icloud המקומי. דורש macOS וגישת Automation.",
   "marketplace.plugin.appleApps.prompt.unread": "סכם את האימיילים שלא נקראו ב-Apple Mail מהיום.",
@@ -512,8 +512,8 @@ export const messages = {
   "marketplace.skills.source.all": "הכול",
   "marketplace.skills.source.verified": "מאומת",
   "marketplace.skills.source.public": "ציבורי",
-  "marketplace.skills.source.verifiedLong": "מאומת על ידי OpenBot",
-  "marketplace.skills.source.publicLong": "נבדק על ידי OpenBot",
+  "marketplace.skills.source.verifiedLong": "מאומת על ידי Spinbot",
+  "marketplace.skills.source.publicLong": "נבדק על ידי Spinbot",
   "marketplace.skills.sortLabel": "מיון",
   "marketplace.skills.sortName": "מיון: {name}",
   "marketplace.skills.sort.installs": "הנפוצים ביותר",

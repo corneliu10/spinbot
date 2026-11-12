@@ -2,12 +2,12 @@ import type { PartialTranslation } from "../../../message";
 import type { messages as source } from "../../en/error/auth";
 
 export const messages = {
-  // Errors from the OpenBot account service.
+  // Errors from the Spinbot account service.
   "error.auth.serviceUnavailable":
-    "OpenBot n’a pas pu joindre le service de compte. Vérifiez que l’API fonctionne, puis réessayez.",
+    "Spinbot n’a pas pu joindre le service de compte. Vérifiez que l’API fonctionne, puis réessayez.",
   "error.auth.networkBlocked":
-    "Un pare-feu ou un proxy de ce réseau a empêché OpenBot de joindre {host}. Demandez à votre administrateur réseau d’autoriser {host}, puis réessayez.",
-  "error.auth.signInFirst": "Connectez-vous d’abord à OpenBot.",
+    "Un pare-feu ou un proxy de ce réseau a empêché Spinbot de joindre {host}. Demandez à votre administrateur réseau d’autoriser {host}, puis réessayez.",
+  "error.auth.signInFirst": "Connectez-vous d’abord à Spinbot.",
   "error.auth.signInRequired": "Une connexion est requise.",
   "error.auth.chatColorUnavailable":
     "Le service de compte ne prend pas encore en charge les couleurs de discussion. Réessayez plus tard.",
@@ -17,16 +17,16 @@ export const messages = {
   "error.auth.codeNotVerified": "Impossible de vérifier le code de connexion.",
   "error.auth.serviceError": "Le service de compte a renvoyé une erreur.",
   "error.auth.serviceUnreachable":
-    "OpenBot n’a pas pu joindre le service de compte. Vérifiez votre connexion, puis réessayez.",
+    "Spinbot n’a pas pu joindre le service de compte. Vérifiez votre connexion, puis réessayez.",
   "error.auth.serviceTimeout": "Le service de compte n’a pas répondu à temps. Réessayez.",
   "error.auth.serviceStatus": "Le service de compte a renvoyé une erreur ({status}). Réessayez plus tard.",
   "error.auth.invalidHostedServer": "Le service de compte a renvoyé un serveur hébergé invalide.",
   "error.auth.invalidServerClaim": "Le service de compte a renvoyé un code de serveur invalide.",
-  "error.auth.codeNotSent": "OpenBot n’a pas pu envoyer le code de connexion.",
+  "error.auth.codeNotSent": "Spinbot n’a pas pu envoyer le code de connexion.",
   "error.auth.deliveryTimeout":
-    "OpenBot n’a pas pu confirmer l’envoi à temps. Le code peut encore arriver ; vérifiez sa réception avant de le renvoyer.",
+    "Spinbot n’a pas pu confirmer l’envoi à temps. Le code peut encore arriver ; vérifiez sa réception avant de le renvoyer.",
   "error.auth.deliveryInterrupted":
-    "La connexion s’est terminée avant qu’OpenBot confirme l’envoi. Vérifiez la réception pour ne pas envoyer un autre code.",
+    "La connexion s’est terminée avant qu’Spinbot confirme l’envoi. Vérifiez la réception pour ne pas envoyer un autre code.",
   "error.auth.deliveryUnknown":
-    "OpenBot n’a pas pu confirmer si le code de connexion a été envoyé. Vérifiez sa réception avant de le renvoyer.",
+    "Spinbot n’a pas pu confirmer si le code de connexion a été envoyé. Vérifiez sa réception avant de le renvoyer.",
 } as const satisfies PartialTranslation<typeof source>;

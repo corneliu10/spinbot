@@ -14,7 +14,7 @@ export interface AgentWelcomeInput {
 
 export function agentWelcomeMessage(input: AgentWelcomeInput): string {
   const intro = [
-    "OpenBot sent this setup message when the user created you. The user does not see it. Your profile is your role.",
+    "Spinbot sent this setup message when the user created you. The user does not see it. Your profile is your role.",
     `Write in ${input.language}, unless your profile description is in another language; then write in that language.`,
   ];
   if (input.firstRequestFollows) {

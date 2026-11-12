@@ -3,8 +3,8 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest} ليس JSON صالحًا.",
-  "error.import.notAgentExport": "{manifest} ليس تصديرًا لوكيل OpenBot.",
-  "error.import.newerExportSkill": "أُنشئ هذا التصدير بمهارة تصدير أحدث. حدّث OpenBot وحاول مرة أخرى.",
+  "error.import.notAgentExport": "{manifest} ليس تصديرًا لوكيل Spinbot.",
+  "error.import.newerExportSkill": "أُنشئ هذا التصدير بمهارة تصدير أحدث. حدّث Spinbot وحاول مرة أخرى.",
   "error.import.noAgents": "لا يحتوي التصدير على وكلاء.",
   "error.import.tooManyAgents": "يحتوي التصدير على أكثر من {limit} وكيل.",
   "error.import.tooManyChannels": "يحتوي التصدير على أكثر من {limit} قناة.",
@@ -43,7 +43,7 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "يحتاج التصدير إلى {size} GB من المساحة الفارغة على قرص الخادم، والمتاح {free} GB. أفرغ مساحة على الخادم، ثم اختر التصدير مرة أخرى.",
   "error.import.remoteZipTooLargeOldHost":
-    "يقبل هذا الخادم تصديرًا حتى 100 MB. حدّث OpenBot على الخادم لاستيراد تصدير أكبر.",
+    "يقبل هذا الخادم تصديرًا حتى 100 MB. حدّث Spinbot على الخادم لاستيراد تصدير أكبر.",
   "error.import.skillKept":
     "{name}: لدى الخادم المهارة «{skill}» بالفعل، لذا يستخدم الوكيل تلك المهارة. اطلب من مسؤول تحديثها.",
   "error.import.skillRenamed": "{name}: اسم المهارة «{skill}» قريب جدًا من اسم مهارة أخرى، لذا حُفظت باسم «{renamed}».",
@@ -57,11 +57,11 @@ export const messages = {
   "error.import.hermesSkillCodeAdded":
     "تحتوي على شيفرة لم تكن فيها عند قراءة ملفات التعريف. اقرأها مرة أخرى للسماح بها.",
   "error.import.hermesLinkNotSaved":
-    "{name}: تعذّر على OpenBot حفظ الوكيل الذي جاء من ملف التعريف هذا، لذا يضيفه الاستيراد التالي كوكيل جديد.",
+    "{name}: تعذّر على Spinbot حفظ الوكيل الذي جاء من ملف التعريف هذا، لذا يضيفه الاستيراد التالي كوكيل جديد.",
   "error.import.transferRemoteTooLarge":
     "يجب أن يكون حجم ملف النقل لخادم منضم إليه أقل من 100 MB. أوقف ملفات مساحة العمل، أو صدّر عددًا أقل من الوكلاء.",
-  "error.import.transferNotFile": "هذا الملف ليس ملف نقل OpenBot.",
-  "error.import.transferNewer": "أنشأ إصدار أحدث من OpenBot هذا الملف. حدّث OpenBot وحاول مرة أخرى.",
+  "error.import.transferNotFile": "هذا الملف ليس ملف نقل Spinbot.",
+  "error.import.transferNewer": "أنشأ إصدار أحدث من Spinbot هذا الملف. حدّث Spinbot وحاول مرة أخرى.",
   "error.import.transferEmpty": "لا يحتوي الملف على وكلاء ولا إعدادات.",
   "error.import.transferTooLarge":
     "يجب أن يكون ملف النقل أقل من 2 GB وأقل من 50,000 ملف. أوقف ملفات مساحة العمل، أو صدّر عددًا أقل من الوكلاء.",

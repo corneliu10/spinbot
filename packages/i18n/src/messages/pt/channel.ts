@@ -46,7 +46,7 @@ export const messages = {
   "channel.settings.deleteHistory.button": "Excluir",
   "channel.settings.deleteHistory.confirmTitle": "Excluir o histórico de {name}?",
   "channel.settings.deleteHistory.confirmDescription":
-    "Todas as mensagens e arquivos deste canal são excluídos do OpenBot e os membros os esquecem. Não é possível desfazer. Membros, instruções, memórias, rotinas e tarefas não mudam.",
+    "Todas as mensagens e arquivos deste canal são excluídos do Spinbot e os membros os esquecem. Não é possível desfazer. Membros, instruções, memórias, rotinas e tarefas não mudam.",
   "channel.settings.deleteHistory.confirm": "Excluir histórico",
   "channel.settings.deleteHistory.failed": "Não foi possível excluir o histórico.",
   "channel.settings.routines": "Rotinas",

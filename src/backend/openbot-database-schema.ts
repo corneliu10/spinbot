@@ -699,7 +699,7 @@ function withRunAddedColumns(tableEnd: string): string {
 function substituteOnce(source: string, search: string, replacement: string): string {
   const index = source.indexOf(search);
   if (index === -1 || source.indexOf(search, index + search.length) !== -1) {
-    throw new Error("The latest OpenBot schema could not be derived from the v8 baseline.");
+    throw new Error("The latest Spinbot schema could not be derived from the v8 baseline.");
   }
   return `${source.slice(0, index)}${replacement}${source.slice(index + search.length)}`;
 }
@@ -1049,8 +1049,8 @@ export function migrateOpenBotDatabase(db: DatabaseSync, options: OpenBotMigrati
       violations = runMigration(db, migration, appliedAt, violations);
     } catch (error) {
       // The startup log keeps only the message, so the cause is logged here.
-      logger.error(`OpenBot database migration to version ${migration.version} failed.`, toLogValue(error));
-      throw new Error(`OpenBot database migration to version ${migration.version} failed.`, {
+      logger.error(`Spinbot database migration to version ${migration.version} failed.`, toLogValue(error));
+      throw new Error(`Spinbot database migration to version ${migration.version} failed.`, {
         cause: error,
       });
     }
@@ -1062,7 +1062,7 @@ export function migrateOpenBotDatabase(db: DatabaseSync, options: OpenBotMigrati
         db.exec("PRAGMA wal_checkpoint(TRUNCATE)");
       } catch (error) {
         const warn = options.warn ?? ((message: string, cause: unknown) => logger.warn(message, toLogValue(cause)));
-        warn(`OpenBot database migration to version ${migration.version} succeeded, but VACUUM failed.`, error);
+        warn(`Spinbot database migration to version ${migration.version} succeeded, but VACUUM failed.`, error);
       }
     }
   }
@@ -1122,7 +1122,7 @@ function validateMigrationRegistry(): void {
   for (const migration of MIGRATIONS) {
     if (!Number.isInteger(migration.version) || migration.version !== expectedVersion) {
       throw new Error(
-        `OpenBot database migrations must be contiguous from version ${BASELINE_SCHEMA_VERSION}; expected ${expectedVersion}.`,
+        `Spinbot database migrations must be contiguous from version ${BASELINE_SCHEMA_VERSION}; expected ${expectedVersion}.`,
       );
     }
     expectedVersion += 1;
@@ -1159,7 +1159,7 @@ function readAppliedVersions(db: DatabaseSync): number[] {
     .all()
     .map((row) => {
       if (!isDynamicRecord(row) || !isNumber(row.version) || !Number.isInteger(row.version)) {
-        throw new Error("OpenBot database contains an invalid schema migration version.");
+        throw new Error("Spinbot database contains an invalid schema migration version.");
       }
       return row.version;
     });
@@ -1171,7 +1171,7 @@ function readAppliedVersions(db: DatabaseSync): number[] {
  */
 export class NewerDatabaseError extends Error {
   constructor(databaseVersion: number, supportedVersion: number) {
-    super(`OpenBot database version ${databaseVersion} is newer than this application supports (${supportedVersion}).`);
+    super(`Spinbot database version ${databaseVersion} is newer than this application supports (${supportedVersion}).`);
   }
 }
 
@@ -1186,7 +1186,7 @@ function validateAppliedVersions(versions: number[]): void {
   const applied = new Set(baselineAndLater);
   for (let version = BASELINE_SCHEMA_VERSION; version <= newestVersion; version += 1) {
     if (!applied.has(version)) {
-      throw new Error(`OpenBot database migration history is missing version ${version}.`);
+      throw new Error(`Spinbot database migration history is missing version ${version}.`);
     }
   }
 }
@@ -1226,7 +1226,7 @@ function assertForeignKeys(db: DatabaseSync, before: ReadonlyMap<string, number>
   if (added.length > 0) {
     const total = added.reduce((sum, [, count]) => sum + count, 0);
     const references = added.map(([reference]) => reference).join(", ");
-    throw new Error(`OpenBot database migration produced ${total} foreign-key violation(s) in ${references}.`);
+    throw new Error(`Spinbot database migration produced ${total} foreign-key violation(s) in ${references}.`);
   }
   return violations;
 }
@@ -1248,7 +1248,7 @@ function readForeignKeyViolations(db: DatabaseSync): Map<string, number> {
 function readOldForeignKeyViolations(db: DatabaseSync): Map<string, number> {
   const violations = readForeignKeyViolations(db);
   if (violations.size > 0) {
-    logger.warn("The OpenBot database has foreign-key violations from before this upgrade. They stay as they are.", {
+    logger.warn("The Spinbot database has foreign-key violations from before this upgrade. They stay as they are.", {
       violations: Object.fromEntries(violations),
     });
   }
@@ -1262,7 +1262,7 @@ function assertQuickCheck(db: DatabaseSync): void {
     .map((row) => (isDynamicRecord(row) ? row.quick_check : row));
   if (problems.length === 1 && problems[0] === "ok") return;
   // The lines name the damaged pages and tables, which tell a page left by a disk save from a bad index.
-  logger.error("The OpenBot database failed its integrity check.", { problems });
+  logger.error("The Spinbot database failed its integrity check.", { problems });
   throw new Error(sourceText("error.backend.databaseIntegrity"));
 }
 

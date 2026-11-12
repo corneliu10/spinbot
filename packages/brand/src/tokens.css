@@ -199,8 +199,8 @@
   --openbot-felt-amber-bottom: rgb(203 104 12);
   --openbot-felt-cream: #f6efe2;
   --openbot-felt-cream-stroke: #efe4d2;
-  --openbot-logo-production: #d6adf2;
-  --openbot-logo-eye: #040007;
+  --openbot-logo-production: #ffffff;
+  --openbot-logo-eye: #000000;
   /* The eyes of the release logo. The logo color setting changes it with `--openbot-logo-production`;
      a dev or preview logo keeps `--openbot-logo-eye`. */
   --openbot-logo-production-eye: var(--openbot-logo-eye);

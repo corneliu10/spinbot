@@ -10,10 +10,10 @@ export const messages = {
   "mcp.connect.useKey": "代わりに API キーを使う",
   "mcp.connect.useSignIn": "代わりにサインインする",
   "mcp.connect.keyDescription":
-    "{name} アカウントの認証情報を貼り付けてください。OpenBot はそれを使って接続し、{host} に保存します。",
+    "{name} アカウントの認証情報を貼り付けてください。Spinbot はそれを使って接続し、{host} に保存します。",
   "mcp.connect.thisComputer": "このコンピューター",
   "mcp.connect.noCredentialDescription":
-    "{name} は認証情報を必要としません。OpenBot は一度接続して、提供されるツールを確認します。",
+    "{name} は認証情報を必要としません。Spinbot は一度接続して、提供されるツールを確認します。",
   "mcp.connect.connect": "接続",
   "mcp.connect.required": "必須です。",
   "mcp.connect.keptOn": "{host} に保存されます。",
@@ -24,7 +24,7 @@ export const messages = {
   "mcp.local.address": "アドレス",
   "mcp.local.docs": "セットアップガイド",
   "mcp.signIn.description":
-    "{name} アカウントにサインインしてください。OpenBot はそのアカウントで使えるツールを取得し、パスワードは取得しません。",
+    "{name} アカウントにサインインしてください。Spinbot はそのアカウントで使えるツールを取得し、パスワードは取得しません。",
   "mcp.signIn.waiting": "ブラウザーを待機中…",
   "mcp.signIn.continue": "{name} に進む",
   "mcp.signIn.pageDescription": "このページは {host} のブラウザーで開いています。ここでサインインしてください。",
@@ -62,7 +62,7 @@ export const messages = {
   "mcp.panel.empty": "MCP サーバーはまだありません。",
   "mcp.panel.enable": "{name} を有効にする",
   "mcp.panel.detailsTitle": "詳細",
-  "mcp.panel.detailsDescription": "このサーバーに名前を付け、OpenBot の接続方法を選んでください。",
+  "mcp.panel.detailsDescription": "このサーバーに名前を付け、Spinbot の接続方法を選んでください。",
   "mcp.panel.transport": "トランスポート",
   "mcp.panel.name": "名前",
   "mcp.panel.namePlaceholder": "MCP サーバー名",
@@ -111,14 +111,14 @@ export const messages = {
   "mcp.panel.signInTo": "{name} にサインイン",
   "mcp.panel.cancelSignInTo": "{name} へのサインインをキャンセル",
   "mcp.panel.signInWaiting": {
-    other: "ブラウザーでサインインを完了してください。OpenBot は {count} 分後に待機をやめます。",
+    other: "ブラウザーでサインインを完了してください。Spinbot は {count} 分後に待機をやめます。",
   },
   "mcp.panel.signInWaitingOn": {
-    other: "{host} でサインインページを開いています。OpenBot は {count} 分後に待機をやめます。",
+    other: "{host} でサインインページを開いています。Spinbot は {count} 分後に待機をやめます。",
   },
   "mcp.panel.appTitle": "サインインアプリ",
   "mcp.panel.appDescription":
-    "サーバーのプロバイダーに登録した OAuth アプリを使います。サーバーが OpenBot を自動で登録できない場合に OpenBot がこのアプリを使います。OpenBot に自動で登録させる場合は空のままにしてください。",
+    "サーバーのプロバイダーに登録した OAuth アプリを使います。サーバーが Spinbot を自動で登録できない場合に Spinbot がこのアプリを使います。Spinbot に自動で登録させる場合は空のままにしてください。",
   "mcp.panel.appSaveFirst": "まずこのサーバーを保存してください。その後でサインインアプリを追加できます。",
   "mcp.panel.appUrlChanged": "まず新しいサーバー URL を保存してください。サインインアプリは保存済みの URL に属します。",
   "mcp.panel.appLoadFailed": "サインインアプリを読み込めませんでした。",
@@ -141,18 +141,18 @@ export const messages = {
   "mcp.panel.appSaved": "アプリを保存しました。使用するにはサインインしてください。",
   "mcp.panel.appRemoved": "アプリを削除しました。",
   "mcp.signIn.relayDescription":
-    "ブラウザーで {page} にサインインしてください。完了すると、OpenBot がサインインを {host} に送信します。",
+    "ブラウザーで {page} にサインインしてください。完了すると、Spinbot がサインインを {host} に送信します。",
   "mcp.signIn.relayOpenDescription":
-    "ブラウザーで {page} にサインインしてください。完了したら、ブラウザーに表示されたアドレスをここに貼り付けてください。その後、OpenBot がサインインを {host} に送信します。",
+    "ブラウザーで {page} にサインインしてください。完了したら、ブラウザーに表示されたアドレスをここに貼り付けてください。その後、Spinbot がサインインを {host} に送信します。",
   "mcp.signIn.relayDeviceDescription":
     "ブラウザーで {page} にサインインし、そこで完了してください。{host} はサインインを自動で検出します。",
   "mcp.signIn.relayOpen": "サインインページを開く",
   "mcp.signIn.relayPasteHint":
-    "ブラウザーが OpenBot に戻らない場合は、表示されているアドレスをコピーしてここに貼り付けてください。",
+    "ブラウザーが Spinbot に戻らない場合は、表示されているアドレスをコピーしてここに貼り付けてください。",
   "mcp.signIn.relayPasteRequired":
-    "OpenBot はブラウザーからサインインを自動で受け取れません。完了したら、ブラウザーに表示されたアドレスをコピーしてここに貼り付けてください。",
+    "Spinbot はブラウザーからサインインを自動で受け取れません。完了したら、ブラウザーに表示されたアドレスをコピーしてここに貼り付けてください。",
   "mcp.signIn.relayAddress": "ブラウザーのアドレス",
   "mcp.signIn.relaySend": "送信",
   "mcp.panel.callbackUrlRelayed":
-    "サインインページはお使いのブラウザーで開き、このコンピューターの OpenBot がサインインを {host} に送信します。この URL をそのまま、アプリで許可するリダイレクト URL に追加してください。",
+    "サインインページはお使いのブラウザーで開き、このコンピューターの Spinbot がサインインを {host} に送信します。この URL をそのまま、アプリで許可するリダイレクト URL に追加してください。",
 } as const satisfies PartialTranslation<typeof source>;

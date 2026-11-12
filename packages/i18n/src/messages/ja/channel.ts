@@ -43,7 +43,7 @@ export const messages = {
   "channel.settings.deleteHistory.button": "削除",
   "channel.settings.deleteHistory.confirmTitle": "{name} の履歴を削除しますか？",
   "channel.settings.deleteHistory.confirmDescription":
-    "このチャンネルのすべてのメッセージとファイルをOpenBotから削除し、メンバーも忘れます。元に戻せません。メンバー、指示、メモリー、ルーティン、タスクは変わりません。",
+    "このチャンネルのすべてのメッセージとファイルをSpinbotから削除し、メンバーも忘れます。元に戻せません。メンバー、指示、メモリー、ルーティン、タスクは変わりません。",
   "channel.settings.deleteHistory.confirm": "履歴を削除",
   "channel.settings.deleteHistory.failed": "履歴を削除できませんでした。",
   "channel.settings.routines": "ルーティン",

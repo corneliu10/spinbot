@@ -26,7 +26,7 @@ export const messages = {
   "marketplace.description.agents": "وكلاء جاهزون بتعليماتهم ومهاراتهم الخاصة.",
   "marketplace.description.skills": "تعليمات تعلّم الوكيل مهمة أو أداة.",
 
-  "marketplace.plugins.missing": "هذه الإضافة ليست في كتالوج OpenBot.",
+  "marketplace.plugins.missing": "هذه الإضافة ليست في كتالوج Spinbot.",
 
   "marketplace.agents.loadingDetail": "جارٍ تحميل تفاصيل الوكيل…",
   "marketplace.agents.skills": "المهارات",
@@ -44,15 +44,15 @@ export const messages = {
   "marketplace.agents.yours": "وكلاؤك",
   "marketplace.agents.all": "كل الوكلاء",
   "marketplace.agents.missing": "هذا الوكيل ليس في المتجر.",
-  "marketplace.agents.trust.reviewed": "أنشأه مستخدم آخر لـ OpenBot. راجعه OpenBot قبل نشره.",
+  "marketplace.agents.trust.reviewed": "أنشأه مستخدم آخر لـ Spinbot. راجعه Spinbot قبل نشره.",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "أنشأه مستخدم آخر لـ OpenBot. راجعه OpenBot قبل نشره. يمكنه التصرف نيابةً عنك بعد إضافته.",
-  "marketplace.agents.trust.pending": "شاركه منشئه قبل أن يراجعه OpenBot.",
-  "marketplace.agents.trust.pendingBeforeAdd": "شاركه منشئه قبل أن يراجعه OpenBot. يمكنه التصرف نيابةً عنك بعد إضافته.",
+    "أنشأه مستخدم آخر لـ Spinbot. راجعه Spinbot قبل نشره. يمكنه التصرف نيابةً عنك بعد إضافته.",
+  "marketplace.agents.trust.pending": "شاركه منشئه قبل أن يراجعه Spinbot.",
+  "marketplace.agents.trust.pendingBeforeAdd": "شاركه منشئه قبل أن يراجعه Spinbot. يمكنه التصرف نيابةً عنك بعد إضافته.",
   "marketplace.agents.source.pending": "لم تتم مراجعته بعد",
 
   "marketplace.skill.loading": "جارٍ تحميل المهارة",
-  "marketplace.try.readFailed": "تعذّر على OpenBot قراءة مهارات هذا الوكيل. أعد المحاولة.",
+  "marketplace.try.readFailed": "تعذّر على Spinbot قراءة مهارات هذا الوكيل. أعد المحاولة.",
   "marketplace.try.enable": "فعّل هذه المهارة في إعدادات الوكيل لتجربتها.",
   "marketplace.try.repair": "أصلح هذه المهارة في إعدادات الوكيل لتجربتها.",
   "marketplace.try.update": "حدّث هذه المهارة لتجربة هذا الإصدار.",
@@ -151,23 +151,23 @@ export const messages = {
   "marketplace.app.setup.account": "سجّل الدخول بحساب {name} في المتصفح.",
   "marketplace.app.setup.key": "يحتاج إلى مفتاح API من حساب {name}.",
   "marketplace.app.setup.keySaved": "حُفظ {field} على {host}.",
-  "marketplace.app.account.removeDescription": "يحذف OpenBot تسجيل دخول هذا الحساب على {host}.",
+  "marketplace.app.account.removeDescription": "يحذف Spinbot تسجيل دخول هذا الحساب على {host}.",
   "marketplace.app.setup.desktop": "يعمل في تطبيق {name} المكتبي على {address}.",
   "marketplace.app.setup.desktopConnected": "متصل بـ {address}.",
   "marketplace.app.setup.open": "لا يلزم تسجيل دخول أو مفتاح.",
   "marketplace.app.blocked.update":
-    "يشغّل {host} إصدارًا أقدم من OpenBot لا يمكنه ربط التطبيقات. حدّث OpenBot على {host}، أو اطلب من مالكه تحديثه.",
+    "يشغّل {host} إصدارًا أقدم من Spinbot لا يمكنه ربط التطبيقات. حدّث Spinbot على {host}، أو اطلب من مالكه تحديثه.",
   "marketplace.app.blocked.member":
-    "يمكن لمالك {host} أو لمشرف فيه فقط ربط التطبيقات هناك. اطلب من أحدهم ربط {name}، أو تحديث OpenBot على {host} ليتمكن الأعضاء من ربط التطبيقات.",
+    "يمكن لمالك {host} أو لمشرف فيه فقط ربط التطبيقات هناك. اطلب من أحدهم ربط {name}، أو تحديث Spinbot على {host} ليتمكن الأعضاء من ربط التطبيقات.",
   "marketplace.app.connectAgain": "الربط مرة أخرى",
   "marketplace.app.automation.askOnInstall": "طلب الوصول من macOS عند التثبيت",
   "marketplace.app.automation.title": "الوصول إلى تطبيقات Apple",
   "marketplace.app.automation.description": "يعرض macOS طلبًا واحدًا لكل تطبيق. يُفتح التطبيق المغلق للحظة، ثم يُغلق.",
   "marketplace.app.automation.request": "طلب الوصول",
-  "marketplace.app.automation.allowed": "يمكن لـ OpenBot الآن التحكم في كل تطبيقات Apple.",
+  "marketplace.app.automation.allowed": "يمكن لـ Spinbot الآن التحكم في كل تطبيقات Apple.",
   "marketplace.app.automation.refused":
-    "لم يمنح macOS الوصول إلى {apps}. اسمح لـ OpenBot في إعدادات النظام › الخصوصية والأمن › الأتمتة.",
-  "marketplace.app.automation.failed": "تعذّر على OpenBot سؤال macOS عن {apps}. أعد المحاولة.",
+    "لم يمنح macOS الوصول إلى {apps}. اسمح لـ Spinbot في إعدادات النظام › الخصوصية والأمن › الأتمتة.",
+  "marketplace.app.automation.failed": "تعذّر على Spinbot سؤال macOS عن {apps}. أعد المحاولة.",
   "marketplace.app.automation.app.calendar": "التقويم",
   "marketplace.app.automation.app.contacts": "جهات الاتصال",
   "marketplace.app.automation.app.mail": "البريد",
@@ -221,7 +221,7 @@ export const messages = {
   "marketplace.plugin.cobrain.prompt.saveNote": "احفظ ملاحظة في Cobrain بما أنجزناه اليوم وما تبقّى.",
   "marketplace.plugin.honcho.tagline": "ذاكرتك عبر كل أدوات الذكاء الاصطناعي",
   "marketplace.plugin.honcho.description":
-    "يمنح Honcho من Plastic Labs الوكلاء ذاكرة طويلة المدى عنك يمكن لأدوات الذكاء الاصطناعي الأخرى التي تربطها أن تشاركها. يحفظ الوكلاء ما يتعلمونه، ويستنتج Honcho منه نموذجًا لتفضيلاتك وأهدافك وطرق عملك. يطرح الوكلاء عليه الأسئلة قبل أن يبدؤوا. لوكلاء OpenBot ذاكرتهم الخاصة أيضًا؛ وHoncho هو الذاكرة التي تتبعك إلى الأدوات الأخرى. تذهب الرسائل التي يحفظها الوكلاء إلى حسابك في Honcho.",
+    "يمنح Honcho من Plastic Labs الوكلاء ذاكرة طويلة المدى عنك يمكن لأدوات الذكاء الاصطناعي الأخرى التي تربطها أن تشاركها. يحفظ الوكلاء ما يتعلمونه، ويستنتج Honcho منه نموذجًا لتفضيلاتك وأهدافك وطرق عملك. يطرح الوكلاء عليه الأسئلة قبل أن يبدؤوا. لوكلاء Spinbot ذاكرتهم الخاصة أيضًا؛ وHoncho هو الذاكرة التي تتبعك إلى الأدوات الأخرى. تذهب الرسائل التي يحفظها الوكلاء إلى حسابك في Honcho.",
   "marketplace.plugin.honcho.app": "احفظ الذاكرة طويلة المدى واستعلم عنها في مساحات عمل Honcho عبر خادم MCP واحد.",
   "marketplace.plugin.honcho.prompt.recall": "قبل أن نبدأ، اسأل Honcho عمّا يعرفه عن طريقتي المفضلة في العمل.",
   "marketplace.plugin.honcho.prompt.save": "احفظ قرارات هذه المحادثة في Honcho.",
@@ -229,7 +229,7 @@ export const messages = {
   "marketplace.plugin.honcho.hint.apiKey": "أنشئ مفتاحًا في app.honcho.dev.",
   "marketplace.plugin.hindsight.tagline": "ذاكرة تتعلم مع الوقت",
   "marketplace.plugin.hindsight.description":
-    "يمنح Hindsight من Vectorize الوكلاء ذاكرة طويلة المدى في Hindsight Cloud. يحتفظ الوكلاء بالحقائق والأحداث، ويستدعونها حسب المعنى والوقت والكيان، ويتأملون فيها لتكوين نماذج ذهنية. تُحفظ الذكريات في بنوك، ويمكن للوكلاء إنشاء بنك لكل مشروع أو شخص. لوكلاء OpenBot ذاكرتهم الخاصة أيضًا؛ وHindsight هو الذاكرة التي يمكن لأدوات الذكاء الاصطناعي الأخرى التي تربطها أن تشاركها. ما يحتفظ به الوكلاء يذهب إلى حسابك في Hindsight Cloud.",
+    "يمنح Hindsight من Vectorize الوكلاء ذاكرة طويلة المدى في Hindsight Cloud. يحتفظ الوكلاء بالحقائق والأحداث، ويستدعونها حسب المعنى والوقت والكيان، ويتأملون فيها لتكوين نماذج ذهنية. تُحفظ الذكريات في بنوك، ويمكن للوكلاء إنشاء بنك لكل مشروع أو شخص. لوكلاء Spinbot ذاكرتهم الخاصة أيضًا؛ وHindsight هو الذاكرة التي يمكن لأدوات الذكاء الاصطناعي الأخرى التي تربطها أن تشاركها. ما يحتفظ به الوكلاء يذهب إلى حسابك في Hindsight Cloud.",
   "marketplace.plugin.hindsight.app": "احتفظ بالذكريات واستدعها وتأمل فيها في بنوك Hindsight Cloud عبر خادم MCP واحد.",
   "marketplace.plugin.hindsight.prompt.recall": "قبل أن نبدأ، استدعِ من Hindsight ما نعرفه عن هذا المشروع.",
   "marketplace.plugin.hindsight.prompt.retain": "احتفظ في Hindsight بالقرارات والأسئلة المفتوحة من هذه المحادثة.",
@@ -246,7 +246,7 @@ export const messages = {
   "marketplace.plugin.figma.prompt.assets": "استخرج أيقونات التسويق بدقة 2x لحزمة التطبيق.",
   "marketplace.plugin.paper.tagline": "لوحة تصميم مبنية على HTML وCSS",
   "marketplace.plugin.paper.description":
-    "يتيح Paper للوكلاء قراءة ملف التصميم المفتوح في Paper Desktop والكتابة فيه: فحص لوحات الرسم والتحديدات والأنماط المحسوبة وJSX والرموز المميزة، وإنشاء الإطارات والنصوص والأنماط أو تغييرها. ثبّت Paper Desktop، وافتحه مرة واحدة، وافتح ملفًا قبل البدء. يشغّل OpenBot واجهة Paper CLI التي يثبّتها Paper Desktop. لا يحتاج Paper إلى مفتاح. تغيّر أدوات الكتابة الملف المفتوح، لذا راجع كل عملية كتابة قبل الموافقة عليها.",
+    "يتيح Paper للوكلاء قراءة ملف التصميم المفتوح في Paper Desktop والكتابة فيه: فحص لوحات الرسم والتحديدات والأنماط المحسوبة وJSX والرموز المميزة، وإنشاء الإطارات والنصوص والأنماط أو تغييرها. ثبّت Paper Desktop، وافتحه مرة واحدة، وافتح ملفًا قبل البدء. يشغّل Spinbot واجهة Paper CLI التي يثبّتها Paper Desktop. لا يحتاج Paper إلى مفتاح. تغيّر أدوات الكتابة الملف المفتوح، لذا راجع كل عملية كتابة قبل الموافقة عليها.",
   "marketplace.plugin.paper.app":
     "يقرأ ملف Paper Desktop المفتوح ويكتب فيه، عبر خادم MCP المحلي الذي ترحّله Paper CLI. يحتاج إلى Paper Desktop مع ملف مفتوح.",
   "marketplace.plugin.paper.prompt.implement": "نفّذ إطار Paper المحدد في قاعدة الشيفرة هذه، وفق أعراف الشيفرة لدينا.",
@@ -270,7 +270,7 @@ export const messages = {
   "marketplace.plugin.elevenlabs.prompt.conversations": "لخّص آخر عشر محادثات لوكيل الصوت الخاص بالدعم.",
   "marketplace.plugin.appleApps.tagline": "البريد والتقويم والمزيد على جهاز Mac",
   "marketplace.plugin.appleApps.description":
-    "تتيح Apple apps للوكلاء استخدام البريد والتقويم وجهات الاتصال والتذكيرات والملاحظات والرسائل وSafari على جهاز Mac هذا. تعمل على macOS فقط. يشغّل OpenBot mcp-icloud، وهو خادم مجتمعي لم تصنعه Apple ولا OpenBot. يتحكم الخادم في التطبيقات عبر AppleScript على هذا الحاسوب، ولا يحتاج إلى حساب ولا مفتاح. عند تثبيته، يمكن لـ OpenBot أن يطلب من macOS الوصول إلى كل هذه التطبيقات دفعة واحدة، مع طلب واحد لكل تطبيق. وإن لم تفعل، يسأل macOS في أول مرة يستخدم فيها وكيل أحد التطبيقات. لتغيير ذلك لاحقًا، افتح إعدادات النظام › الخصوصية والأمن › الأتمتة. يمكن للوكلاء إرسال البريد الإلكتروني ورسائل iMessage، وتغيير الأحداث وجهات الاتصال والتذكيرات أو حذفها، لذا راجع كل عملية كتابة قبل الموافقة عليها. ما تقرؤه الأدوات، مثل نص البريد الإلكتروني، يذهب إلى مزوّد نموذج الوكيل.",
+    "تتيح Apple apps للوكلاء استخدام البريد والتقويم وجهات الاتصال والتذكيرات والملاحظات والرسائل وSafari على جهاز Mac هذا. تعمل على macOS فقط. يشغّل Spinbot mcp-icloud، وهو خادم مجتمعي لم تصنعه Apple ولا Spinbot. يتحكم الخادم في التطبيقات عبر AppleScript على هذا الحاسوب، ولا يحتاج إلى حساب ولا مفتاح. عند تثبيته، يمكن لـ Spinbot أن يطلب من macOS الوصول إلى كل هذه التطبيقات دفعة واحدة، مع طلب واحد لكل تطبيق. وإن لم تفعل، يسأل macOS في أول مرة يستخدم فيها وكيل أحد التطبيقات. لتغيير ذلك لاحقًا، افتح إعدادات النظام › الخصوصية والأمن › الأتمتة. يمكن للوكلاء إرسال البريد الإلكتروني ورسائل iMessage، وتغيير الأحداث وجهات الاتصال والتذكيرات أو حذفها، لذا راجع كل عملية كتابة قبل الموافقة عليها. ما تقرؤه الأدوات، مثل نص البريد الإلكتروني، يذهب إلى مزوّد نموذج الوكيل.",
   "marketplace.plugin.appleApps.app":
     "البريد والتقويم وجهات الاتصال والتذكيرات والملاحظات والرسائل وSafari، عبر خادم mcp-icloud المحلي. يحتاج إلى macOS وإذن الأتمتة.",
   "marketplace.plugin.appleApps.prompt.unread": "لخّص بريدي غير المقروء اليوم في Apple Mail.",
@@ -535,8 +535,8 @@ export const messages = {
   "marketplace.skills.source.all": "الكل",
   "marketplace.skills.source.verified": "موثّقة",
   "marketplace.skills.source.public": "عامة",
-  "marketplace.skills.source.verifiedLong": "موثّقة من OpenBot",
-  "marketplace.skills.source.publicLong": "تمت مراجعتها من OpenBot",
+  "marketplace.skills.source.verifiedLong": "موثّقة من Spinbot",
+  "marketplace.skills.source.publicLong": "تمت مراجعتها من Spinbot",
   "marketplace.skills.sortLabel": "الترتيب",
   "marketplace.skills.sortName": "الترتيب: {name}",
   "marketplace.skills.sort.installs": "الأكثر استخدامًا",

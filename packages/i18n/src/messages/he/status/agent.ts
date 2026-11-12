@@ -29,11 +29,11 @@ export const messages = {
   "status.agent.sendIdea": "זה יהפוך ל-issue ציבורי ב-GitHub. השם שלך לא מוצג.",
   "status.agent.feedbackRecentErrors": "שגיאות אחרונות בצ'אט:",
   "status.agent.feedbackSameAs": "מתווסף ל-issue #{issue}",
-  "status.agent.feedbackSent": "נשלח לצוות OpenBot: {title}",
+  "status.agent.feedbackSent": "נשלח לצוות Spinbot: {title}",
   "status.agent.serverInstallCommand":
-    "ליצור פקודה חד־פעמית שמתקינה את OpenBot במחשב אחר כשרת {name} ומחברת אותו לחשבון שלך. הסוכן מריץ אותה שם.",
+    "ליצור פקודה חד־פעמית שמתקינה את Spinbot במחשב אחר כשרת {name} ומחברת אותו לחשבון שלך. הסוכן מריץ אותה שם.",
   "status.agent.serverInstallCard": "פקודת התקנה לשרת {name}",
-  "status.agent.feedbackSending": "שולח את המשוב שלך לצוות OpenBot…",
+  "status.agent.feedbackSending": "שולח את המשוב שלך לצוות Spinbot…",
   "status.agent.workflowDelete": "מחיקת תהליך העבודה {title} יחד עם ההרצות והגרסאות שלו. השלבים הפתוחים שלו ייעצרו.",
   "status.agent.vaultCardFillFrames": "שדות הכרטיס נמצאים במסגרות מ-{origins}.",
   "status.agent.linkCardFill": "מילוי כרטיס Link חד-פעמי {card} ב-{site}. אישרת את התשלום הזה ב-Link עבור {merchant}.",
@@ -85,9 +85,9 @@ export const messages = {
   "status.agent.memoryChangesWithConflicts":
     "זיכרון: {saved} נשמרו, {updated} עודכנו, {forgotten} נשכחו, {notChanged} לא שונו כי שרשור אחר שינה אותם קודם.",
   "status.agent.mcpServerAdd":
-    "הוספת שרת MCP {name}: {target}. כל סוכן בשרת הזה מקבל את הכלים שלו. OpenBot מתחבר אליו כדי לבדוק אותו.",
+    "הוספת שרת MCP {name}: {target}. כל סוכן בשרת הזה מקבל את הכלים שלו. Spinbot מתחבר אליו כדי לבדוק אותו.",
   "status.agent.mcpServerChange":
-    "שינוי שרת MCP {name} אל {target}. כל סוכן בשרת הזה מקבל את הכלים שלו. OpenBot מתחבר אליו כדי לבדוק אותו.",
+    "שינוי שרת MCP {name} אל {target}. כל סוכן בשרת הזה מקבל את הכלים שלו. Spinbot מתחבר אליו כדי לבדוק אותו.",
   "status.agent.mcpServerEnable": "הפעלת שרת MCP {name} עבור כל סוכן בשרת הזה.",
   "status.agent.mcpServerDisable": "כיבוי שרת MCP {name} עבור כל סוכן בשרת הזה.",
   "status.agent.mcpServerRemove": "הסרת שרת MCP {name} וההתחברות שלו מכל סוכן בשרת הזה.",

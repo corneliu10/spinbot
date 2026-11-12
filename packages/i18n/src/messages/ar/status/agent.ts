@@ -30,11 +30,11 @@ export const messages = {
   "status.agent.sendIdea": "يصبح هذا مشكلة عامة على GitHub. لا يظهر اسمك.",
   "status.agent.feedbackRecentErrors": "الأخطاء الأخيرة في المحادثة:",
   "status.agent.feedbackSameAs": "يُضاف إلى المشكلة #{issue}",
-  "status.agent.feedbackSent": "أُرسل إلى فريق OpenBot: {title}",
+  "status.agent.feedbackSent": "أُرسل إلى فريق Spinbot: {title}",
   "status.agent.serverInstallCommand":
-    "إنشاء أمر لمرة واحدة يثبّت OpenBot على كمبيوتر آخر كالخادم {name} ويسجّل دخوله إلى حسابك. يشغّله الوكيل هناك.",
+    "إنشاء أمر لمرة واحدة يثبّت Spinbot على كمبيوتر آخر كالخادم {name} ويسجّل دخوله إلى حسابك. يشغّله الوكيل هناك.",
   "status.agent.serverInstallCard": "أمر التثبيت للخادم {name}",
-  "status.agent.feedbackSending": "جارٍ إرسال ملاحظاتك إلى فريق OpenBot…",
+  "status.agent.feedbackSending": "جارٍ إرسال ملاحظاتك إلى فريق Spinbot…",
   "status.agent.workflowDelete": "احذف سير العمل {title} مع عمليات تشغيله وإصداراته. تتوقف خطواته المفتوحة.",
   "status.agent.vaultCardFillFrames": "حقول البطاقة موجودة في إطارات من {origins}.",
   "status.agent.linkCardFill":
@@ -90,9 +90,9 @@ export const messages = {
   "status.agent.memoryChangesWithConflicts":
     "الذاكرة: حُفظ {saved}، وحُدّث {updated}، ونُسي {forgotten}، ولم يتغير {notChanged} لأن سلسلة أخرى غيّرته أولًا.",
   "status.agent.mcpServerAdd":
-    "إضافة خادم MCP {name}: {target}. يحصل كل وكيل على هذا الخادم على أدواته. يتصل OpenBot به لاختباره.",
+    "إضافة خادم MCP {name}: {target}. يحصل كل وكيل على هذا الخادم على أدواته. يتصل Spinbot به لاختباره.",
   "status.agent.mcpServerChange":
-    "تغيير خادم MCP {name} إلى {target}. يحصل كل وكيل على هذا الخادم على أدواته. يتصل OpenBot به لاختباره.",
+    "تغيير خادم MCP {name} إلى {target}. يحصل كل وكيل على هذا الخادم على أدواته. يتصل Spinbot به لاختباره.",
   "status.agent.mcpServerEnable": "تشغيل خادم MCP {name} لكل وكيل على هذا الخادم.",
   "status.agent.mcpServerDisable": "إيقاف خادم MCP {name} لكل وكيل على هذا الخادم.",
   "status.agent.mcpServerRemove": "إزالة خادم MCP {name} وتسجيل دخوله من كل وكيل على هذا الخادم.",

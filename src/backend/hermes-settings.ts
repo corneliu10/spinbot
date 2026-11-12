@@ -60,7 +60,7 @@ export function hermesSettingsEnvironment(
       renameSync(temporary, path);
     }
   } catch (error) {
-    logger.warn("OpenBot could not write the Hermes settings.", { error: String(error) });
+    logger.warn("Spinbot could not write the Hermes settings.", { error: String(error) });
     return {};
   }
   return { HERMES_MANAGED_DIR: folder };

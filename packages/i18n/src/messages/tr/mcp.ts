@@ -10,10 +10,10 @@ export const messages = {
   "mcp.connect.useKey": "Bunun yerine API anahtarı kullan",
   "mcp.connect.useSignIn": "Bunun yerine oturum aç",
   "mcp.connect.keyDescription":
-    "{name} hesabınızdan bir kimlik bilgisi yapıştırın. OpenBot bununla bağlanır ve onu {host} üzerinde saklar.",
+    "{name} hesabınızdan bir kimlik bilgisi yapıştırın. Spinbot bununla bağlanır ve onu {host} üzerinde saklar.",
   "mcp.connect.thisComputer": "bu bilgisayar",
   "mcp.connect.noCredentialDescription":
-    "{name} kimlik bilgisi istemez. OpenBot sunduğu araçları görmek için bir kez bağlanır.",
+    "{name} kimlik bilgisi istemez. Spinbot sunduğu araçları görmek için bir kez bağlanır.",
   "mcp.connect.connect": "Bağlan",
   "mcp.connect.required": "Gereklidir.",
   "mcp.connect.keptOn": "{host} üzerinde tutulur.",
@@ -24,7 +24,7 @@ export const messages = {
   "mcp.local.address": "Adres",
   "mcp.local.docs": "Kurulum kılavuzu",
   "mcp.signIn.description":
-    "{name} hesabınızda oturum açın. OpenBot, bu hesabın erişebildiği araçları alır ve şifre almaz.",
+    "{name} hesabınızda oturum açın. Spinbot, bu hesabın erişebildiği araçları alır ve şifre almaz.",
   "mcp.signIn.waiting": "Tarayıcı bekleniyor…",
   "mcp.signIn.continue": "{name} ile devam et",
   "mcp.signIn.pageDescription": "Bu sayfa {host} üzerindeki tarayıcıda açık. Burada oturum açın.",
@@ -62,7 +62,7 @@ export const messages = {
   "mcp.panel.empty": "Henüz MCP sunucusu yok.",
   "mcp.panel.enable": "{name} sunucusunu etkinleştir",
   "mcp.panel.detailsTitle": "Ayrıntılar",
-  "mcp.panel.detailsDescription": "Bu sunucuyu adlandırın ve OpenBot'un ona nasıl ulaşacağını seçin.",
+  "mcp.panel.detailsDescription": "Bu sunucuyu adlandırın ve Spinbot'un ona nasıl ulaşacağını seçin.",
   "mcp.panel.transport": "Aktarım",
   "mcp.panel.name": "Ad",
   "mcp.panel.namePlaceholder": "MCP sunucu adı",
@@ -112,16 +112,16 @@ export const messages = {
   "mcp.panel.signInTo": "Oturum aç: {name}",
   "mcp.panel.cancelSignInTo": "Oturum açmayı iptal et: {name}",
   "mcp.panel.signInWaiting": {
-    one: "Oturum açmayı tarayıcınızda tamamlayın. OpenBot {count} dakika sonra beklemeyi bırakır.",
-    other: "Oturum açmayı tarayıcınızda tamamlayın. OpenBot {count} dakika sonra beklemeyi bırakır.",
+    one: "Oturum açmayı tarayıcınızda tamamlayın. Spinbot {count} dakika sonra beklemeyi bırakır.",
+    other: "Oturum açmayı tarayıcınızda tamamlayın. Spinbot {count} dakika sonra beklemeyi bırakır.",
   },
   "mcp.panel.signInWaitingOn": {
-    one: "Oturum açma sayfası {host} üzerinde açılıyor. OpenBot {count} dakika sonra beklemeyi bırakır.",
-    other: "Oturum açma sayfası {host} üzerinde açılıyor. OpenBot {count} dakika sonra beklemeyi bırakır.",
+    one: "Oturum açma sayfası {host} üzerinde açılıyor. Spinbot {count} dakika sonra beklemeyi bırakır.",
+    other: "Oturum açma sayfası {host} üzerinde açılıyor. Spinbot {count} dakika sonra beklemeyi bırakır.",
   },
   "mcp.panel.appTitle": "Oturum açma uygulaması",
   "mcp.panel.appDescription":
-    "Sunucunun sağlayıcısına kaydettiğiniz bir OAuth uygulamasını kullanın. Sunucu OpenBot'u kendisi kaydedemediğinde OpenBot bu uygulamayı kullanır. OpenBot'un kendini kaydetmesi için boş bırakın.",
+    "Sunucunun sağlayıcısına kaydettiğiniz bir OAuth uygulamasını kullanın. Sunucu Spinbot'u kendisi kaydedemediğinde Spinbot bu uygulamayı kullanır. Spinbot'un kendini kaydetmesi için boş bırakın.",
   "mcp.panel.appSaveFirst": "Önce bu sunucuyu kaydedin. Ardından oturum açma uygulaması ekleyebilirsiniz.",
   "mcp.panel.appUrlChanged": "Önce yeni sunucu URL'sini kaydedin. Oturum açma uygulaması kayıtlı URL'ye aittir.",
   "mcp.panel.appLoadFailed": "Oturum açma uygulaması okunamadı.",
@@ -144,17 +144,17 @@ export const messages = {
   "mcp.panel.appSaved": "Uygulama kaydedildi. Kullanmak için oturum açın.",
   "mcp.panel.appRemoved": "Uygulama kaldırıldı.",
   "mcp.signIn.relayDescription":
-    "Tarayıcınızda {page} üzerinde oturum açın. Bitirdiğinizde OpenBot oturum açmayı {host} sunucusuna gönderir.",
+    "Tarayıcınızda {page} üzerinde oturum açın. Bitirdiğinizde Spinbot oturum açmayı {host} sunucusuna gönderir.",
   "mcp.signIn.relayOpenDescription":
-    "Tarayıcınızda {page} üzerinde oturum açın. Bitirdiğinizde tarayıcının gösterdiği adresi buraya yapıştırın. OpenBot ardından oturum açmayı {host} sunucusuna gönderir.",
+    "Tarayıcınızda {page} üzerinde oturum açın. Bitirdiğinizde tarayıcının gösterdiği adresi buraya yapıştırın. Spinbot ardından oturum açmayı {host} sunucusuna gönderir.",
   "mcp.signIn.relayDeviceDescription":
     "Tarayıcınızda {page} üzerinde oturum açın ve işlemi orada bitirin. {host} oturum açmayı kendisi algılar.",
   "mcp.signIn.relayOpen": "Oturum açma sayfasını aç",
-  "mcp.signIn.relayPasteHint": "Tarayıcı OpenBot'a geri dönmezse gösterdiği adresi kopyalayıp buraya yapıştırın.",
+  "mcp.signIn.relayPasteHint": "Tarayıcı Spinbot'a geri dönmezse gösterdiği adresi kopyalayıp buraya yapıştırın.",
   "mcp.signIn.relayPasteRequired":
-    "OpenBot oturum açmayı tarayıcıdan kendisi alamaz. Bitirdiğinizde tarayıcının gösterdiği adresi kopyalayıp buraya yapıştırın.",
+    "Spinbot oturum açmayı tarayıcıdan kendisi alamaz. Bitirdiğinizde tarayıcının gösterdiği adresi kopyalayıp buraya yapıştırın.",
   "mcp.signIn.relayAddress": "Tarayıcı adresi",
   "mcp.signIn.relaySend": "Gönder",
   "mcp.panel.callbackUrlRelayed":
-    "Oturum açma sayfası tarayıcınızda açılır ve bilgisayarınızdaki OpenBot oturum açmayı {host} sunucusuna gönderir. Bu URL'yi tam olarak uygulamanın izin verilen yönlendirme URL'lerine ekleyin.",
+    "Oturum açma sayfası tarayıcınızda açılır ve bilgisayarınızdaki Spinbot oturum açmayı {host} sunucusuna gönderir. Bu URL'yi tam olarak uygulamanın izin verilen yönlendirme URL'lerine ekleyin.",
 } as const satisfies PartialTranslation<typeof source>;

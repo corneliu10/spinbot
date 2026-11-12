@@ -39,11 +39,11 @@ const logger = createOpenBotLogger("proton-pass");
 const { io } = causeHelpers(PasswordManagerError);
 
 /** The vault that a `browser` connection reads. The user moves the logins that OpenBot may use into it. */
-const PROTON_PASS_SHARED_VAULT = "Shared with OpenBot";
+const PROTON_PASS_SHARED_VAULT = "Shared with Spinbot";
 const PROTON_PASS_SIGN_IN_HOSTS = ["account.proton.me"] as const;
 const TOKEN_VARIABLE = "PROTON_PASS_PERSONAL_ACCESS_TOKEN";
 /** The CLI tells Proton this reason for each login that it reads. */
-const READ_REASON = "OpenBot fills this login in its browser.";
+const READ_REASON = "Spinbot fills this login in its browser.";
 const AGENT_EXPIRATION = "1y";
 const AGENT_LIFETIME_MS = 365 * 24 * 60 * 60 * 1000;
 const COMMAND_MS = 60_000;
@@ -628,7 +628,7 @@ export class ProtonPassDriver implements PasswordManagerDriver, PasswordVault {
           if (created.code !== 0) return yield* fail(sourceText("error.connector.protonPassSetupFailed"));
         }
         // A new name each time: another computer with the same host name keeps its own agent.
-        const hostPart = `OpenBot ${this.#options.hostName}`.slice(0, 57);
+        const hostPart = `Spinbot ${this.#options.hostName}`.slice(0, 57);
         const agentName = `${hostPart} ${randomBytes(3).toString("hex")}`;
         const agent = yield* call([
           "agent",

@@ -61,7 +61,7 @@ const FILES_SECTION_LIMIT = GITHUB_BODY_LIMIT / 2;
 /** The longest file name in the branch. */
 const FILE_NAME_LIMIT = 100;
 /** `[skip ci]` stops other CI services too. */
-const FILES_COMMIT_MESSAGE = "Add files for an OpenBot workflow output [skip ci]";
+const FILES_COMMIT_MESSAGE = "Add files for an Spinbot workflow output [skip ci]";
 
 /** One linked file: on the branch, or at its own address when it could not be copied. */
 interface FileLink {
@@ -198,7 +198,7 @@ export function createGitHubRest(options: GitHubRestOptions): WorkflowGitHubApi 
         headers: {
           Accept: "application/vnd.github+json",
           Authorization: `Bearer ${token}`,
-          "User-Agent": "OpenBot",
+          "User-Agent": "Spinbot",
           "X-GitHub-Api-Version": "2022-11-28",
           ...(body ? { "Content-Type": "application/json" } : {}),
         },

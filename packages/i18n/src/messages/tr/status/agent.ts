@@ -30,11 +30,11 @@ export const messages = {
   "status.agent.sendIdea": "Bu, herkese açık bir GitHub issue'su olur. Adın gösterilmez.",
   "status.agent.feedbackRecentErrors": "Sohbetteki son hatalar:",
   "status.agent.feedbackSameAs": "#{issue} numaralı issue'ya eklenir",
-  "status.agent.feedbackSent": "OpenBot ekibine gönderildi: {title}",
+  "status.agent.feedbackSent": "Spinbot ekibine gönderildi: {title}",
   "status.agent.serverInstallCommand":
-    "OpenBot'u başka bir bilgisayara {name} sunucusu olarak kuran ve hesabınızda oturum açan tek kullanımlık bir komut oluştur. Ajan onu orada çalıştırır.",
+    "Spinbot'u başka bir bilgisayara {name} sunucusu olarak kuran ve hesabınızda oturum açan tek kullanımlık bir komut oluştur. Ajan onu orada çalıştırır.",
   "status.agent.serverInstallCard": "{name} sunucusu için kurulum komutu",
-  "status.agent.feedbackSending": "Geri bildiriminiz OpenBot ekibine gönderiliyor…",
+  "status.agent.feedbackSending": "Geri bildiriminiz Spinbot ekibine gönderiliyor…",
   "status.agent.workflowDelete":
     "{title} iş akışını çalıştırmaları ve sürümleriyle birlikte silin. Açık adımları durur.",
   "status.agent.screenCaptureProgress": "Ekranı yakalamak için izin isteniyor…",

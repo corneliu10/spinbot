@@ -108,7 +108,7 @@ export function createSecretStorage(options: { keyPath: string; platform?: NodeJ
     if (!created) throw new Error("The secret storage key file was not made.");
     madeKeyFile = true;
     // The backend name only: it tells a locked keyring from a missing one in a report.
-    logger.warn("The system keyring did not keep the secrets. OpenBot keeps new secrets in its own key file.", {
+    logger.warn("The system keyring did not keep the secrets. Spinbot keeps new secrets in its own key file.", {
       reason,
       backend: safeStorage.getSelectedStorageBackend(),
     });

@@ -1082,7 +1082,7 @@ export class HostService extends EventEmitter<HostEvents> {
     // change starts the next route sync, so the host is not made a second time here.
     if (this.#boundAccountId !== this.#signedInAccountId()) return;
     if (!this.#options.store.configured) {
-      yield* this.configure({ serverName: "OpenBot" }, true);
+      yield* this.configure({ serverName: "Spinbot" }, true);
       return;
     }
     const register = this.#options.registerRemoteHost;
@@ -1261,7 +1261,7 @@ export class HostService extends EventEmitter<HostEvents> {
     function* (this: HostService): Effect.fn.Return<HostStatus, RemoteWorkflowError, HostApiRuntime> {
       if (!this.#options.store.configured)
         return yield* new RemoteWorkflowError({
-          cause: new Error("Name this OpenBot before starting local development."),
+          cause: new Error("Name this Spinbot before starting local development."),
         });
       if (this.#status.phase === "online") return this.getStatus();
       const apiPort = yield* HostApiRuntime.use((api) => api.start());

@@ -2,12 +2,12 @@ import type { PartialTranslation } from "../../../message";
 import type { messages as source } from "../../en/error/auth";
 
 export const messages = {
-  // Errors from the OpenBot account service.
+  // Errors from the Spinbot account service.
   "error.auth.serviceUnavailable":
-    "OpenBot がアカウントサービスに接続できませんでした。API が動作していることを確認してから、再試行してください。",
+    "Spinbot がアカウントサービスに接続できませんでした。API が動作していることを確認してから、再試行してください。",
   "error.auth.networkBlocked":
-    "このネットワークのファイアウォールまたはプロキシが、OpenBot から {host} への接続をブロックしました。ネットワーク管理者に {host} の許可を依頼してから、再試行してください。",
-  "error.auth.signInFirst": "先に OpenBot にサインインしてください。",
+    "このネットワークのファイアウォールまたはプロキシが、Spinbot から {host} への接続をブロックしました。ネットワーク管理者に {host} の許可を依頼してから、再試行してください。",
+  "error.auth.signInFirst": "先に Spinbot にサインインしてください。",
   "error.auth.signInRequired": "サインインが必要です。",
   "error.auth.chatColorUnavailable":
     "アカウントサービスはまだチャットの色に対応していません。後でもう一度お試しください。",
@@ -16,16 +16,16 @@ export const messages = {
   "error.auth.codeNotVerified": "サインインコードを確認できませんでした。",
   "error.auth.serviceError": "アカウントサービスがエラーを返しました。",
   "error.auth.serviceUnreachable":
-    "OpenBot はアカウントサービスに接続できませんでした。接続を確認してから、もう一度お試しください。",
+    "Spinbot はアカウントサービスに接続できませんでした。接続を確認してから、もう一度お試しください。",
   "error.auth.serviceTimeout": "アカウントサービスが時間内に応答しませんでした。もう一度お試しください。",
   "error.auth.serviceStatus": "アカウントサービスがエラー ({status}) を返しました。後でもう一度お試しください。",
   "error.auth.invalidHostedServer": "アカウントサービスが無効なホスト型サーバーを返しました。",
   "error.auth.invalidServerClaim": "アカウントサービスが無効なサーバーコードを返しました。",
-  "error.auth.codeNotSent": "OpenBot がサインインコードを送信できませんでした。",
+  "error.auth.codeNotSent": "Spinbot がサインインコードを送信できませんでした。",
   "error.auth.deliveryTimeout":
-    "OpenBot が時間内に配信を確認できませんでした。コードが後で届く場合があります。再送信する前に配信を確認してください。",
+    "Spinbot が時間内に配信を確認できませんでした。コードが後で届く場合があります。再送信する前に配信を確認してください。",
   "error.auth.deliveryInterrupted":
-    "OpenBot が配信を確認する前に接続が終了しました。別のコードを送信しないように、配信を確認してください。",
+    "Spinbot が配信を確認する前に接続が終了しました。別のコードを送信しないように、配信を確認してください。",
   "error.auth.deliveryUnknown":
-    "サインインコードが送信されたかどうかを OpenBot が確認できませんでした。再送信する前に配信を確認してください。",
+    "サインインコードが送信されたかどうかを Spinbot が確認できませんでした。再送信する前に配信を確認してください。",
 } as const satisfies PartialTranslation<typeof source>;

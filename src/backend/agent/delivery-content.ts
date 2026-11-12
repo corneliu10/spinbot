@@ -168,7 +168,7 @@ function taggedReference(
   return `${title} (thread taskId ${reference.id}${thread.state ? `, ${thread.state}${detail}` : ""})`;
 }
 
-const TEAMMATE_HEADER = "Message from OpenBot teammate";
+const TEAMMATE_HEADER = "Message from Spinbot teammate";
 const NO_ANSWER_LINE = "The sender does not want an answer. This message passes information to you.";
 const COLLABORATOR_SEPARATOR = "--- collaborator message ---";
 const ROUTINE_TASK_START = "--- routine task ---";
@@ -177,7 +177,7 @@ const ATTACHED_FILES_HEADER = "\n\nAttached local files:\n";
 const NO_ANSWER_FROM = "No answer comes from ";
 const NO_ANSWER_REASON = ": the request to them ended before they answered. Do not wait for them.";
 /** The first words of a provider handoff. */
-export const HANDOFF_START = "Continue this OpenBot conversation.";
+export const HANDOFF_START = "Continue this Spinbot conversation.";
 /** The last line of a provider handoff. */
 export const HANDOFF_END = "--- end previous transcript ---";
 /** Between a provider handoff and the prompt of the turn that takes it. */
@@ -300,19 +300,19 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
           routine
             ? `This replies to a message you sent in a run of your routine "${routine.routineName}". That run has ended, so its task is below. Continue that task from this result now: do its next steps, such as a request to the next teammate, before you end this turn. Then give the result to the user naturally, starting with the teammate's name.`
             : "This replies to a message you sent. Give the result to the user naturally, starting with the teammate's name.",
-          "For partial or blocked work, you still own the request: finish the rest yourself, with a follow-up, or with a better teammate; do not repeat a failed call unchanged. Give the user the blocker and its Unblock action only when the user must act. When OpenBot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app and end your answer with the next field of its result.",
+          "For partial or blocked work, you still own the request: finish the rest yourself, with a follow-up, or with a better teammate; do not repeat a failed call unchanged. Give the user the blocker and its Unblock action only when the user must act. When Spinbot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app and end your answer with the next field of its result.",
           "Reply to the teammate only for another requested action or new information that unblocks its work, never with the same request or an acknowledgement.",
         ]
       : delivery.expectsReply === false
         ? [
             NO_ANSWER_LINE,
-            "Use it if it changes your work, and continue. Send no reply, acknowledgement or result: OpenBot sends the sender nothing back.",
+            "Use it if it changes your work, and continue. Send no reply, acknowledgement or result: Spinbot sends the sender nothing back.",
             `When nothing in it is for the user, call the ${ROUTINE_NO_UPDATE_TOOL} tool instead of a written answer.`,
           ]
         : [
             `Finish the whole request, then send a concise result to ${senderName} with openbot.send_message: recipientAgentIds ["${senderAgentId}"], replyToMessageId "${delivery.messageId}", expectsReply false.`,
             "When something fails, find the cause and try other ways first. Status: blocked only when the sender or the user must act.",
-            "Reply in three lines: Status: done | partial | blocked, Result: <concrete outcome>, Evidence: <file, test, command, or none>. When blocked, add Unblock: <the one action that unblocks the task>; when OpenBot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app, and that action is the next field of its result.",
+            "Reply in three lines: Status: done | partial | blocked, Result: <concrete outcome>, Evidence: <file, test, command, or none>. When blocked, add Unblock: <the one action that unblocks the task>; when Spinbot has a plugin for the service and it is not in your tools, call openbot.suggest_marketplace_app, and that action is the next field of its result.",
             "Never acknowledge without a Status line.",
           ];
     text = [
@@ -336,7 +336,7 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
     const testRun = run !== null && !quietRoutineRun(run);
     const runKind = testRun ? "manual Test run" : run?.source ? `${run.source} run` : "scheduled run";
     text = [
-      "Execute one run of an existing OpenBot routine now.",
+      "Execute one run of an existing Spinbot routine now.",
       `Routine name: ${delivery.sender.routineName}`,
       `Run type: ${runKind}`,
       `Scheduled for: ${delivery.sender.scheduledFor}`,
@@ -344,7 +344,7 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
       "Do not create, update, delete, or test routines during this run.",
       "Perform the task below now. Do not answer only that the routine or monitoring is active.",
       "Nobody answers you during this run. Do all of the task in this turn: do not stop after a step to report progress or to ask whether to continue.",
-      "A task can tell you to remind the user or to send the user a message. When it names no other place, write that message as your final answer. OpenBot shows your final answer to the user in this chat. openbot.send_message sends to other agents, not to the user.",
+      "A task can tell you to remind the user or to send the user a message. When it names no other place, write that message as your final answer. Spinbot shows your final answer to the user in this chat. openbot.send_message sends to other agents, not to the user.",
       testRun
         ? "This is a manual Test run. Report the action and result even when a normal scheduled run would suppress a notification because there is no change."
         : `This is a ${runKind}. Follow the notification conditions in the routine task. When they give nothing to report, call the ${ROUTINE_NO_UPDATE_TOOL} tool instead of a written answer. A requested reminder or message is a report, also when there is no new information. Do not call ${ROUTINE_NO_UPDATE_TOOL} for it unless the notification conditions of the task say to send nothing.`,
@@ -409,7 +409,7 @@ export function deliveryPromptInput(context: DeliveryContext, sources: DeliveryP
  */
 export function planContinuationPrompt(steps: readonly ConversationPlanStep[], count: number, limit: number): string {
   return [
-    "OpenBot note, not a message from the user. Your last turn ended while your plan still had open steps:",
+    "Spinbot note, not a message from the user. Your last turn ended while your plan still had open steps:",
     ...steps.map((step) => `- [${step.status === "inProgress" ? "in progress" : "pending"}] ${step.text}`),
     "Continue the work now, from where you stopped. Do not repeat finished work or restate the plan. Keep the plan current and mark each step done when you finish it. If a step is already done, mark it done; if it no longer applies, remove it. Do not ask whether to continue. This note does not approve a risky action. If you must wait, need the user's input or approval, or are blocked, say so in one short line and end your turn.",
     `Automatic continuation ${count} of ${limit}.`,
@@ -419,7 +419,7 @@ export function planContinuationPrompt(steps: readonly ConversationPlanStep[], c
 /** The note for a turn that ended before the next step: it named the step, or asked whether to continue. */
 export function nextStepContinuationPrompt(count: number, limit: number): string {
   return [
-    "OpenBot note, not a message from the user. Your last turn ended before the next step: you named the step or asked whether to continue, but you did not do it.",
+    "Spinbot note, not a message from the user. Your last turn ended before the next step: you named the step or asked whether to continue, but you did not do it.",
     "Do the next step now, and continue until the request is done. Do not repeat finished work or restate earlier answers. Do not ask whether to continue. This note does not approve a risky action. If the request is already done, say so in one short line and end your turn. If you must wait, need the user's input or approval, or are blocked, say so in one short line and end your turn.",
     `Automatic continuation ${count} of ${limit}.`,
   ].join("\n");
@@ -428,7 +428,7 @@ export function nextStepContinuationPrompt(count: number, limit: number): string
 /** The note for a turn that a failed compaction stopped: the connection failed or stopped during it. */
 export function compactionContinuationPrompt(): string {
   return [
-    "OpenBot note, not a message from the user. Your last turn stopped because the connection failed while your context was compacted.",
+    "Spinbot note, not a message from the user. Your last turn stopped because the connection failed while your context was compacted.",
     "Continue the work now, from where you stopped. Do not repeat finished work or restate earlier answers. Check the result of an action that was interrupted before you do it again. This note does not approve a risky action. If the request is already done, say so in one short line and end your turn. If you must wait, need the user's input or approval, or are blocked, say so in one short line and end your turn.",
   ].join("\n");
 }

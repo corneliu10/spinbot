@@ -2,28 +2,28 @@ import type { PartialTranslation } from "../../message";
 import type { messages as source } from "../en/startup";
 
 export const messages = {
-  "startup.failedTitle": "OpenBot başlatılamadı",
+  "startup.failedTitle": "Spinbot başlatılamadı",
   "startup.failedBody":
     "{message}\n\nYerel verileriniz sıfırlanmadı veya üzerine yazılmadı. Kurtarma adımları için sorun giderme kılavuzuna bakın.",
-  "startup.archiveChangedTitle": "OpenBot dosyaları değiştirildi",
+  "startup.archiveChangedTitle": "Spinbot dosyaları değiştirildi",
   "startup.archiveChangedBody":
-    "Başka bir program OpenBot’un app.asar dosyasını değiştirdi. OpenBot şu an çalışıyor, ancak kapattıktan sonra açılmayacak.\n\nOnarmak için OpenBot’u yeniden yükleyin. Yerel verileriniz korunur.",
-  "startup.archiveChangedDownload": "OpenBot’u indir",
-  "startup.newerDataUpdatingTitle": "OpenBot güncelleniyor",
+    "Başka bir program Spinbot’un app.asar dosyasını değiştirdi. Spinbot şu an çalışıyor, ancak kapattıktan sonra açılmayacak.\n\nOnarmak için Spinbot’u yeniden yükleyin. Yerel verileriniz korunur.",
+  "startup.archiveChangedDownload": "Spinbot’u indir",
+  "startup.newerDataUpdatingTitle": "Spinbot güncelleniyor",
   "startup.newerDataUpdatingBody":
-    "OpenBot’un daha yeni bir sürümü verilerinizi kaydetti. OpenBot en son sürümü yüklüyor ve ardından yeniden açılacak.\n\nYerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
-  "startup.newerDataTitle": "En son OpenBot’u yükleyin",
+    "Spinbot’un daha yeni bir sürümü verilerinizi kaydetti. Spinbot en son sürümü yüklüyor ve ardından yeniden açılacak.\n\nYerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
+  "startup.newerDataTitle": "En son Spinbot’u yükleyin",
   "startup.newerDataBody":
-    "OpenBot’un daha yeni bir sürümü verilerinizi kaydetti ve bu sürüm ({version}) onları açamıyor. Verilerinizi açmak için en son sürümü yükleyin.\n\nYerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
-  "startup.newerDataDownload": "OpenBot’u indir",
+    "Spinbot’un daha yeni bir sürümü verilerinizi kaydetti ve bu sürüm ({version}) onları açamıyor. Verilerinizi açmak için en son sürümü yükleyin.\n\nYerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
+  "startup.newerDataDownload": "Spinbot’u indir",
   "startup.newerDataGuide": "Kılavuzu aç",
   "startup.newerDataQuit": "Çık",
-  "startup.recoveryWindowTitle": "OpenBot kurtarma",
-  "startup.recoveryTitle": "OpenBot açılmadı",
+  "startup.recoveryWindowTitle": "Spinbot kurtarma",
+  "startup.recoveryTitle": "Spinbot açılmadı",
   "startup.recoveryBody": {
-    one: "OpenBot {version}, açılmadan önce art arda {count} kez durdu. Yerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
+    one: "Spinbot {version}, açılmadan önce art arda {count} kez durdu. Yerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
     other:
-      "OpenBot {version}, açılmadan önce art arda {count} kez durdu. Yerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
+      "Spinbot {version}, açılmadan önce art arda {count} kez durdu. Yerel verileriniz sıfırlanmadı veya üzerine yazılmadı.",
   },
   "startup.recoveryHint":
     "Yeniden deneyin veya açılan son sürümü yükleyin. Yardım almak için tanılamayı dışa aktarın ve dosyayı raporunuzla gönderin.",
@@ -33,5 +33,5 @@ export const messages = {
   "startup.recoveryOpenDataFolder": "Veri klasörünü aç",
   "startup.recoveryQuit": "Çık",
   "startup.recoveryDiagnosticsSaved": "Tanılama dosyası kaydedildi.",
-  "startup.recoveryActionFailed": "OpenBot bu işlemi yapamadı.",
+  "startup.recoveryActionFailed": "Spinbot bu işlemi yapamadı.",
 } as const satisfies PartialTranslation<typeof source>;

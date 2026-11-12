@@ -28,7 +28,7 @@ export const messages = {
   "prompt.approval.report.bugHeadline": "버그를 찾으셨나요? 고쳐 봅시다.",
   "prompt.approval.report.ideaHeadline": "아이디어가 있나요? 실현해 봅시다.",
   "prompt.approval.report.dontSend": "나중에",
-  "prompt.approval.report.send": "OpenBot 팀에 보내기",
+  "prompt.approval.report.send": "Spinbot 팀에 보내기",
   "prompt.approval.title.command": "명령 실행",
   "prompt.approval.title.fileChange": "파일 변경",
   "prompt.approval.title.permissions": "권한 부여",
@@ -53,7 +53,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host}에서 {server}의 로그인을 차단했어요",
   "prompt.browser.signInBlocked.cancelledTitle": "{host} 로그인이 취소되었어요",
   "prompt.browser.signInBlocked.body":
-    "이 컴퓨터에서 로그인해 주세요. OpenBot은 {host} 로그인 정보만 {server}에 보내고, {name}이(가) 이어서 진행해요.",
+    "이 컴퓨터에서 로그인해 주세요. Spinbot은 {host} 로그인 정보만 {server}에 보내고, {name}이(가) 이어서 진행해요.",
   "prompt.browser.signInBlocked.cancelledBody": "로그인이 취소되었어요.",
   "prompt.browser.signInBlocked.waiting": "로그인을 기다리는 중",
   "prompt.browser.signInBlocked.waitingButton": "로그인을 기다리는 중…",

@@ -28,7 +28,7 @@ export interface HostedUpdatePaths {
 const HOSTED_UPDATE_PATHS: HostedUpdatePaths = {
   requests: "/run/openbot",
   state: "/run/openbot-update.state",
-  stagedReady: "/opt/OpenBot/staged.ready",
+  stagedReady: "/opt/Spinbot/staged.ready",
 };
 
 /**

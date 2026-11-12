@@ -6,9 +6,9 @@ export const messages = {
   "mobile.server.remoteDesktop.title": "שליטה במחשב",
   "mobile.server.remoteDesktop.unlockPrompt": "יש לבטל את הנעילה כדי לשלוט במחשב",
   "mobile.server.remoteDesktop.connecting": "מתחבר למחשב…",
-  "mobile.server.remoteDesktop.unsupported": "השרת הזה לא יכול לשתף את המסך שלו. יש לעדכן את OpenBot במחשב.",
+  "mobile.server.remoteDesktop.unsupported": "השרת הזה לא יכול לשתף את המסך שלו. יש לעדכן את Spinbot במחשב.",
   "mobile.server.remoteDesktop.notReady":
-    "שולחן עבודה מרוחק לא הוגדר במחשב הזה. יש להגדיר אותו ב-OpenBot במחשב, בהגדרות.",
+    "שולחן עבודה מרוחק לא הוגדר במחשב הזה. יש להגדיר אותו ב-Spinbot במחשב, בהגדרות.",
   "mobile.server.remoteDesktop.offline": "השרת לא מחובר. אפשר לנסות שוב כשהוא יהיה מקוון.",
   "mobile.server.remoteDesktop.appUpdate": "יש לעדכן את האפליקציה כדי לשלוט במחשב.",
   "mobile.server.remoteDesktop.streamNotReady": "המחשב לא שלח את המסך שלו. אפשר לנסות שוב.",
@@ -111,10 +111,10 @@ export const messages = {
   "mobile.server.drawer.leaveFailed": "לא ניתן לעזוב את {name}",
   "mobile.server.drawer.removeFailed": "לא ניתן להסיר את {name}",
   "mobile.server.drawer.deleteFailed": "לא ניתן למחוק את {name}",
-  "mobile.server.drawer.actionFailed": "OpenBot לא הצליח להשלים את הפעולה. אפשר לנסות שוב.",
+  "mobile.server.drawer.actionFailed": "Spinbot לא הצליח להשלים את הפעולה. אפשר לנסות שוב.",
   "mobile.server.drawer.moveUp": "הזזה למעלה",
   "mobile.server.drawer.moveDown": "הזזה למטה",
-  "mobile.server.drawer.orderHint": "OpenBot נפתח בשרת הראשון. הסדר נשמר במכשיר הזה.",
+  "mobile.server.drawer.orderHint": "Spinbot נפתח בשרת הראשון. הסדר נשמר במכשיר הזה.",
   "mobile.server.drawer.title": "שרתים",
   "mobile.server.drawer.serverSettings": "הגדרות שרת",
   "mobile.server.drawer.serverListHint": "מציג או מסתיר את השרתים",
@@ -135,8 +135,8 @@ export const messages = {
   "mobile.server.drawer.close": "סגירת מגירת השרתים",
   "mobile.server.invite.noExpiry": "{role} · ללא תפוגה",
   "mobile.server.invite.expires": "{role} · תפוגה ב-{date}",
-  "mobile.server.invite.loadFailed": "OpenBot לא הצליח לטעון את ההזמנה הזו.",
-  "mobile.server.invite.joinFailed": "OpenBot לא הצליח להצטרף לשרת הזה.",
+  "mobile.server.invite.loadFailed": "Spinbot לא הצליח לטעון את ההזמנה הזו.",
+  "mobile.server.invite.joinFailed": "Spinbot לא הצליח להצטרף לשרת הזה.",
   "mobile.server.invite.checking": "בודק את ההזמנה…",
   "mobile.server.invite.unavailable": "ההזמנה לא זמינה",
   "mobile.server.invite.verifying": "מאמת את זהות השרת.",
@@ -154,8 +154,8 @@ export const messages = {
   "mobile.server.join.inviteLink": "קישור הזמנה",
   "mobile.server.join.joining": "מצטרף…",
   "mobile.server.join.submit": "הצטרפות לשרת",
-  // The cloud server that OpenBot runs for the user, with a paid plan. The phone shows the plans and
-  // the servers of the account; the purchase is in OpenBot on the computer.
+  // The cloud server that Spinbot runs for the user, with a paid plan. The phone shows the plans and
+  // the servers of the account; the purchase is in Spinbot on the computer.
   "mobile.server.hosted.loading": "טוען מסלולים…",
   "mobile.server.hosted.loadFailed": "לא ניתן לטעון את המסלולים. אפשר לנסות שוב.",
   "mobile.server.hosted.wakeFailed": "לא ניתן להפעיל את השרת. אפשר לנסות שוב.",
@@ -182,12 +182,12 @@ export const messages = {
   "mobile.server.hosted.speedFaster": "מהיר פי {factor}",
   "mobile.server.hosted.joinHint": "יש להשתמש בהזמנה מבעלי השרת.",
   "mobile.server.hosted.join": "הצטרפות לשרת",
-  // A new server that the OpenBot desktop app runs on the computer of the server {name}, beside that server.
+  // A new server that the Spinbot desktop app runs on the computer of the server {name}, beside that server.
   "mobile.server.local.option": "שרת מקומי חדש במחשב",
   "mobile.server.local.optionHint": "במחשב שמריץ את {name}, עם סוכנים, צ'אטים וקבצים משלו.",
   "mobile.server.local.title": "שרת חדש",
   "mobile.server.local.description":
-    "השרת רץ במחשב שמריץ את {name}, עם סוכנים, צ'אטים וקבצים משלו. הוא זמין כל עוד OpenBot רץ באותו מחשב.",
+    "השרת רץ במחשב שמריץ את {name}, עם סוכנים, צ'אטים וקבצים משלו. הוא זמין כל עוד Spinbot רץ באותו מחשב.",
   "mobile.server.local.nameLabel": "שם השרת",
   "mobile.server.local.nameTooShort": "יש להזין לפחות {limit} תווים.",
   "mobile.server.local.create": "יצירה",
@@ -199,23 +199,23 @@ export const messages = {
   "mobile.server.local.createdOn": "{name} רץ באותו מחשב כמו {computer}.",
   "mobile.server.local.waiting": "ממתין ש-{name} יתחבר…",
   "mobile.server.local.notPublished":
-    "{name} רץ, אבל הטלפון הזה עדיין לא יכול לפתוח אותו. יש לוודא ש-OpenBot במחשב שמריץ את {computer} מחובר לחשבון ומקוון.",
+    "{name} רץ, אבל הטלפון הזה עדיין לא יכול לפתוח אותו. יש לוודא ש-Spinbot במחשב שמריץ את {computer} מחובר לחשבון ומקוון.",
   "mobile.server.local.open": "פתיחת השרת",
   "mobile.server.local.ownerOnly": "רק הבעלים יכול ליצור שרת במחשב הזה.",
-  "mobile.server.local.unsupported": "יש לעדכן את OpenBot במחשב הזה כדי ליצור בו שרת.",
+  "mobile.server.local.unsupported": "יש לעדכן את Spinbot במחשב הזה כדי ליצור בו שרת.",
   "mobile.server.local.deleteOffline":
-    "רק המחשב של השרת הזה יכול למחוק אותו. יש לפתוח את OpenBot באותו מחשב ולנסות שוב.",
+    "רק המחשב של השרת הזה יכול למחוק אותו. יש לפתוח את Spinbot באותו מחשב ולנסות שוב.",
   "mobile.server.hosted.intro.title": "הסוכנים שלך, תמיד פעילים",
   "mobile.server.hosted.intro.description":
-    "שרת ענן מריץ את הסוכנים והשגרות שלך גם כשהמחשב כבוי. OpenBot מגדיר אותו ומשאיר אותו פעיל.",
+    "שרת ענן מריץ את הסוכנים והשגרות שלך גם כשהמחשב כבוי. Spinbot מגדיר אותו ומשאיר אותו פעיל.",
   // {members}, {storage}, {sites} and {speed} are the texts of the four facts of a plan.
   "mobile.server.hosted.planFacts": "{members} · {storage} · {sites} · {speed}",
   // The steps on the desktop app. The names after "Settings" are the desktop Settings tabs and buttons.
   "mobile.server.hosted.computer.title": "במחשב שלך",
   "mobile.server.hosted.computer.add": "הוספת שרת ענן",
-  "mobile.server.hosted.computer.addHint": "ב-OpenBot, יש לפתוח הגדרות ← שרתים מארחים ולבחור בהוספת שרת.",
+  "mobile.server.hosted.computer.addHint": "ב-Spinbot, יש לפתוח הגדרות ← שרתים מארחים ולבחור בהוספת שרת.",
   "mobile.server.hosted.computer.change": "שינוי מסלול",
-  "mobile.server.hosted.computer.changeHint": "ב-OpenBot, יש לפתוח הגדרות ← חיוב.",
+  "mobile.server.hosted.computer.changeHint": "ב-Spinbot, יש לפתוח הגדרות ← חיוב.",
   "mobile.server.hosted.yourServers": "השרתים שלך",
   "mobile.server.hosted.plans": "מסלולים",
   "mobile.server.hosted.currentPlan": "המסלול שלך",
@@ -233,28 +233,28 @@ export const messages = {
   "mobile.server.hosted.paymentTitle": "ממתין לתשלום",
   "mobile.server.hosted.paymentDescription": "ההגדרה מתחילה כשהתשלום מאושר.",
   "mobile.server.hosted.progressTitle": "מגדיר את {name}",
-  "mobile.server.hosted.progressDescription": "OpenBot מכין עבורך מכונה פרטית.",
+  "mobile.server.hosted.progressDescription": "Spinbot מכין עבורך מכונה פרטית.",
   "mobile.server.hosted.closeHint": "אפשר לסגור את הגיליון. ההגדרה נמשכת, והשרת יופיע ברשימה כשיהיה מוכן.",
   "mobile.server.hosted.readyTitle": "{name} מוכן",
   "mobile.server.hosted.readyDescription": "הוא עובד גם כשהמחשב שלך כבוי, ומתחיל שוב כשמשתמשים בו.",
   "mobile.server.hosted.open": "פתיחת השרת",
   "mobile.server.hosted.failedTitle": "השרת לא הצליח להתחיל",
   "mobile.server.hosted.failedDescription":
-    "אפשר לנסות שוב. אם זה נכשל שוב, יש למחוק את השרת בהגדרות של OpenBot במחשב שלך.",
+    "אפשר לנסות שוב. אם זה נכשל שוב, יש למחוק את השרת בהגדרות של Spinbot במחשב שלך.",
   "mobile.server.hosted.retrying": "מתחיל…",
   "mobile.server.hosted.expiredTitle": "תוקף דף התשלום פג",
   "mobile.server.hosted.expiredDescription": "השרת לא שולם, ולכן הוסר.",
   "mobile.server.hosted.step.payment": "אישור התשלום",
   "mobile.server.hosted.step.create": "יצירת המכונה",
-  "mobile.server.hosted.step.start": "הפעלת OpenBot",
+  "mobile.server.hosted.step.start": "הפעלת Spinbot",
   "mobile.server.hosted.step.connect": "חיבור לחשבון שלך",
   "mobile.server.hosted.detail.payment": "ממתין ל-Stripe",
   "mobile.server.hosted.detail.reserve": "שומר מכונה פרטית",
-  "mobile.server.hosted.detail.copy": "מעתיק את OpenBot למכונה",
+  "mobile.server.hosted.detail.copy": "מעתיק את Spinbot למכונה",
   "mobile.server.hosted.detail.key": "מוסיף מפתח התחברות חד-פעמי",
   "mobile.server.hosted.detail.boot": "מפעיל את המכונה",
-  "mobile.server.hosted.detail.app": "מפעיל את OpenBot",
-  "mobile.server.hosted.detail.wait": "ממתין ש-OpenBot יענה",
+  "mobile.server.hosted.detail.app": "מפעיל את Spinbot",
+  "mobile.server.hosted.detail.wait": "ממתין ש-Spinbot יענה",
   "mobile.server.hosted.detail.signIn": "מתחבר בשמך",
   "mobile.server.hosted.detail.publish": "מוסיף את השרת לחשבון שלך",
   "mobile.server.hosted.detail.check": "בודק את החיבור",
@@ -263,7 +263,7 @@ export const messages = {
   "mobile.server.hosted.stepActive": "בתהליך",
   "mobile.server.hosted.stepPending": "לא התחיל",
   "mobile.server.hosted.stepFailed": "נכשל",
-  "mobile.server.scan.notInvitation": "קוד ה-QR הזה אינו הזמנה של OpenBot.",
+  "mobile.server.scan.notInvitation": "קוד ה-QR הזה אינו הזמנה של Spinbot.",
   "mobile.server.scan.title": "סריקת הזמנה",
   "mobile.server.role.owner": "בעלים",
   "mobile.server.role.admin": "מנהל",
@@ -308,7 +308,7 @@ export const messages = {
   "mobile.server.routines.status.paused": "מושהית",
   "mobile.server.routines.status.failed": "נכשלה",
   "mobile.server.routines.status.completed": "הושלמה",
-  "mobile.server.threads.unsupported": "המארח הזה לא תומך בשרשורים. יש לעדכן את OpenBot במארח.",
+  "mobile.server.threads.unsupported": "המארח הזה לא תומך בשרשורים. יש לעדכן את Spinbot במארח.",
   "mobile.server.threads.ask": "מה לעשות?",
   "mobile.server.threads.chooseAgent": "התחלת השרשור עם",
   "mobile.server.threads.agentLabel": "התחלת השרשור עם {name}",
@@ -388,7 +388,7 @@ export const messages = {
   "mobile.server.settings.remove": "הסרת השרת",
   "mobile.server.settings.deleteTitle": "למחוק את {name}?",
   "mobile.server.settings.deleteBody":
-    "OpenBot עוצר את השרת במחשב שלו ומעביר את הסוכנים, הצ'אטים והקבצים שלו לפח של אותו מחשב. השרת נעלם מרשימת השרתים בכל המכשירים שלך.",
+    "Spinbot עוצר את השרת במחשב שלו ומעביר את הסוכנים, הצ'אטים והקבצים שלו לפח של אותו מחשב. השרת נעלם מרשימת השרתים בכל המכשירים שלך.",
   "mobile.server.settings.delete": "מחיקת השרת",
   "mobile.server.settings.name": "שם השרת",
   "mobile.server.settings.nameLength": "יש להזין {min} עד {max} תווים.",
@@ -399,7 +399,7 @@ export const messages = {
   "mobile.server.settings.removeLogo": "הסרת לוגו",
   "mobile.server.settings.identitySaveFailed": "לא ניתן לשמור את שם השרת והלוגו. אפשר לנסות שוב.",
   "mobile.server.settings.identityNotAllowed": "רק בעלים או מנהל יכולים לשנות את שם השרת והלוגו.",
-  "mobile.server.settings.identityUnsupported": "יש לעדכן את OpenBot בשרת הזה כדי לשנות כאן את השם והלוגו שלו.",
+  "mobile.server.settings.identityUnsupported": "יש לעדכן את Spinbot בשרת הזה כדי לשנות כאן את השם והלוגו שלו.",
   "mobile.server.settings.identityOffline": "יש להתחבר לשרת הזה כדי לשנות את השם והלוגו שלו.",
   "mobile.server.route.cropLogo": "חיתוך הלוגו",
   "mobile.server.members.remove": "הסרת חבר",
@@ -455,7 +455,7 @@ export const messages = {
   "mobile.server.storage.category.caches": "קבצי שרת במטמון",
   "mobile.server.storage.category.runtimes": "סביבות ריצה של ספקים",
   "mobile.server.storage.category.logs": "יומנים",
-  "mobile.server.storage.total": "OpenBot ב-{name}",
+  "mobile.server.storage.total": "Spinbot ב-{name}",
   "mobile.server.storage.used": "בשימוש",
   "mobile.server.storage.byType": "אחסון לפי סוג",
   "mobile.server.storage.free": "{size} פנויים בדיסק הזה",
@@ -476,10 +476,10 @@ export const messages = {
   "mobile.server.storage.clearCategory": "ניקוי: {category}",
   "mobile.server.storage.clearTitle.caches": "לנקות את קבצי השרת במטמון?",
   "mobile.server.storage.clearTitle.logs": "לנקות את היומנים?",
-  "mobile.server.storage.clearBody.caches": "עותקים של קבצי שרת. OpenBot מוריד אותם שוב כשפותחים אותם.",
+  "mobile.server.storage.clearBody.caches": "עותקים של קבצי שרת. Spinbot מוריד אותם שוב כשפותחים אותם.",
   "mobile.server.storage.clearBody.logs": "יומני אבחון. יומנים חדשים מתחילים מיד.",
   "mobile.server.storage.clearFailed": "לא ניתן לנקות את הנתונים",
-  "mobile.server.storage.clearFailedBody": "OpenBot לא הצליח לנקות את הנתונים האלה בשרת.",
+  "mobile.server.storage.clearFailedBody": "Spinbot לא הצליח לנקות את הנתונים האלה בשרת.",
   "mobile.server.storage.noFiles": "אין קבצים שמורים בשרת הזה.",
   "mobile.server.library.type.all": "הכול",
   "mobile.server.library.type.images": "תמונות",
@@ -542,7 +542,7 @@ export const messages = {
   "mobile.server.settings.timezoneLoadFailed": "לא ניתן לטעון את אזור הזמן של השרת.",
   "mobile.server.settings.timezoneSaveFailed": "לא ניתן לשמור את אזור הזמן. אפשר לנסות שוב.",
   "mobile.server.settings.timezoneUnavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי לשנות את אזור הזמן שלו.",
-  "mobile.server.settings.timezoneUnsupported": "יש לעדכן את OpenBot בשרת הזה כדי לשנות כאן את אזור הזמן שלו.",
+  "mobile.server.settings.timezoneUnsupported": "יש לעדכן את Spinbot בשרת הזה כדי לשנות כאן את אזור הזמן שלו.",
   "mobile.server.settings.keySection": "מפתח השרת",
   "mobile.server.settings.keyChanged": "השינוי האחרון",
   "mobile.server.settings.keyChange": "החלפת מפתח",
@@ -558,20 +558,20 @@ export const messages = {
   "mobile.server.settings.keyFollowing": "השרת משתמש במפתח החדש. האפליקציה הזו תעבור אליו כשרשימת השרתים תיטען שוב.",
   "mobile.server.settings.keyChangeFailed": "לא ניתן להחליף את מפתח השרת. אפשר לנסות שוב.",
   "mobile.server.settings.keyOwnerOnly": "רק הבעלים יכול להחליף את מפתח השרת.",
-  "mobile.server.settings.keyUnsupported": "יש לעדכן את OpenBot בשרת הזה כדי להחליף כאן את המפתח שלו.",
+  "mobile.server.settings.keyUnsupported": "יש לעדכן את Spinbot בשרת הזה כדי להחליף כאן את המפתח שלו.",
   "mobile.server.settings.memoryLimit": "זיכרונות לכל סוכן",
   "mobile.server.settings.memoryLimitDescription": "כמה זיכרונות כל סוכן בשרת הזה יכול לשמור.",
   "mobile.server.settings.memoryLimitLoadFailed": "לא ניתן לטעון את מגבלת הזיכרונות של השרת הזה.",
   "mobile.server.settings.memoryLimitSaveFailed": "לא ניתן לשמור את מגבלת הזיכרונות. אפשר לנסות שוב.",
-  "mobile.server.settings.memoryLimitUnsupported": "יש לעדכן את OpenBot בשרת הזה כדי לשנות כאן את מגבלת הזיכרונות שלו.",
+  "mobile.server.settings.memoryLimitUnsupported": "יש לעדכן את Spinbot בשרת הזה כדי לשנות כאן את מגבלת הזיכרונות שלו.",
   // Server settings › Vault: the logins, cards and contact info of a joined server, for an owner or
   // admin. {host} is the server name, such as Studio. The phone never shows a saved secret.
   "mobile.server.route.browserProfiles": "פרופילי דפדפן",
   "mobile.server.browserProfiles.unavailable": "רק בעלים או מנהל של שרת מקוון יכולים לנהל את פרופילי הדפדפן שלו.",
-  "mobile.server.browserProfiles.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את פרופילי הדפדפן שלו.",
+  "mobile.server.browserProfiles.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את פרופילי הדפדפן שלו.",
   "mobile.server.browserProfiles.loading": "טוען פרופילי דפדפן…",
-  "mobile.server.browserProfiles.loadFailed": "OpenBot לא הצליח לטעון את פרופילי הדפדפן.",
-  "mobile.server.browserProfiles.saveFailed": "OpenBot לא הצליח לשנות את פרופיל הדפדפן.",
+  "mobile.server.browserProfiles.loadFailed": "Spinbot לא הצליח לטעון את פרופילי הדפדפן.",
+  "mobile.server.browserProfiles.saveFailed": "Spinbot לא הצליח לשנות את פרופיל הדפדפן.",
   "mobile.server.browserProfiles.description":
     "כל פרופיל שומר את ההתחברויות, העוגיות ונתוני האתרים שלו במחשב שמריץ את השרת. הסוכנים שמשתמשים באותו פרופיל חולקים את ההתחברויות שלו.",
   "mobile.server.browserProfiles.shared": "משותף",
@@ -610,13 +610,13 @@ export const messages = {
   // Server settings › Browser profiles › Proxies: the saved proxies of the named profiles, and the
   // computers of members that share their internet connection from the desktop app. A phone cannot
   // share its own connection. {name} is a proxy host, such as proxy.example.com, or a computer name.
-  "mobile.server.browserProxies.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את הפרוקסי שלו.",
+  "mobile.server.browserProxies.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את הפרוקסי שלו.",
   "mobile.server.browserProxies.loading": "טוען פרוקסי…",
-  "mobile.server.browserProxies.loadFailed": "OpenBot לא הצליח לטעון את הפרוקסי.",
-  "mobile.server.browserProxies.saveFailed": "OpenBot לא הצליח לשנות את הפרוקסי.",
+  "mobile.server.browserProxies.loadFailed": "Spinbot לא הצליח לטעון את הפרוקסי.",
+  "mobile.server.browserProxies.saveFailed": "Spinbot לא הצליח לשנות את הפרוקסי.",
   "mobile.server.browserProxies.title": "פרוקסי",
   "mobile.server.browserProxies.sectionHint":
-    "פרופיל עם פרוקסי פותח את הדפים שלו דרך הפרוקסי הזה. חבר משתף מחשב מאפליקציית שולחן העבודה של OpenBot.",
+    "פרופיל עם פרוקסי פותח את הדפים שלו דרך הפרוקסי הזה. חבר משתף מחשב מאפליקציית שולחן העבודה של Spinbot.",
   "mobile.server.browserProxies.limit": "בשרת יכולים להיות לכל היותר {limit} פרוקסי.",
   "mobile.server.browserProxies.add": "הוספת פרוקסי",
   "mobile.server.browserProxies.new": "פרוקסי חדש",
@@ -643,7 +643,7 @@ export const messages = {
   "mobile.server.browserProxies.addressInvalid":
     "זו לא כתובת פרוקסי. יש להשתמש ב-socks5://host:1080, ב-http://user:password@host:3128 או ב-host:port:user:password.",
   "mobile.server.browserProxies.computerHint":
-    "הדפים של הפרופילים שמשתמשים במחשב הזה יוצאים דרך חיבור האינטרנט שלו כל עוד החבר שלו משתף אותו מאפליקציית שולחן העבודה של OpenBot. המחשב פותח רק כתובות אינטרנט ציבוריות.",
+    "הדפים של הפרופילים שמשתמשים במחשב הזה יוצאים דרך חיבור האינטרנט שלו כל עוד החבר שלו משתף אותו מאפליקציית שולחן העבודה של Spinbot. המחשב פותח רק כתובות אינטרנט ציבוריות.",
   "mobile.server.browserProxies.profilesTitle": "פרופילים",
   "mobile.server.browserProxies.delete": "מחיקת פרוקסי",
   "mobile.server.browserProxies.deleteHint": "מחיקה משנה את הפרופילים של הפרוקסי הזה לאוטומטי.",
@@ -662,16 +662,16 @@ export const messages = {
   "mobile.server.browserProxies.change": "שינוי פרוקסי",
   "mobile.server.browserProxies.choiceHint":
     "אוטומטי משתמש בהגדרות הפרוקסי של המחשב שמריץ את השרת. שינוי סוגר את הלשוניות הפתוחות של הפרופיל.",
-  "mobile.server.browserProxies.shareHint": "כדי להשתמש במחשב שלך, יש לשתף אותו באפליקציית שולחן העבודה של OpenBot.",
+  "mobile.server.browserProxies.shareHint": "כדי להשתמש במחשב שלך, יש לשתף אותו באפליקציית שולחן העבודה של Spinbot.",
   "mobile.server.route.vault": "כספת",
   "mobile.server.settings.vault": "כספת",
   "mobile.server.vault.unavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי לנהל את הכספת שלו.",
-  "mobile.server.vault.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את הכספת שלו.",
+  "mobile.server.vault.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את הכספת שלו.",
   "mobile.server.vault.loading": "טוען את הכספת…",
   "mobile.server.vault.loadFailed": "לא ניתן לקרוא את הכספת של השרת הזה.",
   "mobile.server.vault.retry": "ניסיון חוזר",
   "mobile.server.vault.statusUnavailable": "ל-{host} אין אחסון לסודות, ולכן הכספת שלו לא יכולה לשמור פריטים.",
-  "mobile.server.vault.statusUnreadable": "קובץ הכספת ב-{host} אינו קריא. יש לאפס את הכספת ב-OpenBot ב-{host}.",
+  "mobile.server.vault.statusUnreadable": "קובץ הכספת ב-{host} אינו קריא. יש לאפס את הכספת ב-Spinbot ב-{host}.",
   "mobile.server.vault.description":
     "סוכנים ב-{host} משתמשים בפריטים האלה כדי להתחבר, לשלם ולמלא טפסים. סיסמאות, מספרי כרטיס וקודי אבטחה נשארים ב-{host}. הטלפון הזה לא יכול להציג אותם.",
   "mobile.server.vault.logins": "התחברויות",
@@ -694,7 +694,7 @@ export const messages = {
   "mobile.server.vault.importFooter":
     "יש להשתמש בייצוא סיסמאות מדפדפן או ממנהל סיסמאות. {host} מוסיף את ההתחברויות. הוא מדלג על שורה שאינה HTTPS, שאין בה סיסמה או שכבר נשמרה. הטלפון הזה מוחק את העותק שלו של הקובץ אחרי הקריאה.",
   "mobile.server.vault.importResult": "נוספו: {imported}. דולגו: {skipped}.",
-  "mobile.server.vault.importTooLarge": "הקובץ הזה גדול מדי לשליחה מטלפון. יש לייבא אותו ב-OpenBot ב-{host}.",
+  "mobile.server.vault.importTooLarge": "הקובץ הזה גדול מדי לשליחה מטלפון. יש לייבא אותו ב-Spinbot ב-{host}.",
   "mobile.server.vault.importReadFailed": "לא ניתן לקרוא את הקובץ.",
   "mobile.server.vault.importFailed": "לא ניתן לייבא את הקובץ. אפשר לנסות שוב.",
   "mobile.server.vault.newLogin": "התחברות חדשה",
@@ -777,7 +777,7 @@ export const messages = {
   // joined server, for an owner or admin. {host} and {name} are the server name, such as Studio.
   "mobile.server.route.connectors": "מחברים",
   "mobile.server.connectors.unavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי לנהל את המחברים שלו.",
-  "mobile.server.connectors.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את המחברים שלו.",
+  "mobile.server.connectors.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את המחברים שלו.",
   "mobile.server.connectors.loading": "טוען מחברים…",
   // A connector that only the desktop app can set up, such as Bitwarden.
   "mobile.server.connectors.localOnly": "באפליקציית שולחן העבודה בלבד",
@@ -802,10 +802,10 @@ export const messages = {
   "mobile.server.connectors.later": "אחר כך",
   "mobile.server.connectors.bitwarden.title": "Bitwarden",
   // Bitwarden of a joined server that signs in with its own Bitwarden CLI. Keep "Shared with
-  // OpenBot" as the folder name that the user creates in Bitwarden.
+  // Spinbot" as the folder name that the user creates in Bitwarden.
   "mobile.server.connectors.bitwarden.description": "מילוי התחברויות דפדפן ב-{host} מתוך Bitwarden או Vaultwarden.",
   "mobile.server.connectors.bitwarden.howItWorks":
-    "{host} מתחבר באמצעות Bitwarden CLI משלו. בכספת שלך יש ליצור תיקייה בשם Shared with OpenBot ולהכניס אליה רק את ההתחברויות שסוכנים רשאים להשתמש בהן. בכספת באינטרנט יש לפתוח הגדרות › אבטחה › מפתחות ולהציג את מפתח ה-API שלך.",
+    "{host} מתחבר באמצעות Bitwarden CLI משלו. בכספת שלך יש ליצור תיקייה בשם Shared with Spinbot ולהכניס אליה רק את ההתחברויות שסוכנים רשאים להשתמש בהן. בכספת באינטרנט יש לפתוח הגדרות › אבטחה › מפתחות ולהציג את מפתח ה-API שלך.",
   "mobile.server.connectors.bitwarden.serverUrl": "כתובת השרת",
   "mobile.server.connectors.bitwarden.serverUrlHint":
     "Bitwarden, או הכתובת של שרת Vaultwarden שלך. {host} חייב להגיע אליו דרך HTTPS.",
@@ -819,7 +819,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.connectingBody":
     "{host} מתחבר ל-Bitwarden. ההתחברות הראשונה יכולה להימשך כמה דקות.",
   "mobile.server.connectors.bitwarden.folderTitle": "תיקייה משותפת",
-  "mobile.server.connectors.bitwarden.folderName": "Shared with OpenBot",
+  "mobile.server.connectors.bitwarden.folderName": "Shared with Spinbot",
   "mobile.server.connectors.bitwarden.folderKind": "תיקייה ב-Bitwarden",
   "mobile.server.connectors.bitwarden.folderFooter":
     "כדי לאפשר לסוכנים להתחבר עם התחברות מסוימת, יש להעביר אותה לתיקייה הזו ב-Bitwarden. כדי להפסיק, יש להסיר אותה.",
@@ -830,7 +830,7 @@ export const messages = {
   "mobile.server.connectors.github.title": "GitHub",
   "mobile.server.connectors.github.description":
     "כל סוכן ב-{host} יכול להשתמש במאגרי GitHub, בבעיות ובבקשות המשיכה שלך, וב-gh וב-git.",
-  "mobile.server.connectors.github.unavailable": "OpenBot בשרת הזה לא יכול לחבר את GitHub.",
+  "mobile.server.connectors.github.unavailable": "Spinbot בשרת הזה לא יכול לחבר את GitHub.",
   "mobile.server.connectors.github.connect": "חיבור GitHub",
   "mobile.server.connectors.github.codeTitle": "יש להקליד את הקוד הזה ב-GitHub",
   "mobile.server.connectors.github.codeFooter":
@@ -841,11 +841,11 @@ export const messages = {
   "mobile.server.connectors.github.connectedAs": "מחובר בתור @{login}",
   "mobile.server.connectors.github.chooseRepositories": "בחירת מאגרים",
   "mobile.server.connectors.github.repositoriesFooter":
-    "סוכנים יכולים להשתמש רק במאגרים שבהם מותקנת אפליקציית OpenBot GitHub App.",
+    "סוכנים יכולים להשתמש רק במאגרים שבהם מותקנת אפליקציית Spinbot GitHub App.",
   "mobile.server.connectors.github.repositoriesTitle": "מאגרים",
   "mobile.server.connectors.github.repositoriesLoading": "קורא את המאגרים מ-GitHub",
-  "mobile.server.connectors.github.repositoriesFailed": "OpenBot לא הצליח לקרוא את המאגרים מ-GitHub.",
-  "mobile.server.connectors.github.noRepositories": "אפליקציית OpenBot GitHub App עדיין לא מותקנת באף מאגר.",
+  "mobile.server.connectors.github.repositoriesFailed": "Spinbot לא הצליח לקרוא את המאגרים מ-GitHub.",
+  "mobile.server.connectors.github.noRepositories": "אפליקציית Spinbot GitHub App עדיין לא מותקנת באף מאגר.",
   "mobile.server.connectors.github.moreRepositories": {
     one: "ועוד מאגר אחד",
     two: "ועוד שני מאגרים",
@@ -859,12 +859,12 @@ export const messages = {
   "mobile.server.connectors.github.disconnect": "ניתוק GitHub",
   "mobile.server.connectors.github.disconnectTitle": "לנתק את GitHub?",
   "mobile.server.connectors.github.disconnectBody":
-    "הפעולה מסירה את ההתחברות של @{login} מ-{host}, וכל סוכן מאבד את כלי GitHub, את gh ואת git. אחר כך GitHub נפתח, ושם אפשר לבטל את ההרשאה של OpenBot.",
+    "הפעולה מסירה את ההתחברות של @{login} מ-{host}, וכל סוכן מאבד את כלי GitHub, את gh ואת git. אחר כך GitHub נפתח, ושם אפשר לבטל את ההרשאה של Spinbot.",
   "mobile.server.connectors.onePassword.title": "1Password",
   "mobile.server.connectors.onePassword.description":
-    "שיתוף כספת 1Password ייעודית עם OpenBot ב-{host} דרך חשבון שירות, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
+    "שיתוף כספת 1Password ייעודית עם Spinbot ב-{host} דרך חשבון שירות, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
   "mobile.server.connectors.onePassword.howItWorks":
-    "ב-1Password.com יש ליצור חשבון שירות שיכול לקרוא רק את הכספת שמשותפת עם OpenBot, ואז להדביק כאן את האסימון שלו. {host} בודק את האסימון ושומר אותו; הטלפון הזה לא. סוכנים אף פעם לא רואים סיסמה.",
+    "ב-1Password.com יש ליצור חשבון שירות שיכול לקרוא רק את הכספת שמשותפת עם Spinbot, ואז להדביק כאן את האסימון שלו. {host} בודק את האסימון ושומר אותו; הטלפון הזה לא. סוכנים אף פעם לא רואים סיסמה.",
   "mobile.server.connectors.onePassword.token": "אסימון חשבון שירות",
   "mobile.server.connectors.onePassword.tokenPlaceholder": "ops_…",
   "mobile.server.connectors.onePassword.connect": "חיבור 1Password",
@@ -886,9 +886,9 @@ export const messages = {
   // Proton Pass: the host signs in with the Proton Pass CLI and reads one shared vault.
   "mobile.server.connectors.protonPass.title": "Proton Pass",
   "mobile.server.connectors.protonPass.description":
-    "שיתוף כספת Proton Pass אחת עם OpenBot ב-{host}, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
+    "שיתוף כספת Proton Pass אחת עם Spinbot ב-{host}, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
   "mobile.server.connectors.protonPass.keyHelp":
-    "ב-Proton Pass יש ליצור מפתח גישה שיכול לקרוא רק את הכספת שמשותפת עם OpenBot, ואז להדביק אותו כאן. {host} שומר את המפתח; הטלפון הזה לא.",
+    "ב-Proton Pass יש ליצור מפתח גישה שיכול לקרוא רק את הכספת שמשותפת עם Spinbot, ואז להדביק אותו כאן. {host} שומר את המפתח; הטלפון הזה לא.",
   "mobile.server.connectors.protonPass.keyPlaceholder": "pst_…",
   // A password manager that the host connects through its CLI. {name} is the manager, such as
   // Proton Pass. {date} is a date, such as 5 Nov 2026.
@@ -933,11 +933,11 @@ export const messages = {
   "mobile.server.connectors.passwordManager.disconnectTitle": "לנתק את {name}?",
   "mobile.server.connectors.passwordManager.disconnectBody":
     "{host} מוחק את מפתח הגישה שלו. הכספת וההתחברויות שלה נשארות בחשבון {name} שלך.",
-  // Slack: a workspace installs the one OpenBot app, and the Slack Orchestrator agent answers.
+  // Slack: a workspace installs the one Spinbot app, and the Slack Orchestrator agent answers.
   // {workspace} is the Slack workspace name.
   "mobile.server.connectors.slack.title": "Slack",
   "mobile.server.connectors.slack.description":
-    "אנשים מזכירים את @OpenBot ב-Slack או שולחים לו הודעה ישירה. Slack Orchestrator פונה לסוכן המתאים ועונה.",
+    "אנשים מזכירים את @Spinbot ב-Slack או שולחים לו הודעה ישירה. Slack Orchestrator פונה לסוכן המתאים ועונה.",
   "mobile.server.connectors.slack.attention": {
     one: "סביבת עבודה אחת דורשת טיפול",
     two: "שתי סביבות עבודה דורשות טיפול",
@@ -945,7 +945,7 @@ export const messages = {
   },
   "mobile.server.connectors.slack.connect": "חיבור Slack",
   "mobile.server.connectors.slack.connectFooter":
-    "Slack נפתח בדפדפן. יש לבחור את סביבת העבודה בפינה הימנית העליונה, ואז Allow. OpenBot מתקין אפליקציה אחת בשם OpenBot, והיא מצטרפת לכל ערוץ ציבורי.",
+    "Slack נפתח בדפדפן. יש לבחור את סביבת העבודה בפינה הימנית העליונה, ואז Allow. Spinbot מתקין אפליקציה אחת בשם Spinbot, והיא מצטרפת לכל ערוץ ציבורי.",
   "mobile.server.connectors.slack.add": "הוספת סביבת עבודה",
   "mobile.server.connectors.slack.limit": {
     one: "אפשר לחבר לכל היותר סביבת עבודה אחת.",
@@ -953,39 +953,39 @@ export const messages = {
     other: "אפשר לחבר לכל היותר {count} סביבות עבודה.",
   },
   "mobile.server.connectors.slack.workspaceTitle": "סביבת עבודה",
-  "mobile.server.connectors.slack.workspaceDescription": "אנשים מזכירים את @OpenBot או שולחים לו הודעה ישירה.",
+  "mobile.server.connectors.slack.workspaceDescription": "אנשים מזכירים את @Spinbot או שולחים לו הודעה ישירה.",
   // {scopes} lists Slack permissions, such as "chat:write and users:read".
   "mobile.server.connectors.slack.missingScopes":
-    "ל-OpenBot אין את ההרשאות האלה ב-Slack: {scopes}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
+    "ל-Spinbot אין את ההרשאות האלה ב-Slack: {scopes}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
   // {time} is a time, such as 14:30.
-  "mobile.server.connectors.slack.retryAt": "Slack ביקש מ-OpenBot להמתין. הוא ינסה שוב בשעה {time}.",
+  "mobile.server.connectors.slack.retryAt": "Slack ביקש מ-Spinbot להמתין. הוא ינסה שוב בשעה {time}.",
   "mobile.server.connectors.slack.helpInvalidToken":
-    "Slack כבר לא מקבל את OpenBot בסביבת העבודה הזו. ייתכן שהוא הוסר. יש לחבר את סביבת העבודה שוב.",
+    "Slack כבר לא מקבל את Spinbot בסביבת העבודה הזו. ייתכן שהוא הוסר. יש לחבר את סביבת העבודה שוב.",
   "mobile.server.connectors.slack.helpSecretStorage":
-    "OpenBot לא יכול לקרוא את האסימונים השמורים ב-{host}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
+    "Spinbot לא יכול לקרוא את האסימונים השמורים ב-{host}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
   "mobile.server.connectors.slack.helpRelay":
-    "OpenBot ב-{host} לא יכול לקבל אירועים מ-Slack. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את OpenBot פתוח.",
+    "Spinbot ב-{host} לא יכול לקבל אירועים מ-Slack. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את Spinbot פתוח.",
   "mobile.server.connectors.slack.orchestratorTitle": "Slack Orchestrator",
   "mobile.server.connectors.slack.orchestratorDescription":
     "הסוכן הזה מקבל כל בקשה מ-Slack. הוא עונה בעצמו על בקשות קצרות, מעביר עבודה אחרת לסוכן המתאים, ומפרסם את התשובה בשרשור.",
   "mobile.server.connectors.slack.orchestratorNone": "יש להוסיף את Slack Orchestrator, אחרת Slack לא יקבל תשובה.",
   "mobile.server.connectors.slack.addAgent": "הוספת Slack Orchestrator",
   "mobile.server.connectors.slack.note":
-    "OpenBot מצטרף בעצמו לכל ערוץ ציבורי, ולכל ערוץ חדש. לערוץ פרטי יש להזמין אותו: /invite @OpenBot.",
+    "Spinbot מצטרף בעצמו לכל ערוץ ציבורי, ולכל ערוץ חדש. לערוץ פרטי יש להזמין אותו: /invite @Spinbot.",
   "mobile.server.connectors.slack.disconnectTitle": "לנתק את {workspace}?",
   "mobile.server.connectors.slack.disconnectBody":
-    "OpenBot מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מ-{host}.",
-  "mobile.server.connectors.slack.disconnectKept": "השיחות ו-Slack Orchestrator נשארים ב-OpenBot.",
-  "mobile.server.connectors.slack.disconnectDeleted": "Slack Orchestrator והשיחות שלו נמחקים מ-OpenBot.",
+    "Spinbot מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מ-{host}.",
+  "mobile.server.connectors.slack.disconnectKept": "השיחות ו-Slack Orchestrator נשארים ב-Spinbot.",
+  "mobile.server.connectors.slack.disconnectDeleted": "Slack Orchestrator והשיחות שלו נמחקים מ-Spinbot.",
   "mobile.server.connectors.slack.agentPromptTitle": "להוסיף את Slack Orchestrator?",
   "mobile.server.connectors.slack.agentPromptBody":
-    "הסוכן החדש הזה עונה על כל מה שאנשים שולחים אל @OpenBot ב-{workspace}.",
+    "הסוכן החדש הזה עונה על כל מה שאנשים שולחים אל @Spinbot ב-{workspace}.",
   "mobile.server.connectors.slack.installFailed": "Slack לא סיים את ההתקנה. אפשר לנסות שוב.",
-  // Discord: a Discord server adds the one OpenBot bot. Always write "Discord server": "server" alone
-  // is an OpenBot server. {workspace} is the Discord server name.
+  // Discord: a Discord server adds the one Spinbot bot. Always write "Discord server": "server" alone
+  // is an Spinbot server. {workspace} is the Discord server name.
   "mobile.server.connectors.discord.title": "Discord",
   "mobile.server.connectors.discord.description":
-    "אנשים מזכירים את @OpenBot בערוץ של שרת Discord. Discord Orchestrator פונה לסוכן המתאים ועונה.",
+    "אנשים מזכירים את @Spinbot בערוץ של שרת Discord. Discord Orchestrator פונה לסוכן המתאים ועונה.",
   "mobile.server.connectors.discord.attention": {
     one: "שרת Discord אחד דורש טיפול",
     two: "שני שרתי Discord דורשים טיפול",
@@ -993,7 +993,7 @@ export const messages = {
   },
   "mobile.server.connectors.discord.connect": "חיבור Discord",
   "mobile.server.connectors.discord.connectFooter":
-    "Discord נפתח בדפדפן. יש לבחור את שרת Discord, ואז Authorize. OpenBot מוסיף בוט אחד בשם OpenBot.",
+    "Discord נפתח בדפדפן. יש לבחור את שרת Discord, ואז Authorize. Spinbot מוסיף בוט אחד בשם Spinbot.",
   "mobile.server.connectors.discord.add": "הוספת שרת Discord",
   "mobile.server.connectors.discord.limit": {
     one: "אפשר לחבר לכל היותר שרת Discord אחד.",
@@ -1001,38 +1001,38 @@ export const messages = {
     other: "אפשר לחבר לכל היותר {count} שרתי Discord.",
   },
   "mobile.server.connectors.discord.workspaceTitle": "שרת Discord",
-  "mobile.server.connectors.discord.workspaceDescription": "יש להזכיר את @OpenBot בערוץ. כדי להמשיך, משיבים ל-OpenBot.",
+  "mobile.server.connectors.discord.workspaceDescription": "יש להזכיר את @Spinbot בערוץ. כדי להמשיך, משיבים ל-Spinbot.",
   // {scopes} lists Discord permissions.
   "mobile.server.connectors.discord.missingScopes":
-    "ל-OpenBot אין את ההרשאות האלה ב-Discord: {scopes}. יש לנתק את שרת Discord ולחבר אותו שוב.",
+    "ל-Spinbot אין את ההרשאות האלה ב-Discord: {scopes}. יש לנתק את שרת Discord ולחבר אותו שוב.",
   // {time} is a time, such as 14:30.
-  "mobile.server.connectors.discord.retryAt": "Discord ביקש מ-OpenBot להמתין. הוא ינסה שוב בשעה {time}.",
+  "mobile.server.connectors.discord.retryAt": "Discord ביקש מ-Spinbot להמתין. הוא ינסה שוב בשעה {time}.",
   "mobile.server.connectors.discord.helpInvalidToken":
-    "Discord כבר לא מקבל את OpenBot בשרת Discord הזה. ייתכן שהוא הוסר. יש לחבר את שרת Discord שוב.",
+    "Discord כבר לא מקבל את Spinbot בשרת Discord הזה. ייתכן שהוא הוסר. יש לחבר את שרת Discord שוב.",
   "mobile.server.connectors.discord.helpSecretStorage":
-    "OpenBot לא יכול לקרוא את האסימונים השמורים ב-{host}. יש לנתק את שרת Discord ולחבר אותו שוב.",
+    "Spinbot לא יכול לקרוא את האסימונים השמורים ב-{host}. יש לנתק את שרת Discord ולחבר אותו שוב.",
   "mobile.server.connectors.discord.helpRelay":
-    "OpenBot ב-{host} לא יכול לקבל אירועים מ-Discord. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את OpenBot פתוח.",
+    "Spinbot ב-{host} לא יכול לקבל אירועים מ-Discord. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את Spinbot פתוח.",
   "mobile.server.connectors.discord.orchestratorTitle": "Discord Orchestrator",
   "mobile.server.connectors.discord.orchestratorDescription":
     "הסוכן הזה מקבל כל בקשה מ-Discord. הוא עונה בעצמו על בקשות קצרות, מעביר עבודה אחרת לסוכן המתאים, ומשיב בערוץ עם התשובה.",
   "mobile.server.connectors.discord.orchestratorNone": "יש להוסיף את Discord Orchestrator, אחרת Discord לא יקבל תשובה.",
   "mobile.server.connectors.discord.addAgent": "הוספת Discord Orchestrator",
-  "mobile.server.connectors.discord.note": "OpenBot רואה את הערוצים שהתפקיד שלו יכול לצפות בהם.",
+  "mobile.server.connectors.discord.note": "Spinbot רואה את הערוצים שהתפקיד שלו יכול לצפות בהם.",
   "mobile.server.connectors.discord.disconnectTitle": "לנתק את {workspace}?",
   "mobile.server.connectors.discord.disconnectBody":
-    "OpenBot מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מ-{host}.",
-  "mobile.server.connectors.discord.disconnectKept": "השיחות ו-Discord Orchestrator נשארים ב-OpenBot.",
-  "mobile.server.connectors.discord.disconnectDeleted": "Discord Orchestrator והשיחות שלו נמחקים מ-OpenBot.",
+    "Spinbot מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מ-{host}.",
+  "mobile.server.connectors.discord.disconnectKept": "השיחות ו-Discord Orchestrator נשארים ב-Spinbot.",
+  "mobile.server.connectors.discord.disconnectDeleted": "Discord Orchestrator והשיחות שלו נמחקים מ-Spinbot.",
   "mobile.server.connectors.discord.agentPromptTitle": "להוסיף את Discord Orchestrator?",
   "mobile.server.connectors.discord.agentPromptBody":
-    "הסוכן החדש הזה עונה על כל מה שאנשים שולחים אל @OpenBot ב-{workspace}.",
+    "הסוכן החדש הזה עונה על כל מה שאנשים שולחים אל @Spinbot ב-{workspace}.",
   "mobile.server.connectors.discord.installFailed": "Discord לא סיים את ההרשאה. אפשר לנסות שוב.",
-  // Telegram: each chat adds the one OpenBot bot, and the Telegram Orchestrator answers all chats.
+  // Telegram: each chat adds the one Spinbot bot, and the Telegram Orchestrator answers all chats.
   // {chat} is the Telegram chat name.
   "mobile.server.connectors.telegram.title": "Telegram",
   "mobile.server.connectors.telegram.description":
-    "אפשר להוסיף את הבוט של OpenBot לקבוצת Telegram או לפתוח איתו צ'אט ישיר. Telegram Orchestrator פונה לסוכן המתאים ועונה.",
+    "אפשר להוסיף את הבוט של Spinbot לקבוצת Telegram או לפתוח איתו צ'אט ישיר. Telegram Orchestrator פונה לסוכן המתאים ועונה.",
   // {count} is the number of linked Telegram chats.
   "mobile.server.connectors.telegram.attention": {
     one: "צ'אט אחד דורש טיפול",
@@ -1044,12 +1044,12 @@ export const messages = {
   "mobile.server.connectors.telegram.groupDescription": "אנשים מזכירים את הבוט או משיבים להודעות שלו.",
   "mobile.server.connectors.telegram.directDescription": "כל הודעה בצ'אט הזה מועברת ל-Telegram Orchestrator.",
   "mobile.server.connectors.telegram.helpRemoved":
-    "הבוט של OpenBot כבר לא נמצא בצ'אט הזה. יש לנתק את הצ'אט ולהוסיף את הבוט שוב.",
+    "הבוט של Spinbot כבר לא נמצא בצ'אט הזה. יש לנתק את הצ'אט ולהוסיף את הבוט שוב.",
   "mobile.server.connectors.telegram.helpRelay":
-    "OpenBot ב-{host} לא יכול לקבל הודעות מ-Telegram. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את OpenBot פתוח.",
-  "mobile.server.connectors.telegram.helpError": "OpenBot לא מצליח להגיע לצ'אט הזה. אפשר לחבר מחדש, או לנתק את הצ'אט.",
+    "Spinbot ב-{host} לא יכול לקבל הודעות מ-Telegram. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת, ולהשאיר את Spinbot פתוח.",
+  "mobile.server.connectors.telegram.helpError": "Spinbot לא מצליח להגיע לצ'אט הזה. אפשר לחבר מחדש, או לנתק את הצ'אט.",
   // {time} is a time, such as 14:30.
-  "mobile.server.connectors.telegram.retryAt": "Telegram ביקש מ-OpenBot להמתין. הוא ינסה שוב בשעה {time}.",
+  "mobile.server.connectors.telegram.retryAt": "Telegram ביקש מ-Spinbot להמתין. הוא ינסה שוב בשעה {time}.",
   "mobile.server.connectors.telegram.linkTitle": "קישור צ'אט",
   "mobile.server.connectors.telegram.linkAnother": "קישור צ'אט נוסף",
   "mobile.server.connectors.telegram.linkFooter":
@@ -1063,15 +1063,15 @@ export const messages = {
   "mobile.server.connectors.telegram.openDirectChat": "פתיחת צ'אט ישיר",
   "mobile.server.connectors.telegram.orchestratorTitle": "Telegram Orchestrator",
   "mobile.server.connectors.telegram.orchestratorDescription":
-    "הסוכן הזה מקבל את ההודעות ל-OpenBot מכל צ'אטי Telegram שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים, ומפרסם את התשובה בצ'אט.",
+    "הסוכן הזה מקבל את ההודעות ל-Spinbot מכל צ'אטי Telegram שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים, ומפרסם את התשובה בצ'אט.",
   "mobile.server.connectors.telegram.orchestratorNone":
     "יש להוסיף את Telegram Orchestrator, אחרת Telegram לא יקבל תשובה.",
   "mobile.server.connectors.telegram.addAgent": "הוספת Telegram Orchestrator",
   "mobile.server.connectors.telegram.disconnectTitle": "לנתק את {chat}?",
-  "mobile.server.connectors.telegram.disconnectBody": "הבוט של OpenBot עוזב את {chat}, ו-OpenBot מפסיק לענות שם.",
-  "mobile.server.connectors.telegram.disconnectKept": "השיחות ו-Telegram Orchestrator נשארים ב-OpenBot.",
+  "mobile.server.connectors.telegram.disconnectBody": "הבוט של Spinbot עוזב את {chat}, ו-Spinbot מפסיק לענות שם.",
+  "mobile.server.connectors.telegram.disconnectKept": "השיחות ו-Telegram Orchestrator נשארים ב-Spinbot.",
   "mobile.server.connectors.telegram.disconnectDeleted":
-    "זה הצ'אט האחרון, ולכן Telegram Orchestrator והשיחות שלו נמחקים מ-OpenBot.",
+    "זה הצ'אט האחרון, ולכן Telegram Orchestrator והשיחות שלו נמחקים מ-Spinbot.",
   "mobile.server.connectors.whatsapp.title": "WhatsApp",
   "mobile.server.connectors.whatsapp.description":
     "קישור מספר WhatsApp לשרת הזה. WhatsApp Orchestrator פונה לסוכן המתאים ועונה.",
@@ -1082,21 +1082,21 @@ export const messages = {
   },
   "mobile.server.connectors.whatsapp.numbersTitle": "מספרים",
   "mobile.server.connectors.whatsapp.linkNumber": "קישור מספר",
-  "mobile.server.connectors.whatsapp.ownNumberNote": "הצ'אט ״הודעה לעצמך״ שלך והאנשים שאישרת יכולים לפנות ל-OpenBot.",
+  "mobile.server.connectors.whatsapp.ownNumberNote": "הצ'אט ״הודעה לעצמך״ שלך והאנשים שאישרת יכולים לפנות ל-Spinbot.",
   "mobile.server.connectors.whatsapp.dedicatedNote":
-    "האנשים שאישרת יכולים לפנות ל-OpenBot. אנשים אחרים מקבלים קוד למסור לך.",
+    "האנשים שאישרת יכולים לפנות ל-Spinbot. אנשים אחרים מקבלים קוד למסור לך.",
   "mobile.server.connectors.whatsapp.helpLoggedOut":
     "WhatsApp הסיר את השרת הזה ממכשירים מקושרים. יש לקשר את המספר שוב.",
   "mobile.server.connectors.whatsapp.helpError":
-    "OpenBot לא מצליח להגיע ל-WhatsApp במספר הזה. אפשר לחבר מחדש, או לנתק את המספר.",
-  "mobile.server.connectors.whatsapp.retryAt": "WhatsApp ביקש מ-OpenBot להמתין. הוא ינסה שוב בשעה {time}.",
+    "Spinbot לא מצליח להגיע ל-WhatsApp במספר הזה. אפשר לחבר מחדש, או לנתק את המספר.",
+  "mobile.server.connectors.whatsapp.retryAt": "WhatsApp ביקש מ-Spinbot להמתין. הוא ינסה שוב בשעה {time}.",
   "mobile.server.connectors.whatsapp.linkAgain": "קישור מחדש",
   "mobile.server.connectors.whatsapp.ownNumber": "מספר אישי",
   "mobile.server.connectors.whatsapp.ownNumberDescription":
-    "רק הצ'אט ״הודעה לעצמך״ שלך והאנשים שאישרת יכולים לכתוב. יש לכבות עבור מספר ששייך רק ל-OpenBot.",
+    "רק הצ'אט ״הודעה לעצמך״ שלך והאנשים שאישרת יכולים לכתוב. יש לכבות עבור מספר ששייך רק ל-Spinbot.",
   "mobile.server.connectors.whatsapp.orchestratorTitle": "WhatsApp Orchestrator",
   "mobile.server.connectors.whatsapp.orchestratorDescription":
-    "הסוכן הזה מקבל את ההודעות ל-OpenBot מכל המספרים המקושרים שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים, ועונה ב-WhatsApp.",
+    "הסוכן הזה מקבל את ההודעות ל-Spinbot מכל המספרים המקושרים שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים, ועונה ב-WhatsApp.",
   "mobile.server.connectors.whatsapp.orchestratorNone":
     "יש להוסיף את WhatsApp Orchestrator, אחרת WhatsApp לא יקבל תשובה.",
   "mobile.server.connectors.whatsapp.addAgent": "הוספת WhatsApp Orchestrator",
@@ -1105,12 +1105,12 @@ export const messages = {
   "mobile.server.connectors.whatsapp.linkDescription": "יש לבחור את המספר, ואז לקשר את השרת הזה מ-WhatsApp בטלפון.",
   // A phone has no QR code image: the WhatsApp app on the same phone cannot scan its own screen.
   "mobile.server.connectors.whatsapp.codeOnly":
-    "בטלפון מקשרים באמצעות קוד התאמה. כדי לסרוק קוד QR, יש להשתמש ב-OpenBot במחשב.",
+    "בטלפון מקשרים באמצעות קוד התאמה. כדי לסרוק קוד QR, יש להשתמש ב-Spinbot במחשב.",
   "mobile.server.connectors.whatsapp.kindLabel": "מספר",
   "mobile.server.connectors.whatsapp.kindPersonal": "המספר האישי שלי",
   "mobile.server.connectors.whatsapp.kindPersonalDescription":
-    "OpenBot עונה רק בצ'אט ״הודעה לעצמך״ שלך ולאנשים שאישרת.",
-  "mobile.server.connectors.whatsapp.kindDedicated": "מספר ששייך רק ל-OpenBot",
+    "Spinbot עונה רק בצ'אט ״הודעה לעצמך״ שלך ולאנשים שאישרת.",
+  "mobile.server.connectors.whatsapp.kindDedicated": "מספר ששייך רק ל-Spinbot",
   "mobile.server.connectors.whatsapp.kindDedicatedDescription":
     "אנשים לא מוכרים מקבלים קוד למסור לך. את האישור נותנים כאן.",
   "mobile.server.connectors.whatsapp.phoneLabel": "מספר טלפון",
@@ -1129,19 +1129,19 @@ export const messages = {
   "mobile.server.connectors.whatsapp.failedRefused": "WhatsApp דחה את הקישור. יש להמתין כמה דקות ולנסות שוב.",
   "mobile.server.connectors.whatsapp.failedBusy": "קישור אחר מתבצע. יש להמתין לסיומו ולנסות שוב.",
   "mobile.server.connectors.whatsapp.failedUnavailable":
-    "OpenBot לא מצליח להגיע ל-WhatsApp. יש לבדוק את חיבור האינטרנט.",
+    "Spinbot לא מצליח להגיע ל-WhatsApp. יש לבדוק את חיבור האינטרנט.",
   "mobile.server.connectors.whatsapp.tryAgain": "ניסיון חוזר",
   "mobile.server.connectors.whatsapp.agentStepDescription":
-    "הסוכן החדש הזה עונה על ההודעות ל-OpenBot ב-{number} ובכל מספר שיקושר בהמשך.",
-  "mobile.server.connectors.whatsapp.doneTitle": "OpenBot מקושר ל-{number}",
+    "הסוכן החדש הזה עונה על ההודעות ל-Spinbot ב-{number} ובכל מספר שיקושר בהמשך.",
+  "mobile.server.connectors.whatsapp.doneTitle": "Spinbot מקושר ל-{number}",
   "mobile.server.connectors.whatsapp.done": "סיום",
   "mobile.server.connectors.whatsapp.disconnectTitle": "לנתק את {number}?",
   "mobile.server.connectors.whatsapp.disconnectBody":
-    "OpenBot מתנתק מ-WhatsApp ב-{number}. אם OpenBot היה כבוי, יש גם להסיר את המכשיר ב-WhatsApp > Linked devices.",
+    "Spinbot מתנתק מ-WhatsApp ב-{number}. אם Spinbot היה כבוי, יש גם להסיר את המכשיר ב-WhatsApp > Linked devices.",
   "mobile.server.connectors.whatsapp.disconnectEffect": "אנשים לא יוכלו עוד לפנות לסוכנים שלך דרך {number}.",
-  "mobile.server.connectors.whatsapp.removeEffectKept": "השיחות ו-WhatsApp Orchestrator נשארים ב-OpenBot.",
+  "mobile.server.connectors.whatsapp.removeEffectKept": "השיחות ו-WhatsApp Orchestrator נשארים ב-Spinbot.",
   "mobile.server.connectors.whatsapp.removeEffectDeleted":
-    "זה המספר האחרון, ולכן WhatsApp Orchestrator והשיחות שלו נמחקים מ-OpenBot.",
+    "זה המספר האחרון, ולכן WhatsApp Orchestrator והשיחות שלו נמחקים מ-Spinbot.",
   "mobile.server.connectors.whatsapp.keep": "השארה כמקושר",
   "mobile.server.connectors.whatsapp.sendersTitle": "מי יכול לכתוב ל-{number}",
   "mobile.server.connectors.whatsapp.sendersDescription": "אנשי הקשר והקבוצות האלה יכולים לתת עבודה לסוכנים שלך.",
@@ -1160,7 +1160,7 @@ export const messages = {
   "mobile.server.connectors.whatsapp.groupDescription": "אנשים בקבוצה הזו יכולים לתת עבודה לסוכנים שלך.",
   "mobile.server.connectors.whatsapp.groupSearch": "חיפוש קבוצות",
   "mobile.server.connectors.whatsapp.groupsLoading": "קורא את הקבוצות…",
-  "mobile.server.connectors.whatsapp.groupsLoadFailed": "OpenBot לא הצליח לקרוא את הקבוצות",
+  "mobile.server.connectors.whatsapp.groupsLoadFailed": "Spinbot לא הצליח לקרוא את הקבוצות",
   "mobile.server.connectors.whatsapp.groupsEmpty": "המספר הזה אינו בשום קבוצה.",
   "mobile.server.connectors.whatsapp.groupsNoMatch": "אין קבוצה בשם הזה.",
   "mobile.server.connectors.whatsapp.groupAdded": "נוספה",
@@ -1183,9 +1183,9 @@ export const messages = {
   "mobile.server.providers.loadFailed": "לא ניתן לטעון את הספקים של השרת הזה.",
   "mobile.server.providers.runtimesFailed": "לא ניתן לטעון את ההורדות של השרת הזה.",
   "mobile.server.providers.unavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי לנהל את הספקים שלו.",
-  "mobile.server.providers.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את הספקים שלו.",
+  "mobile.server.providers.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את הספקים שלו.",
   "mobile.server.providers.signInUnsupported": "השרת הזה לא יכול לחבר את הספק הזה מהטלפון.",
-  "mobile.server.providers.actionFailed": "OpenBot לא הצליח להשלים את הפעולה. אפשר לנסות שוב.",
+  "mobile.server.providers.actionFailed": "Spinbot לא הצליח להשלים את הפעולה. אפשר לנסות שוב.",
   "mobile.server.providers.openFailed": "לא ניתן לפתוח את דף ההתחברות.",
   "mobile.server.providers.copyFailed": "לא ניתן להעתיק את הקוד.",
   "mobile.server.providers.statusLabel": "סטטוס",
@@ -1194,10 +1194,10 @@ export const messages = {
   "mobile.server.providers.connect": "חיבור",
   "mobile.server.providers.reconnect": "חיבור מחדש",
   "mobile.server.providers.connectHint":
-    "השרת מתחיל את ההתחברות. אחר כך OpenBot מציג את השלבים, ואותם משלימים בטלפון הזה.",
+    "השרת מתחיל את ההתחברות. אחר כך Spinbot מציג את השלבים, ואותם משלימים בטלפון הזה.",
   "mobile.server.providers.relayHint":
-    "OpenBot פותח את דף ההתחברות של הספק בטלפון הזה. אם צריך להעתיק משהו בחזרה, OpenBot מציג קודם את השלבים.",
-  "mobile.server.providers.connectOnComputer": "יש לחבר את הספק הזה ב-OpenBot במחשב.",
+    "Spinbot פותח את דף ההתחברות של הספק בטלפון הזה. אם צריך להעתיק משהו בחזרה, Spinbot מציג קודם את השלבים.",
+  "mobile.server.providers.connectOnComputer": "יש לחבר את הספק הזה ב-Spinbot במחשב.",
   "mobile.server.providers.signInTo": "התחברות ל-{name}",
   "mobile.server.providers.starting": "מתחיל את ההתחברות בשרת…",
   "mobile.server.providers.openPage": "פתיחת דף ההתחברות",
@@ -1208,15 +1208,15 @@ export const messages = {
     "ב-ChatGPT במחשב, יש לפתוח את הגדרות האבטחה ולהפעיל התחברות באמצעות קוד מכשיר עבור Codex. בחשבון עבודה, מנהל סביבת העבודה מפעיל זאת.",
   "mobile.server.providers.codeStepCopy": "יש להעתיק את הקוד.",
   "mobile.server.providers.codeStepEnter": "יש לפתוח את דף ההתחברות ולהזין את הקוד.",
-  "mobile.server.providers.codeStepReturn": "יש לחזור ל-OpenBot. ההתחברות מסתיימת מעצמה.",
+  "mobile.server.providers.codeStepReturn": "יש לחזור ל-Spinbot. ההתחברות מסתיימת מעצמה.",
   "mobile.server.providers.pasteStepSignIn": "יש לפתוח את דף ההתחברות ולהתחבר.",
   "mobile.server.providers.pasteStepCopy": "יש להעתיק את הקוד שהדף מציג.",
-  "mobile.server.providers.pasteStepReturn": "יש לחזור ל-OpenBot ולהדביק את הקוד למטה.",
+  "mobile.server.providers.pasteStepReturn": "יש לחזור ל-Spinbot ולהדביק את הקוד למטה.",
   "mobile.server.providers.relayStepSignIn": "יש לפתוח את דף ההתחברות ולהתחבר.",
   "mobile.server.providers.relayStepBlank": "הדף האחרון לא נטען. זה תקין.",
   "mobile.server.providers.relayStepCopy": "יש ללחוץ על שורת הכתובת ולהעתיק את הכתובת המלאה.",
-  "mobile.server.providers.relayStepReturn": "יש לחזור ל-OpenBot ולהדביק את הכתובת למטה.",
-  "mobile.server.providers.linkHint": "יש להתחבר בדף. OpenBot ממשיך מעצמו.",
+  "mobile.server.providers.relayStepReturn": "יש לחזור ל-Spinbot ולהדביק את הכתובת למטה.",
+  "mobile.server.providers.linkHint": "יש להתחבר בדף. Spinbot ממשיך מעצמו.",
   "mobile.server.providers.relayWaiting": "ממתין לדף ההתחברות מהשרת…",
   "mobile.server.providers.code": "הקוד מהדף",
   "mobile.server.providers.codePlaceholder": "יש להדביק את הקוד כאן",
@@ -1271,7 +1271,7 @@ export const messages = {
   "mobile.server.providers.accountsHint":
     "כל סוכן משתמש בחשבון אחד. את החשבון בוחרים בהגדרות הסוכן. חשבון חדש מתחבר בדף שלו בטלפון הזה.",
   "mobile.server.providers.accountsOnComputer":
-    "כל סוכן משתמש בחשבון אחד. את החשבון בוחרים בהגדרות הסוכן. חשבון מוסיפים ב-OpenBot במחשב.",
+    "כל סוכן משתמש בחשבון אחד. את החשבון בוחרים בהגדרות הסוכן. חשבון מוסיפים ב-Spinbot במחשב.",
   "mobile.server.providers.addAccount": "הוספת חשבון",
   "mobile.server.providers.accountGone": "החשבון הזה כבר לא נמצא בשרת הזה.",
   "mobile.server.providers.accountFailed": "לא ניתן לשנות את החשבון הזה. אפשר לנסות שוב.",
@@ -1314,7 +1314,7 @@ export const messages = {
   "mobile.server.providers.disconnect": "ניתוק",
   "mobile.server.providers.disconnectTitle": "לנתק את {name}?",
   "mobile.server.providers.disconnectBody":
-    "OpenBot מתנתק מ-{provider} בשרת. הסוכנים שלו ממתינים עד שיתבצע חיבור מחדש ל-{provider}.",
+    "Spinbot מתנתק מ-{provider} בשרת. הסוכנים שלו ממתינים עד שיתבצע חיבור מחדש ל-{provider}.",
   "mobile.server.providers.resetUsage": "איפוס שימוש",
   "mobile.server.providers.resettingUsage": "מאפס…",
   "mobile.server.providers.resetUsageTitle": "לאפס את השימוש של {name}?",
@@ -1332,7 +1332,7 @@ export const messages = {
   "mobile.server.providers.sectionRuntime": "סביבת ריצה",
   "mobile.server.providers.updateTo": "עדכון לגרסה {version}",
   "mobile.server.providers.versionInstalledByUser": "{version} · הותקנה על ידיך",
-  "mobile.server.providers.versionDownloaded": "{version} · הורדה על ידי OpenBot",
+  "mobile.server.providers.versionDownloaded": "{version} · הורדה על ידי Spinbot",
   "mobile.server.providers.keyFree": "חינם",
   "mobile.server.providers.keyOptional": "אופציונלי. מפתח מוסיף מודלים בתשלום.",
   "mobile.server.providers.geminiKeyInUse":
@@ -1356,7 +1356,7 @@ export const messages = {
   "mobile.server.customAgents.addTitle": "הוספת סוכן מותאם",
   "mobile.server.customAgents.addConfirm": "הוספה",
   "mobile.server.customAgents.adding": "מוסיף",
-  "mobile.server.customAgents.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי להוסיף כאן סוכנים מותאמים.",
+  "mobile.server.customAgents.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי להוסיף כאן סוכנים מותאמים.",
   "mobile.server.customAgents.loading": "טוען סוכנים מותאמים…",
   "mobile.server.customAgents.loadFailed": "לא ניתן לטעון את הסוכנים המותאמים של השרת הזה.",
   "mobile.server.customAgents.gone": "הסוכן המותאם הזה כבר לא נמצא בשרת הזה.",
@@ -1370,7 +1370,7 @@ export const messages = {
   "mobile.server.customAgents.id": "מזהה סוכן",
   "mobile.server.customAgents.idHint": "אותיות קטנות באנגלית, מספרים או מקפים. אי אפשר לשנות אחר כך.",
   "mobile.server.customAgents.idPattern": "יש להשתמש באותיות קטנות באנגלית, במספרים או במקפים, ולהתחיל באות או במספר.",
-  "mobile.server.customAgents.idBuiltIn": "ב-OpenBot כבר יש ספק בשם {id}. יש לבחור מזהה אחר.",
+  "mobile.server.customAgents.idBuiltIn": "ב-Spinbot כבר יש ספק בשם {id}. יש לבחור מזהה אחר.",
   "mobile.server.customAgents.idTaken": "כבר קיים סוכן בשם {id}. יש לבחור מזהה אחר.",
   "mobile.server.customAgents.command": "פקודה",
   "mobile.server.customAgents.commandHint": "התוכנית להפעלה במחשב של השרת הזה. שם בלי נתיב נמצא ב-PATH שלו.",
@@ -1393,15 +1393,15 @@ export const messages = {
   "mobile.server.customAgents.envValueRequired": "יש להזין ערך לכל משתנה חדש.",
   "mobile.server.customAgents.usagePrompt": "פקודת שימוש",
   "mobile.server.customAgents.usagePromptHint":
-    "אופציונלי. OpenBot שולח אותה לכל היותר פעם בחמש דקות ומציג את התשובה האחרונה, למשל /usage.",
+    "אופציונלי. Spinbot שולח אותה לכל היותר פעם בחמש דקות ומציג את התשובה האחרונה, למשל /usage.",
   "mobile.server.customAgents.usagePromptInvalid": "יש להשתמש בשורה אחת של עד 256 תווים.",
-  "mobile.server.customAgents.saveFailed": "OpenBot לא הצליח לשמור את הסוכן הזה.",
+  "mobile.server.customAgents.saveFailed": "Spinbot לא הצליח לשמור את הסוכן הזה.",
   "mobile.server.customAgents.remove": "הסרת הסוכן",
   "mobile.server.customAgents.removeTitle": "להסיר את {name}?",
   "mobile.server.customAgents.removeBody": "השרת מסיר את הסוכן הזה ואת המשתנים השמורים שלו.",
-  "mobile.server.customAgents.removeFailed": "OpenBot לא הצליח להסיר את הסוכן הזה.",
+  "mobile.server.customAgents.removeFailed": "Spinbot לא הצליח להסיר את הסוכן הזה.",
   // The ACP registry: agents that the host downloads and runs. Owners and admins install them from the phone.
-  "mobile.server.acpRegistry.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי להתקין כאן סוכנים מרישום ACP.",
+  "mobile.server.acpRegistry.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי להתקין כאן סוכנים מרישום ACP.",
   "mobile.server.acpRegistry.rowDescription": "התקנת סוכנים בשרת הזה, כמו Cursor או Goose.",
   "mobile.server.acpRegistry.description":
     "השרת מוריד ומריץ כל סוכן שמותקן. הסרת סביבת הריצה משאירה את הגדרות הסוכן, פרטי הגישה והשיחות.",
@@ -1427,7 +1427,7 @@ export const messages = {
   "mobile.server.acpRegistry.cancelInstall": "ביטול ההתקנה",
   "mobile.server.acpRegistry.keepInstalling": "המשך התקנה",
   "mobile.server.acpRegistry.searchFailed": "לא ניתן לחפש ברישום. אפשר לנסות שוב.",
-  "mobile.server.acpRegistry.statusFailed": "לא ניתן לבדוק את התקדמות ההתקנה. OpenBot ינסה שוב.",
+  "mobile.server.acpRegistry.statusFailed": "לא ניתן לבדוק את התקדמות ההתקנה. Spinbot ינסה שוב.",
   "mobile.server.acpRegistry.installFailed": "לא ניתן להתקין את הסוכן. אפשר לנסות שוב.",
   "mobile.server.acpRegistry.updateFailed": "לא ניתן לעדכן את הסוכן. אפשר לנסות שוב.",
   "mobile.server.acpRegistry.removeFailed": "לא ניתן להסיר את סביבת הריצה. אפשר לנסות שוב.",
@@ -1450,11 +1450,11 @@ export const messages = {
   "mobile.server.customProviders.preset.acp": "סוכן ACP מותאם",
   "mobile.server.customProviders.preset.acpDescription": "Cursor, Copilot CLI, Qwen Code, Goose ואחרים.",
   "mobile.server.customProviders.desktopOnly": "בשולחן העבודה בלבד",
-  "mobile.server.customProviders.agentsHint": "הוספה וניהול של סוכני ACP מתבצעים ב-OpenBot במחשב שמריץ את השרת הזה.",
+  "mobile.server.customProviders.agentsHint": "הוספה וניהול של סוכני ACP מתבצעים ב-Spinbot במחשב שמריץ את השרת הזה.",
   "mobile.server.customProviders.agentsCustomHint":
     "השרת מפעיל כל סוכן במחשב שלו, עם חשבון המשתמש שלו. יש להוסיף רק סוכן שנותנים בו אמון.",
   "mobile.server.customProviders.agentsRegistryHint":
-    "כאן אפשר להתקין סוכנים מרישום ACP. סוכן ACP מותאם מוסיפים ב-OpenBot במחשב שמריץ את השרת הזה.",
+    "כאן אפשר להתקין סוכנים מרישום ACP. סוכן ACP מותאם מוסיפים ב-Spinbot במחשב שמריץ את השרת הזה.",
   "mobile.server.customProviders.adding": "מוסיף",
   "mobile.server.customProviders.loading": "טוען ספקים מותאמים…",
   "mobile.server.customProviders.loadFailed": "לא ניתן לטעון את הספקים המותאמים של השרת הזה.",
@@ -1466,7 +1466,7 @@ export const messages = {
   "mobile.server.customProviders.idHint": "אותיות קטנות באנגלית, מספרים, מקפים או קווים תחתונים. אי אפשר לשנות אחר כך.",
   "mobile.server.customProviders.idPattern":
     "יש להשתמש באותיות קטנות באנגלית, במספרים, במקפים או בקווים תחתונים, ולהתחיל באות או במספר.",
-  "mobile.server.customProviders.idBuiltIn": "ב-OpenBot כבר יש ספק בשם {id}. יש לבחור מזהה אחר.",
+  "mobile.server.customProviders.idBuiltIn": "ב-Spinbot כבר יש ספק בשם {id}. יש לבחור מזהה אחר.",
   "mobile.server.customProviders.idTaken": "בשרת הזה כבר יש נקודת קצה בשם {id}. יש לבחור מזהה אחר.",
   "mobile.server.customProviders.baseUrl": "Base URL",
   "mobile.server.customProviders.baseUrlHint": "השרת פונה לכתובת הזו. 127.0.0.1 הוא המחשב של השרת, לא הטלפון הזה.",
@@ -1499,16 +1499,16 @@ export const messages = {
   "mobile.server.customProviders.headerNameInvalid": "יש להשתמש בשם כותרת HTTP תקין.",
   "mobile.server.customProviders.headerDuplicate": "הספק הזה כבר מגדיר את {name}.",
   "mobile.server.customProviders.headerValueRequired": "יש להזין ערך לכותרת.",
-  "mobile.server.customProviders.saveFailed": "OpenBot לא הצליח להוסיף את נקודת הקצה הזו.",
+  "mobile.server.customProviders.saveFailed": "Spinbot לא הצליח להוסיף את נקודת הקצה הזו.",
   "mobile.server.customProviders.runsOn": "רץ ב-",
   "mobile.server.customProviders.editHint": "כדי לשנות את נקודת הקצה הזו, יש להסיר אותה ולהוסיף אותה שוב.",
   "mobile.server.customProviders.remove": "הסרה",
   "mobile.server.customProviders.removeTitle": "להסיר את {name}?",
   "mobile.server.customProviders.removeBody": "סוכנים בשרת הזה לא יוכלו עוד להשתמש במודלים שלה.",
-  "mobile.server.customProviders.removeFailed": "OpenBot לא הצליח להסיר את נקודת הקצה הזו.",
+  "mobile.server.customProviders.removeFailed": "Spinbot לא הצליח להסיר את נקודת הקצה הזו.",
   "mobile.server.settings.mcp": "שרתי MCP",
   "mobile.server.settings.mcpCount": { one: "שרת אחד", two: "שני שרתים", other: "{count} שרתים" },
-  "mobile.server.mcp.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל כאן את שרתי ה-MCP שלו.",
+  "mobile.server.mcp.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל כאן את שרתי ה-MCP שלו.",
   "mobile.server.mcp.unavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי לנהל את שרתי ה-MCP שלו.",
   "mobile.server.mcp.description":
     "שרתי MCP נותנים לסוכנים של השרת הזה עוד כלים. סוכני Claude ו-Codex מקבלים רק את השרתים שברשימה הזו.",
@@ -1526,7 +1526,7 @@ export const messages = {
   "mobile.server.mcp.addConfirm": "הוספה",
   "mobile.server.mcp.name": "שם",
   "mobile.server.mcp.namePlaceholder": "שם שרת ה-MCP",
-  "mobile.server.mcp.nameReserved": "OpenBot כבר משתמש בשם {name}.",
+  "mobile.server.mcp.nameReserved": "Spinbot כבר משתמש בשם {name}.",
   "mobile.server.mcp.transport": "תעבורה",
   "mobile.server.mcp.stdio": "פקודה (STDIO)",
   "mobile.server.mcp.http": "URL (HTTP)",
@@ -1536,12 +1536,12 @@ export const messages = {
   "mobile.server.mcp.command": "פקודה",
   "mobile.server.mcp.commandHint": "התוכנית בלבד. כל מילה אחריה נכנסת לארגומנטים.",
   "mobile.server.mcp.arguments": "ארגומנטים",
-  "mobile.server.mcp.argumentsHint": "OpenBot מעביר כל ארגומנט לתוכנית כמילה אחת.",
+  "mobile.server.mcp.argumentsHint": "Spinbot מעביר כל ארגומנט לתוכנית כמילה אחת.",
   "mobile.server.mcp.addArgument": "הוספת ארגומנט",
   "mobile.server.mcp.argument": "ארגומנט {position}",
   "mobile.server.mcp.removeArgument": "הסרת ארגומנט {position}",
   "mobile.server.mcp.environment": "משתני סביבה",
-  "mobile.server.mcp.environmentHint": "OpenBot מעביר את המשתנים האלה לשרת ה-MCP כשהוא מתחיל.",
+  "mobile.server.mcp.environmentHint": "Spinbot מעביר את המשתנים האלה לשרת ה-MCP כשהוא מתחיל.",
   "mobile.server.mcp.addVariable": "הוספת משתנה",
   "mobile.server.mcp.variableKey": "שם משתנה {position}",
   "mobile.server.mcp.variableValue": "ערך משתנה {position}",
@@ -1556,7 +1556,7 @@ export const messages = {
   "mobile.server.mcp.url": "כתובת השרת",
   "mobile.server.mcp.urlInvalid": "יש להזין כתובת http או https.",
   "mobile.server.mcp.headers": "כותרות",
-  "mobile.server.mcp.headersHint": "OpenBot שולח את הכותרות האלה עם כל בקשה.",
+  "mobile.server.mcp.headersHint": "Spinbot שולח את הכותרות האלה עם כל בקשה.",
   "mobile.server.mcp.addHeader": "הוספת כותרת",
   "mobile.server.mcp.headerName": "שם כותרת {position}",
   "mobile.server.mcp.headerValue": "ערך כותרת {position}",
@@ -1570,7 +1570,7 @@ export const messages = {
   "mobile.server.mcp.testDescription": "מתחבר פעם אחת עם ההגדרות האלה ומציג את מספר הכלים. דבר לא נשמר.",
   "mobile.server.mcp.testFailed": "שרת ה-MCP לא ענה.",
   "mobile.server.mcp.connected": { one: "מחובר · כלי אחד", two: "מחובר · שני כלים", other: "מחובר · {count} כלים" },
-  "mobile.server.mcp.signInOnComputer": "שרת ה-MCP הזה דורש התחברות. יש להתחבר מ-OpenBot במחשב ואז לבדוק שוב.",
+  "mobile.server.mcp.signInOnComputer": "שרת ה-MCP הזה דורש התחברות. יש להתחבר מ-Spinbot במחשב ואז לבדוק שוב.",
   "mobile.server.mcp.signedInDescription": "{server} מחובר לשרת ה-MCP הזה.",
   "mobile.server.mcp.signOut": "התנתקות",
   "mobile.server.mcp.saveFailed": "לא ניתן לשמור את השינוי. אפשר לנסות שוב.",
@@ -1605,12 +1605,12 @@ export const messages = {
   "mobile.server.planLimits.window.fiveHour": "5 שעות",
   "mobile.server.planLimits.window.hours": { one: "שעה", two: "שעתיים", other: "{count} שעות" },
   "mobile.server.planLimits.window.minutes": "{minutes} דק׳",
-  // Server settings > Updates: the OpenBot update of the server's host. {name} is the server.
+  // Server settings > Updates: the Spinbot update of the server's host. {name} is the server.
   "mobile.server.settings.updates": "עדכונים",
   "mobile.server.settings.updateAvailable": "עדכון זמין",
   "mobile.server.route.updates": "עדכונים",
-  "mobile.server.update.hostTitle": "OpenBot ב-{name}",
-  "mobile.server.update.version": "OpenBot {version}",
+  "mobile.server.update.hostTitle": "Spinbot ב-{name}",
+  "mobile.server.update.version": "Spinbot {version}",
   "mobile.server.update.status.idle": "יש לבדוק עדכונים כדי למצוא את הגרסה האחרונה.",
   "mobile.server.update.status.checking": "בודק עדכונים…",
   "mobile.server.update.status.available": "{version} זמינה.",
@@ -1618,27 +1618,27 @@ export const messages = {
   "mobile.server.update.status.downloadingUnknown": "מוריד את {version}…",
   "mobile.server.update.status.ready": "{version} הורדה.",
   "mobile.server.update.status.installing": "{name} מופעל מחדש כדי להתקין את העדכון.",
-  "mobile.server.update.status.upToDate": "OpenBot מעודכן ב-{name}.",
+  "mobile.server.update.status.upToDate": "Spinbot מעודכן ב-{name}.",
   "mobile.server.update.status.checkFailed": "{name} לא הצליח לבדוק עדכונים. אפשר לנסות שוב.",
   "mobile.server.update.status.downloadFailed": "{name} לא הצליח להוריד את העדכון. אפשר לנסות שוב.",
   "mobile.server.update.status.installFailed":
-    "{name} לא הצליח להתקין את העדכון. יש לוודא שאף משתמש אחר במחשב הזה לא מריץ את OpenBot, ואז לנסות שוב.",
+    "{name} לא הצליח להתקין את העדכון. יש לוודא שאף משתמש אחר במחשב הזה לא מריץ את Spinbot, ואז לנסות שוב.",
   "mobile.server.update.releaseCheckFailed":
     "{name} לא הצליח לקרוא את פיד הגרסאות. יש לבדוק את חיבור הרשת של המארח ולנסות שוב.",
   "mobile.server.update.releaseUnavailable":
     "בדיקת גרסאות לא זמינה בבנייה הזו. יש לבקש ממנהל המארח לבדוק אם יש גרסה תואמת.",
   "mobile.server.update.externalTitle": "המארח שולט בהתקנה",
   "mobile.server.update.path.hostManager":
-    "OpenBot Host Manager מתקין עדכונים כשכל המשתמשים לא פעילים. אם עדכון לא מתחיל, יש לבקש ממנהל המארח לבדוק את הסטטוס של Host Manager.",
+    "Spinbot Host Manager מתקין עדכונים כשכל המשתמשים לא פעילים. אם עדכון לא מתחיל, יש לבקש ממנהל המארח לבדוק את הסטטוס של Host Manager.",
   "mobile.server.update.path.hosted":
     "השירות המארח מוריד עדכונים ברקע. עדכון שהורד מתחיל כשהשרת מתחיל בפעם הבאה. יש להמתין לסיום עבודה פעילה לפני שעוצרים וממשיכים את השרת. אם הוא נשאר בגרסה ישנה, יש לפנות למנהל המארח.",
   "mobile.server.update.path.system":
-    "במארח, יש להריץ sudo openbot update כדי להתקין את הגרסה האחרונה. הפקודה עוצרת את OpenBot. קודם יש להמתין לסיום עבודה פעילה. הורדות אוטומטיות מותקנות באתחול הבא.",
+    "במארח, יש להריץ sudo openbot update כדי להתקין את הגרסה האחרונה. הפקודה עוצרת את Spinbot. קודם יש להמתין לסיום עבודה פעילה. הורדות אוטומטיות מותקנות באתחול הבא.",
   "mobile.server.update.path.container":
-    "במארח Docker, יש למשוך את תמונת OpenBot החדשה וליצור את הקונטיינר מחדש עם אותם כוני נתונים. קודם יש להמתין לסיום עבודה פעילה. כדי לשמור את הנתונים, יש להשאיר את הכוננים הקיימים.",
+    "במארח Docker, יש למשוך את תמונת Spinbot החדשה וליצור את הקונטיינר מחדש עם אותם כוני נתונים. קודם יש להמתין לסיום עבודה פעילה. כדי לשמור את הנתונים, יש להשאיר את הכוננים הקיימים.",
   "mobile.server.update.path.manual":
-    "ההתקנה הזו לא יכולה להחליף את עצמה. יש לבקש ממנהל המארח להתקין את הגרסה התואמת מ-github.com/nightly-labs/openbot/releases. יש להשאיר את נתוני OpenBot הקיימים.",
-  "mobile.server.update.path.unavailable": "זו בנייה לפיתוח. כדי לבדוק עדכונים, יש להשתמש בגרסת OpenBot מותקנת.",
+    "ההתקנה הזו לא יכולה להחליף את עצמה. יש לבקש ממנהל המארח להתקין את הגרסה התואמת מ-github.com/nightly-labs/openbot/releases. יש להשאיר את נתוני Spinbot הקיימים.",
+  "mobile.server.update.path.unavailable": "זו בנייה לפיתוח. כדי לבדוק עדכונים, יש להשתמש בגרסת Spinbot מותקנת.",
   "mobile.server.update.check": "בדיקת עדכונים",
   "mobile.server.update.start": "עדכון כשאין פעילות",
   "mobile.server.update.restartNow": "הפעלה מחדש עכשיו",
@@ -1648,26 +1648,26 @@ export const messages = {
   "mobile.server.update.requestedBy": "{member} ביקש את העדכון הזה.",
   "mobile.server.update.automatic": "{name} מתקין עדכונים אוטומטית.",
   "mobile.server.update.autoDownloadTitle": "הורדת עדכונים אוטומטית",
-  "mobile.server.update.autoDownloadDescription": "{name} מוריד כל גרסה חדשה של OpenBot כשהיא יוצאת.",
+  "mobile.server.update.autoDownloadDescription": "{name} מוריד כל גרסה חדשה של Spinbot כשהיא יוצאת.",
   "mobile.server.update.autoInstallTitle": "התקנת עדכונים אוטומטית",
   "mobile.server.update.autoInstallDescription":
     "{name} מופעל מחדש לתוך עדכון שהורד כשהסוכנים שלו לא פעילים. חברים מתנתקים לזמן קצר ומתחברים שוב אוטומטית.",
   "mobile.server.update.waitingFor": "ממתין ל{reasons}.",
   "mobile.server.update.disabledTitle": "עדכונים מרחוק כבויים",
   "mobile.server.update.disabledDescription":
-    "המשתמש של {name} כיבה עדכונים מחברי השרת. יש לבקש ממנו לעדכן את OpenBot או להפעיל את ההגדרה.",
+    "המשתמש של {name} כיבה עדכונים מחברי השרת. יש לבקש ממנו לעדכן את Spinbot או להפעיל את ההגדרה.",
   "mobile.server.update.managedTitle": "Host Manager שולט בעדכונים",
-  "mobile.server.update.managedDescription": "OpenBot Host Manager מעדכן את {name}. יש לפנות למנהל המארח.",
+  "mobile.server.update.managedDescription": "Spinbot Host Manager מעדכן את {name}. יש לפנות למנהל המארח.",
   "mobile.server.update.unsupportedTitle": "{name} לא יכול לעדכן את עצמו",
   "mobile.server.update.unsupportedDescription":
-    "לבנייה הזו של OpenBot אין מנגנון עדכון. יש להתקין גרסה חדשה ב-{name}.",
+    "לבנייה הזו של Spinbot אין מנגנון עדכון. יש להתקין גרסה חדשה ב-{name}.",
   "mobile.server.update.restarting": "מופעל מחדש…",
   "mobile.server.update.loadFailed": "סטטוס העדכון של {name} לא נטען.",
-  "mobile.server.update.dialog.offerTitle": "עדכון {name} ל-OpenBot {version}",
+  "mobile.server.update.dialog.offerTitle": "עדכון {name} ל-Spinbot {version}",
   "mobile.server.update.dialog.offerDescription":
-    "{name} משתמש ב-OpenBot {current}. הוא מוריד קודם את העדכון, ואז מופעל מחדש.",
+    "{name} משתמש ב-Spinbot {current}. הוא מוריד קודם את העדכון, ואז מופעל מחדש.",
   "mobile.server.update.dialog.offerReadyDescription":
-    "{name} משתמש ב-OpenBot {current}. העדכון הורד. {name} מופעל מחדש כדי להתקין אותו.",
+    "{name} משתמש ב-Spinbot {current}. העדכון הורד. {name} מופעל מחדש כדי להתקין אותו.",
   "mobile.server.update.dialog.waitIdleDescription": "ההפעלה מחדש ממתינה לסיום תורות של סוכנים והרצות של שגרות.",
   "mobile.server.update.dialog.updateNow": "עדכון עכשיו",
   "mobile.server.update.dialog.restartWhenIdle": "הפעלה מחדש כשאין פעילות",
@@ -1682,10 +1682,10 @@ export const messages = {
   "mobile.server.update.reason.fileTransfer": "העברת קבצים",
   "mobile.server.update.reason.browserControl": "שליטה של סוכן בדפדפן",
   "mobile.server.update.reason.updateOperation": "שלב עדכון אחר",
-  "mobile.server.update.reason.initialization": "הפעלת OpenBot",
+  "mobile.server.update.reason.initialization": "הפעלת Spinbot",
   "mobile.server.update.reason.other": "עבודה אחרת",
   "mobile.server.update.actionFailed": "פעולת השרת נכשלה.",
-  "mobile.server.update.unavailable": "יש להתחבר לשרת הזה כדי לראות את עדכוני OpenBot שלו.",
+  "mobile.server.update.unavailable": "יש להתחבר לשרת הזה כדי לראות את עדכוני Spinbot שלו.",
   "mobile.server.update.loading": "טוען עדכונים…",
   "mobile.server.route.sites": "אתרים",
   "mobile.server.settings.sites": "אתרים",
@@ -1711,13 +1711,13 @@ export const messages = {
   "mobile.server.sites.deleteDescription": "הכתובת הזו תחזיר מיד 410 Gone.",
   "mobile.server.sites.deleteFailed": "לא ניתן למחוק את האתר.",
   "mobile.server.sites.openFailed": "לא ניתן לפתוח את האתר.",
-  "mobile.server.sites.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לראות כאן את האתרים שלו.",
+  "mobile.server.sites.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לראות כאן את האתרים שלו.",
   "mobile.server.sites.offline": "יש להתחבר לשרת הזה כדי לראות את האתרים שלו.",
   "mobile.server.route.roles": "הרשאות",
   "mobile.server.route.role": "תפקיד",
   "mobile.server.roles.description":
     "יש לבחור את הסוכנים שחברים יכולים להשתמש בהם. בעלים ומנהלים יכולים להשתמש בכל הסוכנים.",
-  "mobile.server.roles.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לנהל תפקידים.",
+  "mobile.server.roles.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לנהל תפקידים.",
   "mobile.server.roles.unavailable": "רק בעלים או מנהל של שרת מקוון יכולים לנהל תפקידים.",
   "mobile.server.roles.loading": "טוען תפקידים…",
   "mobile.server.roles.loadFailed": "לא ניתן לטעון את התפקידים של השרת הזה.",
@@ -1754,7 +1754,7 @@ export const messages = {
   "mobile.server.route.audit": "יומן ביקורת",
   "mobile.server.audit.description":
     "שינויים בחברים, בתפקידים ובגישה לסוכנים בשרת הזה, מהחדש לישן. המארח שומר את 500 השינויים האחרונים.",
-  "mobile.server.audit.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לראות את יומן הביקורת שלו.",
+  "mobile.server.audit.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לראות את יומן הביקורת שלו.",
   "mobile.server.audit.unavailable": "רק בעלים או מנהל של שרת מקוון יכולים לראות את יומן הביקורת.",
   "mobile.server.audit.loading": "טוען שינויים…",
   "mobile.server.audit.loadFailed": "לא ניתן לטעון את יומן הביקורת של השרת הזה.",
@@ -1783,7 +1783,7 @@ export const messages = {
   // Server settings › Import agents: Grok Bot and Hermes exports (`agent-import-v1`).
   "mobile.server.settings.importAgents": "ייבוא סוכנים",
   "mobile.server.route.import": "ייבוא סוכנים",
-  "mobile.server.import.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי לייבא כאן סוכנים.",
+  "mobile.server.import.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי לייבא כאן סוכנים.",
   "mobile.server.import.unavailable": "יש להתחבר לשרת הזה כדי לייבא סוכנים.",
   "mobile.server.import.count.agent": { one: "סוכן אחד", two: "שני סוכנים", other: "{count} סוכנים" },
   "mobile.server.import.count.channel": { one: "ערוץ אחד", two: "שני ערוצים", other: "{count} ערוצים" },
@@ -1792,10 +1792,10 @@ export const messages = {
   "mobile.server.import.count.memory": { one: "זיכרון אחד", two: "שני זיכרונות", other: "{count} זיכרונות" },
   "mobile.server.import.count.file": { one: "קובץ אחד", two: "שני קבצים", other: "{count} קבצים" },
   "mobile.server.import.sourceTitle": "איפה הסוכנים שלך עכשיו?",
-  "mobile.server.import.sourceLede": "OpenBot מעתיק אותם לשרת הזה. כל פריט מוצג לפני שמשהו משתנה.",
+  "mobile.server.import.sourceLede": "Spinbot מעתיק אותם לשרת הזה. כל פריט מוצג לפני שמשהו משתנה.",
   "mobile.server.import.hermesNote": "יש לייצא קובץ zip. מ-Hermes.",
   "mobile.server.import.grokNote": "בענן. סוכן ייצוא שם יוצר קובץ zip.",
-  "mobile.server.import.transfer": "שרת OpenBot אחר",
+  "mobile.server.import.transfer": "שרת Spinbot אחר",
   "mobile.server.import.transferNote": "האפשרות העברה מעבירה סוכנים והגדרות יחד.",
   "mobile.server.import.grokLede":
     "סוכן ייצוא ב-Grok Bot אורז שמות, הוראות, תמונות פרופיל, מיומנויות, שגרות, זיכרונות והקבצים שנכללו לקובץ zip. אחד.",
@@ -1857,7 +1857,7 @@ export const messages = {
   "mobile.server.route.transfer": "העברה",
   "mobile.server.route.transferExport": "ייצוא",
   "mobile.server.route.transferImport": "ייבוא",
-  "mobile.server.transfer.unsupported": "יש לעדכן את OpenBot בשרת הזה כדי להעביר אותו כאן.",
+  "mobile.server.transfer.unsupported": "יש לעדכן את Spinbot בשרת הזה כדי להעביר אותו כאן.",
   "mobile.server.transfer.unavailable": "יש להתחבר לשרת הזה כבעלים או כמנהל כדי להעביר אותו.",
   "mobile.server.transfer.title": "העברת השרת הזה למחשב אחר",
   "mobile.server.transfer.lede": "הסוכנים שלו, המיומנויות, השגרות, הזיכרונות והקבצים שלהם נכנסים לקובץ אחד.",
@@ -1898,8 +1898,8 @@ export const messages = {
   "mobile.server.transfer.reading": "קורא את הקובץ…",
   "mobile.server.transfer.sending": "שולח את הקובץ… {percent}%",
   "mobile.server.transfer.openFailed": "לא ניתן לפתוח את הקובץ.",
-  "mobile.server.transfer.source": "OpenBot {version} · יוצא ב-{date}",
-  "mobile.server.transfer.sourceNoDate": "OpenBot {version}",
+  "mobile.server.transfer.source": "Spinbot {version} · יוצא ב-{date}",
+  "mobile.server.transfer.sourceNoDate": "Spinbot {version}",
   "mobile.server.transfer.importWarnings": "לפני שהייבוא מתחיל",
   "mobile.server.transfer.importAgents": "סוכנים בקובץ",
   "mobile.server.transfer.nameExists": "השם כבר בשימוש",

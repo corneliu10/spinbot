@@ -9,10 +9,10 @@ export const messages = defineMessages("mcp", {
   "mcp.connect.useKey": "Use an API key instead",
   "mcp.connect.useSignIn": "Sign in instead",
   "mcp.connect.keyDescription":
-    "Paste a credential from your {name} account. OpenBot connects with it and keeps it on {host}.",
+    "Paste a credential from your {name} account. Spinbot connects with it and keeps it on {host}.",
   "mcp.connect.thisComputer": "this computer",
   "mcp.connect.noCredentialDescription":
-    "{name} asks for no credential. OpenBot connects once to see which tools it offers.",
+    "{name} asks for no credential. Spinbot connects once to see which tools it offers.",
   "mcp.connect.connect": "Connect",
   "mcp.connect.required": "Required.",
   "mcp.connect.keptOn": "Kept on {host}.",
@@ -23,7 +23,7 @@ export const messages = defineMessages("mcp", {
   "mcp.local.address": "Address",
   "mcp.local.docs": "Setup guide",
   "mcp.signIn.description":
-    "Sign in to your {name} account. OpenBot gets the tools that account can reach, and no password.",
+    "Sign in to your {name} account. Spinbot gets the tools that account can reach, and no password.",
   "mcp.signIn.waiting": "Waiting for the browser…",
   "mcp.signIn.continue": "Continue to {name}",
   "mcp.signIn.pageDescription": "This page is open in the browser on {host}. Sign in here.",
@@ -61,7 +61,7 @@ export const messages = defineMessages("mcp", {
   "mcp.panel.empty": "No MCP servers yet.",
   "mcp.panel.enable": "Enable {name}",
   "mcp.panel.detailsTitle": "Details",
-  "mcp.panel.detailsDescription": "Name this server and choose how OpenBot reaches it.",
+  "mcp.panel.detailsDescription": "Name this server and choose how Spinbot reaches it.",
   "mcp.panel.transport": "Transport",
   "mcp.panel.name": "Name",
   "mcp.panel.namePlaceholder": "MCP server name",
@@ -111,16 +111,16 @@ export const messages = defineMessages("mcp", {
   "mcp.panel.signInTo": "Sign in to {name}",
   "mcp.panel.cancelSignInTo": "Cancel sign-in to {name}",
   "mcp.panel.signInWaiting": {
-    one: "Finish the sign-in in your browser. OpenBot stops waiting after {count} minute.",
-    other: "Finish the sign-in in your browser. OpenBot stops waiting after {count} minutes.",
+    one: "Finish the sign-in in your browser. Spinbot stops waiting after {count} minute.",
+    other: "Finish the sign-in in your browser. Spinbot stops waiting after {count} minutes.",
   },
   "mcp.panel.signInWaitingOn": {
-    one: "Opening the sign-in page on {host}. OpenBot stops waiting after {count} minute.",
-    other: "Opening the sign-in page on {host}. OpenBot stops waiting after {count} minutes.",
+    one: "Opening the sign-in page on {host}. Spinbot stops waiting after {count} minute.",
+    other: "Opening the sign-in page on {host}. Spinbot stops waiting after {count} minutes.",
   },
   "mcp.panel.appTitle": "Sign-in app",
   "mcp.panel.appDescription":
-    "Use an OAuth app that you registered with the server’s provider. OpenBot uses it when the server cannot register OpenBot by itself. Leave it empty to let OpenBot register.",
+    "Use an OAuth app that you registered with the server’s provider. Spinbot uses it when the server cannot register Spinbot by itself. Leave it empty to let Spinbot register.",
   "mcp.panel.appSaveFirst": "Save this server first. Then you can add a sign-in app.",
   "mcp.panel.appUrlChanged": "Save the new server URL first. The sign-in app belongs to the saved URL.",
   "mcp.panel.appLoadFailed": "Could not read the sign-in app.",
@@ -143,18 +143,18 @@ export const messages = defineMessages("mcp", {
   "mcp.panel.appSaved": "App saved. Sign in to use it.",
   "mcp.panel.appRemoved": "App removed.",
   "mcp.signIn.relayDescription":
-    "Sign in on {page} in your browser. When you finish, OpenBot sends the sign-in to {host}.",
+    "Sign in on {page} in your browser. When you finish, Spinbot sends the sign-in to {host}.",
   "mcp.signIn.relayOpenDescription":
-    "Sign in on {page} in your browser. When you finish, paste the address that the browser shows here. OpenBot then sends the sign-in to {host}.",
+    "Sign in on {page} in your browser. When you finish, paste the address that the browser shows here. Spinbot then sends the sign-in to {host}.",
   "mcp.signIn.relayDeviceDescription":
     "Sign in on {page} in your browser and finish there. {host} sees the sign-in by itself.",
   "mcp.signIn.relayOpen": "Open sign-in page",
   "mcp.signIn.relayPasteHint":
-    "If the browser does not come back to OpenBot, copy the address that it shows and paste it here.",
+    "If the browser does not come back to Spinbot, copy the address that it shows and paste it here.",
   "mcp.signIn.relayPasteRequired":
-    "OpenBot cannot get the sign-in from the browser by itself. When you finish, copy the address that the browser shows and paste it here.",
+    "Spinbot cannot get the sign-in from the browser by itself. When you finish, copy the address that the browser shows and paste it here.",
   "mcp.signIn.relayAddress": "Browser address",
   "mcp.signIn.relaySend": "Send",
   "mcp.panel.callbackUrlRelayed":
-    "The sign-in page opens in your browser, and OpenBot on your computer sends the sign-in to {host}. Add this exact URL to the allowed redirect URLs of the app.",
+    "The sign-in page opens in your browser, and Spinbot on your computer sends the sign-in to {host}. Add this exact URL to the allowed redirect URLs of the app.",
 });

@@ -9,10 +9,10 @@ export const messages = {
   "mcp.connect.getKey": "קבלת מפתח",
   "mcp.connect.useKey": "שימוש במפתח API במקום זאת",
   "mcp.connect.useSignIn": "התחברות במקום זאת",
-  "mcp.connect.keyDescription": "יש להדביק אישור גישה מחשבון {name} שלך. OpenBot מתחבר באמצעותו ושומר אותו ב-{host}.",
+  "mcp.connect.keyDescription": "יש להדביק אישור גישה מחשבון {name} שלך. Spinbot מתחבר באמצעותו ושומר אותו ב-{host}.",
   "mcp.connect.thisComputer": "המחשב הזה",
   "mcp.connect.noCredentialDescription":
-    "{name} לא דורש אישור גישה. OpenBot מתחבר פעם אחת כדי לראות אילו כלים הוא מציע.",
+    "{name} לא דורש אישור גישה. Spinbot מתחבר פעם אחת כדי לראות אילו כלים הוא מציע.",
   "mcp.connect.connect": "חיבור",
   "mcp.connect.required": "שדה חובה.",
   "mcp.connect.keptOn": "נשמר ב-{host}.",
@@ -23,7 +23,7 @@ export const messages = {
   "mcp.local.address": "כתובת",
   "mcp.local.docs": "מדריך הגדרה",
   "mcp.signIn.description":
-    "יש להתחבר לחשבון {name} שלך. OpenBot מקבל את הכלים שהחשבון הזה יכול להגיע אליהם, ולא סיסמה.",
+    "יש להתחבר לחשבון {name} שלך. Spinbot מקבל את הכלים שהחשבון הזה יכול להגיע אליהם, ולא סיסמה.",
   "mcp.signIn.waiting": "ממתין לדפדפן…",
   "mcp.signIn.continue": "המשך אל {name}",
   "mcp.signIn.pageDescription": "הדף הזה פתוח בדפדפן ב-{host}. יש להתחבר כאן.",
@@ -59,7 +59,7 @@ export const messages = {
   "mcp.panel.empty": "עדיין אין שרתי MCP.",
   "mcp.panel.enable": "הפעלת {name}",
   "mcp.panel.detailsTitle": "פרטים",
-  "mcp.panel.detailsDescription": "יש לתת שם לשרת הזה ולבחור איך OpenBot מגיע אליו.",
+  "mcp.panel.detailsDescription": "יש לתת שם לשרת הזה ולבחור איך Spinbot מגיע אליו.",
   "mcp.panel.transport": "העברה",
   "mcp.panel.name": "שם",
   "mcp.panel.namePlaceholder": "שם שרת MCP",
@@ -108,18 +108,18 @@ export const messages = {
   "mcp.panel.signInTo": "התחברות ל-{name}",
   "mcp.panel.cancelSignInTo": "ביטול ההתחברות ל-{name}",
   "mcp.panel.signInWaiting": {
-    one: "יש לסיים את ההתחברות בדפדפן. OpenBot מפסיק להמתין אחרי דקה.",
-    two: "יש לסיים את ההתחברות בדפדפן. OpenBot מפסיק להמתין אחרי שתי דקות.",
-    other: "יש לסיים את ההתחברות בדפדפן. OpenBot מפסיק להמתין אחרי {count} דקות.",
+    one: "יש לסיים את ההתחברות בדפדפן. Spinbot מפסיק להמתין אחרי דקה.",
+    two: "יש לסיים את ההתחברות בדפדפן. Spinbot מפסיק להמתין אחרי שתי דקות.",
+    other: "יש לסיים את ההתחברות בדפדפן. Spinbot מפסיק להמתין אחרי {count} דקות.",
   },
   "mcp.panel.signInWaitingOn": {
-    one: "פותח את דף ההתחברות ב-{host}. OpenBot מפסיק להמתין אחרי דקה.",
-    two: "פותח את דף ההתחברות ב-{host}. OpenBot מפסיק להמתין אחרי שתי דקות.",
-    other: "פותח את דף ההתחברות ב-{host}. OpenBot מפסיק להמתין אחרי {count} דקות.",
+    one: "פותח את דף ההתחברות ב-{host}. Spinbot מפסיק להמתין אחרי דקה.",
+    two: "פותח את דף ההתחברות ב-{host}. Spinbot מפסיק להמתין אחרי שתי דקות.",
+    other: "פותח את דף ההתחברות ב-{host}. Spinbot מפסיק להמתין אחרי {count} דקות.",
   },
   "mcp.panel.appTitle": "אפליקציית התחברות",
   "mcp.panel.appDescription":
-    "אפשר להשתמש באפליקציית OAuth שנרשמה אצל הספק של השרת. OpenBot משתמש בה כשהשרת לא יכול לרשום את OpenBot בעצמו. אם משאירים ריק, OpenBot נרשם בעצמו.",
+    "אפשר להשתמש באפליקציית OAuth שנרשמה אצל הספק של השרת. Spinbot משתמש בה כשהשרת לא יכול לרשום את Spinbot בעצמו. אם משאירים ריק, Spinbot נרשם בעצמו.",
   "mcp.panel.appSaveFirst": "יש לשמור קודם את השרת הזה. אחר כך אפשר להוסיף אפליקציית התחברות.",
   "mcp.panel.appUrlChanged": "יש לשמור קודם את ה-URL החדש של השרת. אפליקציית ההתחברות שייכת ל-URL השמור.",
   "mcp.panel.appLoadFailed": "לא ניתן היה לקרוא את אפליקציית ההתחברות.",
@@ -142,17 +142,17 @@ export const messages = {
   "mcp.panel.appSaved": "האפליקציה נשמרה. יש להתחבר כדי להשתמש בה.",
   "mcp.panel.appRemoved": "האפליקציה הוסרה.",
   "mcp.signIn.relayDescription":
-    "יש לוודא שדף ההתחברות נמצא ב-{page}, ואז לפתוח אותו בדפדפן. כשמסיימים, OpenBot שולח את ההתחברות ל-{host}.",
+    "יש לוודא שדף ההתחברות נמצא ב-{page}, ואז לפתוח אותו בדפדפן. כשמסיימים, Spinbot שולח את ההתחברות ל-{host}.",
   "mcp.signIn.relayOpenDescription":
-    "יש לפתוח בדפדפן את דף ההתחברות של {page}. כשמסיימים, יש להדביק כאן את הכתובת שהדפדפן מציג. אז OpenBot שולח את ההתחברות ל-{host}.",
+    "יש לפתוח בדפדפן את דף ההתחברות של {page}. כשמסיימים, יש להדביק כאן את הכתובת שהדפדפן מציג. אז Spinbot שולח את ההתחברות ל-{host}.",
   "mcp.signIn.relayDeviceDescription":
     "יש לוודא שדף ההתחברות נמצא ב-{page}, ואז לפתוח אותו בדפדפן ולסיים שם. {host} רואה את ההתחברות בעצמו.",
   "mcp.signIn.relayOpen": "פתיחת דף ההתחברות",
-  "mcp.signIn.relayPasteHint": "אם הדפדפן לא חוזר ל-OpenBot, יש להעתיק את הכתובת שהוא מציג ולהדביק אותה כאן.",
+  "mcp.signIn.relayPasteHint": "אם הדפדפן לא חוזר ל-Spinbot, יש להעתיק את הכתובת שהוא מציג ולהדביק אותה כאן.",
   "mcp.signIn.relayPasteRequired":
-    "OpenBot לא יכול לקבל את ההתחברות מהדפדפן בעצמו. כשמסיימים, יש להעתיק את הכתובת שהדפדפן מציג ולהדביק אותה כאן.",
+    "Spinbot לא יכול לקבל את ההתחברות מהדפדפן בעצמו. כשמסיימים, יש להעתיק את הכתובת שהדפדפן מציג ולהדביק אותה כאן.",
   "mcp.signIn.relayAddress": "כתובת הדפדפן",
   "mcp.signIn.relaySend": "שליחה",
   "mcp.panel.callbackUrlRelayed":
-    "דף ההתחברות נפתח בדפדפן שלך, ו-OpenBot במחשב שלך שולח את ההתחברות ל-{host}. יש להוסיף את ה-URL המדויק הזה ל-URL של ההפניה המותרים באפליקציה.",
+    "דף ההתחברות נפתח בדפדפן שלך, ו-Spinbot במחשב שלך שולח את ההתחברות ל-{host}. יש להוסיף את ה-URL המדויק הזה ל-URL של ההפניה המותרים באפליקציה.",
 } as const satisfies PartialTranslation<typeof source>;

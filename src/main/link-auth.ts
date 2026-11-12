@@ -16,7 +16,7 @@ export const LINK_API_URL = "https://api.link.com";
 /** Link's public client. It needs no secret. */
 const LINK_CLIENT_ID = "lwlpk_U7Qy7ThG69STZk";
 /** The name that Link shows on its approval page. A product name: it is not translated. */
-const LINK_CLIENT_HINT = "OpenBot";
+const LINK_CLIENT_HINT = "Spinbot";
 /** Read the user's email, and ask for one-time cards that the user approves one at a time. */
 const LINK_SCOPE = "userinfo:read payment_methods.agentic";
 const DEVICE_GRANT = "urn:ietf:params:oauth:grant-type:device_code";

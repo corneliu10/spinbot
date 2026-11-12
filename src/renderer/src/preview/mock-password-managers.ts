@@ -19,7 +19,7 @@ function connected(manager: PasswordManagerId): PasswordManagerStatus {
   return {
     ...disconnectedPasswordManager(manager, ["browser", "key"]),
     state: "connected",
-    vaultNames: ["Shared with OpenBot"],
+    vaultNames: ["Shared with Spinbot"],
     loginCount: 12,
     expiresAt: Date.now() + MOCK_KEY_DAYS * 24 * 60 * 60 * 1_000,
   };

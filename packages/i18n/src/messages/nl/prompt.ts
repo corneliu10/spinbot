@@ -28,7 +28,7 @@ export const messages = {
   "prompt.approval.report.bugHeadline": "Een bug gevonden? Laten we hem oplossen.",
   "prompt.approval.report.ideaHeadline": "Een idee? Laten we het waarmaken.",
   "prompt.approval.report.dontSend": "Niet nu",
-  "prompt.approval.report.send": "Naar het OpenBot-team sturen",
+  "prompt.approval.report.send": "Naar het Spinbot-team sturen",
   "prompt.approval.title.command": "Een commando uitvoeren",
   "prompt.approval.title.fileChange": "Bestanden wijzigen",
   "prompt.approval.title.permissions": "Machtigingen verlenen",
@@ -53,7 +53,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} heeft het inloggen vanaf {server} geblokkeerd",
   "prompt.browser.signInBlocked.cancelledTitle": "Inloggen bij {host} geannuleerd",
   "prompt.browser.signInBlocked.body":
-    "Log in op deze computer. OpenBot stuurt alleen de inloggegevens van {host} naar {server}, en {name} gaat verder.",
+    "Log in op deze computer. Spinbot stuurt alleen de inloggegevens van {host} naar {server}, en {name} gaat verder.",
   "prompt.browser.signInBlocked.cancelledBody": "Het inloggen is geannuleerd.",
   "prompt.browser.signInBlocked.waiting": "Wachten op inloggen",
   "prompt.browser.signInBlocked.waitingButton": "Wachten op inloggen…",

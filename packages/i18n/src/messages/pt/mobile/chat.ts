@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "O acesso ao microfone está desativado",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Para ditar uma mensagem, permita que o OpenBot use o microfone e o reconhecimento de fala em Configurações.",
+    "Para ditar uma mensagem, permita que o Spinbot use o microfone e o reconhecimento de fala em Configurações.",
   "mobile.chat.dictation.stopped": "Ditado interrompido",
   "mobile.chat.dictation.tryAgain": "Tente novamente.",
   "mobile.chat.dictation.unavailable": "O ditado está indisponível",
@@ -118,7 +118,7 @@ export const messages = {
   "mobile.chat.attachment.openFailed": "Não foi possível abrir o anexo",
   "mobile.chat.attachment.photosNeedUpdate": "Para salvar fotos, é necessário ter a versão mais recente do app.",
   "mobile.chat.attachment.photosPermission":
-    "Permita que o OpenBot adicione fotos em Configurações para salvar esta imagem.",
+    "Permita que o Spinbot adicione fotos em Configurações para salvar esta imagem.",
   "mobile.chat.attachment.imageUnavailable": "A imagem está indisponível. Tente novamente.",
   "mobile.chat.attachment.saveImageFailed": "Não foi possível salvar a imagem",
   "mobile.chat.attachment.preview": "Visualizar {name}",
@@ -143,9 +143,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: escolha imagens, áudio MP3, vídeo MOV ou MP4, arquivos ZIP, PDF, documentos do Office, EML, texto, Markdown, dados ou arquivos de código-fonte.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: o computador anfitrião não aceita arquivos {type}. Atualize o OpenBot nele para anexá-los.",
+    "{name}: o computador anfitrião não aceita arquivos {type}. Atualize o Spinbot nele para anexá-los.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: o computador anfitrião não aceita estes arquivos. Atualize o OpenBot nele para anexá-los.",
+    "{name}: o computador anfitrião não aceita estes arquivos. Atualize o Spinbot nele para anexá-los.",
   "mobile.chat.attachment.nameTooLong": "Escolha um arquivo com um nome mais curto.",
   "mobile.chat.attachment.damaged": "O anexo está danificado. Selecione-o novamente.",
   "mobile.chat.attachment.tooLarge": "{name} tem mais de 10 MB.",
@@ -194,12 +194,12 @@ export const messages = {
   "mobile.chat.liveVoice.voiceServerFailed":
     "O seu servidor de voz não conseguiu ler a resposta. Verifique-o em Definições > Voz.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Este servidor não suporta o GPT Live Voice. Atualize o OpenBot no computador que o executa.",
+    "Este servidor não suporta o GPT Live Voice. Atualize o Spinbot no computador que o executa.",
   "mobile.chat.liveVoice.gptFailed":
     "Não foi possível iniciar o GPT Live Voice. Ative o microfone para tentar de novo.",
   "mobile.chat.liveVoice.gptEnded": "O GPT Live Voice parou. Ative o microfone para iniciá-lo de novo.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Permita que o OpenBot use o microfone em Ajustes. Depois ative o microfone para tentar de novo.",
+    "Permita que o Spinbot use o microfone em Ajustes. Depois ative o microfone para tentar de novo.",
   "mobile.chat.composer.addAttachment": "Adicionar anexo",
   "mobile.chat.composer.ask": "Perguntar a {name}",
   "mobile.chat.composer.stopFailed": "Não foi possível parar o agente. Ele pode já ter terminado.",
@@ -274,7 +274,7 @@ export const messages = {
   "mobile.chat.imageGallery.saved": "Salvas em Fotos",
   "mobile.chat.imageGallery.shareAll": "Compartilhar todas",
   "mobile.chat.imageGallery.photosPermission":
-    "Permita que o OpenBot adicione fotos em Ajustes para salvar estas imagens.",
+    "Permita que o Spinbot adicione fotos em Ajustes para salvar estas imagens.",
   "mobile.chat.imageGallery.saveFailed": "Não foi possível salvar as imagens",
   "mobile.chat.imageGallery.shareFailed": "Não foi possível compartilhar as imagens",
   "mobile.chat.imageGallery.shareNeedsUpdate":
@@ -283,7 +283,7 @@ export const messages = {
   "mobile.chat.video.retry": "Recarregar vídeo",
   "mobile.chat.video.share": "Compartilhar {name}",
   "mobile.chat.video.save": "Salvar {name} em Fotos",
-  "mobile.chat.video.photosPermission": "Permita que o OpenBot adicione fotos em Ajustes para salvar este vídeo.",
+  "mobile.chat.video.photosPermission": "Permita que o Spinbot adicione fotos em Ajustes para salvar este vídeo.",
   "mobile.chat.video.saveFailed": "Não foi possível salvar o vídeo",
   "mobile.chat.audio.play": "Reproduzir {name}",
   "mobile.chat.audio.pause": "Pausar {name}",
@@ -297,7 +297,7 @@ export const messages = {
   "mobile.chat.browserSecret.authenticatorCode": "Código do autenticador",
   "mobile.chat.browserSecret.oneTimeCode": "Código de uso único",
   "mobile.chat.browserSecret.takeoverTitle": "Assumir controle do navegador",
-  "mobile.chat.browserSecret.takeoverBody": "Conclua esta etapa no navegador do computador que executa o OpenBot.",
+  "mobile.chat.browserSecret.takeoverBody": "Conclua esta etapa no navegador do computador que executa o Spinbot.",
   "mobile.chat.browserSecret.takeoverReload": "Depois, recarregue a página antes de escolher Concluí.",
   "mobile.chat.browserSecret.takeoverFailed": "Não foi possível concluir a solicitação.",
   "mobile.chat.browserSecret.done": "Concluí",
@@ -372,7 +372,7 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "Permitir dá a {name} estas permissões em {server}. Negar mantém as permissões atuais.",
   "mobile.chat.approval.partial":
-    "Esta solicitação é longa demais para aparecer no celular. Para permiti-la, abra o OpenBot em {server}. Você pode negá-la aqui.",
+    "Esta solicitação é longa demais para aparecer no celular. Para permiti-la, abra o Spinbot em {server}. Você pode negá-la aqui.",
   "mobile.chat.approval.allow": "Permitir",
   "mobile.chat.approval.deny": "Negar",
   "mobile.chat.approval.reconnect": "Conecte-se a {server} para responder a esta solicitação.",
@@ -451,7 +451,7 @@ export const messages = {
   "mobile.chat.queue.steerNeedsTurn": "Orientar precisa de um turno em execução.",
   "mobile.chat.queue.stillHoldingTitle": "A mensagem continua retida",
   "mobile.chat.queue.stillHoldingMessage":
-    "O OpenBot não conseguiu liberar esta mensagem, então o agente continua aguardando. Tente novamente depois que o celular se reconectar.",
+    "O Spinbot não conseguiu liberar esta mensagem, então o agente continua aguardando. Tente novamente depois que o celular se reconectar.",
   "mobile.chat.queue.keepEditing": "Continuar editando",
   "mobile.chat.queue.leaveAnyway": "Sair mesmo assim",
   "mobile.chat.queue.discardTitle": "Descartar alterações?",
@@ -459,7 +459,7 @@ export const messages = {
   "mobile.chat.queue.discard": "Descartar",
   "mobile.chat.queue.alreadyReceived": "O agente já recebeu esta mensagem, então ela não pode ser alterada.",
   "mobile.chat.queue.holding": "Retendo a mensagem para você…",
-  "mobile.chat.queue.holdFailed": "O OpenBot não conseguiu reter esta mensagem para edição.",
+  "mobile.chat.queue.holdFailed": "O Spinbot não conseguiu reter esta mensagem para edição.",
   "mobile.chat.queue.messageLabel": "Mensagem",
   "mobile.chat.queue.messagePlaceholder": "Texto da mensagem",
   "mobile.chat.queue.save": "Salvar mensagem da fila",
@@ -490,14 +490,14 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Salvar",
   "mobile.chat.threads.name": "Nome do tópico",
   "mobile.chat.threads.renameUnavailable":
-    "Você não pode renomear este tópico agora. Conecte-se ao servidor ou atualize o OpenBot no host.",
+    "Você não pode renomear este tópico agora. Conecte-se ao servidor ou atualize o Spinbot no host.",
   "mobile.chat.threads.delete.action": "Excluir",
   "mobile.chat.threads.delete.title": "Excluir este tópico?",
   "mobile.chat.threads.delete.body":
-    "O OpenBot exclui o tópico, as mensagens e os arquivos dele para sempre. O chat principal não muda.",
+    "O Spinbot exclui o tópico, as mensagens e os arquivos dele para sempre. O chat principal não muda.",
   "mobile.chat.threads.filesUnsupported":
-    "Este host não pode receber arquivos em um tópico. Atualize o OpenBot no host.",
-  "mobile.chat.threads.unsupported": "Este host não pode renomear nem excluir tópicos. Atualize o OpenBot no host.",
+    "Este host não pode receber arquivos em um tópico. Atualize o Spinbot no host.",
+  "mobile.chat.threads.unsupported": "Este host não pode renomear nem excluir tópicos. Atualize o Spinbot no host.",
   "mobile.chat.threads.error.rename": "Não foi possível renomear o tópico.",
   "mobile.chat.threads.error.delete": "Não foi possível excluir o tópico.",
   "mobile.chat.channelWork.working": "Trabalhando em {channel}",

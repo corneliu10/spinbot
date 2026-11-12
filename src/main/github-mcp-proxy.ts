@@ -35,7 +35,7 @@ const MAX_BODY_BYTES = 4 * 1024 * 1024;
 const MISSING_PERMISSION = "Resource not accessible by integration";
 /** For the agent, which tells the user. GitHub needs `administration: write` to create a repository. */
 const REPOSITORY_CREATION_HINT =
-  'OpenBot cannot create repositories for this owner. GitHub needs the "Administration: write" permission of the ' +
+  'Spinbot cannot create repositories for this owner. GitHub needs the "Administration: write" permission of the ' +
   "OpenBotGit app on that account. An owner of the account installs OpenBotGit there, or approves its pending " +
   "permission request, in GitHub settings: Applications > Installed GitHub Apps (for an organization, in the " +
   "organization settings). Organization policy can also block repository creation. Tell the user this, and do " +
@@ -46,9 +46,9 @@ const NOT_FOUND_OR_REFUSED = /\b40[34]\b|Not Found/u;
 const RATE_LIMIT = /rate limit/iu;
 /** For the agent, which tells the user. The user token reaches only repositories where the app is installed. */
 const notVisibleHint = (repository: string) =>
-  `OpenBot cannot see ${repository} on GitHub. It does not exist, or it is a private repository where the OpenBot ` +
+  `Spinbot cannot see ${repository} on GitHub. It does not exist, or it is a private repository where the Spinbot ` +
   'GitHub App is not installed: GitHub then answers "Not Found", and git answers "Write access to repository not ' +
-  'granted". Check the owner and the name. When they are correct, tell the user to add the repository in OpenBot: ' +
+  'granted". Check the owner and the name. When they are correct, tell the user to add the repository in Spinbot: ' +
   "Marketplace > Apps > GitHub > Choose repositories.";
 
 export interface GitHubMcpProxyOptions {

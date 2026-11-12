@@ -18,7 +18,7 @@ export const messages = {
   "plugin.uninstallDialog.confirm": "ניתוק",
   "plugin.uninstallDialog.appsLabel": "אפליקציות להסרה, {number}",
   "plugin.uninstallDialog.appsTitle": "אפליקציות שיוסרו מהמארח הזה",
-  "plugin.uninstallDialog.appsNote": "הכלים שלהן יפסיקו להיות זמינים, וכל התחברות ש-OpenBot שמר עבורן תישכח.",
+  "plugin.uninstallDialog.appsNote": "הכלים שלהן יפסיקו להיות זמינים, וכל התחברות ש-Spinbot שמר עבורן תישכח.",
   "plugin.uninstallDialog.skillsLabel": "מיומנויות להסרה, {number}",
   "plugin.uninstallDialog.skillsTitle": "מיומנויות שיוסרו מ-{agentName}",
 } as const satisfies PartialTranslation<typeof source>;

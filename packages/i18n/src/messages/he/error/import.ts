@@ -3,8 +3,8 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest} אינו JSON תקין.",
-  "error.import.notAgentExport": "{manifest} אינו ייצוא סוכנים של OpenBot.",
-  "error.import.newerExportSkill": "הייצוא הזה נוצר על ידי מיומנות ייצוא חדשה יותר. יש לעדכן את OpenBot ולנסות שוב.",
+  "error.import.notAgentExport": "{manifest} אינו ייצוא סוכנים של Spinbot.",
+  "error.import.newerExportSkill": "הייצוא הזה נוצר על ידי מיומנות ייצוא חדשה יותר. יש לעדכן את Spinbot ולנסות שוב.",
   "error.import.noAgents": "הייצוא אינו מכיל סוכנים.",
   "error.import.tooManyAgents": "הייצוא מכיל יותר מ-{limit} סוכנים.",
   "error.import.tooManyChannels": "הייצוא מכיל יותר מ-{limit} ערוצים.",
@@ -43,7 +43,7 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "הייצוא צריך {size} GB של מקום פנוי בדיסק של השרת, ויש {free} GB פנויים. יש לפנות מקום בשרת, ואז לבחור שוב את הייצוא.",
   "error.import.remoteZipTooLargeOldHost":
-    "השרת הזה מקבל ייצוא של עד 100 MB. יש לעדכן את OpenBot בשרת כדי לייבא ייצוא גדול יותר.",
+    "השרת הזה מקבל ייצוא של עד 100 MB. יש לעדכן את Spinbot בשרת כדי לייבא ייצוא גדול יותר.",
   "error.import.skillKept": '{name}: בשרת כבר יש את המיומנות "{skill}", ולכן הסוכן משתמש בה. יש לבקש ממנהל לעדכן אותה.',
   "error.import.skillRenamed":
     '{name}: השם של המיומנות "{skill}" דומה מדי לשם של מיומנות אחרת, ולכן היא נשמרת בשם "{renamed}".',
@@ -56,11 +56,11 @@ export const messages = {
   "error.import.hermesSkillSkipped": '{name}: המיומנות "{skill}" מדולגת. {reason}',
   "error.import.hermesSkillCodeAdded": "נוסף אליה קוד שלא היה בה כשהפרופילים נקראו. יש לקרוא אותם שוב כדי לאפשר זאת.",
   "error.import.hermesLinkNotSaved":
-    "{name}: OpenBot לא הצליח לשמור איזה סוכן הגיע מהפרופיל הזה, ולכן הייבוא הבא יוסיף אותו כסוכן חדש.",
+    "{name}: Spinbot לא הצליח לשמור איזה סוכן הגיע מהפרופיל הזה, ולכן הייבוא הבא יוסיף אותו כסוכן חדש.",
   "error.import.transferRemoteTooLarge":
     "קובץ העברה לשרת שהצטרפת אליו חייב להיות קטן מ-100 MB. יש לכבות את קובצי סביבת העבודה, או לייצא פחות סוכנים.",
-  "error.import.transferNotFile": "הקובץ הזה אינו קובץ העברה של OpenBot.",
-  "error.import.transferNewer": "גרסה חדשה יותר של OpenBot יצרה את הקובץ הזה. יש לעדכן את OpenBot ולנסות שוב.",
+  "error.import.transferNotFile": "הקובץ הזה אינו קובץ העברה של Spinbot.",
+  "error.import.transferNewer": "גרסה חדשה יותר של Spinbot יצרה את הקובץ הזה. יש לעדכן את Spinbot ולנסות שוב.",
   "error.import.transferEmpty": "הקובץ אינו מכיל סוכנים ואינו מכיל הגדרות.",
   "error.import.transferTooLarge":
     "קובץ העברה חייב להיות קטן מ-2 GB ומ-50,000 קבצים. יש לכבות את קובצי סביבת העבודה, או לייצא פחות סוכנים.",

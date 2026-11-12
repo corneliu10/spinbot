@@ -41,7 +41,7 @@ export const messages = {
   "memory.clearAll": "ניקוי כל הזיכרונות",
   "memory.clearTitle": "לנקות את כל הזיכרונות?",
   "memory.clearDescription":
-    "OpenBot יסיר לצמיתות את כל {total} הזיכרונות השמורים של {name}. ההודעות המקוריות יישארו בהיסטוריית השיחה.",
+    "Spinbot יסיר לצמיתות את כל {total} הזיכרונות השמורים של {name}. ההודעות המקוריות יישארו בהיסטוריית השיחה.",
   "memory.loadFailed": "לא ניתן היה לטעון את הזיכרונות.",
   "memory.saveFailed": "לא ניתן היה לשמור את הזיכרון.",
   "memory.updateFailed": "לא ניתן היה לעדכן את הזיכרון.",

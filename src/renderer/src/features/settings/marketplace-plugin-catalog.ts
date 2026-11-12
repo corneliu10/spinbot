@@ -462,7 +462,7 @@ const HONCHO: MarketplacePluginDetail = {
   name: "Honcho",
   tagline: "Your memory across AI tools",
   description:
-    "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. OpenBot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
+    "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. Spinbot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
   category: "productivity",
   creatorName: "Plastic Labs",
   iconUrl: "https://honcho.dev/favicon.ico",
@@ -521,7 +521,7 @@ const HINDSIGHT: MarketplacePluginDetail = {
   name: "Hindsight",
   tagline: "Memory that learns over time",
   description:
-    "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. OpenBot agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
+    "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. Spinbot agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
   category: "productivity",
   creatorName: "Vectorize",
   iconUrl: "https://ui.hindsight.vectorize.io/apple-touch-icon.png",
@@ -638,7 +638,7 @@ const PAPER: MarketplacePluginDetail = {
   name: "Paper",
   tagline: "Design canvas built on HTML and CSS",
   description:
-    "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. OpenBot starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
+    "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. Spinbot starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
   category: "design",
   creatorName: "Paper",
   iconUrl: "https://paper.design/apple-touch-icon.png",
@@ -756,7 +756,7 @@ const APPLE_APPS: MarketplacePluginDetail = {
   name: "Apple apps",
   tagline: "Mail, Calendar and more on your Mac",
   description:
-    "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. OpenBot starts mcp-icloud, a community server that is not made by Apple or OpenBot. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, OpenBot can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
+    "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. Spinbot starts mcp-icloud, a community server that is not made by Apple or Spinbot. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, Spinbot can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
   category: "productivity",
   creatorName: "MrGo2",
   iconUrl: "https://www.apple.com/apple-touch-icon.png",

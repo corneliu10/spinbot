@@ -7,7 +7,7 @@ export const messages = defineMessages("server", {
   "server.connection.sleeping": "{name} is asleep",
   "server.connection.waking": "Starting {name}",
   "server.connection.startProgress": "{step} · {time}",
-  "server.connection.providerLimit": "The cloud provider limits new starts now. OpenBot tries again soon.",
+  "server.connection.providerLimit": "The cloud provider limits new starts now. Spinbot tries again soon.",
   "server.connection.updating": "Updating {name}",
   "server.connection.loading": "Loading {name}",
   "server.connection.connecting": "Connecting to {name}",
@@ -26,13 +26,13 @@ export const messages = defineMessages("server", {
   "server.connection.details": "Details",
 
   "server.status.steps": "Connection steps",
-  "server.status.updateCause": "{name} restarts to install OpenBot {version}.",
-  "server.status.updateCauseNoVersion": "{name} restarts to install an OpenBot update.",
-  "server.status.wakeCause": "{name} was stopped. OpenBot starts it again.",
+  "server.status.updateCause": "{name} restarts to install Spinbot {version}.",
+  "server.status.updateCauseNoVersion": "{name} restarts to install an Spinbot update.",
+  "server.status.wakeCause": "{name} was stopped. Spinbot starts it again.",
   "server.status.connectCause": "This app connects to {name}.",
   "server.status.connectionCause": "This app lost its connection to {name}. It connects again automatically.",
   "server.status.stepUpdate": "Install the update",
-  "server.status.stepUpdateDetail": "OpenBot stops, installs the update and starts again.",
+  "server.status.stepUpdateDetail": "Spinbot stops, installs the update and starts again.",
   "server.status.stepWake": "Start the server",
   "server.status.stepWakeDetail": "This can take a few minutes.",
   "server.status.stepConnect": "Connect",
@@ -41,8 +41,8 @@ export const messages = defineMessages("server", {
   "server.status.stepLoadDetail": "Agents and chats load from the server.",
   "server.status.elapsed": "Elapsed: {time}",
 
-  "server.compatibility.updateClientTitle": "Update this OpenBot app",
-  "server.compatibility.updateHostTitle": "Update OpenBot on {name}",
+  "server.compatibility.updateClientTitle": "Update this Spinbot app",
+  "server.compatibility.updateHostTitle": "Update Spinbot on {name}",
   "server.compatibility.unsafeDataTitle": "The host returned unsafe data",
   "server.compatibility.cannotConnectTitle": "Cannot connect to {name}",
   "server.compatibility.updateClientDescription":
@@ -50,7 +50,7 @@ export const messages = defineMessages("server", {
   "server.compatibility.updateHostDescription":
     "The host supports only older protocols than this app. Update the host, then try again.",
   "server.compatibility.unsafeDataDescription":
-    "OpenBot stopped this connection because a known payload was invalid. Your current workspace data was not changed.",
+    "Spinbot stopped this connection because a known payload was invalid. Your current workspace data was not changed.",
   "server.compatibility.clientVersion": "Client version",
   "server.compatibility.hostVersion": "Host version",
   "server.compatibility.negotiatedProtocol": "Negotiated protocol",
@@ -78,9 +78,9 @@ export const messages = defineMessages("server", {
   "server.join.emailBound": "This invitation only works for its email recipient.",
   "server.join.unknownDate": "Unknown",
   // The dialog that the plus button on the server rail opens. {price} is a formatted amount, such as "€20".
-  "server.add.title": "Run OpenBot 24/7 on an external server",
+  "server.add.title": "Run Spinbot 24/7 on an external server",
   "server.add.description":
-    "OpenBot Servers keep your agents and routines running, even when your computer is off. We handle the infrastructure and maintenance, so your server is ready to use without any technical setup.",
+    "Spinbot Servers keep your agents and routines running, even when your computer is off. We handle the infrastructure and maintenance, so your server is ready to use without any technical setup.",
   "server.add.billing.label": "Billing period",
   "server.add.currency.label": "Currency",
   "server.add.billing.monthly": "Monthly",
@@ -128,15 +128,15 @@ export const messages = defineMessages("server", {
   "server.local.limitReached": "You can have at most {limit} servers on this computer. Delete one to create another.",
   "server.local.deleteConfirmTitle": "Delete {name}?",
   "server.local.deleteConfirmDescription":
-    "OpenBot stops the server and moves its agents, chats and files to the trash.",
+    "Spinbot stops the server and moves its agents, chats and files to the trash.",
   "server.local.deleting": "Deleting server…",
   "server.local.deletedTitle": "Deleted {name}",
   // A server that the user installs on a Linux computer or VPS of their own with one command.
   "server.install.title": "New server on another computer",
   "server.install.description":
-    "Run this command on a Linux computer or VPS that you own. It installs OpenBot and adds the server to this account.",
+    "Run this command on a Linux computer or VPS that you own. It installs Spinbot and adds the server to this account.",
   "server.install.making": "Making a command for this account…",
-  "server.install.failed": "OpenBot could not make a command. Check the internet connection.",
+  "server.install.failed": "Spinbot could not make a command. Check the internet connection.",
   // Copies the command with the instructions that an AI agent needs.
   "server.install.copyForAgent": "Copy for an AI agent",
   // {time} is minutes and seconds, such as 14:52.
@@ -151,13 +151,13 @@ export const messages = defineMessages("server", {
   "server.install.expired": "This command expired. Make a new one.",
   // The text that "Copy for an AI agent" copies. The last line of the command output stays in English.
   "server.install.agentPrompt":
-    'Install OpenBot on this Linux server and sign it in to my OpenBot account.\nRun this command as root. It asks no questions and takes a few minutes:\n\n{command}\n\nIt ends with the line "OpenBot is connected to your account." and exit code 0.\nThe command works once, for 15 minutes. Do not save it anywhere.',
+    'Install Spinbot on this Linux server and sign it in to my Spinbot account.\nRun this command as root. It asks no questions and takes a few minutes:\n\n{command}\n\nIt ends with the line "Spinbot is connected to your account." and exit code 0.\nThe command works once, for 15 minutes. Do not save it anywhere.',
   // Puts an SSH task into the composer of the open chat.
   "server.install.setUpWithAgent": "Set up with an agent",
   // The task that "Set up with an agent" puts into the composer. The user adds the SSH address at the end.
-  // The agent gets the command from OpenBot, after the user approves it.
+  // The agent gets the command from Spinbot, after the user approves it.
   "server.install.sshAgentPrompt":
-    "Connect over SSH to my Linux server and install OpenBot on it as a server.\n\nSSH address (user@host):",
+    "Connect over SSH to my Linux server and install Spinbot on it as a server.\n\nSSH address (user@host):",
   // Shown over the plans when the account has the maximum number of hosted servers. The plans are disabled.
   "server.add.limit.title": "This account has the maximum number of servers",
   "server.add.limit.description": {
@@ -170,10 +170,10 @@ export const messages = defineMessages("server", {
   "server.upsell.modal.title": "Routines stop when your computer sleeps",
   // {name} is the routine.
   "server.upsell.modal.description":
-    "{name} runs only while your computer is on. An OpenBot server keeps it running 24/7.",
+    "{name} runs only while your computer is on. An Spinbot server keeps it running 24/7.",
   // Labels in the small picture above the modal text: a laptop and a server, each with a status.
   "server.upsell.modal.computer": "Your computer",
-  "server.upsell.modal.server": "OpenBot server",
+  "server.upsell.modal.server": "Spinbot server",
   "server.upsell.modal.running": "Running",
   "server.upsell.modal.stopped": "Stopped",
   "server.upsell.notice.title.local": {
@@ -184,9 +184,9 @@ export const messages = defineMessages("server", {
     one: "{count} routine needs {server} on",
     other: "{count} routines need {server} on",
   },
-  "server.upsell.notice.description": "An OpenBot server runs them 24/7.",
+  "server.upsell.notice.description": "An Spinbot server runs them 24/7.",
   // One line under the notice that the user's computer is offline.
-  "server.upsell.offline": "An OpenBot server stays on 24/7, so routines keep running.",
+  "server.upsell.offline": "An Spinbot server stays on 24/7, so routines keep running.",
   "server.upsell.seePlans": "See plans",
   "server.upsell.notNow": "Not now",
   // The dialog that offers the next plan when the disk of a hosted server is almost full.
@@ -210,14 +210,14 @@ export const messages = defineMessages("server", {
   "server.hosted.defaultName": "Cloud server",
   "server.hosted.defaultNameNumbered": "Cloud server {number}",
   "server.hosted.step.create": "Create the machine",
-  "server.hosted.step.start": "Start OpenBot",
+  "server.hosted.step.start": "Start Spinbot",
   "server.hosted.step.connect": "Connect to your account",
   "server.hosted.detail.create.reserve": "Reserving a private machine",
-  "server.hosted.detail.create.copy": "Copying OpenBot to the machine",
+  "server.hosted.detail.create.copy": "Copying Spinbot to the machine",
   "server.hosted.detail.create.key": "Adding a one-time sign-in key",
   "server.hosted.detail.start.boot": "Turning on the machine",
-  "server.hosted.detail.start.app": "Starting OpenBot",
-  "server.hosted.detail.start.wait": "Waiting for OpenBot to answer",
+  "server.hosted.detail.start.app": "Starting Spinbot",
+  "server.hosted.detail.start.wait": "Waiting for Spinbot to answer",
   "server.hosted.detail.connect.signIn": "Signing in as you",
   "server.hosted.detail.connect.publish": "Adding the server to your account",
   "server.hosted.detail.connect.check": "Checking the connection",
@@ -284,13 +284,13 @@ export const messages = defineMessages("server", {
   "server.settings.loadFailed": "The server settings could not load.",
   "server.settings.identityLocalOnly": "The name and logo of this server can only change on the computer that runs it.",
   "server.settings.publicationLocalOnly": "Only the local server can change publication.",
-  "server.compatibility.versionMismatchTitle": "Different OpenBot versions on {name}",
+  "server.compatibility.versionMismatchTitle": "Different Spinbot versions on {name}",
   "server.compatibility.versionMismatchDescription":
     "The connection uses protocol {protocol}. Some newer features may be unavailable. Client {clientVersion}; host {hostVersion}.",
   "server.compatibility.versionMismatchUpdateHostDescription":
-    "Update OpenBot on {name} to use all features. The connection uses protocol {protocol}. Client {clientVersion}; host {hostVersion}.",
+    "Update Spinbot on {name} to use all features. The connection uses protocol {protocol}. Client {clientVersion}; host {hostVersion}.",
   "server.compatibility.versionMismatchUpdateClientDescription":
-    "Update this OpenBot app to use all features. The connection uses protocol {protocol}. Client {clientVersion}; host {hostVersion}.",
+    "Update this Spinbot app to use all features. The connection uses protocol {protocol}. Client {clientVersion}; host {hostVersion}.",
   "server.connection.failedTitle": "The connection failed",
   "server.connection.failedDescription":
     "Could not connect to this server. Check that the host is online and try again.",
@@ -313,7 +313,7 @@ export const messages = defineMessages("server", {
   "server.settings.mcpTitle": "MCP",
   "server.settings.mcpDescription": "Connect MCP servers and choose which ones this server’s agents can use.",
   "server.settings.storageTitle": "Storage",
-  "server.settings.storageDescription": "See what OpenBot keeps on this server’s disk, and free space.",
+  "server.settings.storageDescription": "See what Spinbot keeps on this server’s disk, and free space.",
   "server.settings.hostedSitesTitle": "Sites",
   "server.settings.hostedSitesDescription": "The static sites that agents on this server published to openbot.site.",
   "server.settings.importTitle": "Import",
@@ -349,9 +349,9 @@ export const messages = defineMessages("server", {
   "server.settings.nameTooLong": "Use no more than {limit} characters.",
   "server.settings.actionFailedTitle": "Server action failed",
   "server.settings.actionFailed": "The server action failed.",
-  "server.settings.imageReadFailed": "OpenBot could not read this image.",
+  "server.settings.imageReadFailed": "Spinbot could not read this image.",
   "server.settings.copyFailedTitle": "Copy failed",
-  "server.settings.copyFailed": "OpenBot could not copy this value.",
+  "server.settings.copyFailed": "Spinbot could not copy this value.",
   "server.settings.unavailableTitle": "Server settings unavailable",
   "server.settings.unsavedMcpChanges": "Unsaved MCP changes",
   "server.settings.reset": "Reset",
@@ -379,15 +379,15 @@ export const messages = defineMessages("server", {
   "server.companySignIn.testedStatus": "Tested for {domains}. Turn it on to use it.",
   "server.companySignIn.setUp": "Set up",
   "server.companySignIn.edit": "Edit",
-  "server.companySignIn.desktopOnly": "Set up single sign-on in the OpenBot desktop app.",
-  "server.companySignIn.loadFailed": "OpenBot couldn’t load company sign-in.",
+  "server.companySignIn.desktopOnly": "Set up single sign-on in the Spinbot desktop app.",
+  "server.companySignIn.loadFailed": "Spinbot couldn’t load company sign-in.",
   "server.companySignIn.scim": "User sync (SCIM)",
   "server.companySignIn.scimOff": "Off",
   "server.companySignIn.createToken": "Create token",
   "server.companySignIn.copyScimUrl": "Copy URL",
   "server.companySignIn.revokeToken": "Revoke token",
   "server.companySignIn.newTokenTitle": "SCIM token",
-  "server.companySignIn.newTokenDescription": "Copy it now. OpenBot shows it only once.",
+  "server.companySignIn.newTokenDescription": "Copy it now. Spinbot shows it only once.",
   "server.companySignIn.revokeTitle": "Revoke the SCIM token?",
   "server.companySignIn.revokeDescription":
     "Your identity provider can no longer sync users until you create a new token.",
@@ -490,7 +490,7 @@ export const messages = defineMessages("server", {
   "server.settings.restartTitle": "Restart",
   "server.settings.restarting": "Restarting…",
   "server.settings.restartedTitle": "{name} is restarting",
-  "server.settings.restartHiddenDescription": "OpenBot connects again automatically when the server is back.",
+  "server.settings.restartHiddenDescription": "Spinbot connects again automatically when the server is back.",
   "server.settings.restartHide": "Hide",
   "server.settings.restartProgressTitle": "Restarting {name}",
   "server.settings.restartProgressDescription": "{time} · usually about a minute. You can hide this window.",
@@ -595,14 +595,14 @@ export const messages = defineMessages("server", {
     other: "This server has the maximum of {count} members. Remove a member to invite a new person.",
   },
   "server.invite.qrLabel": "Invitation QR code",
-  "server.invite.qrDescription": "Scan this code in OpenBot Mobile to join this server.",
+  "server.invite.qrDescription": "Scan this code in Spinbot Mobile to join this server.",
   "server.invite.accepted": "Invitation accepted",
   "server.invite.expired": "Invitation expired",
   "server.invite.sent": "Invitation sent",
   "server.invite.linkReady": "Invitation link ready",
   "server.invite.acceptedDescription": "The member joined this server. Create a new link to invite someone else.",
   "server.invite.expiredDescription": "Create a new link to invite someone.",
-  "server.invite.linkReadyDescription": "Share the link or scan the QR code in OpenBot Mobile.",
+  "server.invite.linkReadyDescription": "Share the link or scan the QR code in Spinbot Mobile.",
   "server.invite.pendingTitle": "Pending invitations",
   "server.invite.pendingCount": "{total} pending",
   "server.invite.noPending": "No pending invitations.",
@@ -627,7 +627,7 @@ export const messages = defineMessages("server", {
   "server.desktop.connectionUnavailable": "Connection unavailable",
   "server.desktop.hostOffline": "Host is offline",
   "server.desktop.hostOfflineDescription": "Reconnect to the host before you open its desktop.",
-  "server.desktop.hostUpdateDescription": "Update OpenBot on the host to use remote control.",
+  "server.desktop.hostUpdateDescription": "Update Spinbot on the host to use remote control.",
   "server.desktop.serviceAvailable": "Service available",
   "server.desktop.serviceAvailablePolicyDescription":
     "This computer can share its screen. Its owner chooses which roles can control it.",
@@ -643,7 +643,7 @@ export const messages = defineMessages("server", {
   "server.desktop.accessMembers": "All members",
   "server.desktop.askLabel": "Ask on this computer",
   "server.desktop.askDescription":
-    "Each session waits until a person at this computer allows it. With no answer in 30 seconds, OpenBot refuses it.",
+    "Each session waits until a person at this computer allows it. With no answer in 30 seconds, Spinbot refuses it.",
   "server.desktop.activeTitle": "Active remote desktop sessions: {active}",
   "server.desktop.activeDescription": "Ends each session now. Members can ask again.",
   "server.desktop.stopAll": "Stop all remote control",
@@ -654,11 +654,11 @@ export const messages = defineMessages("server", {
   "server.settings.providersDescription": "Manage the AI providers of the computer that runs this server.",
   "server.settings.providersSwitchNote": "Switch to {name} to manage its AI providers.",
   "server.settings.providersSwitch": "Switch to this server",
-  // Server Settings > Updates: the OpenBot update of a joined server's host. {name} is the server.
+  // Server Settings > Updates: the Spinbot update of a joined server's host. {name} is the server.
   "server.settings.updatesTitle": "Updates",
-  "server.settings.updatesDescription": "Update OpenBot on the computer that runs this server.",
-  "server.update.hostTitle": "OpenBot on {name}",
-  "server.update.version": "OpenBot {version}",
+  "server.settings.updatesDescription": "Update Spinbot on the computer that runs this server.",
+  "server.update.hostTitle": "Spinbot on {name}",
+  "server.update.version": "Spinbot {version}",
   "server.update.status.idle": "Check for updates to find the latest release.",
   "server.update.status.checking": "Checking for updates…",
   "server.update.status.available": "{version} is available.",
@@ -668,28 +668,28 @@ export const messages = defineMessages("server", {
   "server.update.status.downloadingUnknown": "Downloading {version}…",
   "server.update.status.ready": "{version} is downloaded.",
   "server.update.status.installing": "{name} is restarting to install the update.",
-  "server.update.status.upToDate": "OpenBot is up to date on {name}.",
+  "server.update.status.upToDate": "Spinbot is up to date on {name}.",
   "server.update.status.checkFailed": "{name} could not check for updates. Try again.",
   "server.update.status.downloadFailed": "{name} could not download the update. Try again.",
   "server.update.status.installFailed":
-    "{name} could not install the update. Make sure that no other user of that computer runs OpenBot, then try again.",
+    "{name} could not install the update. Make sure that no other user of that computer runs Spinbot, then try again.",
   "server.update.releaseCheckFailed":
     "{name} could not read the release feed. Check the host network connection, then try again.",
   "server.update.releaseUnavailable":
     "Release checks are not available for this build. Ask the host administrator to check for a compatible release.",
   "server.update.externalTitle": "The host controls installation",
   "server.update.path.hostManager":
-    "OpenBot Host Manager installs updates when all users are idle. Ask the host administrator to check the Host Manager status if an update does not start.",
+    "Spinbot Host Manager installs updates when all users are idle. Ask the host administrator to check the Host Manager status if an update does not start.",
   "server.update.path.hosted":
     "The hosted service downloads updates in the background. A downloaded update starts when the server next starts. Wait for active work to finish before you stop and resume the server. If it stays on an old version, contact the host administrator.",
   "server.update.path.system":
-    "On the host, run sudo openbot update to install the latest release. This command stops OpenBot. Wait for active work to finish first. Automatic downloads install at the next boot.",
+    "On the host, run sudo openbot update to install the latest release. This command stops Spinbot. Wait for active work to finish first. Automatic downloads install at the next boot.",
   "server.update.path.container":
-    "On the Docker host, pull the new OpenBot image and create the container again with the same data volumes. Wait for active work to finish first. Keep the existing volumes to preserve your data.",
+    "On the Docker host, pull the new Spinbot image and create the container again with the same data volumes. Wait for active work to finish first. Keep the existing volumes to preserve your data.",
   "server.update.path.manual":
-    "This installation cannot replace itself. Ask the host administrator to install the compatible release from github.com/nightly-labs/openbot/releases. Keep the existing OpenBot data.",
+    "This installation cannot replace itself. Ask the host administrator to install the compatible release from github.com/nightly-labs/openbot/releases. Keep the existing Spinbot data.",
   "server.update.path.unavailable":
-    "This is a development build. Use an installed OpenBot release to check for updates.",
+    "This is a development build. Use an installed Spinbot release to check for updates.",
   "server.update.check": "Check for updates",
   "server.update.start": "Update when idle",
   "server.update.restartNow": "Restart now",
@@ -699,36 +699,36 @@ export const messages = defineMessages("server", {
   "server.update.requestedBy": "{member} asked for this update.",
   "server.update.automatic": "{name} installs updates automatically.",
   "server.update.autoDownloadTitle": "Download updates automatically",
-  "server.update.autoDownloadDescription": "{name} downloads each new version of OpenBot when it comes out.",
+  "server.update.autoDownloadDescription": "{name} downloads each new version of Spinbot when it comes out.",
   "server.update.autoInstallTitle": "Install updates automatically",
   "server.update.autoInstallDescription":
     "{name} restarts into a downloaded update when its agents are idle. Members are disconnected for a short time and connect again automatically.",
   "server.update.waitingFor": "Waiting for {reasons}.",
   "server.update.disabledTitle": "Remote updates are off",
   "server.update.disabledDescription":
-    "The user of {name} turned off updates from server members. Ask them to update OpenBot or to turn the setting on.",
+    "The user of {name} turned off updates from server members. Ask them to update Spinbot or to turn the setting on.",
   "server.update.managedTitle": "A Host Manager controls updates",
-  "server.update.managedDescription": "OpenBot Host Manager updates {name}. Contact the host administrator.",
+  "server.update.managedDescription": "Spinbot Host Manager updates {name}. Contact the host administrator.",
   "server.update.unsupportedTitle": "{name} cannot update itself",
-  "server.update.unsupportedDescription": "This OpenBot build has no updater. Install a new version on {name}.",
+  "server.update.unsupportedDescription": "This Spinbot build has no updater. Install a new version on {name}.",
   "server.update.restarting": "Restarting…",
   "server.update.loadFailed": "The update status of {name} did not load.",
   "server.update.hostAction": "Update host",
   // The update dialog: the download, the restart and the server back online.
-  "server.update.dialog.offerTitle": "Update {name} to OpenBot {version}",
+  "server.update.dialog.offerTitle": "Update {name} to Spinbot {version}",
   "server.update.dialog.offerDescription":
-    "{name} uses OpenBot {current}. It downloads the update first, then restarts.",
+    "{name} uses Spinbot {current}. It downloads the update first, then restarts.",
   "server.update.dialog.offerReadyDescription":
-    "{name} uses OpenBot {current}. The update is downloaded. {name} restarts to install it.",
+    "{name} uses Spinbot {current}. The update is downloaded. {name} restarts to install it.",
   "server.update.dialog.progressTitle": "Updating {name}",
   "server.update.dialog.progressDescription": "{time} · You can hide this window.",
-  "server.update.dialog.doneTitle": "{name} is on OpenBot {version}",
+  "server.update.dialog.doneTitle": "{name} is on Spinbot {version}",
   "server.update.dialog.doneDescription": "The update took {time}.",
   "server.update.dialog.failedTitle": "{name} did not update",
   "server.update.dialog.restartFailed": "{name} is not back online. Check the host, then try again.",
-  "server.update.dialog.notInstalled": "{name} restarted with OpenBot {current}. Try the update again.",
+  "server.update.dialog.notInstalled": "{name} restarted with Spinbot {current}. Try the update again.",
   "server.update.dialog.steps": "Update steps",
-  "server.update.dialog.downloadStep": "Download OpenBot {version}",
+  "server.update.dialog.downloadStep": "Download Spinbot {version}",
   "server.update.dialog.downloadPending": "Agents keep working while it downloads.",
   "server.update.dialog.downloadPreparing": "Preparing the download…",
   "server.update.dialog.downloadRunning": "{progress} · Agents keep working.",
@@ -737,10 +737,10 @@ export const messages = defineMessages("server", {
   "server.update.dialog.restartPending": "Members lose the connection for about a minute.",
   "server.update.dialog.restartWaiting": "Waiting for {reasons} to finish.",
   "server.update.dialog.restartSoon": "The restart starts in a moment.",
-  "server.update.dialog.restartRunning": "Starting OpenBot {version}…",
+  "server.update.dialog.restartRunning": "Starting Spinbot {version}…",
   "server.update.dialog.onlineStep": "Back online",
   "server.update.dialog.onlinePending": "Members connect again automatically.",
-  "server.update.dialog.onlineDone": "On OpenBot {version} after {time}.",
+  "server.update.dialog.onlineDone": "On Spinbot {version} after {time}.",
   "server.update.dialog.waitIdle": "Wait until agents are idle",
   "server.update.dialog.waitIdleDescription": "The restart waits for agent turns and routine runs to finish.",
   "server.update.dialog.updateNow": "Update now",
@@ -767,15 +767,15 @@ export const messages = defineMessages("server", {
   "server.update.reason.fileTransfer": "a file transfer",
   "server.update.reason.browserControl": "browser control by an agent",
   "server.update.reason.updateOperation": "another update step",
-  "server.update.reason.initialization": "the start of OpenBot",
+  "server.update.reason.initialization": "the start of Spinbot",
   "server.update.reason.other": "other work",
   // A notice to every member when a joined server restarts into an update. {name} is the server.
   "server.restartNotice.waitingTitle": "{name} restarts to install an update",
-  "server.restartNotice.waitingVersionTitle": "{name} restarts to install OpenBot {version}",
+  "server.restartNotice.waitingVersionTitle": "{name} restarts to install Spinbot {version}",
   "server.restartNotice.waitingDescription":
-    "The restart waits until its agents are idle. You are disconnected for a short time, then OpenBot connects again automatically.",
+    "The restart waits until its agents are idle. You are disconnected for a short time, then Spinbot connects again automatically.",
   "server.restartNotice.restartingTitle": "{name} is restarting to install an update",
-  "server.restartNotice.restartingDescription": "OpenBot connects again automatically when {name} is back.",
+  "server.restartNotice.restartingDescription": "Spinbot connects again automatically when {name} is back.",
   "server.restartNotice.backTitle": "{name} is back online",
   "server.settings.personalityTitle": "Personality",
   "server.settings.personalityDescription": "Choose how the agents on this server talk to you.",

@@ -4,9 +4,9 @@ import type { messages as source } from "../../en/error/import";
 export const messages = {
   // Agent import errors and warnings.
   "error.import.manifestNotJson": "{manifest} geçerli bir JSON değil.",
-  "error.import.notAgentExport": "{manifest} bir OpenBot ajan dışa aktarımı değil.",
+  "error.import.notAgentExport": "{manifest} bir Spinbot ajan dışa aktarımı değil.",
   "error.import.newerExportSkill":
-    "Bu dışa aktarım daha yeni bir dışa aktarma becerisi tarafından yapıldı. OpenBot'u güncelleyip tekrar deneyin.",
+    "Bu dışa aktarım daha yeni bir dışa aktarma becerisi tarafından yapıldı. Spinbot'u güncelleyip tekrar deneyin.",
   "error.import.noAgents": "Dışa aktarım hiçbir ajan içermiyor.",
   "error.import.tooManyAgents": "Dışa aktarım {limit} ajandan fazlasını içeriyor.",
   "error.import.tooManyChannels": "Dışa aktarım {limit} kanaldan fazlasını içeriyor.",
@@ -48,16 +48,16 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "Dışa aktarım sunucuda {size} GB boş disk alanı gerektiriyor ve {free} GB boş. Sunucuda yer açın, ardından dışa aktarımı yeniden seçin.",
   "error.import.remoteZipTooLargeOldHost":
-    "Bu sunucu en fazla 100 MB'lık bir dışa aktarım kabul ediyor. Daha büyük bir dışa aktarımı içe aktarmak için sunucudaki OpenBot'u güncelleyin.",
+    "Bu sunucu en fazla 100 MB'lık bir dışa aktarım kabul ediyor. Daha büyük bir dışa aktarımı içe aktarmak için sunucudaki Spinbot'u güncelleyin.",
   "error.import.skillKept":
     '{name}: sunucu zaten "{skill}" becerisine sahip, bu yüzden ajan bu beceriyi kullanıyor. Bir yöneticiden güncellemesini isteyin.',
   "error.import.skillRenamed":
     '{name}: "{skill}" becerisinin adı başka bir becerinin adına çok benziyor, bu yüzden "{renamed}" olarak kaydedildi.',
   "error.import.transferRemoteTooLarge":
     "Katılınan bir sunucu için aktarım dosyası 100 MB'tan küçük olmalıdır. Çalışma alanı dosyalarını kapatın veya daha az ajan dışa aktarın.",
-  "error.import.transferNotFile": "Bu dosya bir OpenBot aktarım dosyası değil.",
+  "error.import.transferNotFile": "Bu dosya bir Spinbot aktarım dosyası değil.",
   "error.import.transferNewer":
-    "Bu dosyayı OpenBot'un daha yeni bir sürümü oluşturdu. OpenBot'u güncelleyin ve tekrar deneyin.",
+    "Bu dosyayı Spinbot'un daha yeni bir sürümü oluşturdu. Spinbot'u güncelleyin ve tekrar deneyin.",
   "error.import.transferEmpty": "Dosyada hiç ajan ve ayar yok.",
   "error.import.transferTooLarge":
     "Bir aktarım dosyası 2 GB'tan ve 50.000 dosyadan küçük olmalıdır. Çalışma alanı dosyalarını kapatın veya daha az ajan dışa aktarın.",

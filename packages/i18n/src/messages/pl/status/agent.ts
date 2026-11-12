@@ -31,11 +31,11 @@ export const messages = {
   "status.agent.sendIdea": "To będzie publiczne zgłoszenie na GitHubie. Twoje imię nie będzie widoczne.",
   "status.agent.feedbackRecentErrors": "Ostatnie błędy w czacie:",
   "status.agent.feedbackSameAs": "Dodaje do zgłoszenia #{issue}",
-  "status.agent.feedbackSent": "Wysłano do zespołu OpenBot: {title}",
+  "status.agent.feedbackSent": "Wysłano do zespołu Spinbot: {title}",
   "status.agent.serverInstallCommand":
-    "Utwórz jednorazowe polecenie, które instaluje OpenBot na innym komputerze jako serwer {name} i loguje go do Twojego konta. Agent uruchamia je tam.",
+    "Utwórz jednorazowe polecenie, które instaluje Spinbot na innym komputerze jako serwer {name} i loguje go do Twojego konta. Agent uruchamia je tam.",
   "status.agent.serverInstallCard": "Polecenie instalacji dla serwera {name}",
-  "status.agent.feedbackSending": "Wysyłanie opinii do zespołu OpenBot…",
+  "status.agent.feedbackSending": "Wysyłanie opinii do zespołu Spinbot…",
   "status.agent.workflowDelete":
     "Usuń przepływ pracy {title} razem z jego uruchomieniami i wersjami. Jego otwarte kroki zostaną zatrzymane.",
   "status.agent.screenCaptureProgress": "Prośba o przechwycenie ekranu…",

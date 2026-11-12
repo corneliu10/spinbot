@@ -3,19 +3,19 @@ import type { messages as source } from "../../en/error/provider";
 
 export const messages = {
   "error.provider.mcpConfig":
-    "OpenBot не удалось зарегистрировать серверы MCP в конфигурации Codex. Проверьте, что файл config.toml Codex корректен и доступен для записи, затем перезапустите OpenBot.",
+    "Spinbot не удалось зарегистрировать серверы MCP в конфигурации Codex. Проверьте, что файл config.toml Codex корректен и доступен для записи, затем перезапустите Spinbot.",
   "error.provider.computerUseConfig":
-    "OpenBot не смог зарегистрировать управление компьютером в конфигурации Codex. Убедитесь, что ваш config.toml для Codex корректен и доступен для записи, затем перезапустите OpenBot. Чтобы продолжить без него, отключите управление компьютером в настройках агента.",
-  "error.provider.codexUnresponsive": "Codex перестал отвечать, поэтому OpenBot завершил его процесс.",
-  "error.provider.acpUnresponsive": "{provider} не ответил вовремя, поэтому OpenBot завершил его процесс.",
+    "Spinbot не смог зарегистрировать управление компьютером в конфигурации Codex. Убедитесь, что ваш config.toml для Codex корректен и доступен для записи, затем перезапустите Spinbot. Чтобы продолжить без него, отключите управление компьютером в настройках агента.",
+  "error.provider.codexUnresponsive": "Codex перестал отвечать, поэтому Spinbot завершил его процесс.",
+  "error.provider.acpUnresponsive": "{provider} не ответил вовремя, поэтому Spinbot завершил его процесс.",
   "error.provider.acpSignInLost":
-    "{provider} потерял вход в аккаунт, поэтому OpenBot завершил его процесс. Отправьте сообщение ещё раз.",
+    "{provider} потерял вход в аккаунт, поэтому Spinbot завершил его процесс. Отправьте сообщение ещё раз.",
   "error.provider.acpPlanUsedUp":
     "{provider} сообщает, что лимит вашего тарифа исчерпан. Выберите другую модель или перейдите на более высокий тариф {provider}.",
   "error.provider.acpMcpNotLoaded":
-    "{provider} не загрузил инструменты OpenBot, поэтому этот агент не может ими пользоваться и связываться с коллегами. Политика команды {provider} может блокировать локальные MCP-серверы. Попросите администратора команды разрешить их и повторите попытку.",
+    "{provider} не загрузил инструменты Spinbot, поэтому этот агент не может ими пользоваться и связываться с коллегами. Политика команды {provider} может блокировать локальные MCP-серверы. Попросите администратора команды разрешить их и повторите попытку.",
   "error.provider.endpointsReadOnly":
-    "Сохранённые эндпоинты записаны более новой версией OpenBot, либо файл не читается. Чтобы изменить их, обновите OpenBot.",
+    "Сохранённые эндпоинты записаны более новой версией Spinbot, либо файл не читается. Чтобы изменить их, обновите Spinbot.",
   "error.provider.endpointNoSecureStorage":
     "На этом компьютере нет защищённого хранилища, поэтому API-ключ или заголовок сохранить нельзя. Удалите их или используйте эндпоинт без учётных данных.",
   "error.provider.endpointDuplicate":
@@ -26,14 +26,14 @@ export const messages = {
   "error.provider.endpointSecretUnreadable":
     "Этот компьютер не может прочитать сохранённые API-ключ и заголовки. Введите их заново, чтобы ничего не потерять.",
   "error.provider.discoveryTimeout": "{host} не ответил вовремя.",
-  "error.provider.discoveryUnreachable": "OpenBot не смог подключиться к {host}.",
+  "error.provider.discoveryUnreachable": "Spinbot не смог подключиться к {host}.",
   "error.provider.discoveryRedirect": "{host} прислал перенаправление. Введите конечный адрес сервера.",
   "error.provider.discoveryRefused": "{host} отклонил запрос. Проверьте API-ключ и заголовки.",
   "error.provider.discoveryHttp": "{host} ответил с HTTP {status}.",
   "error.provider.discoveryTooLarge": "Список моделей от {host} слишком большой.",
   "error.provider.discoveryInvalid": "{host} не прислал список моделей, совместимый с OpenAI.",
   "error.provider.detectionSettingsReadOnly":
-    "Настройки обнаружения записаны более новой версией OpenBot, либо файл не читается. Чтобы изменить их, обновите OpenBot.",
+    "Настройки обнаружения записаны более новой версией Spinbot, либо файл не читается. Чтобы изменить их, обновите Spinbot.",
   "error.provider.detectionEntryInvalid":
     "Адрес должен быть URL http:// или https:// без пароля, а папка — абсолютным путём.",
   "error.provider.detectionEntriesTooMany": "Слишком много адресов или папок.",
@@ -61,14 +61,14 @@ export const messages = {
   "error.provider.bunLicenseChecksum": "Контрольная сумма лицензии Bun не совпадает.",
   "error.provider.bunxDamaged": "Запуск менеджера пакетов Bun отсутствует или повреждён.",
   "error.provider.releaseSourcesUnreachable":
-    "OpenBot не смог связаться с источниками релизов провайдеров. Проверьте соединение и повторите попытку.",
+    "Spinbot не смог связаться с источниками релизов провайдеров. Проверьте соединение и повторите попытку.",
   "error.provider.runtimesUnsupported": "Среды выполнения провайдеров недоступны на этой платформе.",
-  "error.provider.closing": "OpenBot закрывается.",
+  "error.provider.closing": "Spinbot закрывается.",
   "error.provider.removeWhileOn": "Выключите провайдера, прежде чем удалять его загрузку.",
   "error.provider.removeWhileDownloading": "Дождитесь окончания загрузки, затем удалите её.",
   "error.provider.removeIncomplete": "Программа использует файлы этого CLI. Закройте её и повторите попытку.",
   "error.provider.removeDownloadsFailed": "Не удалось удалить загруженные CLI: {providers}.",
-  "error.provider.cliOverride": "Удалите явно заданный путь к CLI, прежде чем обновлять в OpenBot.",
+  "error.provider.cliOverride": "Удалите явно заданный путь к CLI, прежде чем обновлять в Spinbot.",
   "error.provider.runtimeUpdateIncomplete": "Обновление среды выполнения не завершено.",
   "error.provider.downloadHttp": "Загрузка среды выполнения не удалась: HTTP {status}.",
   "error.provider.downloadNoData": "Загрузка среды выполнения не вернула данных.",
@@ -83,7 +83,7 @@ export const messages = {
   "error.provider.unexpectedVersion": "Среда выполнения провайдера вернула неожиданную версию.",
   "error.provider.metadataNoData": "Загрузка метаданных среды выполнения не вернула данных.",
   "error.provider.metadataTooLarge": "Метаданные среды выполнения слишком большие.",
-  "error.provider.requestFailed": "OpenBot не удалось загрузить {url}. {reason}",
+  "error.provider.requestFailed": "Spinbot не удалось загрузить {url}. {reason}",
   "error.provider.installRecordMismatch": "Запись об установке среды выполнения не совпадает.",
   "error.provider.runtimeChecksum": "Контрольная сумма среды выполнения провайдера не совпадает.",
   "error.provider.codexReleaseShape": "У релиза Codex неожиданная структура.",
@@ -123,30 +123,30 @@ export const messages = {
   "error.provider.noModel": "У выбранного провайдера нет доступной модели.",
   "error.provider.noModelNamed": "У {provider} нет доступной модели.",
   "error.provider.acpNoModels":
-    "ACP CLI не сообщил ни одной модели ACP. OpenBot не будет подбирать запасную модель наугад.",
+    "ACP CLI не сообщил ни одной модели ACP. Spinbot не будет подбирать запасную модель наугад.",
   "error.provider.endpointRemoveBusy":
     "Дождитесь, пока завершатся текущий ход и очередь, прежде чем удалять этот эндпоинт.",
-  "error.provider.codexOutdated": "Codex CLI {version} слишком старый. OpenBot требует версию 0.156.0 или новее.",
+  "error.provider.codexOutdated": "Codex CLI {version} слишком старый. Spinbot требует версию 0.156.0 или новее.",
   "error.provider.codexNotStarted": "Codex CLI найден, но запустить его не удалось.",
   "error.provider.codexNotStartedHint":
     "Codex CLI найден, но запустить его не удалось. Выполните `codex --version` в новом терминале.",
   "error.provider.codexManagedNotStarted":
-    "ChatGPT загружен, но запустить его не удалось. Загрузите его заново в OpenBot.",
-  "error.provider.codexMissing": "ChatGPT не загружен. Загрузите его в OpenBot, чтобы продолжить.",
-  "error.provider.claudeOutdated": "Claude Code {version} слишком старый. OpenBot требует версию 2.1.232 или новее.",
+    "ChatGPT загружен, но запустить его не удалось. Загрузите его заново в Spinbot.",
+  "error.provider.codexMissing": "ChatGPT не загружен. Загрузите его в Spinbot, чтобы продолжить.",
+  "error.provider.claudeOutdated": "Claude Code {version} слишком старый. Spinbot требует версию 2.1.232 или новее.",
   "error.provider.claudeNotStarted": "Claude CLI найден, но запустить его не удалось.",
   "error.provider.claudeNotStartedHint":
     "Claude CLI найден, но запустить его не удалось. Выполните `claude --version` в новом терминале.",
   "error.provider.claudeManagedNotStarted":
-    "Claude загружен, но запустить его не удалось. Загрузите его заново в OpenBot.",
-  "error.provider.claudeMissing": "Claude не загружен. Загрузите его в OpenBot, чтобы продолжить.",
-  "error.provider.grokOutdated": "Grok CLI {version} слишком старый. OpenBot требует версию 1.0.5 или новее.",
+    "Claude загружен, но запустить его не удалось. Загрузите его заново в Spinbot.",
+  "error.provider.claudeMissing": "Claude не загружен. Загрузите его в Spinbot, чтобы продолжить.",
+  "error.provider.grokOutdated": "Grok CLI {version} слишком старый. Spinbot требует версию 1.0.5 или новее.",
   "error.provider.grokNotStarted": "Grok CLI найден, но запустить его не удалось.",
   "error.provider.grokNotStartedHint":
     "Grok CLI найден, но запустить его не удалось. Выполните `grok --version` в новом терминале.",
-  "error.provider.grokMissing": "Grok не загружен. Загрузите его в OpenBot, чтобы продолжить.",
+  "error.provider.grokMissing": "Grok не загружен. Загрузите его в Spinbot, чтобы продолжить.",
   "error.provider.opencodeNotStarted": "OpenCode не удалось запустить. Выполните `opencode --version` в терминале.",
-  "error.provider.opencodeMissing": "OpenCode не загружен. Загрузите его в OpenBot, чтобы продолжить.",
+  "error.provider.opencodeMissing": "OpenCode не загружен. Загрузите его в Spinbot, чтобы продолжить.",
   "error.provider.codexVersionUnreadable": "Не удалось прочитать версию Codex CLI.",
   "error.provider.claudeVersionUnreadable": "Не удалось прочитать версию Claude CLI.",
   "error.provider.grokVersionUnreadable": "Не удалось прочитать версию Grok CLI.",
@@ -154,13 +154,13 @@ export const messages = {
   "error.provider.bunVersionUnreadable": "Не удалось прочитать версию среды выполнения Bun.",
   "error.provider.connectBeforeProfile": "Подключите выбранного провайдера, прежде чем создавать профиль.",
   "error.provider.cliNotReady": "{provider} CLI не готов или в нём не выполнен вход.",
-  "error.provider.cliTimedOut": "{provider} не ответил вовремя. Возможно, компьютер занят. OpenBot повторит попытку.",
+  "error.provider.cliTimedOut": "{provider} не ответил вовремя. Возможно, компьютер занят. Spinbot повторит попытку.",
   "error.provider.cliTimedOutRefresh":
     "{provider} не ответил вовремя. Возможно, компьютер занят. Обновите провайдеров, чтобы повторить попытку.",
   "error.provider.acpStartTimedOut": "{provider} не завершил запуск за {seconds} с. Возможно, компьютер занят.",
   "error.provider.acpModelsTimedOut": "{provider} не вывел список моделей за {seconds} с. Возможно, компьютер занят.",
   "error.provider.startStopped":
-    "{provider} несколько раз подряд не запустился, поэтому OpenBot перестал пытаться. Обновите провайдеров, чтобы повторить попытку.",
+    "{provider} несколько раз подряд не запустился, поэтому Spinbot перестал пытаться. Обновите провайдеров, чтобы повторить попытку.",
   "error.provider.tempDiskSpace":
     "Для запуска {provider} нужно не меньше 1 ГБ свободного места на диске. Освободите место, затем обновите провайдеров.",
   "error.provider.noCodeSignIn": "В {provider} нельзя войти с помощью кода.",
@@ -174,10 +174,10 @@ export const messages = {
   "error.provider.cliBusyRetry": "{provider} CLI обрабатывает ход. Дождитесь его завершения и повторите попытку.",
   "error.provider.cliSigningIn": "{provider} CLI выполняет вход. Завершите или отмените вход, затем обновите.",
   "error.provider.cliBusyUpdate": "{provider} CLI обрабатывает ход. Дождитесь его завершения, затем обновите.",
-  "error.provider.cliSelectFailed": "OpenBot не смог выбрать установленный управляемый CLI.",
+  "error.provider.cliSelectFailed": "Spinbot не смог выбрать установленный управляемый CLI.",
   "error.provider.noAuthenticatedAccount": "{provider} не вернул аккаунт с выполненным входом.",
   "error.provider.signInExpired": "Срок входа в {provider} истёк. Войдите снова, чтобы продолжить.",
-  "error.provider.cliActivateFailed": "OpenBot не смог активировать управляемый CLI.",
+  "error.provider.cliActivateFailed": "Spinbot не смог активировать управляемый CLI.",
   "error.provider.noMainlandChinaSignIn": "У {provider} нет входа для материкового Китая.",
   "error.provider.cliNewVersionNotStarted": "Новая версия не запустилась.",
   "error.provider.cliBusyReconnect":
@@ -212,13 +212,13 @@ export const messages = {
   "error.provider.opencodeIncompleteReply":
     "Ответ модели оборвался или был некорректным. Отправьте сообщение ещё раз или выберите другую модель.\n{detail}",
   "error.provider.opencodeNetwork":
-    "OpenCode не смог подключиться к провайдеру моделей. Проверьте сетевое подключение компьютера, где работает OpenBot, и повторите попытку.\n{detail}",
+    "OpenCode не смог подключиться к провайдеру моделей. Проверьте сетевое подключение компьютера, где работает Spinbot, и повторите попытку.\n{detail}",
   "error.provider.codexStateBusy":
     "ChatGPT ещё готовит локальную историю после предыдущего запуска. Подождите несколько минут и повторите попытку.",
   "error.provider.codexThreadInUse":
     "Этот чат открыт в другом приложении Codex, например в приложении Codex для компьютера, Codex CLI или расширении IDE. Писать в чат Codex может только одно приложение одновременно. Закройте чат в том приложении, затем отправьте сообщение ещё раз.",
   "error.provider.realtimeLimitZero":
-    "Linux остановил провайдера, потому что у OpenBot ограничение процессорного времени реального времени равно 0. Это ограничение задаёт ваша система. Установите и запустите rtkit (`rtkit-daemon`), выполните `systemctl --user restart xdg-desktop-portal`, затем перезапустите OpenBot. Один перезапуск xdg-desktop-portal не поможет, пока rtkit не установлен.",
+    "Linux остановил провайдера, потому что у Spinbot ограничение процессорного времени реального времени равно 0. Это ограничение задаёт ваша система. Установите и запустите rtkit (`rtkit-daemon`), выполните `systemctl --user restart xdg-desktop-portal`, затем перезапустите Spinbot. Один перезапуск xdg-desktop-portal не поможет, пока rtkit не установлен.",
   "error.provider.opencodeDatabaseNewer":
     "OpenCode не смог открыть свою базу данных, потому что её изменила более новая версия OpenCode. Обновите OpenCode до версии 2 или новее и повторите попытку.",
   "error.provider.opencodeNoAnswer":
@@ -227,19 +227,19 @@ export const messages = {
     "Модель OpenCode завершила ход после рассуждения, без ответа. Повторите попытку или выберите другую модель.",
   "error.provider.acpNoAnswer":
     "{provider} завершил ход без ответа. Отправьте сообщение ещё раз или начните новый чат.",
-  "error.provider.chatgptPageFailed": "OpenBot не смог открыть страницу подключения ChatGPT.",
+  "error.provider.chatgptPageFailed": "Spinbot не смог открыть страницу подключения ChatGPT.",
   "error.provider.noneReady": "Ни один провайдер агентов не готов.",
   "error.provider.claudeTurnActive": "Дождитесь завершения текущего хода Claude, прежде чем обновлять его контекст.",
   "error.provider.codexLoginRequired": "Codex требует входа с подпиской ChatGPT. Выполните `codex login`.",
-  "error.provider.cliUpdateFailed": "OpenBot не смог обновить {provider} CLI. {reason}",
+  "error.provider.cliUpdateFailed": "Spinbot не смог обновить {provider} CLI. {reason}",
   "error.provider.tryAgain": "Повторите попытку.",
   "error.provider.noAgentProcess": "У {provider} нет запущенного процесса для этого агента.",
   "error.provider.stoppedBeforeAgentProcess": "{provider} остановился до запуска процесса агента.",
   "error.provider.archiveUnreadable": "Архив среды выполнения не читается или имеет неподдерживаемый формат.",
-  "error.provider.antigravityMissing": "Gemini не загружен. Загрузите его в OpenBot, чтобы продолжить.",
+  "error.provider.antigravityMissing": "Gemini не загружен. Загрузите его в Spinbot, чтобы продолжить.",
   "error.provider.antigravityNotStarted": "Сервер Gemini найден, но его версию прочитать не удаётся.",
   "error.provider.antigravityOverrideInvalid":
-    "Сервер Gemini из OPENBOT_ANTIGRAVITY_PATH не найден или не является исполняемым. Исправьте путь или удалите переменную, затем перезапустите OpenBot.",
+    "Сервер Gemini из OPENBOT_ANTIGRAVITY_PATH не найден или не является исполняемым. Исправьте путь или удалите переменную, затем перезапустите Spinbot.",
   "error.provider.antigravityVersionUnreadable": "Не удалось прочитать версию сервера Gemini.",
   "error.provider.antigravitySignIn": "Войдите через Google, чтобы использовать Gemini.",
   "error.provider.antigravityRateLimited":
@@ -257,7 +257,7 @@ export const messages = {
   "error.provider.cursorArchivePath": "В архиве Cursor неожиданный файл.",
   "error.provider.cursorChecksum": "Контрольная сумма среды выполнения Cursor не совпадает.",
   "error.provider.cursorReleaseShape": "У релиза Cursor неожиданная структура.",
-  "error.provider.cursorMissing": "Cursor не загружен. Загрузите его в OpenBot, чтобы продолжить.",
+  "error.provider.cursorMissing": "Cursor не загружен. Загрузите его в Spinbot, чтобы продолжить.",
   "error.provider.cursorNotStarted": "Агент Cursor найден, но его версию прочитать не удаётся.",
   "error.provider.cursorVersionUnreadable": "Не удалось прочитать версию агента Cursor.",
   "error.provider.cursorSignIn": "Войдите через Cursor или задайте CURSOR_API_KEY, чтобы использовать Cursor.",
@@ -265,16 +265,16 @@ export const messages = {
   "error.provider.clinePackageMismatch": "Пакет Cline не соответствует каталогу сред выполнения.",
   "error.provider.clineChecksum": "Контрольная сумма среды выполнения Cline не совпадает.",
   "error.provider.clineLicenseChecksum": "Контрольная сумма лицензии Cline не совпадает.",
-  "error.provider.clineMissing": "Cline не загружен. Загрузите его в OpenBot, чтобы продолжить.",
-  "error.provider.clineOutdated": "Cline CLI {version} слишком старый. OpenBot требует версию 3.0.68 или новее.",
+  "error.provider.clineMissing": "Cline не загружен. Загрузите его в Spinbot, чтобы продолжить.",
+  "error.provider.clineOutdated": "Cline CLI {version} слишком старый. Spinbot требует версию 3.0.68 или новее.",
   "error.provider.clineNotStarted": "Cline не удалось запустить. Выполните `cline --version` в терминале.",
   "error.provider.clineVersionUnreadable": "Не удалось прочитать версию Cline CLI.",
   "error.provider.clineSignIn": "Войдите через Cline или задайте CLINE_API_KEY, чтобы использовать Cline.",
   "error.provider.kimiArchivePath": "В архиве Kimi неожиданный путь.",
   "error.provider.kimiChecksum": "Контрольная сумма среды выполнения Kimi не совпадает.",
   "error.provider.kimiLicenseChecksum": "Контрольная сумма лицензии Kimi не совпадает.",
-  "error.provider.kimiMissing": "Kimi не загружен. Загрузите его в OpenBot, чтобы продолжить.",
-  "error.provider.kimiOutdated": "Kimi CLI {version} слишком старый. OpenBot требует версию 1.52.0 или новее.",
+  "error.provider.kimiMissing": "Kimi не загружен. Загрузите его в Spinbot, чтобы продолжить.",
+  "error.provider.kimiOutdated": "Kimi CLI {version} слишком старый. Spinbot требует версию 1.52.0 или новее.",
   "error.provider.kimiNotStarted": "Kimi не удалось запустить. Выполните `kimi --version` в терминале.",
   "error.provider.kimiVersionUnreadable": "Не удалось прочитать версию Kimi CLI.",
   "error.provider.kimiSignIn": "Войдите через Kimi Code, чтобы использовать Kimi.",
@@ -289,23 +289,23 @@ export const messages = {
     "Войдите через Nous Portal или выполните `hermes setup` в терминале, чтобы использовать Hermes.",
   "error.provider.usageLimitReached": "Аккаунт достиг лимита использования.",
   "error.provider.claudeContextFull":
-    "Этот чат стал слишком длинным для Claude. OpenBot начал новую сессию Claude Code с историей чата. Повторите попытку.",
+    "Этот чат стал слишком длинным для Claude. Spinbot начал новую сессию Claude Code с историей чата. Повторите попытку.",
   "error.provider.claudeApiKeyNoCredit":
     "На API-ключе Anthropic нет кредитов API. Тариф Claude не оплачивает запросы с API-ключом. Пополните кредиты в Anthropic Console или войдите в Claude в настройках и выберите аккаунт Claude в меню моделей агента.",
   "error.provider.foreignReasoning":
-    "{provider} не принял предыдущие рассуждения в этом чате, потому что их получил другой аккаунт или API-ключ. OpenBot начал новую сессию {provider} с историей чата. Повторите попытку.",
+    "{provider} не принял предыдущие рассуждения в этом чате, потому что их получил другой аккаунт или API-ключ. Spinbot начал новую сессию {provider} с историей чата. Повторите попытку.",
   "error.provider.imageTooSmall":
-    "Модель не приняла изображение в этом чате, потому что изображение слишком маленькое. OpenBot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
+    "Модель не приняла изображение в этом чате, потому что изображение слишком маленькое. Spinbot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
   "error.provider.imageTooLarge":
-    "Модель не приняла изображение в этом чате, потому что изображение слишком большое. OpenBot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
+    "Модель не приняла изображение в этом чате, потому что изображение слишком большое. Spinbot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
   "error.provider.imageCountLimit":
-    "Модель не приняла этот чат, потому что в нем слишком много изображений. OpenBot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
+    "Модель не приняла этот чат, потому что в нем слишком много изображений. Spinbot начал новый сеанс {provider} с историей чата. Попробуйте снова.",
   "error.provider.opencodeSessionRejected":
-    "OpenCode отклонил запрос и не указал причину. Это может произойти в длинном чате или после смены модели. OpenBot начал новый сеанс OpenCode с историей чата. Повторите попытку. Если ошибка не исчезнет, выберите другую модель или меньший уровень усилий.",
+    "OpenCode отклонил запрос и не указал причину. Это может произойти в длинном чате или после смены модели. Spinbot начал новый сеанс OpenCode с историей чата. Повторите попытку. Если ошибка не исчезнет, выберите другую модель или меньший уровень усилий.",
   "error.provider.museMcpStartupFault":
-    "Muse не удалось запустить сервер MCP, и он заблокировал MCP в этом сеансе. OpenBot начал новый сеанс Muse с историей чата. Повторите попытку. Если ошибка повторяется, отключите Управление компьютером или неисправный сервер MCP для этого агента.",
+    "Muse не удалось запустить сервер MCP, и он заблокировал MCP в этом сеансе. Spinbot начал новый сеанс Muse с историей чата. Повторите попытку. Если ошибка повторяется, отключите Управление компьютером или неисправный сервер MCP для этого агента.",
   "error.provider.claudeSessionMissing":
-    "Claude Code не нашёл сохранённую сессию этого чата. OpenBot начал новую сессию Claude Code с историей чата. Повторите попытку.",
+    "Claude Code не нашёл сохранённую сессию этого чата. Spinbot начал новую сессию Claude Code с историей чата. Повторите попытку.",
   "error.provider.grokSignIn": "Выполните `grok login` или задайте XAI_API_KEY, чтобы использовать Grok.",
   "error.provider.acpSignInTimedOut": "Время входа истекло.",
   "error.provider.acpSignInStopped": "Вход прервался, не завершившись.",
@@ -332,7 +332,7 @@ export const messages = {
     "Сервис модели отклонил запрос. Выберите другую модель или проверьте свой доступ к этой модели в сервисе.",
   "error.provider.modelServiceRefusedReason":
     "Сервис модели отклонил запрос: {reason}. Выберите другую модель или проверьте свой доступ к этой модели в сервисе.",
-  "error.provider.messageTooLarge": "OpenBot остановил {provider}, потому что он отправил сообщение больше {limit} МБ.",
+  "error.provider.messageTooLarge": "Spinbot остановил {provider}, потому что он отправил сообщение больше {limit} МБ.",
   "error.provider.customAgentIdInvalid":
     "ID агента должен состоять из строчных букв, цифр или `-` и не может совпадать с ID встроенного провайдера.",
   "error.provider.customAgentEnvInvalid":
@@ -345,10 +345,10 @@ export const messages = {
     "Аргумент не может содержать перевод строки. Используйте не более 32 аргументов.",
   "error.provider.customAgentWindowsScript":
     "В аргументах команды .cmd или .bat допустимы только буквы, цифры и символы - _ . , : = @ + / \\.",
-  "error.provider.customAgentNotFound": "OpenBot не находит {command}. Введите полный путь к команде.",
+  "error.provider.customAgentNotFound": "Spinbot не находит {command}. Введите полный путь к команде.",
   "error.provider.customAgentCheckTimedOut": "Агент не ответил за 20 секунд.",
   "error.provider.customAgentCheckStopped": "Агент остановился, не ответив.",
-  "error.provider.customAgentProtocolVersion": "Агент использует ACP версии {version}. OpenBot использует версию 1.",
+  "error.provider.customAgentProtocolVersion": "Агент использует ACP версии {version}. Spinbot использует версию 1.",
   "error.provider.customAgentCheckFailed": "Агент не ответил как агент ACP.",
   "error.provider.customAgentRemoveBusy":
     "Дождитесь, пока завершатся текущий ход и очередь, прежде чем удалять этого своего агента.",
@@ -356,7 +356,7 @@ export const messages = {
   "error.provider.customAgentMissing": "Этот свой агент сейчас не сохранён. Выберите другую модель.",
   "error.provider.customAgentSignIn": "Войдите собственной командой агента и повторите попытку.",
   "error.provider.customAgentsReadOnly":
-    "Сохранённые свои агенты записаны более новой версией OpenBot, либо файл не читается. Чтобы изменить их, обновите OpenBot.",
+    "Сохранённые свои агенты записаны более новой версией Spinbot, либо файл не читается. Чтобы изменить их, обновите Spinbot.",
   "error.provider.customAgentNoSecureStorage":
     "На этом компьютере нет защищённого хранилища, поэтому значения среды сохранить нельзя. Удалите их и повторите попытку.",
   "error.provider.customAgentNotSaved": "Этот свой агент не сохранён. Обновите список и повторите попытку.",
@@ -364,16 +364,16 @@ export const messages = {
     "{reason}. Режим «Рабочее пространство» блокирует это. Попробуйте «Полный доступ».",
   "error.provider.customAgentTooMany": "Можно сохранить не более {count} своих агентов.",
   "error.provider.customAgentEnvValueMissing": "Введите значение для {name}.",
-  "error.provider.off": "{provider} выключен в OpenBot. Сначала включите его в настройках провайдеров.",
+  "error.provider.off": "{provider} выключен в Spinbot. Сначала включите его в настройках провайдеров.",
   "error.provider.inUse": "{provider} использует агент. Смените его модель, прежде чем выключать этого провайдера.",
   "error.provider.useBusy": "Дождитесь окончания проверки провайдера или входа и повторите попытку.",
   "error.provider.useSettingsReadOnly":
-    "Не удаётся прочитать сохранённые настройки провайдеров. Обновите OpenBot, прежде чем их менять.",
-  "error.provider.useChangeFailed": "OpenBot не удалось изменить настройку провайдера.",
+    "Не удаётся прочитать сохранённые настройки провайдеров. Обновите Spinbot, прежде чем их менять.",
+  "error.provider.useChangeFailed": "Spinbot не удалось изменить настройку провайдера.",
   "error.provider.accountsUnsupported": "{provider} поддерживает только один аккаунт.",
   "error.provider.accountNeedsConnection": "Подключите {provider}, прежде чем добавлять ещё один аккаунт.",
   "error.provider.usageResetUnsupported": "{provider} не может сбрасывать лимиты использования.",
-  "error.provider.signOutUnsupported": "OpenBot не может отключить вход в {provider}.",
+  "error.provider.signOutUnsupported": "Spinbot не может отключить вход в {provider}.",
   "error.provider.usageResetNotConnected":
     "Снова войдите в этот аккаунт {provider}, прежде чем сбрасывать его использование.",
   "error.provider.accountLimit": "Максимум аккаунтов {provider}: {limit}.",
@@ -385,7 +385,7 @@ export const messages = {
     "Этот аккаунт {provider} использует сохранённый API-ключ и не имеет входа. Измените ключ в Настройки сервера → Провайдеры.",
   "error.provider.accountInUse": "Агент с этим аккаунтом сейчас работает. Попробуйте ещё раз, когда агент остановится.",
   "error.provider.accountsReadOnly":
-    "Не удаётся прочитать сохранённые аккаунты провайдеров. Обновите OpenBot, прежде чем их менять.",
+    "Не удаётся прочитать сохранённые аккаунты провайдеров. Обновите Spinbot, прежде чем их менять.",
   "error.provider.accountSignedOut": "Выполнен выход из аккаунта {provider}. Войдите снова.",
   "error.provider.sessionSettingUnavailable": "Этот параметр недоступен в текущей сессии провайдера.",
   "error.provider.sessionSettingInvalid": "Это значение недоступно для параметра.",
@@ -418,7 +418,7 @@ export const messages = {
   "error.provider.museConnectionFailed":
     "Не удалось подключиться к Muse. Возобновите диалог, чтобы восстановить его сохранённую историю.",
   "error.provider.museUnknownSession": "Неизвестная сессия Muse.",
-  "error.provider.museInvalidToolResult": "Некорректный результат инструмента OpenBot.",
+  "error.provider.museInvalidToolResult": "Некорректный результат инструмента Spinbot.",
   "error.provider.museMcpRequired": "Muse должен поддерживать серверы MCP для сессии.",
   "error.provider.museSessionMismatch": "Muse вернул другую сессию.",
   "error.provider.museCompactRejected": "Muse не принял сжатие контекста.",

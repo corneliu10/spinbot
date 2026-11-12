@@ -28,7 +28,7 @@ export const messages = {
   "prompt.approval.report.bugHeadline": "Encontrou um erro? Vamos corrigi-lo.",
   "prompt.approval.report.ideaHeadline": "Tem uma ideia? Vamos torná-la real.",
   "prompt.approval.report.dontSend": "Agora não",
-  "prompt.approval.report.send": "Enviar para a equipe do OpenBot",
+  "prompt.approval.report.send": "Enviar para a equipe do Spinbot",
   "prompt.approval.title.command": "Executar um comando",
   "prompt.approval.title.fileChange": "Alterar arquivos",
   "prompt.approval.title.permissions": "Conceder permissões",
@@ -53,7 +53,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} bloqueou o login a partir de {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Login em {host} cancelado",
   "prompt.browser.signInBlocked.body":
-    "Entre neste computador. O OpenBot envia apenas o login de {host} para {server}, e {name} continua.",
+    "Entre neste computador. O Spinbot envia apenas o login de {host} para {server}, e {name} continua.",
   "prompt.browser.signInBlocked.cancelledBody": "O login foi cancelado.",
   "prompt.browser.signInBlocked.waiting": "Aguardando o login",
   "prompt.browser.signInBlocked.waitingButton": "Aguardando o login…",

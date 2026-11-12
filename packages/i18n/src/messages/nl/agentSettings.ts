@@ -43,7 +43,7 @@ export const messages = {
   "agentSettings.folders.inShared": "{folder} staat in de gedeelde map, dus {agent} kan de map al wijzigen",
   "agentSettings.folders.inFolder": "{folder} staat in {parent}, en die map is al toegevoegd",
   "agentSettings.folders.protected":
-    "Je kunt {folder} niet toevoegen: de map bevat OpenBot-gegevens of bestanden van andere agents",
+    "Je kunt {folder} niet toevoegen: de map bevat Spinbot-gegevens of bestanden van andere agents",
   "agentSettings.folders.missing": "{folder} is geen map op deze computer",
   "agentSettings.folders.limit": {
     one: "Je kunt maximaal {count} map toevoegen",
@@ -156,7 +156,7 @@ export const messages = {
   "agentSettings.runtime.fullAccessNote":
     "De agent draait met volledige computertoegang vanuit zijn werkruimte en de gedeelde map.",
   "agentSettings.runtime.askNote":
-    "Hij vraagt het je voordat hij een OpenBot-tool gebruikt of een site publiceert, en als de aanbieder om goedkeuring vraagt.",
+    "Hij vraagt het je voordat hij een Spinbot-tool gebruikt of een site publiceert, en als de aanbieder om goedkeuring vraagt.",
   "agentSettings.runtime.fullNote": "Hij handelt zonder te vragen, behalve bij vragen die hij aan jou stelt.",
   "agentSettings.access.workspace": "Alleen werkruimte",
   "agentSettings.access.ask": "Eerst vragen",
@@ -190,7 +190,7 @@ export const messages = {
   "agentSettings.deleteHistory.button": "Wissen",
   "agentSettings.deleteHistory.confirmTitle": "Chatgeschiedenis met {name} wissen?",
   "agentSettings.deleteHistory.confirmDescription":
-    "Alle berichten en bestanden van deze chat worden uit OpenBot gewist en de agent vergeet ze. Dit kun je niet ongedaan maken. Zijthreads, instructies, model, tools, herinneringen, werkruimte en browser veranderen niet.",
+    "Alle berichten en bestanden van deze chat worden uit Spinbot gewist en de agent vergeet ze. Dit kun je niet ongedaan maken. Zijthreads, instructies, model, tools, herinneringen, werkruimte en browser veranderen niet.",
   "agentSettings.deleteHistory.confirm": "Geschiedenis wissen",
   "agentSettings.deleteHistory.failed": "Kan de geschiedenis niet wissen.",
   "agentSettings.fullAccess.title": "Deze agent volledige toegang geven?",
@@ -217,7 +217,7 @@ export const messages = {
   "agentSettings.runtime.workspaceEnforcedClaude":
     "Een bestandswijziging buiten vraagt het je eerst. Een opdracht kan niet buiten schrijven.",
   "agentSettings.runtime.workspaceUnlimited":
-    "Computerbesturing en de OpenBot-browser zijn niet beperkt; je kunt Computerbesturing hieronder uitzetten.",
+    "Computerbesturing en de Spinbot-browser zijn niet beperkt; je kunt Computerbesturing hieronder uitzetten.",
   "agentSettings.computerUse.title": "Computerbesturing",
   "agentSettings.computerUse.description": "Laat deze agent apps op deze computer besturen",
   "agentSettings.automation.title": "Lokale scripts",

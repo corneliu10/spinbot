@@ -4,29 +4,29 @@ export const messages = defineMessages("error.update", {
   // Updater state the user reads.
   "error.update.unsupported": "Updates are available in installed desktop builds.",
   "error.update.notReady": "An update is not ready to install.",
-  "error.update.restartFailed": "OpenBot could not restart to install the update.",
+  "error.update.restartFailed": "Spinbot could not restart to install the update.",
   "error.update.downloadStalled": "The update download stopped responding. Try again.",
-  "error.update.installFailed": "Could not install the update. Quit and reopen OpenBot, then try again.",
+  "error.update.installFailed": "Could not install the update. Quit and reopen Spinbot, then try again.",
   "error.update.downloadFailed": "Could not download the update. Try again.",
   "error.update.checkFailed": "Could not check for updates. Try again.",
   "error.update.checkStalled": "The update check stopped responding. Try again.",
   "error.update.checkOffline": "Could not reach the update service. Check your internet connection, then try again.",
   "error.update.checkUnavailable":
-    "The update service did not answer. OpenBot tries again on its own in a few minutes.",
+    "The update service did not answer. Spinbot tries again on its own in a few minutes.",
   "error.update.checkNoRelease":
-    "No published update was found for this platform. OpenBot tries again on its own in a few minutes.",
-  "error.update.managedByNix": "Nix installs updates for this copy of OpenBot. Update it with Nix.",
+    "No published update was found for this platform. Spinbot tries again on its own in a few minutes.",
+  "error.update.managedByNix": "Nix installs updates for this copy of Spinbot. Update it with Nix.",
   "error.update.managedByHost":
     "Updates on this Mac are installed by the host. The update stays ready until the host's maintenance runs.",
   "error.update.siblingSession":
-    "Another OpenBot session is still running from this application. Stop OpenBot in every other macOS user account first, then install the update again.",
+    "Another Spinbot session is still running from this application. Stop Spinbot in every other macOS user account first, then install the update again.",
   "error.update.siblingSessionSameAccount":
-    "Another OpenBot process is still running in this user account. Quit it, then install the update again.",
-  "error.update.siblingCheckFailed": "Could not verify other OpenBot sessions. Try again before installing.",
+    "Another Spinbot process is still running in this user account. Quit it, then install the update again.",
+  "error.update.siblingCheckFailed": "Could not verify other Spinbot sessions. Try again before installing.",
   "error.update.readOnlyLocation":
-    "OpenBot cannot install updates from this location. Quit OpenBot. In Finder, drag OpenBot into the Applications folder (if it is already there, drag it out and back in). Then open OpenBot and install the update again.",
+    "Spinbot cannot install updates from this location. Quit Spinbot. In Finder, drag Spinbot into the Applications folder (if it is already there, drag it out and back in). Then open Spinbot and install the update again.",
   // A joined server's admin reads these from the host.
   "error.update.remoteDisabled": "Updates from server admins are turned off on this computer.",
-  "error.update.restartStarted": "OpenBot is already restarting to install the update.",
-  "error.update.alreadyRestarting": "OpenBot is already restarting.",
+  "error.update.restartStarted": "Spinbot is already restarting to install the update.",
+  "error.update.alreadyRestarting": "Spinbot is already restarting.",
 });

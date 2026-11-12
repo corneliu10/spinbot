@@ -32,11 +32,11 @@ export const messages = {
   "status.agent.sendIdea": "公開の GitHub issue になります。あなたの名前は表示されません。",
   "status.agent.feedbackRecentErrors": "チャットの最近のエラー:",
   "status.agent.feedbackSameAs": "issue #{issue} に追加します",
-  "status.agent.feedbackSent": "OpenBot チームに送信しました: {title}",
+  "status.agent.feedbackSent": "Spinbot チームに送信しました: {title}",
   "status.agent.serverInstallCommand":
-    "別のコンピューターに OpenBot をサーバー {name} としてインストールし、あなたのアカウントにサインインさせる 1 回限りのコマンドを作成します。エージェントがそこで実行します。",
+    "別のコンピューターに Spinbot をサーバー {name} としてインストールし、あなたのアカウントにサインインさせる 1 回限りのコマンドを作成します。エージェントがそこで実行します。",
   "status.agent.serverInstallCard": "サーバー {name} のインストールコマンド",
-  "status.agent.feedbackSending": "フィードバックを OpenBot チームに送信しています…",
+  "status.agent.feedbackSending": "フィードバックを Spinbot チームに送信しています…",
   "status.agent.workflowDelete":
     "ワークフロー {title} を実行履歴とバージョンごと削除します。実行中のステップは停止します。",
   "status.agent.screenCaptureProgress": "画面のキャプチャを要求しています…",

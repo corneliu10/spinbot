@@ -103,10 +103,10 @@ describe("migration guards", () => {
 
     expect(() => migrateOpenBotDatabase(db)).toThrow(
       expect.objectContaining({
-        message: "OpenBot database migration to version 28 failed.",
+        message: "Spinbot database migration to version 28 failed.",
         cause: expect.objectContaining({
           message:
-            "OpenBot database migration produced 1 foreign-key violation(s) in projection_turns -> projection_threads.",
+            "Spinbot database migration produced 1 foreign-key violation(s) in projection_turns -> projection_threads.",
         }),
       }),
     );
@@ -132,7 +132,7 @@ describe("migration guards", () => {
     const schemaBefore = db.prepare("SELECT type, name, sql FROM sqlite_master ORDER BY type, name").all();
 
     expect(() => migrateOpenBotDatabase(db)).toThrow(
-      `OpenBot database migration history is missing version ${missing}.`,
+      `Spinbot database migration history is missing version ${missing}.`,
     );
     expect(versions(db)).toEqual(range(8, 60).filter((version) => version !== missing));
     expect(db.prepare("SELECT type, name, sql FROM sqlite_master ORDER BY type, name").all()).toEqual(schemaBefore);

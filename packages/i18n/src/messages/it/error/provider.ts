@@ -3,19 +3,19 @@ import type { messages as source } from "../../en/error/provider";
 
 export const messages = {
   "error.provider.mcpConfig":
-    "OpenBot non è riuscito a registrare i server MCP nella configurazione di Codex. Controlla che il config.toml di Codex sia valido e scrivibile, poi riavvia OpenBot.",
+    "Spinbot non è riuscito a registrare i server MCP nella configurazione di Codex. Controlla che il config.toml di Codex sia valido e scrivibile, poi riavvia Spinbot.",
   "error.provider.computerUseConfig":
-    "OpenBot non è riuscito a registrare il Controllo del computer nella configurazione di Codex. Controlla che il config.toml di Codex sia valido e scrivibile, poi riavvia OpenBot. Puoi disattivare il Controllo del computer nelle impostazioni dell'agente per continuare senza.",
-  "error.provider.codexUnresponsive": "Codex ha smesso di rispondere, quindi OpenBot ha terminato il suo processo.",
-  "error.provider.acpUnresponsive": "{provider} non ha risposto in tempo, quindi OpenBot ha terminato il suo processo.",
+    "Spinbot non è riuscito a registrare il Controllo del computer nella configurazione di Codex. Controlla che il config.toml di Codex sia valido e scrivibile, poi riavvia Spinbot. Puoi disattivare il Controllo del computer nelle impostazioni dell'agente per continuare senza.",
+  "error.provider.codexUnresponsive": "Codex ha smesso di rispondere, quindi Spinbot ha terminato il suo processo.",
+  "error.provider.acpUnresponsive": "{provider} non ha risposto in tempo, quindi Spinbot ha terminato il suo processo.",
   "error.provider.acpSignInLost":
-    "{provider} ha perso l’accesso, quindi OpenBot ha terminato il suo processo. Invia di nuovo il messaggio.",
+    "{provider} ha perso l’accesso, quindi Spinbot ha terminato il suo processo. Invia di nuovo il messaggio.",
   "error.provider.acpPlanUsedUp":
     "{provider} segnala che il tuo piano è esaurito. Scegli un altro modello o passa a un piano {provider} superiore.",
   "error.provider.acpMcpNotLoaded":
-    "{provider} non ha caricato gli strumenti di OpenBot, quindi questo agente non può usarli né contattare i suoi compagni. Una policy del team {provider} può bloccare i server MCP locali. Chiedi all’amministratore del team di consentirli, poi riprova.",
+    "{provider} non ha caricato gli strumenti di Spinbot, quindi questo agente non può usarli né contattare i suoi compagni. Una policy del team {provider} può bloccare i server MCP locali. Chiedi all’amministratore del team di consentirli, poi riprova.",
   "error.provider.endpointsReadOnly":
-    "Gli endpoint salvati sono stati scritti da una versione più recente di OpenBot, oppure il file non è leggibile. Aggiorna OpenBot per modificarli.",
+    "Gli endpoint salvati sono stati scritti da una versione più recente di Spinbot, oppure il file non è leggibile. Aggiorna Spinbot per modificarli.",
   "error.provider.endpointNoSecureStorage":
     "Questo computer non ha un archivio sicuro, quindi non si può salvare una chiave API o un header. Rimuovili, oppure usa un endpoint che non richiede credenziali.",
   "error.provider.endpointDuplicate":
@@ -26,14 +26,14 @@ export const messages = {
   "error.provider.endpointSecretUnreadable":
     "Questo computer non riesce a leggere la chiave API e gli header salvati. Inserisci di nuovo la chiave API e gli header, così non se ne perde nessuno.",
   "error.provider.discoveryTimeout": "{host} non ha risposto in tempo.",
-  "error.provider.discoveryUnreachable": "OpenBot non è riuscito a connettersi a {host}.",
+  "error.provider.discoveryUnreachable": "Spinbot non è riuscito a connettersi a {host}.",
   "error.provider.discoveryRedirect": "{host} ha inviato un reindirizzamento. Inserisci l'indirizzo finale del server.",
   "error.provider.discoveryRefused": "{host} ha rifiutato la richiesta. Controlla la chiave API e gli header.",
   "error.provider.discoveryHttp": "{host} ha risposto con HTTP {status}.",
   "error.provider.discoveryTooLarge": "L'elenco dei modelli di {host} è troppo grande.",
   "error.provider.discoveryInvalid": "{host} non ha inviato un elenco di modelli compatibile con OpenAI.",
   "error.provider.detectionSettingsReadOnly":
-    "Le impostazioni di rilevamento sono state scritte da una versione più recente di OpenBot, oppure il file non è leggibile. Aggiorna OpenBot per modificarle.",
+    "Le impostazioni di rilevamento sono state scritte da una versione più recente di Spinbot, oppure il file non è leggibile. Aggiorna Spinbot per modificarle.",
   "error.provider.detectionEntryInvalid":
     "Un indirizzo deve essere un URL http:// o https:// senza password, e una cartella deve essere un percorso assoluto.",
   "error.provider.detectionEntriesTooMany": "Ci sono troppi indirizzi o cartelle.",
@@ -61,14 +61,14 @@ export const messages = {
   "error.provider.bunLicenseChecksum": "Checksum della licenza di Bun non corrispondente.",
   "error.provider.bunxDamaged": "Il runner del gestore di pacchetti di Bun è mancante o danneggiato.",
   "error.provider.releaseSourcesUnreachable":
-    "OpenBot non è riuscito a raggiungere le fonti delle release dei provider. Controlla la connessione e riprova.",
+    "Spinbot non è riuscito a raggiungere le fonti delle release dei provider. Controlla la connessione e riprova.",
   "error.provider.runtimesUnsupported": "I runtime dei provider non sono disponibili su questa piattaforma.",
-  "error.provider.closing": "OpenBot si sta chiudendo.",
+  "error.provider.closing": "Spinbot si sta chiudendo.",
   "error.provider.removeWhileOn": "Disattiva il provider prima di rimuoverne il download.",
   "error.provider.removeWhileDownloading": "Attendi la fine del download, poi rimuovilo.",
   "error.provider.removeIncomplete": "Un programma usa alcuni file di questa CLI. Chiudilo e riprova.",
   "error.provider.removeDownloadsFailed": "Impossibile rimuovere i download della CLI di {providers}.",
-  "error.provider.cliOverride": "Rimuovi l'override esplicito del percorso della CLI prima di aggiornare da OpenBot.",
+  "error.provider.cliOverride": "Rimuovi l'override esplicito del percorso della CLI prima di aggiornare da Spinbot.",
   "error.provider.runtimeUpdateIncomplete": "L'aggiornamento del runtime non è stato completato.",
   "error.provider.downloadHttp": "Download del runtime non riuscito con HTTP {status}.",
   "error.provider.downloadNoData": "Il download del runtime non ha restituito dati.",
@@ -83,7 +83,7 @@ export const messages = {
   "error.provider.unexpectedVersion": "Il runtime del provider ha restituito una versione inattesa.",
   "error.provider.metadataNoData": "Il download dei metadati del runtime non ha restituito dati.",
   "error.provider.metadataTooLarge": "I metadati del runtime sono troppo grandi.",
-  "error.provider.requestFailed": "OpenBot non è riuscito a scaricare {url}. {reason}",
+  "error.provider.requestFailed": "Spinbot non è riuscito a scaricare {url}. {reason}",
   "error.provider.installRecordMismatch": "Il registro di installazione del runtime non corrisponde.",
   "error.provider.runtimeChecksum": "Checksum del runtime del provider non corrispondente.",
   "error.provider.codexReleaseShape": "La release di Codex ha una struttura inattesa.",
@@ -126,31 +126,31 @@ export const messages = {
   "error.provider.noModel": "Il provider selezionato non ha modelli disponibili.",
   "error.provider.noModelNamed": "{provider} non ha modelli disponibili.",
   "error.provider.acpNoModels":
-    "La CLI ACP non ha annunciato nessun modello ACP. OpenBot non sceglierà un modello di ripiego a caso.",
+    "La CLI ACP non ha annunciato nessun modello ACP. Spinbot non sceglierà un modello di ripiego a caso.",
   "error.provider.endpointRemoveBusy":
     "Attendi che il turno attivo e la coda finiscano prima di rimuovere questo endpoint.",
   "error.provider.codexOutdated":
-    "La CLI di Codex {version} è troppo vecchia. OpenBot richiede la 0.156.0 o successiva.",
+    "La CLI di Codex {version} è troppo vecchia. Spinbot richiede la 0.156.0 o successiva.",
   "error.provider.codexNotStarted": "La CLI di Codex è stata trovata ma non è stato possibile avviarla.",
   "error.provider.codexNotStartedHint":
     "La CLI di Codex è stata trovata ma non è stato possibile avviarla. Esegui `codex --version` in un nuovo terminale.",
   "error.provider.codexManagedNotStarted":
-    "ChatGPT è stato scaricato ma non è stato possibile avviarlo. Scaricalo di nuovo in OpenBot.",
-  "error.provider.codexMissing": "ChatGPT non è scaricato. Scaricalo in OpenBot per continuare.",
-  "error.provider.claudeOutdated": "Claude Code {version} è troppo vecchio. OpenBot richiede la 2.1.232 o successiva.",
+    "ChatGPT è stato scaricato ma non è stato possibile avviarlo. Scaricalo di nuovo in Spinbot.",
+  "error.provider.codexMissing": "ChatGPT non è scaricato. Scaricalo in Spinbot per continuare.",
+  "error.provider.claudeOutdated": "Claude Code {version} è troppo vecchio. Spinbot richiede la 2.1.232 o successiva.",
   "error.provider.claudeNotStarted": "La CLI di Claude è stata trovata ma non è stato possibile avviarla.",
   "error.provider.claudeNotStartedHint":
     "La CLI di Claude è stata trovata ma non è stato possibile avviarla. Esegui `claude --version` in un nuovo terminale.",
   "error.provider.claudeManagedNotStarted":
-    "Claude è stato scaricato ma non è stato possibile avviarlo. Scaricalo di nuovo in OpenBot.",
-  "error.provider.claudeMissing": "Claude non è scaricato. Scaricalo in OpenBot per continuare.",
-  "error.provider.grokOutdated": "La CLI di Grok {version} è troppo vecchia. OpenBot richiede la 1.0.5 o successiva.",
+    "Claude è stato scaricato ma non è stato possibile avviarlo. Scaricalo di nuovo in Spinbot.",
+  "error.provider.claudeMissing": "Claude non è scaricato. Scaricalo in Spinbot per continuare.",
+  "error.provider.grokOutdated": "La CLI di Grok {version} è troppo vecchia. Spinbot richiede la 1.0.5 o successiva.",
   "error.provider.grokNotStarted": "La CLI di Grok è stata trovata ma non è stato possibile avviarla.",
   "error.provider.grokNotStartedHint":
     "La CLI di Grok è stata trovata ma non è stato possibile avviarla. Esegui `grok --version` in un nuovo terminale.",
-  "error.provider.grokMissing": "Grok non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.grokMissing": "Grok non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.opencodeNotStarted": "Impossibile avviare OpenCode. Esegui `opencode --version` in un terminale.",
-  "error.provider.opencodeMissing": "OpenCode non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.opencodeMissing": "OpenCode non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.codexVersionUnreadable": "Impossibile leggere la versione della CLI di Codex.",
   "error.provider.claudeVersionUnreadable": "Impossibile leggere la versione della CLI di Claude.",
   "error.provider.grokVersionUnreadable": "Impossibile leggere la versione della CLI di Grok.",
@@ -159,7 +159,7 @@ export const messages = {
   "error.provider.connectBeforeProfile": "Connetti il provider selezionato prima di generare un profilo.",
   "error.provider.cliNotReady": "La CLI di {provider} non è pronta o non ha effettuato l'accesso.",
   "error.provider.cliTimedOut":
-    "{provider} non ha risposto in tempo. Il computer potrebbe essere occupato. OpenBot riproverà.",
+    "{provider} non ha risposto in tempo. Il computer potrebbe essere occupato. Spinbot riproverà.",
   "error.provider.cliTimedOutRefresh":
     "{provider} non ha risposto in tempo. Il computer potrebbe essere occupato. Aggiorna i provider per riprovare.",
   "error.provider.acpStartTimedOut":
@@ -167,7 +167,7 @@ export const messages = {
   "error.provider.acpModelsTimedOut":
     "{provider} non ha elencato i suoi modelli entro {seconds} s. Il computer potrebbe essere occupato.",
   "error.provider.startStopped":
-    "{provider} non si è avviato più volte di seguito, quindi OpenBot ha smesso di provare. Aggiorna i provider per riprovare.",
+    "{provider} non si è avviato più volte di seguito, quindi Spinbot ha smesso di provare. Aggiorna i provider per riprovare.",
   "error.provider.tempDiskSpace":
     "{provider} ha bisogno di almeno 1 GB di spazio libero su disco per avviarsi. Libera spazio, poi aggiorna i provider.",
   "error.provider.noCodeSignIn": "Non si può accedere a {provider} con un codice.",
@@ -182,10 +182,10 @@ export const messages = {
   "error.provider.cliSigningIn":
     "La CLI di {provider} sta effettuando l'accesso. Completa o annulla l'accesso, poi aggiorna.",
   "error.provider.cliBusyUpdate": "La CLI di {provider} sta lavorando a un turno. Attendi che finisca, poi aggiorna.",
-  "error.provider.cliSelectFailed": "OpenBot non è riuscito a selezionare la CLI gestita installata.",
+  "error.provider.cliSelectFailed": "Spinbot non è riuscito a selezionare la CLI gestita installata.",
   "error.provider.noAuthenticatedAccount": "{provider} non ha restituito un account autenticato.",
   "error.provider.signInExpired": "L'accesso a {provider} è scaduto. Accedi di nuovo per continuare.",
-  "error.provider.cliActivateFailed": "OpenBot non è riuscito ad attivare la CLI gestita.",
+  "error.provider.cliActivateFailed": "Spinbot non è riuscito ad attivare la CLI gestita.",
   "error.provider.noMainlandChinaSignIn": "{provider} non ha un accesso per la Cina continentale.",
   "error.provider.cliNewVersionNotStarted": "La nuova versione non si è avviata.",
   "error.provider.cliBusyReconnect":
@@ -220,13 +220,13 @@ export const messages = {
   "error.provider.opencodeIncompleteReply":
     "La risposta del modello si è interrotta o non era valida. Invia di nuovo il messaggio o scegli un altro modello.\n{detail}",
   "error.provider.opencodeNetwork":
-    "OpenCode non è riuscito a connettersi al provider del modello. Controlla la connessione di rete del computer che esegue OpenBot, poi riprova.\n{detail}",
+    "OpenCode non è riuscito a connettersi al provider del modello. Controlla la connessione di rete del computer che esegue Spinbot, poi riprova.\n{detail}",
   "error.provider.codexStateBusy":
     "ChatGPT sta ancora preparando la cronologia locale dopo un avvio precedente. Attendi qualche minuto, poi riprova.",
   "error.provider.codexThreadInUse":
     "Un'altra app Codex ha aperto questa chat, ad esempio l'app desktop di Codex, Codex CLI o un'estensione IDE. Solo un'app alla volta può scrivere in una chat di Codex. Chiudi la chat in quell'app, poi invia di nuovo il messaggio.",
   "error.provider.realtimeLimitZero":
-    "Linux ha fermato il provider perché OpenBot ha un limite di CPU in tempo reale pari a 0. Il limite viene dal tuo sistema. Installa e avvia rtkit (`rtkit-daemon`), esegui `systemctl --user restart xdg-desktop-portal`, poi riavvia OpenBot. Riavviare solo xdg-desktop-portal non basta finché manca rtkit.",
+    "Linux ha fermato il provider perché Spinbot ha un limite di CPU in tempo reale pari a 0. Il limite viene dal tuo sistema. Installa e avvia rtkit (`rtkit-daemon`), esegui `systemctl --user restart xdg-desktop-portal`, poi riavvia Spinbot. Riavviare solo xdg-desktop-portal non basta finché manca rtkit.",
   "error.provider.opencodeDatabaseNewer":
     "OpenCode non è riuscito ad aprire il suo database perché una versione più recente di OpenCode lo ha modificato. Aggiorna OpenCode alla versione 2 o successiva, poi riprova.",
   "error.provider.opencodeNoAnswer":
@@ -235,20 +235,20 @@ export const messages = {
     "Il modello OpenCode ha terminato il turno dopo il ragionamento, senza risposta. Riprova o scegli un altro modello.",
   "error.provider.acpNoAnswer":
     "{provider} ha terminato il turno senza risposta. Invia di nuovo il messaggio o avvia una nuova chat.",
-  "error.provider.chatgptPageFailed": "OpenBot non è riuscito ad aprire la pagina di connessione di ChatGPT.",
+  "error.provider.chatgptPageFailed": "Spinbot non è riuscito ad aprire la pagina di connessione di ChatGPT.",
   "error.provider.noneReady": "Nessun provider di agenti è pronto.",
   "error.provider.claudeTurnActive": "Attendi il turno attivo di Claude prima di aggiornare il suo contesto.",
   "error.provider.codexLoginRequired": "Codex richiede l'accesso con un abbonamento ChatGPT. Esegui `codex login`.",
-  "error.provider.cliUpdateFailed": "OpenBot non è riuscito ad aggiornare la CLI di {provider}. {reason}",
+  "error.provider.cliUpdateFailed": "Spinbot non è riuscito ad aggiornare la CLI di {provider}. {reason}",
   "error.provider.tryAgain": "Riprova.",
   "error.provider.noAgentProcess": "{provider} non ha nessun processo in esecuzione per questo agente.",
   "error.provider.stoppedBeforeAgentProcess": "{provider} si è fermato prima che partisse il processo dell'agente.",
   "error.provider.archiveUnreadable": "L'archivio del runtime non è leggibile o usa un formato non supportato.",
-  "error.provider.antigravityMissing": "Gemini non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.antigravityMissing": "Gemini non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.antigravityNotStarted":
     "Il server di Gemini è stato trovato, ma non è possibile leggerne la versione.",
   "error.provider.antigravityOverrideInvalid":
-    "Il server di Gemini in OPENBOT_ANTIGRAVITY_PATH non esiste o non è eseguibile. Correggi il percorso o rimuovi la variabile, poi riavvia OpenBot.",
+    "Il server di Gemini in OPENBOT_ANTIGRAVITY_PATH non esiste o non è eseguibile. Correggi il percorso o rimuovi la variabile, poi riavvia Spinbot.",
   "error.provider.antigravityVersionUnreadable": "Impossibile leggere la versione del server di Gemini.",
   "error.provider.antigravitySignIn": "Accedi con Google per usare Gemini.",
   "error.provider.antigravityRateLimited":
@@ -266,7 +266,7 @@ export const messages = {
   "error.provider.cursorArchivePath": "L'archivio di Cursor contiene un file inatteso.",
   "error.provider.cursorChecksum": "Checksum del runtime di Cursor non corrispondente.",
   "error.provider.cursorReleaseShape": "La release di Cursor ha una struttura inattesa.",
-  "error.provider.cursorMissing": "Cursor non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.cursorMissing": "Cursor non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.cursorNotStarted": "L'agente di Cursor è stato trovato, ma non è possibile leggerne la versione.",
   "error.provider.cursorVersionUnreadable": "Impossibile leggere la versione dell'agente di Cursor.",
   "error.provider.cursorSignIn": "Accedi con Cursor o imposta CURSOR_API_KEY per usare Cursor.",
@@ -274,18 +274,18 @@ export const messages = {
   "error.provider.clinePackageMismatch": "Il pacchetto di Cline non corrisponde al catalogo dei runtime.",
   "error.provider.clineChecksum": "Checksum del runtime di Cline non corrispondente.",
   "error.provider.clineLicenseChecksum": "Checksum della licenza di Cline non corrispondente.",
-  "error.provider.clineMissing": "Cline non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.clineMissing": "Cline non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.clineOutdated":
-    "La CLI di Cline {version} è troppo vecchia. OpenBot richiede la 3.0.68 o successiva.",
+    "La CLI di Cline {version} è troppo vecchia. Spinbot richiede la 3.0.68 o successiva.",
   "error.provider.clineNotStarted": "Impossibile avviare Cline. Esegui `cline --version` in un terminale.",
   "error.provider.clineVersionUnreadable": "Impossibile leggere la versione della CLI di Cline.",
   "error.provider.clineSignIn": "Accedi con Cline o imposta CLINE_API_KEY per usare Cline.",
   "error.provider.kimiArchivePath": "L'archivio di Kimi ha un percorso inatteso.",
   "error.provider.kimiChecksum": "Checksum del runtime di Kimi non corrispondente.",
   "error.provider.kimiLicenseChecksum": "Checksum della licenza di Kimi non corrispondente.",
-  "error.provider.kimiMissing": "Kimi non è scaricato. Scaricalo in OpenBot per continuare.",
+  "error.provider.kimiMissing": "Kimi non è scaricato. Scaricalo in Spinbot per continuare.",
   "error.provider.kimiOutdated":
-    "La CLI di Kimi {version} è troppo vecchia. OpenBot richiede la versione 1.52.0 o successiva.",
+    "La CLI di Kimi {version} è troppo vecchia. Spinbot richiede la versione 1.52.0 o successiva.",
   "error.provider.kimiNotStarted": "Impossibile avviare Kimi. Esegui `kimi --version` in un terminale.",
   "error.provider.kimiVersionUnreadable": "Impossibile leggere la versione della CLI di Kimi.",
   "error.provider.kimiSignIn": "Accedi con Kimi Code per usare Kimi.",
@@ -298,23 +298,23 @@ export const messages = {
   "error.provider.hermesSignIn": "Accedi con Nous Portal o esegui `hermes setup` in un terminale per usare Hermes.",
   "error.provider.usageLimitReached": "L'account ha raggiunto il limite di utilizzo.",
   "error.provider.claudeContextFull":
-    "Questa chat è diventata troppo lunga per Claude. OpenBot ha avviato una nuova sessione di Claude Code con la cronologia della chat. Riprova.",
+    "Questa chat è diventata troppo lunga per Claude. Spinbot ha avviato una nuova sessione di Claude Code con la cronologia della chat. Riprova.",
   "error.provider.claudeApiKeyNoCredit":
     "La chiave API di Anthropic non ha credito API. Un piano Claude non paga le richieste fatte con una chiave API. Aggiungi credito nella Anthropic Console, oppure accedi a Claude nelle Impostazioni e seleziona l'account Claude nel menu dei modelli dell'agente.",
   "error.provider.foreignReasoning":
-    "{provider} non ha accettato il ragionamento precedente in questa chat, perché lo ha ricevuto un altro account o un'altra chiave API. OpenBot ha avviato una nuova sessione di {provider} con la cronologia della chat. Riprova.",
+    "{provider} non ha accettato il ragionamento precedente in questa chat, perché lo ha ricevuto un altro account o un'altra chiave API. Spinbot ha avviato una nuova sessione di {provider} con la cronologia della chat. Riprova.",
   "error.provider.imageTooSmall":
-    "Il modello non ha accettato un'immagine in questa chat perché l'immagine è troppo piccola. OpenBot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
+    "Il modello non ha accettato un'immagine in questa chat perché l'immagine è troppo piccola. Spinbot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
   "error.provider.imageTooLarge":
-    "Il modello non ha accettato un'immagine in questa chat perché l'immagine è troppo grande. OpenBot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
+    "Il modello non ha accettato un'immagine in questa chat perché l'immagine è troppo grande. Spinbot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
   "error.provider.imageCountLimit":
-    "Il modello non ha accettato questa chat perché contiene troppe immagini. OpenBot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
+    "Il modello non ha accettato questa chat perché contiene troppe immagini. Spinbot ha avviato una nuova sessione {provider} con la cronologia della chat. Riprova.",
   "error.provider.opencodeSessionRejected":
-    "OpenCode ha rifiutato la richiesta senza indicarne la causa. Può succedere in una chat lunga o dopo un cambio di modello. OpenBot ha avviato una nuova sessione OpenCode con la cronologia della chat. Riprova. Se l’errore continua, scegli un altro modello o un impegno minore.",
+    "OpenCode ha rifiutato la richiesta senza indicarne la causa. Può succedere in una chat lunga o dopo un cambio di modello. Spinbot ha avviato una nuova sessione OpenCode con la cronologia della chat. Riprova. Se l’errore continua, scegli un altro modello o un impegno minore.",
   "error.provider.museMcpStartupFault":
-    "Muse non è riuscito ad avviare un server MCP e ha bloccato MCP in questa sessione. OpenBot ha avviato una nuova sessione Muse con la cronologia della chat. Riprova. Se l’errore continua, disattiva Controllo del computer o il server MCP non riuscito per questo agente.",
+    "Muse non è riuscito ad avviare un server MCP e ha bloccato MCP in questa sessione. Spinbot ha avviato una nuova sessione Muse con la cronologia della chat. Riprova. Se l’errore continua, disattiva Controllo del computer o il server MCP non riuscito per questo agente.",
   "error.provider.claudeSessionMissing":
-    "Claude Code non ha trovato la sessione salvata di questa chat. OpenBot ha avviato una nuova sessione di Claude Code con la cronologia della chat. Riprova.",
+    "Claude Code non ha trovato la sessione salvata di questa chat. Spinbot ha avviato una nuova sessione di Claude Code con la cronologia della chat. Riprova.",
   "error.provider.grokSignIn": "Esegui `grok login` o imposta XAI_API_KEY per usare Grok.",
   "error.provider.acpSignInTimedOut": "L'accesso è scaduto.",
   "error.provider.acpSignInStopped": "L'accesso si è interrotto prima di essere completato.",
@@ -342,7 +342,7 @@ export const messages = {
   "error.provider.modelServiceRefusedReason":
     "Il servizio del modello ha rifiutato la richiesta: {reason}. Scegli un altro modello o controlla il tuo accesso a questo modello presso il servizio.",
   "error.provider.messageTooLarge":
-    "OpenBot ha fermato {provider} perché ha inviato un messaggio più grande di {limit} MB.",
+    "Spinbot ha fermato {provider} perché ha inviato un messaggio più grande di {limit} MB.",
   "error.provider.customAgentIdInvalid":
     "L'ID di un agente deve contenere lettere minuscole, cifre o `-`, e non può essere l'ID di un provider integrato.",
   "error.provider.customAgentEnvInvalid":
@@ -354,10 +354,10 @@ export const messages = {
   "error.provider.customAgentArgsInvalid": "Un argomento non può contenere un a capo. Usa al massimo 32 argomenti.",
   "error.provider.customAgentWindowsScript":
     "Un comando .cmd o .bat può contenere nei suoi argomenti solo lettere, numeri e - _ . , : = @ + / \\.",
-  "error.provider.customAgentNotFound": "OpenBot non trova {command}. Inserisci il percorso completo del comando.",
+  "error.provider.customAgentNotFound": "Spinbot non trova {command}. Inserisci il percorso completo del comando.",
   "error.provider.customAgentCheckTimedOut": "L'agente non ha risposto entro 20 secondi.",
   "error.provider.customAgentCheckStopped": "L'agente si è fermato prima di rispondere.",
-  "error.provider.customAgentProtocolVersion": "L'agente usa la versione {version} di ACP. OpenBot usa la versione 1.",
+  "error.provider.customAgentProtocolVersion": "L'agente usa la versione {version} di ACP. Spinbot usa la versione 1.",
   "error.provider.customAgentCheckFailed": "L'agente non ha risposto come un agente ACP.",
   "error.provider.customAgentRemoveBusy":
     "Attendi che il turno attivo e la coda finiscano prima di rimuovere questo agente personalizzato.",
@@ -365,23 +365,23 @@ export const messages = {
   "error.provider.customAgentMissing": "Questo agente personalizzato non è più salvato. Scegli un altro modello.",
   "error.provider.customAgentSignIn": "Accedi con il comando dell'agente stesso, poi riprova.",
   "error.provider.customAgentsReadOnly":
-    "Gli agenti personalizzati salvati sono stati scritti da una versione più recente di OpenBot, oppure il file non è leggibile. Aggiorna OpenBot per modificarli.",
+    "Gli agenti personalizzati salvati sono stati scritti da una versione più recente di Spinbot, oppure il file non è leggibile. Aggiorna Spinbot per modificarli.",
   "error.provider.customAgentNoSecureStorage":
     "Questo computer non ha un archivio sicuro, quindi non si possono salvare i valori d'ambiente. Rimuovili e riprova.",
   "error.provider.customAgentNotSaved": "Questo agente personalizzato non è salvato. Aggiorna l'elenco e riprova.",
   "error.provider.customAgentWorkspaceOnly": "{reason}. «Solo workspace» lo blocca. Prova «Accesso completo».",
   "error.provider.customAgentTooMany": "Puoi salvare al massimo {count} agenti personalizzati.",
   "error.provider.customAgentEnvValueMissing": "Inserisci un valore per {name}.",
-  "error.provider.off": "{provider} è disattivato in OpenBot. Attivalo prima nelle impostazioni dei provider.",
+  "error.provider.off": "{provider} è disattivato in Spinbot. Attivalo prima nelle impostazioni dei provider.",
   "error.provider.inUse": "Un agente usa {provider}. Cambia il suo modello prima di disattivare questo provider.",
   "error.provider.useBusy": "Attendi che il controllo del provider o l'accesso finisca, poi riprova.",
   "error.provider.useSettingsReadOnly":
-    "Le impostazioni salvate dei provider non sono leggibili. Aggiorna OpenBot prima di modificarle.",
-  "error.provider.useChangeFailed": "OpenBot non è riuscito a modificare l'impostazione del provider.",
+    "Le impostazioni salvate dei provider non sono leggibili. Aggiorna Spinbot prima di modificarle.",
+  "error.provider.useChangeFailed": "Spinbot non è riuscito a modificare l'impostazione del provider.",
   "error.provider.accountsUnsupported": "{provider} può avere un solo account.",
   "error.provider.accountNeedsConnection": "Connetti {provider} prima di aggiungere un altro account.",
   "error.provider.usageResetUnsupported": "{provider} non può azzerare i limiti di utilizzo.",
-  "error.provider.signOutUnsupported": "OpenBot non può disconnettere l'accesso a {provider}.",
+  "error.provider.signOutUnsupported": "Spinbot non può disconnettere l'accesso a {provider}.",
   "error.provider.usageResetNotConnected": "Accedi di nuovo a questo account {provider} prima di azzerarne l'utilizzo.",
   "error.provider.accountLimit": "{provider} può avere al massimo {limit} account.",
   "error.provider.accountNotFound": "Questo account {provider} non è su questo computer. Aggiorna e riprova.",
@@ -391,7 +391,7 @@ export const messages = {
     "Questo account {provider} usa la chiave API salvata e non ha un accesso. Cambia la chiave in Impostazioni server → Provider.",
   "error.provider.accountInUse": "Un agente che usa questo account è al lavoro. Riprova quando l'agente si ferma.",
   "error.provider.accountsReadOnly":
-    "Gli account salvati dei provider non sono leggibili. Aggiorna OpenBot prima di modificarli.",
+    "Gli account salvati dei provider non sono leggibili. Aggiorna Spinbot prima di modificarli.",
   "error.provider.accountSignedOut": "Hai effettuato l'uscita da questo account {provider}. Accedi di nuovo.",
   "error.provider.sessionSettingUnavailable":
     "Questa impostazione non è disponibile nella sessione attuale del provider.",
@@ -427,7 +427,7 @@ export const messages = {
   "error.provider.museConnectionFailed":
     "Connessione a Muse non riuscita. Riprendi la conversazione per recuperare la sua cronologia salvata.",
   "error.provider.museUnknownSession": "Sessione di Muse sconosciuta.",
-  "error.provider.museInvalidToolResult": "Risultato del tool di OpenBot non valido.",
+  "error.provider.museInvalidToolResult": "Risultato del tool di Spinbot non valido.",
   "error.provider.museMcpRequired": "Muse deve supportare i server MCP di sessione.",
   "error.provider.museSessionMismatch": "Muse ha restituito una sessione diversa.",
   "error.provider.museCompactRejected": "Muse non ha accettato la compattazione.",

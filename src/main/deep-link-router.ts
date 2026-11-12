@@ -41,13 +41,15 @@ export type DeepLink =
  * after they accept it at registration. This stays as the fallback, and for the servers that take
  * it, it is the shorter path: the operating system hands the link straight to the running app.
  */
-export const MCP_OAUTH_REDIRECT_URL = "openbot://mcp-auth";
+export const MCP_OAUTH_REDIRECT_URL = "spinbot://mcp-auth";
 
 const MCP_OAUTH_HOST = "mcp-auth";
 const SLACK_WORKSPACE_HOST = "slack-workspace";
 const DISCORD_GUILD_HOST = "discord-guild";
 
 export function parseDeepLink(value: string, options: InviteLinkOptions = {}): DeepLink | null {
+  // Spinbot: the operating system hands this app spinbot: links; the parsers read the openbot: form.
+  if (/^spinbot:/iu.test(value)) value = `openbot:${value.slice("spinbot:".length)}`;
   try {
     parseInviteUrl(value, options);
     return { kind: "invite", url: value };

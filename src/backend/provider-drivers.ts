@@ -272,7 +272,7 @@ function antigravityKeyOptions(context: ProviderClientContext, agentEnvironment:
  * of its own on every platform. Antigravity 1.5 has no other switch for it. Tools that the agent runs
  * see the variable too.
  */
-const ANTIGRAVITY_ENV = { WSL_DISTRO_NAME: "OpenBot" };
+const ANTIGRAVITY_ENV = { WSL_DISTRO_NAME: "Spinbot" };
 
 /** The Gemini home of an Antigravity process: the account's `GEMINI_HOME`, else `~/.gemini`. */
 function antigravityGeminiHome(env: Readonly<Record<string, string | undefined>>): string {

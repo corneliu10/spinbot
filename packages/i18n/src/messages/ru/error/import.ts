@@ -3,9 +3,9 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest} — некорректный JSON.",
-  "error.import.notAgentExport": "{manifest} — не экспорт агента OpenBot.",
+  "error.import.notAgentExport": "{manifest} — не экспорт агента Spinbot.",
   "error.import.newerExportSkill":
-    "Этот экспорт создан более новым навыком экспорта. Обновите OpenBot и повторите попытку.",
+    "Этот экспорт создан более новым навыком экспорта. Обновите Spinbot и повторите попытку.",
   "error.import.noAgents": "В экспорте нет агентов.",
   "error.import.tooManyAgents": "В экспорте больше {limit} агентов.",
   "error.import.tooManyChannels": "В экспорте больше {limit} каналов.",
@@ -50,15 +50,15 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "Для экспорта нужно {size} ГБ свободного места на сервере, а свободно {free} ГБ. Освободите место на сервере и выберите экспорт снова.",
   "error.import.remoteZipTooLargeOldHost":
-    "Этот сервер принимает экспорт размером до 100 МБ. Обновите OpenBot на сервере, чтобы импортировать экспорт большего размера.",
+    "Этот сервер принимает экспорт размером до 100 МБ. Обновите Spinbot на сервере, чтобы импортировать экспорт большего размера.",
   "error.import.skillKept":
     "{name}: на сервере уже есть навык «{skill}», поэтому агент использует его. Попросите администратора обновить его.",
   "error.import.skillRenamed":
     "{name}: имя навыка «{skill}» слишком похоже на имя другого навыка, поэтому он сохранён как «{renamed}».",
   "error.import.transferRemoteTooLarge":
     "Файл переноса для присоединённого сервера должен быть меньше 100 МБ. Выключите файлы рабочих пространств или экспортируйте меньше агентов.",
-  "error.import.transferNotFile": "Это не файл переноса OpenBot.",
-  "error.import.transferNewer": "Этот файл создан более новой версией OpenBot. Обновите OpenBot и повторите попытку.",
+  "error.import.transferNotFile": "Это не файл переноса Spinbot.",
+  "error.import.transferNewer": "Этот файл создан более новой версией Spinbot. Обновите Spinbot и повторите попытку.",
   "error.import.transferEmpty": "В файле нет ни агентов, ни настроек.",
   "error.import.transferTooLarge":
     "Файл переноса должен быть меньше 2 ГБ и содержать меньше 50 000 файлов. Выключите файлы рабочих пространств или экспортируйте меньше агентов.",

@@ -755,7 +755,7 @@ export class TeamWebRtcHostPeer {
             "OpenBot-Protocol-Version": String(protocol),
             "OpenBot-App-Version": this.#appVersion,
             "OpenBot-Capabilities": [...this.#peerCapabilities].join(","),
-            ...(this.#localSessionId ? { "X-OpenBot-WebRTC-Session": this.#localSessionId } : {}),
+            ...(this.#localSessionId ? { "X-Spinbot-WebRTC-Session": this.#localSessionId } : {}),
           },
           ...(requestBody === undefined ? {} : { body: requestBody }),
         }),
@@ -1074,7 +1074,7 @@ export class TeamWebRtcHostPeer {
     this.#closeDesktopSocket(streamId);
     const sessionId = this.#localSessionId ?? "";
     const socket = yield* remoteDecode(
-      () => new webSockets.WebSocket(url, { headers: { "X-OpenBot-WebRTC-Session": sessionId } }),
+      () => new webSockets.WebSocket(url, { headers: { "X-Spinbot-WebRTC-Session": sessionId } }),
     );
     this.#desktopSockets.set(streamId, socket);
     socket.once("open", () => {

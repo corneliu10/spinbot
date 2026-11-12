@@ -56,10 +56,10 @@ export const messages = {
   "composer.voice.transcribing": "Расшифровка голосового запроса",
   "composer.voice.start": "Создать запрос голосом",
   "composer.voice.blocked":
-    "Доступ к микрофону заблокирован. Разрешите OpenBot использовать микрофон в системных настройках.",
+    "Доступ к микрофону заблокирован. Разрешите Spinbot использовать микрофон в системных настройках.",
   "composer.voice.noMicrophone": "Микрофон недоступен.",
-  "composer.voice.startFailed": "OpenBot не удалось начать запись голоса.",
-  "composer.voice.transcribeFailed": "OpenBot не удалось расшифровать эту запись.",
+  "composer.voice.startFailed": "Spinbot не удалось начать запись голоса.",
+  "composer.voice.transcribeFailed": "Spinbot не удалось расшифровать эту запись.",
   "composer.reply.toYou": "Ответ на ваше сообщение",
   "composer.reply.toAgent": "Ответ агенту",
   "composer.reply.attachment": "Вложение",

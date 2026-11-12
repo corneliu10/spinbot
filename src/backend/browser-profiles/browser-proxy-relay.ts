@@ -65,7 +65,7 @@ const HOP_HEADERS = new Set(["proxy-authorization", "proxy-connection", "connect
 const BAD_GATEWAY = "HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\nConnection: close\r\n\r\n";
 const BAD_REQUEST = "HTTP/1.1 400 Bad Request\r\nContent-Length: 0\r\nConnection: close\r\n\r\n";
 const SIGN_IN_REQUIRED =
-  'HTTP/1.1 407 Proxy Authentication Required\r\nProxy-Authenticate: Basic realm="OpenBot"\r\nContent-Length: 0\r\nConnection: close\r\n\r\n';
+  'HTTP/1.1 407 Proxy Authentication Required\r\nProxy-Authenticate: Basic realm="Spinbot"\r\nContent-Length: 0\r\nConnection: close\r\n\r\n';
 
 interface RelayRequest {
   target: RelayTarget;

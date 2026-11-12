@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Uzaktan kontrol",
   "remoteDesktop.displayLabel": "Uzak ekran",
   "remoteDesktop.selectDisplay": "Ekran seçin",
-  "remoteDesktop.backToOpenBot": "OpenBot'a dön",
+  "remoteDesktop.backToOpenBot": "Spinbot'a dön",
   "remoteDesktop.disconnect": "Bağlantıyı kes",
   "remoteDesktop.viewerTitle": "Sunshine uzak masaüstü",
   "remoteDesktop.viewerLoadFailed": "Moonlight görüntüleyicisi yüklenemedi.",
@@ -19,7 +19,7 @@ export const messages = {
   "remoteDesktop.openFailed": "Masaüstü açılamadı",
   "remoteDesktop.notSharingTitle": "{name} ekranını paylaşmıyor",
   "remoteDesktop.notSharingDescription":
-    "Sunucu OpenBot'un ekranını kaydetmesini engelliyor. O sunucuda Sistem Ayarları → Gizlilik ve Güvenlik → Ekran Kaydı bölümünü açın, OpenBot'u etkinleştirin ve burada tekrar deneyin.",
+    "Sunucu Spinbot'un ekranını kaydetmesini engelliyor. O sunucuda Sistem Ayarları → Gizlilik ve Güvenlik → Ekran Kaydı bölümünü açın, Spinbot'u etkinleştirin ve burada tekrar deneyin.",
   "remoteDesktop.setup.check.screenRecording": "Ekran Kaydı",
   "remoteDesktop.setup.check.accessibility": "Erişilebilirlik",
   "remoteDesktop.setup.check.service": "Sunshine hizmeti",
@@ -40,7 +40,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "Uzak masaüstü testi başlatılamadı.",
   "remoteDesktop.setup.connectionLost": "Test bağlantısı kesildi.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "İzinleri kontrol etmek ve uzak masaüstünü test etmek için sunucudaki OpenBot'u güncelleyin.",
+    "İzinleri kontrol etmek ve uzak masaüstünü test etmek için sunucudaki Spinbot'u güncelleyin.",
   "remoteDesktop.setup.permissions": "İzinler",
   "remoteDesktop.setup.checked": "Denetlendi",
   "remoteDesktop.setup.checkAgain": "Tekrar denetle",
@@ -75,12 +75,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Testi bitir",
   "remoteDesktop.host.questionTitle": "{name} bu bilgisayarı kontrol etmek istiyor",
   "remoteDesktop.host.questionDetail":
-    "{name} ekranınızı görecek ve farenizi ve klavyenizi kullanabilecek. 30 saniye içinde yanıt vermezseniz OpenBot isteği reddeder.",
+    "{name} ekranınızı görecek ve farenizi ve klavyenizi kullanabilecek. 30 saniye içinde yanıt vermezseniz Spinbot isteği reddeder.",
   "remoteDesktop.host.allow": "İzin ver",
   "remoteDesktop.host.deny": "Reddet",
   "remoteDesktop.host.startedTitle": "Uzaktan kontrol başladı",
   "remoteDesktop.host.startedBody": "{name} şu anda bu bilgisayarı kontrol ediyor.",
-  "remoteDesktop.host.trayTooltip": "OpenBot: uzaktan kontrol açık",
+  "remoteDesktop.host.trayTooltip": "Spinbot: uzaktan kontrol açık",
   "remoteDesktop.host.trayControlledBy": "{name} bu bilgisayarı kontrol ediyor",
   "remoteDesktop.host.stopAll": "Tüm uzaktan kontrolü durdur",
 } as const satisfies PartialTranslation<typeof source>;

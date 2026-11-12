@@ -215,7 +215,7 @@ export class AgentStore {
     database = new OpenBotDatabase(userDataPath),
     agentDefaults: () => AgentDefaults = () => DEFAULT_AGENT_DEFAULTS,
     /** The folder of the agents, shared files and downloads. A local server has its own. */
-    openbotRoot = join(homePath, "OpenBot"),
+    openbotRoot = join(homePath, "Spinbot"),
   ) {
     this.#statePath = join(userDataPath, LEGACY_AGENTS_STATE_FILE);
     this.#agentsRoot = join(openbotRoot, "Agents");
@@ -1604,7 +1604,7 @@ export class AgentStore {
 
   bindProviderSession(id: string, provider: AgentProviderId, externalSessionId: string): ProviderSession {
     const agent = this.#requireAgent(id);
-    if (!agent.threadId) throw new Error(`Agent ${id} does not have an OpenBot thread.`);
+    if (!agent.threadId) throw new Error(`Agent ${id} does not have an Spinbot thread.`);
     return this.#database.bindProviderSession({
       threadId: agent.threadId,
       provider,

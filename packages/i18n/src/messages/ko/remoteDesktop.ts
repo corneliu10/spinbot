@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "원격 제어",
   "remoteDesktop.displayLabel": "원격 디스플레이",
   "remoteDesktop.selectDisplay": "디스플레이 선택",
-  "remoteDesktop.backToOpenBot": "OpenBot으로 돌아가기",
+  "remoteDesktop.backToOpenBot": "Spinbot으로 돌아가기",
   "remoteDesktop.disconnect": "연결 끊기",
   "remoteDesktop.viewerTitle": "Sunshine 원격 데스크톱",
   "remoteDesktop.viewerLoadFailed": "Moonlight 뷰어를 불러올 수 없어요.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "데스크톱을 열 수 없어요",
   "remoteDesktop.notSharingTitle": "{name}이(가) 화면을 공유하지 않아요",
   "remoteDesktop.notSharingDescription":
-    "서버가 OpenBot의 화면 녹화를 막고 있어요. 해당 서버에서 시스템 설정 → 개인정보 보호 및 보안 → 화면 녹화를 열고 OpenBot을 켠 다음, 여기서 다시 시도해 주세요.",
+    "서버가 Spinbot의 화면 녹화를 막고 있어요. 해당 서버에서 시스템 설정 → 개인정보 보호 및 보안 → 화면 녹화를 열고 Spinbot을 켠 다음, 여기서 다시 시도해 주세요.",
   "remoteDesktop.setup.check.screenRecording": "화면 녹화",
   "remoteDesktop.setup.check.accessibility": "손쉬운 사용",
   "remoteDesktop.setup.check.service": "Sunshine 서비스",
@@ -40,7 +40,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "원격 데스크톱 테스트를 시작할 수 없어요.",
   "remoteDesktop.setup.connectionLost": "테스트 연결이 끊어졌어요.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "권한을 확인하고 원격 데스크톱을 테스트하려면 서버의 OpenBot을 업데이트해 주세요.",
+    "권한을 확인하고 원격 데스크톱을 테스트하려면 서버의 Spinbot을 업데이트해 주세요.",
   "remoteDesktop.setup.permissions": "권한",
   "remoteDesktop.setup.checked": "확인함",
   "remoteDesktop.setup.checkAgain": "다시 확인",
@@ -75,12 +75,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "테스트 완료",
   "remoteDesktop.host.questionTitle": "{name}님이 이 컴퓨터를 제어하려고 해요",
   "remoteDesktop.host.questionDetail":
-    "{name}님이 화면을 보고 마우스와 키보드를 사용할 수 있게 돼요. 30초 안에 응답하지 않으면 OpenBot이 요청을 거부해요.",
+    "{name}님이 화면을 보고 마우스와 키보드를 사용할 수 있게 돼요. 30초 안에 응답하지 않으면 Spinbot이 요청을 거부해요.",
   "remoteDesktop.host.allow": "허용",
   "remoteDesktop.host.deny": "거부",
   "remoteDesktop.host.startedTitle": "원격 제어 시작됨",
   "remoteDesktop.host.startedBody": "{name}님이 지금 이 컴퓨터를 제어하고 있어요.",
-  "remoteDesktop.host.trayTooltip": "OpenBot: 원격 제어 중",
+  "remoteDesktop.host.trayTooltip": "Spinbot: 원격 제어 중",
   "remoteDesktop.host.trayControlledBy": "{name}님이 이 컴퓨터를 제어하는 중",
   "remoteDesktop.host.stopAll": "모든 원격 제어 중지",
 } as const satisfies PartialTranslation<typeof source>;

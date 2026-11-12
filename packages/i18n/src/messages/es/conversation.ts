@@ -2,7 +2,7 @@ import type { PartialTranslation } from "../../message";
 import type { messages as source } from "../en/conversation";
 
 export const messages = {
-  "conversation.globalSearch.title": "Buscar en OpenBot",
+  "conversation.globalSearch.title": "Buscar en Spinbot",
   "conversation.globalSearch.filter": "Filtrar resultados",
   "conversation.globalSearch.tab.all": "Todo",
   "conversation.globalSearch.tab.messages": "Mensajes",
@@ -94,7 +94,7 @@ export const messages = {
   "conversation.threads.error.start": "No se pudo iniciar el hilo.",
   "conversation.threads.error.branch": "No se pudo ramificar el chat.",
   "conversation.threads.error.send": "No se pudo enviar el mensaje al hilo.",
-  "conversation.threads.error.files": "Este servidor no acepta archivos en hilos. Actualiza OpenBot en él.",
+  "conversation.threads.error.files": "Este servidor no acepta archivos en hilos. Actualiza Spinbot en él.",
   "conversation.threads.error.stop": "No se pudo detener el hilo.",
   "conversation.threads.error.archive": "No se pudo archivar el hilo.",
   "conversation.threads.error.restore": "No se pudo restaurar el hilo.",

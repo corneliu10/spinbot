@@ -33,7 +33,7 @@ export const messages = {
 
   "provider.status.off": "Kapalı",
   "provider.gemini.hostSignIn":
-    "Gemini'yi bağlamak için ana makinede OpenBot'u açın ve Sunucu ayarları > Sağlayıcılar bölümünde Bağlan'ı seçin. Google ile oturum açmak için o ana makinede bir tarayıcı gerekir. Uzaktan oturum açma desteklenmez.",
+    "Gemini'yi bağlamak için ana makinede Spinbot'u açın ve Sunucu ayarları > Sağlayıcılar bölümünde Bağlan'ı seçin. Google ile oturum açmak için o ana makinede bir tarayıcı gerekir. Uzaktan oturum açma desteklenmez.",
   "provider.key.free": "Ücretsiz",
 
   "provider.action.connect": "Bağlan",
@@ -60,13 +60,13 @@ export const messages = {
   "provider.aria.cancelSignIn": "{name} oturum açmasını iptal et",
   "provider.aria.apiKey": "{name} API anahtarı",
   "provider.connecting.browserHint": "Bir tarayıcı sayfası açılırsa oturum açmayı tamamlayın.",
-  "provider.connecting.cancelFailed": "OpenBot, {name} oturum açma işlemini iptal edemedi. Tekrar deneyin.",
+  "provider.connecting.cancelFailed": "Spinbot, {name} oturum açma işlemini iptal edemedi. Tekrar deneyin.",
   "provider.aria.install": "{name} sağlayıcısını yükle",
   "provider.aria.signIn": "{name} sağlayıcısında oturum aç",
   "provider.aria.codeFallback": "{name} için kodla oturum aç",
   "provider.aria.moreActions": "{name} için diğer eylemler",
 
-  "provider.aria.use": "OpenBot'ta {name} kullan",
+  "provider.aria.use": "Spinbot'ta {name} kullan",
   "provider.use.inUseOne":
     "{agent}, {name} kullanıyor. Bu ajanın modelini değiştirin, ardından {name} sağlayıcısını kapatın.",
   "provider.use.inUse": {
@@ -74,7 +74,7 @@ export const messages = {
     other: "{count} ajan {name} kullanıyor. Bu ajanların modelini değiştirin, ardından {name} sağlayıcısını kapatın.",
   },
   "provider.codeLogin.title": "Kodla {name} hesabında oturum açın",
-  "provider.codeLogin.description": "Telefonunuzda veya başka bir tarayıcıda tamamlayın. OpenBot burada bekler.",
+  "provider.codeLogin.description": "Telefonunuzda veya başka bir tarayıcıda tamamlayın. Spinbot burada bekler.",
   "provider.codeLogin.starting": "{name} kaynağından bir kod alınıyor…",
   "provider.codeLogin.qrLabel": "{name} oturum açma sayfası için QR kodu",
   "provider.codeLogin.open": "Aç",
@@ -95,12 +95,12 @@ export const messages = {
   "provider.codeLogin.pageDescription": "Bu sayfa {host} üzerindeki tarayıcıda açık. Burada oturum açın.",
   "provider.codeLogin.relayStarting": "{name} oturum açma işlemi {host} üzerinde başlatılıyor…",
   "provider.codeLogin.pageOpening": "{name} oturum açma sayfası {host} üzerinde açılıyor…",
-  "provider.codeLogin.linkStep": "{name} hesabında oturum açın. OpenBot kendiliğinden devam eder.",
+  "provider.codeLogin.linkStep": "{name} hesabında oturum açın. Spinbot kendiliğinden devam eder.",
   "provider.codeLogin.chatgptDeviceSetting":
     "Bir bilgisayarda ChatGPT'de güvenlik ayarlarını açın ve Codex için cihaz koduyla oturum açmayı açın. İş hesabında bunu çalışma alanı yöneticiniz açar.",
-  "provider.useApp.title": "{name} bağlantısını OpenBot uygulamasında yapın",
+  "provider.useApp.title": "{name} bağlantısını Spinbot uygulamasında yapın",
   "provider.useApp.description":
-    "{name} oturum açma işlemi onu başlatan bilgisayara döner ve bir tarayıcı sekmesi bunu alamaz. {name} bağlantısını OpenBot uygulamasında yapın. Uygulama oturum açmayı kendiliğinden tamamlar.",
+    "{name} oturum açma işlemi onu başlatan bilgisayara döner ve bir tarayıcı sekmesi bunu alamaz. {name} bağlantısını Spinbot uygulamasında yapın. Uygulama oturum açmayı kendiliğinden tamamlar.",
   "provider.useApp.download": "Uygulamayı indir",
 
   "provider.picker.noEndpoints": "Henüz uç nokta yok",
@@ -111,7 +111,7 @@ export const messages = {
   "provider.picker.providers": "Model sağlayıcıları",
   "provider.picker.downloading": "{percent} indiriliyor",
   "provider.picker.unavailable": "{name} kullanılamıyor.",
-  "provider.picker.updateToUse": "{name} kullanmak için OpenBot'u güncelleyin",
+  "provider.picker.updateToUse": "{name} kullanmak için Spinbot'u güncelleyin",
   "provider.picker.models": "{name} modelleri",
   "provider.picker.addProvider": "Sağlayıcı ekle",
   "provider.picker.download": "{name} indirmesi",
@@ -174,15 +174,15 @@ export const messages = {
   "provider.claudeKey.label": "Anthropic API anahtarı",
   "provider.inceptionKey.title": "Inception API anahtarı",
   "provider.inceptionKey.description":
-    "Mercury modellerini kullanmak için bu bilgisayara bir Inception API anahtarı kaydedin. OpenBot bunları indirdiği Pi CLI'da çalıştırır.",
+    "Mercury modellerini kullanmak için bu bilgisayara bir Inception API anahtarı kaydedin. Spinbot bunları indirdiği Pi CLI'da çalıştırır.",
   "provider.inceptionKey.label": "Inception API anahtarı",
   "provider.deepseekKey.title": "DeepSeek API anahtarı",
   "provider.deepseekKey.description":
-    "DeepSeek modellerini kullanmak için bu bilgisayara bir DeepSeek API anahtarı kaydedin. OpenBot bunları indirdiği Pi CLI'da çalıştırır.",
+    "DeepSeek modellerini kullanmak için bu bilgisayara bir DeepSeek API anahtarı kaydedin. Spinbot bunları indirdiği Pi CLI'da çalıştırır.",
   "provider.deepseekKey.label": "DeepSeek API anahtarı",
   "provider.openrouterKey.title": "OpenRouter API anahtarı",
   "provider.openrouterKey.description":
-    "OpenRouter modellerini kullanmak için bu bilgisayara bir OpenRouter API anahtarı kaydedin. OpenBot bunları indirdiği Pi CLI'da çalıştırır.",
+    "OpenRouter modellerini kullanmak için bu bilgisayara bir OpenRouter API anahtarı kaydedin. Spinbot bunları indirdiği Pi CLI'da çalıştırır.",
   "provider.openrouterKey.label": "OpenRouter API anahtarı",
   "provider.openCodeKey.title": "OpenCode Go'da oturum açın",
   "provider.openCodeKey.description":
@@ -229,10 +229,10 @@ export const messages = {
   "provider.settings.disconnectTitle": "{name} bağlantısı kesilsin mi?",
   "provider.settings.disconnectOthers": "Diğer {provider} hesapları, {provider} yeniden bağlanana kadar bekler.",
   "provider.settings.disconnectLocal":
-    "OpenBot bu bilgisayarda {provider} oturumunu kapatır. Terminalinizdeki {provider} CLI oturumu da kapanır.",
-  "provider.settings.disconnectHost": "OpenBot sunucuda {provider} oturumunu kapatır.",
+    "Spinbot bu bilgisayarda {provider} oturumunu kapatır. Terminalinizdeki {provider} CLI oturumu da kapanır.",
+  "provider.settings.disconnectHost": "Spinbot sunucuda {provider} oturumunu kapatır.",
   "provider.settings.versionInstalledByUser": "{version} · senin yüklediğin",
-  "provider.settings.versionDownloaded": "{version} · OpenBot tarafından indirildi",
+  "provider.settings.versionDownloaded": "{version} · Spinbot tarafından indirildi",
   "provider.settings.cache": "Önbellek",
   "provider.settings.promptCache": "İstem önbelleği",
   "provider.settings.promptCacheDescription":
@@ -268,8 +268,8 @@ export const messages = {
   "provider.settings.modelsLoadFailed": "Bu sunucunun modelleri yüklenemedi.",
   "provider.settings.deleteTitle": "{name} sil",
   "provider.settings.deleteOn":
-    "{name} kapatılır ve OpenBot'un indirdiği CLI silinir. Hesaplar, oturumlar ve ajanlar kalır.",
+    "{name} kapatılır ve Spinbot'un indirdiği CLI silinir. Hesaplar, oturumlar ve ajanlar kalır.",
   "provider.settings.deleteOff":
-    "OpenBot'un {name} için indirdiği CLI silinir ({size}). Hesaplar, oturumlar ve ajanlar kalır.",
+    "Spinbot'un {name} için indirdiği CLI silinir ({size}). Hesaplar, oturumlar ve ajanlar kalır.",
   "provider.settings.removeDownloadFailed": "İndirme kaldırılamadı.",
 } as const satisfies PartialTranslation<typeof source>;

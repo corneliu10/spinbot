@@ -1324,7 +1324,7 @@ export class CentralAuthManager extends EventEmitter<CentralAuthEvents> {
         `/v2/remote/hosts/${encodeURIComponent(hostId)}/logo`,
         {
           method: "PUT",
-          headers: { "Content-Type": image.mimeType, ...(version ? { "OpenBot-Logo-Version": version } : {}) },
+          headers: { "Content-Type": image.mimeType, ...(version ? { "Spinbot-Logo-Version": version } : {}) },
           body: Buffer.from(image.bytes),
         },
         (value) => requiredString(decodeRecord(value, "remote host logo"), "logoKey"),

@@ -18,10 +18,10 @@ export const messages = {
   "notification.channelMessage": "Новое сообщение.",
   "notification.usageLimit.title": "Аккаунт {provider} достиг лимита",
   "notification.usageLimit.body": {
-    one: "Ждёт {count} агент. OpenBot попробует позже.",
-    few: "Ждут {count} агента. OpenBot попробует позже.",
-    many: "Ждут {count} агентов. OpenBot попробует позже.",
-    other: "Ждут {count} агента. OpenBot попробует позже.",
+    one: "Ждёт {count} агент. Spinbot попробует позже.",
+    few: "Ждут {count} агента. Spinbot попробует позже.",
+    many: "Ждут {count} агентов. Spinbot попробует позже.",
+    other: "Ждут {count} агента. Spinbot попробует позже.",
   },
   "notification.usageLimit.bodyResets": {
     one: "Ждёт {count} агент. Сброс {reset}.",
@@ -34,7 +34,7 @@ export const messages = {
   "notification.machineAlert.cpu": "{server}: CPU загружен на {percent}",
   "notification.machineAlert.body": "Превышен порог оповещения {level}. См. «Настройки сервера» → «Хранилище».",
   "notification.test": "Уведомления работают.",
-  "notification.welcome": "OpenBot сообщит здесь, когда вы понадобитесь агенту.",
+  "notification.welcome": "Spinbot сообщит здесь, когда вы понадобитесь агенту.",
   "notification.toast.region": "Уведомления",
   "notification.toast.close": "Закрыть уведомление",
 } as const satisfies PartialTranslation<typeof source>;

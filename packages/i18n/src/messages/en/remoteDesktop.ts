@@ -8,7 +8,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.workspaceLabel": "Remote control",
   "remoteDesktop.displayLabel": "Remote display",
   "remoteDesktop.selectDisplay": "Select display",
-  "remoteDesktop.backToOpenBot": "Back to OpenBot",
+  "remoteDesktop.backToOpenBot": "Back to Spinbot",
   "remoteDesktop.disconnect": "Disconnect",
   "remoteDesktop.viewerTitle": "Sunshine remote desktop",
   "remoteDesktop.viewerLoadFailed": "The Moonlight viewer could not load.",
@@ -19,7 +19,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.openFailed": "Could not open the desktop",
   "remoteDesktop.notSharingTitle": "{name} is not sharing its screen",
   "remoteDesktop.notSharingDescription":
-    "The server blocks OpenBot from recording its screen. On that server, open System Settings → Privacy & Security → Screen Recording, turn on OpenBot, then try again here.",
+    "The server blocks Spinbot from recording its screen. On that server, open System Settings → Privacy & Security → Screen Recording, turn on Spinbot, then try again here.",
   "remoteDesktop.setup.check.screenRecording": "Screen Recording",
   "remoteDesktop.setup.check.accessibility": "Accessibility",
   "remoteDesktop.setup.check.service": "Sunshine service",
@@ -39,7 +39,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.setup.startFailed": "Could not start the remote desktop test.",
   "remoteDesktop.setup.connectionLost": "The test connection was lost.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Update OpenBot on the server to check permissions and test remote desktop.",
+    "Update Spinbot on the server to check permissions and test remote desktop.",
   "remoteDesktop.setup.permissions": "Permissions",
   "remoteDesktop.setup.checked": "Checked",
   "remoteDesktop.setup.checkAgain": "Check again",
@@ -74,14 +74,14 @@ export const messages = defineMessages("remoteDesktop", {
   // The native question on the host computer when a member asks to control it.
   "remoteDesktop.host.questionTitle": "{name} wants to control this computer",
   "remoteDesktop.host.questionDetail":
-    "{name} will see your screen and can use your mouse and keyboard. If you do not answer in 30 seconds, OpenBot refuses the request.",
+    "{name} will see your screen and can use your mouse and keyboard. If you do not answer in 30 seconds, Spinbot refuses the request.",
   "remoteDesktop.host.allow": "Allow",
   "remoteDesktop.host.deny": "Deny",
   // The system notification on the host computer when a member's remote desktop stream starts.
   "remoteDesktop.host.startedTitle": "Remote control started",
   "remoteDesktop.host.startedBody": "{name} controls this computer now.",
   // The tray or menu bar icon while a member controls the host computer.
-  "remoteDesktop.host.trayTooltip": "OpenBot: remote control is on",
+  "remoteDesktop.host.trayTooltip": "Spinbot: remote control is on",
   "remoteDesktop.host.trayControlledBy": "{name} controls this computer",
   "remoteDesktop.host.stopAll": "Stop all remote control",
 });

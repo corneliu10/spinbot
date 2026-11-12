@@ -235,3 +235,15 @@
     transform: none;
   }
 }
+
+/* Spinbot: the S-cube mark takes the eye colour; the eye squint is not used on it. */
+.app-logo-mark {
+  fill: var(--app-logo-eye);
+}
+.app-logo .app-logo-eye-motion:has(.app-logo-mark) {
+  --app-logo-eye-squint: 1;
+}
+.app-logo[data-variant="production"] .app-logo-background {
+  stroke: rgb(0 0 0 / 0.12);
+  stroke-width: 2;
+}

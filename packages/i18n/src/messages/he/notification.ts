@@ -16,9 +16,9 @@ export const messages = {
   "notification.channelMessage": "נשלחה הודעה.",
   "notification.usageLimit.title": "חשבון {provider} הגיע למגבלה",
   "notification.usageLimit.body": {
-    one: "סוכן אחד ממתין. OpenBot ינסה שוב מאוחר יותר.",
-    two: "שני סוכנים ממתינים. OpenBot ינסה שוב מאוחר יותר.",
-    other: "{count} סוכנים ממתינים. OpenBot ינסה שוב מאוחר יותר.",
+    one: "סוכן אחד ממתין. Spinbot ינסה שוב מאוחר יותר.",
+    two: "שני סוכנים ממתינים. Spinbot ינסה שוב מאוחר יותר.",
+    other: "{count} סוכנים ממתינים. Spinbot ינסה שוב מאוחר יותר.",
   },
   "notification.usageLimit.bodyResets": {
     one: "סוכן אחד ממתין. האיפוס: {reset}.",
@@ -30,7 +30,7 @@ export const messages = {
   "notification.machineAlert.cpu": "{server}: ה-CPU עמוס ב-{percent}",
   "notification.machineAlert.body": "הערך עבר את סף ההתראה של {level}. אפשר לראות בהגדרות השרת > אחסון.",
   "notification.test": "ההתראות פועלות.",
-  "notification.welcome": "OpenBot יודיע לך כאן כשסוכן יזדקק לך.",
+  "notification.welcome": "Spinbot יודיע לך כאן כשסוכן יזדקק לך.",
   "notification.toast.region": "התראות",
   "notification.toast.close": "סגירת ההתראה",
 } as const satisfies PartialTranslation<typeof source>;

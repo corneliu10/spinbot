@@ -538,7 +538,7 @@ export const messages = {
   "chat.suggestion.detailsNamed": "Otwórz {name} w Marketplace",
   "chat.suggestion.dismissed": "Odrzucono propozycję: {name}.",
   "chat.suggestion.undo": "Cofnij",
-  "chat.suggestion.localOnly": "Połącz {name} w OpenBot na swoim komputerze.",
+  "chat.suggestion.localOnly": "Połącz {name} w Spinbot na swoim komputerze.",
   "chat.suggestion.unavailable": "Ten serwer nie może połączyć {name}.",
   "chat.serverInstall.title": "Nowy serwer",
   "chat.serverInstall.expired": "Polecenie wygasło. Poproś agenta o nowe.",
@@ -553,6 +553,6 @@ export const messages = {
   "chat.reference.open.thread": "Otwórz wątek {name}",
   "chat.feedbackSent.title": "Dziękujemy za opinię 🙏",
   "chat.feedbackSent.badge": "Wysłano",
-  "chat.feedbackSent.body": "Zespół OpenBot przeczyta to i się tym zajmie 💜",
+  "chat.feedbackSent.body": "Zespół Spinbot przeczyta to i się tym zajmie 💜",
   "chat.feedbackSent.openNamed": "Otwórz zgłoszenie #{number} na GitHubie",
 } as const satisfies PartialTranslation<typeof source>;

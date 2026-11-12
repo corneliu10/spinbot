@@ -3,9 +3,9 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest} não é um JSON válido.",
-  "error.import.notAgentExport": "{manifest} não é uma exportação de agente do OpenBot.",
+  "error.import.notAgentExport": "{manifest} não é uma exportação de agente do Spinbot.",
   "error.import.newerExportSkill":
-    "Esta exportação foi feita por uma habilidade de exportação mais recente. Atualize o OpenBot e tente novamente.",
+    "Esta exportação foi feita por uma habilidade de exportação mais recente. Atualize o Spinbot e tente novamente.",
   "error.import.noAgents": "A exportação não contém agentes.",
   "error.import.tooManyAgents": "A exportação contém mais de {limit} agentes.",
   "error.import.tooManyChannels": "A exportação contém mais de {limit} canais.",
@@ -51,16 +51,16 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "A exportação precisa de {size} GB de espaço livre no servidor, e há {free} GB livres. Libere espaço no servidor e escolha a exportação novamente.",
   "error.import.remoteZipTooLargeOldHost":
-    "Este servidor aceita uma exportação de até 100 MB. Atualize o OpenBot no servidor para importar uma exportação maior.",
+    "Este servidor aceita uma exportação de até 100 MB. Atualize o Spinbot no servidor para importar uma exportação maior.",
   "error.import.skillKept":
     '{name}: o servidor já tem a habilidade "{skill}", por isso o agente usa essa habilidade. Peça a um administrador para atualizá-la.',
   "error.import.skillRenamed":
     '{name}: o nome da habilidade "{skill}" é parecido demais com o de outra habilidade, por isso ela é salva como "{renamed}".',
   "error.import.transferRemoteTooLarge":
     "Um arquivo de transferência para um servidor ao qual você se conectou deve ter menos de 100 MB. Desative os arquivos do espaço de trabalho ou exporte menos agentes.",
-  "error.import.transferNotFile": "Este arquivo não é um arquivo de transferência do OpenBot.",
+  "error.import.transferNotFile": "Este arquivo não é um arquivo de transferência do Spinbot.",
   "error.import.transferNewer":
-    "Uma versão mais nova do OpenBot criou este arquivo. Atualize o OpenBot e tente de novo.",
+    "Uma versão mais nova do Spinbot criou este arquivo. Atualize o Spinbot e tente de novo.",
   "error.import.transferEmpty": "O arquivo não contém agentes nem configurações.",
   "error.import.transferTooLarge":
     "Um arquivo de transferência deve ter menos de 2 GB e de 50.000 arquivos. Desative os arquivos do espaço de trabalho ou exporte menos agentes.",

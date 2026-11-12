@@ -68,10 +68,10 @@ export const messages = {
   "import.result.channel": "Canale",
   "import.result.notImportedTitle": "Non importati",
   "import.result.warnings": "Alcuni elementi non sono stati spostati",
-  "import.source.ledeServer": "OpenBot li copia sul server. Vedi ogni elemento prima che qualcosa cambi.",
+  "import.source.ledeServer": "Spinbot li copia sul server. Vedi ogni elemento prima che qualcosa cambi.",
   "import.source.hermesNoteServer": "Leggi la cartella Hermes sul server, oppure esporta un file .zip da Hermes.",
   "import.source.hermesNoteExport": "Esporta un file .zip da Hermes.",
   "import.hermes.notFoundServer": "Nessun profilo Hermes su questo server",
   "import.hermes.notFoundServerNote":
-    "OpenBot legge la cartella Hermes del server. Per importare Hermes da questo computer, esporta un file .zip da Hermes.",
+    "Spinbot legge la cartella Hermes del server. Per importare Hermes da questo computer, esporta un file .zip da Hermes.",
 } as const satisfies PartialTranslation<typeof source>;

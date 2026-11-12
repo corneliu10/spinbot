@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Controle remoto",
   "remoteDesktop.displayLabel": "Tela remota",
   "remoteDesktop.selectDisplay": "Selecionar tela",
-  "remoteDesktop.backToOpenBot": "Voltar ao OpenBot",
+  "remoteDesktop.backToOpenBot": "Voltar ao Spinbot",
   "remoteDesktop.disconnect": "Desconectar",
   "remoteDesktop.viewerTitle": "Área de trabalho remota do Sunshine",
   "remoteDesktop.viewerLoadFailed": "Não foi possível carregar o visualizador Moonlight.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "Não foi possível abrir a área de trabalho",
   "remoteDesktop.notSharingTitle": "{name} não está compartilhando a tela",
   "remoteDesktop.notSharingDescription":
-    "O servidor impede o OpenBot de gravar a tela. Nesse servidor, abra Ajustes do Sistema → Privacidade e Segurança → Gravação de Tela, ative o OpenBot e tente novamente aqui.",
+    "O servidor impede o Spinbot de gravar a tela. Nesse servidor, abra Ajustes do Sistema → Privacidade e Segurança → Gravação de Tela, ative o Spinbot e tente novamente aqui.",
   "remoteDesktop.setup.check.screenRecording": "Gravação de Tela",
   "remoteDesktop.setup.check.accessibility": "Acessibilidade",
   "remoteDesktop.setup.check.service": "Serviço Sunshine",
@@ -41,7 +41,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "Não foi possível iniciar o teste da área de trabalho remota.",
   "remoteDesktop.setup.connectionLost": "A conexão de teste foi perdida.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Atualize o OpenBot no servidor para verificar as permissões e testar a área de trabalho remota.",
+    "Atualize o Spinbot no servidor para verificar as permissões e testar a área de trabalho remota.",
   "remoteDesktop.setup.permissions": "Permissões",
   "remoteDesktop.setup.checked": "Verificado",
   "remoteDesktop.setup.checkAgain": "Verificar novamente",
@@ -76,12 +76,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Concluir teste",
   "remoteDesktop.host.questionTitle": "{name} quer controlar este computador",
   "remoteDesktop.host.questionDetail":
-    "{name} verá sua tela e poderá usar seu mouse e teclado. Se você não responder em 30 segundos, o OpenBot recusará a solicitação.",
+    "{name} verá sua tela e poderá usar seu mouse e teclado. Se você não responder em 30 segundos, o Spinbot recusará a solicitação.",
   "remoteDesktop.host.allow": "Permitir",
   "remoteDesktop.host.deny": "Negar",
   "remoteDesktop.host.startedTitle": "Controle remoto iniciado",
   "remoteDesktop.host.startedBody": "{name} está controlando este computador agora.",
-  "remoteDesktop.host.trayTooltip": "OpenBot: controle remoto ativo",
+  "remoteDesktop.host.trayTooltip": "Spinbot: controle remoto ativo",
   "remoteDesktop.host.trayControlledBy": "{name} está controlando este computador",
   "remoteDesktop.host.stopAll": "Parar todo o controle remoto",
 } as const satisfies PartialTranslation<typeof source>;

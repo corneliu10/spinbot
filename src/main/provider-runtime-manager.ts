@@ -224,7 +224,7 @@ export interface ProviderRuntimeManagerOptions {
 export function providerRuntimeRoot(input: { appData: string; userDataOverride: string }): string {
   const override = input.userDataOverride.trim();
   if (override) return join(resolve(override), "provider-runtimes");
-  return join(input.appData, "OpenBot", "provider-runtimes");
+  return join(input.appData, "Spinbot", "provider-runtimes");
 }
 
 export class ProviderRuntimeManager extends EventEmitter<ProviderRuntimeManagerEvents> {
@@ -1414,7 +1414,7 @@ export class ProviderRuntimeManager extends EventEmitter<ProviderRuntimeManagerE
       );
       const response = yield* runtimeIO((signal) =>
         this.#fetch(url, {
-          headers: { "User-Agent": "OpenBot-runtime-installer" },
+          headers: { "User-Agent": "Spinbot-runtime-installer" },
           signal: AbortSignal.any([signal, controller.signal, AbortSignal.timeout(30_000)]),
         }),
       ).pipe(Effect.mapError(({ cause }) => requestFailure(url, cause)));
@@ -1444,7 +1444,7 @@ export class ProviderRuntimeManager extends EventEmitter<ProviderRuntimeManagerE
           signal: AbortSignal.any([signal, effectSignal]),
           redirect: "follow",
           headers: {
-            "User-Agent": "OpenBot-runtime-installer",
+            "User-Agent": "Spinbot-runtime-installer",
             ...(offset > 0 ? { Range: `bytes=${offset}-`, ...(etag ? { "If-Range": etag } : {}) } : {}),
           },
         }),

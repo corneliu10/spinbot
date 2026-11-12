@@ -414,7 +414,7 @@ function mockWorkspaceDirectory(path: string): WorkspaceDirectory {
   return {
     name: folder.split("/").at(-1) ?? folder,
     path: folder,
-    root: "/Users/demo/OpenBot/Agents/research",
+    root: "/Users/demo/Spinbot/Agents/research",
     parentPath: folder === "." ? null : folder.split("/").slice(0, -1).join("/") || ".",
     entries: [
       { name: "sources", path: child("sources"), kind: "directory", size: 0, modifiedAt },
@@ -470,7 +470,7 @@ export function createMockOpenBot(options: MockOpenBotOptions = {}): MockOpenBot
     {
       id: "48210:1",
       pid: 48210,
-      command: "node /mock/OpenBot/Agents/research/site/node_modules/.bin/vite --port 5173",
+      command: "node /mock/Spinbot/Agents/research/site/node_modules/.bin/vite --port 5173",
       startedAt: Date.now() - 2 * 60 * 60_000,
       ports: [5173],
       agentId: "research",
@@ -835,7 +835,7 @@ export function createMockOpenBot(options: MockOpenBotOptions = {}): MockOpenBot
     const agent = requireMockAgent(agentId);
     return {
       workspace: agent.workspacePath,
-      shared: "/mock/OpenBot/Shared",
+      shared: "/mock/Spinbot/Shared",
       folders: (agent.additionalFolders ?? []).map((path) => ({ path, found: !path.endsWith("(missing)") })),
       excluded: agent.excludedFolders ?? [],
     };
@@ -1147,7 +1147,7 @@ export function createMockOpenBot(options: MockOpenBotOptions = {}): MockOpenBot
       computerUse: input.computerUse ?? true,
       ...(input.allowAutomation ? { allowAutomation: true } : {}),
       threadId: input.threadId ?? `thread-${id}`,
-      workspacePath: input.workspacePath ?? `/mock/OpenBot/Agents/${id}`,
+      workspacePath: input.workspacePath ?? `/mock/Spinbot/Agents/${id}`,
       preview: input.preview ?? "No messages yet",
       updatedAt: input.updatedAt ?? null,
       avatarSeed: input.avatarSeed ?? id,
@@ -1610,7 +1610,7 @@ export function createMockOpenBot(options: MockOpenBotOptions = {}): MockOpenBot
         limit: 3,
         used: hostedSites.filter((site) => site.status === "active").length,
       }),
-      chooseDirectory: async () => "/mock/OpenBot/Sites/launch-notes",
+      chooseDirectory: async () => "/mock/Spinbot/Sites/launch-notes",
       publish: async (input) => {
         const hostname = `${input.title.toLowerCase().replaceAll(/[^a-z0-9]+/gu, "-")}.openbot.site`;
         const site: HostedSiteSummary = {

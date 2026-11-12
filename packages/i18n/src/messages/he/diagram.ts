@@ -125,7 +125,7 @@ export const messages = {
   "diagram.routine.recent": "ריצות אחרונות",
   "diagram.routine.runLabel": "{status}, {time}",
   "diagram.routine.manual": "ידנית",
-  "diagram.flows.unsupported": "השרת הזה לא תומך בזרימות שגרה. יש לעדכן את OpenBot במחשב שמריץ אותו.",
+  "diagram.flows.unsupported": "השרת הזה לא תומך בזרימות שגרה. יש לעדכן את Spinbot במחשב שמריץ אותו.",
   "diagram.flows.webhookAdminOnly": "רק בעלים או מנהל של השרת הזה יכולים לשנות או להריץ שגרת Webhook.",
   "diagram.flows.loadFailed": "לא ניתן לטעון את השגרות של הסוכן הזה.",
   "diagram.flows.saveFailed": "לא ניתן לשמור את השינוי הזה בשגרות.",

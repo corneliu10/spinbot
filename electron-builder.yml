@@ -1,10 +1,10 @@
-appId: app.openbot.desktop
-productName: OpenBot
+appId: app.spinbot.desktop
+productName: Spinbot
 copyright: Copyright © 2026 Synthetify Labs spółka z ograniczoną odpowiedzialnością
 protocols:
-  - name: OpenBot invitations
+  - name: Spinbot links
     schemes:
-      - openbot
+      - spinbot
 asar: true
 artifactName: ${productName}-${version}-${arch}.${ext}
 electronUpdaterCompatibility: ">=2.16"
@@ -20,8 +20,8 @@ electronFuses:
   grantFileProtocolExtraPrivileges: false
 publish:
   provider: github
-  owner: nightly-labs
-  repo: openbot
+  owner: corneliu10
+  repo: spinbot
 files:
   - out/**/*
   - package.json
@@ -111,8 +111,6 @@ mac:
   # `.icon` file.
   icon: build/icon-production.icns
   extraResources:
-    - from: build/macos/Assets.car
-      to: Assets.car
     - from: build/icon-production-macos-safe-area.png
       to: icons/icon-production-macos-safe-area.png
     - from: build/icon-dev-macos-safe-area.png
@@ -141,14 +139,13 @@ mac:
   entitlementsInherit: build/entitlements.mac.inherit.plist
   darkModeSupport: true
   extendInfo:
-    CFBundleIconName: Icon
     ElectronTeamID: ZTRDTUL87R
-    NSMicrophoneUsageDescription: OpenBot uses the microphone to transcribe voice prompts locally on this Mac.
+    NSMicrophoneUsageDescription: Spinbot uses the microphone to transcribe voice prompts locally on this Mac.
     # Computer Use runs the driver as a child process, so macOS asks for both grants in OpenBot's
     # name and shows these sentences. Under the hardened runtime, macOS shows the Automation prompt
     # only when the app has `com.apple.security.automation.apple-events` in its entitlements.
-    NSScreenCaptureUsageDescription: OpenBot captures the screen so an agent can see the app windows you ask it to control.
-    NSAppleEventsUsageDescription: OpenBot sends Automation events so an agent can control the apps you ask it to control.
+    NSScreenCaptureUsageDescription: Spinbot captures the screen so an agent can see the app windows you ask it to control.
+    NSAppleEventsUsageDescription: Spinbot sends Automation events so an agent can control the apps you ask it to control.
     NSUserActivityTypes:
       - NSUserActivityTypeBrowsingWeb
   # No `arch` here: a target's own `arch` list replaces the one given on the command line, so

@@ -3,7 +3,7 @@ import type { messages as source } from "../../en/error/backend";
 
 export const messages = {
   "error.backend.eventsUnavailable": "אירועים אינם זמינים במארח הזה.",
-  "error.backend.databaseIntegrity": "מסד הנתונים של OpenBot נכשל בבדיקת השלמות.",
+  "error.backend.databaseIntegrity": "מסד הנתונים של Spinbot נכשל בבדיקת השלמות.",
   "error.backend.webhookRouteLimit": "במארח אחד יכולות להיות לכל היותר {limit} שגרות webhook.",
   "error.backend.webhookSettingsInvalid": "יש לבדוק את הגדרות ה-webhook ולנסות שוב.",
   "error.backend.webhookSenderSecretInvalid":
@@ -16,8 +16,8 @@ export const messages = {
   "error.backend.browserViewLimit": "יותר מדי תצוגות דפדפן פתוחות במארח הזה.",
   "error.backend.browserViewEnded": "התצוגה החיה של הדף הזה הסתיימה.",
   "error.backend.browserViewFailed": "התצוגה החיה של הדף הזה נכשלה.",
-  "error.backend.windowTemporarilyUnavailable": "חלון OpenBot אינו זמין זמנית.",
-  "error.backend.windowUnavailable": "חלון OpenBot אינו זמין.",
+  "error.backend.windowTemporarilyUnavailable": "חלון Spinbot אינו זמין זמנית.",
+  "error.backend.windowUnavailable": "חלון Spinbot אינו זמין.",
   "error.backend.sunshineApiHttp": "ה-API של Sunshine נכשל עם HTTP {status}.",
   "error.backend.sunshinePortsUnavailable": "לא ניתן היה לשמור קבוצת יציאות פנויה של Sunshine עבור Remote Desktop.",
   "error.backend.moonlightPortsUnavailable":
@@ -33,7 +33,7 @@ export const messages = {
   "error.backend.moonlightRejectedPairing": "Moonlight דחה את הזיווג של Sunshine.",
   "error.backend.moonlightNoPin": "Moonlight לא החזיר PIN לזיווג.",
   "error.backend.moonlightPairingIncomplete": "הזיווג של Moonlight לא הושלם.",
-  "error.backend.moonlightWebNotEmbedded": "Moonlight Web אינו גרסה משובצת של OpenBot.",
+  "error.backend.moonlightWebNotEmbedded": "Moonlight Web אינו גרסה משובצת של Spinbot.",
   "error.backend.moonlightEmptyResponse": "Moonlight החזיר תשובה ריקה.",
   "error.backend.remoteDesktopTimeout": "פג הזמן של בקשת שולחן העבודה המרוחק.",
   "error.backend.moonlightApiHttp": "ה-API של Moonlight נכשל עם HTTP {status}.",
@@ -47,8 +47,8 @@ export const messages = {
   "error.backend.browserUserControlBusy": "לשונית הדפדפן הזו ממתינה לסוד. יש לענות קודם על בקשת הסוד.",
   "error.backend.browserUserControlUnsupported": "המארח המרוחק הזה אינו תומך בשליטה בלשונית דפדפן.",
   "error.backend.browserSignInUnsupported": "המארח המרוחק הזה אינו יכול לקבל התחברות מהמחשב הזה.",
-  "error.backend.browserSignInOpenFailed": "OpenBot לא הצליח לפתוח את חלון ההתחברות.",
-  "error.backend.browserSignInReadFailed": "OpenBot לא הצליח לקרוא את ההתחברות מהחלון.",
+  "error.backend.browserSignInOpenFailed": "Spinbot לא הצליח לפתוח את חלון ההתחברות.",
+  "error.backend.browserSignInReadFailed": "Spinbot לא הצליח לקרוא את ההתחברות מהחלון.",
   "error.backend.browserStopUnsupported": "המארח המרוחק הזה אינו יכול לעצור טעינת דף.",
   "error.backend.sharedDataLocalOnly": "נתונים משותפים מנוהלים במחשב שמריץ את הסוכנים האלה.",
   "error.backend.browserUrlProtocol": "מותר להשתמש רק בכתובות דפדפן של HTTP(S).",
@@ -56,15 +56,15 @@ export const messages = {
   "error.backend.sunshineNotReadyReason": "Sunshine לא הפך למוכן. {reason}",
   "error.backend.channelLeadModelUnavailable": "המודל של מוביל הערוץ אינו זמין.",
   "error.backend.contextCompactionIneffective":
-    "הדחיסה אינה מקטינה את הצ'אט הזה: אחרי שתי דחיסות הוא עדיין תופס {percent}% מחלון ההקשר של המודל, ולכן OpenBot מפסיק לדחוס אותו. כלים והנחיות תופסים את רוב החלון. יש לכבות את שרתי ה-MCP או את השליטה במחשב שהסוכן הזה לא צריך, או לבחור מודל עם חלון גדול יותר. אחר כך יש להתחיל צ'אט חדש.",
+    "הדחיסה אינה מקטינה את הצ'אט הזה: אחרי שתי דחיסות הוא עדיין תופס {percent}% מחלון ההקשר של המודל, ולכן Spinbot מפסיק לדחוס אותו. כלים והנחיות תופסים את רוב החלון. יש לכבות את שרתי ה-MCP או את השליטה במחשב שהסוכן הזה לא צריך, או לבחור מודל עם חלון גדול יותר. אחר כך יש להתחיל צ'אט חדש.",
   "error.backend.contextCompactionStopped":
-    "שתי דחיסות של הצ'אט הזה נכשלו ברצף, ולכן OpenBot מפסיק לדחוס אותו אוטומטית. כל ניסיון שולח את כל הצ'אט למודל וצורך ממגבלת התוכנית שלך. יש לבחור Compact now כדי לנסות שוב, או להתחיל צ'אט חדש.",
+    "שתי דחיסות של הצ'אט הזה נכשלו ברצף, ולכן Spinbot מפסיק לדחוס אותו אוטומטית. כל ניסיון שולח את כל הצ'אט למודל וצורך ממגבלת התוכנית שלך. יש לבחור Compact now כדי לנסות שוב, או להתחיל צ'אט חדש.",
   "error.backend.providerRetrying":
     "הספק נכשל בבקשה הזו {attempts} פעמים ומנסה שוב. אם הסוכן אינו ממשיך, יש לעצור את התור.",
   "error.backend.providerRetryingLargeContext":
-    "הספק נכשל בבקשה הזו {attempts} פעמים ומנסה שוב. הצ'אט הזה תופס {percent}% מחלון ההקשר של המודל. אם הסוכן אינו ממשיך, יש לעצור את התור: אז OpenBot ידחוס את הצ'אט לפני ההודעה הבאה.",
+    "הספק נכשל בבקשה הזו {attempts} פעמים ומנסה שוב. הצ'אט הזה תופס {percent}% מחלון ההקשר של המודל. אם הסוכן אינו ממשיך, יש לעצור את התור: אז Spinbot ידחוס את הצ'אט לפני ההודעה הבאה.",
   "error.backend.sharedDataUnavailable": "הנתונים המשותפים אינם זמינים.",
-  "error.backend.shuttingDown": "OpenBot נסגר.",
+  "error.backend.shuttingDown": "Spinbot נסגר.",
   "error.backend.channelUnconfirmedStart": "לערוץ יש התחלת הקצאה שלא אושרה. יש לבדוק את תוצאתה לפני המחיקה.",
   "error.backend.channelNotFound": "הערוץ לא נמצא.",
   "error.backend.channelMemberUnavailable": "חבר בערוץ אינו זמין.",
@@ -140,7 +140,7 @@ export const messages = {
   "error.backend.queueOrderStale": "סדר התור אינו מעודכן. יש לרענן את התור ולנסות שוב.",
   "error.backend.fileGone": "הקובץ אינו קיים או שכבר נמחק.",
   "error.backend.managedAttachmentChanged": "הקובץ המצורף המנוהל חסר או השתנה: {name}",
-  "error.backend.mailboxStateCorrupt": "מצב תיבת הדואר פגום או שייך לגרסה חדשה יותר של OpenBot; הוא לא יידרס.",
+  "error.backend.mailboxStateCorrupt": "מצב תיבת הדואר פגום או שייך לגרסה חדשה יותר של Spinbot; הוא לא יידרס.",
   "error.backend.recipientDeleting": "הנמען נמחק. יש לנסות שוב אחרי שהמחיקה תסתיים.",
   "error.backend.recipientHidden": "הסוכן הזה מוסתר. יש לשחזר אותו כדי לשלוח הודעות.",
   "error.backend.agentIdUnknown": "לאף סוכן אין את המזהה {id}. יש לקבל את המזהים מ-openbot.list_agents ולנסות שוב.",
@@ -153,7 +153,7 @@ export const messages = {
   "error.backend.attachmentNotFile": "הקובץ המצורף אינו קובץ: {path}",
   "error.backend.generatedImageTooLarge": "התמונה שנוצרה חורגת ממגבלת 100 MB.",
   "error.backend.attachmentNotRegularFile": "אפשר לצרף רק קבצים רגילים: {name}",
-  "error.backend.attachmentCopyFailed": "OpenBot לא הצליח להעתיק את {name}.",
+  "error.backend.attachmentCopyFailed": "Spinbot לא הצליח להעתיק את {name}.",
   "error.backend.routineNameRequired": "נדרש שם לשגרה.",
   "error.backend.routineNameTooLong": "שם השגרה ארוך מדי.",
   "error.backend.routineInstructionRequired": "נדרשת הוראה לשגרה.",
@@ -174,12 +174,12 @@ export const messages = {
   "error.backend.routineDeletionBusy": "מחיקה אחרת של שגרה כבר מתבצעת עבור הסוכן הזה.",
   "error.backend.routineWaitForAgent": "יש להמתין לסיום פעולת הסוכן לפני הרצת שגרה.",
   "error.backend.routineRunStarting": "הרצת השגרה הזו עדיין מתחילה. יש לנסות שוב אחרי שהתור שלה יתחיל.",
-  "error.backend.routineRunNoSession": "OpenBot אינו יכול להפסיק את הרצת השגרה הפעילה כי סשן הספק שלה אינו זמין.",
+  "error.backend.routineRunNoSession": "Spinbot אינו יכול להפסיק את הרצת השגרה הפעילה כי סשן הספק שלה אינו זמין.",
   "error.backend.interruptSelf": "סוכן אינו יכול להפסיק את עצמו.",
   "error.backend.interruptOtherWork":
     "הסוכן הזה עובד על משימה שההודעה שלך לא התחילה. רק המשתמש או שולח המשימה יכולים לעצור אותה.",
   "error.backend.interruptStarting": "הסוכן הזה עדיין מתחיל תור. יש לנסות שוב אחרי שהתור יתחיל.",
-  "error.backend.interruptNoSession": "OpenBot אינו יכול להפסיק את הסוכן הזה כי סשן הספק שלו אינו זמין.",
+  "error.backend.interruptNoSession": "Spinbot אינו יכול להפסיק את הסוכן הזה כי סשן הספק שלו אינו זמין.",
   "error.backend.memoryTextRequired": "נדרש טקסט לזיכרון.",
   "error.backend.memoryTextTooLong": "טקסט הזיכרון ארוך מדי.",
   "error.backend.mcpServerGone": "שרת ה-MCP הזה כבר אינו קיים.",
@@ -205,32 +205,32 @@ export const messages = {
   "error.backend.messageDeleteBusy": "ההודעה הזו היא חלק מתור שרץ. יש למחוק אותה כשהתור יסתיים.",
   "error.backend.messageDeleteForbidden": "אפשר למחוק רק הודעות ששלחת.",
   "error.backend.routineFlowHandoffFailed": "השגרה לא הצליחה להעביר את העבודה לסוכן הזה.",
-  "error.backend.mcpServerLimit": "OpenBot שומר עד {limit} שרתי MCP.",
+  "error.backend.mcpServerLimit": "Spinbot שומר עד {limit} שרתי MCP.",
   "error.backend.mcpServerNameTaken": "כבר קיים שרת MCP בשם {name}.",
-  "error.backend.mcpServerInvalid": "OpenBot אינו יכול לשמור את תצורת שרת ה-MCP הזו.",
+  "error.backend.mcpServerInvalid": "Spinbot אינו יכול לשמור את תצורת שרת ה-MCP הזו.",
   "error.backend.mcpServerNoAnswer": "השרת לא ענה תוך {seconds} שניות.",
   "error.backend.mcpSignInNotAccepted": "השרת לא קיבל את ההתחברות הזו.",
   "error.backend.mcpSignInClientRefused":
-    "שרת ההתחברות לא קיבל את OpenBot כשהתחברות הושלמה. יש להתחבר שוב: OpenBot ירשום את עצמו שוב בשרת.",
+    "שרת ההתחברות לא קיבל את Spinbot כשהתחברות הושלמה. יש להתחבר שוב: Spinbot ירשום את עצמו שוב בשרת.",
   "error.backend.mcpCommandNotFound": "הפקודה לא נמצאה: {command}",
   "error.backend.mcpRegistrationRefused":
-    "שרת ההתחברות עדיין אינו מקבל את OpenBot כאפליקציה. החשבון שלך אינו הסיבה. יש להשתמש בדרך חיבור אחרת, כמו שרת MCP מקומי.",
+    "שרת ההתחברות עדיין אינו מקבל את Spinbot כאפליקציה. החשבון שלך אינו הסיבה. יש להשתמש בדרך חיבור אחרת, כמו שרת MCP מקומי.",
   "error.backend.mcpSignInAbandonedGeneric": "ההתחברות ננטשה.",
   "error.backend.mcpSignInForgotten": "התחברות ה-MCP נשכחה בזמן שהיא רצה.",
   "error.backend.mcpSignInAbandoned": "התחברות ה-MCP ננטשה.",
   "error.backend.mcpSignInNoBrowser": "התחברות ה-MCP הזו אינה יכולה לפתוח דפדפן.",
   "error.backend.mcpSignInNotWebPage": "כתובת ההתחברות אינה דף אינטרנט.",
   "error.backend.mcpSignInRequired": "השרת הזה דורש התחברות. יש לבחור Sign in כדי להמשיך בדפדפן.",
-  "error.backend.mcpSignInOnHost": "השרת הזה דורש התחברות. יש להתחבר אליו ב-OpenBot במחשב המארח.",
+  "error.backend.mcpSignInOnHost": "השרת הזה דורש התחברות. יש להתחבר אליו ב-Spinbot במחשב המארח.",
   "error.backend.mcpSignInNeedsHttps":
-    "השרת הזה דורש התחברות, ו-OpenBot מתחבר רק דרך https. יש לשנות את הכתובת ל-{url}.",
+    "השרת הזה דורש התחברות, ו-Spinbot מתחבר רק דרך https. יש לשנות את הכתובת ל-{url}.",
   "error.backend.mcpSignInCancelled": "ההתחברות בוטלה.",
   "error.backend.mcpSignInTimedOut": "ההתחברות לא הושלמה בדפדפן.",
   "error.backend.mcpSignInResponseTimedOut": "תשובת ההתחברות לא הגיעה בזמן.",
   "error.backend.mcpSignInMetadataUnreadable":
-    "OpenBot לא הצליח לקרוא את פרטי ההתחברות של השרת הזה. יש לבדוק את כתובת השרת ולנסות שוב.",
+    "Spinbot לא הצליח לקרוא את פרטי ההתחברות של השרת הזה. יש לבדוק את כתובת השרת ולנסות שוב.",
   "error.backend.mcpSignInAnswerUnreadable":
-    "שרת ההתחברות שלח תשובה ש-OpenBot לא יכול לקרוא. אם השירות נותן לך מפתח API או טוקן, יש להוסיף אותו להגדרות של השרת הזה ולבדוק שוב את החיבור.",
+    "שרת ההתחברות שלח תשובה ש-Spinbot לא יכול לקרוא. אם השירות נותן לך מפתח API או טוקן, יש להוסיף אותו להגדרות של השרת הזה ולבדוק שוב את החיבור.",
   "error.backend.mcpServerExited": "השרת נעצר לפני שענה. יש להריץ את הפקודה במסוף כדי לראות את השגיאה שלו.",
   "error.backend.mcpServerFailedToStart": "השרת לא התחיל: {reason}",
   "error.backend.mcpServerSignInForProvider":
@@ -238,9 +238,9 @@ export const messages = {
   "error.backend.mcpServerFailedForProvider":
     "{provider} לא הצליח להפעיל את שרת ה-MCP {name}. יש לפתוח את הגדרות ה-MCP ולבחור Test connection כדי לראות את הסיבה.",
   "error.backend.mcpOAuthProxyUnavailable":
-    "OpenBot לא הצליח להפעיל את חיבור ההתחברות המקומי שלו עבור השרת הזה. יש להפעיל מחדש את OpenBot ולנסות שוב.",
-  "error.backend.mcpOAuthSignInNeeded": "ההתחברות לשרת ה-MCP הזה הסתיימה. המשתמש צריך להתחבר אליו שוב ב-OpenBot.",
-  "error.backend.mcpServerUnreachable": "OpenBot לא הצליח להגיע אל השרת. יש לבדוק את ה-URL ואת הרשת.",
+    "Spinbot לא הצליח להפעיל את חיבור ההתחברות המקומי שלו עבור השרת הזה. יש להפעיל מחדש את Spinbot ולנסות שוב.",
+  "error.backend.mcpOAuthSignInNeeded": "ההתחברות לשרת ה-MCP הזה הסתיימה. המשתמש צריך להתחבר אליו שוב ב-Spinbot.",
+  "error.backend.mcpServerUnreachable": "Spinbot לא הצליח להגיע אל השרת. יש לבדוק את ה-URL ואת הרשת.",
   "error.backend.mcpLocalServerOff":
     "אין שרת שעונה בכתובת {address} במחשב הזה. יש להפעיל את השרת, או להדליק אותו באפליקציה שמריצה אותו, ולנסות שוב.",
   "error.backend.mcpServerBlocked":
@@ -248,7 +248,7 @@ export const messages = {
   "error.backend.mcpServerIncompatible":
     "משהו ענה בכתובת הזו, אבל לא כשרת MCP דרך Streamable HTTP. יש לבדוק את ה-URL ולעדכן את האפליקציה שמריצה את השרת.",
   "error.backend.mcpRemoteBridge":
-    "{reason} הפקודה הזו מריצה את הגשר mcp-remote. במקום זאת יש לבחור Streamable HTTP עם ה-URL {url}, ו-OpenBot יתחבר בשבילך.",
+    "{reason} הפקודה הזו מריצה את הגשר mcp-remote. במקום זאת יש לבחור Streamable HTTP עם ה-URL {url}, ו-Spinbot יתחבר בשבילך.",
   "error.backend.oauthNotHttps": "נקודת הקצה של OAuth {origin} אינה https, ולכן פרטי הגישה לא נשלחו.",
   "error.backend.oauthTooManyRedirects": "נקודת הקצה של OAuth הפנתה יותר מדי פעמים.",
   "error.backend.oauthRedirectOrigin": "נקודת הקצה של OAuth הפנתה אל {origin}, ולכן פרטי הגישה לא הועברו.",
@@ -293,7 +293,7 @@ export const messages = {
   "error.backend.approvalOwnerOnly": "רק בעל השרת יכול לאשר את הפעולה הזו.",
   "error.backend.takeoverInactive": "השתלטות הדפדפן הזו אינה פעילה עוד.",
   "error.backend.authSubmitting": "שליחת האימות כבר מתבצעת.",
-  "error.backend.apiKeySaveFailed": "OpenBot לא הצליח לשמור את מפתח ה-API. יש לנסות שוב.",
+  "error.backend.apiKeySaveFailed": "Spinbot לא הצליח לשמור את מפתח ה-API. יש לנסות שוב.",
   "error.backend.apiKeyNotAllowed": "רק בעל השרת או מנהל יכולים להזין מפתח API.",
   "error.backend.apiKeySaving": "מפתח ה-API כבר נשמר.",
   "error.backend.vaultItemNotAllowed": "רק בעל השרת או מנהל יכולים להוסיף פריט לכספת.",
@@ -347,7 +347,7 @@ export const messages = {
   "error.backend.mcpSignInAppUrl": "אפליקציית ההתחברות דורשת כתובת שרת תקינה.",
   "error.backend.mcpSignInAppClientId": "יש להזין את מזהה הלקוח של אפליקציית ההתחברות.",
   "error.backend.mcpSignInAppIssuerChanged":
-    "שרת ההתחברות של שרת ה-MCP הזה השתנה, ולכן OpenBot לא שלח לו את אפליקציית ההתחברות. אם השינוי נכון, יש להסיר את אפליקציית ההתחברות ולהוסיף אותה שוב.",
+    "שרת ההתחברות של שרת ה-MCP הזה השתנה, ולכן Spinbot לא שלח לו את אפליקציית ההתחברות. אם השינוי נכון, יש להסיר את אפליקציית ההתחברות ולהוסיף אותה שוב.",
   "error.backend.mcpSignInAppNoServer": "יש לשמור את שרת ה-MCP הזה כשרת URL לפני הוספת אפליקציית התחברות.",
   "error.backend.mcpSignInAppUnavailable": "המחשב הזה אינו יכול לשמור אפליקציית התחברות.",
   "error.backend.taskMoveRefused": "רק הודעה ששלחת לסוכן הזה לבדו יכולה לרוץ כמשימה.",
@@ -373,5 +373,5 @@ export const messages = {
     "לסוכן הזה כבר יש {count} משימות שלא הסתיימו. יש להתחיל משימה נוספת כשאחת מהן תסתיים.",
   "error.backend.taskOpenLimitReached": "לסוכן הזה יש {count} משימות פתוחות. יש לסגור משימה ואז להתחיל או לפתוח אחרת.",
   "error.backend.taskRemoteUnsupported": "משימות זמינות רק לסוכנים שנמצאים במחשב הזה.",
-  "error.backend.taskStartFailed": "OpenBot לא הצליח להתחיל את המשימה. יש לבצע את העבודה בתור הזה במקום.",
+  "error.backend.taskStartFailed": "Spinbot לא הצליח להתחיל את המשימה. יש לבצע את העבודה בתור הזה במקום.",
 } as const satisfies PartialTranslation<typeof source>;

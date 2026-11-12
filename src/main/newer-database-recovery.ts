@@ -123,7 +123,7 @@ async function installLatest(updater: UpdateService, quit: { readonly chosen: bo
   const downloaded = nextPhase(updater, ["ready", "up-to-date", "unsupported", "error"]);
   // With automatic download on, the check starts the download of an available release.
   const checked = await Effect.runPromise(updater.checkForUpdates());
-  logger.info(`An older OpenBot started over newer data. Update check: ${checked.phase}.`);
+  logger.info(`An older Spinbot started over newer data. Update check: ${checked.phase}.`);
   if (checked.phase !== "available" && checked.phase !== "downloading" && checked.phase !== "ready") {
     downloaded.cancel();
     return;

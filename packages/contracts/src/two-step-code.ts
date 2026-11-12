@@ -105,7 +105,7 @@ export function normalizeTwoStepKey(text: string): string | null {
   if (parts.algorithm === "SHA-1" && parts.digits === DEFAULT_DIGITS && parts.period === DEFAULT_PERIOD)
     return parts.base32;
   const algorithm = parts.algorithm.replace("-", "");
-  return `otpauth://totp/OpenBot?secret=${parts.base32}&algorithm=${algorithm}&digits=${parts.digits}&period=${parts.period}`;
+  return `otpauth://totp/Spinbot?secret=${parts.base32}&algorithm=${algorithm}&digits=${parts.digits}&period=${parts.period}`;
 }
 
 /** The base32 key in a saved key text, for secret redaction. Null for no key. */

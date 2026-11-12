@@ -266,7 +266,7 @@ export const BROWSER_TOOL_DEFINITIONS = [
       submission: z
         .enum(["click", "enter", "on_input"])
         .describe(
-          "Use click with submitTarget when the page has a Continue, Verify, Next, or Sign in button, even if disabled before entry. OpenBot fills the fields then clicks that button. Use enter only for a form submitted by Enter. on_input ONLY fills fields; use it only when the site explicitly submits on the final digit without a button. It does not find or click a button.",
+          "Use click with submitTarget when the page has a Continue, Verify, Next, or Sign in button, even if disabled before entry. Spinbot fills the fields then clicks that button. Use enter only for a form submitted by Enter. on_input ONLY fills fields; use it only when the site explicitly submits on the final digit without a button. It does not find or click a button.",
         ),
       submitTarget: browserTargetSchema
         .optional()
@@ -279,33 +279,33 @@ export const BROWSER_TOOL_DEFINITIONS = [
         .max(INPUT_LIMITS.vaultLoginId)
         .optional()
         .describe(
-          "For password or authenticator: the id of a saved login from list_logins. OpenBot fills its password or current code without asking the user.",
+          "For password or authenticator: the id of a saved login from list_logins. Spinbot fills its password or current code without asking the user.",
         ),
       username: z
         .string()
         .max(VAULT_TEXT_LIMIT)
         .optional()
         .describe(
-          "For password without loginId: the username or email of this sign-in, as typed on the page. When the user saves the password in the OpenBot Vault from the card, the login gets this username.",
+          "For password without loginId: the username or email of this sign-in, as typed on the page. When the user saves the password in the Spinbot Vault from the card, the login gets this username.",
         ),
     },
   }),
   browserTool({
     name: "list_logins",
     description:
-      "List password manager and OpenBot Vault logins for the tab's HTTPS site: id, title, username and hasOneTimePassword. No passwords or codes. Type the username, then call submit_secret with loginId.",
+      "List password manager and Spinbot Vault logins for the tab's HTTPS site: id, title, username and hasOneTimePassword. No passwords or codes. Type the username, then call submit_secret with loginId.",
     shape: { tabId },
   }),
   browserTool({
     name: "list_vault_items",
     description:
-      "List what the user saved in the OpenBot Vault, not a password manager. A login shows id, website, username and hasTwoStepKey; its secrets and notes are never returned, so sign in with list_logins and submit_secret. A card shows id, label, nameOnCard, brand, last4, expiry and hasSecurityCode; its number and security code are never returned, so fill card fields with fill_card. A contact shows every field: type them with fill_fields, type, or select_option. addedBy, when present, names the agent that added the item.",
+      "List what the user saved in the Spinbot Vault, not a password manager. A login shows id, website, username and hasTwoStepKey; its secrets and notes are never returned, so sign in with list_logins and submit_secret. A card shows id, label, nameOnCard, brand, last4, expiry and hasSecurityCode; its number and security code are never returned, so fill card fields with fill_card. A contact shows every field: type them with fill_fields, type, or select_option. addedBy, when present, names the agent that added the item.",
     shape: {},
   }),
   browserTool({
     name: "save_vault_item",
     description:
-      "Add contact info or a login to the OpenBot Vault, or change a saved item. Without id, the item is new; a login needs website, username and password, and a saved login for that site and username gets it. With an id from list_vault_items (not list_logins), a login changes its username, password and twoStepKey, and a card only fields that are not secret. An omitted field keeps its value. Returns status, id, kind and name. Do not repeat a secret. A password or twoStepKey needs a request of a person in your OpenBot chat.",
+      "Add contact info or a login to the Spinbot Vault, or change a saved item. Without id, the item is new; a login needs website, username and password, and a saved login for that site and username gets it. With an id from list_vault_items (not list_logins), a login changes its username, password and twoStepKey, and a card only fields that are not secret. An omitted field keeps its value. Returns status, id, kind and name. Do not repeat a secret. A password or twoStepKey needs a request of a person in your Spinbot chat.",
     shape: {
       kind: z.enum(["contact", "login", "card"]),
       id: identifier.optional().describe("The item to change. Omit it to add a contact or a login."),
@@ -351,7 +351,7 @@ export const BROWSER_TOOL_DEFINITIONS = [
   browserTool({
     name: "delete_vault_item",
     description:
-      "Delete a login, card or contact from the OpenBot Vault by its id from list_vault_items (not from list_logins). A card that uses a deleted contact for billing keeps no billing address. This cannot be undone: ask first unless you added the item or the user asked for the delete.",
+      "Delete a login, card or contact from the Spinbot Vault by its id from list_vault_items (not from list_logins). A card that uses a deleted contact for billing keeps no billing address. This cannot be undone: ask first unless you added the item or the user asked for the delete.",
     shape: { id: identifier },
   }),
   browserTool({
@@ -582,7 +582,7 @@ export const BROWSER_DYNAMIC_TOOLS = [
   {
     type: "namespace" as const,
     name: OPENBOT_BROWSER_NAMESPACE,
-    description: "Operate OpenBot's private, persistent native Electron/CDP browser.",
+    description: "Operate Spinbot's private, persistent native Electron/CDP browser.",
     tools: BROWSER_TOOL_DEFINITIONS.map((definition) => ({
       type: "function" as const,
       name: definition.name,

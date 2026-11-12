@@ -10,12 +10,12 @@ export const messages = {
   "error.workflow.conditionBranch": "条件からの接続は、それぞれ「はい」か「いいえ」である必要があります。",
   "error.workflow.duplicateEdge": "この 2 つのステップにはすでにこの接続があります。",
   "error.workflow.serverTooOld":
-    "このサーバーはワークフローに対応していません。サーバーを実行しているコンピューターの OpenBot を更新してください。",
+    "このサーバーはワークフローに対応していません。サーバーを実行しているコンピューターの Spinbot を更新してください。",
   "error.workflow.nodeUnsupported":
-    "このバージョンの OpenBot では、画像、ファイル、メッセージのステップはまだ実行できません。",
-  "error.workflow.interrupted": "このステップの実行中に OpenBot が停止しました。もう一度実行してください。",
+    "このバージョンの Spinbot では、画像、ファイル、メッセージのステップはまだ実行できません。",
+  "error.workflow.interrupted": "このステップの実行中に Spinbot が停止しました。もう一度実行してください。",
   "error.workflow.agentMissing": "このステップのエージェントを選択してください。",
-  "error.workflow.handoffFailed": "OpenBot はこのステップをエージェントに送信できませんでした。",
+  "error.workflow.handoffFailed": "Spinbot はこのステップをエージェントに送信できませんでした。",
   "error.workflow.agentStepEnded": "エージェントが回答する前に、このステップのメッセージが削除されました。",
   "error.workflow.conditionUnclear": "モデルが「はい」か「いいえ」で回答しませんでした。",
   "error.workflow.modelFailed": "モデルが回答できませんでした。ステップをもう一度実行してください。",
@@ -28,7 +28,7 @@ export const messages = {
   "error.workflow.outputPlaceMissing": "この出力のメッセージングの投稿先を選んでください。",
   "error.workflow.outputChannelMissing": "この出力のチャンネルを選んでください。",
   "error.workflow.outputChannelFailed":
-    "OpenBot は結果をチャンネルに投稿できませんでした。ステップをもう一度実行してください。",
+    "Spinbot は結果をチャンネルに投稿できませんでした。ステップをもう一度実行してください。",
   "error.workflow.discordNoMessage":
     "この出力は実行を開始した Discord メッセージに対して動作します。Discord のメンションから実行を開始するか、「チャンネルに投稿」を選んでください。",
   "error.workflow.slackNoMessage":
@@ -39,7 +39,7 @@ export const messages = {
     "この出力のメッセージング接続はオフか、削除されています。投稿先をもう一度選んでください。",
   "error.workflow.outputNotRunning":
     "メッセージング接続は現在動作していません。動作しているときにもう一度試してください。",
-  "error.workflow.outputRefused": "投稿先が投稿を拒否しました。OpenBot がそこに投稿できることを確認してください。",
+  "error.workflow.outputRefused": "投稿先が投稿を拒否しました。Spinbot がそこに投稿できることを確認してください。",
   "error.workflow.outputUncertain":
     "投稿が途中で止まりました。一部がすでに投稿先にある可能性があります。もう一度試す前に確認してください。",
   "error.workflow.tooLarge":
@@ -61,12 +61,12 @@ export const messages = {
   "error.workflow.githubChoseNothing": "モデルはこのリポジトリのラベルもユーザーも選択しませんでした。",
   "error.workflow.githubNotConnected": "このワークフローを実行するコンピューターで GitHub に接続してください。",
   "error.workflow.githubNoAccess":
-    "OpenBot GitHub App はこのリポジトリまたは項目を参照できません。GitHub を開いてアクセスを許可してください。",
+    "Spinbot GitHub App はこのリポジトリまたは項目を参照できません。GitHub を開いてアクセスを許可してください。",
   "error.workflow.githubNoWrite":
-    "OpenBot GitHub App はこのリポジトリを変更できません。GitHub を開いてアクセスを許可してください。",
+    "Spinbot GitHub App はこのリポジトリを変更できません。GitHub を開いてアクセスを許可してください。",
   "error.workflow.githubLocked": "この会話は GitHub でロックされています。",
   "error.workflow.githubRefused": "GitHub が変更を拒否しました: {detail}",
-  "error.workflow.githubUnreachable": "OpenBot は GitHub に接続できませんでした。ステップをもう一度実行してください。",
+  "error.workflow.githubUnreachable": "Spinbot は GitHub に接続できませんでした。ステップをもう一度実行してください。",
   "error.workflow.githubUncertain":
     "変更が途中で止まりました。GitHub にすでに反映されている可能性があります。ステップを再実行する前に GitHub を確認してください。",
   "error.workflow.githubNoEvent": "このトリガーが開始する Issue またはプルリクエストが GitHub にありません。",

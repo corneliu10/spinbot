@@ -24,7 +24,7 @@ export const messages = {
   "marketplace.description.apps": "Conecte as ferramentas e os serviços com que seus agentes trabalham.",
   "marketplace.description.agents": "Agentes prontos, com instruções e habilidades próprias.",
   "marketplace.description.skills": "Instruções que ensinam a um agente uma tarefa ou uma ferramenta.",
-  "marketplace.plugins.missing": "Este plugin não está no catálogo do OpenBot.",
+  "marketplace.plugins.missing": "Este plugin não está no catálogo do Spinbot.",
   "marketplace.agents.loadingDetail": "Carregando detalhes do agente…",
   "marketplace.agents.skills": "Habilidades",
   "marketplace.agents.routines": "Rotinas",
@@ -34,15 +34,15 @@ export const messages = {
   "marketplace.agents.yours": "Seus agentes",
   "marketplace.agents.all": "Todos os agentes",
   "marketplace.agents.missing": "Este agente não está na loja.",
-  "marketplace.agents.trust.reviewed": "Criado por outro usuário do OpenBot. O OpenBot o revisou antes da publicação.",
+  "marketplace.agents.trust.reviewed": "Criado por outro usuário do Spinbot. O Spinbot o revisou antes da publicação.",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "Criado por outro usuário do OpenBot. O OpenBot o revisou antes da publicação. Depois de adicionado, ele pode agir em seu nome.",
-  "marketplace.agents.trust.pending": "Compartilhado pelo criador antes da revisão do OpenBot.",
+    "Criado por outro usuário do Spinbot. O Spinbot o revisou antes da publicação. Depois de adicionado, ele pode agir em seu nome.",
+  "marketplace.agents.trust.pending": "Compartilhado pelo criador antes da revisão do Spinbot.",
   "marketplace.agents.trust.pendingBeforeAdd":
-    "Compartilhado pelo criador antes da revisão do OpenBot. Depois de adicionado, ele pode agir em seu nome.",
+    "Compartilhado pelo criador antes da revisão do Spinbot. Depois de adicionado, ele pode agir em seu nome.",
   "marketplace.agents.source.pending": "Ainda não revisado",
   "marketplace.skill.loading": "Carregando habilidade",
-  "marketplace.try.readFailed": "O OpenBot não conseguiu ler as habilidades deste agente. Tente novamente.",
+  "marketplace.try.readFailed": "O Spinbot não conseguiu ler as habilidades deste agente. Tente novamente.",
   "marketplace.try.enable": "Ative esta habilidade nas configurações do agente para testá-la.",
   "marketplace.try.repair": "Repare esta habilidade nas configurações do agente para testá-la.",
   "marketplace.try.update": "Atualize esta habilidade para testar esta versão.",
@@ -113,24 +113,24 @@ export const messages = {
   "marketplace.app.setup.account": "Entre com sua conta do {name} no navegador.",
   "marketplace.app.setup.key": "Precisa de uma chave de API da sua conta do {name}.",
   "marketplace.app.setup.keySaved": "{field} fica em {host}.",
-  "marketplace.app.account.removeDescription": "O OpenBot apaga o login desta conta em {host}.",
+  "marketplace.app.account.removeDescription": "O Spinbot apaga o login desta conta em {host}.",
   "marketplace.app.setup.desktop": "Roda no app para desktop do {name} em {address}.",
   "marketplace.app.setup.desktopConnected": "Conectado a {address}.",
   "marketplace.app.setup.open": "Não precisa de login nem de chave.",
   "marketplace.app.blocked.update":
-    "{host} usa uma versão antiga do OpenBot que não consegue conectar apps. Atualize o OpenBot em {host} ou peça ao dono para atualizar.",
+    "{host} usa uma versão antiga do Spinbot que não consegue conectar apps. Atualize o Spinbot em {host} ou peça ao dono para atualizar.",
   "marketplace.app.blocked.member":
-    "Só um dono ou administrador de {host} pode conectar apps lá. Peça a um deles para conectar {name} ou para atualizar o OpenBot em {host}, para que membros possam conectar apps.",
+    "Só um dono ou administrador de {host} pode conectar apps lá. Peça a um deles para conectar {name} ou para atualizar o Spinbot em {host}, para que membros possam conectar apps.",
   "marketplace.app.connectAgain": "Conectar de novo",
   "marketplace.app.automation.askOnInstall": "Pedir acesso ao macOS na instalação",
   "marketplace.app.automation.title": "Acesso aos apps da Apple",
   "marketplace.app.automation.description":
     "O macOS mostra um pedido para cada app. Um app fechado abre por um momento e depois fecha.",
   "marketplace.app.automation.request": "Pedir acesso",
-  "marketplace.app.automation.allowed": "Agora o OpenBot pode controlar todos os apps da Apple.",
+  "marketplace.app.automation.allowed": "Agora o Spinbot pode controlar todos os apps da Apple.",
   "marketplace.app.automation.refused":
-    "O macOS não deu acesso a {apps}. Permita o OpenBot em Ajustes do Sistema › Privacidade e Segurança › Automação.",
-  "marketplace.app.automation.failed": "O OpenBot não conseguiu perguntar ao macOS sobre {apps}. Tente de novo.",
+    "O macOS não deu acesso a {apps}. Permita o Spinbot em Ajustes do Sistema › Privacidade e Segurança › Automação.",
+  "marketplace.app.automation.failed": "O Spinbot não conseguiu perguntar ao macOS sobre {apps}. Tente de novo.",
   "marketplace.app.automation.app.calendar": "Calendário",
   "marketplace.app.automation.app.contacts": "Contatos",
   "marketplace.app.automation.app.mail": "Mail",
@@ -190,7 +190,7 @@ export const messages = {
   "marketplace.plugin.cobrain.prompt.saveNote": "Salve uma nota no Cobrain com o que fizemos hoje e o que falta.",
   "marketplace.plugin.honcho.tagline": "Sua memória em todas as ferramentas de IA",
   "marketplace.plugin.honcho.description":
-    "O Honcho, da Plastic Labs, dá aos agentes uma memória de longo prazo sobre você que outras ferramentas de IA conectadas podem compartilhar. Os agentes salvam o que aprendem, e o Honcho raciocina sobre isso para criar um modelo das suas preferências, objetivos e formas de trabalhar. Os agentes fazem perguntas a ele antes de começar. Os agentes do OpenBot também têm sua própria memória; o Honcho é a memória que acompanha você em outras ferramentas. As mensagens que os agentes salvam vão para sua conta do Honcho.",
+    "O Honcho, da Plastic Labs, dá aos agentes uma memória de longo prazo sobre você que outras ferramentas de IA conectadas podem compartilhar. Os agentes salvam o que aprendem, e o Honcho raciocina sobre isso para criar um modelo das suas preferências, objetivos e formas de trabalhar. Os agentes fazem perguntas a ele antes de começar. Os agentes do Spinbot também têm sua própria memória; o Honcho é a memória que acompanha você em outras ferramentas. As mensagens que os agentes salvam vão para sua conta do Honcho.",
   "marketplace.plugin.honcho.app":
     "Salve e consulte memória de longo prazo nos seus espaços de trabalho do Honcho por um único servidor MCP.",
   "marketplace.plugin.honcho.prompt.recall":
@@ -201,7 +201,7 @@ export const messages = {
   "marketplace.plugin.honcho.hint.apiKey": "Crie uma chave em app.honcho.dev.",
   "marketplace.plugin.hindsight.tagline": "Memória que aprende com o tempo",
   "marketplace.plugin.hindsight.description":
-    "O Hindsight, da Vectorize, dá aos agentes uma memória de longo prazo no Hindsight Cloud. Os agentes retêm fatos e eventos, recuperam-nos por significado, tempo e entidade, e refletem sobre eles para formar modelos mentais. As memórias ficam em bancos, e os agentes podem criar um banco para cada projeto ou pessoa. Os agentes do OpenBot também têm sua própria memória; o Hindsight é a memória que outras ferramentas de IA conectadas podem compartilhar. O que os agentes retêm vai para sua conta do Hindsight Cloud.",
+    "O Hindsight, da Vectorize, dá aos agentes uma memória de longo prazo no Hindsight Cloud. Os agentes retêm fatos e eventos, recuperam-nos por significado, tempo e entidade, e refletem sobre eles para formar modelos mentais. As memórias ficam em bancos, e os agentes podem criar um banco para cada projeto ou pessoa. Os agentes do Spinbot também têm sua própria memória; o Hindsight é a memória que outras ferramentas de IA conectadas podem compartilhar. O que os agentes retêm vai para sua conta do Hindsight Cloud.",
   "marketplace.plugin.hindsight.app":
     "Retenha, recupere e reflita sobre memórias nos seus bancos do Hindsight Cloud por um único servidor MCP.",
   "marketplace.plugin.hindsight.prompt.recall":
@@ -222,7 +222,7 @@ export const messages = {
   "marketplace.plugin.figma.prompt.assets": "Extraia os ícones de marketing em 2x para o pacote do app.",
   "marketplace.plugin.paper.tagline": "Canvas de design construído em HTML e CSS",
   "marketplace.plugin.paper.description":
-    "O Paper permite que agentes leiam e escrevam o arquivo de design aberto no Paper Desktop: inspecionar artboards, seleções, estilos computados, JSX e tokens, e criar ou mudar frames, textos e estilos. Instale o Paper Desktop, abra-o uma vez e abra um arquivo antes de começar. O OpenBot inicia a CLI do Paper que o Paper Desktop instala. O Paper não precisa de chave. As ferramentas de escrita alteram o arquivo aberto, então revise cada escrita antes de aprová-la.",
+    "O Paper permite que agentes leiam e escrevam o arquivo de design aberto no Paper Desktop: inspecionar artboards, seleções, estilos computados, JSX e tokens, e criar ou mudar frames, textos e estilos. Instale o Paper Desktop, abra-o uma vez e abra um arquivo antes de começar. O Spinbot inicia a CLI do Paper que o Paper Desktop instala. O Paper não precisa de chave. As ferramentas de escrita alteram o arquivo aberto, então revise cada escrita antes de aprová-la.",
   "marketplace.plugin.paper.app":
     "Lê e escreve o arquivo aberto do Paper Desktop, através do servidor MCP local que a CLI do Paper retransmite. Precisa do Paper Desktop com um arquivo aberto.",
   "marketplace.plugin.paper.prompt.implement":
@@ -251,7 +251,7 @@ export const messages = {
     "Resuma as últimas dez conversas do meu agente de voz de suporte.",
   "marketplace.plugin.appleApps.tagline": "Mail, Calendário e mais no seu Mac",
   "marketplace.plugin.appleApps.description":
-    "Apple apps permite que agentes usem Mail, Calendário, Contatos, Lembretes, Notas, Mensagens e Safari neste Mac. Funciona somente no macOS. O OpenBot inicia o mcp-icloud, um servidor da comunidade que não é feito pela Apple nem pelo OpenBot. O servidor controla os apps com AppleScript, neste computador, e não precisa de conta nem de chave. Na instalação, o OpenBot pode pedir ao macOS acesso a todos esses apps de uma vez, com um pedido para cada app. Se você não fizer isso, o macOS pergunta na primeira vez que um agente usa um app. Para mudar isso depois, abra Ajustes do Sistema › Privacidade e Segurança › Automação. Os agentes podem enviar e-mails e iMessages, e alterar ou excluir eventos, contatos e lembretes, então revise cada gravação antes de aprová-la. O que as ferramentas leem, como o texto dos e-mails, vai para o provedor do modelo do agente.",
+    "Apple apps permite que agentes usem Mail, Calendário, Contatos, Lembretes, Notas, Mensagens e Safari neste Mac. Funciona somente no macOS. O Spinbot inicia o mcp-icloud, um servidor da comunidade que não é feito pela Apple nem pelo Spinbot. O servidor controla os apps com AppleScript, neste computador, e não precisa de conta nem de chave. Na instalação, o Spinbot pode pedir ao macOS acesso a todos esses apps de uma vez, com um pedido para cada app. Se você não fizer isso, o macOS pergunta na primeira vez que um agente usa um app. Para mudar isso depois, abra Ajustes do Sistema › Privacidade e Segurança › Automação. Os agentes podem enviar e-mails e iMessages, e alterar ou excluir eventos, contatos e lembretes, então revise cada gravação antes de aprová-la. O que as ferramentas leem, como o texto dos e-mails, vai para o provedor do modelo do agente.",
   "marketplace.plugin.appleApps.app":
     "Mail, Calendário, Contatos, Lembretes, Notas, Mensagens e Safari, pelo servidor local mcp-icloud. Requer macOS e acesso em Automação.",
   "marketplace.plugin.appleApps.prompt.unread": "Resuma meus e-mails não lidos de hoje no Apple Mail.",
@@ -533,8 +533,8 @@ export const messages = {
   "marketplace.skills.source.all": "Todas",
   "marketplace.skills.source.verified": "Verificadas",
   "marketplace.skills.source.public": "Públicas",
-  "marketplace.skills.source.verifiedLong": "Verificada pelo OpenBot",
-  "marketplace.skills.source.publicLong": "Revisada pelo OpenBot",
+  "marketplace.skills.source.verifiedLong": "Verificada pelo Spinbot",
+  "marketplace.skills.source.publicLong": "Revisada pelo Spinbot",
   "marketplace.skills.sortLabel": "Ordenar",
   "marketplace.skills.sortName": "Ordenar: {name}",
   "marketplace.skills.sort.installs": "Mais usadas",

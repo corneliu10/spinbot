@@ -27,7 +27,7 @@ export const messages = {
   "error.agent.promptAnswersTooLong": "الإجابات على المطالبة طويلة جدًا.",
   "error.agent.gone": "لم يعد هذا الوكيل موجودًا.",
   "error.agent.instructionsTooLarge": "ملف التعليمات أكبر من أن يُفتح هنا. اختصره في محرر نصوص.",
-  "error.agent.instructionsOutside": "يرتبط ملف التعليمات بمكان خارج مساحة العمل للوكيل، لذا لا يفتحه OpenBot.",
+  "error.agent.instructionsOutside": "يرتبط ملف التعليمات بمكان خارج مساحة العمل للوكيل، لذا لا يفتحه Spinbot.",
   "error.agent.instructionsReadFailed": "تعذّرت قراءة ملف التعليمات.",
   "error.agent.instructionsSaveFailed": "تعذّر حفظ ملف التعليمات.",
   "error.agent.profileGenerationBusy": "إنشاء الملف التعريفي مشغول. أعد المحاولة بعد قليل.",
@@ -68,14 +68,14 @@ export const messages = {
   "error.agent.hostLimit": "يمكن أن يكون للمضيف {limit} وكيل كحد أقصى.",
   "error.agent.changedWhileDuplicating": "تغيّر الوكيل أثناء تكراره. أعد المحاولة.",
   "error.agent.duplicatedAgentGone": "لم يعد الوكيل المكرَّر موجودًا.",
-  "error.agent.stateCorrupt": "حالة الوكيل تالفة أو من نسخة أحدث من OpenBot؛ لن تتم الكتابة فوقها.",
+  "error.agent.stateCorrupt": "حالة الوكيل تالفة أو من نسخة أحدث من Spinbot؛ لن تتم الكتابة فوقها.",
   "error.agent.oldRoleField":
-    "تستخدم الملفات التعريفية المخزّنة للوكلاء حقل الدور القديم؛ حدّث البيانات قبل تشغيل OpenBot.",
+    "تستخدم الملفات التعريفية المخزّنة للوكلاء حقل الدور القديم؛ حدّث البيانات قبل تشغيل Spinbot.",
   "error.agent.duplicateIds": "تحتوي حالة الوكلاء على معرّفات وكلاء مكررة؛ لن تتم الكتابة فوقها.",
-  "error.agent.copyNameFailed": "تعذّر على OpenBot إنشاء اسم فريد لنسخة الوكيل.",
+  "error.agent.copyNameFailed": "تعذّر على Spinbot إنشاء اسم فريد لنسخة الوكيل.",
   "error.agent.endpointRemoved": "أُزيلت نقطة النهاية التي استخدمها هذا الوكيل. اختر نموذجًا آخر له.",
   "error.agent.turnStalled":
-    "توقّف {provider} عن الاستجابة، لذا أنهى OpenBot هذا الدور. أرسل الرسالة مرة أخرى، أو اختر نموذجًا آخر.",
+    "توقّف {provider} عن الاستجابة، لذا أنهى Spinbot هذا الدور. أرسل الرسالة مرة أخرى، أو اختر نموذجًا آخر.",
   "error.agent.compactionConnectionLost":
     "توقف الاتصال أثناء ضغط الوكيل لسياقه، لذلك توقفت المهمة. تحقق من اتصالك بالإنترنت، ثم أرسل رسالة للمتابعة.",
   "error.agent.selectedGone": "لم يعد الوكيل المحدد موجودًا.",
@@ -96,9 +96,9 @@ export const messages = {
   "error.agent.saveOtherAgent": "عملية الحفظ هذه تخص وكيلًا آخر.",
   "error.agent.savedGone": "لم يعد الوكيل المحفوظ موجودًا.",
   "error.agent.storedProfileUnreadable":
-    "يحتوي ملف تعريفي مخزّن لوكيل على قيمة «{field}» غير مقروءة؛ حدّث البيانات قبل تشغيل OpenBot.",
+    "يحتوي ملف تعريفي مخزّن لوكيل على قيمة «{field}» غير مقروءة؛ حدّث البيانات قبل تشغيل Spinbot.",
   "error.agent.storedProfileUnreadableId":
-    "يحتوي الملف التعريفي المخزّن للوكيل {id} على قيمة «{field}» غير مقروءة؛ حدّث البيانات قبل تشغيل OpenBot.",
+    "يحتوي الملف التعريفي المخزّن للوكيل {id} على قيمة «{field}» غير مقروءة؛ حدّث البيانات قبل تشغيل Spinbot.",
   "error.agent.queueEditRejected": "رُفض تعديل قائمة الانتظار: {reason}",
   "error.agent.computerUseLocalOnly": "لا يمكن تغيير التحكم في الحاسوب إلا على الحاسوب الذي يشغّل الوكيل.",
   "error.agent.automationLocalOnly": "لا يمكن السماح بالسكربتات المحلية إلا على الحاسوب الذي يشغّل الوكيل.",
@@ -126,7 +126,7 @@ export const messages = {
     "ذاكرة هذا الخادم منخفضة. تنتظر رسالتك في قائمة الانتظار وتبدأ عند توفر الذاكرة. تمنح الخطة الأكبر الخادمَ ذاكرة أكثر.",
   "error.agent.lowMemoryServer": "ذاكرة هذا الخادم منخفضة. تنتظر رسالتك في قائمة الانتظار وتبدأ عند توفر الذاكرة.",
   "error.agent.workspaceOnlyToolMissing":
-    "يحتاج خيار «مساحة العمل فقط» إلى {tool}، ولم يجده OpenBot. ثبّته، أو اختر الوصول الكامل في إعدادات الوكيل.",
+    "يحتاج خيار «مساحة العمل فقط» إلى {tool}، ولم يجده Spinbot. ثبّته، أو اختر الوصول الكامل في إعدادات الوكيل.",
   "error.agent.claudeSandboxUnavailable":
     "يحتاج خيار «مساحة العمل فقط» إلى بيئة Claude المعزولة، ولا يستطيع Claude تشغيلها على هذا الحاسوب: {reason}. اختر الوصول الكامل أو مزوّدًا آخر في إعدادات الوكيل.",
   "error.agent.screenCaptureOff":
@@ -147,7 +147,7 @@ export const messages = {
   "error.agent.screenCaptureRegionOutside":
     "المنطقة ليست داخل شاشة واحدة. استخدم نقاط سطح المكتب داخل حدود شاشة واحدة من list_capture_sources.",
   "error.agent.screenCapturePermissionMissing":
-    "لا يملك OpenBot إذن «تسجيل الشاشة». اطلب من المستخدم فتح System Settings > Privacy & Security > Screen & System Audio Recording، وتشغيل OpenBot، ثم إنهاء OpenBot وفتحه مرة أخرى.",
+    "لا يملك Spinbot إذن «تسجيل الشاشة». اطلب من المستخدم فتح System Settings > Privacy & Security > Screen & System Audio Recording، وتشغيل Spinbot، ثم إنهاء Spinbot وفتحه مرة أخرى.",
   "error.agent.screenCaptureEmptyWindows":
     "أعاد Windows صورة فارغة. اطلب من المستخدم إلغاء قفل الحاسوب وإغلاق المحتوى المحمي. يمكن أيضًا لسياسة المؤسسة إيقاف التقاط الشاشة.",
   "error.agent.screenCaptureFailed": "فشل التقاط الشاشة. أعد المحاولة.",

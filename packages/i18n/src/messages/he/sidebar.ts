@@ -130,7 +130,7 @@ export const messages = {
   "sidebar.delete.pending": "מוחק…",
   "sidebar.delete.title": "למחוק את {name}?",
   "sidebar.delete.agentDescription":
-    "הפעולה מסירה מהאפליקציה את הסוכן ואת שיחת OpenBot שלו. התור, הזיכרונות, השגרות וסביבת העבודה שלו נמחקים. היסטוריה שנשמרת בנפרד אצל ספק ה-CLI המחובר אינה נמחקת.",
+    "הפעולה מסירה מהאפליקציה את הסוכן ואת שיחת Spinbot שלו. התור, הזיכרונות, השגרות וסביבת העבודה שלו נמחקים. היסטוריה שנשמרת בנפרד אצל ספק ה-CLI המחובר אינה נמחקת.",
   "sidebar.delete.channelDescription":
     "הפעולה עוצרת את הערוץ. ההיסטוריה שלו נשארת בערוצים שנמחקו לצפייה בלבד. אפשר לשחזר אותו משם. הסוכנים החברים בו נשמרים.",
   "sidebar.delete.sectionDescription": "הצ'אטים והתיקיות שבתיקייה הזו עולים רמה אחת. אף סוכן או ערוץ לא נמחקים.",
@@ -143,7 +143,7 @@ export const messages = {
   "sidebar.announce.movedPinned": "הצ'אט המוצמד הועבר למיקום {position} מתוך {total}.",
   "sidebar.announce.personFallback": "אדם",
   "sidebar.announce.chatFallback": "צ'אט",
-  "sidebar.mobileApp.title": "OpenBot לנייד",
+  "sidebar.mobileApp.title": "Spinbot לנייד",
   "sidebar.mobileApp.body": "האפליקציה זמינה כעת ב-iPhone וב-Android.",
   "sidebar.mobileApp.howToInstall": "איך מתקינים",
   "sidebar.mobileApp.dismiss": "סגירת ההודעה על אפליקציית הנייד",
@@ -167,6 +167,6 @@ export const messages = {
   "sidebar.community.title": "מתיישבים לידנו.",
   "sidebar.community.body": "יש לך מקום בעתיד של הבינה המלאכותית. מצטרפים לקהילה ב-Discord וב-X.",
   "sidebar.community.joinDiscord": "הצטרפות ל-Discord",
-  "sidebar.community.followX": "מעקב אחרי OpenBot ב-X",
+  "sidebar.community.followX": "מעקב אחרי Spinbot ב-X",
   "sidebar.community.dismiss": "סגירת ההזמנה לקהילה",
 } as const satisfies PartialTranslation<typeof source>;

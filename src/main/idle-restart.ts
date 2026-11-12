@@ -127,7 +127,7 @@ export class IdleRestart {
     this.#publish({ ...status, waitingFor: [] });
     this.#keepHold();
     if (status.target === "relaunch") {
-      this.#log("Restarting OpenBot: no work runs.");
+      this.#log("Restarting Spinbot: no work runs.");
       this.#relaunch();
       return;
     }

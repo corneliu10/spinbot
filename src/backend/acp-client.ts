@@ -407,7 +407,7 @@ export const OPENBOT_ACP_CLIENT_CAPABILITIES = {
   session: { configOptions: { boolean: {} } },
 } as const;
 
-export const OPENBOT_ACP_CLIENT_INFO = { name: "openbot", title: "OpenBot", version: "0.1.0" } as const;
+export const OPENBOT_ACP_CLIENT_INFO = { name: "openbot", title: "Spinbot", version: "0.1.0" } as const;
 
 export interface AcpProviderOptions {
   provider: AgentProvider;
@@ -1696,7 +1696,7 @@ export class AcpAgentClient extends EventEmitter<ClientEvents> {
                   Effect.sync(() =>
                     this.emit(
                       "diagnostic",
-                      this.#redact(`OpenBot could not turn on its ${this.#label} MCP servers: ${error}`),
+                      this.#redact(`Spinbot could not turn on its ${this.#label} MCP servers: ${error}`),
                     ),
                   ),
                 ),
@@ -2469,7 +2469,7 @@ export class AcpAgentClient extends EventEmitter<ClientEvents> {
         // As after any request that timed out, a process that does not answer a probe is ended.
         if (resumed.failure.cause instanceof TimeoutError)
           yield* Effect.forkIn(this.#endIfUnresponsive(thread), this.#scope);
-        logger.warn("OpenBot ended a turn whose prompt got no update.", {
+        logger.warn("Spinbot ended a turn whose prompt got no update.", {
           provider: this.provider,
           reason: this.#redact(failureText(resumed.failure.cause)),
         });
@@ -2528,13 +2528,13 @@ export class AcpAgentClient extends EventEmitter<ClientEvents> {
     const transport = this.#threads.get(sessionId)?.transport ?? this.#transport;
     const discarded = yield* Effect.result(transport.run(lostTurns.discard(sessionId), this.#requestTimeoutMs));
     if (Result.isFailure(discarded)) {
-      logger.warn("OpenBot could not discard the turns that an ACP agent lost.", {
+      logger.warn("Spinbot could not discard the turns that an ACP agent lost.", {
         provider: this.provider,
         reason: this.#redact(failureText(discarded.failure.cause)),
       });
       return false;
     }
-    logger.info("OpenBot discarded the turns that an ACP agent lost.", { provider: this.provider });
+    logger.info("Spinbot discarded the turns that an ACP agent lost.", { provider: this.provider });
     return true;
   });
 
@@ -3548,7 +3548,7 @@ export class AcpAgentClient extends EventEmitter<ClientEvents> {
       .call("item/tool/call", params, signal)
       .pipe(toProviderClientOperationError);
     if (!isDynamicToolResult(result))
-      return yield* providerFailure(new Error("OpenBot returned an invalid dynamic tool result."));
+      return yield* providerFailure(new Error("Spinbot returned an invalid dynamic tool result."));
     return yield* providerSync(() => result);
   });
 

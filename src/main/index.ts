@@ -309,9 +309,9 @@ if (commandLineUserDataDirectory) {
     ),
   );
 }
-app.setName("OpenBot");
+app.setName("Spinbot");
 app.enableSandbox();
-if (process.platform === "win32") app.setAppUserModelId("app.openbot.desktop");
+if (process.platform === "win32") app.setAppUserModelId("app.spinbot.desktop");
 // Linux: on Wayland, Chromium waits until a monitor is on before it starts. With none, start again on
 // XWayland. Before the single-instance lock, so that the new process can take it. A parent process or
 // systemd watches the process, the output and the input of a headless server, so it does not restart.
@@ -358,7 +358,7 @@ if (hasSingleInstanceLock) {
     const attempts = startAttempts.summary();
     if (attempts.consecutiveFailures > 0)
       logger.warn(
-        `OpenBot ${attempts.appVersion} did not finish its start ${attempts.consecutiveFailures} times in a row (previous start: ${attempts.previousOutcome}, last failure: ${attempts.lastFailure ?? "none"}).`,
+        `Spinbot ${attempts.appVersion} did not finish its start ${attempts.consecutiveFailures} times in a row (previous start: ${attempts.previousOutcome}, last failure: ${attempts.lastFailure ?? "none"}).`,
       );
     // After crashes at launch, AppKit asks before `ready` whether to reopen the windows, and its
     // modal alert stops the start until someone answers. OpenBot restores no macOS window state.
@@ -372,9 +372,9 @@ if (hasSingleInstanceLock) {
   // A file request that never finishes must not keep the process and its lock after an exit.
   stopStuckExitAfterLimit(join(app.getPath("userData"), "logs"));
   if (startedOnXWayland === "monitor")
-    logger.warn("The Wayland session had no monitor, so OpenBot uses XWayland until the next start.");
+    logger.warn("The Wayland session had no monitor, so Spinbot uses XWayland until the next start.");
   if (startedOnXWayland === "above-apps")
-    logger.info("The agent dock or the Dynamic Island shows above other apps, so OpenBot uses XWayland.");
+    logger.info("The agent dock or the Dynamic Island shows above other apps, so Spinbot uses XWayland.");
 }
 // Linux: the GPU stays on until it fails on this computer (#992). `userData` has its final path here.
 configureLinuxGpu({
@@ -1108,7 +1108,7 @@ function requestDesktopNotificationPermission(
       preference,
       showWelcome: () => {
         if (!Notification.isSupported()) return;
-        showRetainedNotification(new Notification({ title: "OpenBot", body: translate("notification.welcome") }));
+        showRetainedNotification(new Notification({ title: "Spinbot", body: translate("notification.welcome") }));
       },
     }),
   );
@@ -1126,11 +1126,11 @@ async function recoverFromStartLoop(): Promise<StartRecovery | "quit" | null> {
   const summary = startAttempts.summary();
   if (serverMode || hostedServer) {
     logger.warn(
-      `OpenBot ${summary.appVersion} is in a start loop. A server shows no recovery window and starts again.`,
+      `Spinbot ${summary.appVersion} is in a start loop. A server shows no recovery window and starts again.`,
     );
     return null;
   }
-  logger.warn(`OpenBot ${summary.appVersion} is in a start loop. Showing the recovery window.`);
+  logger.warn(`Spinbot ${summary.appVersion} is in a start loop. Showing the recovery window.`);
   // The saved language is in the database, which this window must not need.
   const locale = resolveLocale("system", app.getLocale());
   const recovery = openStartRecoveryWindow({ summary, locale, translate: translateFor(locale), iconPath: appIconPath });
@@ -1159,8 +1159,8 @@ async function presentApplication(): Promise<void> {
     process.platform === "linux" ||
     ((process.platform === "darwin" || process.platform === "win32") && app.isPackaged)
   ) {
-    if (!app.setAsDefaultProtocolClient("openbot")) {
-      logger.warn("Unable to register the openbot:// scheme. Invitation links will not open OpenBot.");
+    if (!app.setAsDefaultProtocolClient("spinbot")) {
+      logger.warn("Unable to register the spinbot:// scheme. Links will not open Spinbot.");
     }
   }
 }
@@ -1664,7 +1664,7 @@ if (!hasSingleInstanceLock) {
       // the process still holds the single-instance lock. Exit now, not at the install deadline.
       updater.on("status", (status) => {
         if (!shutdownStarted || status.errorCode !== "install_failed") return;
-        logger.error("OpenBot update install failed after shutdown preparation and will exit now.");
+        logger.error("Spinbot update install failed after shutdown preparation and will exit now.");
         app.exit(0);
       });
       built.requestedUpdate.on("preference", forwardUpdatePreference);
@@ -1710,7 +1710,7 @@ if (!hasSingleInstanceLock) {
           })
         ) {
           void runCauseEffect(built.centralAuthInitialization.pipe(Effect.flatMap(() => host.start(true)))).catch(
-            (error) => logger.error("Unable to republish this OpenBot:", toLogValue(error)),
+            (error) => logger.error("Unable to republish this Spinbot:", toLogValue(error)),
           );
         }
       };
@@ -1930,7 +1930,7 @@ if (!hasSingleInstanceLock) {
       }
       // The Windows error box ends the text at a NUL character, so control characters are replaced.
       const message = (error instanceof Error ? error.message : String(error)).replace(/[^\P{Cc}\n\t]/gu, "�");
-      logger.error("OpenBot failed to start:", toLogValue(error));
+      logger.error("Spinbot failed to start:", toLogValue(error));
       // Data that a newer version saved has its own recovery, and a new release ends that loop.
       if (!(error instanceof NewerDatabaseError)) startAttempts?.failed("error");
       // A server has nobody at its virtual display to close the box, and the box blocks the quit. A
@@ -2015,7 +2015,7 @@ const SHUTDOWN_DEADLINE_MS = 30_000;
 
 function forceExitAfterShutdownDeadline(deadlineMs: number): void {
   setTimeout(() => {
-    logger.error(`OpenBot did not quit within ${deadlineMs} ms and will exit now.`);
+    logger.error(`Spinbot did not quit within ${deadlineMs} ms and will exit now.`);
     runMarker?.quitTimedOut();
     app.exit(0);
   }, deadlineMs);

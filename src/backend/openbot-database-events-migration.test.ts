@@ -18,7 +18,7 @@ afterEach(async () => {
   await Promise.all(roots.splice(0).map((root) => rm(root, { recursive: true, force: true })));
 });
 
-describe("OpenBot webhook routine migration", () => {
+describe("Spinbot webhook routine migration", () => {
   it("preserves scheduled routines and runs while upgrading a version 29 database", async () => {
     const { database, routineStore } = await createDatabase();
     const agent = testAgent();

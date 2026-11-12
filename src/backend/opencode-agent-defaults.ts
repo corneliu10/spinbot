@@ -191,7 +191,7 @@ function readUserRules(env: NodeJS.ProcessEnv, home: string): UserRules | null {
       const config = decodeUserConfig(stripJsonc(text));
       if (Option.isNone(config)) {
         if (!warnedFiles.has(file))
-          logger.warn("OpenBot could not read an OpenCode config file, so it adds no prompt rules.", { file: name });
+          logger.warn("Spinbot could not read an OpenCode config file, so it adds no prompt rules.", { file: name });
         warnedFiles.add(file);
         return null;
       }
@@ -260,7 +260,7 @@ export function openCodeAgentDefaultsEnv(
       renameSync(temporary, file);
     }
   } catch (cause) {
-    logger.warn("OpenBot could not write its OpenCode prompt rules.", toLogValue(cause));
+    logger.warn("Spinbot could not write its OpenCode prompt rules.", toLogValue(cause));
     return {};
   }
   return { OPENCODE_CONFIG: file };

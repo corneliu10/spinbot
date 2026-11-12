@@ -30,11 +30,11 @@ export const messages = {
   "status.agent.sendIdea": "Esto se convierte en un issue público de GitHub. Tu nombre no se muestra.",
   "status.agent.feedbackRecentErrors": "Errores recientes en el chat:",
   "status.agent.feedbackSameAs": "Se añade al issue #{issue}",
-  "status.agent.feedbackSent": "Enviado al equipo de OpenBot: {title}",
+  "status.agent.feedbackSent": "Enviado al equipo de Spinbot: {title}",
   "status.agent.serverInstallCommand":
-    "Crear un comando de un solo uso que instala OpenBot en otro ordenador como el servidor {name} y lo conecta a tu cuenta. El agente lo ejecuta allí.",
+    "Crear un comando de un solo uso que instala Spinbot en otro ordenador como el servidor {name} y lo conecta a tu cuenta. El agente lo ejecuta allí.",
   "status.agent.serverInstallCard": "Comando de instalación para el servidor {name}",
-  "status.agent.feedbackSending": "Enviando tus comentarios al equipo de OpenBot…",
+  "status.agent.feedbackSending": "Enviando tus comentarios al equipo de Spinbot…",
   "status.agent.workflowDelete":
     "Eliminar el flujo de trabajo {title} con sus ejecuciones y versiones. Sus pasos abiertos se detienen.",
   "status.agent.screenCaptureProgress": "Pidiendo permiso para capturar la pantalla…",

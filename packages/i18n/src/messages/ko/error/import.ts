@@ -3,9 +3,9 @@ import type { messages as source } from "../../en/error/import";
 
 export const messages = {
   "error.import.manifestNotJson": "{manifest}이(가) 올바른 JSON이 아니에요.",
-  "error.import.notAgentExport": "{manifest}은(는) OpenBot 에이전트 내보내기 파일이 아니에요.",
+  "error.import.notAgentExport": "{manifest}은(는) Spinbot 에이전트 내보내기 파일이 아니에요.",
   "error.import.newerExportSkill":
-    "더 최신 내보내기 스킬로 만든 파일이에요. OpenBot을 업데이트한 후 다시 시도해 주세요.",
+    "더 최신 내보내기 스킬로 만든 파일이에요. Spinbot을 업데이트한 후 다시 시도해 주세요.",
   "error.import.noAgents": "내보내기 파일에 에이전트가 없어요.",
   "error.import.tooManyAgents": "내보내기 파일에 에이전트가 {limit}개를 넘게 들어 있어요.",
   "error.import.tooManyChannels": "내보내기 파일에 채널이 {limit}개를 넘게 들어 있어요.",
@@ -46,7 +46,7 @@ export const messages = {
   "error.import.uploadDiskSpace":
     "내보낸 파일에는 서버 디스크 여유 공간이 {size}GB 필요하지만 {free}GB만 비어 있어요. 서버의 공간을 확보한 다음 내보낸 파일을 다시 선택해 주세요.",
   "error.import.remoteZipTooLargeOldHost":
-    "이 서버는 100MB까지의 내보낸 파일만 받아요. 더 큰 파일을 가져오려면 서버의 OpenBot을 업데이트해 주세요.",
+    "이 서버는 100MB까지의 내보낸 파일만 받아요. 더 큰 파일을 가져오려면 서버의 Spinbot을 업데이트해 주세요.",
   "error.import.skillKept":
     '{name}: 서버에 이미 스킬 "{skill}"이(가) 있어서 에이전트가 그 스킬을 사용해요. 관리자에게 업데이트를 요청해 주세요.',
   "error.import.skillRenamed":
@@ -60,12 +60,12 @@ export const messages = {
   "error.import.hermesSkillSkipped": '{name}: 스킬 "{skill}"을(를) 건너뛰었어요. {reason}',
   "error.import.hermesSkillCodeAdded": "프로필을 읽은 후에 코드가 추가되었어요. 허용하려면 프로필을 다시 읽어 주세요.",
   "error.import.hermesLinkNotSaved":
-    "{name}: 이 프로필에서 만든 에이전트를 OpenBot이 저장하지 못해서, 다음 가져오기에서는 새 에이전트로 추가돼요.",
+    "{name}: 이 프로필에서 만든 에이전트를 Spinbot이 저장하지 못해서, 다음 가져오기에서는 새 에이전트로 추가돼요.",
   "error.import.transferRemoteTooLarge":
     "참여 중인 서버용 이전 파일은 100 MB 이하여야 해요. 워크스페이스 파일을 끄거나 에이전트를 더 적게 내보내 주세요.",
-  "error.import.transferNotFile": "이 파일은 OpenBot 이전 파일이 아니에요.",
+  "error.import.transferNotFile": "이 파일은 Spinbot 이전 파일이 아니에요.",
   "error.import.transferNewer":
-    "더 최신 버전의 OpenBot으로 만든 파일이에요. OpenBot을 업데이트한 후 다시 시도해 주세요.",
+    "더 최신 버전의 Spinbot으로 만든 파일이에요. Spinbot을 업데이트한 후 다시 시도해 주세요.",
   "error.import.transferEmpty": "파일에 에이전트도 설정도 없어요.",
   "error.import.transferTooLarge":
     "이전 파일은 2 GB 이하, 파일 50,000개 이하여야 해요. 워크스페이스 파일을 끄거나 에이전트를 더 적게 내보내 주세요.",

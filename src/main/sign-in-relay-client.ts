@@ -229,7 +229,7 @@ export class SignInRelayClient {
     // The dialog shows the page, so the user can open it again when the browser did not open.
     return Effect.tryPromise(open).pipe(
       Effect.catch((error) =>
-        Effect.sync(() => logger.warn("OpenBot could not open a relayed sign-in page:", toLogValue(error.cause))),
+        Effect.sync(() => logger.warn("Spinbot could not open a relayed sign-in page:", toLogValue(error.cause))),
       ),
     );
   }
@@ -256,7 +256,7 @@ export class SignInRelayClient {
         return { status: 200, message: "error.mcp.redirectRelayed" };
       },
     }).catch((error: unknown) => {
-      logger.warn("OpenBot could not listen for a relayed sign-in, so only a pasted address works:", toLogValue(error));
+      logger.warn("Spinbot could not listen for a relayed sign-in, so only a pasted address works:", toLogValue(error));
       return null;
     });
   }

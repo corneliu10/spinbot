@@ -129,7 +129,7 @@ function seedSharedTables(db: DatabaseSync): void {
     INSERT INTO projection_attachments
       (attachment_id, owner_kind, owner_id, name, path, metadata_json, created_at, last_event_sequence)
     VALUES ('openbot-thread-chief:message-1:file-1', 'thread-message', 'openbot-thread-chief:message-1', 'notes.md',
-      '/Users/user/OpenBot/Attachments/notes.md', '{"id":"file-1"}', '2026-01-02T10:00:00.000Z', 1);
+      '/Users/user/Spinbot/Attachments/notes.md', '{"id":"file-1"}', '2026-01-02T10:00:00.000Z', 1);
     INSERT INTO projection_thread_summaries
       (summary_id, thread_id, through_message_id, summary_text, estimated_tokens, created_at, last_event_sequence)
     VALUES ('summary-1', 'openbot-thread-chief', 'message-1', 'The user asked for a plan.', 12,
@@ -144,7 +144,7 @@ function seedSharedTables(db: DatabaseSync): void {
     INSERT INTO projection_direct_reads (thread_id, member_id, last_read_sequence, updated_at)
     VALUES ('direct-1', 'chief', 4, '2026-01-02T09:05:00.000Z');
     INSERT INTO file_deletion_outbox (id, path, reason, created_at, attempts, last_error)
-    VALUES ('outbox-1', '/Users/user/OpenBot/Attachments/old.md', 'attachment-deleted', '2026-01-02T09:00:00.000Z', 2,
+    VALUES ('outbox-1', '/Users/user/Spinbot/Attachments/old.md', 'attachment-deleted', '2026-01-02T09:00:00.000Z', 2,
       'EBUSY');
   `);
 }

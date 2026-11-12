@@ -30,11 +30,11 @@ export const messages = {
   "status.agent.sendIdea": "공개 GitHub 이슈가 됩니다. 이름은 표시되지 않습니다.",
   "status.agent.feedbackRecentErrors": "채팅의 최근 오류:",
   "status.agent.feedbackSameAs": "이슈 #{issue}에 추가됩니다",
-  "status.agent.feedbackSent": "OpenBot 팀에 보냄: {title}",
+  "status.agent.feedbackSent": "Spinbot 팀에 보냄: {title}",
   "status.agent.serverInstallCommand":
-    "다른 컴퓨터에 OpenBot을 서버 {name}(으)로 설치하고 계정에 로그인하는 일회용 명령을 만듭니다. 에이전트가 그곳에서 실행합니다.",
+    "다른 컴퓨터에 Spinbot을 서버 {name}(으)로 설치하고 계정에 로그인하는 일회용 명령을 만듭니다. 에이전트가 그곳에서 실행합니다.",
   "status.agent.serverInstallCard": "서버 {name}의 설치 명령",
-  "status.agent.feedbackSending": "피드백을 OpenBot 팀에 보내는 중…",
+  "status.agent.feedbackSending": "피드백을 Spinbot 팀에 보내는 중…",
   "status.agent.workflowDelete":
     "워크플로 {title}을(를) 실행 기록 및 버전과 함께 삭제합니다. 진행 중인 단계는 중지됩니다.",
   "status.agent.screenCaptureProgress": "화면 캡처를 요청하는 중…",
@@ -83,9 +83,9 @@ export const messages = {
   "status.agent.memoryChangesWithConflicts":
     "메모리: {saved}개 저장, {updated}개 업데이트, {forgotten}개 삭제, {notChanged}개는 다른 스레드가 먼저 변경해서 변경 안 됨.",
   "status.agent.mcpServerAdd":
-    "MCP 서버 {name}을(를) 추가해요: {target}. 이 서버의 모든 에이전트가 해당 도구를 사용할 수 있어요. OpenBot이 연결을 테스트해요.",
+    "MCP 서버 {name}을(를) 추가해요: {target}. 이 서버의 모든 에이전트가 해당 도구를 사용할 수 있어요. Spinbot이 연결을 테스트해요.",
   "status.agent.mcpServerChange":
-    "MCP 서버 {name}을(를) {target}(으)로 변경해요. 이 서버의 모든 에이전트가 해당 도구를 사용할 수 있어요. OpenBot이 연결을 테스트해요.",
+    "MCP 서버 {name}을(를) {target}(으)로 변경해요. 이 서버의 모든 에이전트가 해당 도구를 사용할 수 있어요. Spinbot이 연결을 테스트해요.",
   "status.agent.mcpServerEnable": "이 서버의 모든 에이전트에 MCP 서버 {name}을(를) 켜요.",
   "status.agent.mcpServerDisable": "이 서버의 모든 에이전트에 MCP 서버 {name}을(를) 꺼요.",
   "status.agent.mcpServerRemove": "이 서버의 모든 에이전트에서 MCP 서버 {name}과(와) 로그인 정보를 제거해요.",

@@ -2135,7 +2135,7 @@ export class MailboxStore {
       recipientAgentIds: [requesterId],
       text: [
         "Status: blocked",
-        `Result: OpenBot note, not written by this teammate: the request failed before the teammate answered. ${(delivery.error ?? "The provider gave no reason.").slice(0, FAILED_REQUEST_REASON_LIMIT)}`,
+        `Result: Spinbot note, not written by this teammate: the request failed before the teammate answered. ${(delivery.error ?? "The provider gave no reason.").slice(0, FAILED_REQUEST_REASON_LIMIT)}`,
         "Evidence: none",
         "Unblock: The user must fix the cause, then ask for the request again.",
       ].join("\n"),

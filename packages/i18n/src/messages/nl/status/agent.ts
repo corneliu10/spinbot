@@ -35,11 +35,11 @@ export const messages = {
   "status.agent.sendIdea": "Dit wordt een openbaar GitHub-issue. Je naam wordt niet getoond.",
   "status.agent.feedbackRecentErrors": "Recente fouten in de chat:",
   "status.agent.feedbackSameAs": "Wordt toegevoegd aan issue #{issue}",
-  "status.agent.feedbackSent": "Naar het OpenBot-team gestuurd: {title}",
+  "status.agent.feedbackSent": "Naar het Spinbot-team gestuurd: {title}",
   "status.agent.serverInstallCommand":
-    "Een eenmalige opdracht maken die OpenBot op een andere computer installeert als de server {name} en die aanmeldt bij je account. De agent voert hem daar uit.",
+    "Een eenmalige opdracht maken die Spinbot op een andere computer installeert als de server {name} en die aanmeldt bij je account. De agent voert hem daar uit.",
   "status.agent.serverInstallCard": "Installatieopdracht voor de server {name}",
-  "status.agent.feedbackSending": "Je feedback wordt naar het OpenBot-team gestuurd…",
+  "status.agent.feedbackSending": "Je feedback wordt naar het Spinbot-team gestuurd…",
   "status.agent.workflowDelete": "Verwijder de workflow {title} met zijn runs en versies. Zijn open stappen stoppen.",
   "status.agent.vaultCardFillFrames": "De kaartvelden staan in frames van {origins}.",
   "status.agent.screenCaptureProgress": "Vraagt om het scherm vast te leggen…",
@@ -90,9 +90,9 @@ export const messages = {
   "status.agent.memoryChangesWithConflicts":
     "Geheugen: {saved} opgeslagen, {updated} bijgewerkt, {forgotten} vergeten, {notChanged} niet gewijzigd omdat een andere thread ze eerst heeft gewijzigd.",
   "status.agent.mcpServerAdd":
-    "De MCP-server {name} toevoegen: {target}. Elke agent op deze server krijgt de tools ervan. OpenBot maakt verbinding om hem te testen.",
+    "De MCP-server {name} toevoegen: {target}. Elke agent op deze server krijgt de tools ervan. Spinbot maakt verbinding om hem te testen.",
   "status.agent.mcpServerChange":
-    "De MCP-server {name} wijzigen naar {target}. Elke agent op deze server krijgt de tools ervan. OpenBot maakt verbinding om hem te testen.",
+    "De MCP-server {name} wijzigen naar {target}. Elke agent op deze server krijgt de tools ervan. Spinbot maakt verbinding om hem te testen.",
   "status.agent.mcpServerEnable": "De MCP-server {name} aanzetten voor elke agent op deze server.",
   "status.agent.mcpServerDisable": "De MCP-server {name} uitzetten voor elke agent op deze server.",
   "status.agent.mcpServerRemove": "De MCP-server {name} en de inlog ervan verwijderen bij elke agent op deze server.",

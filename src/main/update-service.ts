@@ -88,9 +88,9 @@ export async function loadElectronUpdater(): Promise<UpdateAdapter | null> {
     const updaterModule = await import("electron-updater");
     const adapter = updaterModule.autoUpdater ?? updaterModule.default?.autoUpdater ?? updaterModule.default;
     if (adapter) return adapter;
-    logger.warn("OpenBot updates are disabled: electron-updater did not export autoUpdater");
+    logger.warn("Spinbot updates are disabled: electron-updater did not export autoUpdater");
   } catch {
-    logger.warn("OpenBot updates are disabled: electron-updater failed to load");
+    logger.warn("Spinbot updates are disabled: electron-updater failed to load");
   }
   return null;
 }
@@ -348,7 +348,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
         // so the app cannot install again; it reports the failure and asks to be relaunched.
         this.#installGeneration += 1;
         this.#activeInstall = null;
-        logUpdateFailure("OpenBot update install failed.", error);
+        logUpdateFailure("Spinbot update install failed.", error);
         this.#setError("install_failed", INSTALL_FAILED_MESSAGE);
         return;
       }
@@ -610,7 +610,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
           ),
         );
         if (Result.isFailure(result) && this.#downloadGeneration === generation) {
-          logUpdateFailure("OpenBot update download failed.", result.failure.cause);
+          logUpdateFailure("Spinbot update download failed.", result.failure.cause);
           this.#activeDownload = null;
           this.#setError("download_failed");
         }
@@ -651,7 +651,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
         return yield* new UpdateOperationFailure({ cause: new Error(this.#siblingSessionMessage(siblings)) });
       const bundle = this.#options.platform === "darwin" ? this.#options.appBundlePath : undefined;
       if (bundle && (yield* isOnReadOnlyVolume(bundle))) {
-        logger.warn("OpenBot update install refused: the application runs from a read-only volume.");
+        logger.warn("Spinbot update install refused: the application runs from a read-only volume.");
         return yield* new UpdateOperationFailure({ cause: new Error(sourceText("error.update.readOnlyLocation")) });
       }
       if (this.#managedByHost) return yield* new UpdateOperationFailure({ cause: new Error(MANAGED_HOST_MESSAGE) });
@@ -679,7 +679,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
         }),
       );
       if (Result.isFailure(installed) && this.#installGeneration === generation) {
-        logUpdateFailure("OpenBot update install failed.", installed.failure.cause);
+        logUpdateFailure("Spinbot update install failed.", installed.failure.cause);
         this.#setError("install_failed", INSTALL_FAILED_MESSAGE);
         return yield* new UpdateOperationFailure({ cause: new Error(sourceText("error.update.restartFailed")) });
       }
@@ -726,7 +726,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
       this.#rolloutMiss = null;
       return yield* updateIO(() => this.#updater.checkForUpdates()).pipe(
         // Logged once per request, here, because joined callers and the status keep only a message.
-        Effect.tapError(({ cause }) => Effect.sync(() => logUpdateFailure("OpenBot update check failed.", cause))),
+        Effect.tapError(({ cause }) => Effect.sync(() => logUpdateFailure("Spinbot update check failed.", cause))),
         Effect.onExit((exit) =>
           Effect.gen({ self: this }, function* () {
             yield* Deferred.done(request, exit);
@@ -794,7 +794,7 @@ export class UpdateService extends EventEmitter<UpdateServiceEvents> {
     return Effect.gen({ self: this }, function* () {
       if (this.#cancellationToken && !this.#cancellationToken.cancelled) return this.#cancellationToken;
       const checked = yield* Effect.result(updateIO(() => this.#updater.checkForUpdates()));
-      if (Result.isFailure(checked)) logUpdateFailure("OpenBot update check failed.", checked.failure.cause);
+      if (Result.isFailure(checked)) logUpdateFailure("Spinbot update check failed.", checked.failure.cause);
       this.#cancellationToken = Result.isSuccess(checked) ? (checked.success?.cancellationToken ?? null) : null;
       return this.#cancellationToken;
     });

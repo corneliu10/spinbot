@@ -533,7 +533,7 @@ export const messages = {
   "chat.suggestion.detailsNamed": "Открыть {name} в каталоге",
   "chat.suggestion.dismissed": "Предложение «{name}» скрыто.",
   "chat.suggestion.undo": "Отменить",
-  "chat.suggestion.localOnly": "Подключите {name} в OpenBot на своём компьютере.",
+  "chat.suggestion.localOnly": "Подключите {name} в Spinbot на своём компьютере.",
   "chat.suggestion.unavailable": "Этот сервер не может подключить {name}.",
   "chat.serverInstall.title": "Новый сервер",
   "chat.serverInstall.expired": "Срок действия команды истёк. Попросите агента сделать новую.",
@@ -548,6 +548,6 @@ export const messages = {
   "chat.reference.open.thread": "Открыть ветку {name}",
   "chat.feedbackSent.title": "Спасибо за отзыв 🙏",
   "chat.feedbackSent.badge": "Отправлено",
-  "chat.feedbackSent.body": "Команда OpenBot прочитает и займётся этим 💜",
+  "chat.feedbackSent.body": "Команда Spinbot прочитает и займётся этим 💜",
   "chat.feedbackSent.openNamed": "Открыть issue #{number} на GitHub",
 } as const satisfies PartialTranslation<typeof source>;

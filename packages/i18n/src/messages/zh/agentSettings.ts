@@ -41,7 +41,7 @@ export const messages = {
   "agentSettings.folders.inWorkspace": "{folder} 位于工作区中，{agent} 已可更改它",
   "agentSettings.folders.inShared": "{folder} 位于共享文件夹中，{agent} 已可更改它",
   "agentSettings.folders.inFolder": "{folder} 位于已添加的 {parent} 中",
-  "agentSettings.folders.protected": "无法添加 {folder}：其中包含 OpenBot 数据或其他助手的文件",
+  "agentSettings.folders.protected": "无法添加 {folder}：其中包含 Spinbot 数据或其他助手的文件",
   "agentSettings.folders.missing": "{folder} 不是此电脑上的文件夹",
   "agentSettings.folders.limit": { one: "最多可添加 {count} 个文件夹", other: "最多可添加 {count} 个文件夹" },
   "agentSettings.folders.browse.places": "前往",
@@ -147,7 +147,7 @@ export const messages = {
   "agentSettings.runtime.workingDirectory": "工作目录",
   "agentSettings.runtime.notAvailable": "暂不可用",
   "agentSettings.runtime.fullAccessNote": "助手可从其工作区和共享文件夹获得完整的电脑访问权限。",
-  "agentSettings.runtime.askNote": "在调用 OpenBot 工具、发布站点，以及服务商要求批准时，它会先询问你。",
+  "agentSettings.runtime.askNote": "在调用 Spinbot 工具、发布站点，以及服务商要求批准时，它会先询问你。",
   "agentSettings.runtime.fullNote": "除非它主动提问，否则执行操作时不再询问。",
 
   "agentSettings.access.workspace": "仅工作区",
@@ -181,7 +181,7 @@ export const messages = {
   "agentSettings.deleteHistory.button": "删除",
   "agentSettings.deleteHistory.confirmTitle": "删除与 {name} 的对话历史记录？",
   "agentSettings.deleteHistory.confirmDescription":
-    "此对话的所有消息和文件都会从 OpenBot 中删除，智能体也会忘记它们。此操作无法撤销。侧边线程、指令、模型、工具、记忆、工作区和浏览器不会改变。",
+    "此对话的所有消息和文件都会从 Spinbot 中删除，智能体也会忘记它们。此操作无法撤销。侧边线程、指令、模型、工具、记忆、工作区和浏览器不会改变。",
   "agentSettings.deleteHistory.confirm": "删除历史记录",
   "agentSettings.deleteHistory.failed": "无法删除历史记录。",
 
@@ -208,7 +208,7 @@ export const messages = {
   "agentSettings.runtime.workspaceEnforcedCommand": "需要在外部写入的命令会先询问你。",
   "agentSettings.runtime.workspaceEnforcedClaude": "在工作区外编辑文件会先询问你；命令无法在外部写入。",
   "agentSettings.runtime.workspaceUnlimited":
-    "Computer Use 和 OpenBot 浏览器不受该限制；你可以在下方关闭 Computer Use。",
+    "Computer Use 和 Spinbot 浏览器不受该限制；你可以在下方关闭 Computer Use。",
   "agentSettings.computerUse.title": "Computer Use",
   "agentSettings.computerUse.description": "允许该助手控制这台电脑上的应用",
   "agentSettings.automation.title": "本地脚本",

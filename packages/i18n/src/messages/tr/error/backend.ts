@@ -3,7 +3,7 @@ import type { messages as source } from "../../en/error/backend";
 
 export const messages = {
   "error.backend.eventsUnavailable": "Bu ana makinede etkinlikler kullanılamıyor.",
-  "error.backend.databaseIntegrity": "OpenBot veritabanı bütünlük denetiminden geçemedi.",
+  "error.backend.databaseIntegrity": "Spinbot veritabanı bütünlük denetiminden geçemedi.",
   "error.backend.webhookRouteLimit": "Bir ana makinede en fazla {limit} webhook rutini olabilir.",
   "error.backend.webhookSettingsInvalid": "Webhook ayarlarını kontrol edin ve tekrar deneyin.",
   "error.backend.webhookSenderSecretInvalid":
@@ -16,8 +16,8 @@ export const messages = {
   "error.backend.browserViewLimit": "Bu ana makinede çok fazla tarayıcı görünümü açık.",
   "error.backend.browserViewEnded": "Bu sayfanın canlı görünümü sona erdi.",
   "error.backend.browserViewFailed": "Bu sayfanın canlı görünümü başarısız oldu.",
-  "error.backend.windowTemporarilyUnavailable": "OpenBot penceresi geçici olarak kullanılamıyor.",
-  "error.backend.windowUnavailable": "OpenBot penceresi kullanılamıyor.",
+  "error.backend.windowTemporarilyUnavailable": "Spinbot penceresi geçici olarak kullanılamıyor.",
+  "error.backend.windowUnavailable": "Spinbot penceresi kullanılamıyor.",
   "error.backend.sunshineApiHttp": "Sunshine API HTTP {status} ile başarısız oldu.",
   "error.backend.sunshinePortsUnavailable": "Uzak Masaüstü için boş bir Sunshine bağlantı noktası ailesi ayrılamadı.",
   "error.backend.moonlightPortsUnavailable":
@@ -33,7 +33,7 @@ export const messages = {
   "error.backend.moonlightRejectedPairing": "Moonlight Sunshine eşleştirmesini reddetti.",
   "error.backend.moonlightNoPin": "Moonlight bir eşleştirme PIN'i döndürmedi.",
   "error.backend.moonlightPairingIncomplete": "Moonlight eşleştirmesi tamamlanmadı.",
-  "error.backend.moonlightWebNotEmbedded": "Moonlight Web gömülü bir OpenBot derlemesi değil.",
+  "error.backend.moonlightWebNotEmbedded": "Moonlight Web gömülü bir Spinbot derlemesi değil.",
   "error.backend.moonlightEmptyResponse": "Moonlight boş bir yanıt döndürdü.",
   "error.backend.remoteDesktopTimeout": "Uzak masaüstü isteği zaman aşımına uğradı.",
   "error.backend.moonlightApiHttp": "Moonlight API HTTP {status} ile başarısız oldu.",
@@ -50,8 +50,8 @@ export const messages = {
   "error.backend.browserUserControlUnsupported":
     "Bu uzak ana makine bir tarayıcı sekmesinin denetimini almayı desteklemiyor.",
   "error.backend.browserSignInUnsupported": "Bu uzak ana makine bu bilgisayardan oturum açma alamaz.",
-  "error.backend.browserSignInOpenFailed": "OpenBot oturum açma penceresini açamadı.",
-  "error.backend.browserSignInReadFailed": "OpenBot pencereden oturumu okuyamadı.",
+  "error.backend.browserSignInOpenFailed": "Spinbot oturum açma penceresini açamadı.",
+  "error.backend.browserSignInReadFailed": "Spinbot pencereden oturumu okuyamadı.",
   "error.backend.browserStopUnsupported": "Bu uzak ana makine sayfa yüklemesini durduramaz.",
   "error.backend.sharedDataLocalOnly": "Paylaşılan veriler bu ajanları çalıştıran bilgisayarda yönetilir.",
   "error.backend.browserUrlProtocol": "Yalnızca HTTP(S) tarayıcı URL'lerine izin verilir.",
@@ -59,15 +59,15 @@ export const messages = {
   "error.backend.sunshineNotReadyReason": "Sunshine hazır hale gelmedi. {reason}",
   "error.backend.channelLeadModelUnavailable": "Kanal lideri modeli kullanılamıyor.",
   "error.backend.contextCompactionIneffective":
-    "Sıkıştırma bu sohbeti küçültmüyor: iki sıkıştırmadan sonra hâlâ modelin bağlam penceresinin %{percent} kadarını kullanıyor, bu yüzden OpenBot sıkıştırmayı durduruyor. Pencerenin çoğunu araçlar ve talimatlar kullanıyor. Bu ajanın ihtiyaç duymadığı MCP sunucularını veya bilgisayar kullanımını kapatın ya da daha büyük pencereli bir model seçin. Ardından yeni bir sohbet başlatın.",
+    "Sıkıştırma bu sohbeti küçültmüyor: iki sıkıştırmadan sonra hâlâ modelin bağlam penceresinin %{percent} kadarını kullanıyor, bu yüzden Spinbot sıkıştırmayı durduruyor. Pencerenin çoğunu araçlar ve talimatlar kullanıyor. Bu ajanın ihtiyaç duymadığı MCP sunucularını veya bilgisayar kullanımını kapatın ya da daha büyük pencereli bir model seçin. Ardından yeni bir sohbet başlatın.",
   "error.backend.contextCompactionStopped":
-    'Bu sohbetin art arda iki sıkıştırması başarısız oldu, bu yüzden OpenBot onu otomatik olarak sıkıştırmayı bırakıyor. Her deneme tüm sohbeti modele gönderir ve plan sınırınızı kullanır. Yeniden denemek için "Şimdi sıkıştır"ı seçin veya yeni bir sohbet başlatın.',
+    'Bu sohbetin art arda iki sıkıştırması başarısız oldu, bu yüzden Spinbot onu otomatik olarak sıkıştırmayı bırakıyor. Her deneme tüm sohbeti modele gönderir ve plan sınırınızı kullanır. Yeniden denemek için "Şimdi sıkıştır"ı seçin veya yeni bir sohbet başlatın.',
   "error.backend.providerRetrying":
     "Sağlayıcı bu isteği {attempts} kez tamamlayamadı ve yeniden deniyor. Ajan devam etmezse turu durdurun.",
   "error.backend.providerRetryingLargeContext":
-    "Sağlayıcı bu isteği {attempts} kez tamamlayamadı ve yeniden deniyor. Bu sohbet modelin bağlam penceresinin %{percent} kadarını kullanıyor. Ajan devam etmezse turu durdurun: OpenBot sohbeti sonraki mesajdan önce sıkıştırır.",
+    "Sağlayıcı bu isteği {attempts} kez tamamlayamadı ve yeniden deniyor. Bu sohbet modelin bağlam penceresinin %{percent} kadarını kullanıyor. Ajan devam etmezse turu durdurun: Spinbot sohbeti sonraki mesajdan önce sıkıştırır.",
   "error.backend.sharedDataUnavailable": "Paylaşılan veriler kullanılamıyor.",
-  "error.backend.shuttingDown": "OpenBot kapanıyor.",
+  "error.backend.shuttingDown": "Spinbot kapanıyor.",
   "error.backend.channelUnconfirmedStart":
     "Kanalda onaylanmamış bir görev başlangıcı var. Silmeden önce sonucunu kontrol edin.",
   "error.backend.channelNotFound": "Kanal bulunamadı.",
@@ -148,7 +148,7 @@ export const messages = {
   "error.backend.fileGone": "Dosya mevcut değil veya zaten silinmiş.",
   "error.backend.managedAttachmentChanged": "Yönetilen ek eksik veya değişti: {name}",
   "error.backend.mailboxStateCorrupt":
-    "Posta kutusu durumu bozuk veya daha yeni bir OpenBot sürümünden; üzerine yazılması reddedildi.",
+    "Posta kutusu durumu bozuk veya daha yeni bir Spinbot sürümünden; üzerine yazılması reddedildi.",
   "error.backend.recipientDeleting": "Alıcı siliniyor. Silme işlemi tamamlandıktan sonra tekrar deneyin.",
   "error.backend.recipientHidden": "Bu ajan gizli. Mesaj göndermek için onu geri yükleyin.",
   "error.backend.agentIdUnknown":
@@ -159,7 +159,7 @@ export const messages = {
   "error.backend.attachmentNotFile": "Ek bir dosya değil: {path}",
   "error.backend.generatedImageTooLarge": "Oluşturulan görsel 100 MB sınırını aşıyor.",
   "error.backend.attachmentNotRegularFile": "Yalnızca normal dosyalar eklenebilir: {name}",
-  "error.backend.attachmentCopyFailed": "OpenBot {name} öğesini kopyalayamadı.",
+  "error.backend.attachmentCopyFailed": "Spinbot {name} öğesini kopyalayamadı.",
   "error.backend.routineNameRequired": "Bir rutin adı gereklidir.",
   "error.backend.routineNameTooLong": "Rutin adı çok uzun.",
   "error.backend.routineInstructionRequired": "Bir rutin talimatı gereklidir.",
@@ -181,12 +181,12 @@ export const messages = {
   "error.backend.routineWaitForAgent": "Bir rutini çalıştırmadan önce ajan işleminin bitmesini bekleyin.",
   "error.backend.routineRunStarting": "Bu rutin çalıştırması hâlâ başlıyor. Tur başladıktan sonra tekrar deneyin.",
   "error.backend.routineRunNoSession":
-    "OpenBot sağlayıcı oturumu kullanılamadığı için etkin rutin çalıştırmasını kesemiyor.",
+    "Spinbot sağlayıcı oturumu kullanılamadığı için etkin rutin çalıştırmasını kesemiyor.",
   "error.backend.interruptSelf": "Bir ajan kendi kendini kesintiye uğratamaz.",
   "error.backend.interruptOtherWork":
     "Bu ajan mesajınızın başlatmadığı bir görev üzerinde çalışıyor. Yalnızca kullanıcı veya o görevin göndereni görevi durdurabilir.",
   "error.backend.interruptStarting": "Bu ajan hâlâ bir tur başlatıyor. Tur başladıktan sonra tekrar deneyin.",
-  "error.backend.interruptNoSession": "OpenBot sağlayıcı oturumu kullanılamadığı için bu ajanı kesintiye uğratamıyor.",
+  "error.backend.interruptNoSession": "Spinbot sağlayıcı oturumu kullanılamadığı için bu ajanı kesintiye uğratamıyor.",
   "error.backend.memoryTextRequired": "Bellek metni gereklidir.",
   "error.backend.memoryTextTooLong": "Bellek metni çok uzun.",
   "error.backend.mcpServerGone": "Bu MCP sunucusu artık mevcut değil.",
@@ -214,16 +214,16 @@ export const messages = {
   "error.backend.messageDeleteBusy": "Bu mesaj devam eden bir turun parçası. Tur bitince silin.",
   "error.backend.messageDeleteForbidden": "Yalnızca gönderdiğiniz mesajları silebilirsiniz.",
   "error.backend.routineFlowHandoffFailed": "Rutin işi bu ajana aktaramadı.",
-  "error.backend.mcpServerLimit": "OpenBot en fazla {limit} MCP sunucusu tutar.",
+  "error.backend.mcpServerLimit": "Spinbot en fazla {limit} MCP sunucusu tutar.",
   "error.backend.mcpServerNameTaken": "{name} adında bir MCP sunucusu zaten mevcut.",
-  "error.backend.mcpServerInvalid": "OpenBot bu MCP sunucusu yapılandırmasını kaydedemiyor.",
+  "error.backend.mcpServerInvalid": "Spinbot bu MCP sunucusu yapılandırmasını kaydedemiyor.",
   "error.backend.mcpServerNoAnswer": "Sunucu {seconds} saniye içinde yanıt vermedi.",
   "error.backend.mcpSignInNotAccepted": "Sunucu bu oturum açmayı kabul etmedi.",
   "error.backend.mcpSignInClientRefused":
-    "Oturum açma sunucusu, oturum açma tamamlanırken OpenBot'u kabul etmedi. Yeniden oturum açın: OpenBot sunucuya yeniden kaydolur.",
+    "Oturum açma sunucusu, oturum açma tamamlanırken Spinbot'u kabul etmedi. Yeniden oturum açın: Spinbot sunucuya yeniden kaydolur.",
   "error.backend.mcpCommandNotFound": "Komut bulunamadı: {command}",
   "error.backend.mcpRegistrationRefused":
-    "Oturum açma sunucusu OpenBot'u henüz bir uygulama olarak kabul etmiyor. Hesabınız bunun nedeni değildir. Yerel bir MCP sunucusu gibi bağlanmanın başka bir yolunu kullanın.",
+    "Oturum açma sunucusu Spinbot'u henüz bir uygulama olarak kabul etmiyor. Hesabınız bunun nedeni değildir. Yerel bir MCP sunucusu gibi bağlanmanın başka bir yolunu kullanın.",
   "error.backend.mcpSignInAbandonedGeneric": "Oturum açma yarıda bırakıldı.",
   "error.backend.mcpSignInForgotten": "MCP oturum açma işlemi çalışırken unutuldu.",
   "error.backend.mcpSignInAbandoned": "MCP oturum açma işlemi yarıda bırakıldı.",
@@ -231,16 +231,16 @@ export const messages = {
   "error.backend.mcpSignInNotWebPage": "Oturum açma adresi bir web sayfası değil.",
   "error.backend.mcpSignInRequired":
     "Bu sunucu oturum açmanızı istiyor. Tarayıcınızda devam etmek için Oturum aç'ı seçin.",
-  "error.backend.mcpSignInOnHost": "Bu sunucu oturum açılmasını istiyor. Ana makinedeki OpenBot'ta oturum açın.",
+  "error.backend.mcpSignInOnHost": "Bu sunucu oturum açılmasını istiyor. Ana makinedeki Spinbot'ta oturum açın.",
   "error.backend.mcpSignInNeedsHttps":
-    "Bu sunucu oturum açılmasını istiyor ve OpenBot yalnızca https üzerinden oturum açar. URL'yi {url} olarak değiştirin.",
+    "Bu sunucu oturum açılmasını istiyor ve Spinbot yalnızca https üzerinden oturum açar. URL'yi {url} olarak değiştirin.",
   "error.backend.mcpSignInCancelled": "Oturum açma iptal edildi.",
   "error.backend.mcpSignInTimedOut": "Oturum açma tarayıcıda tamamlanmadı.",
   "error.backend.mcpSignInResponseTimedOut": "Oturum açma yanıtı zamanında gelmedi.",
   "error.backend.mcpSignInMetadataUnreadable":
-    "OpenBot bu sunucunun oturum açma bilgilerini okuyamadı. Sunucu adresini denetleyin ve yeniden deneyin.",
+    "Spinbot bu sunucunun oturum açma bilgilerini okuyamadı. Sunucu adresini denetleyin ve yeniden deneyin.",
   "error.backend.mcpSignInAnswerUnreadable":
-    "Oturum açma sunucusu OpenBot'un okuyamadığı bir yanıt gönderdi. Hizmet size bir API anahtarı veya belirteç veriyorsa bunu bu sunucunun ayarlarına ekleyin, ardından bağlantıyı yeniden test edin.",
+    "Oturum açma sunucusu Spinbot'un okuyamadığı bir yanıt gönderdi. Hizmet size bir API anahtarı veya belirteç veriyorsa bunu bu sunucunun ayarlarına ekleyin, ardından bağlantıyı yeniden test edin.",
   "error.backend.mcpServerExited":
     "Sunucu yanıt vermeden durdu. Hatasını görmek için komutu bir terminalde çalıştırın.",
   "error.backend.mcpServerFailedToStart": "Sunucu başlamadı: {reason}",
@@ -249,10 +249,10 @@ export const messages = {
   "error.backend.mcpServerFailedForProvider":
     "{provider}, {name} MCP sunucusunu başlatamadı. Nedeni görmek için MCP ayarlarını açın ve Bağlantıyı test et'i seçin.",
   "error.backend.mcpOAuthProxyUnavailable":
-    "OpenBot bu sunucu için yerel oturum açma bağlantısını başlatamadı. OpenBot'u yeniden başlatın ve tekrar deneyin.",
+    "Spinbot bu sunucu için yerel oturum açma bağlantısını başlatamadı. Spinbot'u yeniden başlatın ve tekrar deneyin.",
   "error.backend.mcpOAuthSignInNeeded":
-    "Bu MCP sunucusundaki oturum sona erdi. Kullanıcının OpenBot'ta yeniden oturum açması gerekiyor.",
-  "error.backend.mcpServerUnreachable": "OpenBot sunucuya ulaşamadı. URL'yi ve ağınızı kontrol edin.",
+    "Bu MCP sunucusundaki oturum sona erdi. Kullanıcının Spinbot'ta yeniden oturum açması gerekiyor.",
+  "error.backend.mcpServerUnreachable": "Spinbot sunucuya ulaşamadı. URL'yi ve ağınızı kontrol edin.",
   "error.backend.mcpLocalServerOff":
     "Bu bilgisayarda {address} adresinde yanıt veren bir sunucu yok. Sunucuyu başlatın veya onu çalıştıran uygulamada açın, ardından tekrar deneyin.",
   "error.backend.mcpServerBlocked":
@@ -260,7 +260,7 @@ export const messages = {
   "error.backend.mcpServerIncompatible":
     "Bu adreste bir şey yanıt verdi, ancak Streamable HTTP üzerinden bir MCP sunucusu olarak değil. URL'yi kontrol edin ve sunucuyu çalıştıran uygulamayı güncelleyin.",
   "error.backend.mcpRemoteBridge":
-    "{reason} Bu komut mcp-remote köprüsünü çalıştırır. Bunun yerine {url} URL'siyle Streamable HTTP'yi seçin; OpenBot oturumunuzu açar.",
+    "{reason} Bu komut mcp-remote köprüsünü çalıştırır. Bunun yerine {url} URL'siyle Streamable HTTP'yi seçin; Spinbot oturumunuzu açar.",
   "error.backend.oauthNotHttps": "OAuth uç noktası {origin} https değil, bu nedenle kimlik bilgileri gönderilmedi.",
   "error.backend.oauthTooManyRedirects": "OAuth uç noktası çok fazla yönlendirme yaptı.",
   "error.backend.oauthRedirectOrigin":
@@ -303,7 +303,7 @@ export const messages = {
   "error.backend.approvalInactive": "Bu onay artık etkin değil.",
   "error.backend.takeoverInactive": "Bu tarayıcı devralması artık etkin değil.",
   "error.backend.authSubmitting": "Kimlik doğrulama gönderimi zaten devam ediyor.",
-  "error.backend.apiKeySaveFailed": "OpenBot API anahtarını kaydedemedi. Yeniden deneyin.",
+  "error.backend.apiKeySaveFailed": "Spinbot API anahtarını kaydedemedi. Yeniden deneyin.",
   "error.backend.apiKeyNotAllowed": "API anahtarını yalnızca sunucu sahibi veya bir yönetici girebilir.",
   "error.backend.apiKeySaving": "API anahtarı zaten kaydediliyor.",
   "error.backend.authRequestInactive": "Bu güvenli kimlik doğrulama isteği artık etkin değil.",
@@ -357,7 +357,7 @@ export const messages = {
   "error.backend.mcpSignInAppUrl": "Oturum açma uygulaması için geçerli bir sunucu URL'si gerekir.",
   "error.backend.mcpSignInAppClientId": "Oturum açma uygulamasının istemci kimliğini girin.",
   "error.backend.mcpSignInAppIssuerChanged":
-    "Bu MCP sunucusunun oturum açma sunucusu değişti, bu yüzden OpenBot oturum açma uygulamasını ona göndermedi. Değişiklik doğruysa oturum açma uygulamasını kaldırıp yeniden ekleyin.",
+    "Bu MCP sunucusunun oturum açma sunucusu değişti, bu yüzden Spinbot oturum açma uygulamasını ona göndermedi. Değişiklik doğruysa oturum açma uygulamasını kaldırıp yeniden ekleyin.",
   "error.backend.mcpSignInAppNoServer":
     "Oturum açma uygulaması eklemeden önce bu MCP sunucusunu URL sunucusu olarak kaydedin.",
   "error.backend.mcpSignInAppUnavailable": "Bu bilgisayar oturum açma uygulaması saklayamaz.",
@@ -388,5 +388,5 @@ export const messages = {
   "error.backend.taskOpenLimitReached":
     "Bu ajanın {count} açık görevi var. Bir görevi kapatın, ardından başka bir görev başlatın veya açın.",
   "error.backend.taskRemoteUnsupported": "Görevler yalnızca bu bilgisayardaki ajanlar için kullanılabilir.",
-  "error.backend.taskStartFailed": "OpenBot görevi başlatamadı. Bunun yerine işi bu turda yapın.",
+  "error.backend.taskStartFailed": "Spinbot görevi başlatamadı. Bunun yerine işi bu turda yapın.",
 } as const satisfies PartialTranslation<typeof source>;

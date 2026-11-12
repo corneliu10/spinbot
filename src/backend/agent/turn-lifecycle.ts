@@ -681,7 +681,7 @@ export class TurnLifecycle {
     const timer = setTimeout(() => {
       this.#compactionDeadlines.delete(threadId);
       if (this.#observedCompactions.get(threadId) !== turnId || !this.#runningTurns.has(turnId)) return;
-      logger.warn("A provider compaction did not end; OpenBot stops its turn.", { provider: client.provider, runMs });
+      logger.warn("A provider compaction did not end; Spinbot stops its turn.", { provider: client.provider, runMs });
       this.#holdCompactionFailure(
         turnId,
         {
@@ -2543,7 +2543,7 @@ const { sync: turnStep, rewrap: toTurnOperationFailed } = causeHelpers(TurnOpera
 /** The answer for a teammate request when the turn ended with no answer, in the reply format. */
 const NO_RESULT_NOTE = [
   "Status: blocked",
-  "Result: OpenBot note, not written by this teammate: the teammate's turn ended with no result and no error. The requested work can be unfinished.",
+  "Result: Spinbot note, not written by this teammate: the teammate's turn ended with no result and no error. The requested work can be unfinished.",
   "Evidence: none",
   "Unblock: Check what is done, then finish the rest yourself or send the teammate a narrower request.",
 ].join("\n");

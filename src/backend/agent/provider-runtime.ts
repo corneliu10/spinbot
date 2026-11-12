@@ -3004,7 +3004,7 @@ export class ProviderRuntime implements ProviderPort {
       .request(
         "initialize",
         {
-          clientInfo: { name: "openbot", title: "OpenBot", version: "0.1.0" },
+          clientInfo: { name: "openbot", title: "Spinbot", version: "0.1.0" },
           capabilities: { experimentalApi: true, mcpServerOpenaiFormElicitation: true },
         },
         decodeRecordResponse,
@@ -3285,7 +3285,7 @@ export class ProviderRuntime implements ProviderPort {
     keepsReleased = false,
   ): void {
     const hasActiveClient = this.#clients.has(provider) || (keepsReleased && this.#released.has(provider));
-    const fallbackMessage = `OpenBot could not connect ${providerLabel(provider)}. Try again.`;
+    const fallbackMessage = `Spinbot could not connect ${providerLabel(provider)}. Try again.`;
     const rawMessage = error instanceof Error ? error.message : String(error);
     const timeout = isProviderTimeout(error);
     // A timeout says which stage did not answer, and the row's last error keeps it. Only a catalog
@@ -3791,7 +3791,7 @@ export class ProviderRuntime implements ProviderPort {
       // An agent that tears down its sessions while OpenBot stops it (idle release, restart, quit)
       // can write an error for each one. It is not a failure the user can act on, so it goes to the log.
       if (origin?.duringStop) {
-        stderrLogger.warn("A provider wrote an error while OpenBot stopped it.", {
+        stderrLogger.warn("A provider wrote an error while Spinbot stopped it.", {
           provider: client.provider,
           message,
         });
@@ -3949,7 +3949,7 @@ export class ProviderRuntime implements ProviderPort {
               capabilities: { ...this.#status.capabilities, chat: "unavailable" },
               message: startStopped
                 ? this.#startStoppedMessage(client.provider, error.message)
-                : `${providerLabel(client.provider)} stopped repeatedly. Restart OpenBot after checking the CLI.`,
+                : `${providerLabel(client.provider)} stopped repeatedly. Restart Spinbot after checking the CLI.`,
             },
       );
       return;
@@ -4030,7 +4030,7 @@ export class ProviderRuntime implements ProviderPort {
     if (failures < START_FAILURE_LIMIT) return false;
     clearTimeout(this.#restartTimers.get(provider));
     this.#restartTimers.delete(provider);
-    if (failures === START_FAILURE_LIMIT) logger.warn("OpenBot stopped starting a provider.", { provider, failures });
+    if (failures === START_FAILURE_LIMIT) logger.warn("Spinbot stopped starting a provider.", { provider, failures });
     return true;
   }
 
