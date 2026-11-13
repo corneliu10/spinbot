@@ -97,4 +97,10 @@ imgs = [Image.open(f"{tmp}/ico-{s}.png").convert("RGBA") for s in sizes]
 imgs[-1].save(out, format="ICO", sizes=[(s, s) for s in sizes], append_images=imgs[:-1])
 PY
 done
+# The account service's web icons (also the logo in its emails).
+PUB=apps/auth-api/public
+for pair in favicon-32x32:32 apple-touch-icon:180 icon-192x192:192 icon-512x512:512; do
+  rsvg-convert -w "${pair#*:}" -h "${pair#*:}" "$TMP/full.svg" -o "$PUB/${pair%%:*}.png"
+done
+cp "$OUT/icon-production.ico" "$PUB/favicon.ico"
 echo "icons written"

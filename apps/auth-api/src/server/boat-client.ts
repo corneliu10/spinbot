@@ -9,7 +9,7 @@ const REQUEST_TIMEOUT_MS = 15_000;
  * systemd. The template's helper copies the two hosted variables to a file that the OpenBot service
  * waits for. See `scripts/hosting/openbot-hosted-env`.
  */
-const HOSTED_SERVER_SETUP_SCRIPT = "exec /opt/OpenBot/hosted/openbot-hosted-env\n";
+const HOSTED_SERVER_SETUP_SCRIPT = "exec /opt/Spinbot/hosted/openbot-hosted-env\n";
 
 export type BoatSandboxType = "small" | "default" | "large";
 

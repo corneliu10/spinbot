@@ -394,6 +394,22 @@ const EDITS = [
     '      case "desktop":\n        return remoteDesktopSection();',
     '      case "desktop":\n        return SPINBOT_ONLINE_SERVICES && remoteDesktopSection();',
   ],
+  // Emails of the account service.
+  [
+    "apps/auth-api/src/server/email-templates.ts",
+    'const SITE_URL = "https://openbot.run";',
+    '// Spinbot: links and the logo point to the account service of this deployment.\nconst SITE_URL = "https://spinbot-api.spinrun.ai";',
+  ],
+  [
+    "apps/auth-api/src/server/email-templates.ts",
+    '  { label: "openbot.run", href: SITE_URL },\n  { label: "X", href: OPENBOT_LINKS.x },\n  { label: "GitHub", href: OPENBOT_LINKS.repository },',
+    '  { label: "Spinbot", href: SITE_URL }',
+  ],
+  [
+    "apps/auth-api/src/server/email-templates.ts",
+    'import { OPENBOT_DOWNLOAD_PAGE_LINKS, OPENBOT_LINKS } from "../lib/landing-links";',
+    'import { OPENBOT_DOWNLOAD_PAGE_LINKS } from "../lib/landing-links";',
+  ],
   // --- Data folders: never the ones of an installed OpenBot ---------------------------------------
   [
     "src/backend/agent-store.ts",
@@ -574,9 +590,11 @@ const CODE_DIRS = [
   "packages/user-errors/src",
   "packages/telemetry/src",
   "packages/logging/src",
+  "apps/auth-api/src/server",
 ];
 // Kept: the legacy paths that database migrations of upgraded OpenBot data match. Never shown to a user.
-const KEEP = [/OpenBot(\/|\\\\)Bots|"OpenBot", "Bots"/u];
+// Also header names between the account service and the relay (never shown).
+const KEEP = [/OpenBot(\/|\\\\)Bots|"OpenBot", "Bots"/u, /\bOpenBot-[A-Z][A-Za-z]+/u];
 // Tests of the legacy OpenBot/Bots -> OpenBot/Agents migration: their paths are upstream data, not our brand.
 const SKIP_FILES = new Set(["src/backend/agent-workspace-root-migration.test.ts"]);
 const CODE_WORD = /\bOpenBot\b/gu;

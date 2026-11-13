@@ -413,7 +413,7 @@ export class GitHubInstallationTokens {
         new GitHubInstallationTokensError(
           503,
           "github_app_unavailable",
-          "The OpenBot GitHub App key is not a PKCS #8 key.",
+          "The Spinbot GitHub App key is not a PKCS #8 key.",
         ),
     });
     const key = this.#key;
@@ -430,7 +430,7 @@ export class GitHubInstallationTokens {
         new GitHubInstallationTokensError(
           503,
           "github_app_unavailable",
-          "The OpenBot GitHub App could not sign a request.",
+          "The Spinbot GitHub App could not sign a request.",
         ),
     });
   });
@@ -493,7 +493,7 @@ export class GitHubInstallationTokens {
             ...init.headers,
             Accept: "application/vnd.github+json",
             Authorization: authorization,
-            "User-Agent": "OpenBot",
+            "User-Agent": "Spinbot",
             "X-GitHub-Api-Version": "2022-11-28",
           },
           signal: AbortSignal.any([signal, AbortSignal.timeout(REQUEST_TIMEOUT_MS)]),
@@ -506,7 +506,7 @@ export class GitHubInstallationTokens {
         : new GitHubInstallationTokensError(
             503,
             "github_app_unavailable",
-            "GitHub refused the OpenBot GitHub App key.",
+            "GitHub refused the Spinbot GitHub App key.",
           );
     }
     if (nullStatuses.includes(response.status)) {
