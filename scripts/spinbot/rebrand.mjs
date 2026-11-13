@@ -171,18 +171,19 @@ const EDITS = [
   ],
   [
     "src/renderer/src/features/servers/server-actions.ts",
-    "  const createLocal = platform.landingPreview ? undefined : () => setCreateLocalServerOpen(true);",
-    "  const createLocal =\n    platform.landingPreview || !SPINBOT_ONLINE_SERVICES ? undefined : () => setCreateLocalServerOpen(true);",
-  ],
-  [
-    "src/renderer/src/features/servers/server-actions.ts",
     "  const installServer = platform.landingPreview ? undefined : () => setInstallServerOpen(true);",
     "  const installServer =\n    platform.landingPreview || !SPINBOT_ONLINE_SERVICES ? undefined : () => setInstallServerOpen(true);",
   ],
   [
     "src/renderer/src/features/servers/server-actions.ts",
-    "    select,\n    add,\n    createLocal,",
-    "    select,\n    add: SPINBOT_ONLINE_SERVICES ? add : undefined,\n    createLocal,",
+    "    select,\n    add,\n    createLocal,\n    addMenuCreateLocal,\n    installServer,\n    addMenuInstallServer,\n    addCreatesServer: hostedServersAvailable,",
+    "    select,\n    // Spinbot: servers on this computer work with no online service, so the plus button makes one.\n    add: SPINBOT_ONLINE_SERVICES ? add : createLocal,\n    createLocal,\n    addMenuCreateLocal: SPINBOT_ONLINE_SERVICES ? addMenuCreateLocal : () => undefined,\n    installServer,\n    addMenuInstallServer,\n    addCreatesServer: () => !SPINBOT_ONLINE_SERVICES || hostedServersAvailable(),",
+  ],
+  // A server on this computer is not registered with an account service in local mode.
+  [
+    "src/main/application-services.ts",
+    '              const state = centralAuth.getState();\n              return state.status === "signed_in" ? state.user.id : null;',
+    '              const state = centralAuth.getState();\n              // Spinbot: the local user (no account service) registers nothing.\n              return state.status === "signed_in" && state.user.id !== "local" ? state.user.id : null;',
   ],
   [
     "src/renderer/src/app-bootstrap.tsx",

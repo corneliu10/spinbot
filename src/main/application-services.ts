@@ -3661,7 +3661,8 @@ export async function createApplicationServices({
           account: {
             accountId: () => {
               const state = centralAuth.getState();
-              return state.status === "signed_in" ? state.user.id : null;
+              // Spinbot: the local user (no account service) registers nothing.
+              return state.status === "signed_in" && state.user.id !== "local" ? state.user.id : null;
             },
             register: (input) => centralAuth.registerRemoteHost(input).pipe(Effect.asVoid, toRemoteWorkflowError),
             credential: (hostId) => centralAuth.hostSiteCredential(hostId)?.machineToken ?? null,

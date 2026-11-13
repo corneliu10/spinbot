@@ -81,8 +81,7 @@ export function useServerActions() {
   }
 
   /** Opens the dialog that names a new server on this computer. The landing preview has no main process. */
-  const createLocal =
-    platform.landingPreview || !SPINBOT_ONLINE_SERVICES ? undefined : () => setCreateLocalServerOpen(true);
+  const createLocal = platform.landingPreview ? undefined : () => setCreateLocalServerOpen(true);
 
   /**
    * The item for a server on this computer in the add menus of the rail and the server menu. The hosted
@@ -153,12 +152,13 @@ export function useServerActions() {
   return {
     orderedServers,
     select,
-    add: SPINBOT_ONLINE_SERVICES ? add : undefined,
+    // Spinbot: servers on this computer work with no online service, so the plus button makes one.
+    add: SPINBOT_ONLINE_SERVICES ? add : createLocal,
     createLocal,
-    addMenuCreateLocal,
+    addMenuCreateLocal: SPINBOT_ONLINE_SERVICES ? addMenuCreateLocal : () => undefined,
     installServer,
     addMenuInstallServer,
-    addCreatesServer: hostedServersAvailable,
+    addCreatesServer: () => !SPINBOT_ONLINE_SERVICES || hostedServersAvailable(),
     hiddenLocal,
     callbacks,
   };
